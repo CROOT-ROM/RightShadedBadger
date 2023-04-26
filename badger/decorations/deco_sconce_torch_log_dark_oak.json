@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "deco_sconce_torch_log_dark_oak": {
+      "geometry": "geometry.block_deco_sconce_torch_log_dark_oak",
+      "shadow": true,
+      "up": "world",
+      "forward": "surface",
+      "type": "far"
+    }
+  }
+}

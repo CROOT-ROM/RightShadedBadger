@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_nylium_var01": {
+      "textures": {
+        "down": "textures/blocks/tex_block_netherrack_dried_var01", 
+        "up": "textures/blocks/tex_block_nylium_top_var01", 
+        "side": "textures/blocks/tex_block_nylium_side"
+      }
+    }
+  }
+}

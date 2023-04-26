@@ -1,0 +1,24 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_frostsnow": {
+            "isotropic":{
+                "up": true
+            },
+            "textures": {
+                "up": "textures/blocks/tex_block_frostsnow_top",
+                "down": "textures/blocks/tex_block_frostsnow_top",
+                "side": "textures/blocks/tex_block_frostsnow_side_01"
+            },
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_block_frostland_snow",
+                        "range": "near",
+                        "probability": 0.001
+                    }
+                ]
+            }
+        }
+    }
+}

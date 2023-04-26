@@ -1,0 +1,86 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_sprint_water",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_add_wof_splashes" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 100.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [
+            "query.is_entity_submerged",
+            "variable.terrain_type",
+            "variable.fx_sprint",
+            "query.is_entity_on_ground"
+         ]
+      },
+      "events" : {
+         "switchEffect" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.fx_sprint > 0"
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fx_sprint"
+         },
+         "badger:emitter_rate_distance" : {
+            "distance" : 3.0,
+            "particles_count" : "query.is_entity_submerged ? 0.000: 1.000000"
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [
+               "math.lerp(0.65,1.1,query.particle_normalized_age)",
+               "math.lerp(0.65,1.1,query.particle_normalized_age)"
+            ],
+            "initial_scale" : [ 1.2, 1.6 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 8,
+                  "frame_end" : 47,
+                  "rows_count" : 6
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "expiration_event" : [ "switchEffect" ]
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "(variable.terrain_type != 3 || variable.fx_sprint == 0) && query.is_entity_on_ground == 1"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.5, 0.2, 0.5 ],
+            "offset" : [ 0.0, "query.emitter_liquid_depth + 0.05", 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.26, 1.0, 0.85, 1.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : "Math.random(0.2,0.6)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "math.floor(math.random(0.0, 3.99)) * 90.0"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.2,1.5)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, "Math.random(-2,-3)", 0.0 ],
+            "linear_drag_coefficient" : 1.25
+         }
+      }
+   }
+}

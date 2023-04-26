@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:hero_ranger_lure_direct",
+      "materials": {
+        "default": "entity_model",
+        "mat_share_director_hero": "mat_share_director_hero",
+        "mat_hero_ranger": "mat_hero_ranger",
+        "mat_share_director_horse": "mat_share_director_horse"
+      },
+      "textures": {
+        "default": "textures/entity/tex_hero_ranger_lure_direct_diff"
+      },
+      "geometry": {
+        "default": "geometry.hero_ranger_lure_direct"
+      },
+      "render_controllers": [
+        "controller.render.hero_ranger_lure_direct"
+      ],
+      "animations": {
+        "lure_pose": "animation.hero_ranger_lure_direct.lure_pose",
+        "direct_pose": "animation.hero_ranger_lure_direct.direct_pose",
+        "direct_a": "animation.hero_ranger_lure_direct.direct_a",
+        "default": "controller.animation.hero_ranger_lure_direct.default"
+      },
+      "enable_attachables": false,
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:hero_ranger_lure_direct"
+      }
+    }
+  }
+}

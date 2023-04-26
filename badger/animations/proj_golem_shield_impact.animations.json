@@ -1,0 +1,107 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.proj_golem_shield_impact.spawn_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_root_m": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,131.6577911376953,0.0],
+            "1.23333333333": [0.0,131.6577911376953,0.0],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "0.001":  [
+          {
+            "bind_to_actor": false,
+            "effect": "fx_shockwave",
+            "enabled": false
+          }
+        ],
+        "0.01":  [
+          {
+            "effect": "fx_headsparkles",
+            "enabled": true,
+            "locator": "loc_fx_head"
+          }
+        ]
+      },
+      "sound_effects": {
+        "0.2":  [
+          {
+            "effect": "projectile_shield_load",
+            "enabled": true
+          }
+        ],
+        "1":  [
+          {
+            "effect": "projectile_shield_loop",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    "animation.proj_golem_shield_impact.idle_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_root_m": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,131.6577911376953,0.0],
+            "2.5": [0.0,131.6577911376953,0.0],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": true,
+      "timeline": {
+        "2.45000004768372": "variable.loop = variable.loop  +1 ;"
+      }
+    },
+    "animation.proj_golem_shield_impact.end_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_root_m": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": [0.0,131.6577911376953,0.0],
+            "2.5": [0.0,131.6577911376953,0.0],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "2.4":  [
+          {
+            "bind_to_actor": false,
+            "effect": "fx_end",
+            "enabled": true,
+            "locator": "loc_fx_head"
+          }
+        ]
+      },
+      "sound_effects": {
+        "0.1":  [
+          {
+            "effect": "projectile_shield_unload",
+            "enabled": true
+          }
+        ],
+        "2.4":  [
+          {
+            "effect": "projectile_despawn",
+            "enabled": true
+          }
+        ]
+      }
+    }
+  }
+}

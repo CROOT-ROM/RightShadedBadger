@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_allegiance_lapis_lazuli": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_player": "MetaMaterial.mat_shared_block_entity_player"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

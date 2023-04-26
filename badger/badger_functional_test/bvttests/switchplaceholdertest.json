@@ -1,0 +1,8 @@
+{
+  "test-name": "switch-test",
+  "test-description": "Placeholder test so Switches are running at least 1 test",
+  "test-duration":60,
+  "runAsPartOfCompleteTestSuite": true,
+  "platforms": ["Switch"],
+  "commands": ["/notifyprofiler setgamestate custom \"boot up complete \""]
+}

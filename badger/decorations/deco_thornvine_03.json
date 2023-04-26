@@ -1,0 +1,17 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "deco_thornvine_03": {
+      "geometry": "geometry.block_deco_hazard_thornvine_03",
+      "shadow": true,
+      "type": "far",
+      "random_orientation": true,
+      "wind_strength": 0.015,
+      "normals_interpolation": 0.0,
+      "collision" : {
+        "mode" : "instance",
+        "intensity": 0.6
+       }
+    }
+  }
+}

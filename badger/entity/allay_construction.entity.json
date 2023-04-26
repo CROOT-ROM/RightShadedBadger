@@ -1,0 +1,87 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.31,0.84,0.98],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 2,
+            "offset": [0,0,0],
+            "radius": 10
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_allay_deployed": {
+          "audio": "BAE_hero_allay_start",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_allay_construction_spawn",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          }
+        },
+        "on_allay_despawned": {
+          "audio": "BAE_hero_allay_stop",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_allay_construction_spawn",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          }
+        },
+        "on_allay_returning": {
+          "audio": "BAE_hero_allay_return"
+        },
+        "on_allay_working": {
+          "audio": "BAE_TODO"
+        }
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_allay_construction"
+      },
+      "badger:rendering": {
+        "definition": "badger:allay_construction"
+      }
+    },
+    "description": {
+      "animations": {
+        "building_loop": "animation.allay_construction.building_loop",
+        "building_start": "animation.allay_construction.building_start",
+        "default": "controller.animation.allay_construction.default",
+        "idle_a": "animation.allay_construction.idle_a",
+        "loop_a": "animation.allay_construction.loop_a",
+        "loop_b": "animation.allay_construction.loop_b",
+        "startled": "animation.allay_construction.startled"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.allay_construction"
+      },
+      "identifier": "badger:allay_construction",
+      "materials": {
+        "default": "entity_model",
+        "mat_allay_construction": "mat_allay_construction"
+      },
+      "particle_effects": {
+        "fx_sparkles": "badger:fx_allay_construction_sparkels",
+        "fx_spawn": "badger:fx_allay_construction_spawn"
+      },
+      "render_controllers": ["controller.render.allay_construction"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "textures": {
+        "default": "textures/entity/tex_allay_construction_d"
+      }
+    }
+  }
+}

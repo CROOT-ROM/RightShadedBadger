@@ -1,0 +1,13 @@
+##
+## 01 # When adding new loc strings, please:
+## 02 #   - add them in alphabetical order to minimize merge conflicts
+## 03 #   - use descending hierarchical categories (separated by .) for your key/ID (eg. resources.wood.name)
+## 04 #   - when possible, add a contextual comment / note at the end of the line with <TAB>###... For example:
+## 05 #       resources.wood.name=Wood Block	### The name of the wood resource the player harvests from trees.
+## 06 #   - if a loc string is placeholder, you can append <TAB>### placeholder
+## 07 #   - if a loc string is only for internal/debug use, you can append <TAB>### dev-only
+## 08 # Note, trailing spaces will NOT be trimmed; use <TAB>s to separate your comments from the actual localization text.
+
+ps.richPresence.Campaign=Playing %s Campaign, %s (%s of %s) (GB)
+ps.richPresence.Lobby=In %s Lobby, %s (%s of %s) (GB) 
+ps.richPresence.PVP=Playing PVP, %s (%s of %s) (GB)

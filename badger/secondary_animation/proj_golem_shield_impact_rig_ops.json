@@ -1,0 +1,35 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.proj_golem_shield_impact_in": {
+      "rig": "badger:proj_golem_shield_impact",
+      "enabled": "variable.shield_in",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0,
+          "domain_b": 1.2,
+          "output": "v.shieldheight",
+          "range_a": -7.5,
+          "range_b": 8.5
+        }
+      ]
+    },
+    "rigops_actions.proj_golem_shield_impact_out": {
+      "rig": "badger:proj_golem_shield_impact",
+      "enabled": "variable.shield_out",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0,
+          "domain_b": 2,
+          "output": "v.shieldheight",
+          "range_a": 8.5,
+          "range_b": -7.5
+        }
+      ]
+    }
+  }
+}

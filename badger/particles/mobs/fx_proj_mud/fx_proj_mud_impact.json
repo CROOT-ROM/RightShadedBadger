@@ -1,0 +1,57 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_mud_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_mud_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_liquid" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_mud_impact_liquid",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_mud_impact_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "projectile_decorations_collision_regular" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 2.5, 3.5, 2.5 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.75,
+                  "lifetime" : 4.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_mud_splat"
+               }
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "projectile_decorations_collision_regular", "impact_flares" ],
+            "timeline" : {
+               "0.050000" : [ "impact_liquid", "impact_parts" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

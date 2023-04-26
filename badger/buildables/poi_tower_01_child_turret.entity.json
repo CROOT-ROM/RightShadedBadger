@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:poi_tower_01_child_turret"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:presentation_event": {
+        "on_projectile_shoot": {
+          "audio": "BAE_poi_tower_01_windup",
+          "particles": {
+            "effect": "badger:fx_poi_tower_01_windup",
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}

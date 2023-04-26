@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_grassrender:base_entity_static": {
+        "material": "decorations",
+        "culling": "counterclockwise",
+        "textures": {
+      "diffuseMap": "textures/blocks/block_fol_grass_base_med/grass_tex_01"
+    }
+  }
+}

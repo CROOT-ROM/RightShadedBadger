@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_burst_impact_aoe"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_initialized": {
+          "particles": {
+            "effect": "badger:fx_proj_burst_shot_impact",
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}

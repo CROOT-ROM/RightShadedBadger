@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "mat_mount_tiger_face:base_entity_hero_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mount_tiger_face_d",
+      "coeffMap": "textures/entity/tex_mount_tiger_face_mr"
+    }
+  },
+  "mat_mount_tiger_face_ui:ui_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mount_tiger_face_d",
+      "coeffMap": "textures/entity/tex_mount_tiger_face_mr"
+    }
+  }
+}

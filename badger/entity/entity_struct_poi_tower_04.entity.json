@@ -1,0 +1,59 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.2
+      },
+      "badger:presentation_event": {
+        "stun_tower_triggered": {
+          "script": "proj_shoot"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_poi_tower_04"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_poi_tower_04.death_a",
+        "default": "controller.animation.entity_struct_poi_tower_04.default",
+        "idle_a": "animation.entity_struct_poi_tower_04.idle_a",
+        "ring_a": "animation.entity_struct_poi_tower_04.ring_a",
+        "spawn_a": "animation.entity_struct_poi_tower_04.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "proj_shoot": "variable.shoot = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_poi_tower_04"
+      },
+      "identifier": "badger:entity_struct_poi_tower_04",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_player": "mat_shared_block_entity_player"
+      },
+      "particle_effects": {
+        "fx_attack": "badger:fx_poi_tower_04_attack",
+        "fx_death": "badger:fx_destruction_tower_04_bell"
+      },
+      "render_controllers": ["controller.render.entity_struct_poi_tower_04"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.shoot = 0;","variable.const_time = 0.5;"]
+      },
+      "sound_effects": {
+        "fire": "BAE_poi_tower_04_fire",
+        "idle_stop": "BAE_poi_tower_04_idle_stop"
+      }
+    }
+  }
+}

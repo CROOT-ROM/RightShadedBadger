@@ -1,0 +1,68 @@
+[
+  {
+    "button_id": "button.destroy_or_attack",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.build_or_interact",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.map_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.songbook_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.pause",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.open_crafting",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_previous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_next",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_mode_switch_quickchat",
+    "key_id": "key.toolbarSelectMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_direct_switch_quickchat",
+    "key_id": "key.typeSelectMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.quick_chat_close",
+    "key_id": "key.radialMenuExit",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.quick_chat_select",
+    "key_id": "key.radialMenuSelect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.quick_chat_cycle_forward",
+    "key_id": "key.radialCategoryCycleForward",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.quick_chat_cycle_backward",
+    "key_id": "key.radialCategoryCycleBackward",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.jump",
+    "focus_impact": "neutral"
+  }
+]

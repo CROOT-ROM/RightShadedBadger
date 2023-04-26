@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_ore_iron_sediment": {
+      "textures": {
+      "up": "textures/blocks/tex_block_ore_iron_sediment",
+      "down": "textures/blocks/tex_block_ore_iron_sediment",
+      "side": "textures/blocks/tex_block_slab_ore_iron_sediment"
+      }
+    }
+  }
+}

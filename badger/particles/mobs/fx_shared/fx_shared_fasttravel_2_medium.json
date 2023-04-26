@@ -1,0 +1,48 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_shared_fasttravel_2_medium",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_beam",
+               "type" : "emitter_bound"
+            }
+         },
+         "glow" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_glow",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkles" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_sparkles",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_initialization" : {
+            "creation_expression" : "variable.traveller_size = 2.0;"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "beam", "glow" ],
+            "timeline" : {
+               "0.250000" : [ "sparkles" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier": "badger:decoration_collider_piglin_final_boss",
+        "offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "height": 8.0,
+        "length": 0.8,
+        "yaw": 0.0,
+        "inner_radius": 4.0,
+        "outer_radius": 5.5,
+        "intensity": 1.0,
+        "priority": 1000
+    }
+}

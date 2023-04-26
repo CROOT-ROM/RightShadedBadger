@@ -1,0 +1,8 @@
+{
+  "format_version": "1.8.0",
+  "mat_proj_tnt_block:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_proj_tnt_block_d"
+    }
+  }
+}

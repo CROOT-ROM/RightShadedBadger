@@ -1,0 +1,24 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_wood_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_wood": "MetaMaterial.mat_mob_golem_wood"
+        },
+        {
+          "mat_mob_golem_wood_face": "MetaMaterial.mat_mob_golem_wood_face"
+        },
+        {
+          "mat_fx_generic_buff_128": "MetaMaterial.mat_fx_generic_buff_128"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

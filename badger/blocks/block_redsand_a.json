@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_redsand_a": {
+            "decoration": "redsand_a_grass",
+            "textures": "textures/blocks/tex_block_redsand_a"
+        }
+    }
+}

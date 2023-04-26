@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_piglin_attack_territory_low_health"
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority" : -1,
+        "max_distance" : 100.0,
+        "on_enter_bae" : "",
+        "music_states" :[
+          {
+            "state_name": "default",
+            "audio_parameters": [
+                {"piglin_presence_pvp" : 1.0}
+             ]
+          }
+        ]
+      },
+      "badger:invasion_icon": {
+        "icon_color": [
+          0.737,
+          0.22,
+          0.769,
+          1.0
+        ]
+      },
+      "badger:template": [
+        "badger:template_portal_piglin",
+        "badger:template_portal_piglin_attack"
+      ]
+    }
+  }
+}

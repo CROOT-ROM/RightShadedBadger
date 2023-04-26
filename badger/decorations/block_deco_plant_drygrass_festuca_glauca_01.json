@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "block_deco_plant_drygrass_festuca_glauca_01": {
+      "geometry": "geometry.block_deco_plant_drygrass_festuca_glauca_01", 
+      "shadow": true, 
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_fort_outpost_pvp"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:presentation_event": {
+        "on_construction_start": {
+          "particles": [
+            {
+              "effect": "badger:fx_placement_19x19",
+              "enabled": true,
+              "bind_to_actor": false
+            }
+          ]
+        },
+        "on_construction_end": {
+          "particles": [
+            {
+              "effect": "badger:fx_pvp_hq_beams",
+              "locator": "loc_fx_beams",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_outpost_hq_dmg_stage_01"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_outpost_hq_dmg_stage_01"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_outpost_hq_dmg_stage_02"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_outpost_hq_dmg_stage_03"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_outpost_hq_destruction"
+        }
+      },
+      "badger:music_2d_emitter": {
+        "priority": -1,
+        "max_distance": 200,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "default",
+            "audio_parameters": [
+              {
+                "match_started_pvp": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "HQ_damage_0",
+            "audio_parameters": [
+              {
+                "music_state_pvp": 2.0
+              },
+              {
+                "combat_intensity_pvp": 0.0
+              },
+              {
+                "match_started_pvp": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "HQ_damage_25",
+            "audio_parameters": [
+              {
+                "music_state_pvp": 2.0
+              },
+              {
+                "combat_intensity_pvp": 2.0
+              },
+              {
+                "match_started_pvp": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "HQ_damage_50",
+            "audio_parameters": [
+              {
+                "music_state_pvp": 2.0
+              },
+              {
+                "combat_intensity_pvp": 3.0
+              },
+              {
+                "match_started_pvp": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "HQ_damage_75",
+            "audio_parameters": [
+              {
+                "music_state_pvp": 2.0
+              },
+              {
+                "combat_intensity_pvp": 4.0
+              },
+              {
+                "match_started_pvp": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

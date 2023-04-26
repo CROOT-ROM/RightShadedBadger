@@ -1,0 +1,111 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_grunter_nis.default": {
+      "initial_state": "init",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": "(variable.chooser <= 1)"
+            },
+            {
+              "death_b": "((variable.chooser > 1) && (variable.chooser <= 2))"
+            },
+            {
+              "death_c": "(variable.chooser > 2)"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.chooser",
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "run": {
+          "animations":  [
+            {
+              "walk_a": "(variable.chooser <= 1)"
+            },
+            {
+              "walk_b": "((variable.chooser > 1) && (variable.chooser <= 2))"
+            },
+            {
+              "walk_c": "(variable.chooser > 2)"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_grunter_nis.fx_controller": {
+      "initial_state": "fx",
+      "states": {
+        "fx": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_flame",
+              "enabled": true,
+              "locator": "loc_fx_speartip"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

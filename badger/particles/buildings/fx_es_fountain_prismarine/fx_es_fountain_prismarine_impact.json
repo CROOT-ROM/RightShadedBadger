@@ -1,0 +1,59 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_es_fountain_prismarine_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.health_low" ]
+      },
+      "events" : {
+         "pillar" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_fountain_prismarine_impact_pillar",
+               "type" : "emitter_bound"
+            }
+         },
+         "pillar_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_fountain_prismarine_impact_pillar_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "ripple" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_fountain_prismarine_impact_ripple",
+               "type" : "emitter_bound"
+            }
+         },
+         "splashes" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_fountain_prismarine_impact_splashes",
+               "type" : "emitter_bound"
+            }
+         },
+         "splashes_flat" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_fountain_prismarine_impact_splashes_flat",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "ripple", "splashes", "splashes_flat", "pillar", "pillar_up" ]
+         },
+         "minecraft:emitter_lifetime_once" : {
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         }
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_lakeshore_var03": {
+            "decoration": "deco_plant_heather_purple_01",
+            "textures": {
+                "up": "textures/blocks/tex_block_dirt",
+                "down": "textures/blocks/tex_block_dirt",
+                "side": "textures/blocks/tex_block_dirt"
+            }
+        }
+    }
+}

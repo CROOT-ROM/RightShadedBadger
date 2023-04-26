@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_drygrass_scatter_05b": {
+            "decoration": "deco_drygrass_scatter_05b",
+            "particle_spawner": {
+				"effects" : [
+					{
+						"effect": "badger:fx_block_grasshopper",
+						"range": "near",
+						"probability": 0.2,
+						"offset": [
+							0.0,
+							0.5,
+							0.0
+						]				
+					}
+				]			
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_impact_lava_geyser",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 160.0
+         }
+      },
+      "events" : {
+         "drops" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_impact_lava_geyser_drops",
+               "type" : "emitter_bound"
+            }
+         },
+         "meshjet" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_impact_lava_geyser_mesh",
+               "type" : "emitter_bound"
+            }
+         },
+         "topdrops" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_impact_lava_geyser_topdrops",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "drops", "meshjet" ],
+            "timeline" : {
+               "0.350000" : [ "topdrops" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

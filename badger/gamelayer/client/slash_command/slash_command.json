@@ -1,0 +1,967 @@
+{
+  "folders": [
+    {
+      "folder_name": "General",
+      "commands": [
+        {
+          "name": "Explorer Mode",
+          "command": ["/sprint 10", "/gm", "/map_reveal"]
+        },
+        {
+          "name": "Switch to red",
+          "command": "/assignteam @p red_team"
+        },
+        {
+          "name": "Switch to blue",
+          "command": "/assignteam @p blue_team"
+        },
+        {
+          "name": "Move Fast x2",
+          "command": "/sprint 2"
+        },
+        {
+          "name": "Move Fast x3",
+          "command": "/sprint 3"
+        },
+        {
+          "name": "Move REALLY Fast x10",
+          "command": "/sprint 10"
+        },
+        {
+          "name": "Move Normal",
+          "command": "/sprint 1"
+        },
+        {
+          "name": "Invincibility Toggle",
+          "command": "/gm"
+        },
+        {
+          "name": "Reveal Map Hidden Icons",
+          "command": "/bsharp event reveal_all_map_icons"
+        },
+        {
+          "name": "Unlock Allied Golem Missing Pieces",
+          "command": "/bsharp event unlock_ally_missing_pieces"
+        },
+        {
+          "name": "Unlock All Mounts",
+          "command": "/bsharp event unlock_all_mounts"
+        },
+        {
+          "name": "Mount Tiger",
+          "command": "/mount @s badger:mount_tiger"
+        },
+        {
+          "name": "Turn Off/Bypass Onboarding",
+          "command": "/bsharp event complete_onboarding"
+        },
+        {
+          "name": "Turn Off/Bypass Client Onboarding",
+          "command": "/bsharp event complete_client_onboarding"
+        },
+        {
+          "name": "Unhide all HUD",
+          "command": "/bsharp event unhide_all_hud"
+        },
+        {
+          "name": "Make all portals invulnerable",
+          "command": "/bsharp event makePortalsInvuln true"
+        },
+        {
+          "name": "Make all portals vulnerable",
+          "command": "/bsharp event makePortalsInvuln false"
+        },
+        {
+          "name": "Infect Well of Fate",
+          "command": "/bsharp event infectWof true"
+        },
+        {
+          "name": "Uninfect Well of Fate",
+          "command": "/bsharp event infectWof false"
+        },
+        {
+          "name": "Open All Chests (visuals only)",
+          "command": "/bsharp event set_chest_visual_state true"
+        },
+        {
+          "name": "Close All Chests (visuals only)",
+          "command": "/bsharp event set_chest_visual_state false"
+        }
+      ]
+    },
+    {
+      "folder_name": "Resources",
+      "commands": [
+        {
+          "name": "Give ALL resources and mob alliances (avoid using this for testing)",
+          "command": "/giveallresources"
+        },
+        {
+          "name": "Act 2 Early resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set gold_iron",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 1",
+            "/bsharp event set_spawn_upgrade_amount 0",
+            "/bsharp event set_build_upgrade_amount 0",
+            "/bsharp event set_gather_upgrade_amount 0",
+            "/bsharp event set_lure_upgrade_amount 0",
+            "/bsharp event unlock_mobs_based_on_gamestate 1",
+            "/bsharp event unlock_random_allies 0",
+            "/bsharp event unlock_random_poi_towers 0",
+            "/bsharp event unlock_random_mounts 0",
+            "/giveallresources piglin_key 5"
+          ]
+        },
+        {
+          "name": "Act 2 Early-Mid Game resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set all",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 2",
+            "/bsharp event set_spawn_upgrade_amount 0",
+            "/bsharp event set_build_upgrade_amount 0",
+            "/bsharp event set_gather_upgrade_amount 1",
+            "/bsharp event set_lure_upgrade_amount 0",
+            "/bsharp event unlock_mobs_based_on_gamestate 2",
+            "/bsharp event unlock_random_allies 0",
+            "/bsharp event unlock_random_poi_towers 1",
+            "/bsharp event unlock_random_mounts 1",
+            "/giveallresources piglin_key 6"
+          ]
+        },
+        {
+          "name": "Act 2 Mid Game resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set all",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 3",
+            "/bsharp event set_spawn_upgrade_amount 1",
+            "/bsharp event set_build_upgrade_amount 1",
+            "/bsharp event set_gather_upgrade_amount 1",
+            "/bsharp event set_lure_upgrade_amount 1",
+            "/bsharp event unlock_mobs_based_on_gamestate 3",
+            "/bsharp event unlock_random_allies 1",
+            "/bsharp event unlock_random_poi_towers 1",
+            "/bsharp event unlock_random_mounts 2",
+            "/giveallresources piglin_key 7"
+          ]
+        },
+        {
+          "name": "Act 2 Mid-Late Game resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set all",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 4",
+            "/bsharp event set_spawn_upgrade_amount 2",
+            "/bsharp event set_build_upgrade_amount 1",
+            "/bsharp event set_gather_upgrade_amount 2",
+            "/bsharp event set_lure_upgrade_amount 2",
+            "/bsharp event unlock_mobs_based_on_gamestate 4",
+            "/bsharp event unlock_random_allies 2",
+            "/bsharp event unlock_random_poi_towers 2",
+            "/bsharp event unlock_random_mounts 3",
+            "/giveallresources piglin_key 8"
+          ]
+        },
+        {
+          "name": "Act 2 Late Game resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set all",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 6",
+            "/bsharp event set_spawn_upgrade_amount 3",
+            "/bsharp event set_build_upgrade_amount 2",
+            "/bsharp event set_gather_upgrade_amount 2",
+            "/bsharp event set_lure_upgrade_amount 3",
+            "/bsharp event unlock_mobs_based_on_gamestate 4",
+            "/bsharp event unlock_random_allies 3",
+            "/bsharp event unlock_random_poi_towers 3",
+            "/bsharp event unlock_random_mounts 3",
+            "/bsharp event unlock_village_vindicators",
+            "/giveallresources piglin_key 9"
+          ]
+        },
+        {
+          "name": "Act 3 Starter resources",
+          "command": [
+            "/bsharp event unlock_gather_melody_hard_set all",
+            "/bsharp event unlock_wof_building all",
+            "/bsharp event set_all_resource_state 6",
+            "/bsharp event set_spawn_upgrade_amount 4",
+            "/bsharp event set_build_upgrade_amount 3",
+            "/bsharp event set_gather_upgrade_amount 3",
+            "/bsharp event set_lure_upgrade_amount 4",
+            "/bsharp event unlock_mobs_based_on_gamestate 4",
+            "/bsharp event unlock_random_allies 4",
+            "/bsharp event unlock_random_poi_towers 3",
+            "/bsharp event unlock_random_mounts 3",
+            "/bsharp event unlock_village_vindicators",
+            "/giveallresources piglin_key 10"
+          ]
+        },
+        {
+          "name": "Give upgrade resources (prismarine/stone)",
+          "command": [
+            "/giveallresources xp_common 1000 true",
+            "/giveallresources stone 2000 true"
+          ]
+        },
+        {
+          "name": "Unlock advanced direct",
+          "command": "/bsharp event unlock_advanced_direct"
+        }
+      ]
+    },
+    {
+      "folder_name": "Map Mode",
+      "commands": [
+        {
+          "name": "Visualize WG Slots Types",
+          "command": "/map_mode_default debug_slot_types"
+        },
+        {
+          "name": "Visualize WG Slots Used",
+          "command": "/map_mode_default debug_slot_used"
+        },
+        {
+          "name": "Visualize Debug Map Markers",
+          "command": "/map_mode_default debug_map_markers"
+        },
+        {
+          "name": "Revert Map Mode Changes",
+          "command": "/map_mode_default default"
+        }
+      ]
+    },
+    {
+      "folder_name": "Time of Day",
+      "commands": [
+        {
+          "name": "Travel 1 day into the future",
+          "command": "/add_days 1"
+        },
+        {
+          "name": "Travel 3 days into the future",
+          "command": "/add_days 3"
+        },
+        {
+          "name": "Travel 5 days into the future",
+          "command": "/add_days 5"
+        },
+        {
+          "name": "Travel 10 days into the future",
+          "command": "/add_days 10"
+        },
+        {
+          "name": "Travel 20 days into the future",
+          "command": "/add_days 20"
+        },
+        {
+          "name": "Progress to the next landmark time",
+          "command": "bsharp event advanceToNextLandmarkTime"
+        },
+        {
+          "name": "Pre-Dawn (Invasion actions are resolve)",
+          "command": "/bsharp event change_time_of_day 0.70"
+        },
+        {
+          "name": "Dawn (Invasion actions are planned)",
+          "command": "/bsharp event change_time_of_day 0.75"
+        },
+        {
+          "name": "Midday",
+          "command": "/bsharp event change_time_of_day 0"
+        },
+        {
+          "name": "Night (Invasion actions are executed)",
+          "command": "/bsharp event change_time_of_day 0.25"
+        },
+        {
+          "name": "Midnight",
+          "command": "/bsharp event change_time_of_day 0.5"
+        },
+        {
+          "name": "Lock Day/Night Cycle",
+          "command": "/bsharp event lock_time_of_day true"
+        },
+        {
+          "name": "Unlock Day/Night Cycle",
+          "command": "/bsharp event lock_time_of_day false"
+        }
+      ]
+    },
+    {
+      "folder_name": "Skybox State",
+      "commands": [
+        {
+          "name": "Two Suns",
+          "command": "/bsharp event set_skybox_state sky_twosuns"
+        },
+        {
+          "name": "Dark Sun",
+          "command": "/bsharp event set_skybox_state sky_darksun"
+        },
+        {
+          "name": "Sun Moon",
+          "command": "/bsharp event set_skybox_state sky_sunmoon"
+        },
+        {
+          "name": "Final Battle",
+          "command": "/bsharp event set_skybox_state sky_finalbattle"
+        }
+      ]
+    },
+    {
+      "folder_name": "Campaign: Act Progression",
+      "commands": [
+        {
+          "name": "Start Act 1B",
+          "command": "/bsharp event test_campaign_start_act_1b"
+        },
+        {
+          "name": "Start Act 2",
+          "command": [
+            "/bsharp event test_campaign_start_act_2",
+            "/giveallresources wood 1000",
+            "/giveallresources stone 1000",
+            "/giveallresources xp_common 100",
+            "/giveallresources piglin_key 5",
+            "/giveallresources emerald 50"
+          ]
+        },
+        {
+          "name": "Start Act 2 WITHOUT resources",
+          "command": "/bsharp event test_campaign_start_act_2"
+        },
+        {
+          "name": "Start Act 2 WITHOUT resources and trigger immediate arrival of all",
+          "command": "/bsharp event test_campaign_start_act_2_with_arrival_of_all"
+        },
+        {
+          "name": "Destroy all but one Act 2 base",
+          "command": "/bsharp event test_campaign_last_act_2_base"
+        },
+        {
+          "name": "Start Act 3",
+          "command": [
+            "/bsharp event test_campaign_start_act_3a",
+            "/giveallresources wood 5000 true",
+            "/giveallresources stone 5000 true",
+            "/giveallresources iron 1000 true",
+            "/giveallresources coal 1000 true",
+            "/giveallresources gold 1000 true",
+            "/giveallresources redstone 500 true",
+            "/giveallresources diamond 500 true",
+            "/giveallresources emerald 250"
+          ]
+        },
+        {
+          "name": "Start Act 3 WITHOUT resources",
+          "command": "/bsharp event test_campaign_start_act_3a"
+        },
+        {
+          "name": "Start Act Epilogue",
+          "command": "/bsharp event test_campaign_start_epilogue"
+        }
+      ]
+    },
+    {
+      "folder_name": "Campaign: Staggered Entry",
+      "commands": [
+        {
+          "name": "Trigger Immediate Arrival of All",
+          "command": "/bsharp event progressStaggeredEntry"
+        },
+        {
+          "name": "Trigger Immediate Arrival of All + Spawn All Base Sizes",
+          "command": "/bsharp event progressStaggeredEntryAndSpawnAll"
+        },
+        {
+          "name": "Staggered Entry One Step",
+          "command": "/bsharp event progressStaggeredEntryStep"
+        },
+        {
+          "name": "Debug Visualize Claimed Areas",
+          "command": "/dd claimed_areas"
+        }
+      ]
+    },
+    {
+      "folder_name": "Act1 Skips",
+      "commands": [
+        {
+          "name": "Skip To Three Camps Beat",
+          "command": "/bsharp event skip_to_camps"
+        },
+        {
+          "name": "Skip To WoF Upgrade",
+          "command": "/bsharp event skip_to_wof_upgrade"
+        },
+        {
+          "name": "Skip To Second Skirmish",
+          "command": "/bsharp event skip_to_second_skirmish"
+        }
+      ]
+    },
+    {
+      "folder_name": "Invasion 2.0",
+      "commands": [
+        {
+          "name": "Start Forced Invasion Break",
+          "command": "/bsharp event startForcedInvasionBreak"
+        },
+        {
+          "name": "Stop Forced Invasion Break",
+          "command": "/bsharp event stopForcedInvasionBreak"
+        },
+        {
+          "name": "Plan Random Village Attack",
+          "command": "/bsharp event planRandomMAAttack 0"
+        },
+        {
+          "name": "Plan Random Mob Alliance Attack",
+          "command": "/bsharp event planRandomMAAttack 1"
+        },
+        {
+          "name": "Log Invasion Phase",
+          "command": "/bsharp event logInvasionPhase"
+        },
+        {
+          "name": "Set Invasion Phase to 1",
+          "command": "/bsharp event setInvasionPhase 0"
+        },
+        {
+          "name": "Set Invasion Phase to 2",
+          "command": "/bsharp event setInvasionPhase 1"
+        },
+        {
+          "name": "Set Invasion Phase to 3",
+          "command": "/bsharp event setInvasionPhase 2"
+        },
+        {
+          "name": "Set Invasion Phase to 4",
+          "command": "/bsharp event setInvasionPhase 3"
+        },
+        {
+          "name": "Set Invasion Phase to 5",
+          "command": "/bsharp event setInvasionPhase 4"
+        },
+        {
+          "name": "Set Invasion Phase to 6",
+          "command": "/bsharp event setInvasionPhase 5"
+        },
+        {
+          "name": "Set Invasion Phase to 7",
+          "command": "/bsharp event setInvasionPhase 6"
+        },
+        {
+          "name": "Set Player Move Scenario None",
+          "command": "/bsharp event setPlayerMoveScenario playerMoveScenarioNone"
+        },
+        {
+          "name": "Set Player Move Scenario A",
+          "command": "/bsharp event setPlayerMoveScenario playerMoveScenarioA"
+        },
+        {
+          "name": "Set Player Move Scenario B",
+          "command": "/bsharp event setPlayerMoveScenario playerMoveScenarioB"
+        },
+        {
+          "name": "Set Player Move Scenario C",
+          "command": "/bsharp event setPlayerMoveScenario playerMoveScenarioC"
+        }
+      ]
+    },
+    {
+      "folder_name": "Actions Related To Base Destruction",
+      "commands": [
+        {
+          "name": "Destroy nearest Piglin base",
+          "command": "/bsharp event test_campaign_destroy_nearest_pig_base"
+        },
+        {
+          "name": "Damage nearest Piglin base",
+          "command": "/bsharp event test_campaign_damage_nearest_pig_base"
+        },
+        {
+          "name": "Destroy all current Attack piglin bases (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.attack_d"
+        },
+        {
+          "name": "Destroy all current Defend piglin bases (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.defend_d"
+        },
+        {
+          "name": "Destroy all current Obstacle piglin bases (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.obstacle_d"
+        },
+        {
+          "name": "Obliterate the Attack Piglins (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.attack_o"
+        },
+        {
+          "name": "Obliterate the Defend Piglins (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.defend_o"
+        },
+        {
+          "name": "Obliterate the Obstacle Piglins (works only during Act 2)",
+          "command": "/bsharp event test_campaign_destroy_pig_faction faction.pig.obstacle_o"
+        }
+      ]
+    },
+    {
+      "folder_name": "Piglins Base Spawning: Assign Forced Variation",
+      "commands": [
+        {
+          "name": "Set Next Flavour - Default",
+          "command": "/bsharp event forceNextBaseFlavour villageVariationDefault"
+        },
+        {
+          "name": "Set Next Flavour - Variation A",
+          "command": "/bsharp event forceNextBaseFlavour villageVariationA"
+        },
+        {
+          "name": "Set Next Flavour - Variation B",
+          "command": "/bsharp event forceNextBaseFlavour villageVariationB"
+        },
+        {
+          "name": "Set Next Flavour - Variation C",
+          "command": "/bsharp event forceNextBaseFlavour villageVariationC"
+        },
+        {
+          "name": "Set Next Objective - Default",
+          "command": "/bsharp event forceNextBaseObjective villageVariationDefault"
+        },
+        {
+          "name": "Set Next Objective - Structure Destruction",
+          "command": "/bsharp event forceNextBaseObjective villageVariationStructureDestruction"
+        },
+        {
+          "name": "Set Next Objective - Raiding Party",
+          "command": "/bsharp event forceNextBaseObjective villageVariationRaidingParty"
+        }
+      ]
+    },
+    {
+      "folder_name": "Piglins Base Spawning: DBB",
+      "commands": [
+        {
+          "name": "Corrupted Beacon Base (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_dbb darkBeacon faction.pig.dbb",
+            "/assignteam @s blue_team"
+          ]
+        }
+      ]
+    },
+    {
+      "folder_name": "Piglins Base Spawning: Obstacle",
+      "commands": [
+        {
+          "name": "OUTPOST",
+          "command": [
+            "/bsharp event invasionPlaceObs frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceObsNearbySlot frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_obstacle frontlineA faction.pig.obstacle",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "SMALL",
+          "command": [
+            "/bsharp event invasionPlaceObs small"
+          ]
+        },
+        {
+          "name": "SMALL (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceObsNearbySlot small"
+          ]
+        },
+        {
+          "name": "SMALL (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_obstacle small faction.pig.obstacle",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "MEDIUM",
+          "command": [
+            "/bsharp event invasionPlaceObs medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceObsNearbySlot medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_obstacle medium faction.pig.obstacle",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "LARGE",
+          "command": [
+            "/bsharp event invasionPlaceObs large"
+          ]
+        },
+        {
+          "name": "LARGE (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceObsNearbySlot large"
+          ]
+        },
+        {
+          "name": "LARGE (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_obstacle large faction.pig.obstacle",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "BOSS",
+          "command": [
+            "/bsharp event invasionPlaceObs boss"
+          ]
+        },
+        {
+          "name": "BOSS (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceObsNearbySlot boss"
+          ]
+        },
+        {
+          "name": "BOSS (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_obstacle boss faction.pig.obstacle",
+            "/assignteam @s blue_team"
+          ]
+        }
+      ]
+    },    
+    {
+      "folder_name": "Piglins Base Spawning: Attack",
+      "commands": [
+        {
+          "name": "Set to Attack Piglins Boss Village Attack",
+          "command": "/bsharp global gv_attack_boss_debug 1"
+        },
+        {
+          "name": "Unset to Attack Piglins Boss Village Attack",
+          "command": "/bsharp global gv_attack_boss_debug 0"
+        },
+        {
+          "name": "OUTPOST",
+          "command": [
+            "/bsharp event invasionPlaceAtt frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceAttNearbySlot frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_attack frontlineA faction.pig.attack",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "SMALL",
+          "command": [
+            "/bsharp event invasionPlaceAtt small"
+          ]
+        },
+        {
+          "name": "SMALL (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceAttNearbySlot small"
+          ]
+        },
+        {
+          "name": "SMALL (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_attack small faction.pig.attack",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "MEDIUM",
+          "command": [
+            "/bsharp event invasionPlaceAtt medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceAttNearbySlot medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_attack medium faction.pig.attack",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "LARGE",
+          "command": [
+            "/bsharp event invasionPlaceAtt large"
+          ]
+        },
+        {
+          "name": "LARGE (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceAttNearbySlot large"
+          ]
+        },
+        {
+          "name": "LARGE (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_attack large faction.pig.attack",
+            "/assignteam @s blue_team"
+          ]
+        }
+      ]
+    },
+    {
+      "folder_name": "Piglins Base Spawning: Defend",
+      "commands": [
+        {
+          "name": "OUTPOST",
+          "command": [
+            "/bsharp event invasionPlaceDef frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDefNearbySlot frontlineA"
+          ]
+        },
+        {
+          "name": "OUTPOST (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_defend frontlineA faction.pig.defend",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "SMALL",
+          "command": [
+            "/bsharp event invasionPlaceDef small"
+          ]
+        },
+        {
+          "name": "SMALL (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDefNearbySlot small"
+          ]
+        },
+        {
+          "name": "SMALL (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_defend small faction.pig.defend",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "MEDIUM",
+          "command": [
+            "/bsharp event invasionPlaceDef medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDefNearbySlot medium"
+          ]
+        },
+        {
+          "name": "MEDIUM (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_defend medium faction.pig.defend",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "LARGE",
+          "command": [
+            "/bsharp event invasionPlaceDef large"
+          ]
+        },
+        {
+          "name": "LARGE (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDefNearbySlot large"
+          ]
+        },
+        {
+          "name": "LARGE (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_defend large faction.pig.defend",
+            "/assignteam @s blue_team"
+          ]
+        },
+        {
+          "name": "BOSS",
+          "command": [
+            "/bsharp event invasionPlaceDef boss"
+          ]
+        },
+        {
+          "name": "BOSS (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDefNearbySlot boss"
+          ]
+        },
+        {
+          "name": "BOSS (Flatland)",
+          "command": [
+            "/assignteam @s piglin_team",
+            "/village add_village badger:piglin_defend boss faction.pig.defend",
+            "/assignteam @s blue_team"
+          ]
+        }
+      ]
+    },
+    {
+      "folder_name": "Rendering",
+      "commands": [
+        {
+          "name": "Enable deferred",
+          "command": "/render deferred true"
+        },
+        {
+          "name": "Disable deferred",
+          "command": "/render deferred false"
+        }
+      ]
+    },
+    {
+      "folder_name": "Mob Clearing",
+      "commands": [
+        {
+          "name": "Clear All Piglins",
+          "command": "/bsharp event remove_all_piglins"
+        },
+        {
+          "name": "Clear All Piglins AND Disable Spawners",
+          "command": [
+            "/bsharp event disable_barracks",
+            "/bsharp event remove_all_piglins"
+          ]
+        },
+        {
+          "name": "Clear All Piglins AND Auto-Kill on Spawn",
+          "command": [
+            "/bsharp event set_piglins false"
+          ]
+        },
+        {
+          "name": "Undo Auto-Kill Piglins On Spawn",
+          "command": [
+            "/bsharp event set_piglins true"
+          ]
+        },
+        {
+          "name": "Clear All Player Mobs",
+          "command": "/bsharp event remove_all_player_mobs"
+        },
+        {
+          "name": "Clear All Animals",
+          "command": "/bsharp event remove_all_animals"
+        }
+      ]
+    },
+    {
+      "folder_name": "Village",
+      "commands": [
+        {
+          "name": "Restock All Village Chests",
+          "command": "/bsharp event ee_restock_village_chests"
+        },
+        {
+          "name": "Collect All Village Chests",
+          "command": "/bsharp event ee_collect_village_chests"
+        }
+      ]
+    },
+    {
+      "folder_name": "World Gen",
+      "commands": [
+        {
+          "name": "HotReload All TextureStamps",
+          "command": "/worldstream reload_texture_stamps"
+        },
+        {
+          "name": "World Stream Full Debug Information",
+          "command": "/worldstream full_debug_info"
+        },
+        {
+          "name": "Top Speed",
+          "command": [
+            "/mount @s badger:mount_tiger",
+            "/sprint 2"
+          ]
+        }
+      ]
+    },
+    {
+      "folder_name": "PVP",
+      "commands": [
+        {
+          "name": "Start PVP match (if it fails to start automatically)",
+          "command": "/bsharp event start_pvp_match"
+        }
+      ]
+    },
+    {
+      "folder_name": "Lost Legends",
+      "commands": [
+        {
+          "name": "End Match (Victory)",
+          "command": "/bsharp event end_match team_two"
+        },
+        {
+          "name": "End Match (Defeat)",
+          "command": "/bsharp event end_match piglin_team"
+        }
+      ]
+    }
+  ]
+}

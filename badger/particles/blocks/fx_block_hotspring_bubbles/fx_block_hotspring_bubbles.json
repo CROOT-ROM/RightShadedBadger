@@ -1,0 +1,98 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_block_hotspring_bubbles",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_blend_lava_ball_grey"]
+      },
+      "optimizations": {
+        "suspend_distance": 60
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_variable": {
+        "spawn_rate": "Math.random(2,4) * query.emitter_random_1",
+        "max_particles": 45
+      },
+      "minecraft:emitter_lifetime_looping": {
+        "active_time": 3,
+        "sleep_time": "math.random(0, 3)"
+      },
+      "minecraft:emitter_shape_box": {
+        "offset": [
+          0,
+          0.5,
+          0
+        ],
+        "half_dimensions": [
+          2.5,
+          0,
+          2.5
+        ],
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "direction_mode": "custom"
+      },
+      "minecraft:particle_initial_speed": "Math.Random(0, 0.1)",
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.Random(1, 2.5)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          0,
+          0
+        ],
+        "linear_drag_coefficient": 0.3
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "0.4",
+          "0.3"
+        ],
+        "pivot": [
+          0.0,
+          -0.5
+        ],
+        "initial_scale": [
+          0.6,
+          2.1
+        ],
+        "facing_camera_mode": "rotate_y",
+        "flipbook": {
+          "layout": {
+            "columns_count": 8,
+            "rows_count": 3,
+            "frame_iteration": "page",
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "gradient": {
+          "0": [
+            0.85,
+            0.95,
+            1.0,
+            0.6
+          ],
+          "1.0": [
+            0.9,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "interpolant": "query.particle_normalized_age"
+      }
+    }
+  }
+}

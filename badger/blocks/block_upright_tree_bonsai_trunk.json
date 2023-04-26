@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_upright_tree_bonsai_trunk": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_bonsai_trunk_side",
+                "down": "textures/blocks/tex_block_tree_bonsai_trunk_side",
+                "side": "textures/blocks/tex_block_tree_bonsai_trunk_side"
+            }
+        }
+    }
+}

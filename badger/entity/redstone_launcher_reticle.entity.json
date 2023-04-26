@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:redstone_launcher_reticle"
+    },
+    "components": {
+      "badger:decal_visualization": {
+        "decal_textures": [
+          "decal_rsl_reticle",
+          "decal_reticle_enemy"
+        ],
+        "is_symmetric_texture": true,
+        "decal_size": [
+          3.5,
+          2.25,
+          3.5
+        ],
+        "bin": "indicator",
+        "shape": "none",
+        "sort_key": 1000,
+        "apply_to_owned": true,
+        "height_fade": true,
+        "start_enabled": true
+      },
+      "badger:presentation_event": {
+        "reticle_alternate_effect_start": {
+          "beacon": {
+            "index": 1
+          }
+        },
+        "reticle_alternate_effect_stop": {
+          "beacon": {
+            "index": 0
+          }
+        }
+      },
+      "badger:beacon_render_info": {
+        "states": [
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.2,
+              0.2,
+              0.882353
+            ],
+            "min_distance": 0,
+            "max_distance": 150
+          },
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.882353,
+              0.2,
+              0.2
+            ],
+            "min_distance": 0,
+            "max_distance": 150
+          }
+        ]
+      }
+    }
+  }
+}

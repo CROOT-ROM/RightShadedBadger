@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.item_orb_04"
+      },
+      "identifier": "badger:item_orb_04",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_orb_04": "mat_item_orb_04"
+      },
+      "render_controllers": [ "controller.render.item_orb_04" ],
+      "textures": {
+        "default": "textures/entity/tex_item_orb_04_d"
+      }
+    },
+    "components": {
+      "badger:template": "badger:template_item_orb",
+      "badger:rendering": {
+        "definition": "badger:item_orb_04",
+        "static": true
+      }
+    }
+  }
+}

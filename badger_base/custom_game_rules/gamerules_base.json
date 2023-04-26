@@ -1,0 +1,11 @@
+{
+  "custom_game_rules": {
+    "rules": {
+      "roaming_animals": false,
+      "roaming_piglins": false,
+      "world_mobs": false,
+      "piglins_guard_resources": false,
+      "prevent_obstacles_on_poi_graph": false
+    }
+  }
+}

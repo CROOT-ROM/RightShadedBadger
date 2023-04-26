@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.fx_proj_mob_lava_turret_spray.static": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_fx_proj_mob_lava_turret_spray": {
+          "lod_distance": 0.0,
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.04055529832839966,0.0]
+            },
+            "0.666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.14423203468322754,0.0]
+            },
+            "1.33333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.29999998211860657,0.0]
+            },
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": true
+    }
+  }
+}

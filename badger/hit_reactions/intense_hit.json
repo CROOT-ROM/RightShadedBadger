@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "components": {
+            "badger:hit_reaction_threshold": {
+                "name": "intense_hit",
+                "activation_percent": 0.45
+            }
+        },
+        "description": {
+            "identifier": "badger:intense_hit"
+        }
+    }
+}

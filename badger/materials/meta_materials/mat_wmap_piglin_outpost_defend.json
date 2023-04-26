@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wmap_piglin_outpost_defend:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_piglin_outpost_defend_d", 
+      "coeffMap": "textures/entity/wmap_piglin_outpost/tex_wmap_piglin_outpost_defend_mr", 
+      "emissiveMap": "textures/entity/tex_wmap_piglin_outpost_defend_e"
+    }
+  }
+}

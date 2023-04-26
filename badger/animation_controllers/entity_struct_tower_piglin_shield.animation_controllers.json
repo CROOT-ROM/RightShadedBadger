@@ -1,0 +1,100 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_tower_piglin_shield.default": {
+      "initial_state": "spawn",
+      "states": {
+        "closed": {
+          "animations":  [
+            {
+              "idle_closed": 1.0
+            }
+          ],
+          "on_entry": ["variable.is_closed = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "opening": "variable.shield_down"
+            }
+          ]
+        },
+        "closing": {
+          "animations":  [
+            {
+              "closing_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "closed": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "idle_open": "!variable.is_closed"
+            },
+            {
+              "idle_closed": "variable.is_closed"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "open": {
+          "animations":  [
+            {
+              "idle_open": 1.0
+            }
+          ],
+          "on_entry": ["variable.is_closed = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "closing": "variable.shield_up"
+            }
+          ]
+        },
+        "opening": {
+          "animations":  [
+            {
+              "opening_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "open": "query.any_animation_finished"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "closing_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "closed": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_mud_door": {
+      "textures": 
+      {
+        "up": "textures/blocks/tex_block_mud",
+        "down": "textures/blocks/tex_block_mud",
+        "side": "textures/blocks/tex_block_mud_door"
+    } 
+      }
+  }
+}

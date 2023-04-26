@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "mat_proj_mushroom:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_proj_mushroom_d",
+      "coeffMap": "textures/entity/tex_proj_mushroom_mr",
+      "emissiveMap": "textures/entity/tex_proj_mushroom_e",
+      "normalMap": "textures/entity/tex_proj_mushroom_n"
+
+    }
+  }
+}

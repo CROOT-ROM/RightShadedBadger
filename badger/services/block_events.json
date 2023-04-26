@@ -1,0 +1,17 @@
+{
+  "badger:block_events": {
+    "performance_mode": 0,
+    "max_effect_lifetime": 2.0,
+    "block_change_effect": "badger:fx_block_change",
+    "build_effect_offset": [
+      0.5,
+      1.0,
+      0.5
+    ],
+    "gather_effect_offset": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 60,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 10
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_chicken"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_chicken_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_chicken_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_chicken_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_chicken_dx_lured"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_small"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_small_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_chicken_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_chicken",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.animal_chicken.climb_a",
+        "death_a": "animation.animal_chicken.death_a",
+        "death_b": "animation.animal_chicken.death_b",
+        "default": "controller.animation.animal_chicken.default",
+        "feed_a": "animation.animal_chicken.feed_a",
+        "flee_a": "animation.animal_chicken.flee_a",
+        "hitreact": "controller.animation.animal_chicken.hitreact",
+        "hitreact_a": "animation.animal_chicken.hitreact_a",
+        "idle_a": "animation.animal_chicken.idle_a",
+        "idles": "controller.animation.animal_chicken.idles",
+        "locomotion": "controller.animation.animal_chicken.locomotion",
+        "look_at": "animation.animal_chicken.look_at",
+        "patpat_a": "animation.animal_chicken_dlc.patpat_a",
+        "stun_a": "animation.animal_chicken.stun_a",
+        "swim_a": "animation.animal_chicken.swim_a",
+        "swim_idle_a": "animation.animal_chicken.swim_idle_a",
+        "walk_a": "animation.animal_chicken.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_chicken"
+      },
+      "identifier": "badger:animal_chicken",
+      "materials": {
+        "mat_animal_chicken": "mat_animal_chicken",
+        "mat_animal_chicken_face": "mat_animal_chicken_face",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_tiny",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_death_feathers": "badger:fx_animal_chicken_death_feathers"
+      },
+      "render_controllers": ["controller.render.animal_chicken"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hitreact": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "death": "BAE_animal_chicken_death",
+        "death_poof_small": "BAE_animal_death_poof_small",
+        "dx_stun": "BAE_animal_chicken_dx_stun",
+        "hurt": "BAE_animal_chicken_hurt",
+        "plop": "BAE_animal_chicken_plop",
+        "say": "BAE_animal_chicken_say",
+        "step": "BAE_animal_chicken_step",
+        "wing_flap": "BAE_animal_chicken_wing_flap"
+      }
+    }
+  }
+}

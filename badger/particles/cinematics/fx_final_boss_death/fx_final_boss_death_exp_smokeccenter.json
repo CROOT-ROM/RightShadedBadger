@@ -1,0 +1,65 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_death_exp_smokeccenter",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_m_smoke_explosion" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "direction_mode" : "ortho_axis",
+            "emission_mode" : "base",
+            "length" : 10.0,
+            "radius" : 10.0,
+            "thickness_ratio" : 1.0,
+            "vertical_angle" : 45.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 5.0, 5.0 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 22,
+                  "frame_end" : 21,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 4 ],
+                  "rows_count" : 5
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : "Math.random(60, 70)"
+         },
+         "minecraft:emitter_transform_parametric" : {
+            "transforms" : [
+               {
+                  "rotation_angle" : 90.0,
+                  "rotation_axis" : [ 0.0, 0.0, 1.0 ]
+               }
+            ]
+         },
+         "minecraft:particle_initial_speed" : "Math.random(5,10)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-10, 10)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.0,2.5)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, "Math.random(2,6)", 0.0 ],
+            "linear_drag_coefficient" : "Math.random(3.0,5.5)"
+         }
+      }
+   }
+}

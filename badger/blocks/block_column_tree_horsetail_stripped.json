@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_column_tree_horsetail_stripped": {
+            "textures": "textures/blocks/tex_block_tree_horsetail_stripped_side"
+              
+        
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_piglin_head_attack": {
+      "geometry": "geometry.block_deco_piglin_head_attack_geo", 
+      "shadow": true, 
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

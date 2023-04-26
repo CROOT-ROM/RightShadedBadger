@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "on_projectile_shoot": {
+          "script": "fire_proj"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_tower_piglin_thrower"
+      }
+    },
+    "description": {
+      "animations": {
+        "death": "animation.entity_struct_tower_piglin_thrower.death",
+        "default": "controller.animation.entity_struct_tower_piglin_thrower.default",
+        "fire": "animation.entity_struct_tower_piglin_thrower.fire",
+        "idle_a": "animation.entity_struct_tower_piglin_thrower.idle_a",
+        "spawn": "animation.entity_struct_tower_piglin_thrower.spawn"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "fire_proj": "variable.on_fire = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_tower_piglin_thrower"
+      },
+      "identifier": "badger:entity_struct_tower_piglin_thrower",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_crate_appear": "badger:fx_struct_pig_thrower_crate_appear",
+        "fx_crate_eject": "badger:fx_struct_pig_thrower_crate_eject",
+        "fx_death_struct": "badger:fx_destruction_tower_piglin_thrower",
+        "fx_nose_puff_back": "badger:fx_struct_pig_thrower_nose_puff_back",
+        "fx_nose_puff_front": "badger:fx_struct_pig_thrower_nose_puff",
+        "fx_piston_impact": "badger:fx_struct_pig_thrower_impact_dust"
+      },
+      "render_controllers": ["controller.render.entity_struct_tower_piglin_thrower"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.on_fire = 0;"]
+      },
+      "sound_effects": {
+        "attack_launch": "BAE_tower_piglin_thrower_attack_launch",
+        "crate_hit": "BAE_tower_piglin_thrower_idle_crate_hit",
+        "reload_down": "BAE_tower_piglin_thrower_reload_down",
+        "reload_up": "BAE_tower_piglin_thrower_reload_up",
+        "reset": "BAE_tower_piglin_thrower_reset",
+        "squeal": "BAE_tower_piglin_thrower_idle_squeal"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_piglin_d"
+      }
+    }
+  }
+}

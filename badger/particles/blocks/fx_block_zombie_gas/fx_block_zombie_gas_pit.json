@@ -1,0 +1,43 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_zombie_gas_pit",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         }
+      },
+      "events" : {
+         "gas_day" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_zombie_gas_pit_day",
+               "type" : "emitter_bound"
+            }
+         },
+         "gas_day_base" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_zombie_gas_pit_base_day",
+               "type" : "emitter_bound"
+            }
+         },
+         "gas_night" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_zombie_gas_pit_night",
+               "type" : "emitter_bound"
+            }
+         },
+         "gas_night_base" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_zombie_gas_pit_base_night",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "gas_day_base", "gas_night_base" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

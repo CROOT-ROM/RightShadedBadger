@@ -1,0 +1,88 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_fountain_treasure_chest.default": {
+      "initial_state": "spawn",
+      "states": {
+        "close": {
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_closed": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "variable.is_open"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "open_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open_idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "open_idle": {
+          "animations":  [
+            {
+              "open_idle": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(variable.is_open == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "close": "!variable.is_open"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "button_id": "button.deconstruct",
+    "key_id": "key.deconstruct",
+    "focus_impact": "neutral",
+    "deactivated_on_error":true,
+    "ui_slot": "right_trigger",
+    "ui_label": "key.deconstruct"
+  },
+  {
+    "button_id": "button.rotate_preview_clockwise",
+    "key_id": "key.rotatePreviewClockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_counterclockwise",
+    "key_id": "key.rotatePreviewCounterclockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.build_or_interact",
+    "key_id": "key.build",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.quick_build",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_hold",
+    "focus_impact": "neutral"
+  }
+]

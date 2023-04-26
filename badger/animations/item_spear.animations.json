@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item_spear.test": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_root_m": {
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.133333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,-6.727162230046879e-13,30.448688507080078]
+            },
+            "0.3": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,-1.8896223561576386e-12,85.52867126464844]
+            }
+          }
+        }
+      },
+      "loop": true
+    }
+  }
+}

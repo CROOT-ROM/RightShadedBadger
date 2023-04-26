@@ -1,0 +1,7 @@
+{
+	"name": "override_sky_wetlands",
+	"imgui_category": "Wetlands",
+	"imgui_prefix": "wetlands",
+	"is_override": true,
+	"fog_params": "curve.wetlands_fog_params"
+}

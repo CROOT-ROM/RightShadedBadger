@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:fountain_fast_travel_interact_zone"
+    },
+    "components": {
+      "badger:audio_interactable": {
+        "enter_range_audio_event": "BAE_UI_interact_highlight_fast_travel"
+      }
+    }
+  }
+}

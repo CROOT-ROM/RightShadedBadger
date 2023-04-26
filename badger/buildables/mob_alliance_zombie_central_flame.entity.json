@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_zombie_central_flame"
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority" : 10,
+        "max_distance" : 120.0,
+        "on_enter_bae" : "",
+        "music_states" :[
+          {
+            "state_name": "initial",
+            "audio_parameters": [
+                {"music_state" : 4.0},
+                {"music_poi_type" : 0.0}
+             ]
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_mob_alliance_zombie_central_flame_ambience"
+        },
+        "zombie_joined_the_battle": {
+          "audio": "BAE_MUS_Piglin_Combat_Stinger_Creeper_mob_alliance"
+        },
+        "on_piglin_combat_start": {
+          "audio": {
+            "event": "BAE_MUS_Piglin_Combat",
+            "is_music": true,
+            "music_type": "combat"
+          }
+        },
+        "on_piglin_combat_phase1": {
+          "audio": {
+            "event": "BAE_MUS_Piglin_Combat_Phase1",
+            "is_music": true,
+            "music_type": "combat"
+          }
+        },
+        "on_piglin_combat_phase2": {
+          "audio": {
+            "event": "BAE_MUS_Piglin_Combat_Phase2",
+            "is_music": true,
+            "music_type": "combat"
+          }
+        },
+        "on_piglin_combat_stop": {
+          "audio": {
+            "event": "BAE_MUS_Piglin_Combat_Stop",
+            "is_music": true,
+            "music_type": "combat"
+          }
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_mob_alliance_zombie_central_flame_damage_state_1"
+        },
+        "on_damage_applied_to_structure_2": {
+            "audio": "BAE_mob_alliance_zombie_central_flame_damage_state_2"
+        },
+        "on_damage_applied_to_structure_3": {
+            "audio": "BAE_mob_alliance_zombie_central_flame_damage_state_3"
+        }
+      }
+    }
+  }
+}

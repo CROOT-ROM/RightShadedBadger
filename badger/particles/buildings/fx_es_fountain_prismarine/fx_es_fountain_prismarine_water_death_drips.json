@@ -1,0 +1,85 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_es_fountain_prismarine_water_death_drips",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_blend_ramp_waterdrops_fp_water"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "components": {
+            "minecraft:emitter_local_space": {
+                "transform": true
+            },
+            "minecraft:emitter_rate_variable": {
+                "spawn_rate": 32,
+                "max_particles": 100
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 1
+            },
+            "minecraft:emitter_shape_box": {
+                "offset": [
+                    0,
+                    "math.random(1,2)",
+                    0
+                ],
+                "half_dimensions": [
+                    0.75,
+                    1.5,
+                    0.75
+                ],
+                "surface_only": false,
+                "direction": [
+                    "math.random(-1,1)",
+                    1,
+                    "math.random(-1,1)"
+                ],
+                "direction_mode": "custom"
+            },
+            "minecraft:particle_initial_speed": 0,
+            "badger:particle_noise_motion": {
+                "octaves": 4,
+                "speed": 0.6,
+                "radius": 0.7,
+                "direction_mode": "all_axes"
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "math.random(0.25,0.6)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_acceleration": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    "0.1",
+                    "0.1"
+                ],
+                "scale": [
+                    "0.9",
+                    "1.5"
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 8,
+                        "rows_count": 1,
+                        "frame_iteration": "row",
+                        "frame_start": "math.random(0, 2)"
+                    },
+                    "time_integration": {
+                        "mode": "fps",
+                        "frames_per_second": 16
+                    }
+                }
+            }
+        }
+    }
+}

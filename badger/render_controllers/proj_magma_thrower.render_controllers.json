@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.proj_magma_thrower": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_proj_magma_thrower": "MetaMaterial.mat_proj_magma_thrower"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_netherwart_warped_small_var02": {
+            "decoration": "deco_netherwart_warped_small_var02",
+            "textures": "blank"
+        }
+    }
+}

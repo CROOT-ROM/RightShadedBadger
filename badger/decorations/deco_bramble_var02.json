@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_bramble_var02": {
+      "geometry": "geometry.block_deco_bramble_var02_geo", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

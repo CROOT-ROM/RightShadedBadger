@@ -1,0 +1,10 @@
+{
+  "mushroom_ip_address": "localhost:27416",
+  "uploadlogfilelocation": "\\\\ad.blackbirdinteractive.com\\bbifiles\\Trough\\Gil\\BadgerDebugLogs",
+  "flatland_override" : {
+    "biome" : "grasslands",
+    "height": 50
+  },
+  "encoding_version" : 5,
+  "structure_options" : null
+}

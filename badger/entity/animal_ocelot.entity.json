@@ -1,0 +1,113 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 2
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 60,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_ocelot"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_ocelot_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_ocelot_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_ocelot_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_ocelot_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_ocelot_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_ocelot",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.animal_ocelot.climb_a",
+        "death_a": "animation.animal_ocelot.death_a",
+        "default": "controller.animation.animal_ocelot.default",
+        "flee_a": "animation.animal_ocelot.flee_a",
+        "hit_react": "controller.animation.animal_ocelot.hit_react",
+        "hit_react_a": "animation.animal_ocelot.hit_react_a",
+        "idle_a": "animation.animal_ocelot.idle_a",
+        "idle_b": "animation.animal_ocelot.idle_b",
+        "idles": "controller.animation.animal_ocelot.idles",
+        "knockback_a": "animation.animal_ocelot.knockback_a",
+        "locomotion": "controller.animation.animal_ocelot.locomotion",
+        "look_at": "animation.animal_ocelot.look_at",
+        "stun_a": "animation.animal_ocelot.stun_a",
+        "swim_a": "animation.animal_ocelot.swim_a",
+        "swim_idle_a": "animation.animal_ocelot.swim_idle_a",
+        "walk_a": "animation.animal_ocelot.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_ocelot"
+      },
+      "identifier": "badger:animal_ocelot",
+      "materials": {
+        "mat_animal_ocelot": "mat_animal_ocelot",
+        "mat_animal_ocelot_face": "mat_animal_ocelot_face",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_tiny",
+        "fx_death": "badger:fx_shared_death_smoke_tiny"
+      },
+      "render_controllers": ["controller.render.animal_ocelot"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "death": "BAE_animal_ocelot_death",
+        "death_poof_small": "BAE_animal_death_poof_small",
+        "dx_stun": "BAE_animal_ocelot_dx_stun",
+        "hurt": "BAE_animal_ocelot_hurt",
+        "idle": "BAE_animal_ocelot_idle"
+      },
+      "textures": {
+        "default": "textures/entity/animal_ocelot/tex_animal_ocelot_d"
+      }
+    }
+  }
+}

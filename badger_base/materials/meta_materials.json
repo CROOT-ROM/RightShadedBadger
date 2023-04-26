@@ -1,0 +1,121 @@
+{
+    "format_version": "1.8.0",
+    "base_entity": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 4,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "material": "entity_model",
+        "culling": "clockwise",
+        "blendmode": "premultiplied",
+        "uniforms": {
+            "OverlayColor": {
+                "is_packed_vec4": true,
+                "expression": "query.flash"
+            },
+            "TeamColor": [
+                "variable.team_status",
+                "0.0",
+                "0.0",
+                "0.0"
+            ],
+            "TileLightStrength": [
+                "1.0",
+                "0.0",
+                "0.0",
+                "0.0"
+            ],
+            "EmissiveTint": [
+                "1.0",
+                "1.0",
+                "1.0",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "coeffMap": "textures/entity/tex_default_coeff",
+            "emissiveMap": "textures/entity/tex_default_emissive",
+            "normalMap": "textures/entity/tex_default_normal"
+        }
+    },
+    "base_entity_uv_anim:base_entity": {
+        "uniforms": {
+            "UvAnim": {
+              "is_packed_vec4": true,
+              "expression": "query.face_anim"
+            }
+        }
+    },
+    "base_entity_face:base_entity_uv_anim": {},
+    "base_entity_hero:base_entity": {
+        "culling": "none",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 128,
+            "stencilmask": 128,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        }
+    },
+    "base_entity_hero_face:base_entity_hero": {
+        "uniforms": {
+            "UvAnim": {
+              "is_packed_vec4": true,
+              "expression": "query.face_anim"
+            }
+        }
+    },
+    "ui_entity_model": {
+        "material": "ui_entity_model",
+        "culling": "none",
+        "blendmode": "premultiplied",
+        "uniforms": {
+            "OverlayColor": [ "0.0", "0.0", "0.0", "0.0" ],
+            "TeamColor": [ "0.0", "0.0", "0.0", "0.0" ],
+            "TileLightStrength": [ "0.0", "0.0", "0.0", "0.0" ],
+            "UvAnim": [
+                "1.0",
+                "1.0",
+                "0.0",
+                "0.0"
+            ]
+        }
+    },
+    "ui_entity_face:ui_entity_model": {
+        "uniforms": {
+            "UvAnim": {
+              "is_packed_vec4": true,
+              "expression": "variable.face_anim"
+            }
+        }
+    },
+    "ui_entity_platform": {
+        "material": "ui_entity_platform",
+        "culling": "none",
+        "blendmode": "premultiplied",
+        "pass": "Transparent"
+    }
+}

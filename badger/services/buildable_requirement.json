@@ -1,0 +1,18 @@
+{
+    "badger:buildable_requirement": {
+        "max_build_messages": 6,
+        "build_checks": [
+            "max_steepness",
+            "unlocks",
+            "resource_cap",
+            "collisions",
+            "fees",
+            "max_height",
+            "max_foundation",
+            "tickets",
+            "valid_area",
+            "zones",
+			"structure_limits"
+        ]
+    }
+}

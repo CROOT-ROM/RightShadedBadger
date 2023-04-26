@@ -1,0 +1,150 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_vo_sequence_speaker_tag": {
+        "speaker_tag": "badger:host_foresight"
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mob_generic_tiny"
+      },
+      "badger:face_animation": {
+        "anim_columns": 7,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 3.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1.25
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "color": [
+              0.25,
+              0.875,
+              1
+            ],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 3,
+            "locator": "loc_fx_light",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "fast_travel_start": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_2_medium",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_arrive": {
+          "audio": "BAE_host_generic_teleport_arrive",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_2_medium",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_leave": {
+          "audio": "BAE_host_generic_teleport_leave",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_2_medium",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "remove_ghost": {
+          "script": "skin_off"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:host_foresight"
+      }
+    },
+    "description": {
+      "animations": {
+        "behaviors": "controller.animation.host_foresight.behaviors",
+        "cheer_a": "animation.host_foresight.cheer_a",
+        "cheer_b": "animation.host_foresight.cheer_b",
+        "default": "controller.animation.host_foresight.default",
+        "guarded_a": "animation.host_foresight.guarded_a",
+        "happy_a": "animation.host_foresight.happy_a",
+        "host_foresight_nis_mst06_c06b": "animation.host_foresight_nis_victory.host_foresight_nis_mst06_c06b",
+        "idle_a": "animation.host_foresight.idle_a",
+        "idle_b": "animation.host_foresight.idle_b",
+        "nis_victory": "animation.host_foresight.nis_victory",
+        "sentinal_a": "animation.host_foresight.sentinal_a",
+        "spawn_a": "animation.host_foresight.spawn_a",
+        "talk_a": "animation.host_foresight.talk_a",
+        "walk_b": "animation.host_foresight.walk_b",
+        "walk_happy": "animation.host_foresight.walk_happy",
+        "walk_scared": "animation.host_foresight.walk_scared"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "skin_off": "variable.second_skin_vis = 0; variable.mat_opacity = 1; variable.pass_index = 1;"
+      },
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Top Eye Closed",
+        "Upper Mid Eye Closed",
+        "Lower Mid Eye Closed",
+        "Bottom Eye Closed",
+        "Looking Up"
+      ],
+      "geometry": {
+        "default": "geometry.host_foresight"
+      },
+      "identifier": "badger:host_foresight",
+      "materials": {
+        "mat_fx_host": "mat_fx_host",
+        "mat_host_foresight": "mat_host_foresight",
+        "mat_host_foresight_face": "mat_host_foresight_face"
+      },
+      "render_controllers": [
+        "controller.render.host_foresight"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": [
+          "variable.second_skin_vis = 1;",
+          "variable.mat_opacity = 0.75;",
+          "variable.pass_index = 5;"
+        ]
+      },
+      "sound_effects": {
+        "cheer_b": "BAE_host_foresight_cheer_b",
+        "move_cheer": "BAE_host_foresight_move_cheer",
+        "move_glide": "BAE_host_foresight_move_glide",
+        "move_guarded": "BAE_host_foresight_move_guarded",
+        "move_happy": "BAE_host_foresight_move_happy",
+        "move_idle": "BAE_host_foresight_move_idle",
+        "move_jump": "BAE_host_foresight_move_jump",
+        "move_talk": "BAE_host_foresight_move_talk",
+        "move_wide": "BAE_host_foresight_move_wide",
+        "spawn": "BAE_host_foresight_spawn",
+        "walk_move": "BAE_host_foresight_walk_move",
+        "walk_stop": "BAE_host_foresight_walk_stop"
+      }
+    }
+  }
+}

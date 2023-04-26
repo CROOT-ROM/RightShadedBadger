@@ -1,0 +1,63 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_golem_shield_head_parts",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_spin_bits_green" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:particle_advanced_motion_dynamic" : {
+            "integration_mode" : "velocity",
+            "linear_velocity" : [ 0.0, 1.5, 0.0 ]
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.3, 0.3 ],
+            "initial_scale" : [ 0.7, 1.0 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 7,
+                  "frame_end" : 6,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 2
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         },
+         "minecraft:emitter_rate_steady" : {
+            "max_particles" : 150.0,
+            "spawn_rate" : 70.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.75, 0.75, 0.75 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.157, 0.824, 0.157, 1.0 ],
+               "0.500000" : [ 0.157, 0.824, 0.157, 0.5 ],
+               "0.750000" : [ 0.157, 0.824, 0.157, 0.5 ],
+               "1.000000" : [ 0.157, 0.824, 0.157, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : "Math.random(3.0,4.0)",
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(0.5,1.0)"
+         },
+         "minecraft:particle_motion_collision" : {
+            "coefficient_of_restitution" : 0.5,
+            "collision_drag" : 4.0,
+            "collision_radius" : 0.1
+         }
+      }
+   }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_lava_thrower_spike:base_entity": {
+        "uniforms": {
+            "BaseColor": [
+                1,
+                "variable.mat_charge",
+                "variable.mat_charge",
+                1
+            ],
+            "EmissiveColor": [
+                1,
+                "variable.mat_charge",
+                "variable.mat_charge",
+                10.0
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_magma_thrower_d",
+            "coeffMap": "textures/entity/tex_proj_magma_thrower_mr",
+            "emissiveMap": "textures/entity/tex_proj_magma_thrower_e",
+            "normalMap": "textures/entity/tex_proj_magma_thrower_n"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_stone_gate_timeline",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "dust_volume_gate" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_dust_volume_gate",
+               "type" : "emitter_bound"
+            }
+         },
+         "dust_volume_left" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_dust_volume_left",
+               "type" : "emitter_bound"
+            }
+         },
+         "dust_volume_right" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_dust_volume_right",
+               "type" : "emitter_bound"
+            }
+         },
+         "gate_door" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_door",
+               "type" : "emitter_bound"
+            }
+         },
+         "stone_left" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_initial_debris_left",
+               "type" : "emitter_bound"
+            }
+         },
+         "stone_right" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_stone_gate_initial_debris_right",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "timeline" : {
+               "0.010000" : [ "gate_door", "dust_volume_gate", "stone_left", "stone_right" ],
+               "0.310000" : [ "dust_volume_left" ],
+               "0.320000" : [ "dust_volume_right" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

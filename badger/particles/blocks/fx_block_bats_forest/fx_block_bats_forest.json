@@ -1,0 +1,143 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_bats_forest",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cutout_bat" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 65.0
+         }
+      },
+      "components" : {
+         "badger:particle_advanced_motion_dynamic" : {
+            "integration_mode" : "velocity",
+            "linear_velocity" : [
+               "(variable.motion_x * 16) * (query.particle_random_1 * (query.particle_random_2 > 0.5 ? 1.0 : -1.0))",
+               "(((variable.motion_y * 17) *query.particle_random_2))",
+               "(variable.motion_x * 16) * (query.particle_random_3 * (query.particle_random_3 > 0.5 ? 1.0 : -1.0))"
+            ]
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.38, 0.38 ],
+            "facing_camera_mode" : "rotate_y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 3,
+                  "frame_end" : 2,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 2
+               },
+               "time_integration" : {
+                  "frames_per_second" : 15.0,
+                  "mode" : "fps"
+               }
+            }
+         },
+         "minecraft:emitter_rate_camera" : {
+            "base_spawn_rate" : "math.lerp(0.25, 0.6, query.emitter_random_2) * (query.emitter_is_night)",
+            "boost_duration" : 0.0,
+            "camera_reset_distance" : 61.0,
+            "camera_trigger_distance" : 55.0,
+            "max_particles" : 2
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.5, 0.5, 0.5 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "base_color" : [ 0.0, 0.0, 0.0, 1.0 ],
+            "interpolant" : "query.particle_age/query.particle_lifetime"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(3.8,6)"
+         }
+      },
+      "curves" : {
+         "variable.motion_x" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.0, 0.0 ],
+                  "tangent_a" : [ 0.035, 0.35 ],
+                  "tangent_b" : [ -0.035, -0.35 ]
+               },
+               {
+                  "position" : [ 0.089, 0.391 ],
+                  "tangent_a" : [ 0.114, -0.012 ],
+                  "tangent_b" : [ -0.114, 0.012 ]
+               },
+               {
+                  "position" : [ 0.207, 0.003 ],
+                  "tangent_a" : [ 0.163, -0.012 ],
+                  "tangent_b" : [ -0.163, 0.012 ]
+               },
+               {
+                  "position" : [ 0.336, 0.507 ],
+                  "tangent_a" : [ 0.153, 0.0 ],
+                  "tangent_b" : [ -0.153, 0.0 ]
+               },
+               {
+                  "position" : [ 0.466, 0.009 ],
+                  "tangent_a" : [ 0.134, -0.012 ],
+                  "tangent_b" : [ -0.134, 0.012 ]
+               },
+               {
+                  "position" : [ 0.601, -0.861 ],
+                  "tangent_a" : [ 0.143, 0.0 ],
+                  "tangent_b" : [ -0.143, 0.0 ]
+               },
+               {
+                  "position" : [ 0.726, 0.003 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 1.0, -0.011 ],
+                  "tangent_a" : [ 0.153, -0.023 ],
+                  "tangent_b" : [ -0.153, 0.023 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         },
+         "variable.motion_y" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.0, 0.007 ],
+                  "tangent_a" : [ 0.069, 0.153 ],
+                  "tangent_b" : [ -0.069, -0.153 ]
+               },
+               {
+                  "position" : [ 0.171, 0.982 ],
+                  "tangent_a" : [ 0.18, -0.017 ],
+                  "tangent_b" : [ -0.18, 0.017 ]
+               },
+               {
+                  "position" : [ 0.327, -0.293 ],
+                  "tangent_a" : [ 0.127, 0.0 ],
+                  "tangent_b" : [ -0.127, -0.0 ]
+               },
+               {
+                  "position" : [ 0.555, 0.009 ],
+                  "tangent_a" : [ 0.336, -0.006 ],
+                  "tangent_b" : [ -0.336, 0.006 ]
+               },
+               {
+                  "position" : [ 0.805, -0.519 ],
+                  "tangent_a" : [ 0.208, 0.023 ],
+                  "tangent_b" : [ -0.208, -0.023 ]
+               },
+               {
+                  "position" : [ 1.0, -0.016 ],
+                  "tangent_a" : [ 0.197, -0.069 ],
+                  "tangent_b" : [ -0.197, 0.069 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

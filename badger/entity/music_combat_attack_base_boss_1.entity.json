@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_attack_base_boss_1",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:threat_owner": {
+        "influence_distance": 80,
+        "max_threat": 200,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 1.0
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_attack_base_boss"
+        }
+      },
+      "badger:music_2d_emitter": {
+        "priority": 200,
+        "max_distance": 100.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "initial",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

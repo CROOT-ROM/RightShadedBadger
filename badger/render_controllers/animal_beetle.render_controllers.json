@@ -1,0 +1,32 @@
+{
+  "render_controllers": {
+    "controller.render.animal_beetle": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_beetle": "MetaMaterial.mat_animal_beetle"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        },
+        {
+          "mat_animal_beetle_face": "MetaMaterial.mat_animal_beetle_face"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_mount_gear": "variable.geo_mount_gear_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

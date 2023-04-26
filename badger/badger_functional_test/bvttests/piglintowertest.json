@@ -1,0 +1,27 @@
+{
+	"test-name": "piglin-tower-test",
+	"test-description": "Verify piglin towers can kill mobs and players",
+	"test-duration": 90,
+	"runAsPartOfCompleteTestSuite": true,
+	"gamemode": "editor",
+	"platforms": [ "Win32", "Windows10", "Xbox" ],
+	"commands": [
+		"/gm true",
+		"/assignteam @s team_one",
+		"/sm badger:mob_golem_wood 1 0 52 0",
+		"/testdelay 1",
+		"/verifymobsinarea badger:mob_golem_wood 1 team_one 0 50 0 100",
+		"/assignteam @s piglin_team",
+		"/testdelay 1",
+		"/pv badger:tower_piglin_arrow none true true piglin_team 10 50 10",
+		"/testdelay 25",
+		"/verifymobsinarea badger:mob_golem_wood 0 team_one 0 50 0 100",
+		"/teleport @s 5 50 5",
+		"/testdelay 1",
+		"/verifymobsinarea minecraft:player 1 piglin_team 5 50 5 2",
+		"/gm false",
+		"/assignteam @s team_one",
+		"/testdelay 15",
+		"/verifymobsinarea minecraft:player 0 team_one 5 50 5 2"
+	]
+}

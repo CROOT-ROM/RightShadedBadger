@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0", 
+  "mat_shared_block_plants_cloth:base_block_cutout": {
+    "material": "DecorationsFancy",
+    "culling": "none",
+    "textures": {
+      "diffuseMap": "textures/blocks/tex_shared_block_plants_d", 
+      "coeffMap": "textures/blocks/tex_shared_block_plants_mr", 
+      "emissiveMap": "textures/blocks/tex_shared_block_plants_e",
+      "normalMap": "textures/blocks/tex_shared_block_plants_n"
+    }
+  }
+}

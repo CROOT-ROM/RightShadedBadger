@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_bone_netherack_bottom":
+     {
+      "textures":      {
+        "up": "textures/blocks/tex_block_bone",
+        "down": "textures/blocks/tex_block_netherrack",
+        "side": "textures/blocks/tex_block_bone_netherack_bottom"
+    }
+    }
+  }
+}

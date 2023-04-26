@@ -1,0 +1,16 @@
+{
+  "render_controllers": {
+    "controller.render.allay_celebration": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_allay_gather": "MetaMaterial.mat_allay_gather"
+        },
+        {
+          "mat_allay_construction": "MetaMaterial.mat_allay_construction"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

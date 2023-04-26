@@ -1,0 +1,506 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_final_boss.default": {
+      "initial_state": "idle",
+      "states": {
+        "bash_attack_action": {
+          "animations":  [
+            {
+              "bash_attack_action": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "bash_attack_windup": {
+          "animations":  [
+            {
+              "bash_attack_windup": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "bash_attack_action": "variable.sync_bash_attack"
+            }
+          ]
+        },
+        "death_interrupt": {
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "geyser_attack": {
+          "animations":  [
+            {
+              "geyser_attack": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.fx_geyser_charge = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.idlechooser = math.random(0,500);"],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.idlechooser = math.random(0,5);"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "melee_attack_windup_a": "variable.melee_attack_1"
+            },
+            {
+              "ranged_attack_windup": "variable.ranged_attack_1"
+            },
+            {
+              "geyser_attack": "(variable.geyser_attack_fighter || (variable.geyser_attack_disruptor || variable.geyser_attack_sieger))"
+            },
+            {
+              "bash_attack_windup": "variable.bash_attack"
+            },
+            {
+              "spin_charge_attack_windup": "variable.spin_charge_attack_1"
+            },
+            {
+              "wof_behavior_loop": "variable.badger_behavior_piglin_final_boss_wof"
+            }
+          ]
+        },
+        "melee_action_a": {
+          "animations":  [
+            {
+              "melee_action_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "melle_attack_windup_b": "query.any_animation_finished"
+            }
+          ]
+        },
+        "melee_action_b": {
+          "animations":  [
+            {
+              "melee_action_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "melee_attack_windup_a": {
+          "animations":  [
+            {
+              "melee_windup_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "melee_action_a": "variable.sync_melee_attack_1"
+            }
+          ]
+        },
+        "melle_attack_windup_b": {
+          "animations":  [
+            {
+              "melee_windup_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "melee_action_b": "variable.sync_melee_attack_2"
+            }
+          ]
+        },
+        "ranged_attack_action_a": {
+          "animations":  [
+            {
+              "ranged_attack_action_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "ranged_attack_action_b": "variable.sync_ranged_attack_2"
+            }
+          ]
+        },
+        "ranged_attack_action_b": {
+          "animations":  [
+            {
+              "ranged_attack_action_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "ranged_attack_action_c": "variable.sync_ranged_attack_3"
+            }
+          ]
+        },
+        "ranged_attack_action_c": {
+          "animations":  [
+            {
+              "ranged_attack_action_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "ranged_attack_windup": {
+          "animations":  [
+            {
+              "ranged_attack_windup": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "ranged_attack_action_a": "variable.sync_ranged_attack_1"
+            }
+          ]
+        },
+        "spin_charge_attack_action_a": {
+          "animations":  [
+            {
+              "spin_charge_attack_action_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spin_charge_attack_action_b": "variable.sync_spin_charge_attack_2"
+            },
+            {
+              "idle": "variable.interrupted"
+            },
+            {
+              "death_interrupt": "variable.is_dead"
+            }
+          ]
+        },
+        "spin_charge_attack_action_b": {
+          "animations":  [
+            {
+              "spin_charge_attack_action_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spin_charge_attack_action_c": "variable.sync_spin_charge_attack_3"
+            },
+            {
+              "idle": "variable.interrupted"
+            },
+            {
+              "death_interrupt": "variable.is_dead"
+            }
+          ]
+        },
+        "spin_charge_attack_action_c": {
+          "animations":  [
+            {
+              "spin_charge_attack_action_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.is_spin = 0;","variable.in_spin = 0;","variable.out_spin = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death_interrupt": "variable.is_dead"
+            }
+          ]
+        },
+        "spin_charge_attack_windup": {
+          "animations":  [
+            {
+              "spin_charge_attack_windup": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.in_spin = 1;","variable.is_spin = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.in_spin = 0;"],
+          "transitions":  [
+            {
+              "spin_charge_attack_action_a": "variable.sync_spin_charge_attack_1"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "bash_attack_windup": "variable.bash_attack"
+            },
+            {
+              "geyser_attack": "variable.geyser_attack_sieger"
+            },
+            {
+              "spin_charge_attack_windup": "variable.spin_charge_attack_1"
+            },
+            {
+              "ranged_attack_windup": "variable.ranged_attack_1"
+            },
+            {
+              "melee_attack_windup_a": "variable.melee_attack_1"
+            },
+            {
+              "walk": "(query.speed > 0)"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "stop": "(query.speed <= 0)"
+            },
+            {
+              "spin_charge_attack_windup": "variable.spin_charge_attack_1"
+            },
+            {
+              "ranged_attack_windup": "variable.ranged_attack_1"
+            },
+            {
+              "melee_attack_windup_a": "variable.melee_attack_1"
+            },
+            {
+              "bash_attack_windup": "variable.bash_attack"
+            },
+            {
+              "geyser_attack": "variable.geyser_attack_sieger"
+            }
+          ]
+        },
+        "wof_behavior_loop": {
+          "animations":  [
+            {
+              "intro_a_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    },
+    "controller.animation.piglin_final_boss.fx_controller": {
+      "initial_state": "idle_fx",
+      "states": {
+        "idle_fx": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_shoulder_lightning",
+              "enabled": true,
+              "locator": "loc_fx_shoulder_r"
+            },
+            {
+              "effect": "fx_shoulder_lightning",
+              "enabled": true,
+              "locator": "loc_fx_shoulder_l"
+            },
+            {
+              "effect": "fx_weapon_lightning",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning01",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning02",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_cntr",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_core",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning03",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_parts_idle",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_final_boss.idle": {
+      "initial_state": "entry_exit",
+      "states": {
+        "entry_exit": {
+          "animations":  [
+            {
+              "idle_f": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.idlechooser = math.random(0,500);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle_a": "((variable.idlechooser >= 0) && (variable.idlechooser < 100))"
+            },
+            {
+              "idle_b": "((variable.idlechooser >= 100) && (variable.idlechooser < 200))"
+            },
+            {
+              "idle_c": "((variable.idlechooser >= 200) && (variable.idlechooser < 300))"
+            },
+            {
+              "idle_d": "((variable.idlechooser >= 300) && (variable.idlechooser < 400))"
+            },
+            {
+              "idle_e": "((variable.idlechooser >= 400) && (variable.idlechooser <= 500))"
+            }
+          ]
+        },
+        "idle_a": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "entry_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle_b": {
+          "animations":  [
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "entry_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle_c": {
+          "animations":  [
+            {
+              "idle_c": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "entry_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle_d": {
+          "animations":  [
+            {
+              "idle_d": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "entry_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle_e": {
+          "animations":  [
+            {
+              "idle_e": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "entry_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

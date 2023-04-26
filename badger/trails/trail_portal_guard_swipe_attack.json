@@ -1,0 +1,15 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+		"identifier" : "badger:trail_portal_guard_attack",
+        "start_distance": 0.0,
+        "length": 8.0,
+        "width": 0.75,
+		"fade_hold": 0.31,
+		"fade_time": 0.32,
+		"life_time": 0.23,
+		"shrink_hold": 10.01,
+		"shrink_time": 10.02,		
+        "material": "mat_trail_swipe"
+    }
+}

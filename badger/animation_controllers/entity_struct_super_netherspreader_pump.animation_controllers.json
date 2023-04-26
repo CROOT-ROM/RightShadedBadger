@@ -1,0 +1,73 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_super_netherspreader_pump.default": {
+      "initial_state": "spawn",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "default": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "pump": "variable.sync_main_attack"
+            }
+          ]
+        },
+        "pump": {
+          "animations":  [
+            {
+              "pump_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "default": "(variable.sync_main_attack == 0)"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_electric",
+              "enabled": true,
+              "locator": "loc_fx_pump"
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

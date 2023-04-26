@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "mat_entity_struct_nether_spreader_active_static:base_entity_static": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 16,
+      "stencilmask": 255,
+      "frontface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      },
+      "backface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      }
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_entity_struct_nether_spreader_active",
+      "coeffMap": "textures/entity/tex_entity_struct_nether_spreader_mr",
+      "emissiveMap": "textures/entity/tex_entity_struct_nether_spreader_active_e",
+      "normalMap": "textures/entity/tex_entity_struct_nether_spreader_active_n"
+    }
+  }
+}

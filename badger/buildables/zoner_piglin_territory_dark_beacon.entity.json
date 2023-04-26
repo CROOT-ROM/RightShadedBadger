@@ -1,0 +1,404 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:zoner_piglin_territory_dark_beacon"
+        },
+        "components": {
+            "badger:invasion_icon": {
+                "icon_color": [
+                  0.737,
+                  0.22,
+                  0.769,
+                  1.0
+                ]
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_piglin_dark_beacon_idle"
+                },
+                "on_construction_end": {
+                    "audio": "BAE_piglin_dark_beacon_beam",
+                    "particles": [
+                        {
+                            "effect": "badger:fx_zoner_piglin_core",
+                            "locator": "loc_fx_main",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_core_parts",
+                            "locator": "loc_fx_main",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_dark_beam",
+                            "locator": "loc_fx_top",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_electric_l_bottom",
+                            "locator": "loc_fx_frame_l_bottom",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_electric_r_bottom",
+                            "locator": "loc_fx_frame_r_bottom",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_electric_l_bottom",
+                            "locator": "loc_fx_frame_l_bottom02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_piglin_combat_authored_tactic": {
+                    "audio": "BAE_MUS_Piglin_Combat_Stinger_AuthoredTactic"
+                },
+                "on_damage_applied_to_structure_0": {
+                    "audio": "BAE_piglin_dark_beacon_transition_stage1",
+                    "visual_state": {
+                        "type": "on_structure_damage_low"
+                    }
+                },
+                "on_damage_applied_to_structure_1": {
+                    "audio": "BAE_piglin_dark_beacon_transition_stage1",
+                    "visual_state": {
+                        "type": "on_structure_damage_medium"
+                    },
+                    "particles": [
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_06",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_damage_applied_to_structure_2": {
+                    "visual_state": {
+                        "type": "on_structure_damage_medium"
+                    }
+                },
+                "on_damage_applied_to_structure_3": {
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    }
+                },
+                "on_damage_applied_to_structure_4": {
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    }
+                },
+                "on_damage_applied_to_structure_5": {
+                    "audio": "BAE_piglin_dark_beacon_transition_stage2",
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    },
+                    "particles": [
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_06",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning",
+                            "locator": "loc_fx_pillar_01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning02",
+                            "locator": "loc_fx_pillar_03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning02",
+                            "locator": "loc_fx_pillar_04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_damage_applied_to_structure_6": {
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    }
+                },
+                "on_damage_applied_to_structure_7": {
+                    "audio": "BAE_piglin_dark_beacon_transition_stage3",
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    },
+                    "particles": [
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_stairs05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+                            "locator": "loc_fx_back_stairs02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_01",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_03",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_04",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_pillar",
+                            "locator": "loc_fx_pillar_06",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning01",
+                            "locator": "loc_fx_pillar_02",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning03",
+                            "locator": "loc_fx_pillar_05",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_damage_frame_lightning01",
+                            "locator": "loc_fx_pillar_06",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        },
+                        {
+                            "effect": "badger:fx_zoner_piglin_full_frame_lightning",
+                            "locator": "loc_fx_main",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_damage_applied_to_structure_8": {
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    }
+                },
+                "on_damage_applied_to_structure_9": {
+                    "visual_state": {
+                        "type": "on_structure_damage_high"
+                    }
+                },
+                "on_batch_spawn": {
+                    "particles": [
+                        {
+                            "effect": "badger:fx_zoner_piglin_core_spawn",
+                            "locator": "loc_fx_main",
+                            "bind_to_actor": true,
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_building_destroyed": {
+                    "audio": "BAE_piglin_dark_beacon_destroyed"
+                }
+            }
+        }
+    }
+}

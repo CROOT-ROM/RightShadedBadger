@@ -1,0 +1,32 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_grenadier": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_grenadier": "MetaMaterial.mat_piglin_grenadier"
+        },
+        {
+          "mat_piglin_grenadier_face": "MetaMaterial.mat_piglin_grenadier_face"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "mushroom_geo": "variable.mushroom_geo_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

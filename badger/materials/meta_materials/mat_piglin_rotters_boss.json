@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_rotters_boss:base_entity": {
+    "pass": "AlphaTest",
+    "uniforms": {
+      "ClippingDelay": 0.3
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_rotters_boss_d",
+      "coeffMap": "textures/entity/tex_piglin_rotters_boss_mr",
+      "emissiveMap": "textures/entity/tex_piglin_rotters_boss_e",
+      "normalMap": "textures/entity/tex_piglin_rotters_boss_n"
+    }
+  }
+}

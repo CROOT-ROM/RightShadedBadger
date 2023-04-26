@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:item_prismarine",
+        "static": true
+      },
+      "badger:presentation_event": {
+        "on_item_collected": {
+          "audio": "BAE_hero_pickup_prismarine"
+        },
+        "on_item_collected_arrived": {
+          "audio": "BAE_hero_pickup_prismarine_stop"
+        }  
+      },
+      "badger:template": ["badger:template_item_orb"]
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.item_prismarine"
+      },
+      "identifier": "badger:item_prismarine",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_prismarine": "mat_item_prismarine"
+      },
+      "render_controllers": ["controller.render.item_prismarine"]
+    }
+  }
+}

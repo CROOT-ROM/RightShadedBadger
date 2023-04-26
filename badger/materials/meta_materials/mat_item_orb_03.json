@@ -1,0 +1,9 @@
+{
+  "format_version": "1.8.0",
+  "mat_item_orb_03:base_entity_static": {
+    "material": "item_drops",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_item_orb_03_d"
+    }
+  }
+}

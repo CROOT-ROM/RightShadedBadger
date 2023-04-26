@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:poi_tower_04_child_turret"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:presentation_event": {
+        "stun_tower_triggered": {
+          "audio": "BAE_TODO_Oneshot_3d",
+          "particles": {
+            "effect": "badger:fx_temp_impact",
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}

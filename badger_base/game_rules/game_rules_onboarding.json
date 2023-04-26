@@ -1,0 +1,35 @@
+{
+  "defaults": {
+    "dofogofwar": false,
+    "dodaylightcycle": false,
+    "doweathercycle": false,
+    "enablecinematicdeaths": true,
+    "doplayersinvincible": true,
+    "bsharpenabled": true,
+    "campaignactsenabled": false,
+    "mapenabled": false,
+    "precachestructures": true,
+    "teamcolors": false,
+    "entitystreamingenabled": true,
+    "autosaveenabled": false,
+    "saveonquitenabled": false,
+    "creativemodedefault": false,
+    "difficultymodeenabled": false,
+    "popcapenabled": false,
+    "worldsizeaxischunks": 500,
+    "onboardingenabledcampaign": true,
+    "onboardingenabledpvp": false,
+    "enableunlocks": true,
+    "randomstartingteam": false,
+    "campaignobjectivehealthbars": true,
+    "exclusiveluredunits": true,
+    "skip_lobby_creation": true,
+    "use_flatlands_level_id": true,
+    "generator_type": "overworld",
+    "enable_vo_cue_notifications_from_client_to_server": true
+  },
+  "badger:template": {
+    "parent": "game_rules",
+    "game_mode": "onboarding"
+  }
+}

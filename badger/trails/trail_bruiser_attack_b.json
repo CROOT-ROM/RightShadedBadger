@@ -1,0 +1,15 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+        "identifier": "badger:trail_bruiser_attack_b",
+        "start_distance": 0.0,
+        "length": 2.75,
+        "width": 0.5,
+        "fade_hold": 0.5,
+        "fade_time": 0.0,
+        "life_time": 0.20,
+        "shrink_hold": 10.01,
+        "shrink_time": 10.02,
+        "material": "mat_trail_bruiser_360_swipe"
+    }
+}

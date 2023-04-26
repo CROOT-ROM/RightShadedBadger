@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_magma_cube_sml:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_piglin_magma_cube_sml_d",
+            "coeffMap": "textures/entity/tex_piglin_magma_cube_sml_mr",
+            "emissiveMap": "textures/entity/tex_piglin_magma_cube_sml_e",
+            "normalMap": "textures/entity/tex_piglin_magma_cube_sml_n"
+        }
+    }
+}

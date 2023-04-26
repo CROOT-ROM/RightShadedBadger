@@ -1,0 +1,25 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_obelisk_health_buff_04": {
+            "geometry": "geometry.block_deco_obelisk_health_buff_04",
+            "shadow": true,
+            "up": "world", 
+            "forward": "surface",
+            "type": "horizon",
+            "random_orientation": false,
+            "wind_strength": 0.0,
+            "collision": {
+                "mode" : "instance",
+                "intensity": 0.0
+               },
+               "point_light": {
+                "radius": 16.0,
+                "intensity": 8.0,
+                "color": [ 0.0, 0.71, 0.65 ],
+                "offset": [ 0.0, 0.5, 0.0 ],
+                "falloff_power": 2.0
+            }
+        }
+    }
+}

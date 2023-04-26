@@ -1,0 +1,51 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_engineer_sparks",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_add_hit_sparks03" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : -1.0,
+            "suspend_distance" : 300.0
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "emission_mode" : "base",
+            "offset" : [ 0.0, 0.2, 0.0 ],
+            "radius" : 0.1,
+            "vertical_angle" : 45.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.7, 0.7 ],
+            "initial_scale" : [ 1.0, 1.25 ],
+            "animated_scale" : "Math.pow(3*query.particle_normalized_age,0.3)",
+            "facing_camera_mode" : "lookat_direction",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 3,
+                  "frame_end" : 8,
+                  "rows_count" : 3
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.5
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 1000.0,
+            "spawn_rate" : "math.random(1,10)"
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(0.1,0.2)"
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

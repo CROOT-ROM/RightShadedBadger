@@ -1,0 +1,85 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_well_of_fate_corrupted_beam",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 350.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.is_disabled" ]
+      },
+      "events" : {
+         "ashes" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_beam_ashes",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_beam_purple",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam_mesh_electric" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_beam_mesh_electric",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_beam_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "electric_cube" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_electric_cube",
+               "type" : "emitter_bound"
+            }
+         },
+         "electric_cube_burst" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_electric_cube_burst",
+               "type" : "emitter_bound"
+            }
+         },
+         "lightning_top" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_lightning_top",
+               "type" : "emitter_bound"
+            }
+         },
+         "squares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_corrupted_squares_up",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "beam",
+               "beam_parts",
+               "squares",
+               "ashes",
+               "electric_cube",
+               "electric_cube_burst",
+               "lightning_top",
+               "beam_mesh_electric"
+            ]
+         },
+         "minecraft:emitter_lifetime_once" : {},
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         }
+      }
+   }
+}

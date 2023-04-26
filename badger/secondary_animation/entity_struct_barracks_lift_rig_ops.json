@@ -1,0 +1,20 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.entity_struct_barracks_lift_light": {
+      "rig": "badger:entity_struct_barracks_lift",
+      "enabled": "variable.light_flare_start",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0,
+          "domain_b": 2,
+          "output": "v.light_flare",
+          "range_a": 1,
+          "range_b": 0
+        }
+      ]
+    }
+  }
+}

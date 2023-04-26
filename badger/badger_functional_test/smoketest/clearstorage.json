@@ -1,0 +1,13 @@
+{
+  "test-name": "z-clear-storage-test",
+  "test-description": "Clear Xbox Cloud Storage",
+  "test-duration":300,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "disablebsharp": true,
+  "platforms": ["Xbox"],
+  "commands": [
+    "/clearxgamesavestorage",
+	"/testdelay 30"
+  ]
+}

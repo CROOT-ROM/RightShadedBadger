@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_piglin_extender"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_piglin_extender.death_a",
+        "default": "controller.animation.entity_struct_piglin_extender.default",
+        "idle_a": "animation.entity_struct_piglin_extender.idle_a",
+        "spawn_a": "animation.entity_struct_piglin_extender.spawn_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_piglin_extender"
+      },
+      "identifier": "badger:entity_struct_piglin_extender",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin",
+        "mat_shared_block_entity_piglin_glass": "mat_shared_block_entity_piglin_glass"
+      },
+      "particle_effects": {
+        "fx_death": "badger:fx_destruction_piglin_extender"
+      },
+      "render_controllers": ["controller.render.entity_struct_piglin_extender"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "skull_move": "BAE_piglin_extender_skull_vox",
+        "skull_zoom_in": "BAE_piglin_extender_skull_zoom_in",
+        "skull_zoom_out": "BAE_piglin_extender_skull_zoom_out"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_banner": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_banner": "MetaMaterial.mat_item_banner"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

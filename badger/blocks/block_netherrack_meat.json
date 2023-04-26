@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_netherrack_meat": {
+      "textures": {
+        "down": "textures/blocks/tex_block_netherrack_meat_front", 
+        "up": "textures/blocks/tex_block_netherrack_meat_front", 
+        "side": "textures/blocks/tex_block_netherrack_meat"
+      }
+    }
+  }
+}

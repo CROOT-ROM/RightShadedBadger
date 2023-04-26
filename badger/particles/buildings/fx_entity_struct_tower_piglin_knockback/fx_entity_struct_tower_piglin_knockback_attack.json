@@ -1,0 +1,150 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_entity_struct_tower_piglin_knockback_attack",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 150.0
+         }
+      },
+      "events" : {
+         "aoe_cloud" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_aoe_cloud",
+               "type" : "emitter_bound"
+            }
+         },
+         "aoe_cloud_small" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_aoe_cloud_small",
+               "type" : "emitter_bound"
+            }
+         },
+         "aoe_nether_kickup" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_aoe_nether_kickup",
+               "type" : "emitter_bound"
+            }
+         },
+         "aoe_nether_kickup_near" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_aoe_nether_kickup_near",
+               "type" : "emitter_bound"
+            }
+         },
+         "netherspreader_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 35.0, 35.0, 35.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.9,
+                  "lifetime" : 5.0,
+                  "texture" : "decal_cracks_big"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_netherspreader"
+               }
+            }
+         },
+         "pump_impact_cloud" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_pump_impact_cloud",
+               "type" : "emitter_bound"
+            }
+         },
+         "pump_impact_spores" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_pump_impact_spores",
+               "type" : "emitter_bound"
+            }
+         },
+         "pump_impact_spores_top" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_pump_impact_spores_top",
+               "type" : "emitter_bound"
+            }
+         },
+         "reset_spores" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_reset_spores_spawner",
+               "type" : "emitter_bound"
+            }
+         },
+         "vent_blast_1" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_vent_blast_1",
+               "type" : "emitter_bound"
+            }
+         },
+         "vent_blast_2" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_vent_blast_2",
+               "type" : "emitter_bound"
+            }
+         },
+         "vent_blast_3" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_vent_blast_3",
+               "type" : "emitter_bound"
+            }
+         },
+         "vent_blast_4" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_piglin_knockback_attack_vent_blast_4",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.0, 0.0 ],
+            "facing_camera_mode" : "emitter_transform_xy",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 10,
+                  "frame_end" : 29,
+                  "rows_count" : 3
+               },
+               "time_integration" : {
+                  "cycles_count" : -1,
+                  "frames_per_second" : 30.0,
+                  "mode" : "fps"
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.1
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_events" : {
+            "timeline" : {
+               "0.000000" : [
+                  "pump_impact_cloud",
+                  "pump_impact_spores",
+                  "pump_impact_spores_top",
+                  "aoe_nether_kickup",
+                  "aoe_nether_kickup_near",
+                  "aoe_cloud",
+                  "aoe_cloud_small",
+                  "netherspreader_decorations_collision"
+               ],
+               "1.200000" : [ "reset_spores" ]
+            }
+         },
+         "minecraft:particle_lifetime_expression" : {},
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

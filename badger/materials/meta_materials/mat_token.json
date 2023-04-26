@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_token:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_token_d",
+            "emissiveMap": "textures/entity/tex_token_e"
+        }
+    }
+}

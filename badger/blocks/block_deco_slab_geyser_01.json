@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_slab_geyser_01": {
+            "decoration": {
+                "default": "deco_slab_geyser_01",
+                "l": "deco_slab_geyser_corner_01",
+                "t": "deco_slab_geyser_01",
+                "cross": "deco_geyserwater_01"
+            }
+        }
+    }
+}

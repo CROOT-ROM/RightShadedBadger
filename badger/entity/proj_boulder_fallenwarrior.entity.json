@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_boulder_fallenwarrior",
+            "materials": {
+                "mat_proj_boulder": "mat_proj_boulder"
+            },
+            "geometry": {
+                "default": "geometry.proj_boulder_fallenwarrior"
+            },
+            "particle_effects": {
+                "fx_trail": "badger:fx_proj_fallen_warrior_trail_bits",
+                "fx_impact": "badger:fx_proj_fallen_warrior_impact",
+                "fx_impact_world": "badger:fx_proj_fallen_warrior_impact_world"
+            },
+            "render_controllers": [
+                "controller.render.proj_boulder_fallenwarrior"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_mob_fallen_warrior_attack_b_projectile",
+                    "particles": {
+                        "effect": "fx_trail",
+                        "locator": "loc_fx_main",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_entity_hit": {
+                    "audio": "BAE_mob_fallen_warrior_proj_boulder_impact_entity",
+                    "particles": "badger:fx_proj_fallen_warrior_impact"
+                },
+                "on_world_hit": {
+                    "audio": "BAE_mob_fallen_warrior_proj_boulder_impact_world",
+                    "particles": "badger:fx_proj_fallen_warrior_impact_world"
+                },
+                "on_intercepted": {
+                    "particles": "badger:fx_tower_anti_siege_impact_stone"
+                }
+            },
+            "badger:rendering": {
+                "definition": "badger:proj_boulder_fallenwarrior"
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_shield_child_turret_corner_2"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_blazerod_shoot": {
+          "audio": "BAE_tower_piglin_shield_attack_ranged"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:item_gold",
+        "static": true
+      },
+      "badger:presentation_event": {
+        "on_item_collected": {
+          "audio": "BAE_hero_pickup_gold"
+        },
+        "on_item_collected_arrived": {
+          "audio": "BAE_hero_pickup_gold_stop"
+        }  
+      },
+      "badger:template": ["badger:template_item_orb"]
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.item_gold"
+      },
+      "identifier": "badger:item_gold",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_gold": "mat_item_gold"
+      },
+      "render_controllers": ["controller.render.item_gold"]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_attack_banner_offset": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_attack_banner_offset": "MetaMaterial.mat_wmap_attack_banner_offset"
+        }
+      ]
+    },
+    "controller.render.wmap_null": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_null": "MetaMaterial.mat_wmap_null"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

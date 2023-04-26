@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_mushroom_obstacle": {
+      "textures":  {
+        "up": "textures/blocks/tex_block_mushroom_obstacle_top_var03",
+        "down": "textures/blocks/tex_block_mushroom_light",
+        "side": "textures/blocks/tex_block_mushroom_light_transition_02"
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_piggo_warboar.default": {
+      "initial_state": "init",
+      "states": {
+        "charge": {
+          "animations":  [
+            {
+              "charge_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.fx_charge = 0;"],
+          "on_exit": ["variable.fx_charge = 1;","variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_charge",
+              "enabled": true,
+              "locator": "loc_fx_buff_legs"
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "((query.any_animation_finished && (query.speed <= 0)) || variable.interrupted)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "move": "((query.any_animation_finished && (query.speed > 0)) || variable.interrupted)"
+            }
+          ]
+        },
+        "climb": {
+          "animations":  [
+            {
+              "climb_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "move": "(((query.velocity_y == 0) && query.any_animation_finished) && (query.speed > 0))"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(((query.velocity_y == 0) && query.any_animation_finished) && (query.speed <= 0))"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_b": 1.0
+            },
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_c": 1.0
+            }
+          ],
+          "on_entry": ["variable.face_anim_frame = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser",
+          "sound_effects":  [
+            {
+              "effect": "dx_death",
+              "enabled": true
+            }
+          ]
+        },
+        "frontkick": {
+          "animations":  [
+            {
+              "attack_ab": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "dx_attack",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(variable.interrupted || query.any_animation_finished)"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idles": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "frontkick": "variable.warboar_melee_attack"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "charge": "variable.warboar_charge_attack"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "!variable.skip_spawn"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "knockback_a": 1.0
+            },
+            {
+              "additive_tumble_slow": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!query.in_knockback"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "climb": "((query.velocity_y > 0) && (variable.is_swimming == 0))"
+            },
+            {
+              "stop": "((query.speed <= 0) && (variable.is_swimming == 0))"
+            },
+            {
+              "frontkick": "variable.warboar_melee_attack"
+            },
+            {
+              "charge": "variable.warboar_charge_attack"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_spawn",
+              "enabled": true
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "spawn",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "stun": "(!query.in_knockback && variable.is_stunned)"
+            },
+            {
+              "charge": "variable.warboar_charge_attack"
+            },
+            {
+              "frontkick": "variable.warboar_melee_attack"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.face_anim_frame = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(variable.is_stunned == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_piggo_warboar.hitreaction": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "hit_react": "((query.in_knockback || variable.intense_hit) || variable.normal_hit)"
+            }
+          ]
+        },
+        "hit_react": {
+          "animations":  [
+            {
+              "hitreact_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished && !query.in_knockback)"
+            },
+            {
+              "in_air": "(query.in_knockback && query.any_animation_finished)"
+            }
+          ]
+        },
+        "in_air": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "animations":  [
+            {
+              "knockback_landing": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_piggo_warboar.idles": {
+      "initial_state": "on_land",
+      "states": {
+        "in_water": {
+          "animations":  [
+            {
+              "swim_idle": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "on_land": "!variable.is_swimming"
+            }
+          ]
+        },
+        "on_land": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "in_water": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_piggo_warboar.locomotion": {
+      "initial_state": "run",
+      "states": {
+        "run": {
+          "animations":  [
+            {
+              "run_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed >= 7))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "sprint": {
+          "animations":  [
+            {
+              "scared_run": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run": "(!variable.is_swimming && (query.speed < 7))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run": "(!variable.is_swimming && (query.speed < 7))"
+            },
+            {
+              "sprint": "(!variable.is_swimming && (query.speed >= 7))"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

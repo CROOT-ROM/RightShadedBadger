@@ -1,0 +1,10 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+		"identifier" : "badger:trail_blazerod",
+		"start_distance": 0.0,	
+		"length": 5.0,
+		"width": 0.14,
+		"material": "mat_trail_blazerod"		
+    }
+}

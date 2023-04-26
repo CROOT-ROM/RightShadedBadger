@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_shape_green_diamond": {
+      "geometry": "Geometry.wmap_shape_green_diamond",
+      "materials":  [
+        {
+          "mat_wmap_shape_green_diamond": "MetaMaterial.mat_wmap_shape_green_diamond"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

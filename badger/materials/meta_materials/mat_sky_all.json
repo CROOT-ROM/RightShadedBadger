@@ -1,0 +1,170 @@
+{
+    "format_version": "1.10.0",
+	"mat_badger_clouds": {
+        "material": "BadgerClouds",
+        "culling": "clockwise",
+		"blendmode": "none",
+		"pass": "opaque",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "depthstate": {
+            "enabled": true,
+            "writedepth": true,
+            "comparisonfunction": "lessequal"
+        }
+    },
+	"mat_badger_skydome": {
+		"material": "BadgerSkyDome",
+		"culling": "none",
+		"depthstate": {
+			"enabled": false,
+			"writedepth": false,
+			"comparisonfunction": "always"
+		}
+	},
+	"mat_badger_stars": {
+		"material": "BadgerStars",
+		"culling": "none",
+		"blendmode": "additivealpha",
+		"pass": "transparent",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            }
+        },
+		"depthstate": {
+			"enabled": true,
+			"writedepth": false,
+			"comparisonfunction": "lessequal"
+		}
+	},
+	"mat_badger_skyclear": {
+		"material": "BadgerSky",
+		"culling": "none",
+		"depthstate": {
+			"enabled": true,
+			"writedepth": false,
+			"comparisonfunction": "lessequal"
+		}
+	},
+	"mat_badger_sun": {
+		"material": "BadgerSunMoon",
+		"culling": "none",
+		"blendmode": "additivealpha",
+		"pass": "transparent",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            }
+        },
+		"depthstate": {
+			"enabled": true,
+			"writedepth": false,
+			"comparisonfunction": "lessequal"
+		},
+		"textures": {
+			"SunMoonTexture": "textures/environment/sun"
+		}
+	},
+	"mat_badger_moon": {
+		"material": "BadgerSunMoon",
+		"culling": "none",
+		"blendmode": "additivealpha",
+		"pass": "transparent",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            }
+        },
+		"depthstate": {
+			"enabled": true,
+			"writedepth": false,
+			"comparisonfunction": "lessequal"
+		},
+		"textures": {
+			"SunMoonTexture": "textures/environment/moon_phases"
+		}
+	},
+	"mat_badger_invisible_moon": {
+		"material": "BadgerSunMoon",
+		"culling": "none",
+		"blendmode": "additivealpha",
+		"pass": "transparent",
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "greater"
+            }
+        },
+		"depthstate": {
+			"enabled": true,
+			"writedepth": false,
+			"comparisonfunction": "lessequal"
+		},
+		"textures": {
+			"SunMoonTexture": "textures/environment/empty"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_lava_thrower_single.default": {
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_track": 1.0
+            }
+          ],
+          "on_entry": ["variable.mat_charge = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "default": {
+          "animations":  [
+            {
+              "charge_up": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.anim_chooser",
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

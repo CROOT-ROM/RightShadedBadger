@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_proj_grenade:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_proj_grenade_d",
+      "coeffMap": "textures/entity/tex_proj_grenade_mr",
+      "normalMap": "textures/entity/tex_proj_grenade_n"
+    }
+  }
+}

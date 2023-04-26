@@ -1,0 +1,90 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_mount_land_daisy_smoke",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_smoke_fp_white" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:emitter_initial_ground_placement" : {
+            "search_depth" : 5.0
+         },
+         "badger:emitter_shape_cylinder" : {
+            "arc_offset" : -90.0,
+            "emission_mode" : "base",
+            "length" : 10.0,
+            "offset" : [ 0.0, 0.5, 0.0 ],
+            "vertical_angle" : 90.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.75, 0.75 ],
+            "initial_scale" : [ 0.2, 1.5 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 12,
+                  "frame_end" : 11,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 3 ],
+                  "rows_count" : 4
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.5
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : "Math.random(10, 10)"
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "base_color" : [ 0.945, 0.762, 0.132, 0.3 ]
+         },
+         "minecraft:particle_initial_speed" : 5.5,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-10, 10)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.0,1.75)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [
+               0.0,
+               "(query.particle_normalized_age < 0.2) ? 0 : query.particle_normalized_age * 4",
+               0.0
+            ],
+            "linear_drag_coefficient" : 2.0
+         }
+      },
+      "curves" : {
+         "variable.opacityy" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.0, 0.131 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.394, 0.181 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.994, -0.02 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

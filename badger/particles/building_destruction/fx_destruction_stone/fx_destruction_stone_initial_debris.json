@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_destruction_stone_initial_debris",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_cutout_cube"]
+      }
+    },
+    "molang_variables_inheritance": {
+      "variables": [
+        "variable.size"
+      ]
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": "25 * variable.size"
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 2.0
+      },
+      "minecraft:emitter_shape_box": {
+        "half_dimensions": [
+          "2 * variable.size",
+          "5 *variable.size",
+          "2 * variable.size"
+        ],
+        "direction_mode": "outwards"
+      },
+      "minecraft:particle_initial_speed": "Math.random(2, 8)",
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(-180, 180)",
+        "rotation_rate": [
+          -25,
+          25
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(3,4)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 0.2,
+        "linear_acceleration": [
+          "Math.random(-2, 2)",
+          "Math.random(-2,-22)",
+          "Math.random(-2, 2)"
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          0.2,
+          0.2
+        ],
+        "facing_camera_mode": "lookat_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 10,
+            "rows_count": 9,
+            "frame_iteration": "page",
+            "frame_start": "Math.random(0,48)"
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      }
+    }
+  }
+}

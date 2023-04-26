@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_shape_yellow_triangle": {
+      "geometry": "Geometry.wmap_shape_yellow_triangle",
+      "materials":  [
+        {
+          "mat_wmap_shape_yellow_triangle": "MetaMaterial.mat_wmap_shape_yellow_triangle"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

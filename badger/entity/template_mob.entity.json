@@ -1,0 +1,79 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_mob"
+    },
+    "components": {
+      "badger:audio_molang_to_fmod": {},
+      "badger:entity_age": {},
+      "badger:interpolation": {
+        "position_interpolation_steps": 2.25,
+        "orientation_interpolation_steps": 3
+      },
+      "badger:keep_alive_timer": {
+        "time": 3.5
+      },
+      "badger:fast_travel_presentation": {
+        "windup": "fast_travel_start",
+        "cooldown": "fast_travel_end",
+        "windup_event_time": 0.25,
+        "cooldown_event_time": 5.0
+      },
+      "badger:visualize_local_player_allegiance": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_mob_generic_spawn"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_small"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_small_stop"
+        },
+        "on_recall_complete": {
+          "audio": "BAE_mob_generic_recall_complete"
+        },
+        "on_recall_start": {
+          "audio": "BAE_mob_generic_recall_start"
+        },
+        "on_recall_stop": {
+          "audio": "BAE_mob_generic_recall_stop"
+        },
+        "on_advanced_direct_targeted": {
+          "outline": {
+            "color": "enemy_target",
+            "duration": 0.25,
+            "affects_enemies": true
+          }
+        },
+        "intense_hit": {
+          "particles": {
+            "effect": "badger:fx_shared_hit_intense",
+            "locator": "loc_fx_stat_head",
+            "enabled": true,
+            "bind_to_actor": false
+          },
+          "visual_state": {
+            "type": "on_hit_intense"
+          },
+          "audio": "BAE_ui_rps_intense_hit"
+        },
+        "normal_hit": {
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "weak_hit": {
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        }
+      },
+      "badger:attacker_damage_prediction": {
+        "apply_buff": "badger:buff_intense_damage_prediction",
+        "hit_reaction_type": "intense_hit"
+      }
+    }
+  }
+}

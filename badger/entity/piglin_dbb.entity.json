@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:piglin_dbb"
+    },
+    "components": {
+      "badger:beacon_render_info": {
+        "states": [
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.4,
+              0.1,
+              0.6
+            ],
+            "min_distance": 300,
+            "max_distance": 5000
+          },
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              1.0,
+              0.1,
+              0.6
+            ],
+            "min_distance": 0,
+            "max_distance": 0
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "visual_state_added.village_destroyed": {
+          "beacon": {
+            "index": 1
+          }
+        },
+        "visual_state_removed.village_destroyed": {
+          "beacon": {
+            "index": 0
+          }
+        }
+      }
+    }
+  }
+}

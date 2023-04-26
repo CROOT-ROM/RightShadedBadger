@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_fx_hotbubble_01": {
+            "particle_spawner": {
+				"effects" : [
+					{
+						"effect": "badger:fx_block_hotspring_bubbles",
+						"probability": 1.0,
+						"range": "middle",
+						"offset": [
+							0.0,
+							-1.0,
+							0.0
+						]					
+					}
+				]			
+            }
+        }
+    }
+}

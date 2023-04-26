@@ -1,0 +1,50 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_wood_timeline",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.size" ]
+      },
+      "events" : {
+         "dust_ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_wood_dust_ring",
+               "type" : "emitter_bound"
+            }
+         },
+         "dust_volume" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_wood_dust_volume",
+               "type" : "emitter_bound"
+            }
+         },
+         "initial_debris" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_wood_pices",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "dust_volume" ],
+            "timeline" : {
+               "0.020000" : [ "initial_debris" ],
+               "0.300000" : [ "dust_volume" ],
+               "0.900000" : [ "dust_ring" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.0
+         }
+      }
+   }
+}

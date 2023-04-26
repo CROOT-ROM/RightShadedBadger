@@ -1,0 +1,21 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_shield_nis.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "idle_feather": "(query.behavior_default || variable.badger_behavior_shield_golem_nis_idle_feather)"
+            },
+            {
+              "idle": "variable.badger_behavior_shield_golem_nis_idle_a"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

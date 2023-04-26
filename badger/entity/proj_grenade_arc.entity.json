@@ -1,0 +1,58 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_grenade_arc",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_grenade": "mat_proj_grenade"
+            },
+            "geometry": {
+                "default": "geometry.proj_grenade"
+            },
+            "render_controllers": [
+                "controller.render.proj_grenade"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:rendering": {
+                "definition": "badger:proj_mushroom"
+            },
+            "badger:projectile_trail_request": {
+                "name": "badger:trail_mushroom"
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_piglin_grenadier_arc_projectile",
+                    "particles": {
+                        "effect": "badger:fx_proj_grenade_trail",
+                        "locator": "loc_fx_tip",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_death": {
+                  "audio": "BAE_piglin_grenadier_arc_projectile_stop"
+                },
+                "on_entity_hit": {
+                    "audio": "BAE_piglin_grenadier_proj_grenade_impact_entity",
+                    "particles": {
+                        "effect": "badger:fx_proj_grenade_impact",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                },
+                "on_world_hit": {
+                    "audio": "BAE_piglin_grenadier_proj_grenade_impact_world",
+                    "particles": {
+                        "effect": "badger:fx_proj_grenade_impact",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_emitter_combat_act3_wof",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority" : 110,
+        "max_distance" : 270.0,
+        "on_enter_bae" : "",
+        "music_states" :[
+          {
+            "state_name": "initial",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 0.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          },
+          {
+            "state_name": "phase1",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 1.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          },
+          {
+            "state_name": "phase2",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 2.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          },
+          {
+            "state_name": "phase3",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 3.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          },
+          {
+            "state_name": "phase4",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 4.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          },
+          {
+            "state_name": "phase5",
+            "audio_parameters": [
+                {"music_wof_act3_phase" : 5.0},
+                {"music_campaign_beat" : 3.0}
+             ]
+          }
+        ]
+      }
+    }
+  }
+}

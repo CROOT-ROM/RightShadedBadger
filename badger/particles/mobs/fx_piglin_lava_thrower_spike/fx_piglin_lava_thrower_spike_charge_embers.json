@@ -1,0 +1,58 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_lava_thrower_spike_charge_embers",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_bits_fp_allay" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "emission_mode" : "base",
+            "offset" : [ 0.0, "math.random(0.0,6.0)", 0.0 ],
+            "radius" : 0.5,
+            "vertical_angle" : 45.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.2, 0.2 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 31,
+                  "frame_end" : 30,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 3 ],
+                  "rows_count" : 4
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.0
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 200.0,
+            "spawn_rate" : 22.0
+         },
+         "minecraft:particle_initial_speed" : 14.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(0, 360)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.2,0.9)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, -22.0, 0.0 ]
+         }
+      },
+      "curves" : {
+         "variable." : {
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

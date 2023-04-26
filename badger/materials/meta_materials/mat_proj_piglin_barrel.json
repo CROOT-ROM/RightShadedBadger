@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_proj_piglin_barrel:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_piglin_barrel_d",
+            "coeffMap": "textures/entity/tex_proj_piglin_barrel_mr",
+            "normalMap": "textures/entity/tex_proj_piglin_barrel_n"
+        }
+    }
+}

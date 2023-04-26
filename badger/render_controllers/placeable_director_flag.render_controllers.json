@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.placeable_director_flag": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_placeable_director_all"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_placeable_director_all": "Array.materials[variable.variant_id]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

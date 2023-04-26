@@ -1,0 +1,30 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_wood": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_wood": "MetaMaterial.mat_mob_golem_wood"
+        },
+        {
+          "mat_mob_golem_wood_face": "MetaMaterial.mat_mob_golem_wood_face"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_mount_purple_tiger"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_mount_purple_tiger"
+      },
+      "identifier": "badger:wmap_mount_purple_tiger",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_mount_purple_tiger": "mat_wmap_mount_purple_tiger"
+      },
+      "render_controllers": ["controller.render.wmap_mount_purple_tiger"]
+    }
+  }
+}

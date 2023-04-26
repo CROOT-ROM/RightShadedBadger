@@ -1,0 +1,9 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_post_netherrite_offset_left": {
+      "decoration": "deco_post_netherrite_offset_left", 
+      "textures": "textures/blocks/tex_shared_block_piglin_d"
+    }
+  }
+}

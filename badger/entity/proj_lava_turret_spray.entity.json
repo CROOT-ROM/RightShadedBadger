@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_lava_turret_spray"
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:fx_proj_mob_lava_turret_spray"
+      }
+    }
+  }
+}

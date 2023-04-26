@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:placeable_director_flag"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.placeable_director_flag.default",
+        "idle_a": "animation.placeable_director_flag.idle_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "attack_move": "variable.variant_id = 1;",
+        "force_move": "variable.variant_id = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.placeable_director_flag"
+      },
+      "identifier": "badger:placeable_director_flag",
+      "materials": {
+        "default": "entity_model",
+        "mat_placeable_director_all": "mat_placeable_director_all"
+      },
+      "render_controllers": ["controller.render.placeable_director_flag"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.variant_id = 0;"]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "render_controllers": {
+    "controller.render.mount_tiger": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mount_tiger": "MetaMaterial.mat_mount_tiger"
+        },
+        {
+          "mat_mount_tiger_face": "MetaMaterial.mat_mount_tiger_face"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

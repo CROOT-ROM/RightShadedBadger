@@ -1,0 +1,48 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:template_animal"
+        },
+        "components": {
+            "badger:audio_molang_to_fmod": {},
+            "badger:interpolation": {
+                "position_interpolation_steps": 2.25,
+                "orientation_interpolation_steps": 3
+            },
+            "badger:keep_alive_timer": {
+                "time": 3.5
+            },
+            "badger:presentation_event": {
+                "enemy_spotted_1": {
+                    "script": "enemy_spotted",
+                    "audio": "BAE_animal_wolf_dx_spotted_enemy"
+                },
+                "hero_spotted_1": {
+                    "script": "hero_spotted"
+                },
+                "on_liquid_deep_enter": {
+                    "audio": "BAE_animal_generic_swim_liquid_small"
+                },
+                "on_liquid_deep_exit": {
+                    "audio": "BAE_animal_generic_swim_liquid_small_stop"
+                },
+                "intense_hit": {
+                    "visual_state": {
+                        "type": "on_hit_intense"
+                    }
+                },
+                "normal_hit": {
+                    "visual_state": {
+                        "type": "on_hit_intense"
+                    }
+                },
+                "weak_hit": {
+                    "visual_state": {
+                        "type": "on_hit_intense"
+                    }
+                }
+            }
+        }
+    }
+}

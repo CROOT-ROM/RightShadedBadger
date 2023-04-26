@@ -1,0 +1,114 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_magma_boss_spray",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.spray_loop" ]
+      },
+      "events" : {
+         "spray_fire01" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire01",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 0.0"
+         },
+         "spray_fire02" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire02",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 1.0"
+         },
+         "spray_fire03" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire03",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 2.0"
+         },
+         "spray_fire04" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire04",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 3.0"
+         },
+         "spray_fire05" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire05",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 4.0"
+         },
+         "spray_fire_front01" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire_front01",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 0.0"
+         },
+         "spray_fire_front02" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire_front02",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 1.0"
+         },
+         "spray_fire_front03" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire_front03",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 2.0"
+         },
+         "spray_fire_front04" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire_front04",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 3.0"
+         },
+         "spray_fire_front05" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_fire_front05",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 4.0"
+         },
+         "spray_fire_msh" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_magma_boss_spray_msh_fire",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.spray_loop == 0.0"
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "spray_fire_msh",
+               "spray_fire01",
+               "spray_fire_front01",
+               "spray_fire02",
+               "spray_fire_front02",
+               "spray_fire03",
+               "spray_fire_front03",
+               "spray_fire04",
+               "spray_fire_front04",
+               "spray_fire05",
+               "spray_fire_front05"
+            ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

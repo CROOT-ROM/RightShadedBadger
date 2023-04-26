@@ -1,0 +1,9 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_spear_final_boss_impact_aoe"
+        },
+        "components": {}
+    }
+}

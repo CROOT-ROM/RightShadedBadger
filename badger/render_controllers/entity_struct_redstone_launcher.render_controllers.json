@@ -1,0 +1,26 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_redstone_launcher": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_proj_stone_block","MetaMaterial.mat_proj_tnt_block"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_proj_stone_block": "Array.materials[variable.badger_buff_kaboomery_rsl]"
+        },
+        {
+          "mat_shared_block_entity_rsl": "MetaMaterial.mat_shared_block_entity_rsl"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "proj_stone_set": "variable.proj_stone_set_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

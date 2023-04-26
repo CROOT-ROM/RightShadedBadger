@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_lakeshore_var01": {
+            "decoration": "deco_plant_heather_01",
+            "textures": {
+                "up": "textures/blocks/tex_block_dirt",
+                "down": "textures/blocks/tex_block_dirt",
+                "side": "textures/blocks/tex_block_dirt"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_dragonflies_fateful",
+                        "range": "near",
+                        "probability": 0.005                    
+                    }
+                ]           
+            }
+        }
+    }
+}

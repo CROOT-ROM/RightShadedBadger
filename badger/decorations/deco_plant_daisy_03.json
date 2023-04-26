@@ -1,0 +1,14 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_plant_daisy_03": {
+            "geometry": "geometry.block_deco_plant_daisy_03",
+            "shadow": true,
+            "normals_interpolation" : 0.0,
+            "type": "middle",
+            "probability": "high",
+            "random_orientation": true,
+            "wind_strength": 0.025
+        }
+    }
+}

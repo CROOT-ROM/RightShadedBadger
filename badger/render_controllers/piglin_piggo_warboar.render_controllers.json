@@ -1,0 +1,36 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_piggo_warboar": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_128","MetaMaterial.mat_fx_frozen_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_piggo_warboar": "MetaMaterial.mat_piglin_piggo_warboar"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        },
+        {
+          "mat_piglin_piggo_warboar_face": "MetaMaterial.mat_piglin_piggo_warboar_face"
+        },
+        {
+          "mat_piglin_piggo_warboar1": "MetaMaterial.mat_piglin_piggo_warboar1"
+        },
+        {
+          "mat_piglin_piggo_warboar_face1": "MetaMaterial.mat_piglin_piggo_warboar_face1"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ],
+      "textures": ["Texture.default","Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

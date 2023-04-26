@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "mat_proj_piglin_rotters_boss_spit:base_entity": {
+        "pass": "Transparent",
+        "blendmode": "alphablend",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_piglin_rotters_boss_spit_d",
+            "normalMap": "textures/entity/tex_proj_piglin_rotters_boss_spit_n",
+            "coeffMap": "textures/entity/tex_proj_piglin_rotters_boss_spit_mr",
+            "emissiveMap": "textures/entity/tex_proj_piglin_rotters_boss_spit_e"
+        }
+    }
+}

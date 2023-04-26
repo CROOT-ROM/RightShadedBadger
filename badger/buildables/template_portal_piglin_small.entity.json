@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_portal_piglin_small"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_portal_small_idle"
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_piglin_portal_small_transition_stage1",
+	  "visual_state": {
+            "type": "on_structure_damage_low"
+          }
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_portal_small_transition_stage1",
+	  "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_piglin_portal_small_transition_stage2",
+	  "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_piglin_portal_small_transition_stage3",
+	  "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_portal_small_death"
+        },
+        "on_piglin_portal_idle": {
+          "audio": "BAE_piglin_portal_small_idle"
+        },
+        "on_piglin_combat_authored_tactic": {
+          "audio": "BAE_MUS_Piglin_Combat_Stinger_AuthoredTactic"
+        }
+      }
+    }
+  }
+}

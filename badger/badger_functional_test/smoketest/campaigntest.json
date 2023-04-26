@@ -1,0 +1,13 @@
+{
+  "test-name": "campaign-test",
+  "test-description": "Test two zombies fighting in campaign mode",
+  "test-duration":60,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "campaign",
+  "platforms": ["Win32", "Windows10", "Xbox", "Switch", "playstation_4","playstation_4_pro"],
+  "commands": [
+  	"/godmode",
+  	"/sm badger:mob_zombie 1 blue_team",
+    "/sm badger:mob_zombie 1 red_team"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "electric_off": {
+          "script": "electric_off"
+        },
+        "visual_state_added.wof_captured": {
+          "script": "disable_wof"
+        },
+        "visual_state_removed.wof_captured": {
+          "script": "enable_wof"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_wof_cube"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_wof_cube.default",
+        "disabled": "animation.entity_struct_wof_cube.disabled",
+        "idle_a": "animation.entity_struct_wof_cube.idle_a",
+        "spawn_a": "animation.entity_struct_wof_cube.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "disable_wof": "variable.is_disabled = 1;",
+        "electric_off": "variable.fx_electric = 0;",
+        "enable_wof": "variable.is_disabled = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_wof_cube"
+      },
+      "identifier": "badger:entity_struct_wof_cube",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_wof_cube": "mat_entity_struct_wof_cube"
+      },
+      "particle_effects": {
+        "fx_beam_corrupted": "badger:fx_well_of_fate_corrupted_beam",
+        "fx_beam_healthy": "badger:fx_well_of_fate_healthy",
+        "fx_cube_core": "badger:fx_well_of_fate_corrupted_electric_cube_core"
+      },
+      "render_controllers": ["controller.render.entity_struct_wof_cube"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.textureEditorIsolateSelectSet_vis = 1;"]
+      },
+      "sound_effects": {
+        "captured": "BAE_well_of_fate_captured",
+        "captured_shakes": "BAE_well_of_fate_cube_captured_shakes",
+        "idle": "BAE_well_of_fate_idle"
+      }
+    }
+  }
+}

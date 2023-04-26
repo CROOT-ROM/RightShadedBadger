@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_bruiser_360_swipe:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_swipe_trail02"
+        },
+        "blendmode": "alphablend",
+        "uniforms": {
+            "TrailColor": [
+                "0.671",
+                "0.671",
+                "0.671",
+                "0.2"
+            ]
+        }
+    }
+}

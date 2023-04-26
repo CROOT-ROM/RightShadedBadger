@@ -1,0 +1,15 @@
+[
+  {
+    "button_id": "button.cast_entity",
+    "key_id": "key.build",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.destroy_or_attack",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.build_or_interact",
+    "focus_impact": "neutral"
+  }
+]

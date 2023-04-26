@@ -1,0 +1,10 @@
+{
+	"format_version": "1.0.0",
+	"badger:trail": {
+		"identifier": "badger:trail_proj_mud",
+		"start_distance": 0.0,
+		"length": 4.0,
+		"width": 0.30,
+		"material": "mat_trail_proj_mud"
+	}
+}

@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "on_fire": {
+          "script": "onfire"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_nether_spreader"
+      }
+    },
+    "description": {
+      "animations": {
+        "death": "animation.entity_struct_nether_spreader.death",
+        "default": "controller.animation.entity_struct_nether_spreader.default",
+        "fire": "animation.entity_struct_nether_spreader.fire",
+        "fire_buff": "animation.entity_struct_nether_spreader.fire_buff",
+        "idle": "animation.entity_struct_nether_spreader.idle",
+        "raise": "animation.entity_struct_nether_spreader.raise",
+        "raise_buff": "animation.entity_struct_nether_spreader.raise_buff",
+        "spawn": "animation.entity_struct_nether_spreader.spawn",
+        "start_hold": "animation.entity_struct_nether_spreader.start_hold"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "onfire": "variable.fire = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_nether_spreader"
+      },
+      "identifier": "badger:entity_struct_nether_spreader",
+      "materials": {
+        "mat_entity_struct_nether_spreader": "mat_entity_struct_nether_spreader",
+        "mat_entity_struct_nether_spreader_active": "mat_entity_struct_nether_spreader_active"
+      },
+      "particle_effects": {
+        "fx_entity_struct_nether_spreader_electric": "badger:fx_entity_struct_nether_spreader_electric",
+        "fx_nether_spreader_attack": "badger:fx_entity_struct_neather_spreader_attack",
+        "fx_nether_spreader_death": "badger:fx_destruction_nether_spreader",
+        "fx_piston_windup": "badger:fx_es_netherspreader_windup_spores",
+        "fx_vents": "badger:fx_es_netherpsreader_impact_vents"
+      },
+      "render_controllers": ["controller.render.entity_struct_nether_spreader"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.netherspreader_state = 0;","variable.pump_vis = 1;"]
+      },
+      "sound_effects": {
+        "pumpdown": "BAE_piglin_netherspreader_pumpdown",
+        "pumpdown_buff": "BAE_piglin_netherspreader_pumpdown_buffed",
+        "pumpup": "BAE_piglin_netherspreader_pumpup",
+        "pumpup_buff": "BAE_piglin_netherspreader_pumpup_buffed",
+        "start_distant": "BAE_piglin_netherspreader_distant"
+      }
+    }
+  }
+}

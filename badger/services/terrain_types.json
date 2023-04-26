@@ -1,0 +1,50 @@
+{
+  "badger:terrain_type_service": {
+    "definitions": [
+      {
+        "id": "mud",
+        "molang_value": 1
+      },
+      {
+        "id": "netherrack",
+        "molang_value": 2
+      },
+      {
+        "id": "water",
+        "molang_value": 3
+      },
+      {
+        "id": "poison",
+        "molang_value": 4
+      },
+      {
+        "id": "lava",
+        "molang_value": 5
+      },
+      {
+        "id": "snow",
+        "molang_value": 6
+      },
+      {
+        "id": "tar",
+        "molang_value": 7
+      },
+      {
+        "id": "netherwart_acid",
+        "molang_value": 8
+      },
+      {
+        "id": "sand",
+        "molang_value": 9
+      },
+      {
+        "id": "stone",
+        "molang_value": 10
+      },
+      {
+        "id": "grass",
+        "molang_value": 11
+      }
+    ]
+  }
+}

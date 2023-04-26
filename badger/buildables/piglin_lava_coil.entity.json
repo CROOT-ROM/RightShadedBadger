@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:piglin_lava_coil"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_lava_coil_idle"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_lava_coil_destroyed"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_lava_coil_damage_state_01_transition"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_piglin_lava_coil_damage_state_02_transition"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_piglin_lava_coil_damage_state_03_transition"
+        }
+      },
+      "badger:visual_only_invulnerability_decal":{
+        "max_aabb_subtractive_offset": [1.4, 6.5, 3.4],
+        "min_aabb_additive_offset" : [3.4, 10.15, 1.4]
+      }
+    }    
+  }
+}

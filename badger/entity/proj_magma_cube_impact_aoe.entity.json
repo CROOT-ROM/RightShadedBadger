@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_magma_cube_impact_aoe"
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:fx_proj_magma_cube_lrg"
+      }
+    }
+  }
+}

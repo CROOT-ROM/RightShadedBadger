@@ -1,0 +1,290 @@
+﻿## Comments can be added anywhere on a valid line by starting with '##'
+##
+## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
+## comment on the same line, use TABs.
+## PLEASE ADD NEW ENTRIES IN ALPHABETICAL ORDER TO MINIMIZE MERGE CONFLICTS!
+
+buildables.autodeconstruction.triggered=Deconstructing a distant %1$s
+buildables.autodeconstruction.warning=Getting too far from your %1$s
+
+buildables.deconstruction.alreadyDeconstructing=¡Esta estructura ya se está deconstruyendo!
+buildables.deconstruction.differentTeam=Вы можете только деконструировать структуры в вашей команде!
+buildables.deconstruction.indestructible=¡Esta estructura es indestructible!
+buildables.deconstruction.insufficientTickets=Du kan ikke dekonstruere denne struktur uden et Gather Allay!
+
+buildables.offline.constructing=CONSTRUCTING
+buildables.offline.generic=DESCONECTADO
+buildables.offline.needs.utopia=Fountain Required
+buildables.offline.needs.village=House Required
+
+buildables.order_gather_surface_all_small.description=Используйте Allays, чтобы собрать небольшое количество ресурсов с поверхности.
+buildables.order_gather_surface_all_small.name=Gather All
+
+buildables.placement.enemyTerritory=No se puede colocar en una zona enemiga!
+buildables.placement.entityOccupied=Can't place on top of a player or mob!
+buildables.placement.playerOccupied=Can't place on top of a player!
+buildables.placement.existingStructure=Este espacio está ocupado!
+buildables.placement.insufficientResources=No hay suficientes recursos. ¡Reúne más en el mundo!
+buildables.placement.insufficientTickets.build=¡No hay suficientes aleaciones de construcción!
+buildables.placement.insufficientTickets.gather=¡No es suficiente reunir aleaciones!
+buildables.placement.insufficientTickets.illager=¡No se puede construir esta Estructura sin un Iillager!
+buildables.placement.insufficientTickets.player_spawner=¡No hay suficientes llamas de creación!
+buildables.placement.insufficientTickets.spawner=¡No hay suficientes reproductores!
+buildables.placement.insufficientTickets.villager=¡No se puede construir esta Estructura sin un Aldeano!
+buildables.placement.insufficientUnlocks=¡Desbloquea la estructura primero!
+buildables.placement.invalidBlocks=Kan ikke placeres på vand eller lava!
+buildables.placement.mustBeInZone=Requiere una zona específica!
+buildables.placement.noResourcesToGather=Ingen ressourcer at samle på!
+buildables.placement.nonCultureTerritory=Kan ikke placere denne struktur uden et nærliggende hus!
+buildables.placement.nonOwnedTerritory=Kan ikke placere denne struktur uden et nærliggende hus!
+buildables.placement.obstacleTree=¡Un árbol está en el camino!
+buildables.placement.overlappingDigOrders=¡No se pueden superponer órdenes de excavación con estructuras u otras órdenes de excavación!
+buildables.placement.placementObstructed=¡La ubicación está bloqueada!
+buildables.placement.unevenTerrain=¡El terreno es muy desigual!
+buildables.placement.wrongSpecializedZone=No se puede colocar en esta zona!
+
+buildables.status.gatherComplete=Â¡Una Orden de RecolecciÃ³n ha terminado! (MX)
+buildables.status.noResources=Nothing to Gather!
+
+commands.aggro.description=Mostrar aggro para un pueblo en particular
+commands.aggro.failed.aggronotfound=Aggro score for village %1$s not found
+commands.aggro.failed.noaggroservice=AggroEscalationService no encontrado. Comprueba que esté habilitado en gamelayer_manifest.json para el servidor
+commands.aggro.failed.novillageservice=VillageService no encontrado. Comprueba que esté habilitado en gamelayer_manifest.json para el servidor
+commands.aggro.failed.summonernotfound=Kommandoen har ingen indkaldelse
+commands.aggro.success=Village %1$d has an aggro score of %2$d
+
+commands.applydamage.description=Apply damage to entities
+commands.applydamage.failed=Kan ikke anvende skader
+commands.applydamage.succeeded=Нанесенный урон
+
+commands.assignteam.description=Назначить игроков в команды
+commands.assignteam.failed.noTargets=No hay jugadores objetivo especificados
+commands.assignteam.failed.noTeamService=El servicio de Team Manager no está presente
+commands.assignteam.failed.playerNotFound=No player was found by the name '%1$s'
+commands.assignteam.failed.teamNotFound=No team was found by the name '%1$s'
+commands.assignteam.teams.join.success=Added %1$d player(s) to team %2$s
+
+commands.buildspeed.description=Multiplicador de estructura de velocidad de construcción. 0 será instantáneo.
+commands.buildspeed.failed.summoner=Error al establecer la velocidad de construcción.
+commands.buildspeed.success=Establecer el multiplicador de velocidad de construcción.
+
+commands.debugdraw.description=Habilitar o deshabilitar el dibujo de características de depuración
+commands.debugdraw.error.culltoosmall=El rango de eliminación era demasiado pequeño.
+commands.debugdraw.error.nodebugdraw=No se puede usar debugdraw, no se encontró un sorteo de depuración coincidente
+commands.debugdraw.error.noservice=Tjenesten er ikke mulig at bruge debugdraw, tjenesten er deaktiveret
+commands.debugdraw.success.disabled=Debug draw %1$s disabled
+commands.debugdraw.success.enabled=Debug draw %1$s enabled
+
+commands.debughidehud.description=Habilitar o deshabilitar la ocultación forzada del HUD
+commands.debughidehud.success.disabled=¡Ocultación forzada de HUD desactivada!
+commands.debughidehud.success.enabled=HUD ocultación de la fuerza habilitada!
+
+commands.giveallunlocks.description=Desbloquea todos los elementos bloqueados previamente
+commands.giveallunlocks.failed.summoner=No hay entidad invocadora
+commands.giveallunlocks.failed=не удалось разблокировать предметы
+commands.giveallunlocks.success=Todos los elementos bloqueados están desbloqueados.
+
+commands.givemoreresources.description=Dale al equipo de jugadores 1000 de cada recurso
+commands.givemoreresources.failed.summoner=No hay entidad invocadora
+commands.givemoreresources.failed=kunne ikke give flere ressourcer
+commands.givemoreresources.success=El equipo de jugadores ahora tiene un extra de 1000 de cada recurso
+
+commands.givemoretickets.description=Da a todos los jugadores 10 boletos adicionales en cada categoría
+commands.givemoretickets.failed.summoner=No hay entidad invocadora
+commands.givemoretickets.success=Da a todos los jugadores 10 boletos adicionales en cada categoría
+
+commands.giveresourcesticketsandunlockables.description=Дает больше ресурсов, билетов и открывает предметы
+commands.giveresourcesticketsandunlockables.failed.summoner=No hay entidad invocadora
+commands.giveresourcesticketsandunlockables.success=El comando fue un éxito
+
+commands.givesessionresources.description=Dar al equipo de jugadores algunos recursos básicos.
+commands.givesessionresources.failed.pvpresources=El archivo de recursos básicos no está definido
+commands.givesessionresources.failed.summoner=No hay entidad invocadora
+commands.givesessionresources.failed=kunne ikke give flere ressourcer
+commands.givesessionresources.success=El equipo de jugadores ahora tiene algunos recursos básicos
+
+commands.godmode.description=Переключить режим бога
+commands.godmode.failed.health=Player doesn't have health
+commands.godmode.failed.service=ControlEntityService ikke tilgængelig
+commands.godmode.failed.summoner=No se pudo encontrar al jugador que invoca
+commands.godmode.failed.uniqueid=El jugador no tiene una identificación única
+commands.godmode.success.activate=Режим Бога активирован!
+commands.godmode.success.deactivate=Плебейское существование восстановлено
+
+commands.mount.description=Monta un jugador en una entidad
+commands.mount.failed.cantFindControlEntity=Could not find control entity '%1$s'
+commands.mount.failed.mountNotFound=Unable to spawn mount '%1$s'
+commands.mount.failed.noTargets=Jinete de jugador inválido
+commands.mount.failed=Не удалось переключить любые состояния монтирования
+commands.mount.success.dismounted='%1$s' dismounted
+commands.mount.success.mounted='%1$s' mounted on a '%2$s'
+commands.mount.success=%1$s players mount status toggled
+
+commands.netdebug.description=Сетевая отладочная информация в 3D пространстве
+commands.netdebug.disabled=Depuración de red deshabilitada
+commands.netdebug.enabled=Depuración de red habilitada
+
+commands.reloadparticletextures.success=Texturas de partículas recargadas
+
+commands.reloadtexture.failed=Indlæsning af tekstur mislykkedes
+commands.reloadtexture.success=Textures for %1$s reloaded
+
+commands.sprint.description=Alternar el sprint
+commands.sprint.failed.invoker=Invoker inválido: ¡no es un jugador!
+commands.sprint.failed.service=Service ikke tilgængelig
+commands.sprint.successfast=Gotta go fast! (%1$sx speed)
+commands.sprint.successslow=Gotta go slow! (%1$sx speed)
+
+commands.sprint_client.description=Переключить спринт (только на стороне клиента)
+
+commands.suicide.description=Reaparecer en el punto de generación más cercano.
+commands.suicide.failed.service=Service ikke tilgængelig
+commands.suicide.failed.summoner=Призыватель не существует
+commands.suicide.success=¡En camino!
+
+commands.summonmulti.description=Создает несколько экземпляров данного актера. Псевдоним &quot;см&quot;
+commands.summonmulti.failed.amount=Количество должно быть&gt; 0
+commands.summonmulti.failed.entityTypeNotFound=Unable to spawn '%1$s'
+commands.summonmulti.failed.noTeamToAssign=Intet hold blev specificeret, og der er ikke noget fallback-hold
+commands.summonmulti.failed.summoner=No hay entidad invocadora
+commands.summonmulti.failed.team=No existing team %1$s
+commands.summonmulti.success.playerTeam=Summoned %1$d of %2$s on your team
+commands.summonmulti.success=Summoned %1$d of %2$s on team %3$s
+
+hbui.buffPlatform.buff_recipe_giant.description=Hace que las turbas sean más grandes y fuertes.
+hbui.buffPlatform.buff_recipe_giant.name=kæmpe stor
+hbui.buffPlatform.buff_recipe_ironclad.description=Hace que las turbas sean más pesadas y resistentes al fuego / magma.
+hbui.buffPlatform.buff_recipe_ironclad.name=броненосец
+hbui.buffPlatform.buff_recipe_nimble.description=Hace que las turbas sean más ligeras y rápidas.
+hbui.buffPlatform.buff_recipe_nimble.name=проворный
+hbui.buffPlatform.buff_recipe_saddle.description=Permite que las turbas cabalguen sobre la caballería.
+hbui.buffPlatform.buff_recipe_saddle.name=Jockey
+hbui.buffPlatform.cancel=Afbestille
+hbui.buffPlatform.confirm=Reemplazar Buff
+hbui.buffPlatform.confirm_empty=Placer Buff
+hbui.buffPlatform.ingredients_title=ingredienser
+hbui.buffPlatform.replace_warning=Предупреждение: вы потеряете ваши текущие ингредиенты бафф
+hbui.buffPlatform.title=Очаровательная Платформа
+
+hbui.buttonHoldWidget.key.ability.name=Держите, чтобы зарядить!
+hbui.buttonHoldWidget.key.collect.name=Mantenga para recoger
+hbui.buttonHoldWidget.key.deconstruct.name=Mantenga presionado para eliminar
+hbui.buttonHoldWidget.key.heroDirect.name=Mantenga para colocar director
+hbui.buttonHoldWidget.key.heroLure.name=Держите, чтобы разместить приманку
+
+hbui.deathScreen.mainMenu=Menú principal
+hbui.deathScreen.respawn=Reaparecer
+hbui.deathScreen.youDied=Te moriste!
+
+hbui.endOfMatch.backText=Salir al menú principal
+hbui.endOfMatch.defeat=ПОРАЖЕНИЕ!
+hbui.endOfMatch.victory=¡VICTORIA!
+hbui.endOfMatch.wonTheMatch= won the match.
+
+hbui.hud.action_collect=Indsamle
+hbui.hud.action_demolish=Eliminar
+hbui.hud.action_direct=непосредственный
+hbui.hud.action_interact=Взаимодействовать
+hbui.hud.action_jump=Прыгать
+hbui.hud.action_lure=Señuelo
+hbui.hud.compassEast=og
+hbui.hud.compassNorth=norte
+hbui.hud.compassSouth=S
+hbui.hud.compassWest=den
+hbui.hud.healthbar.ally=ALLIERET
+hbui.hud.healthbar.opponent=ENEMIGO
+hbui.hud.healthbar.portal=PORTAL
+
+hbui.mapScreen.backText=Tilbage
+hbui.mapScreen.downMoveText=Abajo
+hbui.mapScreen.leftMoveText=Izquierda
+hbui.mapScreen.numVillages=Num Bases: %s
+hbui.mapScreen.rightMoveText=Правильно
+hbui.mapScreen.titleText=карта
+hbui.mapScreen.upMoveText=Arriba
+hbui.mapScreen.zoomInText=Приблизить
+hbui.mapScreen.zoomOutText=Disminuir el zoom
+
+hbui.recipesScreen.backText=Tilbage
+hbui.recipesScreen.build=Construir
+hbui.recipesScreen.categories.basecraft=Basecraft
+hbui.recipesScreen.categories.culturecraft=Culturecraft
+hbui.recipesScreen.categories.piglin=Piglin
+hbui.recipesScreen.categories.resourcing=Resourcing
+hbui.recipesScreen.categories.siegecraft=Siegecraft
+hbui.recipesScreen.categories.well_of_fate=Bien del destino
+hbui.recipesScreen.quickBuild=Construcción rápida
+hbui.recipesScreen.titleText=Opskrifter
+
+hbui.respawnScreen.titleText=Respawning
+
+hbui.sampleScreen.badgerComponentText=Un componente de tejón
+hbui.sampleScreen.sharedComponentText=Un componente compartido
+hbui.sampleScreen.titleText=Una pantalla de muestra
+
+menu.asset_viewer_play=Flatland
+
+menu.badger_campaign_play=Jouer Ã  la Campagne (CA)
+
+menu.badger_creative_play=Spil kreativitet
+
+menu.badger_pve_play=Играть в PVE
+
+menu.badger_pvp_play=Играть в PVP
+
+menu.custom_play=изготовленный на заказ
+
+menu.vanilla_play=Jugar a la vainilla
+
+message.player.died=%1$s died.
+
+options.camera.creative=творческий
+options.camera.gameplay=Игровой процесс
+
+piglin.base_size.large=Большая база
+piglin.base_size.medium=Base mediana
+piglin.base_size.small=Base pequeña
+
+poi.volcano_edge.description=Поднимитесь на вулкан и будьте осторожны с лавой
+poi.volcano_edge.name=Volcano&#39;s Edge
+
+poi.wolf_mob_alliance.description=Una guarida de lobos con alta velocidad y salud razonable.
+poi.wolf_mob_alliance.name=Wolf
+
+pvp.defeat=%1$s were eliminated :'(
+
+pvp.graceperiod.end=¡Comienza la batalla!
+pvp.graceperiod.timer=%1$s seconds to game start. Place your HQ!
+
+pvp.victory=%1$s wins!
+
+faction.piglin_defend_faction.description=Disse svigliner har perfektioneret forsvaret. Der er brug for en stor indsats for at rive deres vægge ned.
+faction.piglin_defend_faction.name=The Unbreakables
+
+faction.xp_well_of_fate_culture.description=Un lugar mágico, y donde llegaste por primera vez a este mundo. Regrese aquí para mejorar sus herramientas.
+faction.xp_well_of_fate_culture.name=Bien del destino
+
+villager.culture.001.description=La pólvora, los destellos y las explosiones espectaculares son su especialidad.
+villager.culture.001.name=Los alquimistas
+villager.culture.001.welcome_message=Добро пожаловать в алхимическую деревню
+villager.culture.002.description=Культура жителей деревни, которые живут в гармонии с животными.
+villager.culture.002.name=Los maestros de bestias
+villager.culture.002.welcome_message=Добро пожаловать в Деревню Повелителей Зверей
+villager.culture.003.description=¿Has escuchado el zumbido? Las plantas y flores del Overworld siempre están en temporada.
+villager.culture.003.name=Los apicultores
+villager.culture.003.welcome_message=Добро пожаловать в Деревню Пчеловодов
+villager.culture.004.description=Estos aldeanos medio llenos de vidrio ven el mundo a través de una lente diferente.
+villager.culture.004.name=Glasproducenterne
+villager.culture.004.welcome_message=Добро пожаловать в деревню стеклодувов
+villager.culture.005.description=Una escultura de hielo puede no durar para siempre, pero eso es lo que los hace hermosos.
+villager.culture.005.name=Los escultores de hielo
+villager.culture.005.welcome_message=Добро пожаловать в Деревню ледяных скульпторов
+villager.culture.006.description=Захватите свои места, пока вы можете, вы не хотите пропустить их захватывающие движения!
+villager.culture.006.name=Los intérpretes
+villager.culture.006.welcome_message=Bienvenido a una aldea de artistas intérpretes o ejecutantes
+villager.culture.007.description=They thread the needle to create the most beautiful fabric.
+villager.culture.007.name=Los tejedores
+villager.culture.007.welcome_message=Bienvenido a una aldea de tejedores
+villager.culture.008.description=Una vida en armonía es para lo que viven, y la música es un festín para sus sentidos.
+villager.culture.008.name=The Musicians
+villager.culture.008.welcome_message=Добро пожаловать в Деревню Музыкантов

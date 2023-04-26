@@ -1,0 +1,19 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_tower_piglin_thrower": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_piglin": "MetaMaterial.mat_shared_block_entity_piglin"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "crate": "variable.crate_vis"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

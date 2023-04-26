@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {
+      },
+      "badger:map_icon_offset": {
+        "x": 4,
+        "y": 8,
+        "z": 0
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_mob_allegiance_banner"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_mob_allegiance_banner"
+      },
+      "identifier": "badger:wmap_mob_allegiance_banner",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_mob_alliance_banner": "mat_wmap_mob_alliance_banner"
+      },
+      "render_controllers": ["controller.render.wmap_mob_allegiance_banner"]
+    }
+  }
+}

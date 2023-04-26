@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_well_of_fate_path_sheet": {
+      "geometry": "geometry.block_deco_well_of_fate_path_sheet", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

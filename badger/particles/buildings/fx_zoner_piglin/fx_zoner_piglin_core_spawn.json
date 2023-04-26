@@ -1,0 +1,39 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_zoner_piglin_core_spawn",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "electric" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_zoner_piglin_core_spawn_lightning",
+               "type" : "emitter_bound"
+            }
+         },
+         "spawn_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_zoner_piglin_core_spawn_parts",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "electric" ],
+            "timeline" : {
+               "0.500000" : [ "spawn_parts" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.5
+         }
+      }
+   }
+}

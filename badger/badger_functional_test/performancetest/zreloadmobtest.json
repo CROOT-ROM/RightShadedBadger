@@ -1,0 +1,14 @@
+{
+  "test-name": "reload-mob-test",
+  "test-description": "Spawn and then reload all mobs",
+  "test-duration": 92,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10" ],
+  "commands": [
+    "/spawnallmobs true \"\" 10",
+    "/testdelay 61",
+    "/debugprofile badger_reload-mob-test_microprofile both 120",
+    "/godmode"
+  ]
+}

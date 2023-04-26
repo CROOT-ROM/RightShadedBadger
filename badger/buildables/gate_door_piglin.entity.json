@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:gate_door_piglin"
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:gate_piglin_active"
+      },
+      "badger:presentation_event": {
+        "on_building_destroyed": {
+          "audio": "BAE_structure_destroy_stone_small"
+        }
+      }
+    }
+  }
+}

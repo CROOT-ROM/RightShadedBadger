@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_nylium_grass": {
+      "decoration": "nylium_grass",
+      "textures": {
+        "down": "textures/blocks/tex_block_netherrack", 
+        "up": "textures/blocks/tex_block_nylium_top", 
+        "side": "textures/blocks/tex_block_nylium_side"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "defaults": {
+        "randomseedoverride":  2865159496
+    }, 	//best: 1839928066, 246823466, 2865159496, 
+    "badger:template": {
+        "parent": "game_rules",
+        "game_mode": "demo_pack_gamescom"
+    }
+}

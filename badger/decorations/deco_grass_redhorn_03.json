@@ -1,0 +1,19 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_grass_redhorn_03": {
+            "geometry": "geometry.block_deco_plant_grass_redhorn_03",
+            "shadow": true,
+            "type": "far",
+            "probability": "medium",
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "normals_interpolation" : 0.0,
+            "random_orientation": true,
+            "wind_strength": 0.025
+        }
+    }
+}

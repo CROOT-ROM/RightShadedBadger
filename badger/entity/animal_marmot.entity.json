@@ -1,0 +1,117 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 60,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_marmot"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_marmot_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_marmot_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_marmot_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_marmot_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_marmot_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_marmot",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.animal_marmot.climb_a",
+        "death_a": "animation.animal_marmot.death_a",
+        "default": "controller.animation.animal_marmot.default",
+        "hit_react": "controller.animation.animal_marmot.hit_react",
+        "hit_react_a": "animation.animal_marmot.hit_react_a",
+        "idle": "controller.animation.animal_marmot.idle",
+        "idle_a": "animation.animal_marmot.idle_a",
+        "idle_b": "animation.animal_marmot.idle_b",
+        "knockback_a": "animation.animal_marmot.knockback_a",
+        "locomotion": "controller.animation.animal_marmot.locomotion",
+        "look_at": "animation.animal_marmot.look_at",
+        "sprint_a": "animation.animal_marmot.sprint_a",
+        "stun_a": "animation.animal_marmot.stun_a",
+        "swim_a": "animation.animal_marmot.swim_a",
+        "swim_idle_a": "animation.animal_marmot.swim_idle_a",
+        "walk_a": "animation.animal_marmot.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_marmot"
+      },
+      "identifier": "badger:animal_marmot",
+      "materials": {
+        "mat_animal_marmot": "mat_animal_marmot",
+        "mat_animal_marmot_face": "mat_animal_marmot_face",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_tiny",
+        "fx_death": "badger:fx_shared_death_smoke_small"
+      },
+      "render_controllers": ["controller.render.animal_marmot"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "death": "BAE_animal_marmot_death",
+        "death_poof_small": "BAE_animal_death_poof_small",
+        "eat": "BAE_animal_marmot_eat",
+        "hurt": "BAE_animal_marmot_hurt",
+        "idle": "BAE_animal_marmot_idle",
+        "knockback": "BAE_animal_marmot_knockback",
+        "looking": "BAE_animal_marmot_looking",
+        "stun": "BAE_animal_marmot_stun",
+        "walk": "BAE_animal_marmot_walk"
+      },
+      "textures": {
+        "default": "textures/entity/animal_marmot/tex_animal_marmot_d"
+      }
+    }
+  }
+}

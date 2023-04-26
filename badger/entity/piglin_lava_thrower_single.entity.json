@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:keep_alive_timer": {
+        "time": 1.1,
+        "trigger_event_only_on_death": true
+      },
+      "badger:presentation_event": {
+        "on_death": {
+          "audio": "BAE_lava_thrower_spike_projectile_death_sml"
+        },
+        "on_explosion": {
+          "particles":  [
+            {
+              "effect": "badger:fx_proj_lava_tower_cluster_exp",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "script": "has_exploded"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_lava_thrower_single"
+      },
+      "badger:rig_operations": ["rigops_actions.piglin_lava_thrower_single_charge"],
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "charge_up": "animation.piglin_lava_thrower_single.charge_up",
+        "death_track": "animation.piglin_lava_thrower_single.death_track",
+        "default": "controller.animation.piglin_lava_thrower_single.default"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "has_exploded": "variable.model_vis = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.piglin_lava_thrower_single"
+      },
+      "identifier": "badger:piglin_lava_thrower_single",
+      "materials": {
+        "default": "entity_model",
+        "mat_piglin_lava_thrower_spike": "mat_piglin_lava_thrower_spike",
+        "mat_proj_magma_thrower": "mat_proj_magma_thrower"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_piglin_single_charge_01": "badger:fx_piglin_lava_thrower_single_charge_sparks",
+        "fx_piglin_single_charge_large_01": "badger:fx_piglin_lava_thrower_single_charge_sparks_large"
+      },
+      "render_controllers": ["controller.render.piglin_lava_thrower_single"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.model_vis = 1;","variable.mat_charge = 1;"]
+      },
+      "sound_effects": {
+        "charge": "BAE_lava_thrower_spike_projectile_charge_sml",
+        "explosion": "BAE_lava_thrower_spike_projectile_explosion_sml"
+      }
+    }
+  }
+}

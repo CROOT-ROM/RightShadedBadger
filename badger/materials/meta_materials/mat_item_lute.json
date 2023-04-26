@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_item_lute:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_item_lute_d",
+            "coeffMap": "textures/entity/tex_item_lute_mr",
+            "normalMap": "textures/entity/tex_item_lute_n",
+            "emissiveMap": "textures/entity/tex_item_lute_e"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_map:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/wmap_cursor/tex_wmap_cursor_d"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_redstone_launcher.default": {
+      "initial_state": "idle",
+      "states": {
+        "cooldown": {
+          "animations":  [
+            {
+              "cooldown_a": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.fx_cooldown = 0;","variable.mat_charge = 0.5;"],
+          "on_exit": ["variable.fx_cooldown = 1;","variable.face_anim_frame = 0;","variable.mat_charge = 1;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_sparks",
+              "enabled": true,
+              "locator": "loc_fx_pistone_base"
+            },
+            {
+              "effect": "fx_smoke",
+              "enabled": true,
+              "locator": "loc_fx_pistone_base"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "ammo_out",
+              "enabled": true
+            },
+            {
+              "effect": "cooldown_loop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "((variable.cooldown == 0) && (variable.charges > 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "fire": {
+          "animations":  [
+            {
+              "fire_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.proj_stone_set_vis = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "reload": "(query.any_animation_finished && (variable.cooldown == 0))"
+            },
+            {
+              "cooldown": "(variable.cooldown && query.any_animation_finished)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.mat_charge = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "idle_loop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "reload": "query.any_animation_finished"
+            }
+          ]
+        },
+        "reload": {
+          "animations":  [
+            {
+              "reload_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "fire": "variable.fire"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "cooldown": "(variable.cooldown && query.any_animation_finished)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

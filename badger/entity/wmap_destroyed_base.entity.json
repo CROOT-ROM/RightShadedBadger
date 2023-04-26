@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_destroyed_base"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_destroyed_base"
+      },
+      "identifier": "badger:wmap_destroyed_base",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_destroyed_base": "mat_wmap_destroyed_base"
+      },
+      "render_controllers": ["controller.render.wmap_destroyed_base"]
+    }
+  }
+}

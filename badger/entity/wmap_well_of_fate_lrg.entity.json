@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_well_of_fate_lrg"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_well_of_fate_lrg"
+      },
+      "identifier": "badger:wmap_well_of_fate_lrg",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_well_of_fate_lrg": "mat_wmap_well_of_fate_lrg"
+      },
+      "render_controllers": ["controller.render.wmap_well_of_fate_lrg"]
+    }
+  }
+}

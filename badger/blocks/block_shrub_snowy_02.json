@@ -1,0 +1,29 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_shrub_snowy_02": {
+            "isotropic":{
+                "up": true
+            },
+            "textures": {
+                "up": "textures/blocks/tex_block_snow",
+                "down": "textures/blocks/tex_block_shrub_top",
+                "side": "textures/blocks/tex_block_shrub_snowy_side_01"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_snow_icicle_drops_water",
+                        "range": "near",
+                        "probability": 0.1,
+                        "offset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]                   
+                    }
+                ]           
+            }
+        }
+    }
+}

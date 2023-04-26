@@ -1,0 +1,57 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "close_gate": {
+          "script": "close_gate"
+        },
+        "open_gate": {
+          "script": "open_gate"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_piglin_cage_gate"
+      }
+    },
+    "description": {
+      "animations": {
+        "close": "animation.entity_struct_piglin_cage_gate.close",
+        "death": "animation.entity_struct_piglin_cage_gate.death",
+        "default": "controller.animation.entity_struct_piglin_cage_gate.default",
+        "open": "animation.entity_struct_piglin_cage_gate.open",
+        "spawn": "animation.entity_struct_piglin_cage_gate.spawn"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "close_gate": "variable.is_open = 0;",
+        "open_gate": "variable.is_open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_piglin_cage_gate"
+      },
+      "identifier": "badger:entity_struct_piglin_cage_gate",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_piglin_cage_gate": "mat_entity_struct_piglin_cage_gate"
+      },
+      "particle_effects": {
+        "fx_explode": "badger:fx_entity_struct_piglin_cage_gate_explode",
+        "fx_sparkles": "badger:fx_entity_struct_piglin_cage_gate_sparkles"
+      },
+      "render_controllers": ["controller.render.entity_struct_piglin_cage_gate"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.bars_geo_vis = 1;","variable.lock_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        "open_sfx": "BAE_mob_alliance_cage_open"
+      }
+    }
+  }
+}

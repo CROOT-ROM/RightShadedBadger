@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_village_allegiance_cage": {
+      "geometry": "geometry.block_deco_village_allegiance_cage", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

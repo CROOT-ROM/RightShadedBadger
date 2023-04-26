@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:mob_skeleton_practice_ai"
+    },
+    "components": {
+      "badger:template": [
+        "badger:mob_skeleton"
+      ]
+    }
+  }
+}

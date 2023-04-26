@@ -1,0 +1,20 @@
+{
+	"format_version": "1.15.0",
+	"badger:client_block": {
+		"badger:block_fx_wof_ripple": {
+			"textures": "blank",
+			"particle_spawner": {
+				"effects": [
+					{
+						"effect": "badger:fx_block_wof_ripple",
+						"offset": [
+							0.0,
+							0.2,
+							0.0
+						]
+					}
+				]
+			}
+		}
+	}
+}

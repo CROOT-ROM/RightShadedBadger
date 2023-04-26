@@ -1,0 +1,80 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.piglin_magma_boss_rain_claw_in": {
+      "rig": "badger:piglin_magma_boss",
+      "enabled": "variable.in_cube_claw",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0.3,
+          "domain_b": 0.8,
+          "output": "v.matalpha",
+          "range_a": 0,
+          "range_b": 1
+        }
+      ]
+    },
+    "rigops_actions.piglin_magma_boss_rain_claw_out": {
+      "rig": "badger:piglin_magma_boss",
+      "enabled": "variable.out_cube_claw",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0,
+          "domain_b": 0.33,
+          "output": "v.matalpha",
+          "range_a": 1,
+          "range_b": 0
+        }
+      ]
+    },
+    "rigops_actions.piglin_magma_boss_spray_claw_in": {
+      "rig": "badger:piglin_magma_boss",
+      "enabled": "variable.spray_in",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 1.43,
+          "domain_b": 2.5,
+          "output": "v.matalpha",
+          "range_a": 0,
+          "range_b": 1
+        }
+      ]
+    },
+    "rigops_actions.piglin_magma_boss_claw_in": {
+      "rig": "badger:piglin_magma_boss",
+      "enabled": "variable.death_claw",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 1,
+          "domain_b": 2.76,
+          "output": "v.matalpha",
+          "range_a": 0,
+          "range_b": 1
+        }
+      ]
+    },
+    "rigops_actions.piglin_magma_boss_intro_claw": {
+      "rig": "badger:piglin_magma_boss",
+      "enabled": "variable.intro_claw",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 15.6,
+          "domain_b": 16.6,
+          "output": "v.matalpha",
+          "range_a": 0,
+          "range_b": 1
+        }
+      ]
+    }
+  }
+}

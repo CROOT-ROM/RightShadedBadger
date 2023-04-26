@@ -1,0 +1,36 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_sniper_nis.default": {
+      "initial_state": "default",
+      "states": {
+        "assemble": {
+          "animations":  [
+            {
+              "nis_assemble": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "(variable.is_assemble == 0)"
+            }
+          ]
+        },
+        "default": {
+          "animations":  [
+            {
+              "nis_disassemble": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "assemble": "variable.is_assemble"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

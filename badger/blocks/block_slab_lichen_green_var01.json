@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_slab_lichen_green_var01": {
+            "decoration": "deco_icegrass_lich_01",
+            "textures": {
+                "up": "textures/blocks/tex_block_lichen_green_top_var01",
+                "down": "textures/blocks/tex_block_lichen_green_top_var01",
+                "side": "textures/blocks/tex_block_lichen_green_side_var01"
+            }
+        }
+    }
+}

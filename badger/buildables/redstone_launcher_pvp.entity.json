@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:redstone_launcher"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:redstone_launcher",
+        "game_mode": "pvp"
+      },
+      "badger:area_overlays": {
+        "circles": [
+          {
+            "layer": "overlay",
+            "type": "tower",
+            "views": [
+              "placement"
+            ],
+            "filter_team": true,
+            "size": 115
+          }
+        ]
+      }
+    }
+  }
+}

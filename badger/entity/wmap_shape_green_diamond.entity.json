@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_shape_green_diamond"
+      },
+      "badger:map_icon_offset": {
+        "x": -5,
+        "y": 5,
+        "z": 0
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "wmap_shape_green_diamond": "geometry.wmap_shape_green_diamond"
+      },
+      "identifier": "badger:wmap_shape_green_diamond",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_shape_green_diamond": "mat_wmap_shape_green_diamond"
+      },
+      "render_controllers": [
+        "controller.render.wmap_shape_green_diamond"
+      ]
+    }
+  }
+}

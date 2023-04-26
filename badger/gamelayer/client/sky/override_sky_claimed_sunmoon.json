@@ -1,0 +1,36 @@
+{
+	"name": "override_sky_claimed_sunmoon",
+	"imgui_category": "ClaimedAreas",
+	"imgui_prefix": "claim",
+	"is_override": true,
+	"sky_color": "curve.claim_sky_color",
+	"sky_horizon_color": "curve.claim_sky_horizon_color",
+	"cloud_color": "curve.claim_cloud_color",
+	"cloud_shadows": "curve.claim_cloud_shadows",
+	"ambient_color": "curve.claim_ambient_color",
+	"direct_color": "curve.claim_direct_color",
+	"emissive_scale": "curve.claim_emissive_scale",
+	"particle_light": "curve.claim_particle_light",
+	"particle_emissive_scale": "curve.claim_particle_emissive_scale",
+	"fog_color": "curve.claim_fog_color",
+	"light_probe": "sunmoon",
+	"sparkle_params": "curve.claim_sparkle_params",
+	"ambient_sparkle_params": "curve.claim_ambient_sparkle",
+	"atmosphere_params": "curve.claim_atmosphere_params",
+	"horizon_params": "curve.claim_horizon_params",
+	"fog_params": "curve.claim_fog_params",
+	"claimed_area_override_protected_biomes": [
+		"nether_horderunner",
+		"lava_moat_horderunner",
+		"nether_piglin",
+		"lava_moat",
+		"nether_rotters",
+		"nether_rotters_upper"
+	],
+	"objects": [
+		{
+			"name": "sun",
+			"color_a": "curve.claim_sun_color"
+		}
+	]
+}

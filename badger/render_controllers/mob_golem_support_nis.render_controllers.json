@@ -1,0 +1,27 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_support_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_support": "MetaMaterial.mat_mob_golem_support"
+        },
+        {
+          "mat_mob_golem_support_face": "MetaMaterial.mat_mob_golem_support_face"
+        },
+        {
+          "mat_fx_generic_buff_128": "MetaMaterial.mat_fx_generic_buff_128"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "export_mortar": "variable.export_mortar_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

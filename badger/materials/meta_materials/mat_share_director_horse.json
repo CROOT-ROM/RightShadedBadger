@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "mat_share_director_horse:base_lure": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_mount_horse_d"
+        },
+        "uniforms": {
+            "NoiseOffsetScale": [
+                "0.0",
+                "0.0",
+                "2.0",
+                "2.0"
+            ]
+        }
+    }
+}

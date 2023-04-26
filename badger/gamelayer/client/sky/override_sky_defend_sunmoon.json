@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_defend_sunmoon",
+	"imgui_category": "DefendBase/SunMoon",
+	"imgui_prefix": "defend_sm",
+	"is_override": true,
+	"sky_color": "curve.defend_sm_sky_color",
+	"sky_horizon_color": "curve.defend_sm_sky_horizon_color",
+	"cloud_color": "curve.defend_sm_cloud_color",
+	"cloud_shadows": "curve.defend_sm_cloud_shadows",
+	"ambient_color": "curve.defend_sm_ambient_color",
+	"direct_color": "curve.defend_sm_direct_color",
+	"fog_color": "curve.defend_sm_fog_color",
+	"atmosphere_params": "curve.defend_sm_atmosphere_params",
+	"horizon_params": "curve.defend_sm_horizon_params",
+	"fog_params": "curve.defend_sm_fog_params",
+		"objects": [
+		{
+			"name": "sun",
+			"color_a": "curve.defend_sm_sun_color"
+		},
+		{
+			"name": "moon",
+			"color_a": "curve.defend_sm_moon_color"
+		}
+	]
+}

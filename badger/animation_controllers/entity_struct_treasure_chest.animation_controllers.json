@@ -1,0 +1,59 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_treasure_chest.default": {
+      "initial_state": "idle",
+      "states": {
+        "close": {
+          "animations":  [
+            {
+              "close_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "on_entry": ["variable.allay_vis = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "variable.is_open"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "open_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open_idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "open_idle": {
+          "animations":  [
+            {
+              "idle_open": 1.0
+            }
+          ],
+          "on_entry": ["variable.allay_vis = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "close": "!variable.is_open"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

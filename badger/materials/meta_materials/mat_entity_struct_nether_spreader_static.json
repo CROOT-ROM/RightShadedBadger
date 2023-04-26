@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_entity_struct_nether_spreader_static:base_entity_static": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_entity_struct_nether_spreader",
+      "coeffMap": "textures/entity/tex_entity_struct_nether_spreader_mr",
+      "normalMap": "textures/entity/tex_entity_struct_nether_spreader_n"
+    }
+  }
+}

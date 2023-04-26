@@ -1,0 +1,61 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_entity_struct_treasure_chest_keysparkles",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_stars_blue" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.allay_vis" ]
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "length" : 2.0,
+            "radius" : 0.2,
+            "vertical_angle" : 10.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.1, 0.1 ],
+            "initial_scale" : [ 1.0, 1.5 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 8,
+                  "frame_end" : 7,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 2
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 0.85
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 20.0,
+            "spawn_rate" : "math.random(10,20)"
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "0.500000" : [ 1.0, 1.0, 1.0, 0.5 ],
+               "0.750000" : [ 1.0, 1.0, 1.0, 0.5 ],
+               "1.000000" : [ 1.0, 1.0, 1.0, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.75,1.25)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, 1.0, 0.0 ],
+            "linear_drag_coefficient" : "(query.particle_normalized_age < 0.2) ? 1 : query.particle_normalized_age * 4"
+         }
+      }
+   }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "on_entity_hit": {
+          "audio": "BAE_mob_golem_sniper_projectile_impact_entity"
+        },
+        "on_world_hit": {
+          "audio": "BAE_mob_golem_sniper_projectile_impact_world"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_burst_shot"
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_dart_lrg"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.proj_dart_lrg"
+      },
+      "identifier": "badger:proj_burst_shot",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_dart_lrg": "mat_proj_dart_lrg"
+      },
+      "render_controllers": [
+        "controller.render.proj_dart_lrg"
+      ]
+    }
+  }
+}

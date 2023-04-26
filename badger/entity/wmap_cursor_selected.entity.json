@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:wmap_cursor_selected"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_cursor_selected"
+      },
+      "identifier": "badger:wmap_cursor_selected",
+      "materials": {
+        "mat_wmap_cursor_selected": "mat_wmap_cursor_selected"
+      },
+      "render_controllers": ["controller.render.wmap_cursor_selected"]
+    }
+  }
+}

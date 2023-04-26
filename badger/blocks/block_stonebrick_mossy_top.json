@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_stonebrick_mossy_top": 
+    {
+      "textures": {
+        "up": "textures/blocks/tex_block_alabaster_moss_top",
+        "down": "textures/blocks/tex_block_stonebrick_mossy",
+        "side": "textures/blocks/tex_block_stonebrick_mossy_top"
+      }
+    }
+  }
+}

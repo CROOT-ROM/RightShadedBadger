@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "mat_shared_drylands:base_entity_static": {
+      "material": "DecorationsFancy",
+      "culling": "none",
+      "textures": {
+          "diffuseMap": "textures/blocks/mat_shared_drylands/tex_shared_drylands",
+          "normalMap":  "textures/blocks/mat_shared_drylands/tex_shared_drylands_n",
+          "coeffMap": "textures/blocks/mat_shared_drylands/tex_shared_drylands_mr"
+      }
+  }
+}

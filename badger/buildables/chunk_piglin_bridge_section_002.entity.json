@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_bridge_section_002"
+    },
+    "components": {
+      "badger:block_source_removal" : {}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "block_deco_plant_corpse_flower_medium": {
+      "geometry": "geometry.block_deco_plant_corpse_flower_medium_geo", 
+      "shadow": true,
+      "type": "middle",
+      "up": "surface",
+      "forward": "surface",
+      "random_orientation": true,
+      "wind_strength": 0.01
+    }
+  }
+}

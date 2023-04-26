@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_village_fountain": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_village_fountain","MetaMaterial.mat_wmap_village_fountain_02"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_village_fountain": "Array.materials[variable.state]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

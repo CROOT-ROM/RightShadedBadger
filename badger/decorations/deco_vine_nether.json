@@ -1,0 +1,17 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_vine_nether": {
+      "geometry": "geometry.block_deco_vine_nether_geo", 
+      "shadow": false, 
+      "up": "world", 
+      "forward": "surface",
+      "wind_strength": 0.10,
+      "normals_interpolation": 0.0,
+      "collision": {
+        "mode" :"instance",
+        "intensity": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "air": {},
+  "stone": {
+    "textures": "stone",
+    "sound": "stone"
+  },
+  "grass": {
+    "isotropic": {
+      "up": true,
+      "down": true
+    },
+    "textures": {
+      "up": "grass_top",
+      "down": "grass_bottom",
+      "side": "grass_side"
+    },
+    "sound": "grass"
+  },
+  "dirt": {
+    "isotropic": true,
+    "textures": "dirt",
+    "sound": "gravel"
+  },
+  "bedrock": {
+    "textures": "bedrock",
+    "sound": "stone"
+  },
+  "flowing_water": {
+    "textures": {
+      "up": "still_water_grey",
+      "down": "still_water_grey",
+      "side": "flowing_water_grey"
+    }
+  },
+  "water": {
+    "textures": {
+      "up": "still_water_grey",
+      "down": "still_water_grey",
+      "side": "flowing_water_grey"
+    }
+  },
+  "flowing_lava": {
+    "textures": {
+      "up": "still_lava",
+      "down": "still_lava",
+      "side": "flowing_lava"
+    }
+  },
+  "lava": {
+    "isotropic": true,
+    "textures": {
+      "up": "still_lava",
+      "down": "still_lava",
+      "side": "flowing_lava"
+    }
+  },
+  "structure_block": {
+    "textures": "structure_block"
+  },
+  "structure_void": {
+    "textures": "structure_void"
+  }
+}

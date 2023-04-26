@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "on_block_build": {
+          "audio": "BAE_block_change",
+          "particles": {
+            "effect": "badger:fx_shared_block_build",
+            "enabled": true
+          }
+        },
+        "on_block_gather": {
+          "audio": "BAE_block_change",
+          "particles": {
+            "effect": "badger:fx_shared_block_gather",
+            "enabled": true
+          }
+        }
+      }
+    },
+    "description": {
+      "identifier": "badger:fx_block_change"
+    }
+  }
+}

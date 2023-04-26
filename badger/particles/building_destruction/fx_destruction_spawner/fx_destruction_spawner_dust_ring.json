@@ -1,0 +1,53 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_spawner_dust_ring",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_smoke_fp_brown" ]
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 1.1, 1.1 ],
+            "initial_scale" : [ 0.5, 1.5 ],
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 12,
+                  "frame_end" : 11,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 3 ],
+                  "rows_count" : 4
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 10.0
+         },
+         "minecraft:emitter_shape_disc" : {
+            "offset" : [ 0.0, 1.0, 0.0 ],
+            "plane_normal" : [ 0.0, 1.0, 0.0 ],
+            "radius" : 0.5,
+            "surface_only" : true
+         },
+         "minecraft:particle_initial_speed" : "Math.random(4, 9)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-10, 10)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(2,1)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [
+               0.0,
+               "(query.particle_normalized_age < 0.2) ? 0 : query.particle_normalized_age * 2",
+               0.0
+            ],
+            "linear_drag_coefficient" : 1.5
+         }
+      }
+   }
+}

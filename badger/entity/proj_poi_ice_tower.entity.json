@@ -1,0 +1,84 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.proj_freeze_block"
+      },
+      "identifier": "badger:proj_poi_ice_tower",
+      "materials": {
+        "mat_proj_freeze_block": "mat_proj_freeze_block"
+      },
+      "render_controllers": [
+        "controller.render.proj_freeze_block"
+      ]
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_poi_tower_02_projectile",
+          "particles": [
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_start_flares",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_trail",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_wind",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_trail_frost",
+              "locator": "loc_fx_corner01",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_trail_frost",
+              "locator": "loc_fx_corner02",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_trail_frost",
+              "locator": "loc_fx_corner03",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_ice_tower_trail_frost",
+              "locator": "loc_fx_corner04",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "on_death": {
+          "audio": "BAE_poi_tower_02_projectile_stop"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_poi_tower_02_projectile_impact_entity",
+          "particles": "badger:fx_proj_poi_ice_tower_impact"
+        },
+        "on_world_hit": {
+          "audio": "BAE_poi_tower_02_projectile_impact_world",
+          "particles": "badger:fx_proj_poi_ice_tower_impact"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_freeze_block"
+      }
+    }
+  }
+}

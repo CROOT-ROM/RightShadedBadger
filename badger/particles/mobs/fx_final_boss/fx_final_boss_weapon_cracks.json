@@ -1,0 +1,56 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_weapon_cracks",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_crawling_lightning_16_orange" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : -1.0
+         },
+         "expiration_mode" : "immediate"
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.staff_vis" ]
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "initial_scale" : [ 0.4, 0.5 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 5,
+                  "frame_end" : 4,
+                  "frame_start" : [ 0, 24 ],
+                  "rows_count" : 5
+               },
+               "time_integration" : {
+                  "cycles_count" : 1,
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "1 - variable.staff_vis"
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 100.0,
+            "spawn_rate" : 10.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 1.5, 1.5, 1.5 ],
+            "surface_only" : true
+         },
+         "minecraft:particle_initial_speed" : 0.01,
+         "minecraft:particle_lifetime_expression" : {},
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:item_sword_hero"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.item_sword_hero.default"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.item_sword_hero"
+      },
+      "identifier": "badger:item_sword_hero",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_sword_hero": "mat_item_sword_hero"
+      },
+      "render_controllers": ["controller.render.item_sword_hero"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_under_attack": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_under_attack","MetaMaterial.mat_wmap_under_planned","MetaMaterial.mat_wmap_under_success"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_under_attack": "Array.materials[variable.state]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.mob_fallen_warrior": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_256","MetaMaterial.mat_fx_frozen_256","MetaMaterial.mat_fx_spore_damaged_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_fallen_warrior": "MetaMaterial.mat_mob_fallen_warrior"
+        },
+        {
+          "mat_mob_fallen_warrior_face": "MetaMaterial.mat_mob_fallen_warrior_face"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

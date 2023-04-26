@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_redstone_launcher",
+            "materials": {
+                "mat_proj_stone_block": "mat_proj_stone_block",
+                "mat_proj_tnt_block": "mat_proj_tnt_block"
+            },
+            "geometry": {
+                "default": "geometry.proj_stone_block"
+            },
+            "render_controllers": [
+                "controller.render.proj_stone_block"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:presentation_event": {
+                "kaboomery_rsl_start": {
+                    "audio": "BAE_redstone_launcher_projectile_tnt"
+                },
+                "on_initialized": {
+                    "audio": "BAE_redstone_launcher_projectile",
+                    "particles": {
+                        "effect": "badger:fx_proj_redstone_trail",
+                        "locator": "loc_fx_main",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_world_hit": {
+                    "audio": "BAE_redstone_launcher_projectile_impact_world",
+                    "particles": "badger:fx_proj_redstone_launcher_impact"
+                },
+                "on_entity_hit": {
+                    "audio": "BAE_redstone_launcher_projectile_impact_entity",
+                    "particles": "badger:fx_proj_redstone_launcher_impact"
+                },
+                "on_intercepted": {
+                    "audio": "BAE_redstone_launcher_projectile_intercepted",
+                    "particles": "badger:fx_tower_anti_siege_red_stone"
+                }
+            },
+            "badger:rendering": {
+                "definition": "badger:proj_stone_block"
+            },
+            "badger:template": ["badger:template_status_effects"]
+        }
+    }
+}

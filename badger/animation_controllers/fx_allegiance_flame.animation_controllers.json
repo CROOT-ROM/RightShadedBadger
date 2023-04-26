@@ -1,0 +1,33 @@
+{
+  "animation_controllers": {
+    "controller.animation.fx_allegiance_flame.default": {
+      "initial_state": "flame_on",
+      "states": {
+        "flame_off": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flame_on": "(variable.flame_off == 0)"
+            }
+          ]
+        },
+        "flame_on": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_flame",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "transitions":  [
+            {
+              "flame_off": "variable.flame_off"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

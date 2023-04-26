@@ -1,0 +1,38 @@
+{
+  "defaults": {
+    "dofogofwar": false,
+    "dodaylightcycle": true,
+    "doweathercycle": true,
+    "enablecinematicdeaths": true,
+    "doplayersinvincible": false,
+    "bsharpenabled": true,
+    "campaignactsenabled": false,
+    "mapenabled": true,
+    "precachestructures": true,
+    "teamcolors": true,
+    "entitystreamingenabled": false,
+    "autosaveenabled": false,
+    "saveonquitenabled": false,
+    "creativemodedefault": false,
+    "difficultymodeenabled": false,
+    "popcapenabled": true,
+    "worldsizeaxischunks": 300,
+    "preloadworldchunkradius": 45,
+    "onboardingenabledcampaign": false,
+    "onboardingenabledpvp": true,
+    "randomstartingteam": true,
+    "allaymessages": false,
+    "factioncoloricon": false,
+    "pvpobjectivehealthbars": true,
+    "hostquitbanenabled": false,
+    "usepvptutorialscripts": true,
+    "exclusiveluredunits": true,
+    "useactiontelemetry": false,
+    "teamcompassicons": true,
+    "allowislands": false
+  },
+  "badger:template": {
+    "parent": "game_rules",
+    "game_mode": "pvp"
+  }
+}

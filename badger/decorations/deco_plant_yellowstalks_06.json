@@ -1,0 +1,14 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_plant_yellowstalks_06": {
+      "geometry": "geometry.block_deco_plant_yellowstalks_06", 
+      "shadow": true, 
+      "normals_interpolation" : 0.0,
+      "up": "surface", 
+      "forward": "world",
+      "random_orientation": true,
+      "wind_strength": 0.05
+    }
+  }
+}

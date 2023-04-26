@@ -1,0 +1,91 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_proj_small_explosion_trail",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_cut_e_embers"]
+      },
+      "optimizations": {
+        "suspend_distance": 150.01
+      }
+    },
+    "molang_variables_inheritance": {
+      "variables": [
+        "variable.badger_buff_kaboomery"
+      ]
+    },
+    "components": {
+      "badger:emitter_rate_distance": {
+        "particles_count": "variable.badger_buff_kaboomery ? 1 : 0",
+        "distance": 0.5,
+        "max_particles": "variable.badger_buff_kaboomery ? 50 : 0"
+      },
+      "minecraft:emitter_lifetime_looping": {
+        "active_time": 1,
+        "sleep_time": 0
+      },
+      "minecraft:emitter_shape_sphere": {
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "radius": 0.3,
+        "surface_only": false,
+        "hemisphere_mode": false,
+        "direction_mode": "outwards"
+      },
+      "minecraft:particle_initial_speed": "Math.random(2,4)",
+      "badger:particle_noise_motion": {
+        "octaves": 4,
+        "speed": 1.0,
+        "radius": 0.5,
+        "direction_mode": "direction_ortho"
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.Random(0.5, 1.0)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          0,
+          0
+        ],
+        "linear_drag_coefficient": 4.0
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "0.035",
+          "0.035"
+        ],
+        "initial_scale": [
+          1.0,
+          1.0
+        ],
+        "animated_scale": "1.25 - (query.particle_normalized_age* 0.9)",
+        "facing_camera_mode": "rotate_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 16,
+            "rows_count": 1,
+            "frame_iteration": "row",
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "base_color": [
+          1,
+          0.7,
+          0.7,
+          1.0
+        ]
+      }
+    }
+  }
+}

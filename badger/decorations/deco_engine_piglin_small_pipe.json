@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_engine_piglin_small_pipe": {
+      "geometry": "geometry.block_deco_engine_piglin_small_pipe", 
+      "shadow": true, 
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.mob_illager_axe": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.mob_illager_axe",
+      "materials":  [
+        {
+          "mat_mob_illager_axe": "MetaMaterial.mat_mob_illager_axe"
+        },
+        {
+          "mat_mob_illager_axe_face": "MetaMaterial.mat_mob_illager_axe_face"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

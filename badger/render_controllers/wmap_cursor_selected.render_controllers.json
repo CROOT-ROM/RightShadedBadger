@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_cursor_selected": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_cursor_selected": "MetaMaterial.mat_wmap_cursor_selected"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

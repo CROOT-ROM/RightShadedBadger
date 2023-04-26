@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_swipe:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_swipe_trail"
+        },
+        "uniforms": {
+            "TrailColor": [
+                "1.000",
+                "0.714",
+                "0.141",
+                "0.5"
+            ]
+        }
+    }
+}

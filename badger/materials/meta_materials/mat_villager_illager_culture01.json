@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_villager_illager_culture01:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_villager_illager_culture01_d",
+            "coeffMap": "textures/entity/tex_villager_illager_culture01_mr",
+            "normalMap": "textures/entity/tex_villager_illager_culture01_n"
+        }
+    }
+}

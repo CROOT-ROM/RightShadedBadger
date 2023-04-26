@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_oak_dead_leaves": {
+            "textures": {
+                "up": "textures/blocks/tex_block_oak_dead_leaves_top",
+                "down": "textures/blocks/tex_block_oak_dead_leaves_mid",
+                "side": "textures/blocks/tex_block_oak_dead_leaves_side"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_zombie_flies",
+                        "range": "near",
+                        "probability": 0.1                  
+                    }
+                ]           
+            }
+        }
+    }
+}

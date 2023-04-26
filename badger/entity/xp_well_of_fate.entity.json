@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:xp_well_of_fate"
+    },
+    "components": {
+      "badger:beacon_render_info": {
+        "states" : [
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.1176,
+              0.796,
+              0.882353
+            ],
+            "min_distance": 350,
+            "max_distance": 5000
+          },
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              1.0,
+              0.1,
+              0.6
+            ],
+            "min_distance": 350,
+            "max_distance": 5000
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "visual_state_added.wof_captured": {
+          "beacon": {
+            "index": 1
+          }
+        },
+        "visual_state_removed.wof_captured": {
+          "beacon": {
+            "index": 0
+          }
+        }
+      }
+    }
+  }
+}

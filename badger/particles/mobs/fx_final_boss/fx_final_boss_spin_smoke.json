@@ -1,0 +1,82 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_spin_smoke",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_smoke_sf_finalboss" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.interrupted" ]
+      },
+      "events" : {
+         "electric" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_smoke_electric",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:particle_advanced_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, 1.5, 0.0 ]
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 1.5, 1.5 ],
+            "initial_scale" : [ 1.2, 2.0 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 4,
+                  "frame_end" : 3,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 3 ],
+                  "rows_count" : 4
+               },
+               "time_integration" : {
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "electric" ]
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "variable.interrupted"
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 14.0
+         },
+         "minecraft:emitter_rate_steady" : {
+            "max_particles" : 250.0,
+            "spawn_rate" : "(query.emitter_normalized_age < 0.1) ? (math.random(15, 25)) : math.random(50, 85)"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 5.0, 0.5, 5.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 1.0, 1.0, 1.0, 0.0 ],
+               "0.250000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "0.750000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "1.000000" : [ 1.0, 1.0, 1.0, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "math.random(45, -45)",
+            "rotation_rate" : [ -25.0, 25.0 ]
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.6, 1.5)"
+         }
+      }
+   }
+}

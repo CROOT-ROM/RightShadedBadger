@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:presentation_event": {
+        "visual_state_added.disabled_by_health": {
+          "script": "flame_off"
+        },
+        "visual_state_removed.disabled_by_health": {
+          "script": "flame_on"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:fx_allegiance_flame"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.fx_allegiance_flame.default"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "flame_off": "variable.flame_off = 1;",
+        "flame_on": "variable.flame_off = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.fx_allegiance_flame"
+      },
+      "identifier": "badger:fx_allegiance_flame",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_flame": "badger:fx_allegiance_flame"
+      },
+      "render_controllers": ["controller.render.fx_allegiance_flame"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.maingeo_vis = 1;"]
+      }
+    }
+  }
+}

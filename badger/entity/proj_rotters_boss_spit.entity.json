@@ -1,0 +1,76 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_rotters_boss_spit",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_piglin_rotters_boss_spit": "mat_proj_piglin_rotters_boss_spit"
+            },
+            "geometry": {
+                "default": "geometry.proj_rotters_boss_spit"
+            },
+            "render_controllers": [
+                "controller.render.proj_rotters_boss_spit"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:rendering": {
+                "definition": "badger:proj_rotters_boss_spit"
+            },
+            "badger:entity_age": {},
+            "badger:point_lights": {
+                "lights": [
+                    {
+                        "color": [
+                            0.921,
+                            0.988,
+                            0.082
+                        ],
+                        "enabled": true,
+                        "falloff_power": 2,
+                        "intensity": 30,
+                        "locator": "loc_fx_main",
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "radius": 20
+                    }
+                ]
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_piglin_rotters_boss_vomit_projectile",
+                    "particles": [
+                        {
+                            "effect": "badger:fx_piglin_rotters_boss_proj_trail",
+                            "locator": "loc_fx_tip",
+                            "enabled": true,
+                            "bind_to_actor": true
+                        },
+                        {
+                            "effect": "badger:fx_piglin_rotters_boss_spit_start",
+                            "locator": "loc_fx_tip",
+                            "enabled": true
+                        }
+                    ]
+                },
+                "on_world_hit": {
+                    "audio": "BAE_piglin_rotters_boss_proj_spit_impact_world",
+                    "particles": "badger:fx_piglin_rotters_boss_spit_impact"
+                },
+                "on_entity_hit": {
+                    "particles": "badger:fx_piglin_rotters_boss_spit_impact"
+                },
+                "on_intercepted": {
+                    "audio": "BAE_piglin_rotters_boss_proj_spit_intercepted",
+                    "particles": "badger:fx_tower_anti_siege_impact_spit"
+                }
+            }
+        }
+    }
+}

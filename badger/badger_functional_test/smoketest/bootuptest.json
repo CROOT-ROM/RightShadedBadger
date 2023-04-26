@@ -1,0 +1,8 @@
+{
+  "test-name": "a-bootup-test",
+  "test-description": "Sanity test to see if game successfully boots the main menu",
+  "test-duration":30,
+  "runAsPartOfCompleteTestSuite": true,
+  "platforms": ["Win32", "Windows10", "Xbox","Switch","playstation_4","playstation_4_pro"],
+  "commands": ["/notifyprofiler setgamestate custom \"boot up complete \""]
+}

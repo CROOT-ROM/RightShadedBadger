@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:build_preview_reticle"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "reticle_alternate_effect_start": {
+          "beacon": {
+            "index": 1
+          }
+        },
+        "reticle_alternate_effect_stop": {
+          "beacon": {
+            "index": 0
+          }
+        }
+      },
+      "badger:beacon_render_info": {
+        "states": [
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.2,
+              0.2,
+              0.882353
+            ],
+            "min_distance": 0,
+            "max_distance": 150
+          },
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.882353,
+              0.2,
+              0.2
+            ],
+            "min_distance": 0,
+            "max_distance": 150
+          }
+        ]
+      }
+    }
+  }
+}

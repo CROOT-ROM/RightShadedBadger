@@ -1,0 +1,9 @@
+{
+  "format_version": "1.8.0",
+  "mat_proj_copper_block:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_proj_copper_block_d",
+      "coeffMap": "textures/entity/tex_proj_copper_block_mr"
+    }
+  }
+}

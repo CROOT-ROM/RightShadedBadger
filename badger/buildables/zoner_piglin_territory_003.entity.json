@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_piglin_territory_003"
+    },
+    "components": {
+      "badger:template": "badger:template_portal_piglin"
+    }
+  }
+}

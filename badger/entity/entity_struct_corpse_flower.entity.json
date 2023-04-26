@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_corpse_flower"
+      }
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.entity_struct_corpse_flower.attack_a",
+        "death_a": "animation.entity_struct_corpse_flower.death_a",
+        "default": "controller.animation.entity_struct_corpse_flower.default",
+        "idle_a": "animation.entity_struct_corpse_flower.idle_a",
+        "spawn_a": "animation.entity_struct_corpse_flower.spawn_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_corpse_flower"
+      },
+      "identifier": "badger:entity_struct_corpse_flower",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_corpse_flower": "mat_entity_struct_corpse_flower"
+      },
+      "particle_effects": {
+        "fx_flies": "badger:fx_corpse_flower_flies",
+        "fx_flower_gas_eject": "badger:fx_corpse_flower_gas_eject",
+        "fx_flower_spore_eject": "badger:fx_corpse_flower_spore_eject",
+        "fx_gas_linger": "badger:fx_corpse_flower_gas_linger"
+      },
+      "render_controllers": ["controller.render.entity_struct_corpse_flower"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "attack": "BAE_mob_alliance_zombie_corpse_flower_attack",
+        "idle": "BAE_mob_alliance_zombie_corpse_flower_idle",
+        "idle_stop": "BAE_mob_alliance_zombie_corpse_flower_idle_stop",
+        "reload": "BAE_mob_alliance_zombie_corpse_flower_reload"
+      }
+    }
+  }
+}

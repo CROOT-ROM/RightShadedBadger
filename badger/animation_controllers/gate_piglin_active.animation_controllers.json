@@ -1,0 +1,69 @@
+{
+  "animation_controllers": {
+    "controller.animation.gate_piglin_active.default": {
+      "initial_state": "closing",
+      "states": {
+        "closed": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "opening": "variable.isgateopened"
+            }
+          ]
+        },
+        "closing": {
+          "animations":  [
+            {
+              "closing": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "close",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "closed": "query.all_animations_finished"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "idle_opened": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "closing": "(variable.isgateopened == 0)"
+            }
+          ]
+        },
+        "opening": {
+          "animations":  [
+            {
+              "opening": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "open",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "open": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,51 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_trap_freeze.default": {
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "idle",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "loading": "variable.is_loading"
+            }
+          ]
+        },
+        "loading": {
+          "animations":  [
+            {
+              "loading_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.is_loading = 0;","variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "triggered",
+              "enabled": true
+            },
+            {
+              "effect": "idle_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,96 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_barracks_lift.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "inactive_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn_cooldown": "(variable.barracks_spawn_state || (variable.barracks_spawn_state == 2))"
+            }
+          ]
+        },
+        "doors_open": {
+          "animations":  [
+            {
+              "open_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.open = 0;","variable.light_flare_start = 0;"],
+          "transitions":  [
+            {
+              "spawn_cooldown": "query.all_animations_finished"
+            }
+          ]
+        },
+        "spawn_cooldown": {
+          "animations":  [
+            {
+              "spawn_cooldown": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "(variable.barracks_spawn_state == 0)"
+            },
+            {
+              "doors_open": "variable.open"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.entity_struct_barracks_lift.fxcontroller": {
+      "initial_state": "nonactive",
+      "states": {
+        "active": {
+          "on_entry": ["variable.fx_fire = 0;"],
+          "on_exit": ["variable.fx_fire = 1;","variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_top_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire01"
+            },
+            {
+              "effect": "fx_top_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire02"
+            },
+            {
+              "effect": "fx_top_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire03"
+            },
+            {
+              "effect": "fx_top_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire04"
+            }
+          ],
+          "transitions":  [
+            {
+              "nonactive": "(variable.barracks_spawn_state == 0)"
+            }
+          ]
+        },
+        "nonactive": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "active": "(variable.barracks_spawn_state || (variable.barracks_spawn_state == 2))"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

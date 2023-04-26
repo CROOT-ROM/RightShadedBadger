@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_stucco_village_trim_var02": {
+            "textures": {
+                "up": "textures/blocks/tex_block_stucco_village_trim",
+                "down": "textures/blocks/tex_block_stucco",
+                "side": "textures/blocks/tex_block_stucco_village_trim_side"
+            }
+        }
+    }
+}

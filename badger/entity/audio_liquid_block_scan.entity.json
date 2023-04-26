@@ -1,0 +1,103 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:audio_liquid_block_scan"
+    },
+    "components": {
+      "badger:audio_block_scanning": {
+          "max_step_dist": 30,
+          "min_step_dist": 2,
+          "biomes": [
+            {
+              "biome_name": "brokenlands_tarpits", "fmod_event": "BAE_amb_liquid_brokenlands_tarpits", "liquid_only" : true
+            },
+            {
+              "biome_name": "brokenlands_river", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "burnt_grass_trees", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "drylands", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "drylands_river", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "fateful_land_campaign", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "fateful_land_river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "forest", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "forest_river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "forest_mud_pit", "fmod_event": "BAE_amb_liquid_forest_mud", "liquid_only" : false
+            },
+            {
+              "biome_name": "frostlands", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "frostlands_springs", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "frostlands_river", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "frosty_grass_trees", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "grasslands", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "grasslands_mud_pit", "fmod_event": "BAE_amb_liquid_forest_mud", "liquid_only" : false
+            },
+            {
+              "biome_name": "grasslands_river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "jungle_field", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "jungle_pool", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "jungle_river", "fmod_event": "BAE_amb_liquid_jungle_pool", "liquid_only" : true
+            },
+            {
+              "biome_name": "lava_moat", "fmod_event": "BAE_amb_liquid_moat_lava", "liquid_only" : true
+            },
+            {
+              "biome_name": "mud_pit", "fmod_event": "BAE_amb_liquid_forest_mud", "liquid_only" : false
+            },
+            {
+              "biome_name": "outbounds_ocean", "fmod_event": "BAE_amb_liquid_outbounds_ocean", "liquid_only" : true
+            },
+            {
+              "biome_name": "river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "beach_rivers", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "outbounds_ocean", "fmod_event": "BAE_amb_liquid_outbounds_ocean", "liquid_only" : true
+            },
+            {
+              "biome_name": "mountain_river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "wetlands_river", "fmod_event": "BAE_amb_liquid_grasslands_river", "liquid_only" : true
+            },
+            {
+              "biome_name": "close_ocean", "fmod_event": "BAE_amb_liquid_outbounds_ocean", "liquid_only" : true
+            }
+          ]
+      }
+    }
+  }
+}

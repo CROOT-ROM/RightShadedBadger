@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.mount_beetle": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mount_beetle": "MetaMaterial.mat_mount_beetle"
+        },
+        {
+          "mat_mount_beetle_face": "MetaMaterial.mat_mount_beetle_face"
+        },
+        {
+          "mat_mount_beetle_de": "MetaMaterial.mat_mount_beetle_de"
+        },
+        {
+          "mat_mount_beetle_de_face": "MetaMaterial.mat_mount_beetle_de_face"
+        },
+        {
+          "mat_mount_beetle_lg_01": "MetaMaterial.mat_mount_beetle_lg_01"
+        },
+        {
+          "mat_mount_beetle_lg_01_face": "MetaMaterial.mat_mount_beetle_lg_01_face"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

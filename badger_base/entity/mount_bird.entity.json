@@ -1,0 +1,169 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_molang_to_fmod":  [
+        {
+          "fmod": "liquid_types",
+          "molang": "variable.terrain_type"
+        }
+      ],
+      "badger:block_source_info": {
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mount_bird"
+      },
+      "badger:face_animation": {
+        "anim_columns": 9,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1.75,
+        "position_interpolation_steps": 1.5,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 4.5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "mount_bird"
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,1,0.5],
+            "enabled": true,
+            "falloff_power": 2.5,
+            "intensity": "query.fbm_noise(4, 1.0, 40, 1.0)",
+            "locator": "loc_fx_chest",
+            "offset": [0,0,0.2],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_mount_bird_dx_hurt"
+        },
+        "intense_knockback": {
+          "audio": "BAE_mount_bird_dx_knockback_intense"
+        },
+        "normal_hit": {
+          "audio": "BAE_mount_bird_dx_hurt"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mount_bird_dx_knockback_normal"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mount_generic_swim_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mount_generic_swim_liquid_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mount_bird_knockback_land"
+        },
+        "sprint_start": {
+          "audio": "BAE_mount_bird_sprint_start"
+        },
+        "sprint_stop": {
+          "audio": "BAE_mount_bird_sprint_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mount_bird_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mount_bird",
+        "limit": 64
+      },
+      "badger:speed_data_to_fmod": {
+        "fmod_speed_param": "mount_speed",
+        "fmod_velocity_y_param": "mount_vel_y",
+        "max_speed": 16.725,
+        "min_speed": 0
+      },
+      "badger:template": ["badger:template_status_effects_mount"]
+    },
+    "description": {
+      "animations": {
+        "audio": "controller.animation.mount_bird.audio",
+        "cine_idle_bird_vanilla": "animation.mount_bird.cine_idle_bird_vanilla",
+        "default": "controller.animation.mount_bird.default",
+        "glide_a": "animation.mount_bird.glide_a",
+        "gust_attack": "animation.mount_bird.gust_attack",
+        "hit_react": "controller.animation.mount_bird.hit_react",
+        "hit_react_b": "animation.animal_bird.hit_react_b",
+        "idle_a": "animation.mount_bird.idle_a",
+        "jog_a": "animation.mount_bird.jog_a",
+        "jog_stop": "animation.mount_bird.jog_stop",
+        "jump_ascending": "animation.mount_bird.jump_ascending",
+        "jump_descending": "animation.mount_bird.jump_descending",
+        "jump_idle_end": "animation.mount_bird.jump_idle_end",
+        "jump_start": "animation.mount_bird.jump_start",
+        "knockback_a": "animation.mount_bird.knockback_a",
+        "locomotion": "controller.animation.mount_bird.locomotion",
+        "run_a": "animation.mount_bird.run_a",
+        "run_tilt_down": "animation.mount_bird.run_tilt_down",
+        "run_tilt_up": "animation.mount_bird.run_tilt_up",
+        "swim_a": "animation.mount_bird.swim_a",
+        "swim_idle": "animation.mount_bird.swim_idle",
+        "tilt": "controller.animation.mount_bird.tilt",
+        "walk_a": "animation.mount_bird.walk_a",
+        "fe_select": "animation.mount_bird.gust_attack",
+        "fe_idle": "animation.mount_bird.idle_a",
+        "fe_anim": "controller.animation.mount_bird.frontend"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Look Up","Look Down","Look Back","Look Forward","Medium Pupil","Tiny Pupil","Large Pupil"],
+      "geometry": {
+        "default": "geometry.mount_bird"
+      },
+      "identifier": "badger:mount_bird",
+      "materials": {
+        "mat_mount_bird": "mat_mount_bird",
+        "mat_mount_bird_face": "mat_mount_bird_face"
+      },
+      "particle_effects": {
+        "fx_land": "badger:fx_mount_bird_land"
+      },
+      "render_controllers": ["controller.render.mount_bird"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "audio": "1"
+          },
+          {
+            "tilt": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "dx_attack": "BAE_mount_bird_dx_attack",
+        "dx_idle": "BAE_mount_bird_dx_idle",
+        "dx_spotted_enemy": "BAE_mount_bird_dx_spotted_enemy",
+        "fall_loop": "BAE_mount_bird_fall_loop",
+        "fall_loop_stop": "BAE_mount_bird_fall_loop_stop",
+        "flap_single": "BAE_mount_bird_flap_single",
+        "fly_loop": "BAE_mount_bird_fly_loop",
+        "fly_loop_stop": "BAE_mount_bird_fly_loop_stop",
+        "footstep_idle": "BAE_mount_bird_footstep_idle",
+        "footsteps": "BAE_mount_bird_footsteps",
+        "gust": "BAE_mount_bird_gust",
+        "idle_ruffle": "BAE_mount_bird_idle_ruffle",
+        "jump": "BAE_mount_bird_jump",
+        "land": "BAE_mount_bird_land",
+        "land_short": "BAE_mount_bird_land_short",
+        "swim_os": "BAE_mount_bird_swim_oneshot"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "button_id": "button.bsharp_hold_lute",
+    "key_id": "key.bsharpInteract",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.bsharpInteractCrate"
+  },
+  {
+    "button_id": "button.rotate_preview_clockwise",
+    "key_id": "key.rotatePreviewClockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_counterclockwise",
+    "key_id": "key.rotatePreviewCounterclockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_direct_tap",
+    "key_id": "key.heroDirect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_tap",
+    "key_id": "key.heroLure",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_hold",
+    "focus_impact": "neutral"
+  }
+]

@@ -1,0 +1,100 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "badger:fx_destruction_deco_arch",
+			"basic_render_parameters": {
+				"materials_list": [
+					"mat_badger_particles_mesh_block"
+				]
+			},
+			"optimizations": {
+				"do_not_spawn_distance": 90
+			}
+		},
+		"molang_variables_inheritance": {
+			"variables": [
+				"variable.badger_buff_zoner_buff_structures"
+			]
+		},
+		"events": {
+			"impact_block_smoke": {
+				"particle_effect": {
+					"effect": "badger:fx_destruction_shared_block_impact_smoke",
+					"type": "emitter_bound"
+				}
+			},
+			"impact_block_split": {
+				"particle_effect": {
+					"effect": "badger:fx_destruction_shared_block_impact",
+					"type": "emitter_bound"
+				}
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.size = 1;"
+			},
+			"badger:emitter_rate_structure_instant": {
+				"spawn_chance": 0.6
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 10.0
+			},
+			"badger:emitter_shape_structure": {},
+			"minecraft:particle_lifetime_events": {
+				"creation_event": [
+					"impact_block_smoke"
+				],
+				"expiration_event": [
+					"impact_block_smoke"
+				]
+			},
+			"badger:particle_structure_initial_block_types": {},
+			"badger:particle_structure_initial_motion": {
+				"impact_mode": "structure_base_position",
+				"impact_mode_horizontal_only": false,
+				"linear_velocity": "math.random(2,12)",
+				"linear_velocity_vertical_scale": "math.random(-0.1,0.55)",
+				"linear_velocity_horizontal_scale": "math.random(-0.2,0.2)",
+				"impact_axis_angular_velocity": "math.random(-100,100)",
+				"custom_axis": [
+					"Math.Cos(query.emitter_random_1) * 0.05",
+					1.0,
+					"Math.Cos(query.emitter_random_1) * 0.05"
+				],
+				"random_axis_linear_velocity": 0.0,
+				"random_axis_angular_velocity": "Math.random(-180,180)",
+				"custom_axis_linear_velocity": 1,
+				"custom_axis_angular_velocity": "Math.random(-180,180)"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "10"
+			},
+			"badger:particle_advanced_motion_dynamic": {
+				"rotation_drag_coefficient": 0.0,
+				"linear_acceleration": [
+					"Math.Sin(query.emitter_random_1) * 5.2",
+					"math.lerp((math.random(3,9) * query.particle_random_1) ,-400,query.particle_normalized_age)",
+					"Math.Sin(query.emitter_random_1) * -5.2"
+				]
+			},
+			"minecraft:particle_motion_collision": {
+				"coefficient_of_restitution": 0.4,
+				"collision_drag": 50,
+				"collision_radius": 0.1,
+				"expire_on_contact": true,
+				"expire_on_contact_chance": 0.5,
+				"events": [
+					{
+						"event": "impact_block_split",
+						"min_speed": 0.1,
+						"impacts_count": 2,
+						"chance": 1.0
+					}
+				]
+			},
+			"badger:particle_appearance_block": {}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_proj_piggo_lava_launcher_start_flares",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_add_flares"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "events": {
+            "smoke": {
+                "particle_effect": {
+                    "effect": "badger:fx_proj_piggo_lava_launcher_start_smoke",
+                    "type": "emitter_bound"
+                }
+            }
+        },
+        "components": {
+            "minecraft:emitter_lifetime_events": {
+                "creation_event": ["smoke"]
+            },
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 3
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 3
+            },
+            "badger:emitter_shape_cylinder": {
+                "offset": [
+                    0,
+                    0,
+                    -1.5
+                ],
+                "arc_offset": 0,
+                "arc": 35.0,
+                "radius": 0.25,
+                "length": 0.25,
+                "vertical_angle": -25.0,
+                "thickness_ratio": 0.0,
+                "emission_mode": "volume",
+                "direction_mode": "aligned"
+            },
+            "minecraft:emitter_transform_parametric": {
+                "transforms": [
+                    {
+                        "translation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation_axis": [
+                            1,
+                            0,
+                            0
+                        ],
+                        "rotation_angle": 90
+                    }
+                ]
+            },
+            "minecraft:particle_initial_speed": -2,
+            "minecraft:particle_initial_spin": {
+                "rotation": 180,
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.random(0.2,0.3)"
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    "3.0",
+                    "1.25"
+                ],
+                "initial_scale": [
+                    0.5,
+                    0.75
+                ],
+                "animated_scale": "1 + (query.particle_normalized_age* 0.5)",
+                "facing_camera_mode": "lookat_direction",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 1,
+                        "rows_count": 4,
+                        "frame_iteration": "page",
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

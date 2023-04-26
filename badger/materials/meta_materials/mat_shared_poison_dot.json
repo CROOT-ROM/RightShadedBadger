@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0", 
+  "mat_shared_poison_dot:base_entity_static": {
+    "material": "DecorationsFancy",
+    "culling": "none",
+    "textures": {
+      "diffuseMap": "textures/blocks/mat_shared_poison_dot/tex_shared_poison_dot", 
+      "coeffMap": "textures/blocks/mat_shared_poison_dot/tex_shared_poison_dot_mr", 
+      "emissiveMap": "textures/blocks/mat_shared_poison_dot/tex_shared_poison_dot_e",
+      "normalMap": "textures/blocks/mat_shared_poison_dot/tex_shared_poison_dot_n"
+    }
+  }
+}

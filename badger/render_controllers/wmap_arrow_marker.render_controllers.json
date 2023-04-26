@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_arrow_marker": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_arrow_marker": "MetaMaterial.mat_wmap_arrow_marker"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

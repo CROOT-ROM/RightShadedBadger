@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_zombie": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mob_zombie": "MetaMaterial.mat_wmap_mob_zombie"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

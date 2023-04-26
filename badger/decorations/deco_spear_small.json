@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_spear_small": {
+            "geometry": "geometry.block_deco_spear_small_geo",
+            "up": "surface",
+            "forward": "world"
+        }
+    }
+}

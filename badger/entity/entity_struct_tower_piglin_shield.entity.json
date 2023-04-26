@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_tower_piglin_shield"
+      }
+    },
+    "description": {
+      "animations": {
+        "closing_a": "animation.entity_struct_tower_piglin_shield.closing_a",
+        "default": "controller.animation.entity_struct_tower_piglin_shield.default",
+        "idle_closed": "animation.entity_struct_tower_piglin_shield.idle_closed",
+        "idle_open": "animation.entity_struct_tower_piglin_shield.idle_open",
+        "opening_a": "animation.entity_struct_tower_piglin_shield.opening_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_tower_piglin_shield"
+      },
+      "identifier": "badger:entity_struct_tower_piglin_shield",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "render_controllers": ["controller.render.entity_struct_tower_piglin_shield"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.is_closed = 1;"]
+      },
+      "sound_effects": {
+        "close": "BAE_tower_piglin_shield_close",
+        "open": "BAE_tower_piglin_shield_open"
+      }
+    }
+  }
+}

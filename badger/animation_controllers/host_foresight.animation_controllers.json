@@ -1,0 +1,179 @@
+{
+  "animation_controllers": {
+    "controller.animation.host_foresight.behaviors": {
+      "states": {
+        "idle_behaviours": {
+          "animations":  [
+            {
+              "sentinal_a": "variable.badger_behavior_host_foresight_sentinel"
+            },
+            {
+              "happy_a": "variable.badger_behavior_host_foresight_happy"
+            },
+            {
+              "guarded_a": "variable.badger_behavior_host_foresight_guarded"
+            },
+            {
+              "idle_b": "variable.badger_behavior_host_foresight_carefree"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle_default": "query.behavior_default"
+            }
+          ]
+        },
+        "idle_default": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "idle_behaviours": "(query.behavior_default == 0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.host_foresight.default": {
+      "initial_state": "spawn",
+      "states": {
+        "celebrate": {
+          "animations":  [
+            {
+              "cheer_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "cheer": {
+          "animations":  [
+            {
+              "cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "behaviors": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "walk_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "talk": "variable.talk"
+            },
+            {
+              "cheer": "variable.cheer"
+            },
+            {
+              "celebrate": "variable.badger_behavior_host_foresight_celebrate"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "spawn",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "talk": {
+          "animations":  [
+            {
+              "talk_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_b": "(query.behavior_default || variable.badger_behavior_host_foresight_carefree)"
+            },
+            {
+              "walk_happy": "variable.badger_behavior_host_foresight_happy"
+            },
+            {
+              "walk_scared": "variable.badger_behavior_host_foresight_guarded"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "walk_move",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

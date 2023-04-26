@@ -1,0 +1,29 @@
+{
+  "menu_id": "type_select",
+  "selection_type": "single",
+  "gamepad_input_override": "none",
+  // defining button indexes to match unit type list in unit_select_service.json
+  "radial_mappings": [
+    {
+      "default_button_id": "button.type_category_down",
+      "slices": [
+        {
+          "button_id": "button.type_category_up", //Frontline
+          "gameplay_index": -2
+        },
+        {
+          "button_id": "button.type_category_left", //Ranged
+          "gameplay_index": -1
+        },
+        {
+          "button_id": "button.type_category_down", //Default
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.type_category_right", //Special
+          "gameplay_index": 1
+        }
+      ]
+    }
+  ]
+}

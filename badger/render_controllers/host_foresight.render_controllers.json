@@ -1,0 +1,24 @@
+{
+  "render_controllers": {
+    "controller.render.host_foresight": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_host_foresight": "MetaMaterial.mat_host_foresight"
+        },
+        {
+          "mat_host_foresight_face": "MetaMaterial.mat_host_foresight_face"
+        },
+        {
+          "mat_fx_host": "MetaMaterial.mat_fx_host"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

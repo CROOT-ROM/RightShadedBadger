@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:placeable_force_move"
+    },
+    "components": {
+      "badger:toggleable_decorative_child": {
+        "child_entity_id": "badger:placeable_director_flag",
+        "start_enabled": true,
+        "molang_variant_id": 0
+      }
+    }
+  }
+}

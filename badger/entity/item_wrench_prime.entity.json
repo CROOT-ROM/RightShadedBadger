@@ -1,0 +1,161 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_weapon",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_1m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_2m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_3m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_4m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_5m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_6m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_7m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_8m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_9m",
+            "offset": [0,0,0],
+            "radius": 15
+          },
+          {
+            "color": [1,0.102,0.941],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_10m",
+            "offset": [0,0,0],
+            "radius": 15
+          }
+        ]
+      },
+      "badger:rendering": {
+        "definition": "badger:item_wrench_prime"
+      }
+    },
+    "description": {
+      "animations": {
+        "cine_final_boss_death_all": "animation.cine_final_boss_death_wrench_nis.cine_final_boss_death_all",
+        "fx_controller": "controller.animation.item_wrench_prime.fx_controller",
+        "main_controls_a": "animation.item_wrench_prime.main_controls_a",
+        "parts_a": "animation.item_wrench_prime.parts_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.item_wrench_prime"
+      },
+      "identifier": "badger:item_wrench_prime",
+      "materials": {
+        "item_wrench_prime_mat_item_wrench_prime": "item_wrench_prime_mat_item_wrench_prime",
+        "item_wrench_prime_mat_piglin_final_boss_weapon": "item_wrench_prime_mat_piglin_final_boss_weapon",
+        "mat_item_wrench_prime": "mat_item_wrench_prime",
+        "mat_piglin_final_boss_weapon": "mat_piglin_final_boss_weapon"
+      },
+      "particle_effects": {
+        "fx_cracks": "badger:fx_final_boss_weapon_cracks",
+        "fx_explosion": "badger:fx_final_boss_death_explosion",
+        "fx_grind_bits": "badger:fx_final_wrench_grind_bits",
+        "fx_hit_01": "badger:fx_final_boss_death_wrench_hit",
+        "fx_pre_explosion": "badger:fx_final_boss_death_pre_explosion",
+        "fx_rays": "badger:fx_final_boss_death_rays",
+        "fx_weapon_cntr": "badger:fx_final_boss_death_cntr_msh",
+        "fx_weapon_core": "badger:fx_final_boss_death_core",
+        "fx_weapon_lightning": "badger:fx_final_boss_weapon_lightning",
+        "fx_weapon_lightning01": "badger:fx_final_boss_weapon_lightning01",
+        "fx_weapon_lightning02": "badger:fx_final_boss_weapon_lightning02",
+        "fx_weapon_lightning03": "badger:fx_final_boss_weapon_lightning03",
+        "fx_weapon_parts_idle": "badger:fx_final_boss_weapon_parts",
+        "fx_weapon_trail": "badger:fx_final_boss_cine_weapon_trail02",
+        "fx_wrench_lightning": "badger:fx_final_boss_death_hit_lightning"
+      },
+      "render_controllers": ["controller.render.item_wrench_prime"],
+      "scripts": {
+        "animate":  [
+          {
+            "fx_controller": "1"
+          }
+        ],
+        "initialize": ["variable.light_weapon_intensity = 30;","variable.staff_vis = 1;"]
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_nether_brick_pipe_01": {
+            "geometry": "geometry.block_deco_nether_brick_pipe_01_geo",
+            "up": "world",
+            "forward": "surface"
+        }
+    }
+}

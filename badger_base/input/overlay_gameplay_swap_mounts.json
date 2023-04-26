@@ -1,0 +1,31 @@
+[
+  {
+    "button_id": "button.banner_direct_tap",
+    "key_id": "key.heroDirect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_tap",
+    "key_id": "key.heroLure",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_hold",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.swap_mounts",
+    "key_id": "key.buffSlotting",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.ui.swap_mounts"
+  },
+  {
+    "button_id": "button.rotate_preview_clockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_counterclockwise",
+    "focus_impact": "neutral"
+  }
+]

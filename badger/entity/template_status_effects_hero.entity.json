@@ -1,0 +1,185 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_status_effects_hero"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_hero_damage_hurt_intense",
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "normal_hit": {
+          "audio": "BAE_hero_damage_hurt_normal",
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "weak_hit": {
+          "audio": "BAE_hero_damage_hurt_normal",
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "on_respawned": {
+          "audio": "BAE_hero_respawn_death",
+          "particles": {
+            "effect": "badger:fx_hero_respawn",
+            "enabled": "true"
+          }
+        },
+        "fast_travel_end": {
+          "audio": "BAE_hero_fast_travel_stop",
+          "particles": {
+            "effect": "badger:fx_hero_fast_travel",
+            "bind_to_actor": true,
+            "locator": "loc_butt",
+            "enabled": "true"
+          }
+        },
+        "fast_travel_start": {
+          "audio": "BAE_hero_fast_travel_start",
+          "particles": {
+            "effect": "badger:fx_hero_fast_travel",
+            "enabled": "true",
+            "bind_to_actor": true,
+            "locator": "loc_butt"
+          }
+        },
+        "on_mount_swap": {
+          "audio": "BAE_hero_mount_swap",
+          "script": "mount_swap",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_hero_mount_swap",
+            "enabled": true,
+            "locator": "loc_butt"
+          }
+        },
+        "on_liquid_shallow_exit": {
+          "particles":{
+            "effect": "badger:fx_stat_trails",
+            "kill_script": "exit_shallow_liquid"
+          }
+        },
+        "on_liquid_deep_enter": {
+          "script": "enter_deep_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "script": "exit_deep_liquid"
+        },
+        "wet_start": {
+          "script": "wet_start"
+        },
+        "burning_start": {
+          "audio": "BAE_hero_status_burning_start",
+          "particles": {
+            "effect": "badger:fx_stat_burning",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "burning_stop": {
+          "audio": "BAE_hero_status_burning_stop",
+          "particles": {
+            "effect": "badger:fx_stat_burning",
+            "kill_script": "burning_stop"
+          }
+        },
+        "spore_damaged_start": {
+          "audio": "BAE_hero_status_spore_damage_start",
+          "particles": {
+            "effect": "badger:fx_stat_spore_damaged",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "spore_damaged_stop": {
+          "audio": "BAE_hero_status_spore_damage_stop",
+          "particles":{
+            "effect": "badger:fx_stat_spore_damaged",
+            "kill_script": "spore_damaged_stop"
+          }
+        },
+        "healing_start": {
+          "audio": "BAE_hero_buff_heal_start",
+          "particles": {
+            "effect": "badger:fx_stat_healing",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "healing_stop": {
+          "audio": "BAE_hero_buff_heal_stop",
+          "particles":{
+            "effect": "badger:fx_stat_healing",
+            "kill_script": "healing_stop"
+          }
+        },
+        "healing_stone_start": {
+          "audio": "BAE_hero_buff_heal_start",
+          "particles": {
+            "effect": "badger:fx_stat_healing",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "healing_stone_stop": {
+          "audio": "BAE_hero_buff_heal_stop",
+          "particles":{
+            "effect": "badger:fx_stat_healing",
+            "kill_script": "healing_stop"
+          }
+        },
+        "poisoned_start": {
+          "audio": "BAE_hero_status_poison_start",
+          "particles": [
+            {
+              "effect": "badger:fx_stat_poison_start",
+              "enabled": true,
+              "bind_to_actor": true,
+              "locator": "loc_fx_stat_chest"
+            },
+            {
+              "effect": "badger:fx_stat_poison",
+              "enabled": true,
+              "bind_to_actor": true,
+              "locator": "loc_fx_stat_head"
+            }
+          ]
+        },
+        "poisoned_stop": {
+          "audio": "BAE_hero_status_poison_stop",
+          "particles":{
+            "effect": "badger:fx_stat_poison",
+            "kill_script": "poisoned_stop"
+          }
+        },
+        "stunned_start": {
+          "audio": "BAE_mob_status_stunned_start",
+          "script": "stunned_start",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_stun",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
+        "stunned_stop": {
+          "audio": "BAE_mob_status_stunned_stop",
+          "particles":{
+            "effect": "badger:fx_stat_stun",
+            "kill_script": "stunned_stop"
+          }
+        }
+      }
+    }
+  }
+}

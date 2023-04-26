@@ -1,0 +1,14 @@
+{
+	"badger:settings" : {
+		"renderer" : {
+			"forest_fog_params" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 77.0, 1024.0, 0.0, 1130.0 ]
+					}
+				]
+			}
+		}
+	}
+}

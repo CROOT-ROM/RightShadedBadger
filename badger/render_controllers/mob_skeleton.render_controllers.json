@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.mob_skeleton": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_skeleton": "MetaMaterial.mat_mob_skeleton"
+        },
+        {
+          "mat_mob_skeleton_face": "MetaMaterial.mat_mob_skeleton_face"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

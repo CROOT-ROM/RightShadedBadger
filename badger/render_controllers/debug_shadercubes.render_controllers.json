@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.debug_shadercubes": {
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "MetaMaterial.mat_debug_shadercubes" }
+      ],
+      "textures": [ "Texture.default", "Texture.default" ],
+      "part_visibility": [ {"default": 1} ]
+    }
+  }
+}

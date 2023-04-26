@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "mat_fx_spore_healed_128:base_buff": {
+    "textures": {
+      "noiseMap": "textures/shared/tex_shared_noise_128"
+    },
+    "uniforms": {
+      "BaseColor": [
+        "1.0",
+        "1.0",
+        "1.0",
+        "0.001"
+      ],
+      "MatColor": [
+        "0.1",
+        "0.0",
+        "0.0",
+        "1.0"
+      ],
+      "LumaMinMax": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "1.1"
+      ],
+      "ShimmerWidth": "0.015",
+      "ShimmerSpeed": "0.02",
+      "ShimmerColor": [
+        "0.02",
+        "0.08",
+        "2.0",
+        "1.0"
+      ],
+      "ShimmerColorNoise": "0.0",
+      "FalloffPower": "0.0",
+      "FalloffLevel": "0.0",
+      "FillLevel": "0.0",
+      "EdgeLevel": "0.0",
+      "NoiseLevel": "0.0",
+      "ShimmerLevel": "6.0",
+      "BoostLevel": "8.0",
+      "BoostPulseLevel": "0.0",
+      "BoostPulseFreq": "0.0",
+      "NoiseOffsetScale": [
+        "1.0",
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "NoiseAnimOffset": [
+        "0.0",
+        "0.02",
+        "0.0",
+        "0.0"
+      ]
+    }
+  }
+}

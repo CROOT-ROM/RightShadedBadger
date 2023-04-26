@@ -1,0 +1,26 @@
+{
+  "render_controllers": {
+    "controller.render.item_wrench_prime": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_piglin_final_boss_weapon","MetaMaterial.mat_item_wrench_prime"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_final_boss_weapon": "Array.materials[variable.cntrl_mat]"
+        },
+        {
+          "mat_item_wrench_prime": "MetaMaterial.mat_item_wrench_prime"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "parts": "variable.parts_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

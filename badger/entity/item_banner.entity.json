@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:item_banner",
+        "limit": 64
+      },
+      "badger:variable_propagation": {
+        "minecraft:player": ["direct_state","lure_state","placeable_direct_state","placeable_lure_state","stop_lure_state"]
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.item_banner.default",
+        "placeable_direct": "animation.item_banner.placeable_direct",
+        "placeable_lure": "animation.item_banner.placeable_lure",
+        "stop_lure": "animation.item_banner.stop_lure",
+        "trigger_direct": "animation.item_banner.trigger_direct",
+        "trigger_lure": "animation.item_banner.trigger_lure"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.item_banner"
+      },
+      "identifier": "badger:item_banner",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_banner": "mat_item_banner"
+      },
+      "render_controllers": ["controller.render.item_banner"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

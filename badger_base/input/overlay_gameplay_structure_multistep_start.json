@@ -1,0 +1,144 @@
+[
+  {
+    "button_id": "button.ui.show_recipe",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.songbook_screen",
+    "key_id": "key.songbookScreen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_direct_tap",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_tap",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_lure_hold",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.combatMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.charge",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.ui.show_recipe",
+    "key_id": "",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_clockwise",
+    "key_id": "key.rotatePreviewClockwise",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.ui.rotatePreviewClockwise"
+  },
+  {
+    "button_id": "button.rotate_preview_counterclockwise",
+    "key_id": "key.rotatePreviewCounterclockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.hero_action_1_continuous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.place_building",
+    "key_id": "key.action",
+    "focus_impact": "neutral",
+    "deactivated_on_error": true,
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.ui.place_placement"
+  },
+  {
+    "button_id": "button.build_mode_hold",
+    "key_id": "key.build",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.ping.buildpreview",
+    "key_id": "key.ping.buildpreview",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.ui.buildPreviewPing"
+  },
+  {
+    "button_id": "button.battle_view",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.battle_view_close",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot4",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot5",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot6",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot7",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot8",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot9",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_previous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_next",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.map_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category4",
+    "focus_impact": "neutral"
+  }
+]

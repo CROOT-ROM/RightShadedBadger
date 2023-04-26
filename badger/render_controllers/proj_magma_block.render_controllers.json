@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.proj_magma_block": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_proj_magma_block": "MetaMaterial.mat_proj_magma_block"
+                }
+            ],
+            "textures": [
+                "Texture.default",
+                "Texture.default"
+            ]
+        }
+    }
+}

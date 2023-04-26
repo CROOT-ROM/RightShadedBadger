@@ -1,0 +1,28 @@
+{
+  "menu_id": "toolbar",
+  "selection_type": "single",
+  "gamepad_input_override": "look",
+  // defining button indexes to match toolbar build list in hud.json
+  "radial_mappings": [
+    {
+      "slices": [
+        {
+          "button_id": "button.toolbar_select_resourcing",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.toolbar_select_well_of_fate",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.toolbar_select_village",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.toolbar_select_military",
+          "gameplay_index": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_redstone_launcher_exp_start",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "reload_center" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_launcher_exp_start_flare",
+               "type" : "emitter_bound"
+            }
+         },
+         "reload_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_launcher_exp_start_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "reload_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_launcher_exp_start_smoke",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "reload_center", "reload_flares" ],
+            "timeline" : {
+               "0.100000" : [ "reload_smoke" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

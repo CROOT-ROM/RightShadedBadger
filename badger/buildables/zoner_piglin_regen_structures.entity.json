@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_piglin_regen_structures",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_regenerator_idle"
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_piglin_regenerator_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_regenerator_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_piglin_regenerator_dmg_stage1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_piglin_regenerator_dmg_stage2"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_regenerator_destroyed"
+        },
+        "on_buff_utilize_start": {
+          "audio": "BAE_piglin_regenerator_active_start"
+        },
+        "on_buff_utilize_stop": {
+          "audio": "BAE_piglin_regenerator_active_stop"
+        },
+        "on_healing_applied_to_structure_0": {
+          "audio": "BAE_piglin_regenerator_heal_full"
+        },
+        "on_healing_applied_to_structure_1": {
+          "audio": "BAE_piglin_regenerator_heal_stage1"
+        },
+        "on_healing_applied_to_structure_2": {
+          "audio": "BAE_piglin_regenerator_heal_stage2"
+        }
+      },
+      "badger:decal_visualization": {
+        "decal_textures": [
+          "decal_aoi"
+        ]
+      },
+      "badger:area_overlays": {
+        "auras": [
+          {
+            "layer": "aura",
+            "type": "buff",
+            "views": [
+              "placement"
+            ],
+            "filter_team": true,
+            "size": 30
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "pigCarpenter"
+        ]
+      }
+    }
+  }
+}

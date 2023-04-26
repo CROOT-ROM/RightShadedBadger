@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_birch_trunk": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_birch_trunk_top",
+                "down": "textures/blocks/tex_block_tree_birch_trunk_top",
+                "side": "textures/blocks/tex_block_tree_birch_trunk"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_butterfly_grasslands",
+                        "range": "middle",
+                        "probability": 0.01                 
+                    }
+                ]           
+            }
+        }
+    }
+}

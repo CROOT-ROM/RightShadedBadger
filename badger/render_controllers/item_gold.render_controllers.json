@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_gold": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_gold": "MetaMaterial.mat_item_gold"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

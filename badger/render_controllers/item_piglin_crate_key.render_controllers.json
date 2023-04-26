@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_piglin_crate_key": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_piglin_crate_key": "MetaMaterial.mat_item_piglin_crate_key"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

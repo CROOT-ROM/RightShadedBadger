@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.impact_lava_geyser": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_impact_lava_geyser": "MetaMaterial.mat_impact_lava_geyser"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

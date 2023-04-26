@@ -1,0 +1,27 @@
+[
+  {
+    "button_id": "button.open_imgui",
+    "key_id": "key.openImgui",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.console",
+    "key_id": "key.command",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.skip_cinematic",
+    "key_id": "key.skipCinematic",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.skip_cinematic_hold",
+    "key_id": "key.skipCinematic",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.show_skip_cinematic",
+    "key_id": "key.showSkipCinematic",
+    "focus_impact": "neutral"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_outpost_hq_pvp_blue": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_outpost_hq_pvp_blue": "MetaMaterial.mat_wmap_outpost_hq_pvp_blue"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

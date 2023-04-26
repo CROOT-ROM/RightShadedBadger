@@ -1,0 +1,100 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_destruction_redstone_exp",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_blend_e_flame_center"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "events": {
+            "smokering": {
+                "particle_effect": {
+                    "effect": "badger:fx_destruction_redstone_exp_smokering",
+                    "type": "emitter_bound"
+                }
+            },
+            "sparks": {
+                "particle_effect": {
+                    "effect": "badger:fx_destruction_redstone_exp_sparks_lingering",
+                    "type": "emitter_bound"
+                }
+            }
+        },
+        "components": {
+            "minecraft:emitter_lifetime_events": {
+                "timeline": {
+                    "0.0": [
+                        "sparks"
+                    ],
+                    "0.02": [
+                        "smokering"
+                    ]
+                }
+            },
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 5
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 3
+            },
+            "minecraft:emitter_shape_box": {
+                "offset": [
+                    0,
+                    0,
+                    0
+                ],
+                "half_dimensions": [
+                    3.5,
+                    3.5,
+                    3.5
+                ],
+                "surface_only": false,
+                "direction": [
+                    0,
+                    1,
+                    0
+                ],
+                "direction_mode": "custom"
+            },
+            "minecraft:particle_initial_speed": 0,
+            "minecraft:particle_initial_spin": {
+                "rotation": "Math.random(-180, 180)",
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.random(0.3,0.75)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_drag_coefficient": 2.0,
+                "linear_acceleration": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    3.25,
+                    3.25
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 6,
+                        "rows_count": 4,
+                        "frame_iteration": "page",
+                        "frame_start": 6
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

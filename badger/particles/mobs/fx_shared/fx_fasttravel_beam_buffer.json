@@ -1,0 +1,35 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_fasttravel_beam_buffer",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_add_light_beam" ]
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.traveller_size" ]
+      },
+      "events" : {
+         "beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_beam_start",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_expression" : {},
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fast_travel_interrupt4"
+         },
+         "minecraft:emitter_initialization" : {},
+         "minecraft:emitter_lifetime_events" : {
+            "timeline" : {
+               "0.525000" : [ "beam" ]
+            }
+         },
+         "minecraft:emitter_local_space" : {}
+      }
+   }
+}

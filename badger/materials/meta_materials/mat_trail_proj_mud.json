@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_proj_mud:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_swipe_trail02"
+        },
+        "blendmode": "alphablend",
+        "uniforms": {
+            "TrailColor": [
+                "0.55",
+                "0.5",
+                "0.45",
+                "0.35"
+            ]
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_lava_tower_cluster_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "decal" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 10.0, 10.0, 10.0 ],
+                  "apply_to_owned" : false,
+                  "lifetime" : 3.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_redstone_impact"
+               }
+            }
+         },
+         "impact_SmokeRing" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_cluster_impact_Smokering",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flame" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_cluster_flame",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_cluster_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_cluster_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_cluster_shockwave",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares", "impact_flame" ],
+            "timeline" : {
+               "0.010000" : [ "impact_SmokeRing", "impact_parts", "decal" ],
+               "0.030000" : [ "shockwave" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

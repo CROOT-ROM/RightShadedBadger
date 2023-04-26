@@ -1,0 +1,51 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_tower_anti_siege_impact_wood",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "impact_SmokeRing" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_impact_smokering",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_parts_wood",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparks_linger" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_sparkls_linger",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares" ],
+            "timeline" : {
+               "0.010000" : [ "impact_SmokeRing", "impact_parts", "sparks_linger" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

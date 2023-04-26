@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_culture01_pillar_base_deactivated": {
+      "geometry": "geometry.block_deco_culture01_pillar_base_deactivated", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

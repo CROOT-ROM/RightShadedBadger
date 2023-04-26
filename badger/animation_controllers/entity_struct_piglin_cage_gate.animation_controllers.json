@@ -1,0 +1,64 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_piglin_cage_gate.default": {
+      "initial_state": "spawn",
+      "states": {
+        "close": {
+          "animations":  [
+            {
+              "close": 1.0
+            }
+          ],
+          "on_entry": ["variable.lock_geo_vis = 1;","variable.bars_geo_vis = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "variable.is_open"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "open": {
+          "animations":  [
+            {
+              "open": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "close": "(variable.is_open == 0)"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "close": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "button_id": "button.destroy_or_attack",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.build_or_interact",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_previous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_next",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.map_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.songbook_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.pause",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.open_crafting",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_direct_switch_toolbar",
+    "key_id": "key.typeSelectMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_mode_tap",
+    "key_id": "key.toolbarSelectMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_mode_close",
+    "key_id": "key.radialMenuExit",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_mode_select",
+    "key_id": "key.radialMenuSelect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.jump",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.hero_action_1_continuous",
+    "focus_impact": "neutral"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_tower_piglin_knockback.default": {
+      "initial_state": "spawn",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "default": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "fire": "variable.fire"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "fire": {
+          "animations":  [
+            {
+              "fire_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.fire = 0;","variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "windup",
+              "enabled": true
+            },
+            {
+              "effect": "idle_high_stop",
+              "enabled": true
+            },
+            {
+              "effect": "idle_low_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "default": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,78 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interaction_presentation": {
+          "trigger_specific_events": true,
+          "trigger_generic_events": false
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_poi_golem_shield_piece_attract_body"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_shield_nis"
+      },
+      "badger:hud_message_interaction_failed": {
+        "resource_cost_failed_message": {
+          "hud_message_id": "interact_cost_required",
+          "hud_message_args": ["100", "resources.gold.name", "key.item.gold", "125", "resources.iron.name", "key.item.iron", "poi.ally.04.name"]
+        },
+        "unlock_cost_failed_message": {
+          "hud_message_id": "interact_unlock_required",
+          "hud_message_args": ["structures.unlock.poi.golem.name","poi.ally.04.name"]
+        }
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "assemble": "animation.mob_golem_shield_nis.assemble",
+        "default": "controller.animation.mob_golem_shield_nis.default",
+        "idle": "animation.mob_golem_shield_nis.idle",
+        "idle_feather": "animation.mob_golem_shield_nis.idle_feather",
+        "intro": "animation.mob_golem_shield_nis.intro"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Cube Face A","Cube Face B","Cube Face C","Cube Face D"],
+      "geometry": {
+        "default": "geometry.mob_golem_shield_nis"
+      },
+      "identifier": "badger:mob_golem_shield_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_mob_golem_shield": "mat_mob_golem_shield",
+        "mat_mob_golem_shield_face": "mat_mob_golem_shield_face"
+      },
+      "particle_effects": {
+        "fx_attach": "badger:fx_cine_shield_golem_attach",
+        "fx_back_rays": "badger:fx_cine_shield_golem_back_rays",
+        "fx_body_sparkles": "badger:fx_cine_shield_golem_body_sparkle",
+        "fx_flares": "badger:fx_cine_shield_flares",
+        "fx_head_sparkles": "badger:fx_cine_shield_golem_head_spakles",
+        "fx_leg_sparkles": "badger:fx_cine_shield_leg_sparkle",
+        "fx_parts": "badger:fx_cine_shield_drag_parts",
+        "fx_step": "badger:fx_cine_shield_golem_step"
+      },
+      "render_controllers": ["controller.render.mob_golem_shield_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.golem_head_geo_vis = 0;","variable.feather_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        "assemble": "BAE_cine_gol04_c01_assemble"
+      }
+    }
+  }
+}

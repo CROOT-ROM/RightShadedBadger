@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sheet_leafpile_02": {
+            "textures": {
+                "up": "textures/blocks/tex_block_leafpile_top_02",
+                "down": "textures/blocks/tex_block_leafpile_top_02",
+                "side": "textures/blocks/tex_sheet_leafpile_side_02"
+            }
+            
+        }
+    }
+}

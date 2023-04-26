@@ -1,0 +1,14 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_trap_freeze": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_player": "MetaMaterial.mat_shared_block_entity_player"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

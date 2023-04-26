@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mount_giant_bird": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mount_giant_bird": "MetaMaterial.mat_wmap_mount_giant_bird"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

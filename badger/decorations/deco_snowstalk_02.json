@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_snowstalk_02": {
+            "geometry": "geometry.block_deco_snowstalk_02",
+            "shadow": true,
+            "random_orientation": true,
+            "wind_strength": 0.01
+        }
+    }
+}

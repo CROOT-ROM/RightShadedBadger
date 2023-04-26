@@ -1,0 +1,17 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_daisy_03": {
+            "decoration": "deco_plant_daisy_03",
+            "particle_spawner": {
+				"effects" : [
+					{
+		                "effect": "badger:fx_block_butterfly_fateful_perched",
+						"range": "near",
+						"probability": 0.05
+					}
+				]			
+            }
+        }
+    }
+}

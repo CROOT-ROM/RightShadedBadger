@@ -1,0 +1,23 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_nether_spreader": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_entity_struct_nether_spreader","MetaMaterial.mat_entity_struct_nether_spreader_active"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_nether_spreader": "Array.materials[variable.super_nether_spreader]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "pump": "variable.pump_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,11 @@
+{
+    "defaults": {
+        "randomseedoverride":  2070850612,
+        "dodaylightcycle": false,
+        "doweathercycle": false
+    },
+    "badger:template": {
+        "parent": "game_rules",
+        "game_mode": "demo_pack_mclive"
+    }
+}

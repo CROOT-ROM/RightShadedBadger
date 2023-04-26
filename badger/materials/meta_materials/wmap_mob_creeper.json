@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "wmap_mob_creeper:entity_world_map": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_wmap_mob_creeper_d",
+            "coeffMap": "textures/entity/tex_wmap_mob_creeper_mr",
+      "normalMap": "textures/entity/tex_wmap_mob_creeper_n"
+        }
+    }
+}

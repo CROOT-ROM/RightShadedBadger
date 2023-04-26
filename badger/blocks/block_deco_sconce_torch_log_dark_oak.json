@@ -1,0 +1,27 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_sconce_torch_log_dark_oak": {
+      "textures": {
+        "up": "textures/blocks/tex_block_log_dark_oak_top",
+        "down": "textures/blocks/tex_block_log_dark_oak_top",
+        "side": "textures/blocks/tex_block_log_dark_oak"
+      },
+      "decoration": "deco_sconce_torch_log_dark_oak",
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_deco_sconce_torch_oak_fire",
+            "range": "far",
+            "probability": 1.0,
+            "offset": [
+              0.0,
+              0.85,
+              -0.15
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

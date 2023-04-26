@@ -1,0 +1,80 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_sprint",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01,
+            "update_priority" : "high"
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.terrain_type", "variable.fx_sprint" ]
+      },
+      "events" : {
+         "generic" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_dirt",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 0"
+         },
+         "grass" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_grass",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 11"
+         },
+         "nether" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_nether",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 2"
+         },
+         "sand" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_sand",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 9"
+         },
+         "snow" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_snow",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 6"
+         },
+         "stone" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_stone",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 10"
+         },
+         "water" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_sprint_water",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 3"
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fx_sprint"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "generic", "snow", "sand", "stone", "grass", "water", "nether" ]
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "variable.fx_sprint ? 0 : 1"
+         }
+      }
+   }
+}

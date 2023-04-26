@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:terraform_piglin_nether"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_netherspreader_destroyed"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_netherspreader_damage_state_1"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_piglin_netherspreader_damage_state_2"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_piglin_netherspreader_damage_state_3"
+        }
+      },
+      "badger:template": "badger:template_structure"
+    }
+  }
+}

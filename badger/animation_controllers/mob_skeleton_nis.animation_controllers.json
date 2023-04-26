@@ -1,0 +1,71 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_skeleton_nis.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser"
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_d": 1.0
+            },
+            {
+              "idle_c": 1.0
+            },
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_e": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_c": 1.0
+            },
+            {
+              "walk_b": 1.0
+            },
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.movechooser",
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

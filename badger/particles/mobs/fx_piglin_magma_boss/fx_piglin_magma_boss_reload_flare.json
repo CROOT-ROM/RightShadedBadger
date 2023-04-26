@@ -1,0 +1,120 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_piglin_magma_boss_reload_flare",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_cut_e_flame"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "components": {
+            "minecraft:emitter_local_space": {
+                "velocity": true
+            },
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 10
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 0.2
+            },
+            "minecraft:emitter_shape_box": {
+                "half_dimensions": [
+                    0.4,
+                    0.4,
+                    0.4
+                ],
+                "offset": [
+                    0,
+                    0,
+                    0
+                ],
+                "direction": [
+                    0,
+                    -1,
+                    0
+                ],
+                "direction_mode": "custom"
+            },
+            "minecraft:particle_initial_speed": "Math.random(1,2)",
+            "minecraft:particle_initial_spin": {
+                "rotation": 90,
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.Random(0.5, 1.0)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_acceleration": [
+                    0,
+                    0,
+                    0
+                ],
+                "linear_drag_coefficient": 2.0
+            },
+            "minecraft:particle_motion_collision": {
+                "expire_on_contact": true,
+                "collision_radius": 0.1
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    1.0,
+                    1.0
+                ],
+                "pivot": [
+                    0,
+                    -0.5
+                ],
+                "initial_scale": [
+                    0.75,
+                    3.0
+                ],
+                "animated_scale": "0.5 + (query.particle_normalized_age* 0.5)",
+                "facing_camera_mode": "lookat_direction",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 9,
+                        "rows_count": 6,
+                        "frame_iteration": "page",
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            },
+            "minecraft:particle_appearance_tinting": {
+                "gradient": {
+                    "0.0": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "0.12": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "0.75": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "1.0": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                "interpolant": "query.particle_normalized_age"
+            }
+        }
+    }
+}

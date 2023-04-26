@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_lava_thrower_spike": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_lava_thrower_spike": "MetaMaterial.mat_piglin_lava_thrower_spike"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "model": "variable.model_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,96 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_pig_play_mud_drops_splat",
+            "basic_render_parameters": {
+                "materials_list": [
+                    "mat_badger_fx_blend_ramp_waterdrops_fp_mud"
+                ]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 120
+            }
+        },
+        "events": {
+            "endsplash": {
+                "particle_effect": {
+                    "effect": "badger:fx_pig_liquid_mud_hit",
+                    "type": "emitter"
+                }
+            }
+        },
+        "components": {
+            "minecraft:emitter_rate_steady": {
+                "spawn_rate": 15,
+                "max_particles": 120
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 0.6
+            },
+            "minecraft:emitter_shape_sphere": {
+                "offset": [
+                    0,
+                    -0.25,
+                    0
+                ],
+                "radius": 0.25,
+                "surface_only": true,
+                "hemisphere_mode": false,
+                "direction_mode": "outwards"
+            },
+            "minecraft:particle_initial_speed": "Math.random(2, 7)",
+            "minecraft:particle_initial_spin": {
+                "rotation": "Math.random(-10, 10)",
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.random(0.4,1.2)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_drag_coefficient": 0.75,
+                "linear_acceleration": [
+                    0,
+                    -18,
+                    0
+                ]
+            },
+            "minecraft:particle_motion_collision": {
+                "enabled": true,
+                "coefficient_of_restitution": 0.1,
+                "collision_drag": 4,
+                "collision_radius": 0.1,
+                "expire_on_contact": true,
+                "expire_on_contact_chance": 1.0,
+                "activation_delay": 0,
+                "events": [
+                    {
+                        "event": "endsplash",
+                        "min_speed": 0,
+                        "impacts_count": 0,
+                        "chance": 1
+                    }
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    0.12,
+                    0.09
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 8,
+                        "rows_count": 1,
+                        "frame_iteration": "page",
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

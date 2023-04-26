@@ -1,0 +1,30 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_slab_plant_treecoral_01": {
+            "textures": {
+            "down": {
+                "smart": {
+                      "default" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "empty" :"textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "L" : "textures/blocks/tex_block_plant_coralstump_c_w_L_DOWN",
+                      "line" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "spoke" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                       "T" : "textures/blocks/tex_block_plant_coralstump_c_w_T_DOWN"
+                  }
+            },
+            "up": {
+                "smart": {
+                      "default" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "empty" :"textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "L" : "textures/blocks/tex_block_plant_coralstump_c_w_L",
+                      "line" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                      "spoke" : "textures/blocks/tex_block_plant_coralstump_c_w_line",
+                       "T" : "textures/blocks/tex_block_plant_coralstump_c_w_T"
+                    }
+                },
+            "side": "textures/blocks/tex_block_plant_coralfan_side"
+            }
+        }
+    }
+}

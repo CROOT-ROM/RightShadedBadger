@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_super_netherspreader_pump": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_piglin_electric": "MetaMaterial.mat_shared_block_entity_piglin_electric"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

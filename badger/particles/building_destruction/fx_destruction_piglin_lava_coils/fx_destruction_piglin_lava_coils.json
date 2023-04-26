@@ -1,0 +1,118 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_piglin_lava_coils",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_particles_mesh_block" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "explosion" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_piglin_lava_coils_exp",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_block_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_shared_block_impact_smoke",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:emitter_rate_structure_instant" : {},
+         "badger:emitter_shape_structure" : {},
+         "badger:particle_advanced_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, "variable.y_acceleration * math.random(-100,-200)", 0.0 ],
+            "linear_drag_coefficient" : "query.particle_normalized_age < 0.06 ? 0 : (variable.drag * 2.0)"
+         },
+         "badger:particle_appearance_block" : {},
+         "badger:particle_noise_motion" : {
+            "octaves" : 1,
+            "radius" : 3.5,
+            "speed" : 0.5
+         },
+         "badger:particle_structure_initial_block_types" : {},
+         "badger:particle_structure_initial_motion" : {
+            "base_position_offset" : [ 0.0, 10.0, 0.0 ],
+            "custom_axis_linear_velocity" : 10.0,
+            "impact_axis_angular_velocity" : -180.0,
+            "linear_velocity" : "math.random(50,60)",
+            "linear_velocity_horizontal_scale" : 0.6,
+            "linear_velocity_vertical_scale" : 0.5,
+            "random_axis_angular_velocity" : -180.0,
+            "random_axis_linear_velocity" : 10.0
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "explosion" ]
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 4.0
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 3.0
+         },
+         "minecraft:particle_motion_collision" : {
+            "events" : [
+               {
+                  "chance" : 0.75,
+                  "event" : "impact_block_smoke",
+                  "min_speed" : 0.0
+               }
+            ],
+            "activation_delay" : 0.2,
+            "coefficient_of_restitution" : 0.5,
+            "collision_radius" : 0.1,
+            "expire_on_contact" : true
+         }
+      },
+      "curves" : {
+         "variable.drag" : {
+            "control_points" : [
+               {
+                  "tangent_a" : [ 0.053, 0.069 ],
+                  "tangent_b" : [ -0.053, -0.069 ]
+               },
+               {
+                  "position" : [ 0.5, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 1.0, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_age",
+            "type" : "hermite"
+         },
+         "variable.y_acceleration" : {
+            "control_points" : [
+               {
+                  "position" : [ -0.008, 0.005 ],
+                  "tangent_a" : [ 0.056, 0.739 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.107, 0.695 ],
+                  "tangent_a" : [ -0.234, 0.744 ],
+                  "tangent_b" : [ -0.001, 0.454 ]
+               },
+               {
+                  "position" : [ 0.402, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

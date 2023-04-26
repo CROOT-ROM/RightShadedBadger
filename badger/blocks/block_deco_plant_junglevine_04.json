@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_junglevine_04": {
+            "decoration": "deco_plant_junglevine_04",
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_block_water_drops_jungle",
+                        "range": "middle",
+                        "probability": 0.1,
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

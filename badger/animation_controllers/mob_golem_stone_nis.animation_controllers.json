@@ -1,0 +1,61 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_stone_nis.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser"
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_c": 1.0
+            },
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "run": "(query.speed > 0)"
+            }
+          ]
+        },
+        "run": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(query.speed <= 0)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

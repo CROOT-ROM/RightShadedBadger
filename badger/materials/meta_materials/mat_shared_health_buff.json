@@ -1,0 +1,9 @@
+{
+  "format_version": "1.8.0", 
+  "mat_shared_health_buff:base_entity_static": {
+    "textures": {
+      "diffuseMap": "textures/blocks/mat_shared_health_buff/tex_shared_health_buff", 
+      "emissiveMap": "textures/blocks/mat_shared_health_buff/tex_shared_health_buff_e"
+    }
+  }
+}

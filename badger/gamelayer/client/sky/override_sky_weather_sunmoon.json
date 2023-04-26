@@ -1,0 +1,29 @@
+{
+	"name": "override_sky_weather_sunmoon",
+	"imgui_category": "Weather/SunMoon",
+	"imgui_prefix": "weather_sm",
+	"is_override": true,
+	"sky_color": "curve.weather_sm_sky_color",
+	"sky_horizon_color": "curve.weather_sm_sky_horizon_color",
+	"cloud_color": "curve.weather_sm_cloud_color",
+	"cloud_shadows": "curve.weather_sm_cloud_shadows",
+	"stars_color": "curve.weather_sm_stars_color",
+	"ambient_color": "curve.weather_sm_ambient_color",
+	"direct_color": "curve.weather_sm_direct_color",
+	"fog_color": "curve.weather_sm_fog_color",
+	"sparkle_params": "curve.weather_sm_sparkle_params",
+	"ambient_sparkle_params": "curve.weather_sm_ambient_sparkle",
+	"atmosphere_params": "curve.weather_sm_atmosphere_params",
+	"horizon_params": "curve.weather_sm_horizon_params",
+	"fog_params": "curve.weather_sm_fog_params",
+		"objects": [
+		{
+			"name": "sun",
+			"color_a": "curve.weather_sm_sun_color"
+		},
+		{
+			"name": "moon",
+			"color_a": "curve.weather_sm_moon_color"
+		}
+	]
+}

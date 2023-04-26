@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_stone_block",
+            "materials": {
+                "mat_proj_stone_block": "mat_proj_stone_block",
+                "mat_proj_tnt_block": "mat_proj_tnt_block"
+            },
+            "geometry": {
+                "default": "geometry.proj_stone_block"
+            },
+            "render_controllers": [
+                "controller.render.proj_stone_block"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:presentation_event": {
+                "on_world_hit": {
+                    "particles": "badger:fx_proj_magma_cube_impact"
+                },
+                "on_entity_hit": {
+                    "particles": "badger:fx_proj_magma_cube_impact"
+                }
+            },
+            "badger:rendering": {
+                "definition": "badger:proj_stone_block",
+                "static": true
+            }
+        }
+    }
+}

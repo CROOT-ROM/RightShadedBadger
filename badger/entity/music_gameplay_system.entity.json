@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_gameplay_system"
+    },
+    "components": {
+      "badger:audio_time_of_day": {},
+      "badger:music_2d_emitter": {
+        "priority" : 0,
+        "on_enter_bae" : "BAE_music_in_game_campaign",
+        "max_distance" : 0.0,
+        "music_states" :[
+          {
+            "state_name": "default",
+            "audio_parameters": [
+                {"music_state" : 1.0},
+                {"play_outro" : 0},
+                {"combat_intensity" : 0},
+                {"music_state_pvp" : 1.0},
+                {"poi_stinger_type_pvp" : 0.0},
+                {"trigger_stinger_pvp" : 0.0},
+                {"combat_wild" : 0.0},
+                {"music_village": 0.0},
+                {"music_campaign_beat": 0.0}
+             ]
+          }
+        ]
+      }
+
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "deco_fountain_cage": {
+      "geometry": "geometry.block_deco_fountain_cage",
+      "shadow": true,
+      "up": "world",
+      "forward": "surface",
+      "type": "horizon"
+    }
+  }
+}

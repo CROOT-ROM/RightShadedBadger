@@ -1,0 +1,15 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+        "identifier": "badger:trail_hero_sword_swing_h_a",
+        "start_distance": 0.0,
+        "length": 3.0,
+        "width": 0.75,
+        "fade_hold": 0.3,
+        "fade_time": 0.3,
+        "life_time": 0.2,
+        "shrink_hold": 10.01,
+        "shrink_time": 10.02,
+        "material": "mat_trail_bruiser_360_swipe"
+    }
+}

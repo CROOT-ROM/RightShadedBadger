@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_ice_block_ground_aoe"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_initialized": {
+          "particles": {
+            "effect": "badger:fx_proj_ice_block_aoe",
+            "enabled": true,
+            "locator": "loc_fx_main",
+            "bind_to_actor": true
+          }
+        }
+      }
+    }
+  }
+}

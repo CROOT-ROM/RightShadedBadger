@@ -1,0 +1,86 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_stat_hastened_grass_bits_01",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_parts_ground" ]
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [
+            "variable.terrain_type",
+            "variable.fx_hastened",
+            "query.is_entity_on_ground"
+         ]
+      },
+      "components" : {
+         "badger:emitter_rate_distance" : {
+            "distance" : 0.4,
+            "particles_count" : "query.is_entity_on_ground"
+         },
+         "badger:emitter_shape_cylinder" : {
+            "number_of_sides" : 4.0,
+            "offset" : [ 0.0, -1.0, 0.0 ],
+            "scale" : [ 0.5, 0.5, 0.5 ],
+            "shape_mode" : "polygon",
+            "vertical_angle" : 45.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ "variable.opacity", "variable.opacity" ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 31,
+                  "frame_end" : 0,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 2 ],
+                  "rows_count" : 4
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "(variable.terrain_type != 11 || variable.fx_hastened == 0) && query.is_entity_on_ground == 1"
+         },
+         "minecraft:particle_appearance_tinting" : {},
+         "minecraft:particle_initial_speed" : "math.random(5.0,9.0)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : 360.0,
+            "rotation_rate" : [ 180.0, 900.0 ]
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 0.5
+         },
+         "minecraft:particle_motion_collision" : {},
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, -19.0, 0.0 ]
+         }
+      },
+      "curves" : {
+         "variable.opacity" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.004, 0.216 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.8, 0.198 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.993, 0.015 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

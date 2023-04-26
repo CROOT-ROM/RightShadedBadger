@@ -1,0 +1,32 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_hammer_boss_nis.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_b": "((variable.idlechooser > 1) && (variable.idlechooser < 2))"
+            }
+          ],
+          "on_entry": ["variable.idlechooser = math.random(0,4);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

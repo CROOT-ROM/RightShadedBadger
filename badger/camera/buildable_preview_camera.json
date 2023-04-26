@@ -1,0 +1,56 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:buildable_preview_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "buildable_preview_camera",
+        "field_of_view": 65.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": true,
+        "priority": 2,
+        "sensitivity_input_option": 1
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 1.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": true,
+        "input_dampening_coefficient": 0.25
+      },
+      "badger:camera_bounds": {
+        "hard_bounds_cone_angle": 17.5,
+        "soft_bounds_scale": 0.4,
+        "position_smoothing_spring": 2,
+        "look_smoothing_spring": 30,
+        "look_priority": 0.75
+      },
+      "badger:orbital_arm": {
+        "target_offset": [ 0, 0, 0 ],
+        "start_arm_length": 18,
+        "start_arm_height": 14,
+        "end_arm_length": 18,
+        "end_arm_height": 24,
+        "horizontal_lerp": 1.0,
+        "vertical_lerp": 1.0,
+        "zoom_lerp": 0.045,
+        "zoom_cursor_multiplier": 1.5
+      },
+      "badger:camera_avoidance": {
+        "camera_disk_radius": 2.5,
+        "target_disk_radius": 1.5,
+        "min_distance_from_target": 1.0,
+        "distance_from_obstacle": 2.0,
+        "snap": 12,
+        "ease": 0.45,
+        "target_vertical_offset": 2.5
+      },
+      "badger:cam_overrides_look_orientation": {},
+      "badger:camera_show_zone": {
+        "zone_distance": 100.0
+      }
+    }
+  }
+}

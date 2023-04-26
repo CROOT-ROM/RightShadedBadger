@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:block_hazard_geyser",
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_erupt": {
+          "particles": {
+            "effect": "badger:fx_block_frostland_geyser",
+            "locator": "loc_fx_main",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        }
+      }
+    }
+  }
+}

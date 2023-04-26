@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "components": {
+            "badger:hit_reaction_threshold": {
+                "name": "normal_hit",
+                "activation_percent": 0.3
+            }
+        },
+        "description": {
+            "identifier": "badger:normal_hit"
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_poi_tower_04_attack_debris_side_r",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_blend_ramp_bits_fp_stone"]
+      },
+      "optimizations": {
+        "do_not_spawn_distance": 120
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 8
+      },
+      "minecraft:emitter_rate_variable": {
+        "spawn_rate": "math.random(3,4)",
+        "max_particles": 1000
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1
+      },
+      "minecraft:emitter_shape_box": {
+        "half_dimensions": [
+          2,
+          6,
+          2
+        ],
+        "offset": [
+          4,
+          3,
+          0
+        ],
+        "direction_mode": "outwards"
+      },
+      "minecraft:particle_initial_speed": "Math.random(0.5, 7.5)",
+      "minecraft:particle_initial_spin": {
+        "rotation": "math.floor(math.random(0.0, 3.99)) * 90.0",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(2,4)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 0.1,
+        "linear_acceleration": [
+          "Math.random(-1, 1)",
+          "Math.random(-7,-11)",
+          "Math.random(-1, 1)"
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "0.3",
+          "0.3"
+        ],
+        "scale": [
+          "1",
+          "1.75"
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 31,
+            "rows_count": 4,
+            "frame_iteration": "row",
+            "row_index": [
+              0,
+              3
+            ],
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      }
+    }
+  }
+}

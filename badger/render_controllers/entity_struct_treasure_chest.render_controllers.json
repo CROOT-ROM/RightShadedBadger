@@ -1,0 +1,26 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_treasure_chest": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_entity_struct_treasure_chest_closed","MetaMaterial.mat_entity_struct_treasure_chest_open"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_allay_gather": "MetaMaterial.mat_allay_gather"
+        },
+        {
+          "mat_entity_struct_treasure_chest_closed": "Array.materials[variable.chest_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "allay": "variable.allay_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

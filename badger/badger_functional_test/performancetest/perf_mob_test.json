@@ -1,0 +1,20 @@
+{
+  "test-name": "perf-mob-test",
+  "test-description": "Spawn 300 zombies and have them fight in flatlands",
+  "test-duration": 60,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10", "Xbox" ],
+  "commands": [
+    "/godmode",
+    "/testdelay 1",
+    "/debugcamera activate",
+    "/debugcamera teleport 0 85 30",
+    "/testdelay 1",
+    "/sm badger:mob_zombie 150 blue_team",
+    "/sm badger:mob_zombie 150 red_team",
+    "/testdelay 10",
+    "/debugprofile badger_perf-mob-test_microprofile both 120",
+    "/testdelay 5"
+  ]
+}

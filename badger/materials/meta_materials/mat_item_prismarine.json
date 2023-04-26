@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_item_prismarine:base_entity": {
+    "material": "item_drops",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_item_prismarine_d",
+      "coeffMap": "textures/entity/tex_item_prismarine_mr",
+      "emissiveMap": "textures/entity/tex_item_prismarine_e"
+    }
+  }
+}

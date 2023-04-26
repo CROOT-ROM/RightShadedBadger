@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.proj_boulder_fallenwarrior": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_proj_boulder": "MetaMaterial.mat_proj_boulder"
+                }
+            ]
+        }
+    }
+}

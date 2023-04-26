@@ -1,0 +1,63 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_neather_timeline",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.size" ]
+      },
+      "events" : {
+         "dust_ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_neather_dust_ring",
+               "type" : "emitter_bound"
+            }
+         },
+         "dust_volume" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_neather_dust_volume",
+               "type" : "emitter_bound"
+            }
+         },
+         "initial_debris" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_neather_initial_debris",
+               "type" : "emitter_bound"
+            }
+         },
+         "lightning" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_neather_lightning",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparks" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_destruction_neather_areasparks",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_initialization" : {
+            "creation_expression" : "variable.size = 1;"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "dust_volume" ],
+            "timeline" : {
+               "0.020000" : [ "initial_debris", "dust_ring", "sparks", "lightning" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

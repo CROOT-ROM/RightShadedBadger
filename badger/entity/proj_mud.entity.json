@@ -1,0 +1,54 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_mud",
+            "materials": {
+                "mat_proj_support_mortar": "mat_proj_support_mortar"
+            },
+            "geometry": {
+                "default": "geometry.proj_support_mortar"
+            },
+            "render_controllers": [
+                "controller.render.proj_support_mortar"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:rendering": {
+                "definition": "badger:proj_support_mortar"
+            },
+            "badger:projectile_trail_request": {
+                "name": "badger:trail_proj_mud"
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "particles": {
+                        "effect": "badger:fx_proj_mud_trail",
+                        "locator": "loc_fx_tip",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_entity_hit": {
+                    "particles": {
+                        "effect": "badger:fx_proj_mud_impact",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                },
+                "on_world_hit": {
+                    "audio": "BAE_mob_golem_support_proj_mud_impact_world",
+                    "particles": {
+                        "effect": "badger:fx_proj_mud_impact",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    }
+                }
+            },
+            "badger:keep_alive_timer": {
+                "time": 0.15
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+{
+  "animation_controllers": {
+    "controller.animation.host_action.default": {
+      "initial_state": "init",
+      "states": {
+        "beckon": {
+          "animations":  [
+            {
+              "beckon_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "celebrate": {
+          "animations":  [
+            {
+              "cheer_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "cheer": {
+          "animations":  [
+            {
+              "cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.cheerchooser",
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "speech": "variable.talk"
+            },
+            {
+              "cheer": "variable.cheer"
+            },
+            {
+              "celebrate": "variable.badger_behavior_host_action_celebrate"
+            },
+            {
+              "beckon": "variable.badger_behavior_host_action_beckon"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "speech": {
+          "animations":  [
+            {
+              "speech_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.host_action.idle": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "idle_behaviour": "(query.behavior_default == 0)"
+            }
+          ]
+        },
+        "idle_behaviour": {
+          "animations":  [
+            {
+              "happy_a_idle": "variable.badger_behavior_host_action_happy"
+            },
+            {
+              "guarded_a_idle": "variable.badger_behavior_host_action_guarded"
+            },
+            {
+              "carefree_a_idle": "variable.badger_behavior_host_action_carefree"
+            },
+            {
+              "sentinel_a_idle": "variable.badger_behavior_host_action_sentinel"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.behavior_default"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.host_action.walk": {
+      "initial_state": "walk",
+      "states": {
+        "walk": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk_behaviour": "(query.behavior_default == 0)"
+            }
+          ]
+        },
+        "walk_behaviour": {
+          "animations":  [
+            {
+              "carefree_a_walk": "variable.badger_behavior_host_action_carefree"
+            },
+            {
+              "guarded_a_walk": "variable.badger_behavior_host_action_guarded"
+            },
+            {
+              "happy_a_walk": "variable.badger_behavior_host_action_happy"
+            },
+            {
+              "sentinel_a_walk": "variable.badger_behavior_host_action_sentinel"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "query.behavior_default"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

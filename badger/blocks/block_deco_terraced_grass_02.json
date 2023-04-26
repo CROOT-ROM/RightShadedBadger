@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_terraced_grass_02": {
+      "decoration": "deco_terraced_grass_02"
+    }
+  }
+}

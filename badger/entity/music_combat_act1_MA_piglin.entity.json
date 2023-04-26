@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_act1_MA_piglin",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority": 20,
+        "max_distance": 200.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "attacking",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "badger:template": "badger:music_combat_act1_MA_template",
+      "badger:threat_owner": {
+        "influence_distance": 350,
+        "max_threat": 300,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 1.0
+      }
+    }
+  }
+}

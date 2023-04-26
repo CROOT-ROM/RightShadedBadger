@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_act1_base_skirmish_02",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:threat_owner": {
+        "influence_distance": 110,
+        "max_threat": 102,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 0.1
+      },
+      "badger:template": "badger:music_combat_act1_base_template",
+      "badger:music_2d_emitter": {
+        "priority": 40,
+        "max_distance": 110.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "base_music",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

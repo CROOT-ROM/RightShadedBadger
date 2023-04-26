@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0", 
+  "mat_shared_brokenlands:base_entity_static": {
+    "material": "DecorationsFancy",
+    "culling": "none",
+    "textures": {
+      "diffuseMap": "textures/blocks/tex_shared_block_brokenlands", 
+      "coeffMap": "textures/blocks/tex_shared_block_brokenlands_mr"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_carpet_plant_giantlily_var01": {
+            "textures": {
+                "up": {
+                  "smart": {
+                    "default": "textures/blocks/tex_block_plant_giantlily_t_var01",  
+                    "T": "textures/blocks/tex_block_plant_giantlily_t_var01"
+                  }
+                }, 
+                "down": {
+                  "smart": {
+                    "default": "textures/blocks/tex_block_plant_giantlily_t_var01",  
+                    "T": "textures/blocks/tex_block_plant_giantlily_t_var01"
+                  }
+                }, 
+                "side": "textures/blocks/tex_block_plant_giantlily_side"
+              }
+            }
+          }
+        }

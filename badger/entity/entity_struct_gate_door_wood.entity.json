@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_gate_door_wood"
+      }
+    },
+    "description": {
+      "animations": {
+        "closing": "animation.entity_struct_gate_door_wood.closing",
+        "default": "controller.animation.entity_struct_gate_door_wood.default",
+        "hidden": "animation.entity_struct_gate_door_wood.hidden",
+        "open": "animation.entity_struct_gate_door_wood.open",
+        "opening": "animation.entity_struct_gate_door_wood.opening"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_gate_door_wood"
+      },
+      "identifier": "badger:entity_struct_gate_door_wood",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_player": "mat_shared_block_entity_player"
+      },
+      "particle_effects": {
+        "fx_close": "badger:fx_entity_struct_gate_door_wood_close",
+        "fx_open": "badger:fx_entity_struct_gate_door_wood"
+      },
+      "render_controllers": ["controller.render.entity_struct_gate_door_wood"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "close": "BAE_STRUC_Gate_Close",
+        "open": "BAE_STRUC_Gate_Open"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_piglin_d"
+      }
+    }
+  }
+}

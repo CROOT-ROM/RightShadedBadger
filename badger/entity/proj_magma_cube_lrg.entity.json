@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_magma_cube_lrg",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_magma_cube_lrg": "mat_proj_magma_cube_lrg"
+      },
+      "textures": {
+        "default": "textures/entity/tex_piglin_magma_cube_lrg_d"
+      },
+      "geometry": {
+        "default": "geometry.proj_magma_cube_lrg"
+      },
+      "particle_effects": {
+        "fx_trail": "badger:fx_proj_magma_cube_lrg_projtrail",
+        "fx_impact": "badger:fx_proj_magma_cube_impact"
+      },
+      "render_controllers": [
+        "controller.render.proj_magma_cube_lrg"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_magmaboss_mortarlava_projectile",
+          "particles": {
+            "effect": "fx_trail",
+            "locator": "loc_fx_tip",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "on_world_hit": {
+          "audio": "BAE_piglin_magma_boss_proj_magma_cube_impact_world",
+          "particles": "fx_impact"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_piglin_magma_boss_proj_magma_cube_impact_entity",
+          "particles": "fx_impact"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_magma_cube_lrg"
+      }
+    }
+  }
+}

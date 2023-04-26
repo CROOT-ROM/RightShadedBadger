@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0", 
+  "mat_item_sword_hero:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_item_sword_hero_d",
+      "coeffMap": "textures/entity/tex_item_sword_hero_mr",
+      "normalMap": "textures/entity/tex_item_sword_hero_n"
+    }
+  }
+}

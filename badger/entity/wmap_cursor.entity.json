@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_cursor"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_cursor"
+      },
+      "identifier": "badger:wmap_cursor",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_cursor": "mat_wmap_cursor"
+      },
+      "render_controllers": ["controller.render.wmap_cursor"]
+    }
+  }
+}

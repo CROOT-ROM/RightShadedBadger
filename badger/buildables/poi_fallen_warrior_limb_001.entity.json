@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:poi_fallen_warrior_limb_001",
+            "geometry": {
+                "default": "geometry.block_test"
+            }
+        },
+        "components": {
+            "badger:template": "badger:template_structure"
+        }
+    }
+}

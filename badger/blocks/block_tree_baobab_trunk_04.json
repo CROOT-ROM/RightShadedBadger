@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_baobab_trunk_04": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_redbark_trunk_top_01",
+                "down": "textures/blocks/tex_block_tree_redbark_trunk_top_01",
+                "side": "textures/blocks/tex_block_tree_baobab_trunk_04"
+            }
+        }
+    }
+}

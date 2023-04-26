@@ -1,0 +1,80 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_icon_offset": {
+        "x": 0,
+        "y": 20,
+        "z": -5
+      },
+      "badger:presentation_event": {
+        "is_attacked": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_map_attack_smoke",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          },
+          "script": "is_attacked"
+        },
+        "is_celebrating": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_map_celebrate",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          },
+          "script": "is_celebrating"
+        },
+        "not_attacked": {
+          "script": "not_attacked"
+        },
+        "not_celebrating": {
+          "script": "not_celebrating"
+        },
+        "wof_attacked": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_map_wof_smoke",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          },
+          "script": "wof_attacked"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_fx",
+        "limit": 64
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "event_scripts": {
+        "is_attacked": "variable.is_attacked = 1;",
+        "is_celebrating": "variable.is_celebrating = 1;",
+        "not_attacked": "variable.is_attacked = 0;",
+        "not_celebrating": "variable.is_celebrating = 0;",
+        "wof_attacked": "variable.wof_attacked = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_fx"
+      },
+      "identifier": "badger:wmap_fx",
+      "materials": {
+        "default": "entity_model",
+        "mat_mob_creeper": "mat_mob_creeper",
+        "mat_wmap_fx": "mat_wmap_fx",
+        "mat_wmap_red_arrow_underlay": "mat_wmap_red_arrow_underlay",
+        "x_mat_wmap_fx": "x_mat_wmap_fx"
+      },
+      "render_controllers": ["controller.render.wmap_fx"],
+      "scripts": {
+        "initialize": ["variable.maingeo_vis = 0;"]
+      },
+      "textures": {
+        "default": "textures/entity/wmap_fx/tex_wmap_fx_d"
+      }
+    }
+  }
+}

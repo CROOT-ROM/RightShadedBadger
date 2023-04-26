@@ -1,0 +1,70 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_stat_trails",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01,
+            "update_priority" : "high"
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.terrain_type" ]
+      },
+      "events" : {
+         "poison" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_acid_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 4"
+         },
+         "lava" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_lava_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 5"
+         },
+         "mud" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_mud_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 1"
+         },
+         "netherwart_acid" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_netherwart_acid_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 8"
+         },
+         "tar" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_tar_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 7"
+         },
+         "water" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_water_trail",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.terrain_type == 3"
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fx_trails"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "water", "poison", "lava", "mud", "tar", "netherwart_acid" ]
+         }
+      }
+   }
+}

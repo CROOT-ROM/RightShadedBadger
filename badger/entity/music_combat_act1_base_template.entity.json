@@ -1,0 +1,87 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_act1_base_template",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:threat_owner": {
+        "influence_distance": 90,
+        "max_threat": 35,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 1.0
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_act1_base"
+        }
+      },
+      "badger:music_2d_emitter": {
+        "priority": 20,
+        "max_distance": 125.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "initial_dbb",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_dbb",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_dbb",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_dbb",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_dbb",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

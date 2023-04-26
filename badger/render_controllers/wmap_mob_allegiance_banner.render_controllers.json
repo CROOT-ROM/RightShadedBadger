@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_allegiance_banner": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mob_alliance_banner": "MetaMaterial.mat_wmap_mob_alliance_banner"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

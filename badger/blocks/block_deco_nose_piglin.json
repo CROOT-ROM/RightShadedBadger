@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_nose_piglin": {
+            "decoration": "deco_nose_piglin",
+            "textures": "textures/blocks/tex_debug"
+        }
+    }
+}

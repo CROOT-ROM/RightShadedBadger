@@ -1,0 +1,177 @@
+[
+  {
+    "button_id": "button.attack_move_all",
+    "key_id": "key.attackMove",
+    "ui_slot": "contextual",
+    "ui_label": "key.attackMove",
+    "ui_hint_prompt": "key.attackMove.hintPrompt",
+    "focus_impact": "neutral",
+	"ui_is_contextual": true
+  },
+  {
+    "button_id": "button.attack_move_single",
+    "key_id": "key.attackMove",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.force_move_all",
+    "key_id": "key.forceMove",
+    "ui_slot": "contextual",
+    "ui_label": "key.forceMove",
+    "ui_hint_prompt": "key.forceMove.hintPrompt",
+    "focus_impact": "neutral",
+	"ui_is_contextual": true
+  },
+  {
+    "button_id": "button.force_move_single",
+    "key_id": "key.forceMove",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_category_up",
+    "key_id": "key.typeSelectUp",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_category_left",
+    "key_id": "key.typeSelectLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_category_down",
+    "key_id": "key.typeSelectDown",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.type_category_right",
+    "key_id": "key.typeSelectRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_right",
+    "key_id": "key.typeSelectRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_left",
+    "key_id": "key.typeSelectLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_up",
+    "key_id": "key.typeSelectUp",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_down",
+    "key_id": "key.typeSelectDown",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_1",
+    "key_id": "key.typeSelectCategory1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_2",
+    "key_id": "key.typeSelectCategory2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_3",
+    "key_id": "key.typeSelectCategory3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_4",
+    "key_id": "key.typeSelectCategory4",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.unit_select_5",
+    "key_id": "key.typeSelectCategory5",
+    "focus_impact": "neutral"
+  },
+  // disable unused buttons
+  {
+    "button_id": "button.hero_action_1_continuous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.banner_direct_tap",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.songbook_screen",
+    "key_id": "key.songbookScreen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.build_mode_hold",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot4",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot5",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot6",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot7",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot8",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot9",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_previous",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cycle_hotbar_next",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.map_screen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toolbar_category4",
+    "focus_impact": "neutral"
+  }
+]

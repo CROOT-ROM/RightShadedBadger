@@ -1,0 +1,33 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_magma_boss": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_magma_boss": "MetaMaterial.mat_piglin_magma_boss"
+        },
+        {
+          "mat_piglin_magma_boss_claw_on": "MetaMaterial.mat_piglin_magma_boss_claw_on"
+        },
+        {
+          "mat_piglin_magma_boss_face": "MetaMaterial.mat_piglin_magma_boss_face"
+        },
+        {
+          "mat_fx_spore_healed_512": "MetaMaterial.mat_fx_spore_healed_512"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "claw": "variable.claw_vis"
+        },
+        {
+          "pack": "variable.pack_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

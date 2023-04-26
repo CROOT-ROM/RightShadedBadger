@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_netherwart_warped_small_var01": {
+            "geometry": "geometry.block_deco_netherwart_warped_small_var01_geo",
+            "up": "world",
+            "forward": "surface",
+            "type": "middle",
+            "probability": "medium",
+            "normals_interpolation" : 0.0
+        }
+    }
+}

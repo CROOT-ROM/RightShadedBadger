@@ -1,0 +1,21 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "entity_model": {
+      "vertexShader": "shaders/entity_model.vertex",
+      "vrGeometryShader": "shaders/entity.geometry",
+      "fragmentShader": "shaders/entity_model.fragment",
+      "+defines": [ "USE_SKINNING" ],
+      "+states": [ "DisableCulling" ],
+      "vertexFields": [
+        { "field": "Position" },
+        { "field": "BoneId0" },
+        { "field": "Color" },
+        { "field": "Normal" },
+        { "field": "UV0" }
+      ],
+      "msaaSupport": "Both"
+    }
+  }
+}

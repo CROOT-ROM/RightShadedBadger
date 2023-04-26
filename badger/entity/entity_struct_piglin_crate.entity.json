@@ -1,0 +1,81 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_interactable": {
+        "enter_range_audio_event": "BAE_UI_interact_highlight_piglin_crate"
+      },
+      "badger:interaction_presentation": {
+          "trigger_specific_events": true,
+          "trigger_generic_events": false
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.9,0.5,0],
+            "enabled": "variable.is_light",
+            "falloff_power": 3,
+            "intensity": 20,
+            "locator": "loc_fx_crate",
+            "offset": [0,0,0.2],
+            "radius": 10
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_sfx_attractors_piglin_crate_lp"
+        },
+        "visual_state_added.open_crate": {
+          "audio": "",
+          "script": "opencrate"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_piglin_crate"
+      },
+      "badger:template": "badger:template_structure"
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_piglin_crate.default",
+        "open": "animation.entity_struct_piglin_crate.open"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "opencrate": "variable.crate_open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_piglin_crate"
+      },
+      "identifier": "badger:entity_struct_piglin_crate",
+      "materials": {
+        "mat_entity_struct_piglin_crate_closed": "mat_entity_struct_piglin_crate_closed",
+        "mat_entity_struct_piglin_crate_open": "mat_entity_struct_piglin_crate_open"
+      },
+      "particle_effects": {
+        "fx_land": "badger:fx_entity_struct_piglin_crate_land",
+        "fx_open": "badger:fx_entity_struct_piglin_crate_open",
+        "fx_trail": "badger:fx_entity_struct_piglin_crate_trail"
+      },
+      "render_controllers": ["controller.render.entity_struct_piglin_crate"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.change_material = 0;","variable.change_color = 0;"]
+      },
+      "sound_effects": {
+        "crate_lp": "BAE_sfx_attractors_piglin_crate_lp",
+        "crate_lp_stop": "BAE_sfx_attractors_piglin_crate_lp_stop",
+        "open": "BAE_piglin_crate_open"
+      },
+      "textures": {
+        "default": "textures/entity/entity_struct_piglin_crate/tex_entity_struct_piglin_crate_closed_d"
+      }
+    }
+  }
+}

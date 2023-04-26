@@ -1,0 +1,43 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_tower_anti_siege",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.terrain_type" ]
+      },
+      "events" : {
+         "mesh_out" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_beam_mesh_out",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkles" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_sparkle",
+               "type" : "emitter_bound"
+            }
+         },
+         "static_sparkl" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_sparkle_static",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_expression" : {},
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "sparkles", "mesh_out", "static_sparkl" ]
+         }
+      }
+   }
+}

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_horsetail_top_leaf": {
+            "geometry": "geometry.block_deco_tree_horsetail_top_leaf",
+            "shadow": true,
+            "type": "middle",
+            "normals_interpolation" : 0.0,
+            "wind_strength": 0.02,
+            "up": "surface",
+            "forward": "surface"
+        }
+    }
+}

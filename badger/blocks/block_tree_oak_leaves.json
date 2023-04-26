@@ -1,0 +1,28 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_oak_leaves": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_oak_leaves_top",
+                "down": "textures/blocks/tex_block_tree_oak_leaves_top",
+                "side": "textures/blocks/tex_block_tree_oak_leaves_side"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_birds_fateful",
+                        "range": "middle",
+                        "probability": 0.0045
+                    },
+                    {
+                        "effect": "badger:fx_block_birds_fateful_flying_triggered",
+                        "range": "near",
+                        "probability": 0.008,
+                        "trigger": "explosion",
+                        "rotation_mode": "trigger_xz"
+                    }
+                ]
+            }
+        }
+    }
+}

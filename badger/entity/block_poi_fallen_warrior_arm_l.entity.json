@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:block_poi_fallen_warrior_arm_l",
+      "materials": {
+        "mat_shared_block_poi_fallen_warrior": "mat_shared_block_poi_fallen_warrior"
+      },
+      "geometry": {
+        "default": "geometry.block_poi_fallen_warrior_arm_l"
+      },
+      "render_controllers": [
+        "controller.render.block_poi_fallen_warrior_arm_l"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:entity_age": {},
+      "badger:rendering": {
+        "definition": "badger:block_poi_fallen_warrior_arm_l",
+        "static": true
+      }
+    }
+  }
+}

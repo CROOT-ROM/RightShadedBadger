@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_dart:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_arrow_trail"
+        },
+        "uniforms": {
+            "TrailColor": [
+                "0.533",
+                "0.404",
+                "0.247",
+                "0.5"
+            ]
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_mushroom_obstacle_bottom_var01": {
+      "textures": {
+        "up": "textures/blocks/tex_block_mushroom_obstacle_bottom",
+        "down": "textures/blocks/tex_block_mushroom_obstacle_bottom",
+        "side": "textures/blocks/tex_block_mushroom_obstacle_side_bottom_var01"
+      }
+    }
+  }
+}

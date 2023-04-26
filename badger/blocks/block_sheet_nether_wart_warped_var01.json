@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_sheet_nether_wart_warped_var01": {
+      "textures": "textures/blocks/tex_block_nether_wart_warped_var01"
+    }
+  }
+}

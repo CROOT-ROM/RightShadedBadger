@@ -1,0 +1,23 @@
+{
+	"format_version": "1.15.0",
+	"badger:client_block": {
+		"badger:block_deco_brazier_player": {
+			"decoration": "deco_brazier_player",
+			"textures": "blank",
+			"particle_spawner": {
+				"effects": [
+					{
+						"effect": "badger:fx_block_fire",
+						"range": "far",
+						"probability": 1,
+						"offset": [
+							0.0,
+							0.45,
+							0.0
+						]
+					}
+				]
+			}
+		}
+	}
+}

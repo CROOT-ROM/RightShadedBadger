@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.fx_attractor": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_entity_piglin": "MetaMaterial.mat_shared_block_entity_piglin"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "maingeo": "variable.maingeo_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

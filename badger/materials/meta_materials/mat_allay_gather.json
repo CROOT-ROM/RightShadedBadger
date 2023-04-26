@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "mat_allay_gather:base_entity": {
+        "pass": "Transparent",
+        "blendmode": "alphablend",
+        "depthprepass": true,
+        "textures": {
+            "diffuseMap": "textures/entity/tex_allay_gather_d",
+            "coeffMap": "textures/entity/tex_allay_gather_mr",
+            "emissiveMap": "textures/entity/tex_allay_gather_e"
+        }
+    }
+}

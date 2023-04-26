@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_terraform_gather_surface",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:decal_visualization": {
+        "decal_textures": [
+          "decal_aoi"
+        ]
+      }
+    }
+  }
+}

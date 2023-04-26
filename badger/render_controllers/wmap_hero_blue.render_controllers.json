@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_hero_blue": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_hero_blue": "MetaMaterial.mat_wmap_hero_blue"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,70 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_hammer_boss_hit",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.terrain_type" ]
+      },
+      "events" : {
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_hammer_boss_hit_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_hammer_boss_hit_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "melee_smash_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 7.0, 7.0, 7.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.9,
+                  "lifetime" : 10.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_cracks"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_piglin_hammer_melee"
+               }
+            }
+         },
+         "shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_hammer_boss_hit_shockwave",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_Ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_hammer_boss_hit_smokering",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares", "smoke_Ring" ],
+            "timeline" : {
+               "0.010000" : [ "impact_parts", "melee_smash_decorations_collision" ],
+               "0.030000" : [ "shockwave" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

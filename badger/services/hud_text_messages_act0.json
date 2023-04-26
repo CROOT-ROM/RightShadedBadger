@@ -1,0 +1,33 @@
+{
+  /*
+  For details on the values and syntax used in this file, please see the original hud_text_messages.json file!
+  */
+  "badger:hud_text_messages": {
+    "badger:template": {
+      "parent": "badger:hud_text_messages",
+      "game_mode": "onboarding"
+    },
+    "messages": {
+      // =========================== LORE DISCOVERY ===================================
+      "lore_discovered": {
+        "message": "messages.lore_discovered.description",
+        "title": "messages.lore_discovered.title",
+        "priority": -2,
+        "display_time": 5.0
+      }
+    },
+    // id: If notification, must match message name from above data,
+    // type: 0 = notification, 1 = animation, 2 = subtitle
+    // duration: Time in seconds to display notif or play animation
+    // If no duration provided for notification, display_time from message data will be used
+    "hud_event_sequences": {
+      "resource_first_discovered": [ // works        
+          {
+              "id": "resource_reveal",
+              "type": 1,
+              "duration": 3
+          }
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "badger:rendering": {
+    "light_probes": {
+      "sunmoon": {
+        "0.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        },
+        "0.25": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+        },
+        "0.5": {
+          "authored_source": "textures/environment/tex_cube_grasslands_night"
+        },
+        "0.75": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+        },
+        "1.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        }
+      },
+      "twosuns": {
+        "0.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        },
+        "0.25": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+        },
+        "0.5": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        },
+        "0.75": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+        },
+        "1.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        }
+      },
+      "darksun": {
+        "0.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        },
+        "1.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        }
+      },
+      "welloffate": {
+        "0.0": {
+          "authored_source": "textures/environment/tex_cube_onboarding_night"
+        },
+        "1.0": {
+          "authored_source": "textures/environment/tex_cube_onboarding_night"
+        }
+      },
+      "finalbattle": {
+        "0.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        },
+        "0.25": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+        },
+        "0.5": {
+          "authored_source": "textures/environment/tex_cube_grasslands_night"
+        },
+        "0.75": {
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+        },
+        "1.0": {
+          "authored_source": "textures/environment/tex_cube_grasslands_day"
+        }
+      }
+    }
+  }
+}

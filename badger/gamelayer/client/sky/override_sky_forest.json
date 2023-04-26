@@ -1,0 +1,7 @@
+{
+	"name": "override_sky_forest",
+	"imgui_category": "Forest",
+	"imgui_prefix": "forest",
+	"is_override": true,
+	"fog_params": "curve.forest_fog_params"
+}

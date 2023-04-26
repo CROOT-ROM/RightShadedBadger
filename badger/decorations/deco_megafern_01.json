@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_megafern_01": {
+            "geometry": "geometry.block_deco_megafern_01",
+            "shadow": true,
+            "random_orientation": true,
+            "normals_interpolation": 0.0
+        }
+    }
+}

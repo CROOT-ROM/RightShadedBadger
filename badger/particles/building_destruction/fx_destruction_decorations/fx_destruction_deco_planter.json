@@ -1,0 +1,101 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "badger:fx_destruction_deco_planter",
+			"basic_render_parameters": {
+				"materials_list": [
+					"mat_badger_particles_mesh_block"
+				]
+			},
+			"optimizations": {
+				"do_not_spawn_distance": 90
+			}
+		},
+		"events": {
+			"impact_block_split": {
+				"particle_effect": {
+					"effect": "badger:fx_destruction_shared_block_impact",
+					"type": "emitter_bound"
+				}
+			},
+			"impact_block_smoke": {
+				"particle_effect": {
+					"effect": "badger:fx_destruction_shared_block_impact_smoke",
+					"type": "emitter_bound"
+				}
+			},
+			"timeline": {
+				"particle_effect": {
+					"effect": "badger:fx_destruction_deco_planter_timeline",
+					"type": "emitter_bound"
+				}
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.size = 1;"
+			},
+			"minecraft:emitter_lifetime_events": {
+				"creation_event": [
+					"timeline"
+				]
+			},
+			"badger:emitter_rate_structure_instant": {},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 10.0
+			},
+			"badger:emitter_shape_structure": {},
+			"minecraft:particle_lifetime_events": {
+				"expiration_event": [
+					"impact_block_smoke"
+				]
+			},
+			"badger:particle_structure_initial_block_types": {},
+			"badger:particle_structure_initial_motion": {
+				"impact_mode": "structure_base_position",
+				"impact_mode_horizontal_only": false,
+				"linear_velocity": "math.random(1,5)",
+				"linear_velocity_vertical_scale": "math.random(0.2,1.2)",
+				"linear_velocity_horizontal_scale": "math.random(-1.3,1.3)",
+				"impact_axis_angular_velocity": 20,
+				"custom_axis": [
+					"Math.Cos(query.emitter_random_1) * 0.2",
+					1.0,
+					"Math.Cos(query.emitter_random_1) * 0.2"
+				],
+				"random_axis_linear_velocity": 0.0,
+				"random_axis_angular_velocity": "Math.random(-180,180)",
+				"custom_axis_linear_velocity": 0,
+				"custom_axis_angular_velocity": "Math.random(-180,180)"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "10"
+			},
+			"badger:particle_advanced_motion_dynamic": {
+				"rotation_drag_coefficient": 0.0,
+				"linear_acceleration": [
+					"Math.Cos(query.emitter_random_1) * 0.2",
+					"math.lerp((math.random(8,12) * query.particle_random_1) ,-350,query.particle_normalized_age)",
+					"Math.Cos(query.emitter_random_1) * 0.2"
+				]
+			},
+			"minecraft:particle_motion_collision": {
+				"coefficient_of_restitution": 0.4,
+				"collision_drag": 1000,
+				"collision_radius": 0.1,
+				"expire_on_contact": true,
+				"expire_on_contact_chance": 0.35,
+				"events": [
+					{
+						"event": "impact_block_split",
+						"min_speed": 0.1,
+						"impacts_count": 1,
+						"chance": 1
+					}
+				]
+			},
+			"badger:particle_appearance_block": {}
+		}
+	}
+}

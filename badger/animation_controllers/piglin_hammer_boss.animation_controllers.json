@@ -1,0 +1,324 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_hammer_boss.default": {
+      "initial_state": "idle",
+      "states": {
+        "charge": {
+          "animations":  [
+            {
+              "charge_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.firing_loop = 0;","variable.face_anim_frame = 0;","variable.fx_charge = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "charge",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "stop_charge": "query.any_animation_finished"
+            }
+          ]
+        },
+        "charge_windup": {
+          "animations":  [
+            {
+              "charge_windup": 1.0
+            }
+          ],
+          "on_entry": ["variable.fx_charge = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_charge",
+              "enabled": true,
+              "locator": "loc_fx_charge"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "boss_growl",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "charge": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "death": {
+          "on_entry": ["variable.all_geo_vis = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "combat_proximity_boss_stop",
+              "enabled": true
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_c": 1.0
+            },
+            {
+              "idle_d": 1.0
+            }
+          ],
+          "on_entry": ["variable.firing_loop = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "charge_windup": "((variable.charge_mobs || variable.charge_structure) || variable.retreat)"
+            },
+            {
+              "smash_attack": "(variable.melee_smash || variable.melee_smash_structure)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "swipe_attack": "variable.melee_swipe"
+            },
+            {
+              "tertiary_attack": "variable.melee_flurry_forward"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stop": "(query.speed <= 0)"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "smash_attack": {
+          "animations":  [
+            {
+              "melee_smash_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "tertiary_attack": "variable.melee_flurry_forward"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "charge_windup": "((variable.charge_mobs || variable.charge_structure) || variable.retreat)"
+            },
+            {
+              "smash_attack": "(variable.melee_smash || variable.melee_smash_structure)"
+            },
+            {
+              "swipe_attack": "variable.melee_swipe"
+            }
+          ]
+        },
+        "stop_charge": {
+          "animations":  [
+            {
+              "stop_b": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "tired": "query.any_animation_finished"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(variable.is_stunned == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "swipe_attack": {
+          "animations":  [
+            {
+              "melee_swipe_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "tertiary_attack": {
+          "animations":  [
+            {
+              "tertiary_attack": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "tired": {
+          "animations":  [
+            {
+              "tired_a": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "tired_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "tired_exit": {
+          "animations":  [
+            {
+              "tired_a_exit": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_hammer_boss.fx_controller": {
+      "initial_state": "idle_fx",
+      "states": {
+        "idle_fx": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_embers_01"
+            },
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_embers_02"
+            },
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_embers_03"
+            },
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_embers_04"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_banner_defense": {
+            "geometry": "geometry.block_deco_banner_defense_geo",
+            "up": "world",
+            "forward": "surface"
+        }
+    }
+}

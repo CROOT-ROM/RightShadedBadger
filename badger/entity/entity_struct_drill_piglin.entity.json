@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.1
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_drill_piglin"
+      }
+    },
+    "description": {
+      "animations": {
+        "death": "animation.entity_struct_drill_piglin.death",
+        "default": "controller.animation.entity_struct_drill_piglin.default",
+        "idle_on": "animation.entity_struct_drill_piglin.idle_on",
+        "spawn": "animation.entity_struct_drill_piglin.spawn"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_drill_piglin"
+      },
+      "identifier": "badger:entity_struct_drill_piglin",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_drill_parts": "badger:fx_piglin_goldmine_parts",
+        "fx_smoke": "badger:fx_piglin_goldmine_smoke",
+        "fx_sparks": "badger:fx_piglin_goldmine_sparks"
+      },
+      "render_controllers": ["controller.render.entity_struct_drill_piglin"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "start": "BAE_piglin_goldmine",
+        "start_loop": "BAE_piglin_goldmine_engineloop"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_piglin_d"
+      }
+    }
+  }
+}

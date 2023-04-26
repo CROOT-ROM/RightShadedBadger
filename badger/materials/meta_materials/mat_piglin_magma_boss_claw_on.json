@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_magma_boss_claw_on:base_entity_blend_flipbook": {
+        "culling": "none",
+        "blendmode": "additivealpha",
+        "pass": "AlphaTest",
+        "depthprepass": false,
+        "uniforms": {
+            "BaseColor": [
+                "1.0",
+                "1.0",
+                "1.0",
+                "variable.matalpha"
+            ],
+            "EmissiveColor": [
+                "variable.matalpha",
+                "variable.matalpha",
+                "variable.matalpha",
+                "1.0"
+            ],
+            "FlipbookParams": [
+                "4.0",
+                "4.0",
+                "1.0",
+                "10.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/entity/tex_piglin_magma_boss_claw_on_d",
+            "emissiveMap": "textures/entity/tex_piglin_magma_boss_claw_on_e"
+        }
+    }
+}

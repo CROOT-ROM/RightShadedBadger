@@ -1,0 +1,8 @@
+{
+    "format_version": "1.8.0",
+    "mat_share_director_hero:base_lure": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_hero_ranger_d"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "defaults": {
+    "dofogofwar": true,
+    "dodaylightcycle": true,
+    "doweathercycle": true,
+    "enablecinematicdeaths": true,
+    "doplayersinvincible": false,
+    "bsharpenabled": true,
+    "campaignactsenabled": true,
+    "mapenabled": true,
+    "precachestructures": true,
+    "teamcolors": false,
+    "entitystreamingenabled": true,
+    "autosaveenabled": true,
+    "saveonquitenabled": true,
+    "creativemodedefault": false,
+    "difficultymodeenabled": true,
+    "popcapenabled": true,
+    "worldsizeaxischunks": 500,
+    "onboardingenabledcampaign": true,
+    "onboardingenabledpvp": false,
+    "randomstartingteam": false,
+    "campaignobjectivehealthbars": true,
+    "exclusiveluredunits": true,
+    "enableunlocks": true
+  },
+  "badger:template": {
+    "parent": "game_rules",
+    "game_mode": "campaign"
+  }
+}

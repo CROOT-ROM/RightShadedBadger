@@ -1,0 +1,60 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+		 "renderCategory" : "mapOnly",
+         "identifier" : "badger:fx_map_portal_new",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_parts_purple" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : -1.0
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fx_stop"
+         },
+         "badger:particle_advanced_motion_dynamic" : {
+            "integration_mode" : "velocity"
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.002, 0.002 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 8,
+                  "frame_end" : 7,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 4
+               }
+            }
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_steady" : {
+            "max_particles" : 150.0,
+            "spawn_rate" : 30.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.005, 0.02, 0.005 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.82, 0.129, 0.992, 1.0 ],
+               "0.800000" : [ 0.82, 0.129, 0.992, 1.0 ],
+               "1.000000" : [ 0.82, 0.129, 0.992, 0.0 ]
+            },
+            "interpolant" : "variable.particle_age/variable.particle_lifetime"
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.8,1.3)"
+         }
+      }
+   }
+}

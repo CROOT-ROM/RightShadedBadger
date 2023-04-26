@@ -1,0 +1,101 @@
+{
+  "animation_controllers": {
+    "controller.animation.impact_lava_geyser.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "static": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_initial",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "transitions":  [
+            {
+              "enter": "query.any_animation_finished"
+            }
+          ]
+        },
+        "enter": {
+          "animations":  [
+            {
+              "enter": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_start",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "geyser_start",
+              "enabled": true
+            },
+            {
+              "effect": "geyser_start",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "loop": "query.any_animation_finished"
+            }
+          ]
+        },
+        "exit": {
+          "animations":  [
+            {
+              "exit": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "geyser_loop_stop",
+              "enabled": true
+            }
+          ]
+        },
+        "loop": {
+          "animations":  [
+            {
+              "active": 1.0
+            }
+          ],
+          "on_entry": ["variable.loop = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_geyser",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "geyser_loop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "exit": "(variable.loop == 3)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

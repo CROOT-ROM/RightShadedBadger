@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.allay_gather": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_allay_gather": "MetaMaterial.mat_allay_gather"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

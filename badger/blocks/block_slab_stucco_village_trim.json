@@ -1,0 +1,19 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_stucco_village_trim": {
+      "textures": {
+        "down": "textures/blocks/tex_block_stucco_village_trim", 
+        "up":  {
+          "smart": { 
+              "default" : "textures/blocks/tex_block_stucco_village_trim",
+              "L" : "textures/blocks/tex_block_stucco_village_trim_L",
+              "line" : "textures/blocks/tex_block_stucco_village_trim_line",
+              "spoke": "textures/blocks/tex_block_stucco_village_trim_spoke"
+            }
+          },
+        "side": "textures/blocks/tex_block_slab_stucco_village_trim_side"
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/tex_portal",
+    "atlas_tile": "portal"
+  },
+  // Legacy textures that haven't been converted
+  {
+    "flipbook_texture": "textures/blocks/tex_block_magma_still",
+    "atlas_tile": "textures/blocks/tex_block_magma_still",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_water_still_grey",
+    "atlas_tile": "textures/blocks/tex_block_water_still_grey",
+    "ticks_per_frame": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_water_flow_grey",
+    "atlas_tile": "textures/blocks/tex_block_water_flow_grey",
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_still",
+    "atlas_tile": "textures/blocks/tex_block_lava_still",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils_up",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils_up",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils_top_up",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils_top_up",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils_med_up",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils_med_up",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils_top",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils_top",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_coils_med",
+    "atlas_tile": "textures/blocks/tex_block_lava_coils_med",
+    "ticks_per_frame": 4
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_mushroom_light",
+    "atlas_tile": "textures/blocks/tex_block_mushroom_light",
+    "ticks_per_frame": 8
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_mushroom_light_transition",
+    "atlas_tile": "textures/blocks/tex_block_mushroom_light_transition",
+    "ticks_per_frame": 8
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_mushroom_light_transition_netherwart",
+    "atlas_tile": "textures/blocks/tex_block_mushroom_light_transition_netherwart",
+    "ticks_per_frame": 8
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_netherrack_moss",
+    "atlas_tile": "textures/blocks/tex_block_netherrack_moss",
+    "ticks_per_frame": 28
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_netherrack_moss_var01",
+    "atlas_tile": "textures/blocks/tex_block_netherrack_moss_var01",
+    "ticks_per_frame": 24
+    
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_netherrack_netherwart",
+    "atlas_tile": "textures/blocks/tex_block_netherrack_netherwart",
+    "ticks_per_frame": 28
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_netherrack_netherwart_var01",
+    "atlas_tile": "textures/blocks/tex_block_netherrack_netherwart_var01",
+    "ticks_per_frame": 24
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_netherrack_var04",
+    "atlas_tile": "textures/blocks/tex_block_netherrack_var04",
+    "ticks_per_frame": 20
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_magma_flow",
+    "atlas_tile": "textures/blocks/tex_block_magma_flow",
+    "ticks_per_frame": 10,
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_lava_flow",
+    "atlas_tile": "textures/blocks/tex_block_lava_flow",
+    "ticks_per_frame": 10,
+    "replicate": 2
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_brick_tree_poison_vine_01",
+    "atlas_tile": "textures/blocks/tex_brick_tree_poison_vine_01",
+    "ticks_per_frame": 15
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_prismarine_glow",
+    "atlas_tile": "textures/blocks/tex_block_prismarine_glow",
+    "ticks_per_frame": 4   
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_slab_buff_prismarine_side",
+    "atlas_tile": "textures/blocks/tex_block_slab_buff_prismarine_side",
+    "ticks_per_frame": 4  
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_burning_edge_var03",
+    "atlas_tile": "textures/blocks/tex_block_burning_edge_var03",
+    "ticks_per_frame": 8
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_burning_edge_var04",
+    "atlas_tile": "textures/blocks/tex_block_burning_edge_var04",
+    "ticks_per_frame":8
+  },
+  {
+    "flipbook_texture": "textures/blocks/tex_block_burning_edge_var06",
+    "atlas_tile": "textures/blocks/tex_block_burning_edge_var06",
+    "ticks_per_frame": 12
+  },
+  {
+      "flipbook_texture": "textures/blocks/tex_block_well_of_fate_light_01",
+      "atlas_tile": "textures/blocks/tex_block_well_of_fate_light_01",
+      "ticks_per_frame":18
+    },
+    {
+      "flipbook_texture": "textures/blocks/tex_block_sheet_well_of_fate_light_01",
+      "atlas_tile": "textures/blocks/tex_block_sheet_well_of_fate_light_01",
+      "ticks_per_frame": 8
+    },
+    {
+      "flipbook_texture": "textures/blocks/tex_block_well_of_fate_03",
+      "atlas_tile": "textures/blocks/tex_block_well_of_fate_03",
+      "ticks_per_frame": 16
+    },
+    {
+      "flipbook_texture": "textures/blocks/tex_block_well_of_fate_04",
+      "atlas_tile": "textures/blocks/tex_block_well_of_fate_04",
+      "ticks_per_frame": 6
+
+    },
+    {
+      "flipbook_texture": "textures/blocks/tex_block_well_of_fate_05",
+      "atlas_tile": "textures/blocks/tex_block_well_of_fate_05",
+      "ticks_per_frame": 10
+
+    },
+    {
+      "flipbook_texture": "textures/blocks/tex_block_well_of_fate_06",
+      "atlas_tile": "textures/blocks/tex_block_well_of_fate_06",
+      "ticks_per_frame":12
+
+    }
+    
+]

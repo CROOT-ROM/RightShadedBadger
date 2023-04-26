@@ -1,0 +1,69 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:presentation_event": {
+        "visual_state_added.disabled_by_health": {
+          "script": "disable"
+        },
+        "visual_state_removed.disabled_by_health": {
+          "audio": "BAE_zoner_village_center_fountain_idle_disabled_stop",
+          "script": "enable"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_fountain_prismarine"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_fountain_prismarine.default",
+        "disabled": "animation.entity_struct_fountain_prismarine.disabled",
+        "idle_a": "animation.entity_struct_fountain_prismarine.idle_a",
+        "into_disabled": "animation.entity_struct_fountain_prismarine.into_disabled",
+        "re_enabled": "animation.entity_struct_fountain_prismarine.re_enabled",
+        "spawn_a": "animation.entity_struct_fountain_prismarine.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "disable": "variable.health_low = 1;",
+        "enable": "variable.health_low = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_fountain_prismarine"
+      },
+      "identifier": "badger:entity_struct_fountain_prismarine",
+      "materials": {
+        "mat_entity_struct_fountain_prismarine_active": "mat_entity_struct_fountain_prismarine_active",
+        "mat_entity_struct_fountain_prismarine_deactivated": "mat_entity_struct_fountain_prismarine_deactivated"
+      },
+      "particle_effects": {
+        "fx_dead_foliage": "badger:fx_es_fountain_prismarine_death_leaves",
+        "fx_destroyed_sparkles": "badger:fx_es_fountain_prismarine_sparkles_death",
+        "fx_destroyed_waterfalls": "badger:fx_es_fountain_prismarine_water_death",
+        "fx_electric": "badger:fx_es_fountain_prismarine_electric_cube",
+        "fx_healthy_ripples": "badger:fx_es_fountain_prismarine_impact",
+        "fx_healthy_sparkles": "badger:fx_es_fountain_prismarine_sparkles",
+        "fx_water_pillar_rebuild": "badger:fx_es_fountain_prismarine_water_rebuild"
+      },
+      "render_controllers": ["controller.render.entity_struct_fountain_prismarine"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "cube_disabled": "BAE_zoner_village_center_fountain_cube_disabled",
+        "fountain_disabled": "BAE_zoner_village_center_fountain_disabled",
+        "fountain_healed": "BAE_zoner_village_center_fountain_healed",
+        "fountain_idle": "BAE_zoner_village_center_fountain_idle",
+        "fountain_idle_disabled": "BAE_zoner_village_center_fountain_idle_disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "format_version": "1.0.0",
+  "banks": {
+    "Master Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/master_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Master Bank Strings": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/master_bank.strings.bank",
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Cinematic Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_cinematic_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Cinematic Fmv Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/cinematic_fmv_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core UI Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_ui_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Ambiences Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_ambiences_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Music Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_music_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Music Campaign Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/music_campaign_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Music Pvp Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/music_pvp_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Music Onboarding Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/music_onboarding_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Projectiles Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_projectiles_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Structures Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_structures_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Core Units Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/core_units_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": true
+    },
+    "Tu0 Main Sfx Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/tu0_main_sfx_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": false
+    },
+    "Tu0 Cinematic Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/tu0_cinematic_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": false
+    },
+    "Z Test Bank": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/z_test_bank",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "core_soundbank": false
+    },
+    "Dialogue de_DE": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_de_DE",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "de_DE"
+    },
+    "Dialogue EN": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_EN",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "en_US"
+    },
+     "Dialogue es_ES": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_es_ES",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "es_ES"
+    },
+    "Dialogue es_MX": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_es_MX",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "es_MX"
+    },
+    "Dialogue fr_FR": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_fr_FR",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "fr_FR"
+    },
+    "Dialogue it_IT": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_it_IT",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "it_IT"
+    },
+    "Dialogue ja_JP": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_ja_JP",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "ja_JP"
+    },
+    "Dialogue ko_KR": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_ko_KR",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "ko_KR"
+    },
+    "Dialogue nl_NL": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_nl_NL",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "nl_NL"
+    },
+    "Dialogue pl_PL": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_pl_PL",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "pl_PL"
+    },
+    "Dialogue pt_BR": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_pt_BR",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "pt_BR"
+    },
+    "Dialogue pt_PT": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_pt_PT",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "pt_PT"
+    },
+    "Dialogue ru_RU": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_ru_RU",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "ru_RU"
+    },
+    "Dialogue sv_SE": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_sv_SE",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "sv_SE"
+    },
+    "Dialogue zh_CN": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_zh_CN",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "zh_CN"
+    },
+    "Dialogue zh_TW": {
+      "file_name": "resource_packs/badger/sounds/banks/desktop/Dialogue_zh_TW",
+      "uses_bank_separation_postfix": true,
+      "load_behaviour_non_blocking": false,
+      "locale": "zh_TW"
+    }
+  }
+}

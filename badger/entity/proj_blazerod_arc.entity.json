@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_blazerod_arc",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_blazerod": "mat_proj_blazerod"
+      },
+      "textures": {
+        "default": "textures/entity/tex_piglin_grunter_defend_d"
+      },
+      "geometry": {
+        "default": "geometry.proj_blazerod"
+      },
+      "particle_effects": {
+        "fx_hit": "badger:fx_piglin_grunter_rod_hit",
+        "fx_hit_world": "badger:fx_piglin_grunter_rod_hit_world",
+        "fx_trail": "badger:fx_piglin_grunter_rod_trail"
+      },
+      "render_controllers": [
+        "controller.render.proj_blazerod"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:rendering": {
+        "definition": "badger:proj_blazerod"
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_blazerod"
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "particles": {
+            "effect": "fx_trail",
+            "locator": "loc_fx_tip",
+            "enabled": true,
+            "bind_to_actor": true
+          },
+          "audio": "BAE_proj_tower_piglin_arrow"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_piglin_proj_blazerod_impact_entity",
+          "particles": {
+            "effect": "fx_hit",
+            "enabled": true,
+            "bind_to_actor": false
+          }
+        },
+        "on_world_hit": {
+          "audio": "BAE_piglin_proj_blazerod_impact_world",
+          "particles": {
+            "effect": "fx_hit_world",
+            "enabled": true,
+            "bind_to_actor": false
+          }
+        }
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "enabled": 1.0,
+            "offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "radius": 5.0,
+            "intensity": 1.0,
+            "color": [
+              1.0,
+              1.0,
+              0.5
+            ],
+            "falloff_power": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

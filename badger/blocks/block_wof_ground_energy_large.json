@@ -1,0 +1,21 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_wof_ground_energy_large": {
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_fateful_lands_energy_large",
+            "range": "middle",
+            "probability": 0.20,
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

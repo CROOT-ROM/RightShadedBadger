@@ -1,0 +1,26 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_plant_glowplant_btm": {
+            "textures": {
+                "up": "textures/blocks/tex_block_glowplant_top",
+                "down": "textures/blocks/tex_block_glowplant_top",
+                "side": "textures/blocks/tex_block_glowplant_btm"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_frostland_glowing_pollen",
+                        "range": "middle",
+                        "probability": 0.25,
+                        "offset": [
+                            0.0,
+                            2.0,
+                            0.0
+                        ]                   
+                    }
+                ]           
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.66
+      },
+      "badger:presentation_event": {
+        "normal_hit": {
+          "audio": "BAE_mob_golem_shield_dx_hurt"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_shield_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_shield_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_large"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_large_stop"
+        },
+        "on_shield": {
+          "script": "apply_shield"
+        },
+        "remove_shield": {
+          "script": "remove_shield"
+        },
+        "sfx_no_head_interrupt": {
+          "audio": "BAE_mob_golem_shield_nohead_windup_stop"
+        },
+        "sfx_no_head_winddown_interrupt": {
+          "audio": "BAE_mob_golem_shield_nohead_winddown _stop"
+        },
+        "sfx_shield_attack_interrupt": {
+          "audio": "BAE_mob_golem_shield_attack_shield_windup_stop"
+        },
+        "sfx_shield_melee_interrupt": {
+          "audio": "BAE_mob_golem_shield_attack_melee_windup _stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mob_golem_shield_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_shield",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects_large"]
+    },
+    "description": {
+      "animations": {
+        "cheer_a": "animation.mob_golem_shield_anims_02.cheer_a",
+        "death_a": "animation.mob_golem_shield.death_a",
+        "default": "controller.animation.mob_golem_shield.default",
+        "hit_react": "controller.animation.mob_golem_shield.hit_react",
+        "hit_react_a": "animation.mob_golem_shield.hit_react_a",
+        "idle_a": "animation.mob_golem_shield.idle_a",
+        "idles": "controller.animation.mob_golem_shield.idles",
+        "locomotion": "controller.animation.mob_golem_shield.locomotion",
+        "melee_a": "animation.mob_golem_shield.melee_a",
+        "shield_attack": "animation.mob_golem_shield.shield_attack",
+        "spawn_a": "animation.mob_golem_shield.spawn_a",
+        "sprint_a": "animation.mob_golem_shield.sprint_a",
+        "stop_a": "animation.mob_golem_shield.stop_a",
+        "stun_a": "animation.mob_golem_shield.stun_a",
+        "swim_a": "animation.mob_golem_shield.swim_a",
+        "swim_idle": "animation.mob_golem_shield.swim_idle",
+        "walk_a": "animation.mob_golem_shield.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_shield"
+      },
+      "identifier": "badger:mob_golem_shield",
+      "materials": {
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_heal_256": "mat_fx_heal_256",
+        "mat_fx_spore_damaged_256": "mat_fx_spore_damaged_256",
+        "mat_mob_golem_shield": "mat_mob_golem_shield",
+        "mat_mob_golem_shield_face": "mat_mob_golem_shield_face"
+      },
+      "particle_effects": {
+        "fx_attack_melee": "badger:fx_golem_shield_attack_melee",
+        "fx_corpse_removal_large": "badger:fx_shared_corpse_remove_large",
+        "fx_corpse_removal_med": "badger:fx_shared_corpse_remove_med",
+        "fx_corpse_removal_small": "badger:fx_shared_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_large",
+        "fx_death_med": "badger:fx_shared_death_smoke_med",
+        "fx_death_small": "badger:fx_shared_death_smoke_small",
+        "fx_spawn_dust": "badger:fx_shared_spawn_large",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_large_sparkle",
+        "fx_sprint": "badger:fx_golem_shield_sprint_dust",
+        "fx_step": "badger:fx_golem_shield_step"
+      },
+      "render_controllers": ["controller.render.mob_golem_shield"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;","variable.head_vis = 1;"]
+      },
+      "sound_effects": {
+        "attack_melee_reset": "BAE_mob_golem_shield_attack_melee_reset",
+        "attack_melee_slam": "BAE_mob_golem_shield_attack_melee_slam",
+        "attack_melee_windup": "BAE_mob_golem_shield_attack_melee_windup",
+        "attack_melee_windup_stop": "BAE_mob_golem_shield_attack_melee_windup_stop",
+        "attack_shield_shoot": "BAE_mob_golem_shield_attack_shield_shoot",
+        "attack_shield_windup": "BAE_mob_golem_shield_attack_shield_windup",
+        "attack_shield_windup_stop": "BAE_mob_golem_shield_attack_shield_windup_stop",
+        "cheer": "BAE_mob_golem_shield_cheer",
+        "death_a": "BAE_mob_golem_shield_death_a",
+        "death_poof_large": "BAE_mob_death_poof_large",
+        "dx_attack_melee_slam": "BAE_mob_golem_shield_dx_attack_melee_slam",
+        "dx_attack_melee_windup": "BAE_mob_golem_shield_dx_attack_melee_windup",
+        "dx_attack_shield_shoot": "BAE_mob_golem_shield_dx_attack_shield_shoot",
+        "dx_attack_shield_winddown": "BAE_mob_golem_shield_dx_attack_shield_winddown",
+        "dx_attack_shield_windup": "BAE_mob_golem_shield_dx_attack_shield_windup",
+        "dx_cheer": "BAE_mob_golem_shield_dx_cheer",
+        "dx_death": "BAE_mob_golem_shield_dx_death",
+        "dx_hurt": "BAE_mob_golem_shield_dx_hurt",
+        "dx_idle": "BAE_mob_golem_shield_dx_idle",
+        "fly_walk": "BAE_mob_golem_shield_fly_walk",
+        "footstep_arm_sprint": "BAE_mob_golem_shield_footstep_arm_sprint",
+        "footstep_arm_walk": "BAE_mob_golem_shield_footstep_arm_walk",
+        "head_spin_fast": "BAE_mob_golem_shield_head_spin_fast",
+        "head_spin_slow": "BAE_mob_golem_shield_head_spin_slow",
+        "jump_land": "BAE_mob_golem_shield_jump_land",
+        "nohead_loop": "BAE_mob_golem_shield_nohead_loop",
+        "nohead_loop_stop": "BAE_mob_golem_shield_nohead_loop_stop",
+        "nohead_winddown": "BAE_mob_golem_shield_nohead_winddown",
+        "nohead_winddown_stop": "BAE_mob_golem_shield_nohead_winddown_stop",
+        "nohead_windup": "BAE_mob_golem_shield_nohead_windup",
+        "nohead_windup_stop": "BAE_mob_golem_shield_nohead_windup_stop",
+        "swim": "BAE_mob_golem_shield_swim"
+      }
+    }
+  }
+}

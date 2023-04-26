@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "components": {
+            "badger:knockback_reaction_threshold": {
+                "name": "normal_knockback",
+                "activation_value": 15
+            }
+        },
+        "description": {
+            "identifier": "badger:normal_knockback"
+        }
+    }
+}

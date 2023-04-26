@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.proj_freeze_block": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_proj_freeze_block": "MetaMaterial.mat_proj_freeze_block"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "block_visibility_set": "variable.block_visibility_set_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

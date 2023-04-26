@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_brick_tree_mang_trunk_dead_05": {
+      "textures": "textures/blocks/tex_block_tree_mang_trunk_dead_05"
+    }
+  }
+}

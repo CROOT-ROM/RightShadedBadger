@@ -1,0 +1,57 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_hammer_boss_nis"
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects_boss"],
+      "badger:terrain_type_molang": {
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.piglin_hammer_boss_nis.death_a",
+        "default": "controller.animation.piglin_hammer_boss_nis.default",
+        "idle_b": "animation.piglin_hammer_boss_nis.idle_b"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Surprised","Very Surprised","Ouch","Normal"],
+      "geometry": {
+        "default": "geometry.piglin_hammer_boss_nis"
+      },
+      "identifier": "badger:piglin_hammer_boss_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_spore_healed_512": "mat_fx_spore_healed_512",
+        "mat_piglin_hammer_boss": "mat_piglin_hammer_boss",
+        "mat_piglin_hammer_boss_face": "mat_piglin_hammer_boss_face"
+      },
+      "particle_effects": {
+        "fx_hit": "badger:fx_piglin_hammer_boss_cine_hit",
+        "fx_smoke_ring": "badger:fx_piglin_hammer_boss_cine_smoke",
+        "fx_stun": "badger:fx_piglin_hammer_boss_cine_stun",
+        "fx_weapon_smoke": "badger:fx_shared_death_smoke_large"
+      },
+      "render_controllers": ["controller.render.piglin_hammer_boss_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.phbrider_geo_vis = 1;","variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

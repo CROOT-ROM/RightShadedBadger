@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "block_deco_plant_driedstalks_02": {
+            "geometry": "geometry.block_fol_driedstalks_02",
+            "shadow": true,
+            "random_orientation": true,
+            "wind_strength": 0.025
+        }
+    }
+}

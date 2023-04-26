@@ -1,0 +1,14 @@
+{
+  "render_controllers": {
+    "controller.render.item_orb_04": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_orb_04": "MetaMaterial.mat_item_orb_04"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

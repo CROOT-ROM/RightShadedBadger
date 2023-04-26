@@ -1,0 +1,21 @@
+{
+	"test-name": "mount-test",
+	"test-description": "Place player on each mount (beetle, tiger, bird, horse)",
+	"test-duration": 60,
+	"runAsPartOfCompleteTestSuite": true,
+	"gamemode": "editor",
+	"platforms": [ "Win32", "Windows10", "Xbox" ],
+	"commands": [
+		"/mount @s badger:mount_beetle",
+		"/testdelay 3",
+
+		"/mount @s badger:mount_tiger",
+		"/testdelay 3",
+
+		"/mount @s badger:mount_bird",
+		"/testdelay 3",
+
+		"/mount @s badger:mount_horse",
+		"/testdelay 3"
+	]
+}

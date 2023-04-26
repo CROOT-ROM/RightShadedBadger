@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_lava_thrower"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_piglin_tower_lava_thrower_damage_stage0"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_tower_lava_thrower_damage_stage0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_piglin_tower_lava_thrower_damage_stage1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_piglin_tower_lava_thrower_damage_stage2"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_tower_lava_thrower_destruction"
+        },
+        "on_healing_applied_to_structure_0": {
+          "audio": "BAE_piglin_regenerator_heal_full"
+        },
+        "on_healing_applied_to_structure_1": {
+          "audio": "BAE_piglin_regenerator_heal_stage1"
+        },
+        "on_healing_applied_to_structure_2": {
+          "audio": "BAE_piglin_regenerator_heal_stage2"
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "piglinStructure",
+          "pigKnockbackTower",
+          "piglin"
+        ]
+      }
+    }
+  }
+}

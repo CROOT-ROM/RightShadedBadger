@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_hotrock_var04": {
+            "textures": {
+                "up": "textures/blocks/tex_block_lichen_brown_top_var03",
+                "down": "textures/blocks/tex_block_hotrock_top_var01",
+                "side": "textures/blocks/tex_block_hotrock_var01"
+            }
+        }
+    }
+}

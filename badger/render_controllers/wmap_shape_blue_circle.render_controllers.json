@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_shape_blue_circle": {
+      "geometry": "Geometry.wmap_shape_blue_circle",
+      "materials":  [
+        {
+          "mat_wmap_shape_blue_circle": "MetaMaterial.mat_wmap_shape_blue_circle"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_stone",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_structure",
+        "badger:template_terraform_gather_surface"
+      ],
+      "badger:keep_alive_timer": {
+        "time": 0.1,
+        "trigger_event_only_on_death": true
+      },
+      "badger:presentation_event": {
+        "on_construction_end": {
+          "audio": "BAE_gather_order_surface_stone"
+        },
+        "on_building_deconstructed": {
+          "audio": "BAE_gather_order_surface_stone_finished"
+        },
+        "on_destroyed": {
+          "audio": "BAE_gather_order_surface_stone_finished"
+        },
+        "on_death": {
+          "audio": "BAE_gather_order_surface_stone_destroyed"
+        }
+      }
+    }
+  }
+}

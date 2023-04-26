@@ -1,0 +1,77 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_well_of_fate_healthy",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 350.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.is_disabled" ]
+      },
+      "events" : {
+         "beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_beam",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam_narrow" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_beam_narrow",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam_zaps" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_beam_zaps",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkle" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_sparkle",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkle_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_sparkle_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "squares_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_squares_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "squares_up_top" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_well_of_fate_healthy_squares_up_top",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "beam",
+               "beam_narrow",
+               "sparkle",
+               "sparkle_up",
+               "squares_up",
+               "squares_up_top"
+            ]
+         },
+         "minecraft:emitter_lifetime_once" : {},
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         }
+      }
+   }
+}

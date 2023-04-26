@@ -1,0 +1,40 @@
+{
+  "test-name": "invasion-simulation-test",
+  "test-description": "Enable fast invasion -> skip to act 2, phase 3 -> advance the game approx 1 month in 5 day chunks",
+  "test-duration":240,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "campaign",
+  "platforms": [],
+  "commands": [
+  	"/godmode",
+	"/bsharp event test_campaign_start_act_2",
+	"/bsharp event setInvasionPhase 3",
+	"/testdelay 15",
+  	"/invasion simulate true",
+	"/testdelay 30",
+	
+	"/add_days 1",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 5",
+	
+	"/add_days 5",
+	"/testdelay 60"
+  ]
+}

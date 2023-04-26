@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_cavalry_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "attack_a_loop": "animation.mob_golem_cavalry.attack_a_loop",
+        "attack_a_winddown": "animation.mob_golem_cavalry.attack_a_winddown",
+        "attack_a_windup": "animation.mob_golem_cavalry.attack_a_windup",
+        "attack_b": "animation.mob_golem_cavalry.attack_b",
+        "attack_c": "animation.mob_golem_cavalry.attack_c",
+        "climb_a": "animation.mob_golem_cavalry.climb_a",
+        "death_a": "animation.mob_golem_cavalry.death_a",
+        "default": "controller.animation.mob_golem_cavalry_nis.default",
+        "idle_a": "animation.mob_golem_cavalry.idle_a",
+        "mob_golem_cavalry_final_boss_death_nis": "animation.mob_golem_cavalry_final_boss_death_nis.mob_golem_cavalry_final_boss_death_nis",
+        "spawn_a": "animation.mob_golem_cavalry.spawn_a",
+        "stop_a": "animation.mob_golem_cavalry.stop_a",
+        "stun_a": "animation.mob_golem_cavalry.stun_a",
+        "swim_a": "animation.mob_golem_cavalry.swim_a",
+        "swim_idle_a": "animation.mob_golem_cavalry.swim_idle_a",
+        "walk_a": "animation.mob_golem_cavalry.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.mob_golem_cavalry_nis"
+      },
+      "identifier": "badger:mob_golem_cavalry_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_generic_buff_128": "mat_fx_generic_buff_128",
+        "mat_mob_golem_cavalry": "mat_mob_golem_cavalry",
+        "mat_mob_golem_cavalry_face": "mat_mob_golem_cavalry_face"
+      },
+      "render_controllers": ["controller.render.mob_golem_cavalry_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_magma_cube_sml": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_64","MetaMaterial.mat_fx_frozen_64"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_magma_cube_sml": "MetaMaterial.mat_piglin_magma_cube_sml"
+        },
+        {
+          "mat_fx_frozen_64": "Array.materials[variable.skin_mat]"
+        },
+        {
+          "mat_piglin_magma_cube_sml_face": "MetaMaterial.mat_piglin_magma_cube_sml_face"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

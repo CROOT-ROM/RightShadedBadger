@@ -1,0 +1,166 @@
+{
+	"badger:settings" : {
+		"renderer" : {
+			"welloffate_ambient_color" : {
+				"value" : [
+					{
+						"time" : 0.4312499761581421,
+						"value" : [ 0.208, 0.329, 0.394, 1.0 ]
+					}
+				]
+			},
+			"welloffate_ambient_sparkle" : {
+				"value" : [
+					{
+						"time" : 0.4937499761581421,
+						"value" : [ 0.2809999883174896, 0.3319999873638153, 0.051, 2.543999910354614 ]
+					}
+				]
+			},
+			"welloffate_atmosphere_params" : {
+				"value" : [
+					{
+						"time" : 0.4562499821186066,
+						"value" : [ 0.2238433957099915, 0.0, 0.0, 0.6320000290870667 ]
+					}
+				]
+			},
+			"welloffate_cloud_color" : {
+				"value" : [
+					{
+						"time" : 0.5,
+						"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"welloffate_cloud_shadows" : {
+				"value" : [
+					{
+						"time" : 0.5,
+						"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"welloffate_direct_color" : {
+				"value" : [
+					{
+						"time" : 0.5255,
+						"value" : [ 5.0, 8.0, 10.0, 1.0 ]
+					}
+				]
+			},
+			"welloffate_emissive_scale" : {
+				"value" : [
+					{
+						"time" : 0.5112499594688416,
+						"value" : [ 8.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"welloffate_fog_color" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 0.1716804504394531, 0.2121960967779160, 0.2303030490875244, 1.0 ]
+					}
+				]
+			},
+			"welloffate_fog_params" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 77.44000244140625, 375.0, 768.0, 1056.0 ]
+					}
+				]
+			},
+			"welloffate_horizon_params" : {
+				"value" : [
+					{
+						"time" : 0.459,
+						"value" : [ 0.047, 0.37, 0.0, 0.1903332620859146 ]
+					}
+				]
+			},
+			"welloffate_moon_color" : {
+				"value" : [
+					{
+						"time" : 0.4437499940395355,
+						"value" : [ 0.9999899864196777, 1.0, 1.0, 800.0 ]
+					}
+				]
+			},
+			"welloffate_moon_position" : {
+				"value" : [
+					{
+						"time" : 0.51,
+						"value" : [ 0.37, 0.3766666650772095, 0.0, 0.0 ]
+					}
+				]
+			},
+			"welloffate_particle_emissive_scale" : {
+				"value" : [
+					{
+						"time" : 0.5,
+						"value" : [ 5.0, 5.0, 5.0, 1.0 ]
+					}
+				]
+			},
+			"welloffate_particle_light" : {
+				"value" : [
+					{
+						"time" : 0.5,
+						"value" : [ 0.9999899864196777, 1.0, 0.9999899864196777, 1.0 ]
+					}
+				]
+			},
+			"welloffate_post_params" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 0.0, 0.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"welloffate_sky_color" : {
+				"value" : [
+					{
+						"time" : 0.5009999871253967,
+						"value" : [ 0.03526170924305916, 0.05258378386497498, 0.1939393877983093, 1.0 ]
+					}
+				]
+			},
+			"welloffate_sky_horizon_color" : {
+				"value" : [
+					{
+						"time" : 0.5,
+						"value" : [ 0.01443524844944477, 0.6380676627159119, 0.7939394116401672, 1.0 ]
+					}
+				]
+			},
+			"welloffate_sparkle_params" : {
+				"value" : [
+					{
+						"time" : 0.4912499785423279,
+						"value" : [ 8.0, 0.0, 3.0, 0.001 ]
+					}
+				]
+			},
+			"welloffate_stars_color" : {
+				"value" : [
+					{
+						"time" : 0.5024999976158142,
+						"value" : [ 1.0, 1.9, 5.0, 1.0 ]
+					}
+				]
+			},
+			"welloffate_stars_position" : {
+				"value" : [
+					{
+						"time" : 0.5074999928474426,
+						"value" : [ 0.2133333384990692, 0.7509999871253967, 0.0, 0.0 ]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_copper_block",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_copper_block": "mat_proj_copper_block"
+            },
+            "textures": {
+                "default": "textures/entity/tex_proj_copper_block_d"
+            },
+            "geometry": {
+                "default": "geometry.proj_copper_block"
+            },
+            "render_controllers": [
+                "controller.render.proj_copper_block"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:rendering": {
+                "definition": "badger:proj_copper_block"
+            }
+        }
+    }
+}

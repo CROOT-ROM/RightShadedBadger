@@ -1,0 +1,107 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_attractor_onbording",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 10000000.0,
+            "suspend_distance" : 15000000.0
+         }
+      },
+      "events" : {
+         "beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_beam_narrow",
+               "type" : "emitter_bound"
+            }
+         },
+         "beam_start" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onboarding_beam_start",
+               "type" : "emitter_bound"
+            }
+         },
+         "ground_beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onboarding_beams_ground",
+               "type" : "emitter_bound"
+            }
+         },
+         "moving_beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_beam_zaps",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkle" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_sparkle",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkle_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_sparkle_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "squares_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_squares_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "tall_beam" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_attractor_onbording_mesh_beam",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "initial_scale" : [ 1.0, 50.0 ],
+            "facing_camera_mode" : "lookat_y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 8,
+                  "frame_end" : 63,
+                  "rows_count" : 8
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "sparkle",
+               "sparkle_up",
+               "beam",
+               "squares_up",
+               "moving_beam",
+               "ground_beam",
+               "beam_start"
+            ],
+            "timeline" : {
+               "5.000000" : [ "tall_beam" ]
+            }
+         },
+         "minecraft:emitter_lifetime_expression" : {},
+         "minecraft:emitter_rate_instant" : {},
+         "minecraft:emitter_shape_point" : {
+            "offset" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-10, 10)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.65,1.5)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_drag_coefficient" : 4.5
+         }
+      }
+   }
+}

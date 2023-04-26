@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_plane_vine_ivy_corrupt_dead": 
+    {
+      "pass": "AlphaTest",
+      "textures": "textures/blocks/tex_block_plane_vine_ivy_corrupt_dead"
+      
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_animal_marmot:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_animal_marmot_d",
+            "coeffMap": "textures/entity/tex_animal_marmot_mr",
+            "normalMap": "textures/entity/tex_animal_marmot_n"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_music_box": {
+      "decoration": "block_deco_music_box_lock",
+      "textures": {
+        "up": "textures/blocks/tex_block_music_box_top",
+        "down": "textures/blocks/tex_block_music_box_side",
+        "side": "textures/blocks/tex_block_music_box_side"
+      },
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_music_box",
+            "range": "middle",
+            "probability": 1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_mount_giant_beetle:entity_world_map": {
+    "pass": "AlphaTest",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_mount_giant_beetle_d",
+      "emissiveMap": "textures/entity/tex_wmap_mount_giant_beetle_e",
+      "coeffMap": "textures/entity/tex_wmap_mount_giant_beetle_mr",
+      "normalMap": "textures/entity/tex_wmap_mount_giant_beetle_n"
+    }
+  }
+}

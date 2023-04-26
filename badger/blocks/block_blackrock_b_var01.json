@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_blackrock_b_var01": {
+            "textures": {
+                "up": "textures/blocks/tex_block_blackrock_b",
+                "down": "textures/blocks/tex_block_blackrock_b",
+                "side": "textures/blocks/tex_block_blackrock_b_01"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_magma_cube_boss",
+      "geometry": {
+        "default": "geometry.prvoj_magma_cube_lrg"
+      },
+      "particle_effects": {
+        "fx_trail": "badger:fx_proj_magma_cube_lrg_projtrail",
+        "fx_impact": "badger:fx_proj_magma_cube_impact"
+      }
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:proj_pig_magma_cube_lrg"
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_TODO"
+        },
+        "on_world_hit": {
+          "audio": "BAE_TODO",
+          "particles": "fx_impact"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_TODO",
+          "particles": "fx_impact"
+        },
+        "on_intercepted": {
+          "particles": "badger:fx_tower_anti_siege_impact_lava"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_question_mark": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_question_mark": "MetaMaterial.mat_wmap_question_mark"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

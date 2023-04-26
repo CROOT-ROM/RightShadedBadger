@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_structure",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_block_swap_start": {
+          "audio": "BAE_mason_upgrade_start"
+        },
+        "on_block_swap_stop": {
+          "audio": "BAE_mason_upgrade_stop"
+        },
+        "on_block_layer_converted": {
+          "audio": "BAE_mason_upgrade_transform"
+        },
+        "on_stretch_foundation_placed": {
+          "audio": "BAE_ui_structure_foundation_placed"
+        },
+        "on_damage_applied_to_structure_0": {
+          "visual_state": {
+            "type": "on_structure_damage_low"
+          }
+        },
+        "on_damage_applied_to_structure_1": {
+          "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_2": {
+          "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_3": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_advanced_direct_targeted": {
+          "outline": {
+            "color": "enemy_target",
+            "duration": 0.25,
+            "affects_enemies": true
+          }
+        }
+      }
+    }
+  }
+}

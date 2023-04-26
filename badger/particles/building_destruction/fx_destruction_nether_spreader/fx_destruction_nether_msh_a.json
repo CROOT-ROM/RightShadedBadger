@@ -1,0 +1,78 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_destruction_nether_msh_a",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 60.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.super_nether_spreader" ]
+      },
+      "components" : {
+         "badger:particle_advanced_motion_dynamic" : {
+            "integration_mode" : "velocity",
+            "linear_velocity" : [ 0.0, "variable.motion_y * 20", 0.0 ]
+         },
+         "badger:particle_appearance_mesh" : {
+            "facing_camera_mode" : "emitter_transform_xy",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               },
+               "time_integration" : {
+                  "cycles_count" : -1,
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            },
+            "geometry" : "geometry.fx_msh_nether_spreader_active",
+            "material_source" : "model",
+            "skylight" : 1.0
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 1.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation_rate" : 20.0
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 2.7
+         }
+      },
+      "curves" : {
+         "variable.motion_y" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.0, 0.165 ],
+                  "tangent_a" : [ 0.263, -0.267 ],
+                  "tangent_b" : [ -0.263, 0.267 ]
+               },
+               {
+                  "position" : [ 0.531, -0.983 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 1.0, -1.017 ],
+                  "tangent_a" : [ 0.358, -0.017 ],
+                  "tangent_b" : [ -0.358, 0.017 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

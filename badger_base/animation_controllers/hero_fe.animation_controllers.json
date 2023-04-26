@@ -1,0 +1,344 @@
+{
+  "animation_controllers": {
+    "controller.animation.hero.champion_frontend": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_champion_select": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_champion_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.champion_frontend_alt": {
+      "initial_state": "new_duds",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_champion_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_duds": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_duds": {
+          "animations":  [
+            {
+              "fe_champion_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.guardian_frontend": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_guardian_select": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_guardian_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.guardian_frontend_alt": {
+      "initial_state": "new_duds",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_guardian_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_duds": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_duds": {
+          "animations":  [
+            {
+              "fe_guardian_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.magus_frontend": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_magus_select": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_magus_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.magus_frontend_alt": {
+      "initial_state": "new_duds",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_magus_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_duds": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_duds": {
+          "animations":  [
+            {
+              "fe_magus_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },    "controller.animation.hero.rabbit_frontend": {      "initial_state": "flourish",      "states": {        "flourish": {          "animations":  [            {              "fe_rabbit_select": 1.0            }          ],          "blend_transition": 0.2,          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],          "transitions":  [            {              "idle": "query.all_animations_finished"            }          ]        },        "idle": {          "animations":  [            {              "fe_rabbit_idle": 1.0            }          ],          "blend_transition": 0.2,          "on_exit": ["variable.face_anim_frame = 0;"],          "transitions":  [            {              "flourish": "variable.scene_opened"            }          ]        }      }    },
+    "controller.animation.hero.ranger_frontend": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_ranger_select": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_ranger_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.ranger_frontend_alt": {
+      "initial_state": "new_duds",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_ranger_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_duds": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_duds": {
+          "animations":  [
+            {
+              "fe_ranger_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.warrior_frontend": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_warrior_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_warrior_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hero.warrior_frontend_alt": {
+      "initial_state": "new_duds",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_warrior_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_duds": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_duds": {
+          "animations":  [
+            {
+              "fe_warrior_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

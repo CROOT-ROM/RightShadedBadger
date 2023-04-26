@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_status_effects_boss"
+    },
+    "components": {
+      "badger:terrain_type_molang": {},
+      "badger:presentation_event": {
+        "on_death": {
+          "attachment": {
+            "location": "general1"
+          },
+          "script": "death"
+        },
+        "stunned_start": {
+          "script": "stunned_start",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_stun_large",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
+        "stunned_stop": {
+          "particles":{
+            "effect": "badger:fx_stat_stun",
+            "kill_script": "stunned_stop"
+          }
+        },
+        "feared_start": {
+          "audio": "BAE_mob_status_fear_start",
+          "script": "feared_start"
+        },
+        "feared_stop": {
+          "audio": "BAE_mob_status_fear_stop",
+          "script": "feared_stop"
+        }
+      }
+    }
+  }
+}

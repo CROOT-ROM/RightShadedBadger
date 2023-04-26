@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_banner_obstacle_small": {
+      "decoration": "deco_banner_obstacle_small"
+    }
+  }
+}

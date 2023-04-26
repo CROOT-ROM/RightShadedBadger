@@ -1,0 +1,55 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_frostland_geyser_jet",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_geyser" ]
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [
+               "math.lerp(0.6,3.0,query.particle_normalized_age)",
+               "math.lerp(9.0,6.0,query.particle_normalized_age)"
+            ],
+            "initial_scale" : [ 0.4, 0.45 ],
+            "facing_camera_mode" : "rotate_y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 9,
+                  "frame_end" : 53,
+                  "rows_count" : 6
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.4
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 100.0,
+            "spawn_rate" : "query.distance_from_camera < 200 ? 12 - query.emitter_normalized_age : 0"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.1, 0.3, 0.1 ],
+            "offset" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.4, 1.0, 1.0, 1.0 ],
+               "0.500000" : [ 1.0, 1.0, 1.0, 1.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : "Math.random(55,75)",
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.4,2.0)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ "Math.random(0,4)", "Math.random(-3,-12)", "Math.random(-3,3)" ],
+            "linear_drag_coefficient" : 2.9
+         }
+      }
+   }
+}

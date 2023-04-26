@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_iron_wrought_hot_bottom": {
+      "textures": {
+        "up": "textures/blocks/tex_block_iron_wrought",
+        "down": "textures/blocks/tex_block_iron_wrought_hot_side",
+        "side": "textures/blocks/tex_block_iron_wrought_hot_bottom"
+      }
+    }
+  }
+}

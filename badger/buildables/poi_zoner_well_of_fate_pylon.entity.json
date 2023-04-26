@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:poi_zoner_well_of_fate_pylon"
+        },
+        "components": {
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_TODO"
+                },
+                "on_construction_start": {
+                    "audio": "BAE_structure_placement_pvp_pylon"
+                }    
+            }
+        }
+    }
+}

@@ -1,0 +1,225 @@
+{
+	"resource_pack_name": "badger",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_dir": "blocks",
+	"texture_data": {
+		// Legacy textures that haven't been converted
+		"textures/blocks/tex_block_netherrack_var04": {
+			"textures": "textures/blocks/tex_block_netherrack_var04"
+		},
+		// This needs to be here otherwise it stomps the terrain atlas
+		"textures/blocks/tex_block_magma_still": {
+			"textures": "textures/blocks/tex_block_magma_still"
+		},
+		// This needs to be here otherwise it stomps the terrain atlas
+		"textures/blocks/tex_block_magma_flow": {
+			"quad": 1,
+			"textures": "textures/blocks/tex_block_magma_flow"
+		},
+		"grass_top": {
+			"textures": [
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top",
+				"textures/blocks/grass_top"
+			]
+		},
+		"grass_bottom": {
+			"textures": [
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt",
+				"textures/blocks/dirt"
+			]
+		},
+		"missing": {
+			"textures": "textures/misc/missing_texture"
+		},
+		"missing_tile": {
+			"textures": "textures/blocks/missing_tile"
+		},
+		"snow": {
+			"textures": "textures/blocks/snow"
+		},
+		"dirt": {
+			"textures": [
+				"textures/blocks/dirt",
+				"textures/blocks/dirt"
+			]
+		},
+		"stone": {
+			"textures": [
+				"textures/blocks/stone",
+				"textures/blocks/stone_granite",
+				"textures/blocks/stone_granite_smooth",
+				"textures/blocks/stone_diorite",
+				"textures/blocks/stone_diorite_smooth",
+				"textures/blocks/stone_andesite",
+				"textures/blocks/stone_andesite_smooth"
+			]
+		},
+		"textures/blocks/tex_block_water_flow_grey": {
+			"quad": 1,
+			"textures": "textures/blocks/tex_block_water_flow_grey"
+		},
+		"textures/blocks/tex_block_water_flow": { //DEPRECATED "water_flow" is now replaced by water_flow_grey texture for a newer water coloring system
+			//this is only here or the purposes of backwards compatibility, and should no longer be used!
+			"quad": 1,
+			"textures": "textures/blocks/tex_block_water_flow_grey"
+		},
+		"textures/blocks/tex_block_lava_flow": {
+			"quad": 1,
+			"textures": "textures/blocks/tex_block_lava_flow"
+		},
+		"bedrock": {
+			"textures": "textures/blocks/bedrock"
+		},
+		"structure_block": {
+			"textures": [
+				"textures/blocks/structure_block",
+				"textures/blocks/structure_block_data",
+				"textures/blocks/structure_block_save",
+				"textures/blocks/structure_block_load",
+				"textures/blocks/structure_block_corner",
+				"textures/blocks/structure_block_export"
+			]
+		},
+		"structure_void": {
+			"textures": [
+				"textures/blocks/structure_void",
+				"textures/blocks/structure_air"
+			]
+		},
+		"still_water_grey": {
+			"textures": "textures/blocks/water_still_grey"
+		},
+		"textures/blocks/tex_block_lava_still": {
+			"textures": "textures/blocks/tex_block_lava_still"
+		},
+		"textures/blocks/tex_block_netherrack_moss_var01": {
+			"textures": "textures/blocks/tex_block_netherrack_moss_var01"
+		},
+		"textures/blocks/tex_block_netherrack_moss": {
+			"textures": "textures/blocks/tex_block_netherrack_moss"
+		},
+		"textures/blocks/tex_block_netherrack_netherwart": {
+			"textures": "textures/blocks/tex_block_netherrack_netherwart"
+		},
+		"textures/blocks/tex_block_netherrack_netherwart_var01": {
+			"textures": "textures/blocks/tex_block_netherrack_netherwart_var01"
+		},
+		"textures/blocks/tex_block_mushroom_light": {
+			"textures": "textures/blocks/tex_block_mushroom_light"
+		},
+		"textures/blocks/tex_block_mushroom_light_transition": {
+			"textures": "textures/blocks/tex_block_mushroom_light_transition"
+		},
+		"textures/blocks/tex_block_mushroom_light_transition_netherwart": {
+			"textures": "textures/blocks/tex_block_mushroom_light_transition_netherwart"
+		},
+		// decals (split these out into their own atlas at some point
+		"decal_creeper_explosion": {
+			"textures": "textures/decals/tex_fx_scorch_mark"
+		},
+		"decal_block_impact": {
+			"textures": "textures/decals/tex_fx_scorch_block_impact"
+		},
+		"decal_ice_block_impact": {
+			"textures": "textures/decals/tex_fx_ice_block_impact"
+		},
+		"decal_ground_block_impact": {
+			"textures": "textures/decals/tex_fx_ground_block_impact"
+		},
+		"decal_disturbed_ground": {
+			"textures": "textures/decals/tex_fx_disturbed_ground_decal"
+		},
+		"decal_cracks": {
+			"textures": "textures/decals/tex_fx_cracks"
+		},
+		"decal_cracks_big": {
+			"textures": "textures/decals/tex_fx_cracks_big"
+		},
+		"decal_redstone_impact": {
+			"textures": "textures/decals/tex_fx_redstone_impact"
+		},
+		"decal_redstone_impact_buff": {
+			"textures": "textures/decals/tex_fx_redstone_impact_buff"
+		},
+		"decal_spore_aoe": {
+			"textures": "textures/decals/tex_fx_spore_decal"
+		},
+		"decal_spore_aoe_green": {
+			"textures": "textures/decals/tex_fx_spore_decal_green"
+		},
+		"decal_grenadier_splat": {
+			"textures": "textures/decals/tex_fx_splat_decal"
+		},
+		"decal_rotters_death": {
+			"textures": "textures/decals/tex_fx_rotters_death"
+		},
+		"decal_mud_splat": {
+			"textures": "textures/decals/tex_fx_mud_decal"
+		},
+		"decal_engineer_grenade": {
+			"textures": "textures/decals/tex_fx_scorch_grenade_impact"
+		},
+		"decal_aoi": {
+			"textures": "textures/decals/tex_decal_aoi"
+		},
+		"decal_lure": {
+			"textures": "textures/decals/tex_decal_lure"
+		},
+		"decal_lure_status": {
+			"textures": "textures/decals/tex_decal_lure_status"
+		},
+		"decal_mob_indicator": {
+			"textures": "textures/decals/tex_decal_mob_indicator"
+		},
+		"decal_reticle": {
+			"textures": "textures/decals/tex_decal_reticle"
+		},
+		"decal_reticle_enemy": {
+			"textures": "textures/decals/tex_decal_reticle_enemy"
+		},
+		"decal_orders": {
+			"textures": "textures/decals/tex_decal_orders"
+		},
+		"decal_rsl_reticle": {
+			"textures": "textures/decals/tex_decal_rsl_reticle"
+		},
+		"decal_final_boss_bash": {
+			"textures": "textures/decals/tex_fx_final_boss_bash"
+		},
+		"decal_footprint": {
+			"textures": "textures/decals/tex_decal_footprint"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_shape_yellow_triangle:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_shapes_d"
+    }
+  }
+}

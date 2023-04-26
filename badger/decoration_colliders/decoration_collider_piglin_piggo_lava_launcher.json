@@ -1,0 +1,18 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier": "badger:decoration_collider_piglin_piggo_lava_launcher",
+        "offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "height": 6.4,
+        "length": 0.8,
+        "yaw": 0.0,
+        "inner_radius": 3.8,
+        "outer_radius": 5.2,
+        "intensity": 1.0,
+        "priority": 1000
+    }
+}

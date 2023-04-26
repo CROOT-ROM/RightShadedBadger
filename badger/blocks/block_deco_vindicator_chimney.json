@@ -1,0 +1,23 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_vindicator_chimney": {
+      "decoration": "deco_vindicator_chimney",            
+       "particle_spawner": {
+		  
+				"effects" : [
+					{
+						"probability": 1.0,
+						"effect": "badger:fx_block_deco_vindicator_chimney",
+						"range": "near",
+						"offset": [
+							0.0,
+							0.0,
+							0.0
+						]
+					}
+				]			
+      }
+    }
+  }
+}

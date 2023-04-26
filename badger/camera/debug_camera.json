@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:debug_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "debug",
+        "field_of_view": 80.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": true,
+        "priority": 1
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 2.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": false
+      },
+      "minecraft:camera_fly": {
+        "speed": 10.0,
+        "speed_alt": 20.0,
+        "sprint_multiplier": 1.0
+      },
+      "minecraft:look_target": {},
+      "minecraft:follow_target": {},
+      "minecraft:first_person_look": {
+        "pitch_min": -90.0,
+        "pitch_max": 90.0
+      },
+      "minecraft:camera_speed_modifier": {
+        "translation_speed_modifier": 0.1,
+        "look_at_speed_modifier": 0.1,
+        "slow_mode_modified_by_sprint": false
+      }
+    }
+  }
+}

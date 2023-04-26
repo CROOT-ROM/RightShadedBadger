@@ -1,0 +1,28 @@
+{
+  "menu_id": "toolbar_combat",
+  "selection_type": "single",
+  "gamepad_input_override": "look",
+  // defining button indexes to match toolbar combat list in hud.json
+  "radial_mappings": [
+    {
+      "slices": [
+        {
+          "button_id": "button.toolbar_select_utility",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.toolbar_select_spawners",
+          "gameplay_index": 7
+        },
+        {
+          "button_id": "button.toolbar_select_mobs",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.toolbar_select_buffs",
+          "gameplay_index": 8
+        }
+      ]
+    }
+  ]
+}

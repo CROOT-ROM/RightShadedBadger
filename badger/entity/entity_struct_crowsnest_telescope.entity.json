@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_crowsnest_telescope"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_crowsnest_telescope.death_a",
+        "default": "controller.animation.entity_struct_crowsnest_telescope.default",
+        "idle_a": "animation.entity_struct_crowsnest_telescope.idle_a",
+        "spawn_a": "animation.entity_struct_crowsnest_telescope.spawn_a"
+      },
+      "enable_attachables": true,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "entity_struct_crowsnest_telescope": "geometry.entity_struct_crowsnest_telescope"
+      },
+      "identifier": "badger:entity_struct_crowsnest_telescope",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_crowsnest_telescope": "mat_entity_struct_crowsnest_telescope"
+      },
+      "particle_effects": {
+        "fx_death": "badger:fx_destruction_crowsnest_telescope"
+      },
+      "render_controllers": ["controller.render.entity_struct_crowsnest_telescope"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "rotate_long": "BAE_zoner_increased_range_missiles_scope_rotate_long",
+        "rotate_medium": "BAE_zoner_increased_range_missiles_scope_rotate_medium",
+        "rotate_short": "BAE_zoner_increased_range_missiles_scope_rotate_short",
+        "rotate_stop": "BAE_zoner_increased_range_missiles_scope_rotate_stop",
+        "zoom": "BAE_zoner_increased_range_missiles_scope_zoom"
+      }
+    }
+  }
+}

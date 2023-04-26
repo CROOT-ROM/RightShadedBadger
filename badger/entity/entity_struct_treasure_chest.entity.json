@@ -1,0 +1,88 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interaction_presentation": {
+          "trigger_specific_events": true,
+          "trigger_generic_events": false
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,1,0.5],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "variable.light_intensity",
+            "locator": "loc_fx_center",
+            "offset": [0,0,0.5],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_sfx_attractors_chest_lp"
+        },
+        "visual_state_added.open_crate": {
+          "script": "open"
+        },
+        "visual_state_removed.open_crate": {
+          "script": "close"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_treasure_chest"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_treasure_chest.default",
+        "idle": "animation.entity_struct_treasure_chest.idle",
+        "idle_open": "animation.entity_struct_treasure_chest.idle_open",
+        "open_a": "animation.entity_struct_treasure_chest.open_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "close": "variable.is_open = 0;",
+        "open": "variable.is_open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_treasure_chest"
+      },
+      "identifier": "badger:entity_struct_treasure_chest",
+      "materials": {
+        "mat_allay_gather": "mat_allay_gather",
+        "mat_entity_struct_treasure_chest_closed": "mat_entity_struct_treasure_chest_closed",
+        "mat_entity_struct_treasure_chest_open": "mat_entity_struct_treasure_chest_open"
+      },
+      "particle_effects": {
+        "fx_allay_spawn": "badger:fx_allay_gather_spawn",
+        "fx_allay_sprkle": "badger:fx_entity_struct_treasure_chest_allay",
+        "fx_hinge01": "badger:fx_entity_struct_treasure_chest_beams01",
+        "fx_hinge02": "badger:fx_entity_struct_treasure_chest_beams02",
+        "fx_hinge03": "badger:fx_entity_struct_treasure_chest_beams03",
+        "fx_key": "badger:fx_entity_struct_treasure_chest_beams",
+        "fx_open": "badger:fx_entity_struct_treasure_chest_open",
+        "fx_rays": "badger:fx_entity_struct_treasure_chest_allay_rays"
+      },
+      "render_controllers": ["controller.render.entity_struct_treasure_chest"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.allay_vis = 0;","variable.chest_mat = 0;","variable.light_intensity = 0;"]
+      },
+      "sound_effects": {
+        "allay_spawn": "BAE_treasure_chest_allay_spawn",
+        "chest_lp_stop": "BAE_sfx_attractors_chest_lp_stop",
+        "chest_open": "BAE_treasure_chest_open"
+      },
+      "trail_effects": {
+        "fx_allay_trail": "badger:trail_allay_chest"
+      }
+    }
+  }
+}

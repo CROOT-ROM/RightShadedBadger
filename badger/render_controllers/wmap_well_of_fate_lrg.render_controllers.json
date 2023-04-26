@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_well_of_fate_lrg": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_well_of_fate_lrg": "MetaMaterial.mat_wmap_well_of_fate_lrg"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

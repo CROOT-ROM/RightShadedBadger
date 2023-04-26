@@ -1,0 +1,15 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_tree_wof_leaves_02": {
+        "isotropic":{
+            "up": true
+        },
+      "textures": {
+        "down": "textures/blocks/tex_block_leaves_wof_top_01", 
+        "up": "textures/blocks/tex_block_leaves_wof_top_01", 
+        "side": "textures/blocks/tex_block_leaves_wof_side_02"
+      }
+    }
+  }
+}

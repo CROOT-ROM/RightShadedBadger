@@ -1,0 +1,346 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_block_dust_gust_bits",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_blend_sand_bits"]
+      },
+      "optimizations": {
+        "suspend_distance": 50
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_steady": {
+        "spawn_rate": "Math.random(9,14)",
+        "max_particles": 100
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 2.5
+      },
+      "minecraft:emitter_shape_box": {
+        "half_dimensions": [
+          4,
+          0.5,
+          6
+        ],
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "direction_mode": "custom"
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(1.5,2.25)"
+      },
+      "badger:particle_advanced_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          0,
+          0
+        ],
+        "linear_drag_coefficient": 0,
+        "rotation_acceleration": 0,
+        "rotation_drag_coefficient": 0,
+        "integration_mode": "velocity",
+        "linear_velocity": [
+          "((variable.motion_x * 4) * ((query.particle_random_1) + 0.45) + 0.5)",
+          "(variable.motion_x * 0.5) * (query.particle_random_2)",
+          "(variable.motion_z * 2) * (query.particle_random_2 * (query.particle_random_3 > 0.5 ? 1.0 : -1.0))"
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          0.1,
+          0.1
+        ],
+        "initial_scale": [
+          0.9,
+          1.1
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 1,
+            "rows_count": 3,
+            "frame_iteration": "row",
+            "row_index": [
+              0,
+              2
+            ],
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "fps",
+            "frames_per_second": 0
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "gradient": {
+          "0.0": [
+            0.8,
+            0.8,
+            0.8,
+            0
+          ],
+          "0.1": [
+            0.8,
+            0.8,
+            0.8,
+            1
+          ],
+          "0.85": [
+            0.4,
+            0.4,
+            0.4,
+            1
+          ],
+          "1.0": [
+            0.8,
+            0.8,
+            0.8,
+            0
+          ]
+        },
+        "interpolant": "query.particle_normalized_age"
+      }
+    },
+    "curves": {
+      "variable.motion_x": {
+        "type": "hermite",
+        "input": "query.particle_normalized_age",
+        "control_points": [
+          {
+            "position": [
+              0.0,
+              0.072478553211221763
+            ],
+            "tangent_a": [
+              0.06575342465753424,
+              -0.16230002318571724
+            ],
+            "tangent_b": [
+              -0.06575342465753424,
+              0.16230002318571724
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.31499860218059844,
+              0.2752144678877817
+            ],
+            "tangent_a": [
+              0.14965753424657538,
+              -0.0057964293994898775
+            ],
+            "tangent_b": [
+              -0.14965753424657538,
+              0.0057964293994898775
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.64363283206255772,
+              0.92441456063065153
+            ],
+            "tangent_a": [
+              0.12226027397260267,
+              0.011592858798979977
+            ],
+            "tangent_b": [
+              -0.12226027397260267,
+              -0.011592858798979977
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.83603578417668434,
+              0.62879666125666578
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              1.0,
+              0.97087873869696173
+            ],
+            "tangent_a": [
+              0.076549719128806426,
+              -0.0637607233943891
+            ],
+            "tangent_b": [
+              -0.076549719128806426,
+              0.0637607233943891
+            ],
+            "locking": "full"
+          }
+        ]
+      },
+      "variable.motion_y": {
+        "type": "hermite",
+        "input": "query.particle_normalized_age",
+        "control_points": [
+          {
+            "position": [
+              0.0,
+              0.0
+            ],
+            "tangent_a": [
+              0.16156006701488132,
+              0.01738928819846941
+            ],
+            "tangent_b": [
+              -0.16156006701488132,
+              -0.01738928819846941
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.46271730728361127,
+              0.0
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.68208927406579067,
+              0.6983538140505452
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.88356164383561653,
+              0.14769302109900306
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              1.0,
+              0.9766751680964525
+            ],
+            "tangent_a": [
+              0.11582733812949655,
+              0.040575005796429364
+            ],
+            "tangent_b": [
+              -0.11582733812949655,
+              -0.040575005796429364
+            ],
+            "locking": "full"
+          }
+        ]
+      },
+      "variable.motion_z": {
+        "type": "hermite",
+        "input": "query.particle_normalized_age",
+        "control_points": [
+          {
+            "position": [
+              0.0,
+              0.014514259216322822
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.32525323325348665,
+              0.049153721307674259
+            ],
+            "tangent_a": [
+              0.1,
+              0.0
+            ],
+            "tangent_b": [
+              -0.1,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              0.68182035305498967,
+              0.92441456063065131
+            ],
+            "tangent_a": [
+              0.17993197278911569,
+              0.0
+            ],
+            "tangent_b": [
+              -0.17993197278911569,
+              0.0
+            ],
+            "locking": "full"
+          },
+          {
+            "position": [
+              1.0,
+              -0.83181080454440015
+            ],
+            "tangent_a": [
+              0.15102040816326537,
+              0.0
+            ],
+            "tangent_b": [
+              -0.15102040816326537,
+              0.0
+            ],
+            "locking": "full"
+          }
+        ]
+      }
+    }
+  }
+}

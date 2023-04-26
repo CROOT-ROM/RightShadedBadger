@@ -1,0 +1,27 @@
+{
+  "render_controllers": {
+    "controller.render.cine_hero_allegiance": {
+      "arrays": {
+        "textures": {
+          "Array.base": ["Texture.default","Texture.default_blink","Texture.default_02","Texture.default_02_blink"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_hero_ranger": "MetaMaterial.mat_hero_ranger"
+        },
+        {
+          "mat_cine_spawn_cage": "MetaMaterial.mat_cine_spawn_cage"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "SpawnCage": "variable.SpawnCage_vis"
+        }
+      ],
+      "textures": ["variable.is_blinking ? Array.base[1 + 2*variable.playerindex] : Array.base[0 + 2*variable.playerindex]"]
+    }
+  },
+  "format_version": "1.8.0"
+}

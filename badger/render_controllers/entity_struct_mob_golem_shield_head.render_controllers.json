@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_mob_golem_shield_head": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_mob_golem_shield_head": "MetaMaterial.mat_entity_struct_mob_golem_shield_head"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

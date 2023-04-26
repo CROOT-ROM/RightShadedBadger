@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_waypoint_teammate": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_waypoint_teammate": "MetaMaterial.mat_wmap_waypoint_teammate"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

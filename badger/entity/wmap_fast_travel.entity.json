@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_fast_travel"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_fast_travel"
+      },
+      "identifier": "badger:wmap_fast_travel",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_fast_travel": "mat_wmap_fast_travel"
+      },
+      "render_controllers": ["controller.render.wmap_fast_travel"]
+    }
+  }
+}

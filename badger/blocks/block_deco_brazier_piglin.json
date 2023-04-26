@@ -1,0 +1,22 @@
+{
+	"format_version": "1.15.0",
+	"badger:client_block": {
+		"badger:block_deco_brazier_piglin": {
+			"decoration": "deco_brazier_piglin",
+			"textures": "textures/blocks/tex_debug",
+			"particle_spawner": {
+				"effects": [
+					{
+						"effect": "badger:fx_block_fire",
+						"range": "far",
+						"offset": [
+							0.0,
+							0.5,
+							0.0
+						]
+					}
+				]
+			}
+		}
+	}
+}

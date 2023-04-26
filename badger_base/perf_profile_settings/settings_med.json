@@ -1,0 +1,102 @@
+{
+	"badger:settings" : {
+		"renderer" : {
+			"anim_update_far_distance" : {
+				"value" : 1.0
+			},
+			"anim_update_medium_distance" : {
+				"value" : 0.5
+			},
+			"anim_update_near_distance" : {
+				"value" : 0.3
+			},
+			"anim_update_rate_far" : {
+				"value" : 3.0
+			},
+			"anim_update_rate_medium" : {
+				"value" : 1.0
+			},
+			"anim_update_rate_near" : {
+				"value" : 0.0
+			},
+			"ao_kernel_size" : {
+				"value" : 20
+			},
+			"ao_radius" : {
+				"value" : 1.0
+			},
+			"ao_sub_sampling_factor" : {
+				"value" : 1.5
+			},
+			"block_source_cull_distance" : {
+				"value" : 35.0
+			},
+			"block_source_projectile_cull_distance" : {
+				"value" : 150.0
+			},
+			"decoration_far_range" : {
+				"value" : 200.0
+			},
+			"decoration_horizon_range" : {
+				"value" : 256.0
+			},
+			"decoration_middle_range" : {
+				"value" : 100.0
+			},
+			"decoration_near_range" : {
+				"value" : 50.0
+			},
+			"decoration_probability_high" : {
+				"value" : 0.5
+			},
+			"decoration_probability_low" : {
+				"value" : 0.125
+			},
+			"decoration_probability_medium" : {
+				"value" : 0.25
+			},
+			"enable_ground_wetness" : {
+				"value" : false
+			},
+			"enable_light_emission" : {
+				"value" : false
+			},
+			"fmv_resolution" : {
+				"value" : 1
+			},
+			"fog_dampener" : {
+				"value" : 2.0
+			},
+			"fog_depth" : {
+				"value" : 40.0
+			},
+			"max_fog_range" : {
+				"value" : 96.0
+			},
+			"min_fog_range" : {
+				"value" : 4.0
+			},
+			"override_draw_distance" : {
+				"value" : 16
+			},
+			"override_draw_distance_enabled" : {
+				"value" : true
+			},
+			"shadow_bias" : {
+				"value" : [ 0.0004, 0.0008, 0.0008, 0.0008 ]
+			},
+			"shadow_cascades" : {
+				"value" : 2
+			},
+			"shadow_resolution" : {
+				"value" : 512
+			},
+			"shadow_slope_bias" : {
+				"value" : [ 0.0004, 0.0008, 0.0015, 0.0015 ]
+			},
+			"dof_quality" : {
+				"value" : 1
+			}
+		}
+	}
+}

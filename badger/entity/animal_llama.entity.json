@@ -1,0 +1,133 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 3
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 40,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_llama"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_llama_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_llama_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_llama_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_llama_dx_lured"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_llama_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_llama",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.animal_llama.attack_a",
+        "death_a": "animation.animal_llama.death_a",
+        "default": "controller.animation.animal_llama.default",
+        "hit_reaction": "controller.animation.animal_llama.hit_reaction",
+        "hitreact_a": "animation.animal_llama.hitreact_a",
+        "idle_a": "animation.animal_llama.idle_a",
+        "idles": "controller.animation.animal_llama.idles",
+        "knockback_a": "animation.animal_llama.knockback_a",
+        "locomotion": "controller.animation.animal_llama.locomotion",
+        "look_at": "animation.animal_llama.look_at",
+        "sprint_a": "animation.animal_llama.sprint_a",
+        "stop_a": "animation.animal_llama.stop_a",
+        "stun_a": "animation.animal_llama.stun_a",
+        "swim_a": "animation.animal_llama.swim_a",
+        "swim_idle_a": "animation.animal_llama.swim_idle_a",
+        "up_a": "animation.animal_llama.up_a",
+        "victory_a": "animation.animal_llama.victory_a",
+        "walk_a": "animation.animal_llama.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_llama"
+      },
+      "identifier": "badger:animal_llama",
+      "materials": {
+        "mat_animal_llama": "mat_animal_llama",
+        "mat_animal_llama_face": "mat_animal_llama_face",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med"
+      },
+      "render_controllers": ["controller.render.animal_llama"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;","variable.cheeks_geo_vis = 0;"]
+      },
+      "sound_effects": {
+        "angry": "BAE_animal_llama_angry",
+        "cheer": "BAE_animal_llama_cheer",
+        "death": "BAE_animal_llama_death",
+        "death_poof_large": "BAE_animal_death_poof_large",
+        "dx_cheer": "BAE_animal_llama_dx_cheer",
+        "eat": "BAE_animal_llama_eat",
+        "hurt": "BAE_animal_llama_hurt",
+        "idle": "BAE_animal_llama_idle",
+        "knockback": "BAE_animal_llama_knockback",
+        "spit": "BAE_animal_llama_spit",
+        "step": "BAE_animal_llama_step",
+        "step_hop": "BAE_animal_llama_step_hop",
+        "step_sprint": "BAE_animal_llama_step_sprint",
+        "stun": "BAE_animal_llama_stun",
+        "swag": "BAE_animal_llama_swag"
+      },
+      "textures": {
+        "default": "textures/entity/animal_llama/tex_animal_llama_d"
+      }
+    }
+  }
+}

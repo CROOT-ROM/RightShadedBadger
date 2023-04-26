@@ -1,0 +1,55 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_buff_jump_sparkle",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_add_buff_square_amber" ]
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "initial_scale" : [ 0.11, 0.16 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0,
+                  "frame_iteration" : "row"
+               },
+               "time_integration" : {
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            }
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 30.0,
+            "spawn_rate" : 5.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 2.0, 2.0, 2.0 ],
+            "offset" : [ -0.5, 0.0, -0.5 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.0, 0.0, 0.0, 0.0 ],
+               "0.100000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "0.500000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "1.000000" : [ 1.0, 1.0, 1.0, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.1,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "math.floor(math.random(0.0, 3.99)) * 90.0"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(2,3)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, 2.5, 0.0 ]
+         }
+      }
+   }
+}

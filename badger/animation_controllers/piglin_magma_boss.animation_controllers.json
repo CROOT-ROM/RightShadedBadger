@@ -1,0 +1,485 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_magma_boss.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_stop",
+              "enabled": true
+            },
+            {
+              "effect": "furnace_stop",
+              "enabled": true
+            },
+            {
+              "effect": "reload_suction_stop",
+              "enabled": true
+            },
+            {
+              "effect": "combat_proximity_boss_stop",
+              "enabled": true
+            }
+          ]
+        },
+        "direct_shot": {
+          "animations":  [
+            {
+              "direct_shot_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "direct_shot_winddown": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "direct_shot_winddown": {
+          "animations":  [
+            {
+              "direct_shot_end": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "direct_shot_windup": {
+          "animations":  [
+            {
+              "direct_shot_start": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "direct_shot": "variable.sync_magma_boss_direct_shot"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.attack_used = 0;","variable.spray_loop = 0;","variable.firing_loop = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "spray_windup": "variable.magma_boss_spray_attack"
+            },
+            {
+              "melee_attack": "variable.magma_boss_melee"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "reload_windup": "variable.magma_boss_cube_rain"
+            },
+            {
+              "magma_geyser_windup": "variable.magma_boss_lava_geyser"
+            },
+            {
+              "direct_shot_windup": "variable.magma_boss_direct_shot"
+            }
+          ]
+        },
+        "magma_geyser_attack_loop": {
+          "animations":  [
+            {
+              "geyser_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","@s sfx_geyser_attack_stop"],
+          "sound_effects":  [
+            {
+              "effect": "reload_suction",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "magma_geyser_winddown": "(variable.firing_loop >= 5)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "magma_geyser_winddown": {
+          "animations":  [
+            {
+              "geyser_winddown": 1.0
+            }
+          ],
+          "on_exit": ["variable.firing_loop = 0;","variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "reload_windown",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "magma_geyser_windup": {
+          "animations":  [
+            {
+              "geyser_windup": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "magma_geyser_attack_loop": "variable.sync_magma_boss_lava_geyser"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "melee_attack": {
+          "animations":  [
+            {
+              "melee_attack_windup": 1.0
+            }
+          ],
+          "on_entry": ["variable.fx_killsmoke = 0;"],
+          "on_exit": ["variable.attack_used = 0;","variable.fx_killsmoke = 1;","variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "attack_melee",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "melee_attack_hit": "variable.sync_magma_boss_melee"
+            }
+          ]
+        },
+        "melee_attack_hit": {
+          "animations":  [
+            {
+              "melee_attack_hit": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "proj_01": {
+          "animations":  [
+            {
+              "mortar_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "proj_02": "variable.sync_magma_boss_cube_rain_2"
+            }
+          ]
+        },
+        "proj_02": {
+          "animations":  [
+            {
+              "mortar_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "proj_03": "variable.sync_magma_boss_cube_rain_3"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "proj_03": {
+          "animations":  [
+            {
+              "mortar_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "proj_04": "variable.sync_magma_boss_cube_rain_4"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "proj_04": {
+          "animations":  [
+            {
+              "mortar_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "proj_05": "variable.sync_magma_boss_cube_rain_5"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "proj_05": {
+          "animations":  [
+            {
+              "mortar_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "reload_winddown": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "reload_winddown": {
+          "animations":  [
+            {
+              "mortar_attack_end": 1.0
+            }
+          ],
+          "on_exit": ["variable.firing_loop = 0;","variable.attack_used = 0;","variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "reload_windup": {
+          "animations":  [
+            {
+              "mortar_attack_start": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_windup",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "proj_01": "variable.sync_magma_boss_cube_rain"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spary_winddown": {
+          "animations":  [
+            {
+              "spray_attack_end": 1.0
+            }
+          ],
+          "on_exit": ["variable.spray_loop = 0;","variable.attack_used = 0;","variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_outro",
+              "enabled": true
+            },
+            {
+              "effect": "flamethrower_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spray_attack": {
+          "animations":  [
+            {
+              "spray_attack_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","@s flamethrower_stop"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_attack",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "spary_winddown": "(variable.spray_loop >= 5)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spray_windup": {
+          "animations":  [
+            {
+              "spray_attack_start": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.claw_vis = 1; variable.matalpha = 1; variable.spray_in = 0; variable.hand_light = 1;"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_windup",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "spray_attack": "variable.sync_magma_boss_spray_attack"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "flamethrower_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            },
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "reload_windup": "variable.magma_boss_cube_rain"
+            },
+            {
+              "spray_windup": "variable.magma_boss_spray_attack"
+            },
+            {
+              "melee_attack": "variable.magma_boss_melee"
+            },
+            {
+              "magma_geyser_windup": "variable.magma_boss_lava_geyser"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "melee_attack": "variable.magma_boss_melee"
+            },
+            {
+              "spray_windup": "variable.magma_boss_spray_attack"
+            },
+            {
+              "reload_windup": "variable.magma_boss_cube_rain"
+            },
+            {
+              "stop": "(query.speed <= 0)"
+            },
+            {
+              "magma_geyser_windup": "variable.magma_boss_lava_geyser"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_magma_boss.fx_controller": {
+      "states": {
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_root"
+            },
+            {
+              "effect": "fx_back_fire",
+              "enabled": true,
+              "locator": "loc_fx_pack"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

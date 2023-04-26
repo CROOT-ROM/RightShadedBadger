@@ -1,0 +1,66 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_death_electric_flare",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_e_lightning01" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "direction_mode" : "ortho_axis",
+            "emission_mode" : "base",
+            "length" : 10.0,
+            "vertical_angle" : 160.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 3.0, 1.0 ],
+            "initial_scale" : [ 0.5, 1.25 ],
+            "animated_scale" : "1 + (query.particle_normalized_age* 0.5)",
+            "facing_camera_mode" : "lookat_direction",
+            "rotation_axis_mode" : "y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 3,
+                  "frame_end" : 8,
+                  "rows_count" : 3
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            },
+            "pivot" : [ -1.0, 0.0 ]
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.5
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_steady" : {
+            "instant_particles_count" : 10.0,
+            "max_particles" : 150.0,
+            "spawn_rate" : 35.0
+         },
+         "minecraft:emitter_transform_parametric" : {
+            "transforms" : [
+               {
+                  "rotation_angle" : 90.0,
+                  "rotation_axis" : [ 0.0, 0.0, 1.0 ]
+               }
+            ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : 90.0
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.5, 1)"
+         }
+      }
+   }
+}

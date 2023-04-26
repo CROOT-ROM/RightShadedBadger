@@ -1,0 +1,66 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_tower_piglin_thrower.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "fire": {
+          "animations":  [
+            {
+              "fire": 1.0
+            }
+          ],
+          "on_exit": ["variable.on_fire = 0;","variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "fire": "variable.on_fire"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

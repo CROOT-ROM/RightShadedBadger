@@ -1,0 +1,47 @@
+{
+  "animation_controllers": {
+    "controller.animation.proj_golem_shield_impact.default": {
+      "initial_state": "spawn",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.loop = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "end": "(variable.loop >= 4)"
+            }
+          ]
+        },
+        "end": {
+          "animations":  [
+            {
+              "end_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.shield_in = 0;","variable.shield_out = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.shield_in = 1;"],
+          "on_exit": ["variable.shield_in = 0;","variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

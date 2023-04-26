@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_piglin_poi"
+    },
+    "components": {
+      "badger:template": "badger:template_piglin"
+    }
+  }
+}

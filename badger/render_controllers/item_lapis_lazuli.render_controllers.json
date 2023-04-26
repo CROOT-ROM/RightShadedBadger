@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_lapis_lazuli": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_lapis_lazuli": "MetaMaterial.mat_item_lapis_lazuli"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

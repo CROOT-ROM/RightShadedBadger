@@ -1,0 +1,15 @@
+{
+    "format_version": "1.15.0", 
+    "badger:client_block": {
+        "badger:block_deco_village_cloth_bend_disabled": {
+            "decoration": {
+                "default": "deco_village_cloth_bend_m",
+                "l": "deco_village_cloth_bend_r",
+                "l_mirror": "deco_village_cloth_bend_l",
+                "line": "deco_village_cloth_bend_m",
+                "metamaterial_override": "mat_shared_block_culture01_cloth_disabled"
+                
+            }
+        }
+    }
+}

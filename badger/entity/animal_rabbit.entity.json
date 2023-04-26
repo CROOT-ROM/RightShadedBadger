@@ -1,0 +1,117 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 80,
+        "max_range": 120,
+        "min_range": 5,
+        "turning_delta": 1
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_rabbit"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_rabbit_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_rabbit_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_rabbit_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_rabbit",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.animal_rabbit.climb_a",
+        "climb_b": "animation.animal_rabbit.climb_b",
+        "climb_c": "animation.animal_rabbit.climb_c",
+        "death_a": "animation.animal_rabbit.death_a",
+        "death_b": "animation.animal_rabbit.death_b",
+        "death_c": "animation.animal_rabbit.death_c",
+        "default": "controller.animation.animal_rabbit.default",
+        "hit_react": "animation.animal_rabbit.hit_react",
+        "hit_reaction": "controller.animation.animal_rabbit.hit_reaction",
+        "idle_a": "animation.animal_rabbit.idle_a",
+        "idle_b": "animation.animal_rabbit.idle_b",
+        "idle_c": "animation.animal_rabbit.idle_c",
+        "idles": "controller.animation.animal_rabbit.idles",
+        "knockback_a": "animation.animal_rabbit.knockback_a",
+        "locomotion": "controller.animation.animal_rabbit.locomotion",
+        "look_at": "animation.animal_rabbit.look_at",
+        "sprint_a": "animation.animal_rabbit.sprint_a",
+        "stun_a": "animation.animal_rabbit.stun_a",
+        "swim_a": "animation.animal_rabbit.swim_a",
+        "swim_idle": "animation.animal_rabbit.swim_idle",
+        "walk_a": "animation.animal_rabbit.walk_a",
+        "walk_b": "animation.animal_rabbit.walk_b",
+        "walk_c": "animation.animal_rabbit.walk_c"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_rabbit"
+      },
+      "identifier": "badger:animal_rabbit",
+      "materials": {
+        "mat_animal_rabbit": "mat_animal_rabbit",
+        "mat_animal_rabbit_face": "mat_animal_rabbit_face",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_tiny",
+        "fx_death": "badger:fx_shared_death_smoke_tiny"
+      },
+      "render_controllers": ["controller.render.animal_rabbit"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.walkchooser = math.random(0,3);","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "death": "BAE_animal_rabbit_death",
+        "death_poof_small": "BAE_animal_death_poof_small",
+        "hop": "BAE_animal_rabbit_hop",
+        "hurt": "BAE_animal_rabbit_hurt",
+        "idle": "BAE_animal_rabbit_idle",
+        "knockback": "BAE_animal_rabbit_knockback"
+      }
+    }
+  }
+}

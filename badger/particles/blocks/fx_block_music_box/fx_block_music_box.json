@@ -1,0 +1,86 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_music_box",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_stars_blue" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 90.0
+         }
+      },
+      "events" : {
+         "beams_02" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_music_beams_02",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "direction_mode" : "ortho_axis",
+            "inward_direction" : true,
+            "length" : 0.0,
+            "offset" : [ 0.0, 2.0, 0.0 ],
+            "radius" : 2.5
+         },
+         "badger:particle_advanced_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, "variable.y * 10", 0.0 ]
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.1, 0.1 ],
+            "initial_scale" : [ 1.0, 1.5 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 8,
+                  "frame_end" : 7,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 2
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "beams_02" ]
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 20.0,
+            "spawn_rate" : "math.random(10,15)"
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "0.500000" : [ 1.0, 1.0, 1.0, 0.5 ],
+               "1.000000" : [ 1.0, 1.0, 1.0, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 5.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.4,0.5)"
+         }
+      },
+      "curves" : {
+         "variable.y" : {
+            "control_points" : [
+               {
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.023, -1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_shared_wof_cube:base_entity_static": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_block_wof_cube_01",
+      "coeffMap": "textures/entity/tex_block_wof_cube_01_mr",
+      "emissiveMap": "textures/entity/tex_block_wof_cube_01_e"
+    }
+  }
+}

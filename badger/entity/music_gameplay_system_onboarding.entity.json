@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_gameplay_system"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:music_gameplay_system",
+        "game_mode": "onboarding"
+      },
+      "badger:audio_time_of_day": {},
+      "badger:music_2d_emitter": {
+        "priority" : 0,
+        "on_enter_bae" : "BAE_music_in_game_onboarding",
+        "max_distance" : 0.0,
+        "music_states" :[
+          {
+            "state_name": "default",
+            "audio_parameters": [
+                {"music_state" : 1.0}
+             ]
+          }
+        ]
+      }
+    }
+  }
+}

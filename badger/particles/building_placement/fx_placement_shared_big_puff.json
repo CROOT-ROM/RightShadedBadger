@@ -1,0 +1,73 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_placement_shared_big_puff",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_smoke_round_brown" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.placement_size_x", "variable.placement_size_z" ]
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "number_of_sides" : 4.0,
+            "scale" : [ "variable.placement_size_x ", 1.0, "variable.placement_size_z" ],
+            "shape_mode" : "polygon"
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 3.25, 3.25 ],
+            "initial_scale" : [ 0.75, 1.25 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 12,
+                  "frame_end" : 11,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 3
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : "4 * variable.placement_size_x"
+         },
+         "minecraft:emitter_transform_parametric" : {
+            "transforms" : [
+               {
+                  "rotation_angle" : 45.0,
+                  "rotation_axis" : [ 0.0, 1.0, 0.0 ]
+               }
+            ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.55, 0.55, 0.65, 1.0 ],
+               "1.000000" : [ 0.35, 0.35, 0.55, 1.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : "Math.random(6, 9)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-180, 180)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 0.2
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [
+               0.0,
+               "(query.particle_normalized_age < 0.2) ? 0 : query.particle_normalized_age * 4",
+               0.0
+            ],
+            "linear_drag_coefficient" : 2.0
+         }
+      }
+   }
+}

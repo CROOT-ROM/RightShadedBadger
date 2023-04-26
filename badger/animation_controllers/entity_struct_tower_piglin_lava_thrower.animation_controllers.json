@@ -1,0 +1,136 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_tower_piglin_lava_thrower.default": {
+      "initial_state": "spawn",
+      "states": {
+        "close": {
+          "animations":  [
+            {
+              "down": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "close",
+              "enabled": true
+            },
+            {
+              "effect": "core_open_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "open": "variable.is_open"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "death": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "bind_to_actor": false,
+              "effect": "fx_destruction",
+              "enabled": true,
+              "locator": "loc_fx_destruction"
+            }
+          ]
+        },
+        "default": {
+          "animations":  [
+            {
+              "idle_down": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "variable.is_open"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "fire": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "close": "(variable.is_open == 0)"
+            },
+            {
+              "fireloop": "variable.fire"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "fireloop": {
+          "animations":  [
+            {
+              "fire": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "fire": "(variable.fire == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "up": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "open",
+              "enabled": true
+            },
+            {
+              "effect": "core_open",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "close": "(variable.is_open == 0)"
+            },
+            {
+              "fire": "variable.fire"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn": 1.0
+            }
+          ],
+          "on_entry": ["variable.matalpha = 100;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

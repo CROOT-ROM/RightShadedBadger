@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_pillar_stalagmite_middle": {
+      "textures": "textures/blocks/tex_block_stalagmite_middle"
+    }
+  }
+}

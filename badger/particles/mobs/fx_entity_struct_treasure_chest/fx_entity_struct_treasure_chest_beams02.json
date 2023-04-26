@@ -1,0 +1,103 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_entity_struct_treasure_chest_beams02",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_mesh_add_beams" ]
+         }
+      },
+      "events" : {
+         "sparkles" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_entity_struct_treasure_chest_sparkle02",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_mesh" : {
+            "animated_scale" : "variable.scalesize",
+            "facing_camera_mode" : "emitter_transform_xy",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               },
+               "time_integration" : {
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            },
+            "geometry" : "geometry.fx_msh_chest_light_beams01"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "sparkles" ]
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 0.8
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      },
+      "curves" : {
+         "variable.scalesize" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.0, 0.988 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.134, 0.884 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.281, 1.002 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.414, 0.886 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.585, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.719, 0.874 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.895, 0.877 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 1.0, 1.004 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

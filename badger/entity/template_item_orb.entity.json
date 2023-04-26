@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_item_orb"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_item_collected": {
+          "audio": "BAE_hero_pickup_orb"
+        },
+        "on_item_collected_arrived": {
+          "audio": "BAE_hero_pickup_orb_stop"
+        }  
+      },
+      "badger:rendering": {
+        "definition": "badger:item_orb_01",
+        "static": true
+      },
+      "badger:interpolation": {
+        "position_interpolation_steps": 1.0
+      }
+    }
+  }
+}

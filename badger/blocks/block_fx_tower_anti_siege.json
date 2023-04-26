@@ -1,0 +1,22 @@
+{
+	"format_version": "1.15.0",
+	"badger:client_block": {
+		"badger:block_fx_tower_anti_siege": {
+			"textures": "blank",
+			"particle_spawner": {
+				"effects": [
+					{
+						"effect": "badger:fx_tower_anti_siege",
+						"range": "middle",
+						"probability": 1.0,
+						"offset": [
+							0.0,
+							-0.50,
+							0.0
+						]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+  "format_version": "1.8.0",
+  "mat_fx_golem_shield:base_buff": {
+    "material": "entity_shield",
+    "depthprepass": false,
+    "culling": "none",
+    "textures": {
+      "noiseMap": "textures/shared/tex_shared_noise_512"
+    },
+    "uniforms": {
+      "BaseColor": [
+        "0.0",
+        "0.1",
+        "0.0",
+        "0.01"
+      ],
+      "MatColor": [
+        "0.025",
+        "1.0",
+        "0.1",
+        "0.1"
+      ],
+      "LumaMinMax": [
+        "0.0",
+        "0.10",
+        "0.0",
+        "0.1"
+      ],
+      "ShimmerWidth": "0.015",
+      "ShimmerSpeed": "0.03",
+      "ShimmerColor": [
+        "0.25",
+        "10.0",
+        "0.875",
+        "0.5"
+      ],
+      "ShimmerColorNoise": "0.0",
+      "FalloffPower": "4.0",
+      "FalloffLevel": "6.0",
+      "FillLevel": "0.5",
+      "EdgeLevel": "2.0",
+      "NoiseLevel": "0.0010",
+      "ShimmerLevel": "0.5",
+      "BoostLevel": "5.0",
+      "BoostPulseLevel": "0.0",
+      "BoostPulseFreq": "0.0",
+      "NoiseOffsetScale": [
+        "1.0",
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "NoiseAnimOffset": [
+        "0.0",
+        "0.01",
+        "0.0",
+        "0.0"
+      ],
+      "HeightFalloff": [
+        "variable.shieldheight",
+        "variable.shieldheight + 0.5",
+        "1.0",
+        "1.0"
+      ]
+    }
+  }
+}

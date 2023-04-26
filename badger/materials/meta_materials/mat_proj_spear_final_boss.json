@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0", 
+  "mat_proj_spear_final_boss:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_proj_spear_final_boss_d",
+      "emissiveMap": "textures/entity/tex_proj_spear_final_boss_e",
+      "normalMap": "textures/entity/tex_proj_spear_final_boss_n",
+      "coeffMap": "textures/entity/tex_proj_spear_final_boss_mr"
+    }
+  }
+}

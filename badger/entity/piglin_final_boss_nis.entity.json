@@ -1,0 +1,198 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {},
+      "badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 4,
+        "position_interpolation_steps": 3
+      },
+      "badger:invasion_icon": {
+        "icon_color": [
+          0.737,
+          0.22,
+          0.769,
+          1
+        ]
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "color": [
+              1,
+              0.102,
+              0.941
+            ],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
+            "locator": "loc_fx_weapon",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "radius": 15
+          },
+          {
+            "color": [
+              0.729,
+              0.29,
+              0.769
+            ],
+            "enabled": "variable.is_spin",
+            "falloff_power": 1,
+            "intensity": "query.fbm_noise(4, 60.0, variable.light_intensity, 1.0)",
+            "locator": "loc_fx_main",
+            "offset": [
+              0,
+              2,
+              0
+            ],
+            "radius": 10
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_finalboss_idle"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_final_boss"
+      },
+      "badger:rig_operations": [
+        "rigops_actions.piglin_final_boss_swipe_light_in",
+        "rigops_actions.piglin_final_boss_swipe_light_out"
+      ],
+      "badger:template": [
+        "badger:template_piglin"
+      ],
+      "badger:threat_source": {
+        "base_value": 150,
+        "spawn_value": 300,
+        "transition_time": 3
+      }
+    },
+    "description": {
+      "animations": {
+        "intro_a_loop": "animation.piglin_final_boss_nis.intro_a_loop",
+        "default": "controller.animation.piglin_final_boss_nis.default",
+        "fx_controller": "controller.animation.piglin_final_boss.fx_controller"
+      },
+      "enable_attachables": false,
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Wide Eye"
+      ],
+      "geometry": {
+        "default": "geometry.piglin_final_boss"
+      },
+      "identifier": "badger:piglin_final_boss_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_piglin_final_boss": "mat_piglin_final_boss",
+        "mat_piglin_final_boss_face": "mat_piglin_final_boss_face",
+        "mat_piglin_final_boss_hands": "mat_piglin_final_boss_hands",
+        "mat_piglin_final_boss_weapon": "mat_piglin_final_boss_weapon"
+      },
+      "particle_effects": {
+        "fx_base_lightning": "badger:fx_final_boss_elect_cntr",
+        "fx_bash": "badger:fx_final_boss_bash",
+        "fx_bash_parts": "badger:fx_final_boss_bash_parts",
+        "fx_bash_weapon": "badger:fx_final_boss_bash_weapon",
+        "fx_boss_spin_smoke": "badger:fx_final_boss_spin_smoke",
+        "fx_electric_swipe": "badger:fx_final_boss_elect_swipe",
+        "fx_fire_ring": "badger:fx_final_boss_fire_ring",
+        "fx_geyser_charge": "badger:fx_final_boss_geyser_hands_charge",
+        "fx_geyser_flare": "badger:fx_final_boss_geyser_final_flare",
+        "fx_geyser_hit": "badger:fx_final_boss_geyser_hit",
+        "fx_hit_sparks": "badger:fx_final_boss_hit_sparks",
+        "fx_melee01": "badger:fx_final_boss_melee_electric",
+        "fx_shoulder_lightning": "badger:fx_final_boss_shoulder_lightning",
+        "fx_swipe02": "badger:fx_final_boss_swipe02",
+        "fx_swipe02_parts": "badger:fx_final_boss_melee_parts",
+        "fx_weapon_cntr": "badger:fx_final_boss_weapon_cntr_msh",
+        "fx_weapon_core": "badger:fx_final_boss_weapon_core",
+        "fx_weapon_lightning": "badger:fx_final_boss_weapon_lightning",
+        "fx_weapon_lightning01": "badger:fx_final_boss_weapon_lightning01",
+        "fx_weapon_lightning02": "badger:fx_final_boss_weapon_lightning02",
+        "fx_weapon_lightning03": "badger:fx_final_boss_weapon_lightning03",
+        "fx_weapon_parts": "badger:fx_final_boss_elect_swipe_parts",
+        "fx_weapon_parts_idle": "badger:fx_final_boss_weapon_parts"
+      },
+      "render_controllers": [
+        "controller.render.piglin_final_boss_nis"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "fx_controller": "1"
+          }
+        ],
+        "initialize": [
+          "variable.spear_vis = 0;",
+          "variable.staff_vis = 1;",
+          "variable.spear_root_vis = 0;",
+          "variable.staff_root_vis = 0;",
+          "variable.is_spin = 0;",
+          "variable.in_spin = 0;",
+          "variable.out_spin = 0;",
+          "variable.all_geo_vis = 1;",
+          "variable.light_weapon_intensity = 30;"
+        ]
+      },
+      "sound_effects": {
+        "attack_bash": "BAE_piglin_finalboss_attack_bash",
+        "attack_bash_windup": "BAE_piglin_finalboss_attack_bash_windup",
+        "attack_geyser_fire": "BAE_piglin_finalboss_attack_geyser_fire",
+        "attack_geyser_fire_stop": "BAE_piglin_finalboss_attack_geyser_fire_stop",
+        "attack_geyser_impact": "BAE_piglin_finalboss_attack_geyser_impact",
+        "attack_geyser_intro": "BAE_piglin_finalboss_attack_geyser_intro",
+        "attack_geyser_outro": "BAE_piglin_finalboss_attack_geyser_outro",
+        "attack_geyser_summon": "BAE_piglin_finalboss_attack_geyser_summon",
+        "attack_geyser_summon_stop": "BAE_piglin_finalboss_attack_geyser_summon_stop",
+        "attack_melee_a": "BAE_piglin_finalboss_attack_melee_a",
+        "attack_melee_a_windup": "BAE_piglin_finalboss_attack_melee_a_windup",
+        "attack_melee_b": "BAE_piglin_finalboss_attack_melee_b",
+        "attack_melee_b_windup": "BAE_piglin_finalboss_attack_melee_b_windup",
+        "attack_ranged1": "BAE_piglin_finalboss_attack_ranged1",
+        "attack_ranged2": "BAE_piglin_finalboss_attack_ranged2",
+        "attack_ranged3": "BAE_piglin_finalboss_attack_ranged3",
+        "attack_ranged_windup_catch": "BAE_piglin_finalboss_attack_ranged_windup_catch",
+        "attack_ranged_windup_throw": "BAE_piglin_finalboss_attack_ranged_windup_throw",
+        "attack_spin_windup": "BAE_piglin_finalboss_attack_spin_windup",
+        "attack_spincharge1": "BAE_piglin_finalboss_attack_spincharge1",
+        "attack_spincharge2": "BAE_piglin_finalboss_attack_spincharge2",
+        "attack_spincharge3": "BAE_piglin_finalboss_attack_spincharge3",
+        "dx_attack_bash": "BAE_piglin_finalboss_dx_attack_bash",
+        "dx_attack_bash_windup": "BAE_piglin_finalboss_dx_attack_bash_windup",
+        "dx_attack_geyser": "BAE_piglin_finalboss_dx_attack_geyser",
+        "dx_attack_ranged": "BAE_piglin_finalboss_dx_attack_ranged",
+        "dx_attack_ranged_windup": "BAE_piglin_finalboss_dx_attack_ranged_windup",
+        "dx_attack_spin_windup": "BAE_piglin_finalboss_dx_attack_spin_windup",
+        "dx_breathe_in": "BAE_piglin_finalboss_dx_breathe_in",
+        "dx_breathe_out": "BAE_piglin_finalboss_dx_breathe_out",
+        "dx_snort": "BAE_piglin_finalboss_dx_snort",
+        "footstep_scuff": "BAE_piglin_finalboss_footstep_scuff",
+        "footstep_walk": "BAE_piglin_finalboss_footstep_walk",
+        "move_impact": "BAE_piglin_finalboss_move_impact",
+        "move_impact_weapon_large": "BAE_piglin_finalboss_move_impact_weapon_large",
+        "move_impact_weapon_medium": "BAE_piglin_finalboss_move_impact_weapon_medium",
+        "move_medium": "BAE_piglin_finalboss_move_medium",
+        "move_short": "BAE_piglin_finalboss_move_short",
+        "sfx_knockback_piglin_attack": "BAE_sfx_knockback_piglin_attack"
+      }
+    }
+  }
+}

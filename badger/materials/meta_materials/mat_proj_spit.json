@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_proj_spit:base_entity": {
+        "pass":"AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_spit_d",
+            "coeffMap": "textures/entity/tex_proj_spit_mr",
+            "normalMap": "textures/entity/tex_proj_spit_n"
+        }
+    }
+}

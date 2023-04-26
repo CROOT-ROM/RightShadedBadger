@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_golem_shield",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_golem_shield": "mat_proj_golem_shield"
+            },
+            "geometry": {
+                "default": "geometry.proj_golem_shield"
+            },
+            "render_controllers": [
+                "controller.render.proj_golem_shield"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:rendering": {
+                "definition": "badger:proj_golem_shield"
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_mob_golem_shield_projectile"
+                },
+                "on_world_hit": {
+                  "audio": "BAE_mob_golem_shield_projectile_impact"
+                }
+            }
+        }
+    }
+}

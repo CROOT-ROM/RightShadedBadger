@@ -1,0 +1,16 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_spawner": {
+      "textures": "textures/blocks/tex_block_deco_spawner",
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_deco_spawner_fire",
+            "range": "near"
+          }
+        ]
+      }
+    }
+  }
+}

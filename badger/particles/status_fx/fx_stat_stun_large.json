@@ -1,0 +1,60 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_stat_stun_large",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cutout_bubbles" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.0,
+            "suspend_distance" : 110.0
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fx_stunned"
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.4, 0.4 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 10,
+                  "frame_end" : 9
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 100.0,
+            "spawn_rate" : 5.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.7, 0.01, 0.7 ],
+            "offset" : [ 0.0, 0.25, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.921, 0.878, 0.203, 1.0 ],
+               "0.500000" : [ 0.921, 0.878, 0.203, 0.5 ],
+               "1.000000" : [ 0.921, 0.878, 0.203, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.01,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(2.0,1.0)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, 1.0, 0.0 ]
+         }
+      }
+   }
+}

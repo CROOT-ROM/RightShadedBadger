@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "mat_entity_struct_mob_golem_shield_head:base_entity": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 0,
+      "stencilmask": 255,
+      "frontface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      },
+      "backface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      }
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_entity_struct_mob_golem_shield_head_d",
+      "emissiveMap": "textures/entity/tex_entity_struct_mob_golem_shield_head_e"
+    }
+  }
+}

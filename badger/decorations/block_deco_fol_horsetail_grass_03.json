@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "block_deco_fol_horsetail_grass_03": {
+      "geometry": "geometry.block_deco_fol_horsetail_grass_03",
+      "shadow": true,
+      "type": "middle",
+      "random_orientation": true,
+      "normals_interpolation" : 0.0,
+      "wind_strength": 0.03
+    }
+  }
+}

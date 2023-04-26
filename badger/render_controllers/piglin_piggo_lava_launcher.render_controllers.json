@@ -1,0 +1,38 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_piggo_lava_launcher": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_512","MetaMaterial.mat_fx_frozen_512"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_piggo_lava_launcher": "MetaMaterial.mat_piglin_piggo_lava_launcher"
+        },
+        {
+          "mat_fx_frozen_512": "Array.materials[variable.skin_mat]"
+        },
+        {
+          "mat_piglin_piggo_lava_launcher_face": "MetaMaterial.mat_piglin_piggo_lava_launcher_face"
+        },
+        {
+          "mat_fx_frozen_513": "MetaMaterial.mat_fx_frozen_512"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "grunter_stick": "variable.grunter_stick_vis"
+        },
+        {
+          "piggo_stick": "variable.piggo_stick_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

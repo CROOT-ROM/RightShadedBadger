@@ -1,0 +1,30 @@
+{
+  "animation_controllers": {
+    "controller.animation.allay_celebration.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "celebration_loop_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_sparkles_construction",
+              "enabled": true,
+              "locator": "loc_fx_construction_head"
+            },
+            {
+              "effect": "fx_sparkles_gather",
+              "enabled": true,
+              "locator": "loc_fx_gather_head"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

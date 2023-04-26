@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_gameplay_system"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:music_gameplay_system",
+        "game_mode": "pvp"
+      },
+      "badger:audio_time_of_day": {},
+      "badger:music_2d_emitter": {
+        "priority": 0,
+        "on_enter_bae": "BAE_music_in_game_pvp",
+        "max_distance": 0.0,
+        "music_states": [
+          {
+            "state_name": "default",
+            "audio_parameters": [
+              {
+                "music_state_pvp": 1.0
+              },
+              {
+                "poi_stinger_type_pvp": 0.0
+              },
+              {
+                "trigger_stinger_pvp": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "mus_stinger_piglin_patrol": {
+          "audio": "BAE_mus_stinger_pvp_piglin_patrol"
+        },
+        "mus_stinger_piglin_structure_approach": {
+          "audio": "BAE_mus_stinger_pvp_piglin_structure_approach"
+        },
+        "mus_pvp_match_end_lose": {
+          "audio": "BAE_pvp_match_end_lose"
+        },
+        "mus_pvp_match_end_win": {
+          "audio": "BAE_pvp_match_end_win"
+        }
+      }
+    }
+  }
+}

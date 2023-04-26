@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.proj_dart_lrg": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_proj_dart_lrg": "MetaMaterial.mat_proj_dart_lrg"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

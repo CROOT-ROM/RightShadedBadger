@@ -1,0 +1,14 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_grass_clump_05": {
+            "geometry": "geometry.block_deco_grass_clump_05",
+            "type": "middle",
+            "random_orientation": true,
+            "wind_strength": 0.025,
+			"collision": {
+				"mode": "vertex"
+			}						
+        }
+    }
+}

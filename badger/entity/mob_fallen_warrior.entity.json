@@ -1,0 +1,179 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {},
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 3,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 3
+      },
+      "badger:presentation_event": {
+        "cine_assemble": {
+          "animation": {
+            "animation": "cine_assemble"
+          }
+        },
+        "cine_attack_a": {
+          "animation": {
+            "animation": "attack_a"
+          }
+        },
+        "cine_attack_b_fire": {
+          "animation": {
+            "animation": "attack_b_fire"
+          }
+        },
+        "cine_attack_b_windup": {
+          "animation": {
+            "animation": "attack_b_windup"
+          }
+        },
+        "cine_idle_a": {
+          "animation": {
+            "animation": "idle_a"
+          }
+        },
+        "normal_hit": {
+          "audio": "BAE_mob_fallen_warrior_dx_hurt"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_fallen_warrior_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_fallen_warrior_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_large"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_large_stop"
+        },
+        "sfx_attack_a_interrupt": {
+          "audio": "BAE_mob_fallen_warrior_attack_a_smash_stop"
+        },
+        "sfx_attack_b_dig_stop": {
+          "audio": "BAE_mob_fallen_warrior_attack_b_dig_stop"
+        },
+        "sfx_attack_b_fire_stop": {
+          "audio": "BAE_mob_fallen_warrior_attack_b_fire_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mob_fallen_warrior_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_fallen_warrior"
+      },
+      "badger:template": [
+        "badger:template_mob",
+        "badger:template_status_effects_large"
+      ]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.mob_fallen_warrior.attack_a",
+        "attack_b_fire": "animation.mob_fallen_warrior.attack_b_fire",
+        "attack_b_windup": "animation.mob_fallen_warrior.attack_b_windup",
+        "cine_assemble": "animation.mob_fallen_warrior.cine_assemble",
+        "death_a": "animation.mob_fallen_warrior.death_a",
+        "default": "controller.animation.mob_fallen_warrior.default",
+        "idle_a": "animation.mob_fallen_warrior.idle_a",
+        "idles": "controller.animation.mob_fallen_warrior.idles",
+        "locomotion": "controller.animation.mob_fallen_warrior.locomotion",
+        "nis_cheer_a": "animation.mob_fallen_warrior.nis_cheer_a",
+        "spawn_a": "animation.mob_fallen_warrior.spawn_a",
+        "stop_a": "animation.mob_fallen_warrior.stop_a",
+        "stun_a": "animation.mob_fallen_warrior.stun_a",
+        "swim_a": "animation.mob_fallen_warrior.swim_a",
+        "swim_a_idle": "animation.mob_fallen_warrior.swim_a_idle",
+        "walk_a": "animation.mob_fallen_warrior.walk_a",
+        "walk_lure": "animation.mob_fallen_warrior.walk_lure"
+      },
+      "enable_attachables": false,
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink"
+      ],
+      "geometry": {
+        "default": "geometry.mob_fallen_warrior"
+      },
+      "identifier": "badger:mob_fallen_warrior",
+      "materials": {
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_heal_256": "mat_fx_heal_256",
+        "mat_fx_spore_damaged_256": "mat_fx_spore_damaged_256",
+        "mat_mob_fallen_warrior": "mat_mob_fallen_warrior",
+        "mat_mob_fallen_warrior_face": "mat_mob_fallen_warrior_face"
+      },
+      "particle_effects": {
+        "fx_attach": "badger:fx_fallen_warrior_end_attach",
+        "fx_attack": "badger:fx_fallen_warrior_attack",
+        "fx_body_sparkles": "badger:fx_fallen_warrior_end_body_sparkles",
+        "fx_corpse_removal_large": "badger:fx_shared_corpse_remove_large",
+        "fx_corpse_removal_med": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_large",
+        "fx_drag_parts": "badger:fx_fallen_warrior_drag_parts",
+        "fx_drag_smoke": "badger:fx_fallen_warrior_drag_smoke",
+        "fx_light_rays": "badger:fx_poi_fallen_warriror_beams",
+        "fx_light_rays_up": "badger:fx_fallen_warrior_end_ray_up",
+        "fx_limb_sparkles": "badger:fx_fallen_warrior_end_limb_sparkles",
+        "fx_spawn_land": "badger:fx_shared_spawn_large",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_large_sparkle",
+        "fx_step": "badger:fx_fallen_warrior_step"
+      },
+      "render_controllers": [
+        "controller.render.mob_fallen_warrior"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": [
+          "variable.attack_used = 0;",
+          "variable.second_skin_vis = 0;",
+          "variable.skin_mat = 0;"
+        ]
+      },
+      "sound_effects": {
+        "attack_a_armretract": "BAE_mob_fallen_warrior_attack_a_armretract",
+        "attack_a_smash": "BAE_mob_fallen_warrior_attack_a_smash",
+        "attack_b_armretract": "BAE_mob_fallen_warrior_attack_b_armretract",
+        "attack_b_dig": "BAE_mob_fallen_warrior_attack_b_dig",
+        "attack_b_fire": "BAE_mob_fallen_warrior_attack_b_fire",
+        "attack_b_windup": "BAE_mob_fallen_warrior_attack_b_windup",
+        "cheer": "BAE_mob_fallen_warrior_cheer",
+        "death_a_bodyfall": "BAE_mob_fallen_warrior_death_a_bodyfall",
+        "death_poof_large": "BAE_mob_death_poof_large",
+        "dx_attack_a_smash": "BAE_mob_fallen_warrior_dx_attack_a_smash",
+        "dx_attack_a_windup": "BAE_mob_fallen_warrior_dx_attack_a_windup",
+        "dx_attack_b_fire": "BAE_mob_fallen_warrior_dx_attack_b_fire",
+        "dx_cheer": "BAE_mob_fallen_warrior_dx_cheer",
+        "dx_death": "BAE_mob_fallen_warrior_dx_death",
+        "dx_hurt": "BAE_mob_fallen_warrior_dx_hurt",
+        "dx_idle": "BAE_mob_fallen_warrior_dx_idle",
+        "gol01_c01_assemble": "BAE_cine_gol01_c01_assemble",
+        "idle": "BAE_mob_fallen_warrior_idle",
+        "stun": "BAE_mob_fallen_warrior_stun",
+        "swim": "BAE_mob_fallen_warrior_swim",
+        "walk_arms": "BAE_mob_fallen_warrior_walk_arms",
+        "walk_leg": "BAE_mob_fallen_warrior_walk_leg",
+        "walk_movement": "BAE_mob_fallen_warrior_walk_movement"
+      }
+    }
+  }
+}

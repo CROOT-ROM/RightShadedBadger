@@ -1,0 +1,10 @@
+{
+	"format_version": "1.0.0",
+	"badger:trail": {
+		"identifier": "badger:trail_final_boss_spear",
+		"start_distance": 10.0,
+		"length": 40.0,
+		"width": 0.3,
+		"material": "badger_trails_default"
+	}
+}

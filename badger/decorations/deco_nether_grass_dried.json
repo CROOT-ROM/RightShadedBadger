@@ -1,0 +1,17 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_nether_grass_dried": {
+      "geometry": "geometry.block_deco_nether_grass_dried_geo", 
+      "shadow": false,
+      "random_orientation": true,
+      "wind_strength": 0.1,
+      "type": "middle",
+      "probability": "medium",
+      "collision": {
+          "mode": "vertex",
+          "intensity": 0.8
+      }
+    }
+  }
+}

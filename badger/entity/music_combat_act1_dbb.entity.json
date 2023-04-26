@@ -1,0 +1,102 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_act1_dbb",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:threat_owner": {
+        "influence_distance": 280,
+        "max_threat": 225,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 0.5
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_act1_dbb"
+        }
+      },
+      "badger:music_2d_emitter": {
+        "priority": 110,
+        "max_distance": 500.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "initial_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_shared_fasttravel_3_large_start",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         },
+         "expiration_mode" : "immediate"
+      },
+      "events" : {
+         "beam_start" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_fasttravel_beam_buffer",
+               "type" : "emitter_bound"
+            }
+         },
+         "fast_travel_end" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_3_large",
+               "type" : "emitter"
+            }
+         },
+         "glow_start" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_glow_start",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkles_start" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_shared_fasttravel_sparkles_start",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fast_travel_interrupt1"
+         },
+         "minecraft:emitter_initialization" : {
+            "creation_expression" : "variable.traveller_size = 4.0;"
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "timeline" : {
+               "0.800000" : [ "sparkles_start" ],
+               "1.500000" : [ "beam_start" ],
+               "2.100000" : [ "fast_travel_end" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         }
+      }
+   }
+}

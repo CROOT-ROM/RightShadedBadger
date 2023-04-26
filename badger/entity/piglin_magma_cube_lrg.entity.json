@@ -1,0 +1,113 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 0.75
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.1
+      },
+      "badger:presentation_event": {
+        "on_liquid_deep_enter": {
+          "audio": "BAE_piglin_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_piglin_generic_swim_liquid_large_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_magma_cube_lrg_knockback_land"
+        },
+        "on_throwable_launched": {
+          "audio": ""
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_magma_cube_lrg",
+        "limit": 1024
+      },
+      "badger:template": [
+        "badger:template_piglin",
+        "badger:template_status_effects"
+      ],
+      "badger:threat_source": {
+        "base_value": 4,
+        "spawn_value": 8,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.piglin_magma_cube_lrg.attack_a",
+        "attack_b": "animation.piglin_magma_cube_lrg.attack_b",
+        "attack_c": "animation.piglin_magma_cube_lrg.attack_c",
+        "default": "controller.animation.piglin_magma_cube_lrg.default",
+        "idle_a": "animation.piglin_magma_cube_lrg.idle_a",
+        "idle_b": "animation.piglin_magma_cube_lrg.idle_b",
+        "idle_c": "animation.piglin_magma_cube_lrg.idle_c",
+        "knockback_a": "animation.piglin_magma_cube_lrg.knockback_a",
+        "run_a": "animation.piglin_magma_cube_lrg.run_a",
+        "spawn_a": "animation.piglin_magma_cube_lrg.spawn_a",
+        "stop_a": "animation.piglin_magma_cube_lrg.stop_a",
+        "stun_a": "animation.piglin_magma_cube_lrg.stun_a"
+      },
+      "enable_attachables": false,
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink"
+      ],
+      "geometry": {
+        "default": "geometry.piglin_magma_cube_lrg"
+      },
+      "identifier": "badger:piglin_magma_cube_lrg",
+      "materials": {
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_spore_healed_256": "mat_fx_spore_healed_256",
+        "mat_piglin_magma_cube_lrg": "mat_piglin_magma_cube_lrg",
+        "mat_piglin_magma_cube_lrg_face": "mat_piglin_magma_cube_lrg_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_fire": "badger:fx_magma_cube_large_fire",
+        "fx_land": "badger:fx_magma_cube_large_land"
+      },
+      "render_controllers": [
+        "controller.render.piglin_magma_cube_lrg"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": [
+          "variable.second_skin_vis = 0;"
+        ]
+      },
+      "sound_effects": {
+        "attack_a": "BAE_piglin_magma_cube_lrg_attack_a",
+        "attack_b": "BAE_piglin_magma_cube_lrg_attack_b",
+        "attack_c": "BAE_piglin_magma_cube_lrg_attack_c",
+        "death_a": "BAE_piglin_magma_cube_lrg_death_a",
+        "idle_small_move": "BAE_piglin_magma_cube_lrg__idle_small_move",
+        "jump": "BAE_piglin_magmacube_jump",
+        "jump_move": "BAE_piglin_magma_cube_lrg_idle_jump_move",
+        "run": "BAE_piglin_magma_cube_lrg_run",
+        "spawn_a": "BAE_piglin_magma_cube_lrg_spawn_a",
+        "step": "BAE_piglin_magmacube_big"
+      },
+      "textures": {
+        "default": "textures/entity/tex_piglin_magma_cube_lrg_d"
+      }
+    }
+  }
+}

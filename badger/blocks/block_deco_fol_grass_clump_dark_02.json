@@ -1,0 +1,8 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_fol_grass_clump_dark_02": {
+            "decoration": "deco_grass_clump_dark_02"
+        }
+    }
+}

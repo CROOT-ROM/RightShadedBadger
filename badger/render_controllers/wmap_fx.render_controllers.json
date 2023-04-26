@@ -1,0 +1,25 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_fx": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_fx": "MetaMaterial.mat_wmap_fx"
+        },
+        {
+          "mat_wmap_red_arrow_underlay": "MetaMaterial.mat_wmap_red_arrow_underlay"
+        },
+        {
+          "x_mat_wmap_fx": "MetaMaterial.x_mat_wmap_fx"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "maingeo": "variable.maingeo_vis"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_obstacle_sunmoon",
+	"imgui_category": "ObstacleBase/SunMoon",
+	"imgui_prefix": "obstacle_sm",
+	"is_override": true,
+	"sky_color": "curve.obstacle_sm_sky_color",
+	"sky_horizon_color": "curve.obstacle_sm_sky_horizon_color",
+	"cloud_color": "curve.obstacle_sm_cloud_color",
+	"cloud_shadows": "curve.obstacle_sm_cloud_shadows",
+	"ambient_color": "curve.obstacle_sm_ambient_color",
+	"direct_color": "curve.obstacle_sm_direct_color",
+	"fog_color": "curve.obstacle_sm_fog_color",
+	"atmosphere_params": "curve.obstacle_sm_atmosphere_params",
+	"horizon_params": "curve.obstacle_sm_horizon_params",
+	"fog_params": "curve.obstacle_sm_fog_params",
+		"objects": [
+		{
+			"name": "sun",
+			"color_a": "curve.obstacle_sm_sun_color"
+		},
+		{
+			"name": "moon",
+			"color_a": "curve.obstacle_sm_moon_color"
+		}
+	]
+}

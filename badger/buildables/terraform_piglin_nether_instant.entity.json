@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:terraform_piglin_nether_instant"
+    },
+    "components": {
+      "badger:template": "badger:template_structure"
+    }
+  }
+}

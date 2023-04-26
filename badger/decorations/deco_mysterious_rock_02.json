@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_mysterious_rock_02": {
+            "geometry": "geometry.block_deco_mysterious_rock_02",
+            "shadow": true,
+            "type": "far",
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ],
+            "normals_interpolation" : 0.0,
+            "random_orientation": true,
+            "collision": {
+                "mode" : "instance",
+                "intensity": 0.0
+               }
+            
+        }
+    }
+}

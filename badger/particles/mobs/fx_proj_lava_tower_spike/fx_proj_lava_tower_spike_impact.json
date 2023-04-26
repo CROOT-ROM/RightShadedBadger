@@ -1,0 +1,97 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_lava_tower_spike_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 1000.0
+         }
+      },
+      "events" : {
+         "fallen_warrior_decorations_collision_regular" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 18.5, 18.5, 18.5 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.5,
+                  "lifetime" : 10.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_redstone_impact"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_proj_fallen_warrior_impact"
+               }
+            }
+         },
+         "fire_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_fire_up",
+               "type" : "emitter_bound"
+            }
+         },
+         "flames" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_flames",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "puff" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_puff",
+               "type" : "emitter_bound"
+            }
+         },
+         "shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_shockwave",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_Ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_smokering",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparks_lingering" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_impact_sparks",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "smoke_Ring", "impact_flares" ],
+            "timeline" : {
+               "0.010000" : [
+                  "impact_parts",
+                  "fire_up",
+                  "fallen_warrior_decorations_collision_regular",
+                  "puff"
+               ],
+               "0.050000" : [ "sparks_lingering", "shockwave" ],
+               "0.150000" : [ "flames" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

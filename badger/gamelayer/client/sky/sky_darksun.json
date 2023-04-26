@@ -1,0 +1,75 @@
+{
+	"name": "sky_darksun",
+	"imgui_category": "DarkSun",
+	"imgui_prefix": "darksun",
+	"number_of_suns": 0,
+	"sky_color": "curve.darksun_sky_color",
+	"sky_horizon_color": "curve.darksun_sky_horizon_color",
+	"cloud_color": "curve.darksun_cloud_color",
+	"cloud_shadows": "curve.darksun_cloud_shadows",
+	"stars_color": "curve.darksun_stars_color",
+	"ambient_color": "curve.darksun_ambient_color",
+	"direct_color": "curve.darksun_direct_color",
+	"emissive_scale": "curve.darksun_emissive_scale",
+	"particle_light": "curve.darksun_particle_light",
+	"particle_emissive_scale": "curve.darksun_particle_emissive_scale",
+	"fog_color": "curve.darksun_fog_color",
+	"light_probe": "darksun",
+	"sparkle_params": "curve.darksun_sparkle_params",
+	"ambient_sparkle_params": "curve.darksun_ambient_sparkle",
+	"atmosphere_params": "curve.darksun_atmosphere_params",
+	"horizon_params": "curve.darksun_horizon_params",
+	"fog_params": "curve.darksun_fog_params",
+	"post_params": "curve.darksun_post_params",
+	"objects": [
+		{
+			"name": "sky",
+			"geometry": "prefab.screenquad",
+			"material": "mat_badger_skyclear",
+			"height": 100.0,
+			"scale": 1.0,
+			"sort_index": 0
+		},
+		{
+			"name": "sun",
+			"geometry": "prefab.stars",
+			"material": "mat_badger_stars",
+			"position": [0.5, 0.0, 0.0, 0.0],
+			"height": 0.0,
+			"scale": 4.0,
+			"sort_index": 2
+		},
+		{
+			"geometry": "prefab.sun",
+			"material": "mat_badger_sun",
+			"color_a": "curve.darksun_sun_color",
+			"position": [0.5, 0.0, 0.0, 0.0],
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 2,
+			"light_source": true,
+			"light_ray_caster": true
+		},
+		{
+			"geometry": "prefab.sun",
+			"material": "mat_badger_sun",
+			"color_a": "curve.darksun_sun_color",
+			"position": [0.0, 0.0, 0.0, 0.0],
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 3,
+			"light_source": true,
+			"light_ray_caster": true
+		},
+		{
+			"geometry": "prefab.clouds",
+			"material": "mat_badger_clouds",
+			"height": 128.0,
+			"scale": 1.0,
+			"sort_index": -1
+		}
+	],
+	"biome_overrides": [
+
+	]
+}

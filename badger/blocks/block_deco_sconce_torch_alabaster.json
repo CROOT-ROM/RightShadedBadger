@@ -1,0 +1,26 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_sconce_torch_alabaster": {
+      "textures": {
+        "up": "textures/blocks/tex_block_alabaster",
+        "down": "textures/blocks/tex_block_alabaster",
+        "side": "textures/blocks/tex_block_alabaster"
+      },
+      "decoration": "deco_sconce_torch_log_dark_oak",
+      "particle_spawner": {
+				"effects" : [
+					{
+						"effect": "badger:fx_block_deco_sconce_torch_oak_fire",
+						"range": "far",
+						"offset": [
+							0.0,
+							0.85,
+							-0.15
+						]					
+					}
+				]			
+            }
+    }
+  }
+}

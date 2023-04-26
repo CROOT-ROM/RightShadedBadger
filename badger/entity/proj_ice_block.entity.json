@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_ice_block",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_ice_block": "mat_proj_ice_block"
+            },
+            "particle_effects": {
+                "fx_trail": "badger:fx_proj_ice_block_trail",
+                "fx_impact": "badger:fx_proj_ice_block_impact"
+            },
+            "geometry": {
+                "default": "geometry.proj_ice_block"
+            },
+            "render_controllers": [
+                "controller.render.proj_ice_block"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "particles": {
+                        "effect": "fx_trail",
+                        "locator": "loc_fx_tip",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_world_hit": {
+                    "particles": "fx_impact"
+                },
+                "on_entity_hit": {
+                    "particles": "fx_impact"
+                }
+            },
+            "badger:rendering": {
+                "definition": "badger:proj_ice_block"
+            }
+        }
+    }
+}

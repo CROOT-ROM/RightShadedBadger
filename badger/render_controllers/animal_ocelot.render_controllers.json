@@ -1,0 +1,30 @@
+{
+  "render_controllers": {
+    "controller.render.animal_ocelot": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_64","MetaMaterial.mat_fx_frozen_64","MetaMaterial.mat_fx_spore_damaged_64"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_ocelot": "MetaMaterial.mat_animal_ocelot"
+        },
+        {
+          "mat_animal_ocelot_face": "MetaMaterial.mat_animal_ocelot_face"
+        },
+        {
+          "mat_fx_frozen_64": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

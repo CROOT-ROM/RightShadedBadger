@@ -1,0 +1,24 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_carpet_algae_02": {
+            "isotropic":{
+                "up": true
+            },
+            "textures": {
+                "up": "textures/blocks/tex_block_algae_02",
+                "down": "textures/blocks/tex_block_algae_02",
+                "side": "textures/blocks/tex_block_algae_02"
+            },
+            "particle_spawner": {
+				"effects" : [
+					{
+		                "effect": "badger:fx_block_dragonflies",
+						"range": "near",
+						"probability": 0.05
+					}
+				]			
+            }
+        }
+    }
+}

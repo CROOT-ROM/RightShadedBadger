@@ -1,0 +1,9 @@
+{
+    "defaults": {
+      "allowteamswitching": false
+    },
+    "badger:template": {
+      "parent": "game_rules",
+      "game_mode": "conquest_public"
+    }
+  }

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_golem_sniper": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mob_golem_sniper": "MetaMaterial.mat_wmap_mob_golem_sniper"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

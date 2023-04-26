@@ -1,0 +1,12 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_block_village_plants:base_entity_static": {
+        "material": "decorations",
+        "culling": "none",
+        "textures":{
+            "diffuseMap": "textures/blocks/tex_shared_block_plants_d", 
+            "coeffMap": "textures/blocks/tex_shared_block_plants_mr", 
+            "emissiveMap": "textures/blocks/tex_shared_block_plants_e"
+          }
+    }
+}

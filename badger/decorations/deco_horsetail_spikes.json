@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_horsetail_spikes": {
+            "geometry": "geometry.block_deco_tree_horsetail_spikes",
+            "shadow": true,
+            "type": "middle",
+            "normals_interpolation" : 0.0,
+            "up": "surface",
+            "forward": "surface"
+        }
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_piglin_magma_boss_spray_parts01",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_blend_ramp_bits_fp_lava"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "events": {
+            "endfire": {
+                "particle_effect": {
+                    "effect": "badger:fx_piglin_magma_boss_spray_fire_ground",
+                    "type": "emitter"
+                }
+            },
+            "smoke": {
+                "particle_effect": {
+                    "effect": "badger:fx_piglin_magma_boss_spray_smoke",
+                    "type": "emitter_bound"
+                }
+            },
+            "fire": {
+                "particle_effect": {
+                    "effect": "badger:fx_piglin_magma_boss_spray_hitch_fire",
+                    "type": "emitter_bound"
+                }
+            }
+        },
+        "components": {
+            "minecraft:emitter_lifetime_events": {
+                "timeline": {
+                    "0.05": [
+                        "smoke",
+                        "fire"
+                    ]
+                }
+            },
+            "minecraft:emitter_rate_steady": {
+                "spawn_rate": 25,
+                "max_particles": 1500
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 1.0
+            },
+            "badger:emitter_shape_cylinder": {
+                "offset": [
+                    0,
+                    0,
+                    0
+                ],
+                "arc_offset": 0.0,
+                "arc": 360.0,
+                "radius": 1.0,
+                "length": 1.0,
+                "vertical_angle": 0.0,
+                "thickness_ratio": 0.0,
+                "emission_mode": "base",
+                "direction_mode": "aligned",
+                "inward_direction": false
+            },
+            "minecraft:particle_initial_speed": "Math.random(10,25)",
+            "minecraft:particle_initial_spin": {
+                "rotation": 90,
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.Random(1.5, 2.0)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_acceleration": [
+                    0,
+                    -9.8,
+                    0
+                ],
+                "linear_drag_coefficient": 2.0
+            },
+            "minecraft:particle_motion_collision": {
+                "enabled": true,
+                "collision_drag": 4.0,
+                "coefficient_of_restitution": 0.5,
+                "collision_radius": 0.1,
+                "expire_on_contact": true,
+                "expire_on_contact_chance": 1.0,
+                "activation_delay": 0,
+                "events": [
+                    {
+                        "event": "endfire",
+                        "min_speed": 0,
+                        "impacts_count": 0,
+                        "chance": 1
+                    }
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    "0.3",
+                    "0.3"
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 31,
+                        "rows_count": 4,
+                        "frame_iteration": "row",
+                        "row_index": [
+                            0,
+                            3
+                        ],
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

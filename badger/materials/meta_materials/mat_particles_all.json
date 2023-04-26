@@ -1,0 +1,2366 @@
+{
+    "format_version": "1.8.0",
+    /***********************************************************************************
+
+									Base Materials
+
+  ************************************************************************************/
+    "mat_badger_particles_base": {
+        "category": "particles",
+        "material": "BadgerParticles/BadgerParticlesMagenta",
+        "culling": "none",
+        "blendmode": "alphablend",
+        "pass": "transparent",
+        "target_uniform_blocks": [
+            "Particles"
+        ],
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "lessequal"
+        },
+        "aliases": {
+            "ParticleParams0.x": "BlendAdditive",
+            "ParticleParams0.y": "RampsCount",
+            "ParticleParams0.z": "SoftFadingRange",
+            "ParticleParams0.w": "DisplacementScale",
+            "ParticleParams1.x": "TintAlpha",
+            "ParticleParams1.y": "TintEmissive",
+            "ParticleParams1.z": "ParticleEmissiveScalarMultiplier",
+            "ParticleParams1.w": "ParticleEmissivePow",
+            "ParticleParams2.x": "UVAnimationSpeed",
+            "ParticleParams2.z": "UVAnimationSpeedAlphaMask",
+            "ParticleParams3.x": "UVDisplacementSpeed"
+        },
+        "uniforms": {
+            "BlendAdditive": 0.0,
+            "RampsCount": 1.0,
+            "SoftFadingRange": 1.0,
+            "DisplacementScale": 1.0,
+            "TintAlpha": 1.0,
+            "TintEmissive": 0.0,
+            "ParticleEmissiveScalarMultiplier": 1.0,
+            "ParticleEmissivePow": 1.0,
+            "UVAnimationSpeed": [
+                0.0,
+                0.0
+            ],
+            "UVAnimationSpeedAlphaMask": [
+                0.0,
+                0.0
+            ],
+            "UVDisplacementSpeed": [
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "mat_badger_particles_legacy:mat_badger_particles_base": {
+        "depthstate": {
+            "enabled": false
+        }
+    },
+    "mat_badger_particles_debug:mat_badger_particles_base": {
+        "material": "BadgerParticles/BadgerParticlesDebug",
+        "depthstate": {
+            "enabled": false
+        }
+    },
+    "mat_badger_particles_blend:mat_badger_particles_base": {
+        "material": "BadgerParticles/BadgerParticlesBlend",
+        "blendmode": "premultiplied"
+    },
+    "mat_badger_particles_additive:mat_badger_particles_blend": {
+        "uniforms": {
+            "BlendAdditive": "1.0"
+        }
+    },
+    "mat_badger_particles_cutout:mat_badger_particles_base": {
+        "material": "BadgerParticles/BadgerParticleCutout",
+        "culling": "clockwise",
+        "blendmode": "none",
+        "pass": "alphatest",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": true,
+            "comparisonfunction": "lessequal"
+        }
+    },
+    "mat_badger_particles_blend_ramp:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesBlendRamp"
+    },
+    "mat_badger_particles_additive_ramp:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesBlendRamp",
+        "uniforms": {
+            "BlendAdditive": "1.0"
+        }
+    },
+    "mat_badger_particles_cutout_ramp:mat_badger_particles_cutout": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampCutout"
+    },
+    "mat_badger_particles_blend_soft:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesBlendSoft",
+        "pass": "transparentwithdepthread",
+        "depthstate": {
+            "enabled": false
+        },
+        "uniforms": {
+            "SoftFadingRange": 1.0
+        }
+    },
+    "mat_badger_particles_blend_ramp_soft:mat_badger_particles_blend_soft": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampSoft"
+    },
+    "mat_badger_particles_cutout_emissive:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesCutoutEmissive",
+        "blendmode": "alphablend",
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "0.0"
+        }
+    },
+    "mat_badger_particles_cutout_multiplier_emissive:mat_badger_particles_cutout_emissive": {
+        "material": "BadgerParticles/BadgerParticlesCutoutMultiplierEmissive"
+    },
+    "mat_badger_particles_blend_emissive:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesBlendEmissive",
+        "blendmode": "premultiplied",
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "0.0"
+        }
+    },
+    "mat_badger_particles_blend_multiplier_emissive:mat_badger_particles_blend_emissive": {
+        "material": "BadgerParticles/BadgerParticlesBlendMultiplierEmissive"
+    },
+    "mat_badger_particles_additive_soft:mat_badger_particles_blend_soft": {
+        "uniforms": {
+            "BlendAdditive": "1.0"
+        }
+    },
+    "mat_badger_particles_additive_ramp_soft:mat_badger_particles_blend_ramp_soft": {
+        "uniforms": {
+            "BlendAdditive": "1.0"
+        }
+    },
+    "mat_badger_particles_blend_with_alpha_mask:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticlesBlendWithAlphaMask"
+    },
+    "mat_badger_particles_additive_with_alpha_mask:mat_badger_particles_additive": {
+        "material": "BadgerParticles/BadgerParticlesBlendWithAlphaMask"
+    },
+    "mat_badger_particles_cutout_emissive_with_alpha_mask:mat_badger_particles_cutout_emissive": {
+        "material": "BadgerParticles/BadgerParticlesCutoutEmissiveWithAlphaMask"
+    },
+    "mat_badger_particles_cutout_multiplier_emissive_with_alpha_mask:mat_badger_particles_cutout_emissive_with_alpha_mask": {
+        "material": "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveWithAlphaMask"
+    },
+    "mat_badger_particles_blend_emissive_with_alpha_mask:mat_badger_particles_blend_emissive": {
+        "material": "BadgerParticles/BadgerParticlesBlendEmissiveWithAlphaMask"
+    },
+    "mat_badger_particles_blend_multiplier_emissive_with_alpha_mask:mat_badger_particles_blend_emissive_with_alpha_mask": {
+        "material": "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveWithAlphaMask"
+    },
+    /***********************************************************************************
+	
+							Base Mesh Particles Materials
+
+  ************************************************************************************/
+    "mat_badger_particles_base_mesh:mat_badger_particles_base": {
+        "material": "BadgerParticles/BadgerParticlesMagentaMesh"
+    },
+    "mat_badger_particles_debug_mesh:mat_badger_particles_base_mesh": {
+        "material": "BadgerParticles/BadgerParticlesDebugMesh",
+        "depthstate": {
+            "enabled": false
+        }
+    },
+    "mat_badger_particles_blend_mesh:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticleBlendMesh"
+    },
+    "mat_badger_particles_additive_mesh:mat_badger_particles_additive": {
+        "material": "BadgerParticles/BadgerParticleBlendMesh"
+    },
+    "mat_badger_particles_cutout_mesh:mat_badger_particles_cutout": {
+        "material": "BadgerParticles/BadgerParticleCutoutMesh"
+    },
+    "mat_badger_particles_blend_ramp_mesh:mat_badger_particles_blend_ramp": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampMesh"
+    },
+    "mat_badger_particles_additive_ramp_mesh:mat_badger_particles_additive_ramp": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampMesh"
+    },
+    "mat_badger_particles_cutout_ramp_mesh:mat_badger_particles_cutout_ramp": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampCutoutMesh"
+    },
+    "mat_badger_particles_blend_soft_mesh:mat_badger_particles_blend_soft": {
+        "material": "BadgerParticles/BadgerParticlesBlendSoftMesh"
+    },
+    "mat_badger_particles_blend_ramp_soft_mesh:mat_badger_particles_blend_ramp_soft": {
+        "material": "BadgerParticles/BadgerParticlesBlendRampSoftMesh"
+    },
+    "mat_badger_particles_cutout_emissive_mesh:mat_badger_particles_cutout_emissive": {
+        "material": "BadgerParticles/BadgerParticlesCutoutEmissiveMesh"
+    },
+    "mat_badger_particles_cutout_multiplier_emissive_mesh:mat_badger_particles_cutout_emissive_mesh": {
+        "material": "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveMesh"
+    },
+    "mat_badger_particles_blend_emissive_mesh:mat_badger_particles_blend_emissive": {
+        "material": "BadgerParticles/BadgerParticlesBlendEmissiveMesh"
+    },
+    "mat_badger_particles_blend_multiplier_emissive_mesh:mat_badger_particles_blend_emissive_mesh": {
+        "material": "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveMesh"
+    },
+    "mat_badger_particles_additive_soft_mesh:mat_badger_particles_additive_soft": {
+        "material": "BadgerParticles/BadgerParticlesBlendSoftMesh"
+    },
+    "mat_badger_particles_blend_mesh_with_alpha_mask:mat_badger_particles_blend": {
+        "material": "BadgerParticles/BadgerParticleBlendMeshWithAlphaMask"
+    },
+    "mat_badger_particles_additive_mesh_with_alpha_mask:mat_badger_particles_additive": {
+        "material": "BadgerParticles/BadgerParticleBlendMeshWithAlphaMask"
+    },
+    "mat_badger_particles_cutout_emissive_mesh_with_alpha_mask:mat_badger_particles_cutout_emissive": {
+        "material": "BadgerParticles/BadgerParticlesCutoutEmissiveMeshWithAlphaMask"
+    },
+    "mat_badger_particles_cutout_multiplier_emissive_mesh_with_alpha_mask:mat_badger_particles_cutout_emissive_mesh_with_alpha_mask": {
+        "material": "BadgerParticles/BadgerParticlesCutoutMultiplierEmissiveMeshWithAlphaMask"
+    },
+    "mat_badger_particles_blend_emissive_mesh_with_alpha_mask:mat_badger_particles_blend_emissive": {
+        "material": "BadgerParticles/BadgerParticlesBlendEmissiveMeshWithAlphaMask"
+    },
+    "mat_badger_particles_blend_multiplier_emissive_mesh_with_alpha_mask:mat_badger_particles_blend_emissive_mesh_with_alpha_mask": {
+        "material": "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveMeshWithAlphaMask"
+    },
+    "mat_badger_particles_blend_vertex_displacement_mesh:mat_badger_particles_blend_mesh": {
+        "material": "BadgerParticles/BadgerParticleBlendVertexDisplacementMesh"
+    },
+    "mat_badger_particles_additive_vertex_displacement_mesh:mat_badger_particles_additive_mesh": {
+        "material": "BadgerParticles/BadgerParticleBlendVertexDisplacementMesh"
+    },
+    "mat_badger_particles_blend_emissive_vertex_displacement_mesh:mat_badger_particles_blend_emissive_mesh": {
+        "material": "BadgerParticles/BadgerParticlesBlendEmissiveVertexDisplacementMesh"
+    },
+    "mat_badger_particles_blend_multiplier_emissive_vertex_displacement_mesh:mat_badger_particles_blend_emissive_vertex_displacement_mesh": {
+        "material": "BadgerParticles/BadgerParticlesBlendMultiplierEmissiveVertexDisplacementMesh"
+    },
+    /***********************************************************************************
+	
+							Base Mesh Block Particles Materials
+
+  ************************************************************************************/
+    "mat_badger_particles_mesh_block": {
+        "material": "badger_block_particles",
+        "target_uniform_blocks": [
+            "ParamsMolang"
+        ],
+        "uniforms": {
+            "OverlayColor": [
+                "1.0",
+                "0.0",
+                "0.0",
+                "variable.isattacked"
+            ],
+            "TeamId": [
+                "variable.team_status",
+                "0.0",
+                "0.0",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "MatTexture": "Texture[0]",
+            "CracksTexture": "textures/environment/destroy_stages",
+            "CracksNormalsTexture": "textures/environment/destroy_stages_n"
+        },
+        "depthstate": {
+            "comparisonfunction": "lessequal"
+        }
+    },
+    /***********************************************************************************
+
+								Badger game materials.
+
+  ************************************************************************************/
+    /*************************************  BLEND ****************************************/
+    "mat_badger_fx_blend_empty:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_empty"
+        }
+    },
+    "mat_badger_fx_blend_smoke:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook"
+        }
+    },
+    "mat_badger_fx_blend_hit_sparks:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_sparks"
+        }
+    },
+    "mat_badger_fx_blend_streaks_vertical:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_streaks_vertical"
+        }
+    },
+    "mat_badger_fx_blend_shockwave_brown:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_shockwave_brown"
+        }
+    },
+    "mat_badger_fx_blend_map_smoke_static:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_map_static"
+        }
+    },
+    "mat_badger_fx_blend_water:mat_badger_particles_blend": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_water_up"
+        }
+    },
+    "mat_badger_fx_blend_water_down:mat_badger_particles_blend": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_water_down"
+        }
+    },
+    "mat_badger_fx_blend_bird:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird"
+        }
+    },
+    "mat_badger_fx_blend_bird_fateful:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird_fateful"
+        }
+    },
+    "mat_badger_fx_blend_sand_bits:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_sand_bits"
+        }
+    },
+    "mat_badger_fx_blend_tiger_fluff_bits:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_tiger_fluff_bits"
+        }
+    },
+    "mat_badger_fx_blend_dirt_bits:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_dirt_bits"
+        }
+    },
+    "mat_badger_fx_blend_fly_black:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fly_black"
+        }
+    },
+    "mat_badger_fx_blend_parts_ground:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_ground"
+        }
+    },
+    "mat_badger_fx_blend_lava_ball_grey:mat_badger_particles_blend": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_water_bubble"
+        }
+    },
+    "mat_badger_fx_blend_nether_spore_fill:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_nether_spores_filler"
+        }
+    },
+    "mat_badger_fx_blend_spores:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_spores"
+        }
+    },
+    "mat_badger_fx_blend_corpse_spores_day:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_corpse_spores_day"
+        }
+    },
+    "mat_badger_fx_blend_snow_bits:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_snow_bits"
+        }
+    },
+    "mat_badger_fx_blend_saw:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_saw_blade"
+        }
+
+
+    },
+    "mat_badger_fx_blend_daisy_anim:mat_badger_particles_blend": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_daisy_anim"
+        }
+
+    },
+    /*************************************  Blend Ramp ****************************************/
+    "mat_badger_fx_blend_ramp_smoke_sf_neather:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_single_frame",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_c"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_sf_finalboss:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 8,
+            "frontface": {
+                "stencilfailop": "replace",
+                "stencildepthfailop": "zero",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "replace",
+                "stencildepthfailop": "zero",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_single_frame",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_misty_neather:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_misty_b",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_c"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_round_neather:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook_round",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_e"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_round_buffed:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook_round",
+            "rampMap": "textures/particle/tex_fx_ramp_lava"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_round_brown:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook_round",
+            "rampMap": "textures/particle/tex_fx_ramp_brown"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_round_ice:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook_round",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke02"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_lava:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_lava"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_pumpkin:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_pumpkin"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_snow:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_snow"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_stone:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_stone"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_nether:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_c"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_teal:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_teal"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_allay:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_allay_e"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_wood:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_wood"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bits_fp_grenade:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "rampMap": "textures/particle/tex_fx_ramp_grenade_bits"
+        }
+    },
+    "mat_badger_fx_blend_ramp_wind_snow:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_windgust",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke_light"
+        }
+    },
+   
+    "mat_badger_fx_blend_ramp_lava_ball:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_water_bubble",
+            "rampMap": "textures/particle/tex_fx_ramp_fire"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_brown:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_brown"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_allay:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_allay"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_brown_soft:mat_badger_particles_blend_ramp_soft": {
+        "pass": "transparentwithdepthread",
+        "uniforms": {
+            "RampsCount": 3,
+            "SoftFadingRange": 10.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_brown"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_ice:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_teal:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_teal"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_white:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_white_smoke"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_darkgrey:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_nether:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_c"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_sand:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_sand_smoke"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_rotters:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_rotters_b"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_finalboss:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 8,
+            "frontface": {
+                "stencilfailop": "replace",
+                "stencildepthfailop": "zero",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "replace",
+                "stencildepthfailop": "zero",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_cubes_fp_nether:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_cube",
+            "rampMap": "textures/particle/tex_fx_ramp_nether_c"
+        }
+    },
+    "mat_badger_fx_blend_ramp_cubes_fp_wood:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_cube",
+            "rampMap": "textures/particle/tex_fx_ramp_wood"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crate_fp_wood:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wood_piglin_thrower",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_spit02:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_spit02"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_tar:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_magma:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_fireworks"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_water:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_water_night:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_emissive_water"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_wood:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_wood"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_flow_fp_grenade:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_grenade"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_drip_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_drip",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_spit02:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_spit02"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_magma:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_fireworks"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_water:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_water_night:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_emissive_water"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_hit_fp_mud:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_mud"
+        }
+    },
+    "mat_badger_fx_blend_ramp_liquid_splash_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_splash",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_drip_fp_spit:mat_badger_particles_blend_ramp": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_drips",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_blend_ramp_hit_fp_f:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_hit_f"
+        }
+    },
+    "mat_badger_fx_blend_ramp_hit_fp_e:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit",
+            "rampMap": "textures/particle/tex_fx_ramp_hit_e"
+        }
+    },
+    "mat_badger_fx_blend_ramp_hit02_fp_f:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_normal",
+            "rampMap": "textures/particle/tex_fx_ramp_hit_f"
+        }
+    },
+    "mat_badger_fx_blend_ramp_waterdrops_fp_water:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterdrops",
+            "rampMap": "textures/particle/tex_fx_ramp_water"
+        }
+    },
+    "mat_badger_fx_blend_ramp_waterdrops_fp_mud:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterdrops",
+            "rampMap": "textures/particle/tex_fx_ramp_mud"
+        }
+    },
+    "mat_badger_fx_blend_ramp_droplet_fp_water:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_droplet",
+            "rampMap": "textures/particle/tex_fx_ramp_water"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bubble_fb_mud:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bubble",
+            "rampMap": "textures/particle/tex_fx_ramp_mud"
+        }
+    },
+    "mat_badger_fx_blend_ramp_bubble_fb_acid:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bubble",
+            "rampMap": "textures/particle/tex_fx_ramp_acid"
+        }
+    },
+    "mat_badger_fx_blend_ramp_waterwake_fb_acid:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake",
+            "rampMap": "textures/particle/tex_fx_ramp_acid"
+        }
+    },
+    "mat_badger_fx_blend_ramp_waterwake_fb_acid_nw:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake",
+            "rampMap": "textures/particle/tex_fx_ramp_netherwart_acid"
+        }
+    },
+    "mat_badger_fx_blend_ramp_lavawake_fb_lava:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lavawake",
+            "rampMap": "textures/particle/tex_fx_ramp_lavawake"
+        }
+    },
+    "mat_badger_fx_blend_ramp_mudwake_fb_mud:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_mudwake",
+            "rampMap": "textures/particle/tex_fx_ramp_mudwake"
+        }
+    },
+    "mat_badger_fx_blend_ramp_edge_smoke_fb_grey:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_burning_edge_smoke",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_notes:mat_badger_particles_blend_ramp_soft": {
+        "uniforms": {
+            "RampsCount": 2,
+            "SoftFadingRange": 10.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_note",
+            "rampMap": "textures/particle/tex_fx_ramp_notes"
+        }
+    },
+    "mat_badger_fx_blend_ramp_smoke_fp_darkgrey_soft:mat_badger_particles_blend_ramp_soft": {
+        "uniforms": {
+            "RampsCount": 3,
+            "SoftFadingRange": 10.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook",
+            "rampMap": "textures/particle/tex_fx_ramp_dark_grey"
+        }
+    },
+    "mat_badger_fx_blend_ramp_wof_cube_lightning:mat_badger_particles_blend_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_64:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 64,
+            "stencilmask": 64,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_32:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 32,
+            "stencilmask": 32,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_16:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 16,
+            "stencilmask": 16,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_16_orange:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 16,
+            "stencilmask": 16,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric_orange"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_8:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 8,
+            "stencilmask": 8,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_ramp_crawling_lightning_96:mat_badger_particles_blend_ramp": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 96,
+            "stencilmask": 96,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "keep",
+                "stencilfunc": "equal"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_crawling_lightning_b",
+            "rampMap": "textures/particle/tex_fx_ramp_electric"
+        }
+    },
+    "mat_badger_fx_blend_energy_beam:mat_badger_particles_blend_ramp": {
+        "sortindex": 147,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_energy_beam",
+            "rampMap": "textures/particle/tex_fx_ramp_electric_bright"
+        }
+    },
+    /*************************************  Additive Ramp ****************************************/
+    "mat_badger_fx_add_ramp_parts_fb_core:mat_badger_particles_additive_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_general_parts",
+            "rampMap": "textures/particle/tex_fx_ramp_core"
+        }
+    },
+    "mat_badger_fx_add_ramp_parts_fb_fire:mat_badger_particles_additive_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_general_parts",
+            "rampMap": "textures/particle/tex_fx_ramp_fire"
+        }
+    },
+    "mat_badger_fx_add_ramp_parts_fb_blue:mat_badger_particles_additive_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_general_parts",
+            "rampMap": "textures/particle/tex_fx_ramp_blue"
+        }
+    },
+    "mat_badger_fx_add_ramp_shockwave_fb_ice:mat_badger_particles_additive_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_shockwave",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_shockwave"
+        }
+    },
+    "mat_badger_fx_add_ramp_smoke_up_fb_light:mat_badger_particles_additive_ramp": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_up",
+            "rampMap": "textures/particle/tex_fx_ramp_ice_smoke_light"
+        }
+    },
+    /************************************* CUTOUT + EMISSIVE **************************************/
+    "mat_badger_fx_cut_e_parts_purple:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_general_parts",
+            "emissiveMap": "textures/particle/tex_fx_general_parts_purple"
+        }
+    },
+    "mat_badger_fx_cut_e_map_fireworks:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_village_fireworks_b",
+            "emissiveMap": "textures/particle/tex_fx_village_fireworks_e"
+        }
+    },
+    "mat_badger_fx_cut_e_flame:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_flame_b",
+            "emissiveMap": "textures/particle/tex_fx_flame_e"
+        }
+    },
+    "mat_badger_fx_cut_e_flame_small:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_flame_small_b",
+            "emissiveMap": "textures/particle/tex_fx_flame_small_e"
+        }
+    },
+    "mat_badger_fx_cut_e_geyser:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_geyser_b",
+            "emissiveMap": "textures/particle/tex_fx_geyser_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bits_yellow:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_spin_bits_b",
+            "emissiveMap": "textures/particle/tex_fx_spin_bits_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bits_blue:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_spin_bits_b",
+            "emissiveMap": "textures/particle/tex_fx_spin_bits_blue_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bits_green:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_spin_bits_b",
+            "emissiveMap": "textures/particle/tex_fx_spin_bits_green_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bubbles_acid:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bubbles_poison_b",
+            "emissiveMap": "textures/particle/tex_fx_bubbles_acid_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bubbles_poison:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bubbles_poison_b",
+            "emissiveMap": "textures/particle/tex_fx_bubbles_poison_e"
+        }
+    },
+    "mat_badger_fx_cut_e_spin_bubbles_poison_start:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_poison_start_b",
+            "emissiveMap": "textures/particle/tex_fx_poison_start_e"
+        }
+    },
+    "mat_badger_fx_cut_e_flirefly:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_firefly_d",
+            "emissiveMap": "textures/particle/tex_fx_firefly_e"
+        }
+    },
+    "mat_badger_fx_cut_e_corpse_spores_night:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_corpse_spores_b",
+            "emissiveMap": "textures/particle/tex_fx_corpse_spores_e"
+        }
+    },
+    "mat_badger_fx_cut_e_frostland_pollen:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_frostland_pollen_d",
+            "emissiveMap": "textures/particle/tex_fx_frostland_pollen_e"
+        }
+    },
+    "mat_badger_fx_cut_e_mushroom_spores:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_mushroom_spores_d",
+            "emissiveMap": "textures/particle/tex_fx_mushroom_spores_e"
+        }
+    },
+    "mat_badger_fx_cut_e_sparks_b:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_sparks_b",
+            "emissiveMap": "textures/particle/tex_fx_slash_small_e"
+        }
+    },
+    "mat_badger_fx_cut_e_misty_smoke_blue:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_misty_b",
+            "emissiveMap": "textures/particle/tex_fx_smoke_misty_e"
+        }
+    },
+    "mat_badger_fx_cut_e_misty_smoke_blue_night:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_misty_b",
+            "emissiveMap": "textures/particle/tex_fx_smoke_misty_night_e"
+        }
+    },
+    "mat_badger_fx_cut_e_waterwake_night:mat_badger_particles_cutout_emissive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake",
+            "emissiveMap": "textures/particle/tex_fx_smoke_misty_night_e"
+        }
+    },
+    "mat_badger_fx_cut_e_heart:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_heart_b",
+            "emissiveMap": "textures/particle/tex_fx_heart_e"
+        }
+    },
+    "mat_badger_fx_cut_e_embers:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_embers_d",
+            "emissiveMap": "textures/particle/tex_fx_embers_e"
+        }
+    },
+    "mat_badger_fx_cut_e_stars_white:mat_badger_particles_cutout_emissive": {
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_stars_white_b",
+            "emissiveMap": "textures/particle/tex_fx_stars_white_e"
+        }
+    },
+    "mat_badger_fx_cut_e_stars_yellow:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_stars_b",
+            "emissiveMap": "textures/particle/tex_fx_stars_e"
+        }
+    },
+    "mat_badger_fx_cut_e_stars_blue:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_stars_b02",
+            "emissiveMap": "textures/particle/tex_fx_stars_e02"
+        }
+    },
+    "mat_badger_fx_cut_e_fire_streaks:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_firestreaks",
+            "emissiveMap": "textures/particle/tex_fx_firestreaks_e"
+        }
+    },
+    "mat_badger_fx_cut_e_sparks:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_sparks",
+            "emissiveMap": "textures/particle/tex_fx_sparks_e"
+        }
+    },
+    "mat_badger_fx_cut_e_sparks_blue:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_sparks",
+            "emissiveMap": "textures/particle/tex_fx_slash_small_blue_e"
+        }
+    },
+    "mat_badger_fx_cut_e_slash_small:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_slash_small",
+            "emissiveMap": "textures/particle/tex_fx_slash_small_e"
+        }
+    },
+    "mat_badger_fx_cut_e_slash_small_blue:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_slash_small",
+            "emissiveMap": "textures/particle/tex_fx_slash_small_blue_e"
+        }
+    },
+    "mat_badger_fx_cut_e_slash_big:mat_badger_particles_cutout_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_slash",
+            "emissiveMap": "textures/particle/tex_fx_slash_big_e"
+        }
+    },
+    "mat_badger_fx_cut_e_firecenter:mat_badger_particles_cutout_emissive": {
+        "sortindex": -150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fire_circle_b",
+            "emissiveMap": "textures/particle/tex_fx_fire_circle_e"
+        }
+    },
+    /************************************* BLEND + EMISSIVE ***************************************/
+    "mat_badger_fx_blend_e_flares:mat_badger_particles_blend_emissive": {
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_flares_b",
+            "emissiveMap": "textures/particle/tex_fx_flares_e"
+        }
+    },
+    "mat_badger_fx_blend_e_fireworks_parts:mat_badger_particles_blend_emissive": {
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_general_parts",
+            "emissiveMap": "textures/particle/tex_fx_general_parts_hdr"
+        }
+    },
+    "mat_badger_fx_blend_e_nether_spore:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_nether_spores_d",
+            "emissiveMap": "textures/particle/tex_fx_nether_spores_e"
+        }
+    },
+    "mat_badger_fx_blend_e_nether_spore_small:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_nether_spores_small_d",
+            "emissiveMap": "textures/particle/tex_fx_nether_spores_small_e"
+        }
+    },
+    "mat_badger_fx_blend_e_up_flame:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_up_flame_b",
+            "emissiveMap": "textures/particle/tex_fx_up_flame_e"
+        }
+    },
+    "mat_badger_fx_blend_e_flame_center:mat_badger_particles_blend_emissive": {
+        "sortindex": 100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fire_center_b",
+            "emissiveMap": "textures/particle/tex_fx_fire_center_e"
+        }
+    },
+    "mat_badger_fx_blend_e_explosion_small:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_explosion_small_b",
+            "emissiveMap": "textures/particle/tex_fx_explosion_small_e"
+        }
+    },
+    "mat_badger_fx_blend_e_piglin_crate:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_piglin_crate_open_b",
+            "emissiveMap": "textures/particle/tex_fx_piglin_crate_open_e"
+        }
+    },
+    "mat_badger_fx_blend_e_parts_nether:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_parts_bw",
+            "emissiveMap": "textures/particle/tex_fx_nether_general_e"
+        }
+    },
+    "mat_badger_fx_blend_e_lightning02:mat_badger_particles_blend_emissive": {
+        "sortindex": 400,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lightning01_b",
+            "emissiveMap": "textures/particle/tex_fx_lightning01_e"
+        }
+    },
+    "mat_badger_fx_blend_e_lightning01:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lightning01_b",
+            "emissiveMap": "textures/particle/tex_fx_lightning01_e"
+        }
+    },
+    "mat_badger_fx_blend_e_spawnfalsh:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_gate_spawnflash_b",
+            "emissiveMap": "textures/particle/tex_fx_gate_spawnflash_e"
+        }
+    },
+    "mat_badger_fx_blend_e_hq_beam:mat_badger_particles_blend_emissive": {
+        "sortindex": 100,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hq_beam_b",
+            "emissiveMap": "textures/particle/tex_fx_hq_beam_e"
+        }
+    },
+    "mat_badger_fx_blend_e_beam_inner:mat_badger_particles_blend_emissive": {
+        "sortindex": 150,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hq_beam_b",
+            "emissiveMap": "textures/particle/tex_fx_hq_beam_e"
+        }
+    },
+    "mat_badger_fx_blend_e_embers_big:mat_badger_particles_blend_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_embers_big_d",
+            "emissiveMap": "textures/particle/tex_fx_embers_big_e"
+        }
+    },
+    "mat_badger_fx_blend_e_spawn_beam:mat_badger_particles_blend_emissive": {
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_light_rays_b",
+            "emissiveMap": "textures/particle/tex_fx_light_rays_e"
+        }
+    },
+    /************************************* EMISSIVE MULTIPLIER ***************************/
+    "mat_badger_fx_blend_m_core:mat_badger_particles_cutout": {
+        "material": "BadgerParticles/BadgerParticlesCutoutMultiplierEmissive",
+        "culling": "none",
+        "sortindex": -150,
+        "depthstate": {
+            "enabled": true,
+            "writedepth": true,
+            "comparisonfunction": "lessequal"
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_core_animated_b"
+        },
+        "uniforms": {
+            "ParticleEmissiveScalarMultiplier": "1.1",
+            "ParticleEmissivePow": "2.4"
+        }
+    },
+    "mat_badger_fx_cut_m_smoke_explosion:mat_badger_particles_cutout_multiplier_emissive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_explosion"
+        },
+        "uniforms": {
+            "ParticleEmissiveScalarMultiplier": "1.7",
+            "ParticleEmissivePow": "2.4"
+        }
+    },
+    "mat_badger_fx_cut_m_portal_center_explosionsmoke:mat_badger_particles_cutout_multiplier_emissive": {
+        "sortindex": -100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_gate_explosion_smoke"
+        },
+        "uniforms": {
+            "ParticleEmissiveScalarMultiplier": "1.7",
+            "ParticleEmissivePow": "2.4"
+        }
+    },
+    "mat_badger_fx_blend_m_exp_core:mat_badger_particles_blend_multiplier_emissive": {
+        "sortindex": -50,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_explosion_core_purple_b"
+        },
+        "uniforms": {
+            "ParticleEmissiveScalarMultiplier": "1.7",
+            "ParticleEmissivePow": "2.4"
+        }
+    },
+    "mat_badger_fx_blend_m_exp_cntr:mat_badger_particles_blend_multiplier_emissive": {
+        "sortindex": 250,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_core_explosion_b"
+        },
+        "uniforms": {
+            "ParticleEmissiveScalarMultiplier": "1.1",
+            "ParticleEmissivePow": "2.4"
+        }
+    },
+    /************************************* CUTOUT ***************************************/
+    "mat_badger_fx_cutout_creeperexplosion:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_creeperexplosion"
+        }
+    },
+    "mat_badger_fx_cutout_smoke_up:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_up"
+        }
+    },
+    "mat_badger_fx_cutout_snow_crystals:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_snow_crystals"
+        }
+    },
+    "mat_badger_fx_cutout_dragonfly:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_dragonfly"
+        }
+    },
+    "mat_badger_fx_cutout_bat:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bat"
+        }
+    },
+    "mat_badger_fx_cutout_bird:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird"
+        }
+    },
+    "mat_badger_fx_cutout_dart_puff:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_dart_puff"
+        }
+    },
+    "mat_badger_fx_cutout_bird_hummingbird:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird_hummingbird"
+        }
+    },
+    "mat_badger_fx_cutout_bird_gull:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird_gull"
+        }
+    },
+    "mat_badger_fx_cutout_bird_parrot:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird_parrot"
+        }
+    },
+    "mat_badger_fx_cutout_bird_vulture:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bird_vulture"
+        }
+    },
+    "mat_badger_fx_cutout_cube:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_cube"
+        }
+    },
+    "mat_badger_fx_cutout_square_spinning:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_square_spinning"
+        }
+    },
+    "mat_badger_fx_cutout_moth:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_moth"
+        }
+    },
+    "mat_badger_fx_cutout_butterflies:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_butterflies"
+        }
+    },
+    "mat_badger_fx_cutout_butterflies_perched:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_butterflies_perched"
+        }
+    },
+    "mat_badger_fx_cutout_mosquito:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_mosquito"
+        }
+    },
+    "mat_badger_fx_cutout_grasshopper:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_grasshopper"
+        }
+    },
+    "mat_badger_fx_cutout_feathers_tree:mat_badger_particles_cutout": {
+        "culling": "none",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_feathers"
+        }
+    },
+    "mat_badger_fx_cutout_coral_spores:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_coral_spores"
+        }
+    },
+    "mat_badger_fx_cutout_tumbleweed_death:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_tumbleweed_death"
+        }
+    },
+    "mat_badger_fx_cutout_piglin_gate_bars:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_piglin_gate_bars"
+        }
+    },
+    "mat_badger_fx_cutout_wood_gate:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wood_gate"
+        }
+    },
+    "mat_badger_fx_cutout_wood_piglin_thrower:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wood_piglin_thrower"
+        }
+    },
+    "mat_badger_fx_cutout_metal_bits:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_metal_bits"
+        }
+    },
+    "mat_badger_fx_cutout_waterwake:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake"
+        }
+    },
+    "mat_badger_fx_cutout_waterwake_small:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake_small"
+        }
+    },
+    "mat_badger_fx_cutout_bubbles:mat_badger_particles_cutout": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_bubbles"
+        }
+    },
+    /************************************* ADDITIVE ***************************************/
+    "mat_fx_add_soft_mist:mat_badger_particles_additive": {
+        "pass": "transparentafterworld",
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_mist"
+        }
+    },
+    "mat_badger_fx_add_electricfield:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electricfield"
+        }
+    },
+    "mat_badger_fx_add_electricfield_blue_small:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electricfield_blue_small"
+        }
+    },
+    "mat_badger_fx_add_electric_up:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_up"
+        }
+    },
+    "mat_badger_fx_add_electricspawn:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electricspawn"
+        }
+    },
+    "mat_badger_fx_add_lensflare:mat_badger_particles_additive": {
+        "sortindex": 260,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lens_flare_centre"
+        }
+    },
+    "mat_badger_fx_add_explosion_flash_small:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_explosion_flash_small"
+        }
+    },
+    "mat_badger_particles_additive_circle:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_circle"
+        }
+    },
+    "mat_badger_fx_add_portal_framelightning:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_framelightning"
+        }
+    },
+    "mat_badger_fx_add_electric_framelightning:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_framelightning"
+        }
+    },
+    "mat_badger_fx_add_electric_zaps:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_zaps"
+        }
+    },
+    "mat_badger_fx_add_electric_zaps_forks:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_zaps_forks"
+        }
+    },
+    "mat_badger_fx_add_fireants:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fireant"
+        }
+    },
+    "mat_badger_fx_add_glow_blue:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_blue"
+        }
+    },
+    "mat_badger_fx_add_glow_blue_big:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_blue_big"
+        }
+    },
+    "mat_badger_fx_add_hit_sparks02:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_sparks"
+        }
+    },
+    "mat_badger_fx_add_glow_blue_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 2.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_blue"
+        }
+    },
+    "mat_badger_fx_add_glow_blue_big_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 6.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_blue_big"
+        }
+    },
+    "mat_badger_fx_add_glow_blue_big_less_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 2.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_blue_big"
+        }
+    },
+    "mat_badger_fx_add_wof_splashes:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 0.35
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_misty_b"
+        }
+    },
+    "mat_badger_fx_add_white_steam_soft:mat_badger_particles_additive_soft": {
+        "pass": "transparentwithdepthread",
+        "uniforms": {
+            "SoftFadingRange": 5.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_single_frame"
+        }
+    },
+    "mat_badger_fx_add_god_ray_grey:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_god_ray_grey_e"
+        }
+    },
+    "mat_badger_fx_add_god_ray_grey_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 5.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_god_ray_grey_e"
+        }
+    },
+    "mat_badger_fx_add_god_ray_cropped:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_god_ray_whispy_e"
+        }
+    },
+    "mat_badger_fx_add_lightning01:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lightning01_e"
+        }
+    },
+    "mat_badger_fx_add_hit_sparks:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_sparks02"
+        }
+    },
+    "mat_badger_fx_add_hit_sparks03:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hit_sparks03"
+        }
+    },
+    "mat_badger_fx_add_lightning02:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lightning02"
+        }
+    },
+    "mat_badger_fx_add_in_sparks:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_in_sparks"
+        }
+    },
+    "mat_badger_fx_add_fireworks_spark:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fireworks_spark"
+        }
+    },
+    "mat_badger_fx_add_redstone_glow:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_redstone_glow"
+        }
+    },
+    "mat_badger_fx_add_cotton:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_cotton"
+        }
+    },
+    "mat_badger_fx_add_wof_square_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 3.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wof_square"
+        }
+    },
+    "mat_badger_fx_add_buff_square:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_buff_square"
+        }
+    },
+    "mat_badger_fx_add_buff_square_amber:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_buff_square_amber"
+        }
+    },
+    "mat_badger_fx_add_light_beam:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_god_ray_e"
+        }
+    },
+    "mat_badger_fx_add_chest_beam:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_beams_e",
+            "emissiveMap": "textures/particle/tex_fx_beams_e"
+        }
+    },
+    "mat_badger_fx_add_light_beam_soft:mat_badger_particles_additive_soft": {
+        "uniforms": {
+            "SoftFadingRange": 4.0
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_god_ray_e"
+        }
+    },
+    "mat_badger_fx_add_smoke_soft:mat_badger_particles_additive_soft": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_smoke_flipbook"
+        }
+    },
+    "mat_badger_fx_add_flares:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_flares"
+        }
+    },
+    "mat_badger_fx_add_shockwave:mat_badger_particles_additive": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_shockwave"
+        }
+    },
+    "mat_badger_fx_add_weapon_core:mat_badger_particles_additive": {
+        "sortindex": 350,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_white"
+        }
+    },
+    "mat_badger_fx_add_weapon_vortex_core:mat_badger_particles_additive": {
+        "sortindex": 142,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_glow_white"
+        }
+    },
+    "mat_badger_fx_add_fear:mat_badger_particles_additive": {
+        "sortindex": 100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fear",
+            "emissiveMap": "textures/particle/tex_fx_fear"
+        }
+    },
+    "mat_badger_fx_add_waterwake:mat_badger_particles_additive": {
+        "sortindex": 100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_waterwake"
+        }
+    },
+    /***********************************MESH PARTICLES ******************************************/
+    /***********************************MESH CUTOUT *********************************************/
+    "mat_badger_fx_mesh_cutout_tumbleweed:mat_badger_particles_cutout_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_msh_tumbleweed"
+        }
+    },
+    "mat_badger_fx_mesh_cutout_tar_bubble:mat_badger_particles_cutout_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_msh_tar"
+        }
+    },
+    "mat_badger_fx_mesh_cutout_mud_bubble:mat_badger_particles_cutout_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_msh_mud"
+        }
+    },
+    /*********************************** MESH BLEND *********************************************/
+    "mat_badger_fx_mesh_blend_smoke_piglin_crate:mat_badger_particles_blend_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_piglin_crate_smoke_b"
+        }
+    },
+    "mat_badger_fx_mesh_blend_redstone_impact_dust:mat_badger_particles_blend_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "0.33"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_redstone_dust_geo_d"
+        }
+    },
+    "mat_badger_fx_mesh_blend_wind:mat_badger_particles_blend_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "-5.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wind"
+        }
+    },
+    "mat_badger_fx_mesh_blend_redstone_impact_dust_explosive:mat_badger_particles_blend_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "0.45"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_redstone_dust_explosive_geo_d"
+        }
+    },
+    "mat_badger_fx_mesh_blend_windgust:mat_badger_particles_blend_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_windgust"
+        }
+    },
+    "mat_badger_fx_mesh_blend_windgust_inner:mat_badger_particles_blend_mesh": {
+        "sortindex": 100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_windgust"
+        }
+    },
+    "mat_badger_fx_mesh_blend_ring_wind:mat_badger_particles_blend_mesh": {
+        "sortindex": -100,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_wind_ring"
+        }
+    },
+    /*********************************** MESH CUTOUT EMISSIVE *********************************************/
+    "mat_badger_fx_mesh_cutout_e_magma:mat_badger_particles_cutout_emissive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "1.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_magma_b",
+            "emissiveMap": "textures/particle/tex_fx_magma_e"
+        }
+    },
+    "mat_badger_fx_mesh_e_flame_mesh:mat_badger_particles_cutout_emissive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_flame_b",
+            "emissiveMap": "textures/particle/tex_fx_flame_e"
+        }
+    },
+    /*********************************** MESH BLEND EMISSIVE *********************************************/
+    "mat_badger_fx_mesh_blend_e_portal_out_beam:mat_badger_particles_blend_emissive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.05",
+                "1.5"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_beam_b",
+            "emissiveMap": "textures/particle/tex_fx_portal_beam_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_portal_out_beam_blue:mat_badger_particles_blend_emissive_mesh_with_alpha_mask": {
+        "culling": "clockwise",
+        "sortindex": -200,
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.00",
+                "1.5"
+            ]
+        },
+        "textures": {
+            "alphaMaskMap": "textures/particle/tex_fx_mask01",
+            "diffuseMap": "textures/particle/tex_fx_portal_beam_blue_b",
+            "emissiveMap": "textures/particle/tex_fx_portal_beam_blue_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_portal_electric_beam:mat_badger_particles_blend_emissive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_lightning01_b",
+            "emissiveMap": "textures/particle/tex_fx_portal_lightning01_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_sword:mat_badger_particles_blend_emissive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hero_swipe_b",
+            "emissiveMap": "textures/particle/tex_fx_hero_swipe_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_hammer_sword:mat_badger_particles_blend_emissive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hammer_swipe_b",
+            "emissiveMap": "textures/particle/tex_fx_hammer_swipe_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_portal_electric:mat_badger_particles_blend_emissive_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_lightning02_b",
+            "emissiveMap": "textures/particle/tex_fx_portal_lightning02_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_portal_electric02:mat_badger_particles_blend_emissive_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_lightning01_b",
+            "emissiveMap": "textures/particle/tex_fx_lightning01_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_burst:mat_badger_particles_blend_emissive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/fx_tex_electric_burst_b",
+            "emissiveMap": "textures/particle/fx_tex_electric_burst_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_burst_inner:mat_badger_particles_blend_emissive_mesh": {
+        "sortindex": 140,
+        "textures": {
+            "diffuseMap": "textures/particle/fx_tex_electric_burst_b",
+            "emissiveMap": "textures/particle/fx_tex_electric_burst_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_portal_beams:mat_badger_particles_blend_emissive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "1.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_portal_beams",
+            "emissiveMap": "textures/particle/tex_fx_portal_beams"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_spawnfalsh:mat_badger_particles_blend_emissive_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_gate_spawnflash_b",
+            "emissiveMap": "textures/particle/tex_fx_gate_spawnflash_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_vortex:mat_badger_particles_blend_emissive_mesh": {
+        "culling": "clockwise",
+        "sortindex": 140,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0",
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.40"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_vortex",
+            "emissiveMap": "textures/particle/tex_fx_vortex"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_vortex02:mat_badger_particles_blend_mesh": {
+        "culling": "clockwise",
+        "sortindex": 130,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "1.0",
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.30"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_vortex",
+            "emissiveMap": "textures/particle/tex_fx_vortex"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_vortex03:mat_badger_particles_blend_emissive_mesh": {
+        "culling": "clockwise",
+        "sortindex": 100,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "0.0",
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.10"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_e",
+            "emissiveMap": "textures/particle/tex_fx_electric_e"
+        }
+    },
+    "mat_badger_fx_mesh_blend_e_electric_ball:mat_badger_particles_blend_emissive_mesh": {
+        "culling": "clockwise",
+        "sortindex": 300,
+        "uniforms": {
+            "TintAlpha": "1.0",
+            "TintEmissive": "0.0",
+            "UVAnimationSpeed": [
+                "-0.50",
+                "-0.50"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_b",
+            "emissiveMap": "textures/particle/tex_fx_electric_e"
+        }
+    },
+    /*********************************** MESH ADDITIVE *********************************************/
+    "mat_badger_fx_mesh_add_wind:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "1.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_spawn_beams",
+            "emissiveMap": "textures/particle/tex_fx_spawn_beams"
+        }
+    },
+    "mat_badger_fx_mesh_add_beams:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.25",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_beams_e",
+            "emissiveMap": "textures/particle/tex_fx_beams_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_beams_blue:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.25",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_beams_blue_e",
+            "emissiveMap": "textures/particle/tex_fx_beams_blue_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_portal_centr_beam:mat_badger_particles_additive_mesh": {
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_beam_cntr",
+            "emissiveMap": "textures/particle/tex_fx_beam_cntr"
+        }
+    },
+    "mat_badger_fx_mesh_add_super_nether_vent:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "0.99"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_supernether_vent_d",
+            "emissiveMap": "textures/particle/tex_fx_supernether_vent_d"
+        }
+    },
+    "mat_badger_fx_mesh_add_nether_vents:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "1.1"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_nether_vents_d",
+            "emissiveMap": "textures/particle/tex_fx_nether_vents_d"
+        }
+    },
+    "mat_badger_fx_mesh_add_fountain_pillar_down:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.16"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fountain_water_pillar_d",
+            "emissiveMap": "textures/particle/tex_fx_fountain_water_pillar_d"
+        }
+    },
+    "mat_badger_fx_mesh_add_fountain_pillar_down_night:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.16"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fountain_water_pillar_e",
+            "emissiveMap": "textures/particle/tex_fx_fountain_water_pillar_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_fountain_pillar_up:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "-0.1",
+                "0.225"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fountain_water_pillar_d",
+            "emissiveMap": "textures/particle/tex_fx_fountain_water_pillar_d"
+        }
+    },
+    "mat_badger_fx_mesh_add_fountain_pillar_up_night:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "-0.1",
+                "0.225"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_fountain_water_pillar_e",
+            "emissiveMap": "textures/particle/tex_fx_fountain_water_pillar_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_northern_lights:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "-0.07"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_northern_lights_d",
+            "emissiveMap": "textures/particle/tex_fx_northern_lights_d"
+        }
+    },
+    "mat_badger_fx_mesh_add_beam:mat_badger_particles_additive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_beam_b",
+            "emissiveMap": "textures/particle/tex_fx_beam_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_heal_buff:mat_badger_particles_additive_mesh": {
+        "sortindex": 150,
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_energy_ball_b",
+            "emissiveMap": "textures/particle/tex_fx_energy_ball_e"
+        }
+    },
+    "mat_badger_fx_mesh_add_regen_onboarding_beams:mat_badger_particles_additive_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.05",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_onboarding_beams",
+            "emissiveMap": "textures/particle/tex_fx_onboarding_beams"
+        }
+    },
+    /*********************************** MESH BLEND RAMP *********************************************/
+    "mat_badger_fx_mesh_blend_ramp_fb_liquid_splash_spit:mat_badger_particles_blend_ramp_mesh": {
+        "uniforms": {
+            "RampsCount": 3
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_liquid_flow",
+            "rampMap": "textures/particle/tex_fx_ramp_spit"
+        }
+    },
+    "mat_badger_fx_mesh_add_onboarding_beams:mat_badger_particles_blend_ramp_mesh": {
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.05",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_onboarding_beams",
+            "rampMap": "textures/particle/tex_fx_ramp_onboarding_beams"
+        }
+    },
+    /*********************************** MESH vertex displacment *********************************************/
+    "mat_badger_fx_mesh_blend_e_d_core_dissolve:mat_badger_particles_blend_emissive_vertex_displacement_mesh": {
+        "depthstate": {
+            "enabled": true,
+            "writedepth": true,
+            "comparisonfunction": "lessequal"
+        },
+        "culling": "clockwise",
+        "sortindex": 150,
+        "uniforms": {
+            "UVAnimationSpeed": [
+                "0.0",
+                "1.0"
+            ],
+            "DisplacementScale": "18",
+            "UVDisplacementSpeed": [
+                "0.0",
+                "0.5"
+            ]
+        },
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_electric_e",
+            "emissiveMap": "textures/particle/tex_fx_electric_e",
+            "displacementMap": "textures/particle/tex_fx_electric_dis"
+        }
+    }
+}

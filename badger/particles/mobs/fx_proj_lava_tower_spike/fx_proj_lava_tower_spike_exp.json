@@ -1,0 +1,108 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_lava_tower_spike_exp",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "aftermath_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_fires",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flame" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_flame",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_flash" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_flash",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts_dark" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_parts_dark",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts_up" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_parts_up"
+            }
+         },
+         "lava_block_world_explosion" : {
+            "game_effects" : {
+               "badger:particles_block_spawner_trigger" : {
+                  "radius" : 15.0,
+                  "trigger_id" : "explosion"
+               }
+            }
+         },
+         "projectile_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 13.0, 13.0, 13.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.75,
+                  "lifetime" : 4.0,
+                  "texture" : "decal_block_impact"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_lava_proj_explosion"
+               }
+            }
+         },
+         "shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_shockwave",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_lava_tower_spike_exp_smokering",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flash", "impact_flame", "shockwave" ],
+            "timeline" : {
+               "0.050000" : [
+                  "impact_flares",
+                  "projectile_decorations_collision",
+                  "lava_block_world_explosion"
+               ],
+               "0.060000" : [ "impact_parts_dark", "impact_parts" ],
+               "0.120000" : [ "impact_parts_up", "aftermath_smoke", "smoke" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

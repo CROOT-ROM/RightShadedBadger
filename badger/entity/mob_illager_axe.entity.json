@@ -1,0 +1,160 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {},
+      "badger:face_animation": {
+        "anim_columns": 9,
+        "anim_rows": 2,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.57
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_mob_illager_axe_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mob_illager_axe_dx_knockback_normal"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mob_illager_axe_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_illager_axe"
+      },
+      "badger:template": [
+        "badger:template_mob",
+        "badger:template_status_effects"
+      ]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.mob_illager_axe.attack_a",
+        "attack_b": "animation.mob_illager_axe.attack_b",
+        "attack_c": "animation.mob_illager_axe.attack_c",
+        "cheer_a": "animation.mob_illager_axe.cheer_a",
+        "cheer_b": "animation.mob_illager_axe.cheer_b",
+        "climb_a": "animation.mob_illager_axe.climb_a",
+        "death_a": "animation.mob_illager_axe.death_a",
+        "death_b": "animation.mob_illager_axe.death_b",
+        "default": "controller.animation.mob_illager_axe.default",
+        "hit_react": "controller.animation.mob_illager_axe.hit_react",
+        "hitreact_a": "animation.mob_illager_axe.hitreact_a",
+        "idle_a": "animation.mob_illager_axe.idle_a",
+        "idle_b": "animation.mob_illager_axe.idle_b",
+        "idles": "controller.animation.mob_illager_axe.idles",
+        "knockback_a": "animation.mob_illager_axe.knockback_a",
+        "landing_a": "animation.mob_illager_axe.landing_a",
+        "locomotion": "controller.animation.mob_illager_axe.locomotion",
+        "run_a": "animation.mob_illager_axe.run_a",
+        "run_a_start": "animation.mob_illager_axe.run_a_start",
+        "run_b": "animation.mob_illager_axe.run_b",
+        "run_c": "animation.mob_illager_axe.run_c",
+        "spawn": "animation.mob_illager_axe.spawn",
+        "sprint_a": "animation.mob_illager_axe.sprint_a",
+        "stop_a": "animation.mob_illager_axe.stop_a",
+        "stop_b": "animation.mob_illager_axe.stop_b",
+        "stun_a": "animation.mob_illager_axe.stun_a",
+        "swim_a": "animation.mob_illager_axe.swim_a",
+        "swim_idle": "animation.mob_illager_axe.swim_idle",
+        "tumble_fast": "animation.mob_illager_axe.tumble_fast",
+        "tumble_slow": "animation.mob_illager_axe.tumble_slow"
+      },
+      "enable_attachables": false,
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Happy",
+        "Happy Blink",
+        "Curious",
+        "Curious Blink",
+        "Scared",
+        "Scared Blink",
+        "Excited",
+        "Excited Blink",
+        "Angry",
+        "Angry Blink",
+        "Hard Blink"
+      ],
+      "geometry": {
+        "mob_illager_axe": "geometry.mob_illager_axe"
+      },
+      "identifier": "badger:mob_illager_axe",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_mob_illager_axe": "mat_mob_illager_axe",
+        "mat_mob_illager_axe_face": "mat_mob_illager_axe_face"
+      },
+      "particle_effects": {
+        "fx_axe_hit": "badger:fx_mob_illager_axe_sparks",
+        "fx_axe_swipe_a": "badger:fx_mob_illager_axe_swipe_a",
+        "fx_corpse_removal_big": "badger:fx_shared_corpse_remove_med",
+        "fx_corpse_removal_small": "badger:fx_shared_corpse_remove_small",
+        "fx_death_impact": "badger:fx_shared_death_smoke_med",
+        "fx_spawn_dust": "badger:fx_shared_spawn_small",
+        "fx_spawn_sprakles": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": [
+        "controller.render.mob_illager_axe"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": [
+          "variable.second_skin_vis = 0;"
+        ]
+      },
+      "sound_effects": {
+        "attack_a": "BAE_mob_illager_axe_attack_a",
+        "attack_b": "BAE_mob_illager_axe_attack_b",
+        "attack_c": "BAE_mob_illager_axe_attack_c",
+        "bodyfall": "BAE_mob_illager_axe_bodyfall",
+        "cheer": "BAE_mob_illager_axe_cheer",
+        "climb_a": "BAE_mob_illager_axe_climb_a",
+        "death_poof_medium": "BAE_mob_death_poof_medium",
+        "dx_attack_a": "BAE_mob_illager_axe_dx_attack_a",
+        "dx_attack_b": "BAE_mob_illager_axe_dx_attack_b",
+        "dx_attack_c": "BAE_mob_illager_axe_dx_attack_c",
+        "dx_cheer": "BAE_mob_illager_axe_dx_cheer",
+        "dx_death": "BAE_mob_illager_axe_dx_death",
+        "dx_hurt": "BAE_mob_illager_axe_dx_hurt",
+        "dx_idle": "BAE_mob_illager_axe_dx_idle",
+        "dx_run_a": "BAE_mob_illager_axe_dx_run_a",
+        "dx_run_a_yell": "BAE_mob_illager_axe_dx_run_a_yell",
+        "dx_spawn": "BAE_mob_illager_axe_dx_spawn",
+        "dx_stun": "BAE_mob_illager_axe_dx_stun",
+        "footstep": "BAE_mob_illager_axe_footstep",
+        "move": "BAE_mob_illager_axe_move",
+        "spawn": "BAE_mob_illager_axe_spawn",
+        "swim_axe": "BAE_mob_illager_axe_swim_axe",
+        "weapon_drop": "BAE_mob_illager_axe_weapon_drop"
+      },
+      "trail_effects": {
+        "trail_attack_a": "badger:trail_mob_illager_axe_attack_a"
+      }
+    }
+  }
+}

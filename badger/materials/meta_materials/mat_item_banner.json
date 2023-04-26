@@ -1,0 +1,9 @@
+{
+    "format_version": "1.8.0",
+    "mat_item_banner:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_item_banner_d",
+            "coeffMap": "textures/entity/tex_item_banner_mr"
+        }
+    }
+}

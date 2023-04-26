@@ -1,0 +1,51 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_frostland_geyser",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 200.0
+         }
+      },
+      "events" : {
+         "drops" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_frostland_geyser_drops",
+               "type" : "emitter_bound"
+            }
+         },
+         "jet" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_frostland_geyser_jet",
+               "type" : "emitter_bound"
+            },
+            "game_effects" : {
+               "badger:sound" : {
+                  "sound_id" : "BAE_amb_vfx_geyser_start"
+               }
+            }
+         },
+         "mist" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_frostland_geyser_mist",
+               "type" : "emitter_bound"
+            }
+         },
+         "splashes" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_block_frostland_geyser_splashes",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "drops", "splashes", "jet", "mist" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

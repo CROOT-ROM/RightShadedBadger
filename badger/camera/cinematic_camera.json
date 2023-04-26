@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:cinematic_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "cinematic",
+        "field_of_view": 80.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": true,
+        "priority": 10,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          -9.0,
+          0.0,
+          0.0
+        ]
+      },
+      "badger:cam_overrides_move_orientation": {},
+      "badger:cinematic_camera": {}
+    }
+  }
+}

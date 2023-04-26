@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_sheet_spike_gold": {
+            "geometry": "geometry.block_deco_sheet_spike_gold_geo",
+            "shadow": true,
+            "up": "surface",
+            "forward": "world"
+        }
+    }
+}

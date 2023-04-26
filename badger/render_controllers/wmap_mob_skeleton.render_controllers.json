@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_skeleton": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mob_skeleton": "MetaMaterial.mat_wmap_mob_skeleton"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

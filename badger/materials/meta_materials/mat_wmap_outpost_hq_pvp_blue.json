@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wmap_outpost_hq_pvp_blue:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_outpost_hq_pvp_blue_d",
+      "emissiveMap": "textures/entity/tex_wmap_outpost_hq_pvp_blue_e"
+    }
+
+    }
+  }

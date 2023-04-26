@@ -1,0 +1,17 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_junglelily_01": {
+            "decoration": "deco_plant_junglelily_01",
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_block_water_skeeters",
+                        "range": "near",
+                        "probability": 0.35
+                    }
+                ]
+            }
+        }
+    }
+}

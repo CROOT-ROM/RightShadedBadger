@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_slab_tree_willow_leaves": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_willow_leaves_top",
+                "down": "textures/blocks/tex_block_tree_willow_leaves_top",
+                "side": "textures/blocks/tex_slab_tree_willow_leaves_side"
+            }
+        }
+    }
+}

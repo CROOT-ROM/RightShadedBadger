@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "components": {
+            "badger:hit_reaction_threshold": {
+                "name": "weak_hit",
+                "activation_percent": 0.00001
+            }
+        },
+        "description": {
+            "identifier": "badger:weak_hit"
+        }
+    }
+}

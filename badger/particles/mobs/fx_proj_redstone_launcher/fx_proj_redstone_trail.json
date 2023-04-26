@@ -1,0 +1,79 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_redstone_trail",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 1000.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.badger_buff_kaboomery_rsl" ]
+      },
+      "events" : {
+         "explosive" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_explosive",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 1.0"
+         },
+         "explosive_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_explosive_smoke",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 1.0"
+         },
+         "explosive_start" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_launcher_exp_start",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 1.0"
+         },
+         "regular" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_regular",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 0.0"
+         },
+         "regular_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_regular_smoke",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 0.0"
+         },
+         "regular_start_dirt" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_regular_start_dirt",
+               "type" : "emitter_bound"
+            }
+         },
+         "regular_start_puff" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_redstone_trail_regular_start_puff",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 0.0"
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "regular",
+               "regular_start_puff",
+               "regular_start_dirt",
+               "explosive",
+               "explosive_start"
+            ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

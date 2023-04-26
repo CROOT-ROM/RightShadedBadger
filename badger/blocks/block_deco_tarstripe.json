@@ -1,0 +1,29 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_tarstripe": {
+            "textures": {
+                "down": "textures/blocks/tex_block_tar_01",
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_tar_stripe",
+                          "L" : "textures/blocks/tex_block_tar_stripe_corner",
+                          "T" : "textures/blocks/tex_block_tar_stripe",
+                          "cross" : "textures/blocks/tex_block_tar_02"
+                        }
+                    },          
+                "side": "textures/blocks/tex_block_tar_stripe_side"
+                },
+            "forward": "surface",
+            "particle_spawner": {
+				"effects" : [
+					{
+						"effect": "badger:fx_block_birds_vultures",
+						"range": "far",
+						"probability": 0.01					
+					}
+				]			
+            }
+        }
+    }
+}

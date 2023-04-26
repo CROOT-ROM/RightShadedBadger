@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_attack_twosuns",
+	"imgui_category": "AttackBase/TwoSuns",
+	"imgui_prefix": "attack_ts",
+	"is_override": true,
+	"sky_color": "curve.attack_ts_sky_color",
+	"sky_horizon_color": "curve.attack_ts_sky_horizon_color",
+	"cloud_color": "curve.attack_ts_cloud_color",
+	"cloud_shadows": "curve.attack_ts_cloud_shadows",
+	"ambient_color": "curve.attack_ts_ambient_color",
+	"direct_color": "curve.attack_ts_direct_color",
+	"fog_color": "curve.attack_ts_fog_color",
+	"atmosphere_params": "curve.attack_ts_atmosphere_params",
+	"horizon_params": "curve.attack_ts_horizon_params",
+	"fog_params": "curve.attack_ts_fog_params",
+		"objects": [
+		{
+			"name": "sun_a",
+			"color_a": "curve.attack_ts_sun_color"
+		},
+		{
+			"name": "sun_b",
+			"color_a": "curve.attack_ts_moon_color"
+		}
+	]
+}

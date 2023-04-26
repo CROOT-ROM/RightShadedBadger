@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:proj_dart_lrg",
+        "limit": 1024
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.proj_dart_lrg"
+      },
+      "identifier": "badger:proj_dart_lrg",
+      "materials": {
+        "mat_proj_dart_lrg": "mat_proj_dart_lrg"
+      },
+      "render_controllers": [
+        "controller.render.proj_dart_lrg"
+      ]
+    }
+  }
+}

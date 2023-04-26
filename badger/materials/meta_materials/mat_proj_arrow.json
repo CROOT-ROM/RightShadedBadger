@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_proj_arrow:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_arrow_d",
+            "coeffMap": "textures/entity/tex_proj_arrow_mr",
+            "normalMap": "textures/entity/tex_proj_arrow_n"
+        }
+    }
+}

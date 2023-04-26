@@ -1,0 +1,15 @@
+{
+  "test-name": "mob-wander-test",
+  "test-description": "Verify that mobs can wander",
+  "test-duration": 90,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10", "Xbox" ],
+  "commands": [
+    "/gm true",
+    "/teleport @s 2 50 2",
+    "/sm badger:mob_creeper 1 0 52 0",
+    "/testdelay 60",
+    "/verifymobsinarea badger:mob_creeper 0 any_team 0 52 0 1"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_status_effects_mount"
+    },
+    "components": {
+      "badger:terrain_type_molang": {},
+      "badger:entity_age": {},
+      "badger:fast_travel_presentation": {
+        "windup": "fast_travel_start",
+        "cooldown": "fast_travel_end",
+        "windup_event_time": 0.25,
+        "cooldown_event_time": 5.0
+      },
+      "badger:presentation_event": {
+        "on_throwable_landed": {
+          "particles": {
+            "effect": "badger:fx_shared_knockback_land_med",
+            "enabled": true
+          }
+        },
+        "fast_travel_end": {
+          "particles": {
+            "effect": "badger:fx_hero_fast_travel",
+            "bind_to_actor": true,
+            "locator": "loc_butt",
+            "enabled": "true"
+          }
+        },
+        "fast_travel_start": {
+          "particles": {
+            "effect": "badger:fx_hero_fast_travel",
+            "enabled": "true",
+            "bind_to_actor": true,
+            "locator": "loc_butt"
+          }
+        },
+        "on_liquid_shallow_enter": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_trails",
+            "enabled": true,
+            "locator": "loc_fx_wake"
+          }
+        },
+        "on_liquid_shallow_exit": {
+          "particles":{
+            "effect": "badger:fx_stat_trails",
+            "kill_script": "exit_shallow_liquid"
+          }
+        },
+        "on_liquid_deep_enter": {
+          "script": "enter_deep_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "script": "exit_deep_liquid"
+        },
+        "player_jump_start": {
+          "audio": "BAE_hero_buff_jump_start",
+          "particles": [
+            {
+              "effect": "badger:fx_buffs_kicker_player_jump",
+              "locator": "loc_fx_main",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_buffs_player_jump",
+              "locator": "loc_fx_stat_chest",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "player_jump_refreshed": {
+          "particles": [
+            {
+              "effect": "badger:fx_buffs_kicker_player_jump",
+              "locator": "loc_fx_main",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "player_jump_stop": {
+          "audio": "BAE_hero_buff_jump_stop",
+          "particles":{
+            "effect": "badger:fx_buffs_player_jump",
+            "kill_script": "player_jump_stop"
+          }
+        },
+        "player_speed_start": {
+          "audio": "BAE_hero_buff_speed_start",
+          "particles": [
+            {
+              "effect": "badger:fx_buffs_kicker_player",
+              "locator": "loc_fx_main",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_stat_hastened",
+              "locator": "loc_fx_stat_chest",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_buffs_player_speed",
+              "locator": "loc_fx_stat_chest",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "player_speed_refreshed": {
+          "particles": [
+            {
+              "effect": "badger:fx_buffs_kicker_player",
+              "locator": "loc_fx_main",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "player_speed_stop": {
+          "audio": "BAE_hero_buff_speed_stop",
+          "particles":{
+            "effect": "badger:fx_stat_hastened",
+            "kill_script": "player_speed_stop"
+          }
+        },
+        "feared_start": {
+          "audio": "BAE_mob_status_fear_start",
+          "script": "feared_start",
+          "particles": {
+            "effect": "badger:fx_stat_fear",
+            "enabled": true,
+            "bind_to_actor": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
+        "feared_stop": {
+          "audio": "BAE_mob_status_fear_stop",
+          "particles":{
+            "effect": "badger:fx_stat_fear",
+            "kill_script": "feared_stop"
+          }
+        },
+        "burning_start": {
+          "particles": {
+            "effect": "badger:fx_stat_burning_mount",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "burning_stop": {
+          "particles": {
+            "effect": "badger:fx_stat_burning",
+            "kill_script": "burning_stop"
+          }
+        },
+        "on_mount_swap": {
+          "script": "mount_swap"
+        },
+        "sprint_start":{
+          "particles":{
+            "effect": "badger:fx_sprint",
+            "locator": "loc_fx_stat_chest",
+            "enabled": true,
+            "bind_to_actor": true
+          }
+        },
+        "sprint_stop":{
+          "particles":{
+            "effect": "badger:fx_sprint",
+            "kill_script": "player_sprint_stop"
+          }
+        }
+      }
+    }
+  }
+}

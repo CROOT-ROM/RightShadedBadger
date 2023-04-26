@@ -1,0 +1,72 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:template_villager"
+        },
+        "components": {
+            "badger:interpolation": {
+                "position_interpolation_steps": 2.25,
+                "orientation_interpolation_steps": 3
+            },
+            "badger:presentation_event": {
+                "cine_cheers_cine_a": {
+                    "animation": {
+                        "animation": "cheers_cine_a"
+                    }
+                },
+                "cheers_cine_idle_a": {
+                    "animation": {
+                        "animation": "cheers_cine_idle_a"
+                    }
+                },
+                "cheers_cine_idle_b": {
+                    "animation": {
+                        "animation": "cheers_cine_idle_b"
+                    }
+                },
+                "cheers_cine_idle_c": {
+                    "animation": {
+                        "animation": "cheers_cine_idle_c"
+                    }
+                },
+                "cheers_cine_a_offset": {
+                    "animation": {
+                        "animation": "cheers_cine_a_offset"
+                    }
+                },
+                "on_melee_attack_a": {
+                    "script": "melee_attack_a"
+                },
+                "on_melee_attack_b": {
+                    "script": "melee_attack_b"
+                },
+                "intense_hit": {
+                    "particles": {
+                        "effect": "badger:fx_shared_hit_intense",
+                        "locator": "loc_fx_stat_head",
+                        "enabled": true,
+                        "bind_to_actor": false
+                    },
+                    "visual_state": {
+                        "type": "on_hit_intense"
+                    },
+                    "audio": "BAE_ui_rps_intense_hit"
+                },
+                "normal_hit": {
+                    "visual_state": {
+                        "type": "on_hit_normal"
+                    }
+                },
+                "weak_hit": {
+                    "visual_state": {
+                        "type": "on_hit_intense"
+                    }
+                }
+            },
+            "badger:keep_alive_timer": {
+                "time": 3
+            }
+        }
+    }
+}

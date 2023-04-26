@@ -1,0 +1,97 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_piglin_portal_guard_step_ball",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_blend_smoke"]
+      },
+      "optimizations": {
+        "do_not_spawn_distance": 150.01
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": "Math.random(3, 5)"
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 3
+      },
+      "badger:emitter_shape_cylinder": {
+        "offset": [
+          0,
+          -0.4,
+          0
+        ],
+        "arc_offset": 0,
+        "arc": 360.0,
+        "radius": 0.75,
+        "length": 1.0,
+        "vertical_angle": 0.0,
+        "thickness_ratio": 0.0,
+        "emission_mode": "base",
+        "direction_mode": "aligned"
+      },
+      "minecraft:particle_initial_speed": 0.5,
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(-10, 10)",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(0.5,1.0)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": "Math.random(3.0,5.5)",
+        "linear_acceleration": [
+          "Math.random(-2.0,-2.5)",
+          "Math.random(0.1,0.6)",
+          0
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "1.0",
+          "1.0"
+        ],
+        "initial_scale": [
+          0.5,
+          1.2
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 12,
+            "rows_count": 4,
+            "frame_iteration": "row",
+            "row_index": [
+              0,
+              4
+            ],
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+          "gradient": {
+            "0.0": [
+              0.29,
+              0.11,
+              0.019,
+              0.5
+            ],
+            "1.0": [
+              1,
+              1,
+              1,
+              0.3
+            ]
+          },
+          "interpolant": "query.particle_normalized_age"
+      }
+    }
+  }
+}

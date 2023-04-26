@@ -1,0 +1,12 @@
+{
+  "fmv_id" : "logos",
+  "fmv_path" : "resource_packs/badger/videos/logos.bk2",
+  "clips" : [
+    {
+      "clip_type": "ui_audio",
+      "start_time": 0,
+      "duration": 200,
+      "event_name": "BAE_splash_logos_fmv"
+    }
+  ]
+}

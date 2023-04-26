@@ -1,0 +1,8 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wmap_outpost_hq_pvp_destroyed:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_outpost_hq_pvp_destroyed_d"
+    }
+  }
+}

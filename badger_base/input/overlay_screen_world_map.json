@@ -1,0 +1,217 @@
+[
+  {
+    "button_id": "button.menu_select",
+    "key_id": "key.menu.select",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_ok",
+    "key_id": "key.menu.ok",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_secondary_select",
+    "key_id": "key.menu.secondarySelect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_auto_place",
+    "key_id": "key.menu.autoplace",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_cancel",
+    "key_id": "key.menu.cancel",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_inventory_cancel",
+    "key_id": "key.menu.inventorycancel",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_inventory_drop",
+    "key_id": "key.menu.inventorydrop",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_inventory_dropall",
+    "key_id": "key.menu.inventorydropall",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_up",
+    "key_id": "key.menu.up",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_down",
+    "key_id": "key.menu.down",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_left",
+    "key_id": "key.menu.left",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_right",
+    "key_id": "key.menu.right",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_tab_left",
+    "key_id": "key.menuTabLeft",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_tab_right",
+    "key_id": "key.menuTabRight",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_alternate_tab_left",
+    "key_id": "key.menuTabLeft",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_alternate_tab_right",
+    "key_id": "key.menuTabRight",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.menu_autocomplete",
+    "key_id": "key.menu.autocomplete",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_clear",
+    "key_id": "key.menu.clear",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_zoom_in",
+    "key_id": "key.zoomIn",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_zoom_out",
+    "key_id": "key.zoomOut",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.menu_center_camera",
+    "key_id": "key.centerCamera",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.simulate_touch",
+    "key_id": "key.simulateTouch",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.controller_secondary_select",
+    "key_id": "key.menu.secondarySelect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_textedit_up",
+    "key_id": "key.menu.up",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_textedit_down",
+    "key_id": "key.menu.down",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_select",
+    "key_id": "key.menu.select",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_secondary_select",
+    "key_id": "key.menu.secondarySelect",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_secondary_select_left",
+    "key_id": "key.menu.controllerSecondarySelectLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_secondary_select_right",
+    "key_id": "key.menu.controllerSecondarySelectRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_back",
+    "key_id": "key.menu.cancel",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_start",
+    "key_id": "key.menu.start",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_textedit_up",
+    "key_id": "key.menu.up",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.controller_textedit_down",
+    "key_id": "key.menu.down",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.render_debug",
+    "key_id": "key.renderDebug",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.tutorial_screen",
+    "key_id": "key.tutorial",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.accept_invite",
+    "key_id": "key.acceptInvite",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.open_imgui",
+    "key_id": "key.openImgui",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.interactwithtoast",
+    "key_id": "key.interactwithtoast",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.pointer_pressed",
+    "key_id": "key.menu.select",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.left",
+    "key_id": "key.left",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.right",
+    "key_id": "key.right",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.down",
+    "key_id": "key.back",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.up",
+    "key_id": "key.forward",
+    "focus_impact": "neutral"
+  }
+]

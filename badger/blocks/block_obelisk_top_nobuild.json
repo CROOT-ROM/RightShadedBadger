@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_obelisk_top_nobuild": {
+            "textures": {
+                "up": "textures/blocks/tex_block_obelisk_top",
+                "down": "textures/blocks/tex_block_obelisk_top",
+                "side": "textures/blocks/tex_block_obelisk_side"
+            }
+        }
+    }
+}

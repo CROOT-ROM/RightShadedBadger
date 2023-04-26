@@ -1,0 +1,15 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+        "identifier": "badger:trail_piglin_magma_smash",
+        "start_distance": 0.0,
+        "length": 6.0,
+        "width": 2.5,
+        "fade_hold": 0.3,
+        "fade_time": 0.3,
+        "life_time": 0.3,
+        "shrink_hold": 10.01,
+        "shrink_time": 10.02,
+        "material": "mat_trail_bruiser_360_swipe"
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.8,0.7,0.5],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 100,
+            "offset": [0,0,0],
+            "radius": 7.5
+          }
+        ]
+      },
+      "badger:rendering": {
+        "definition": "badger:fx_attractor_onbording"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.fx_attractor_onbording.default"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.fx_attractor_onbording"
+      },
+      "identifier": "badger:fx_attractor_onbording",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_attractor": "badger:fx_attractor_onbording"
+      },
+      "render_controllers": ["controller.render.fx_attractor_onbording"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.maingeo_vis = 1;"]
+      }
+    }
+  }
+}

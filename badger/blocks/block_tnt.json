@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+      "badger:block_tnt": {
+          "textures": {
+              "up": "textures/blocks/tex_block_tnt_top",
+              "down": "textures/blocks/tex_block_tnt_bottom",
+              "side": "textures/blocks/tex_block_tnt_side"
+          }
+      }
+  }
+}

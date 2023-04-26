@@ -1,0 +1,18 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_shaggy_leaves_02": {
+            "geometry": "geometry.block_deco_shaggy_leaves_02",
+            "up": "surface",
+            "shadow": true,
+            "type": "far",
+            "probability": "always",
+            "wind_strength": 0.10,
+            "normals_interpolation": 0.0,
+            "collision": {
+              "mode" :"instance",
+              "intensity": 0.0
+            }
+        }
+    }
+}

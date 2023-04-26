@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_lantern_piglin_mushroom": {
+      "geometry": "geometry.block_deco_lantern_piglin_mushroom_geo", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

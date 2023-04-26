@@ -1,0 +1,74 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_poi_tower_04_attack",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         }
+      },
+      "events" : {
+         "after_sparkles" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_after_sparkles",
+               "type" : "emitter_bound"
+            }
+         },
+         "bell_flash" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_bell_flash",
+               "type" : "emitter_bound"
+            }
+         },
+         "bell_flash_big" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_bell_flash_big",
+               "type" : "emitter_bound"
+            }
+         },
+         "bell_shock" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_bell_shock",
+               "type" : "emitter_bound"
+            }
+         },
+         "bell_shock_big" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_bell_shock_big",
+               "type" : "emitter_bound"
+            }
+         },
+         "debris_base" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_debris_base",
+               "type" : "emitter_bound"
+            }
+         },
+         "debris_side_l" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_debris_side_l",
+               "type" : "emitter_bound"
+            }
+         },
+         "debris_side_r" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_poi_tower_04_attack_debris_side_r",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "timeline" : {
+               "0.600000" : [ "bell_shock_big" ],
+               "0.700000" : [ "debris_side_l", "debris_side_r" ],
+               "1.100000" : [ "debris_base" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.5
+         },
+         "minecraft:emitter_local_space" : {}
+      }
+   }
+}

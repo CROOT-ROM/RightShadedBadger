@@ -1,0 +1,31 @@
+{
+	"test-name": "archer-tower-and-gate-test",
+	"test-description": "Test that towers and gates can kill mobs",
+	"test-duration": 60,
+	"runAsPartOfCompleteTestSuite": true,
+	"gamemode": "editor",
+	"platforms": [ "Win32", "Windows10", "Xbox" ],
+	"commands": [
+		"/gm true",
+		"/giveallresources 1000",
+		"/enableservertickingsystem WanderSystem false",
+		"/assignteam @s team_one",
+		"/teleport @s 0 20 0",
+		"/testdelay 1",
+		"/sm badger:animal_chicken 1 5 50 5 team_two",
+		"/testdelay 1",
+		"/verifymobsinarea badger:animal_chicken 1 team_two 0 50 0 100",
+		"/testdelay 3",
+		"/pv badger:tower_arrow none true",
+		"/testdelay 16",
+		"/verifymobsinarea badger:animal_chicken 0 team_two 0 50 0 100",
+		"/ad 1000 1000 any_team",
+		"/testdelay 10",
+		"/pv badger:gate none true true team_one 0 50 16",
+		"/testdelay 1",
+		"/teleport @s 13 20 10",
+		"/sm badger:animal_chicken 1 team_two",
+		"/testdelay 15",
+		"/verifymobsinarea badger:animal_chicken 0 team_two 0 50 0 100"
+	]
+}

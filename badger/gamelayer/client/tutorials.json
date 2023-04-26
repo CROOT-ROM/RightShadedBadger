@@ -1,0 +1,227 @@
+[
+ //Hero Controls Tutorials
+{
+  "name": "player_move",
+  "type": "video"
+},
+{
+  "name": "player_turned_camera",
+  "type": "video"
+},
+{
+  "name": "player_jumped",
+  "type": "video"
+},
+{
+  "name": "player_sprinted",
+  "type": "video"
+},
+{
+  "name": "player_melee_attack",
+  "type": "video"
+},
+//World Traversal Tutorials
+{
+  "name": "player_looked_at_map",
+  "type": "video"  
+},
+{
+  "name": "player_used_compass",
+  "type": "video",
+  "pages": 1
+},
+{
+  "name": "fast_travel",
+  "type": "image",  
+  "prereqs":["unlock_onboarding_act1_started"]    
+},
+//Resourcing and Building Tutorials
+{
+  "name": "player_gathered_resources",
+  "type": "video"  
+},
+{
+  "name": "player_resource_cap",
+  "type": "image"  
+},
+{
+  "name": "player_shared_resources",
+  "type": "video"  
+},
+{
+  "name": "player_changed_hotbar",
+  "type": "image"  
+},
+{
+  "name": "player_quick_build",
+  "type": "video"
+}, 
+{
+  "name": "player_built_structures",
+  "type": "video"
+}, 
+{
+  "name": "player_deconstructed",
+  "type": "video"
+},
+//Prismarine
+{
+  "name": "player_piglin_resources",
+  "type": "video",  
+  "prereqs":["unlock_onboarding_act1_started"]
+},
+//Gold
+{
+  "name": "player_resources_gold",
+  "type": "video",
+  "pages": 1,
+  "prereqs":["gold"]
+}, 
+//WoF Upgrades
+{
+  "name": "player_upgraded",
+  "type": "video",  
+  "prereqs": ["xp_common"]     
+},
+//Combat Tutorials
+//Lapis
+{
+  "name": "player_spawner_resource",
+  "type": "video",  
+  "prereqs":["emerald"]
+},
+{
+  "name": "player_placed_spawner",
+  "type": "video",
+  "pages": 2  
+},
+{
+  "name": "player_mob_recall",
+  "type": "video"
+},
+{
+  "name": "player_used_hero_lure",
+  "type": "video",
+  "pages": 1
+},
+{
+  "name": "player_used_hero_director",
+  "type": "video",
+  "pages": 1
+},
+{
+  "name": "player_advanced_direct",
+  "type": "video",
+  "pages": 2
+}, 
+{
+  "name": "player_type_select",
+  "type": "image",
+  "pages": 2 
+},
+{
+  "name": "player_nether",
+  "type": "video",
+  "prereqs":["unlock_onboarding_act1_started"]
+},
+//Clearing Netherrack
+{
+  "name": "player_cleared_nether",
+  "type": "video",
+  "prereqs":["clear_nether_resource"]    
+},
+{
+  "name": "day_night",
+  "type": "video",
+  "pages": 2,
+  "prereqs": ["unlock_onboarding_firstnight_tut"]   
+},
+//Piglin Tutorials
+{
+  "name": "player_invasion_system_tutorial",
+  "type": "video",
+  "pages": 3,
+  "prereqs": ["unlock_onboarding_piglininvasion_tut"]     
+},
+{
+  "name": "player_unit_rps",
+  "type": "video",
+  "pages": 4,
+  "prereqs":["unlock_onboarding_act1_started"]
+}, 
+//Village Resources
+{
+  "name": "player_village_attack",
+  "type": "image",
+  "pages": 3,
+  "prereqs": ["unlock_onboarding_act1_complete"]
+},
+{
+  "name": "occupied_villages",
+  "type": "image",
+  "prereqs": ["unlock_onboarding_act1_complete"]
+},
+{
+  "name": "village_rewards",
+  "type": "image",
+  "prereqs":["unlock_onboarding_act1_started"]  
+},
+{
+  "name": "rebuilding_villages",
+  "type": "video",  
+  "prereqs":["unlock_onboarding_act1_started"]    
+},
+{
+  "name": "outposts",
+  "type": "image",
+  "prereqs": ["iron"]    
+},
+{
+  "name": "armed_villagers",
+  "type": "image",
+  "prereqs": ["unlock_journal_vindicator"]
+},
+{
+  "name": "mob_homesteads",
+  "type": "image",
+  "pages": 2,
+  "prereqs": ["unlock_onboarding_mob_homesteads"]    
+},
+{
+  "name": "mob_allegiance_lost",
+  "type": "image",
+  "prereqs":["unlock_onboarding_placedspawner_tut"]      
+},      
+{
+  "name": "player_needs_to_heal",
+  "type": "video"
+},
+{
+  "name": "player_has_died",
+  "type": "video"
+},  
+{
+  "name": "player_interacted",
+  "type": "video"  
+},
+{
+  "name": "mount_swap",
+  "type": "video",
+  "prereqs":["unlock_onboarding_act1_started"]
+},
+{
+  "name": "player_placed_map_marker",
+  "type": "image",  
+  "prereqs":["unlock_onboarding_act1_started"]  
+},
+{
+  "name": "player_recipe_screen",
+  "type": "image",
+  "pages": 2
+},
+{
+  "name": "player_inventory_screen",
+  "type": "image",
+  "pages": 2
+}  
+]

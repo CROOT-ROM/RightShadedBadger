@@ -1,0 +1,26 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_pillar_tree_coal_burned_vfx": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_fir_burned_ember_top_01",
+                "down": "textures/blocks/tex_block_tree_fir_burned_ember_top_01",
+                "side": "textures/blocks/tex_block_tree_fir_burned_ember_01"
+            },
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_tree_fir_burned",
+                        "range": "middle",
+                        "probability": 0.75,
+                        "offset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:item_lute"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.item_lute.default"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.item_lute"
+      },
+      "identifier": "badger:item_lute",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_lute": "mat_item_lute"
+      },
+      "render_controllers": ["controller.render.item_lute"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

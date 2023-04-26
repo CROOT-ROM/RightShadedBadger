@@ -1,0 +1,117 @@
+{
+  "animation_controllers": {
+    "controller.animation.cine_hero_allegiance.default": {
+      "initial_state": "default",
+      "states": {
+        "StartFX": {
+          "animations":  [
+            {
+              "idle_spawn_cube": "1"
+            }
+          ],
+          "particle_effects":  [
+            {
+              "effect": "fx_activate",
+              "enabled": true,
+              "locator": "loc_fx_cage_fire"
+            }
+          ],
+          "transitions":  [
+            {
+              "reaction": "(variable.reaction == 1)"
+            }
+          ]
+        },
+        "default": {
+          "animations":  [
+            {
+              "idle_a": "1"
+            }
+          ],
+          "on_entry": ["variable.hold = 0;","variable.fx = 0;","variable.reaction = 0;","variable.SpawnCage_vis = 0;","variable.lower_cube = 0;","variable.resetall = 0;"],
+          "transitions":  [
+            {
+              "hold_up_cube": "(variable.hold == 1)"
+            }
+          ]
+        },
+        "hold": {
+          "animations":  [
+            {
+              "idle_spawn_cube": "1"
+            }
+          ],
+          "transitions":  [
+            {
+              "StartFX": "(variable.fx == 1)"
+            },
+            {
+              "default": "(variable.resetall == 1)"
+            },
+            {
+              "putdown": "(variable.lower_cube == 1)"
+            }
+          ]
+        },
+        "hold_up_cube": {
+          "animations":  [
+            {
+              "hold_up_cube": "1"
+            }
+          ],
+          "transitions":  [
+            {
+              "hold": "(query.all_animations_finished == 1)"
+            }
+          ]
+        },
+        "putdown": {
+          "animations":  [
+            {
+              "lower_spawn_cube": "1"
+            }
+          ],
+          "on_exit": ["variable.resetall = 1;"],
+          "transitions":  [
+            {
+              "default": "(query.all_animations_finished == 1)"
+            }
+          ]
+        },
+        "reaction": {
+          "animations":  [
+            {
+              "react_spawn_cube": "1"
+            }
+          ],
+          "on_exit": ["variable.fx = 0;","variable.reaction = 0;"],
+          "transitions":  [
+            {
+              "hold": "(query.all_animations_finished == 1)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cine_hero_allegiance.blink": {
+      "initial_state": "default",
+      "states": {
+        "blink": {
+          "transitions":  [
+            {
+              "default": "variable.is_blinking = 1; variable.last_blink_time = query.life_time; return ((query.all_animations_finished && (query.life_time > variable.return_from_blink))); "
+            }
+          ]
+        },
+        "default": {
+          "transitions":  [
+            {
+              "blink": "variable.is_blinking = 0; variable.return_from_blink = (query.life_time + math.random(0.05,0.2)); variable.last_blink_time = variable.last_blink_time ? variable.last_blink_time : query.life_time; return ((query.life_time > (variable.last_blink_time + math.random(3,40)))); "
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

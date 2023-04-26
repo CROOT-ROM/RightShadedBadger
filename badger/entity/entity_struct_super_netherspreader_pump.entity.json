@@ -1,0 +1,61 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "on_fire": {
+          "audio": "BAE_piglin_super_netherspreader_build"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_super_netherspreader_pump"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_super_netherspreader_pump.death_a",
+        "default": "controller.animation.entity_struct_super_netherspreader_pump.default",
+        "idle_a": "animation.entity_struct_super_netherspreader_pump.idle_a",
+        "pump_a": "animation.entity_struct_super_netherspreader_pump.pump_a",
+        "spawn_a": "animation.entity_struct_super_netherspreader_pump.spawn_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_super_netherspreader_pump"
+      },
+      "identifier": "badger:entity_struct_super_netherspreader_pump",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin",
+        "mat_shared_block_entity_piglin_electric": "mat_shared_block_entity_piglin_electric",
+        "temp_mat_shared_block_entity_piglin": "temp_mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_death": "badger:fx_destruction_super_nether_pump",
+        "fx_electric": "badger:fx_es_super_netherspreader_electric",
+        "fx_ground_impact": "badger:fx_es_super_netherpsreader_impact",
+        "fx_pump_impact": "badger:fx_es_super_netherspreader_windup_plunge_spores",
+        "fx_pump_windup": "badger:fx_es_super_netherspreader_windup_spores",
+        "fx_vent": "badger:fx_es_super_netherpsreader_vent"
+      },
+      "render_controllers": ["controller.render.entity_struct_super_netherspreader_pump"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "pumpdown": "BAE_piglin_super_netherspreader_pumpdown",
+        "pumpup": "BAE_piglin_super_netherspreader_pumpup"
+      }
+    }
+  }
+}

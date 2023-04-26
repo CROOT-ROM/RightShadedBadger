@@ -1,0 +1,29 @@
+{
+   "badger:audio_service" : {
+      "global_music_parameter_default_values": {
+         "music_state_pvp": 1.0,
+         "poi_stinger_type_pvp": 0.0,
+         "trigger_stinger_pvp": 0.0,
+         "combat_wild": 0.0,
+         "combat_wild_influence_music_pvp": 0.0,
+         "combat_wild_influence_music_campaign": 0.0,
+         "combat_piglin_influence_music": 0.0,
+         "piglin_presence_pvp" : 0.0,
+         "music_state" : 1.0,
+         "play_outro" : 0,
+         "combat_intensity" : 0,
+         "music_village": 0.0,
+         "music_campaign_beat": 0.0,
+         "music_va_fountain": 0.0,
+         "music_va_state": 0.0,
+         "influence_music": 0.0,
+         "music_va_boss": 0.0,
+         "music_wof_act3_phase": 0.0,
+         "music_boss_engaged": 0.0,
+         "music_demo_state": 0.0
+      },
+      "ambience_biome_change_detection_cooldown": 2.0,
+      "fast_travel_snapshot": "snapshot:/STATE_fast_travel"
+   },
+   "format_version" : "1.0.0"
+}

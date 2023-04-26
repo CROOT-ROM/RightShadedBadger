@@ -1,0 +1,81 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_fort_outpost"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:music_2d_emitter": {
+        "priority": 30,
+        "max_distance": 100.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "default",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "occupied",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "incoming_attack",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "damaged",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 3.0
+              }
+            ]
+          }          
+        ]
+      },
+      "badger:presentation_event": {
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_outpost_hq_dmg_stage_01"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_outpost_hq_dmg_stage_01"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_outpost_hq_dmg_stage_02"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_outpost_hq_dmg_stage_03"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_outpost_hq_destruction"
+        },
+        "on_construction_start": {
+          "audio": "BAE_structure_placement_player_large",
+          "particles": [
+            {
+              "effect": "badger:fx_placement_19x19",
+              "enabled": true,
+              "bind_to_actor": false
+            }
+          ]
+        },
+        "on_construction_end": {
+          "audio": "BAE_outpost_hq_idle"
+  
+        }
+      }
+    }
+  }
+}

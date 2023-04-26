@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_birch_fall_02": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_birch_top_r",
+                "down": "textures/blocks/tex_block_tree_birch_top_r",
+                "side": "textures/blocks/tex_block_tree_birch_side_r"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_birds",
+                        "range": "middle",
+                        "probability": 0.005                    
+                    }
+                ]           
+            }
+        }
+    }
+}

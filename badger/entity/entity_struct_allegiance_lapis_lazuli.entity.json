@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:presentation_event": {
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_allegiance_lapis_lazuli"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_allegiance_lapis_lazuli.default",
+        "idle_a": "animation.entity_struct_allegiance_lapis_lazuli.idle_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_allegiance_lapis_lazuli"
+      },
+      "identifier": "badger:entity_struct_allegiance_lapis_lazuli",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_player": "mat_shared_block_entity_player"
+      },
+      "render_controllers": ["controller.render.entity_struct_allegiance_lapis_lazuli"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

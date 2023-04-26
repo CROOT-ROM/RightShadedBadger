@@ -1,0 +1,488 @@
+{
+  "animation_controllers": {
+    "controller.animation.host_knowledge.default": {
+      "initial_state": "spawn",
+      "states": {
+        "celebrate": {
+          "animations":  [
+            {
+              "cheer_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "cheer": {
+          "animations":  [
+            {
+              "cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "climb": {
+          "animations":  [
+            {
+              "climb_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.any_animation_finished && (query.speed > 0))"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": "!variable.is_swimming"
+            },
+            {
+              "swim_a": "variable.is_swimming"
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "cheer": "variable.cheer"
+            },
+            {
+              "speech": "variable.talk"
+            },
+            {
+              "climb": "(query.velocity_y > 0)"
+            },
+            {
+              "celebrate": "variable.badger_behavior_host_knowledge_celebrate"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "spawn",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "speech": {
+          "animations":  [
+            {
+              "speech_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "walk": "(query.speed > 0)"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "climb": "(query.velocity_y > 0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.host_knowledge.idle": {
+      "initial_state": "default_idle",
+      "states": {
+        "behaviors": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "guarded_idle": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "carefree_idle": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel_idle": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "default_idle": "(variable.onboarding && query.behavior_default)"
+            }
+          ]
+        },
+        "carefree_idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "happy_idle": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "default_idle": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "guarded_idle": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "sentinel_idle": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "swim_idle": "(query.behavior_default && variable.is_swimming)"
+            }
+          ]
+        },
+        "default_idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "swim_idle": "(query.behavior_default && variable.is_swimming)"
+            }
+          ]
+        },
+        "guarded_idle": {
+          "animations":  [
+            {
+              "behavior_scared_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "happy_idle": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "default_idle": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "carefree_idle": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel_idle": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "swim_idle": "(query.behavior_default && variable.is_swimming)"
+            }
+          ]
+        },
+        "happy_idle": {
+          "animations":  [
+            {
+              "behavior_happy_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "guarded_idle": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree_idle": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel_idle": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "swim_idle": "(query.behavior_default && variable.is_swimming)"
+            }
+          ]
+        },
+        "sentinel_idle": {
+          "animations":  [
+            {
+              "behavior_curious_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "happy_idle": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "default_idle": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "guarded_idle": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree_idle": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "swim_idle": "(query.behavior_default && variable.is_swimming)"
+            }
+          ]
+        },
+        "swim_idle": {
+          "animations":  [
+            {
+              "swim_idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "behaviors": "!query.behavior_default"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.host_knowledge.locomotion": {
+      "states": {
+        "carefree": {
+          "animations":  [
+            {
+              "behavior_carefree_walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.behavior_default && (!variable.is_swimming && (query.speed <= 4.5)))"
+            },
+            {
+              "scared": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "sentinel": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "happy": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        },
+        "happy": {
+          "animations":  [
+            {
+              "behavior_happy_walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.behavior_default && (!variable.is_swimming && (query.speed <= 4.5)))"
+            },
+            {
+              "scared": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        },
+        "scared": {
+          "animations":  [
+            {
+              "behavior_scared_walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.behavior_default && (!variable.is_swimming && (query.speed <= 4.5)))"
+            },
+            {
+              "carefree": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "happy": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        },
+        "sentinel": {
+          "animations":  [
+            {
+              "behavior_sentinel_walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.behavior_default && (!variable.is_swimming && (query.speed <= 4.5)))"
+            },
+            {
+              "scared": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "happy": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        },
+        "sprint": {
+          "animations":  [
+            {
+              "sprint_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && ((query.speed <= 4.5) && query.behavior_default))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.behavior_default && !variable.is_swimming)"
+            },
+            {
+              "scared": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "happy": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "scared": "variable.badger_behavior_host_knowledge_guarded"
+            },
+            {
+              "carefree": "variable.badger_behavior_host_knowledge_carefree"
+            },
+            {
+              "sentinel": "variable.badger_behavior_host_knowledge_sentinel"
+            },
+            {
+              "happy": "variable.badger_behavior_host_knowledge_happy"
+            },
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "((query.speed > 4.5) && !variable.is_swimming)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

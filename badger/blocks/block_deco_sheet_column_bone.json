@@ -1,0 +1,9 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_sheet_column_bone": {
+      "decoration": "deco_sheet_column_bone",
+      "textures": "textures/blocks/tex_block_iron_wrought"
+    }
+  }
+}

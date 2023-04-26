@@ -1,0 +1,1567 @@
+{
+   "badger:audio_status_effect_service" : {
+      "format_version" : "1.0.0",
+      "status_effect_sound_events" :{
+         
+         "BAE_golem_wood_footstep": {
+               "status_effects" : [
+                  {
+                     "status_tags": [
+                           "onboarding"
+                     ],
+                     "bedrock_audio_event": "BAE_golem_wood_footstep_onboarding"
+                  },
+                  {
+                     "bedrock_audio_event": "BAE_golem_wood_footstep"
+                  }
+               ]
+         },
+         "BAE_golem_wood_jump_land": {
+               "status_effects" : [
+                  {
+                     "status_tags": [
+                           "onboarding"
+                     ],
+                     "bedrock_audio_event": "BAE_golem_wood_jump_land_onboarding"
+                  },
+                  {
+                     "bedrock_audio_event": "BAE_golem_wood_jump_land"
+                  }
+               ]
+         },
+         "BAE_horse_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_jump_buffed"
+               },
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_jump_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_horse_jump"
+               }
+            ]
+         },
+         "BAE_horse_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_land_buffed"
+               },
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_horse_land"
+               }
+            ]
+         },
+         "BAE_mount_beetle_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_beetle_jump_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_beetle_jump"
+               }
+            ]
+         },
+         "BAE_mount_beetle_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_beetle_land_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_beetle_land"
+               }
+            ]
+         },
+         "BAE_mount_bird_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_bird_jump_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_bird_jump"
+               }
+            ]
+         },
+         "BAE_mount_bird_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_bird_land_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_bird_land"
+               }
+            ]
+         },
+         "BAE_mount_bird_land_short": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_bird_land_short_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_bird_land_short"
+               }
+            ]
+         },
+         "BAE_mount_tiger_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_tiger_jump_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_tiger_jump"
+               }
+            ]
+         },
+         "BAE_mount_tiger_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_tiger_land_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_tiger_land"
+               }
+            ]
+         },
+         "BAE_player_llama_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_player_llama_jump_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_player_llama_jump"
+               }
+            ]
+         },
+         "BAE_player_llama_jump_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "player_jump"
+                  ],
+                  "bedrock_audio_event": "BAE_player_llama_jump_land_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_player_llama_jump_land"
+               }
+            ]
+         },
+         "BAE_horse_footsteps_walk": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_footsteps_walk_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_horse_footsteps_walk"
+               }
+            ]
+         },
+         "BAE_horse_footsteps_trot": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_horse_footsteps_trot_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_horse_footsteps_trot"
+               }
+            ]
+         },
+         "BAE_hero_mount_gallop_generic": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_hero_mount_gallop_generic_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_hero_mount_gallop_generic"
+               }
+            ]
+         },
+         "BAE_mount_horse_knockback_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_mount_horse_knockback_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mount_horse_knockback_land"
+               }
+            ]
+         },
+         "BAE_golem_wood_knockback_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_golem_wood_knockback_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_golem_wood_knockback_land"
+               }
+            ]
+         },
+         "BAE_mob_golem_stone_footstep": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_mob_golem_stone_footstep_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mob_golem_stone_footstep"
+               }
+            ]
+         },
+         "BAE_mob_golem_stone_jump_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_mob_golem_stone_jump_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mob_golem_stone_jump_land"
+               }
+            ]
+         },
+         "BAE_mob_golem_stone_knockback_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_mob_golem_stone_knockback_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_mob_golem_stone_knockback_land"
+               }
+            ]
+         },
+         "BAE_piglin_runt_attack_a": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_attack_a_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_attack_a"
+               }
+            ]
+         },
+         "BAE_piglin_runt_attack_b": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_attack_b_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_attack_b"
+               }
+            ]
+         },
+         "BAE_piglin_runt_jump_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_jump_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_jump_land"
+               }
+            ]
+         },
+         "BAE_piglin_runt_knockback_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_knockback_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_knockback_land"
+               }
+            ]
+         },
+         "BAE_piglin_runt_step": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_step_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_step"
+               }
+            ]
+         },
+         "BAE_piglin_runt_step_climb": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_step_climb_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_step_climb"
+               }
+            ]
+         },
+         "BAE_piglin_runt_spawn": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_spawn_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_spawn"
+               }
+            ]
+         },
+         "BAE_piglin_runt_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_jump_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_jump"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_knockback_normal": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_knockback_normal_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_knockback_normal"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_knockback_intense": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_knockback_intense_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_knockback_intense"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_idle": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_idle_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_idle"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_death": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_death_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_death"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_damage": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_damage_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_damage"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_attack_b": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_attack_b_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_attack_b"
+               }
+            ]
+         },
+         "BAE_piglin_runt_dx_attack": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_attack_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_dx_attack"
+               }
+            ]
+         },
+         "BAE_piglin_runt_bodyfall": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_runt_bodyfall_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_runt_bodyfall"
+               }
+            ]
+         },
+         "BAE_host_action_beckon": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_beckon_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_beckon"
+               }
+            ]
+         },
+         "BAE_host_action_cheer_arms": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_cheer_arms_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_cheer_arms"
+               }
+            ]
+         },
+         "BAE_host_action_cheer_b": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_cheer_b_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_cheer_b"
+               }
+            ]
+         },
+         "BAE_host_action_cheer_c": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_cheer_c_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_cheer_c"
+               }
+            ]
+         },
+         "BAE_host_action_cheer_shake": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_cheer_shake_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_cheer_shake"
+               }
+            ]
+         },
+         "BAE_host_action_footstep": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_footstep_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_footstep"
+               }
+            ]
+         },
+         "BAE_host_action_happy_arms": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_happy_arms_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_happy_arms"
+               }
+            ]
+         },
+         "BAE_host_action_idle_flower": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_idle_flower_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_idle_flower"
+               }
+            ]
+         },
+         "BAE_host_action_move_idle": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_move_idle_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_move_idle"
+               }
+            ]
+         },
+         "BAE_host_action_move_idle_leg_scratch": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_move_idle_leg_scratch_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_move_idle_leg_scratch"
+               }
+            ]
+         },
+         "BAE_host_action_speech_move_arm": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_speech_move_arm_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_speech_move_arm"
+               }
+            ]
+         },
+         "BAE_host_action_speech_move_shoulder": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_action_speech_move_shoulder_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_action_speech_move_shoulder"
+               }
+            ]
+         },
+         "BAE_host_foresight_cheer_b": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_cheer_b_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_cheer_b"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_cheer": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_cheer_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_cheer"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_glide": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_glide_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_glide"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_guarded": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_guarded_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_guarded"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_happy": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_happy_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_happy"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_idle": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_idle_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_idle"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_jump_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_jump"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_talk": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_talk_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_talk"
+               }
+            ]
+         },
+         "BAE_host_foresight_move_wide": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_move_wide_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_move_wide"
+               }
+            ]
+         },
+         "BAE_host_foresight_spawn": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_foresight_spawn_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_foresight_spawn"
+               }
+            ]
+         },
+         "BAE_host_knowledge_cheer": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_cheer_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_cheer"
+               }
+            ]
+         },
+         "BAE_host_knowledge_footstep": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_footstep_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_footstep"
+               }
+            ]
+         },
+         "BAE_host_knowledge_footstep_sprint": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_footstep_sprint_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_footstep_sprint"
+               }
+            ]
+         },
+         "BAE_host_knowledge_jump": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_jump_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_jump"
+               }
+            ]
+         },
+         "BAE_host_knowledge_jump_land": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_jump_land_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_jump_land"
+               }
+            ]
+         },
+         "BAE_host_knowledge_move_speech": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_move_speech_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_move_speech"
+               }
+            ]
+         },
+         "BAE_host_knowledge_spawn": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_host_knowledge_spawn_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_host_knowledge_spawn"
+               }
+            ]
+         },
+         "BAE_gate_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_gate_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_gate_destroyed"
+               }
+            ]
+         },
+         "BAE_gate_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_gate_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_gate_damage_state_1"
+               }
+            ]
+         },
+         "BAE_gate_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_gate_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_gate_damage_state_2"
+               }
+            ]
+         },
+         "BAE_gate_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_gate_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_gate_damage_state_3"
+               }
+            ]
+         },
+         "BAE_platform_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_platform_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_platform_destroyed"
+               }
+            ]
+         },
+         "BAE_platform_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_platform_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_platform_damage_state_1"
+               }
+            ]
+         },
+         "BAE_platform_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_platform_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_platform_damage_state_2"
+               }
+            ]
+         },
+         "BAE_platform_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_platform_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_platform_damage_state_3"
+               }
+            ]
+         },
+         "BAE_wall_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_wall_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_wall_destroyed"
+               }
+            ]
+         },
+         "BAE_wall_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_wall_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_wall_damage_state_1"
+               }
+            ]
+         },
+         "BAE_wall_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_wall_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_wall_damage_state_2"
+               }
+            ]
+         },
+         "BAE_wall_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_wall_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_wall_damage_state_3"
+               }
+            ]
+         },
+         "BAE_tower_anti_siege_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_anti_siege_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_anti_siege_destroyed"
+               }
+            ]
+         },
+         "BAE_tower_anti_siege_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_anti_siege_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_anti_siege_damage_state_1"
+               }
+            ]
+         },
+         "BAE_tower_anti_siege_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_anti_siege_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_anti_siege_damage_state_2"
+               }
+            ]
+         },
+         "BAE_tower_anti_siege_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_anti_siege_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_anti_siege_damage_state_3"
+               }
+            ]
+         },
+         "BAE_tower_arrow_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_arrow_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_arrow_destroyed"
+               }
+            ]
+         },
+         "BAE_tower_arrow_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_arrow_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_arrow_damage_state_1"
+               }
+            ]
+         },
+         "BAE_tower_arrow_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_arrow_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_arrow_damage_state_2"
+               }
+            ]
+         },
+         "BAE_tower_arrow_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_arrow_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_arrow_damage_state_3"
+               }
+            ]
+         },
+         "BAE_tower_shotgun_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_shotgun_buffed_destroyed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_shotgun_destroyed"
+               }
+            ]
+         },
+         "BAE_tower_shotgun_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_shotgun_buffed_damage_state_1"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_shotgun_damage_state_1"
+               }
+            ]
+         },
+         "BAE_tower_shotgun_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_shotgun_buffed_damage_state_2"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_shotgun_damage_state_2"
+               }
+            ]
+         },
+         "BAE_tower_shotgun_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_tower_shotgun_buffed_damage_state_3"
+               },
+               {
+                  "bedrock_audio_event": "BAE_tower_shotgun_damage_state_3"
+               }
+            ]
+         },
+         "BAE_impact_wood_blunt": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_blunt"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_blunt"
+               }
+            ]
+         },
+         "BAE_impact_wood_blunt_big": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_blunt_big"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_blunt_big"
+               }
+            ]
+         },
+         "BAE_impact_wood_explosion": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_explosion"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_explosion"
+               }
+            ]
+         },
+         "BAE_impact_wood_pierce": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_pierce"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_pierce"
+               }
+            ]
+         },
+         "BAE_impact_wood_pierce_fire": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_pierce_fire"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_pierce_fire"
+               }
+            ]
+         },
+         "BAE_impact_wood_slash": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_slash"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_slash"
+               }
+            ]
+         },
+         "BAE_impact_wood_hero": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_stone_hero"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_wood_hero"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_hero": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_hero"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_hero"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_blunt": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_blunt"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_blunt"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_blunt_big": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_blunt_big"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_blunt_big"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_explosion": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_explosion"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_explosion"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_pierce": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_pierce"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_pierce"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_pierce_fire": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_pierce_fire"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_pierce_fire"
+               }
+            ]
+         },
+         "BAE_impact_unique_wood_alert_low_slash": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "mason"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_unique_stone_alert_low_slash"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_unique_wood_alert_low_slash"
+               }
+            ]
+         },
+         "BAE_redstone_launcher_cooldown_loop": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "war_drums"
+                  ],
+                  "bedrock_audio_event": "BAE_redstone_launcher_cooldown_loop_buffed"
+               },
+               {
+                  "bedrock_audio_event": "BAE_redstone_launcher_cooldown_loop"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_close": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_close_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_close"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_damage_state_1": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_1_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_1"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_damage_state_2": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_2_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_2"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_damage_state_3": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_3_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_damage_state_3"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_fighter_destroyed": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_fighter_destroyed_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_fighter_destroyed"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_idle": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_idle_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_idle"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_open": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_open_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_open"
+               }
+            ]
+         },
+         "BAE_piglin_barracks_windup_call": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "onboarding"
+                  ],
+                  "bedrock_audio_event": "BAE_piglin_barracks_windup_call_onboarding"
+               },
+               {
+                  "bedrock_audio_event": "BAE_piglin_barracks_windup_call"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_explosion": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_explosion"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_explosion"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_blunt_big": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_blunt_big"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_blunt_big"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_blunt": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_blunt"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_blunt"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_pierce": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_pierce"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_pierce"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_hero": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_hero"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_hero"
+               }
+            ]
+         },
+         "BAE_impact_magic_portal_alert_hi_slash": {
+            "status_effects" : [
+               {
+                  "status_tags": [
+                        "portal_invulnerable"
+                  ],
+                  "bedrock_audio_event": "BAE_impact_magic_portal_shielded_alert_hi_slash"
+               },
+               {
+                  "bedrock_audio_event": "BAE_impact_magic_portal_alert_hi_slash"
+               }
+            ]
+         }
+      }
+   }
+}

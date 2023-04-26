@@ -1,0 +1,17 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_lute.default": {
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

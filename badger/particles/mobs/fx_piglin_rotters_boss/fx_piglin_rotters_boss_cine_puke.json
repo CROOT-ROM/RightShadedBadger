@@ -1,0 +1,106 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_piglin_rotters_boss_cine_puke",
+            "basic_render_parameters": {
+                "materials_list": [
+                    "mat_badger_fx_blend_ramp_liquid_flow_fp_spit"
+                ]
+            }
+        },
+        "events": {
+            "endsplash": {
+                "particle_effect": {
+                    "effect": "badger:fx_piglin_rotters_boss_liquid_hit",
+                    "type": "emitter"
+                }
+            }
+        },
+        "components": {
+            "minecraft:emitter_rate_steady": {
+                "spawn_rate": 350,
+                "max_particles": 1000
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 2
+            },
+            "badger:emitter_shape_cylinder": {
+                "offset": [
+                    0,
+                    0,
+                    0
+                ],
+                "arc_offset": 0.0,
+                "arc": 360.0,
+                "radius": 0.3,
+                "length": 1.0,
+                "vertical_angle": 10.0,
+                "thickness_ratio": 0.0,
+                "emission_mode": "base",
+                "direction_mode": "aligned",
+                "inward_direction": false
+            },
+            "minecraft:particle_initial_speed": "math.random(7, 13)",
+            "minecraft:particle_initial_spin": {
+                "rotation": 180,
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.Random(1.5, 2.0)"
+            },
+            "minecraft:particle_motion_collision": {
+                "enabled": true,
+                "collision_drag": 4.0,
+                "coefficient_of_restitution": 0.5,
+                "collision_radius": 0.1,
+                "expire_on_contact": true,
+                "expire_on_contact_chance": 1.0,
+                "activation_delay": 0,
+                "events": [
+                    {
+                        "event": "endsplash",
+                        "min_speed": 0,
+                        "impacts_count": 0,
+                        "chance": 0.25
+                    }
+                ]
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_acceleration": [
+                    0,
+                    "math.random(-70, -80)",
+                    0
+                ],
+                "linear_drag_coefficient": 2.0
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    1.0,
+                    0.5
+                ],
+                "initial_scale": [
+                    0.75,
+                    1.2
+                ],
+                "facing_camera_mode": "lookat_direction",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 11,
+                        "rows_count": 5,
+                        "frame_iteration": "row",
+                        "row_index": [
+                            0,
+                            4
+                        ],
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

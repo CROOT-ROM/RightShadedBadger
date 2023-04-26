@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_pipe_vent": {
+            "decoration": "deco_pipe_vent",
+            "textures": "textures/blocks/tex_debug",
+            "particle_spawner": {
+				"effects" : [
+					{
+		                "effect": "badger:fx_block_deco_pipe_vent_smoke",
+						"range": "near",
+						"offset": [
+							0.1,
+							0.0,
+							0.1
+						]
+					}
+				]			
+            }
+        }
+    }
+}

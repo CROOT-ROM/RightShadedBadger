@@ -1,0 +1,164 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_vo_sequence_speaker_tag": {
+        "badger:point_lights": {
+          "lights":  [
+            {
+              "color": [0.25,0.875,1],
+              "enabled": true,
+              "falloff_power": 2,
+              "intensity": 3,
+              "locator": "loc_fx_light",
+              "offset": [0,0,0.2],
+              "radius": 5
+            }
+          ]
+        },
+        "speaker_tag": "badger:host_knowledge"
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mob_generic_tiny"
+      },
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.25,0.875,1],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 3,
+            "locator": "loc_fx_light",
+            "offset": [0,0,0],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "fast_travel_start": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_1_small",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_arrive": {
+          "audio": "BAE_host_generic_teleport_arrive",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_1_small",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_leave": {
+          "audio": "BAE_host_generic_teleport_leave",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_1_small",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_small",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_trails",
+            "enabled": true,
+            "locator": "loc_fx_wake"
+          },
+          "script": "enter_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_small_stop",
+          "script": "exit_liquid"
+        },
+        "remove_ghost": {
+          "script": "skin_off"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:host_knowledge",
+        "limit": 16
+      }
+    },
+    "description": {
+      "animations": {
+        "behavior_carefree_walk_a": "animation.host_knowledge.behavior_carefree_walk_a",
+        "behavior_curious_a": "animation.host_knowledge_behaviors.behavior_curious_a",
+        "behavior_happy_a": "animation.host_knowledge_behaviors.behavior_happy_a",
+        "behavior_happy_walk_a": "animation.host_knowledge.behavior_happy_walk_a",
+        "behavior_scared_a": "animation.host_knowledge_behaviors.behavior_scared_a",
+        "behavior_scared_walk_a": "animation.host_knowledge_behaviors.behavior_scared_walk_a",
+        "behavior_sentinel_walk_a": "animation.host_knowledge.behavior_sentinel_walk_a",
+        "cheer_a": "animation.host_knowledge.cheer_a",
+        "cheer_b": "animation.host_knowledge.cheer_b",
+        "cine_clap_a": "animation.host_knowledge.cine_clap_a",
+        "climb_a": "animation.host_knowledge.climb_a",
+        "default": "controller.animation.host_knowledge.default",
+        "host_knowledge_nis_mst06_c06b": "animation.host_knowledge_nis_victory.host_knowledge_nis_mst06_c06b",
+        "idle": "controller.animation.host_knowledge.idle",
+        "idle_a": "animation.host_knowledge.idle_a",
+        "idle_b": "animation.host_knowledge.idle_b",
+        "locomotion": "controller.animation.host_knowledge.locomotion",
+        "nis_knowledge_victory_a": "animation.host_knowledge_nis.nis_knowledge_victory_a",
+        "spawn_a": "animation.host_knowledge.spawn_a",
+        "speech_a": "animation.host_knowledge.speech_a",
+        "sprint_a": "animation.host_knowledge.sprint_a",
+        "swim_a": "animation.host_knowledge.swim_a",
+        "swim_idle_a": "animation.host_knowledge.swim_idle_a",
+        "walk_a": "animation.host_knowledge.walk_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enter_liquid": "variable.is_swimming = 1;",
+        "exit_liquid": "variable.is_swimming = 0; variable.fx_trails = 0; variable.fx_trails01 = 0; variable.fx_trails02 = 0;",
+        "skin_off": "variable.second_skin_vis = 0; variable.mat_opacity = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Scared","Scared Blink","Curious","Curious Blink"],
+      "geometry": {
+        "default": "geometry.host_knowledge"
+      },
+      "identifier": "badger:host_knowledge",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_host": "mat_fx_host",
+        "mat_host_knowledge": "mat_host_knowledge",
+        "mat_host_knowledge_face": "mat_host_knowledge_face"
+      },
+      "render_controllers": ["controller.render.host_knowledge"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 1;","variable.mat_opacity = 0.75;"]
+      },
+      "sound_effects": {
+        "cheer": "BAE_host_knowledge_cheer",
+        "footstep": "BAE_host_knowledge_footstep",
+        "footstep_sprint": "BAE_host_knowledge_footstep_sprint",
+        "jump": "BAE_host_knowledge_jump",
+        "jump_land": "BAE_host_knowledge_jump_land",
+        "move_idle": "BAE_host_knowledge_move_idle",
+        "move_speech": "BAE_host_knowledge_move_speech",
+        "spawn": "BAE_host_knowledge_spawn",
+        "swim": "BAE_host_knowledge_swim",
+        "swim_idle": "BAE_host_knowledge_swim_idle"
+      }
+    }
+  }
+}

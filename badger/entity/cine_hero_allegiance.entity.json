@@ -1,0 +1,93 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:cine_hero_allegiance",
+      "materials": {
+        "default": "entity_model",
+        "mat_hero_ranger": "mat_hero_ranger",
+        "mat_cine_spawn_cage": "mat_cine_spawn_cage"
+      },
+      "textures": {
+        "default": "textures/entity/hero/tex_hero_ranger_02_d",
+        "default_blink": "textures/entity/hero/tex_hero_ranger_02_blink_d",
+        "default_02": "textures/entity/tex_hero_ranger_d",
+        "default_02_blink": "textures/entity/hero/tex_hero_ranger_blink_d"
+      },
+      "geometry": {
+        "default": "geometry.cine_hero_allegiance"
+      },
+      "particle_effects": {
+        "fx_fire": "badger:fx_cine_spawn_cage_fire",
+        "fx_activate": "badger:fx_cine_spawn_cage_active"
+      },
+      "render_controllers": [
+        "controller.render.cine_hero_allegiance"
+      ],
+      "animations": {
+        "idle_a": "animation.cine_hero_allegiance.idle_a",
+        "run_a": "animation.cine_hero_allegiance.run_a",
+        "stop_a": "animation.cine_hero_allegiance.stop_a",
+        "walk_a": "animation.cine_hero_allegiance.walk_a",
+        "jog_a": "animation.cine_hero_allegiance.jog_a",
+        "start_a": "animation.cine_hero_allegiance.start_a",
+        "death_a": "animation.cine_hero_allegiance.death_a",
+        "idle_b": "animation.cine_hero_allegiance.idle_b",
+        "hold_up_cube": "animation.cine_hero_allegiance.hold_up_cube",
+        "idle_spawn_cube": "animation.cine_hero_allegiance.idle_spawn_cube",
+        "react_spawn_cube": "animation.cine_hero_allegiance.react_spawn_cube",
+        "lower_spawn_cube": "animation.cine_hero_allegiance.lower_spawn_cube",
+        "default": "controller.animation.cine_hero_allegiance.default",
+        "blink": "controller.animation.cine_hero_allegiance.blink"
+      },
+      "enable_attachables": false,
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "blink": "1"
+          }
+        ],
+        "initialize": [
+          "variable.hold = 0;",
+          "variable.fx = 0;",
+          "variable.reaction = 0;",
+          "variable.SpawnCage_vis = 0;",
+          "variable.resetall = 0;",
+          "variable.lower_cube = 0;"
+        ]
+      },
+      "event_scripts": {
+        "hold_cube": "variable.hold = 1;",
+        "start_fx": "variable.fx = 1;",
+        "show_reaction": "variable.reaction = 1;",
+        "resetall": "variable.resetall = 1;",
+        "lower_cube": "variable.lower_cube = 1;"
+      }
+    },
+    "components": {
+      "badger:presentation_event": {
+        "hold_cube": {
+          "script": "hold_cube"
+        },
+        "start_fx": {
+          "script": "start_fx"
+        },
+        "show_reaction": {
+          "script": "show_reaction"
+        },
+        "resetall": {
+          "script": "resetall"
+        },
+        "lower_cube": {
+          "script": "lower_cube"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:cine_hero_allegiance"
+      }
+    }
+  }
+}

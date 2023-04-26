@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_bubblerack_light_corner": {
+            "textures": {
+                "down": "textures/blocks/tex_magma",
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_bubblerack_corner_light_l",
+                          "empty" :"textures/blocks/tex_block_bubblerack_light_corner_empty",
+                          "L" : "textures/blocks/tex_block_bubblerack_corner_light_l",
+                          "line" : "textures/blocks/tex_block_bubblerack_corner_light_spoke",
+                          "cross" : "textures/blocks/tex_block_bubblerack_corner_light_spoke",
+                          "spoke" : "textures/blocks/tex_block_bubblerack_corner_light_l",
+                           "T" : "textures/blocks/tex_block_bubblerack_corner_light_spoke"
+                      }
+                },          
+                "side": "textures/blocks/tex_block_bubblerack_side_transition"
+                }
+            }
+        }
+    }

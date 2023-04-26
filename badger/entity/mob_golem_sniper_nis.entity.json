@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interaction_presentation": {
+          "trigger_specific_events": true,
+          "trigger_generic_events": false
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_poi_golem_sniper_piece_attract_body"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_sniper_nis"
+      },
+      "badger:hud_message_interaction_failed": {
+        "resource_cost_failed_message": {
+          "hud_message_id": "interact_cost_required",
+          "hud_message_args": ["100", "resources.gold.name", "key.item.gold", "500", "resources.wood.name", "key.item.wood", "poi.ally.05.name"]
+        },
+        "unlock_cost_failed_message": {
+          "hud_message_id": "interact_unlock_required",
+          "hud_message_args": ["structures.unlock.poi.golem.name","poi.ally.05.name"]
+        }
+      },
+      "badger:template": ["badger:template_mob"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.mob_golem_sniper_nis.default",
+        "nis_assemble": "animation.mob_golem_sniper_nis.nis_assemble",
+        "nis_disassemble": "animation.mob_golem_sniper_nis.nis_disassemble"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "assemble": "variable.is_assemble = 1;",
+        "disassemble": "variable.is_assemble = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "mob_golem_sniper_nis": "geometry.mob_golem_sniper_nis"
+      },
+      "identifier": "badger:mob_golem_sniper_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_generic_buff_256": "mat_fx_generic_buff_256",
+        "mat_mob_golem_sniper": "mat_mob_golem_sniper"
+      },
+      "particle_effects": {
+        "fx_beams": "badger:fx_cine_sniper_golem_back_rays",
+        "fx_body_sparkles": "badger:fx_cine_sniper_golem_body_sparkles",
+        "fx_leg_sparkles": "badger:fx_cine_sniper_golem_leg_sparkles",
+        "fx_nose_attach": "badger:fx_cine_sniper_golem_attach_nose",
+        "fx_nose_sparkle": "badger:fx_cine_sniper_golem_nose_sparkles",
+        "fx_sparkle_limb": "badger:fx_cine_sniper_golem_limb_sparkles",
+        "fx_step": "badger:fx_cine_sniper_golem_step",
+        "fx_tar_body": "badger:fx_cine_sniper_golem_tar_body",
+        "fx_tar_limb01": "badger:fx_cine_sniper_golem_limb_tar",
+        "fx_tar_limb02": "badger:fx_cine_sniper_golem_limb_tar01",
+        "fx_tar_small": "badger:fx_cine_sniper_golem_tar_small"
+      },
+      "render_controllers": ["controller.render.mob_golem_sniper_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;"]
+      },
+      "sound_effects": {
+        "nis_assemble": "BAE_cine_gol05_c01_nis_assemble"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "on_fire": {
+          "script": "on_fire"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_tower_piglin_knockback"
+      }
+    },
+    "description": {
+      "animations": {
+        "death": "animation.entity_struct_tower_piglin_knockback.death",
+        "default": "controller.animation.entity_struct_tower_piglin_knockback.default",
+        "fire_a": "animation.entity_struct_tower_piglin_knockback.fire_a",
+        "spawn": "animation.entity_struct_tower_piglin_knockback.spawn"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "on_fire": "variable.fire = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_tower_piglin_knockback"
+      },
+      "identifier": "badger:entity_struct_tower_piglin_knockback",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_death": "badger:fx_destruction_piglin_knockback",
+        "fx_smoke": "badger:fx_entity_struct_tower_piglin_knockback_attack",
+        "fx_windup": "badger:fx_entity_struct_tower_piglin_knockback_windup"
+      },
+      "render_controllers": ["controller.render.entity_struct_tower_piglin_knockback"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "attack": "BAE_tower_piglin_knockback_attack",
+        "idle_high": "BAE_tower_piglin_knockback_idle_high",
+        "idle_high_stop": "BAE_tower_piglin_knockback_idle_high_stop",
+        "idle_low": "BAE_tower_piglin_knockback_idle_low",
+        "idle_low_stop": "BAE_tower_piglin_knockback_idle_low_stop",
+        "reload": "BAE_tower_piglin_knockback_reload",
+        "windup": "BAE_tower_piglin_knockback_windup"
+      }
+    }
+  }
+}

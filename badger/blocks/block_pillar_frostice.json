@@ -1,0 +1,26 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_pillar_frostice": {
+            "textures": {
+                "up": "textures/blocks/tex_block_ice_top",
+                "down": "textures/blocks/tex_block_ice_top",
+                "side": "textures/blocks/tex_block_ice_mid"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_snow_icicle_drops_water",
+                        "range": "near",
+                        "probability": 0.1,
+                        "offset": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ]                   
+                    }
+                ]           
+            }
+        }
+    }
+}

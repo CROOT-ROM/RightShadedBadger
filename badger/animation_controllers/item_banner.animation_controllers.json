@@ -1,0 +1,95 @@
+{
+  "animation_controllers": {
+    "controller.animation.item_banner.default": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "trigger_direct": "variable.direct_state"
+            },
+            {
+              "trigger_lure": "variable.lure_state"
+            },
+            {
+              "placeable_lure": "variable.placeable_lure_state"
+            },
+            {
+              "placeable_direct": "variable.placeable_direct_state"
+            },
+            {
+              "stop_lure": "variable.stop_lure_state"
+            }
+          ]
+        },
+        "placeable_direct": {
+          "animations":  [
+            {
+              "placeable_direct": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "placeable_lure": {
+          "animations":  [
+            {
+              "placeable_lure": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "stop_lure": {
+          "animations":  [
+            {
+              "stop_lure": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "trigger_direct": {
+          "animations":  [
+            {
+              "trigger_direct": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        },
+        "trigger_lure": {
+          "animations":  [
+            {
+              "trigger_lure": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

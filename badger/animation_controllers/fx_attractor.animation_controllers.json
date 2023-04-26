@@ -1,0 +1,20 @@
+{
+  "animation_controllers": {
+    "controller.animation.fx_attractor.default": {
+      "initial_state": "spawn",
+      "states": {
+        "spawn": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_med",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

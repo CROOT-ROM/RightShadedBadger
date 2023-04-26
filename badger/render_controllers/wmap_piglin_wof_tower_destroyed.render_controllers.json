@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_piglin_wof_tower_destroyed": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_piglin_wof_tower_destroyed": "MetaMaterial.mat_wmap_piglin_wof_tower_destroyed"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

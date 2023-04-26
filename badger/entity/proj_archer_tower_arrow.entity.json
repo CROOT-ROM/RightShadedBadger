@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_archer_tower_arrow",
+      "materials": {
+        "mat_proj_arrow": "mat_proj_arrow"
+      },
+      "geometry": {
+        "default": "geometry.proj_arrow"
+      },
+      "particle_effects": {
+        "fx_arrow_hit": "badger:fx_shared_arrow_hit"
+      },
+      "render_controllers": [
+        "controller.render.proj_arrow"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "kaboomery_start": {
+          "audio": "BAE_tower_arrow_projectile_upgraded"
+        },  
+        "on_initialized": {
+          "particles": {
+            "effect": "badger:fx_proj_small_explosion_trail",
+            "locator": "loc_fx_main",
+            "enabled": true,
+            "bind_to_actor": true
+          },
+          "audio": "BAE_proj_tower_arrow"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_tower_arrow_projectile_impact_entity",
+          "particles": [
+            {
+              "effect": "badger:fx_shared_hit_normal",
+              "locator": "loc_fx_main",
+              "enabled": true
+            }
+          ]
+        },
+        "on_world_hit": {
+          "audio": "BAE_tower_arrow_projectile_impact_world",
+          "particles": "badger:fx_shared_arrow_hit"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_archer_tower_arrow"
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_default"
+      }
+    }
+  }
+}

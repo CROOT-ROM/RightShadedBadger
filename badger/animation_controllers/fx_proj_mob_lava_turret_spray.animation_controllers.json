@@ -1,0 +1,33 @@
+{
+  "animation_controllers": {
+    "controller.animation.fx_proj_mob_lava_turret_spray.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "static": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    },
+    "controller.animation.fx_proj_mob_lava_turret_spray.fxcontroller": {
+      "initial_state": "normal_1",
+      "states": {
+        "normal_1": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fxtrail",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

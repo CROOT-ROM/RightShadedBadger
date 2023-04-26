@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_nether_brick_purple_moss": {
+            "textures": 
+            {
+                "up": "textures/blocks/tex_block_nether_brick_purple_moss_top",
+                "down": "textures/blocks/tex_block_nether_brick_purple_moss_top",
+                "side": "textures/blocks/tex_block_nether_brick_purple_moss"
+              }
+        }
+    }
+}

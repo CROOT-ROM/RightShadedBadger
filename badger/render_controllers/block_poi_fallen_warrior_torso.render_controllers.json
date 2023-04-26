@@ -1,0 +1,16 @@
+{
+  "render_controllers": {
+    "controller.render.block_poi_fallen_warrior_torso": {
+      "geometry": "Geometry.block_poi_fallen_warrior_torso",
+      "materials":  [
+        {
+          "mat_mob_fallen_warrior_face": "MetaMaterial.mat_mob_fallen_warrior_face"
+        },
+        {
+          "mat_mob_fallen_warrior": "MetaMaterial.mat_mob_fallen_warrior"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

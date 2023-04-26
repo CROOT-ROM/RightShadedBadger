@@ -1,0 +1,148 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "minecraft:grass": {
+            "decoration": "deco_grass",
+            "isotropic": {
+                "up": true,
+                "down": true
+            },
+            "textures": {
+                "up": "grass_top",
+                "down": "grass_bottom",
+                "side": [
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#7cb85c"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#669e49"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#608a46"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#649957"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#FF0000"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#88bb66"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#86b87f"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#64c73f"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#86b783"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#83b593"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#80b497"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#91bd59"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#90814d"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#8eb971"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#6a7039"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#507a32"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#dbcf2a"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#f0e335"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#c4f035"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#9ae038"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#b3e038"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#8a9929"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#b3c736"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#b2db40"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#b5c842"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#8e9e2f"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#cdcd17"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#c0cb04"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#7ca023"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#a18139"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#5c6135"
+                    },
+                    {
+                        "path": "textures/blocks/grass_side",
+                        "overlay_color": "#a19c4c"
+                    },
+                    "textures/blocks/grass_side"
+                ]
+            },
+            "sound": "grass"
+        }
+    }
+}

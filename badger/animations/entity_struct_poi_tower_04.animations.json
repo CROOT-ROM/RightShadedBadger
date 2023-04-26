@@ -1,0 +1,217 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.entity_struct_poi_tower_04.idle_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_dinger_m": {
+          "lod_distance": 0.0,
+          "rotation": {
+            "0.0": [0.0,0.0,0.10000000149011612],
+            "0.666666666667": [0.0,0.0,0.10000000149011612],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame"
+    },
+    "animation.entity_struct_poi_tower_04.spawn_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_dinger_m": {
+          "lod_distance": 0.0,
+          "rotation": {
+            "0.0": [0.0,0.0,0.10000000149011612],
+            "0.666666666667": [0.0,0.0,0.10000000149011612],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame"
+    },
+    "animation.entity_struct_poi_tower_04.ring_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_bell_m": {
+          "lod_distance": 0.0,
+          "rotation": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.266666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.533333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,34.42348861694336]
+            },
+            "0.666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,18.451967239379883]
+            },
+            "0.7": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-2.228896141052246]
+            },
+            "0.733333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-11.47718620300293]
+            },
+            "0.8": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-20.964252471923828]
+            },
+            "1.06666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-31.022743225097656]
+            },
+            "1.6": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,23.8135929107666]
+            },
+            "2.16666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-15.216302871704102]
+            },
+            "2.7": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,6.383762359619141]
+            },
+            "3.23333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-1.1160141229629517]
+            },
+            "4.33333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "lod_distance": 0.0
+          }
+        },
+        "joint_dinger_m": {
+          "lod_distance": 0.0,
+          "rotation": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.133333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.011177596636116505,0.019724728539586067,4.989688873291016]
+            },
+            "0.2": {
+              "lerp_mode": "catmullrom",
+              "post": [0.08361189812421799,0.15637288987636566,5.252580642700195]
+            },
+            "0.233333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.13354428112506866,0.25919654965400696,5.384027004241943]
+            },
+            "0.266666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.18507061898708344,0.3756200671195984,-49.67261505126953]
+            },
+            "0.3": {
+              "lerp_mode": "catmullrom",
+              "post": [0.23252874612808228,0.4985935688018799,-104.72925567626953]
+            },
+            "0.333333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.26659777760505676,0.6465622186660767,-116.4261474609375]
+            },
+            "0.4": {
+              "lerp_mode": "catmullrom",
+              "post": [0.3034282624721527,1.0348608493804932,-142.23997497558594]
+            },
+            "0.533333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.4898405075073242,1.6950222253799438,-153.51547241210938]
+            },
+            "0.666666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [3.430680990219116,-0.2323337197303772,-83.8326644897461]
+            },
+            "0.7": {
+              "lerp_mode": "catmullrom",
+              "post": [1.3662254810333252,-0.02904171496629715,-33.169002532958984]
+            },
+            "0.733333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.8": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,-2.3241379261016846]
+            },
+            "1.06666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "2.16666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "4.33333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "0.01":  [
+          {
+            "effect": "fx_attack",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          },
+          {
+            "effect": "fx_attack",
+            "enabled": true,
+            "locator": "loc_fx_main_low"
+          }
+        ]
+      },
+      "sound_effects": {
+        "0.067":  [
+          {
+            "effect": "fire",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    "animation.entity_struct_poi_tower_04.death_a": {
+      "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
+      "blend_weight": "1",
+      "bones": {
+        "joint_dinger_m": {
+          "lod_distance": 0.0,
+          "rotation": {
+            "0.0": [0.0,0.0,0.10000000149011612],
+            "0.666666666667": [0.0,0.0,0.10000000149011612],
+            "lod_distance": 0.0
+          }
+        }
+      },
+      "loop": "hold_last_frame",
+      "particle_effects": {
+        "0.01":  [
+          {
+            "bind_to_actor": false,
+            "effect": "fx_death",
+            "enabled": true,
+            "locator": "fx_loc_bell"
+          }
+        ]
+      }
+    }
+  }
+}

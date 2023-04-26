@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_pipe_vent_no_fx": {
+            "decoration": "deco_pipe_vent"
+           
+         
+        }
+    }
+}

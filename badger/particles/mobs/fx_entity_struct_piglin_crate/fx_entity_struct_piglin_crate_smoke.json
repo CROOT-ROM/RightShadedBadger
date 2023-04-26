@@ -1,0 +1,38 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_entity_struct_piglin_crate_smoke",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_mesh_blend_smoke_piglin_crate" ]
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_mesh" : {
+            "facing_camera_mode" : "emitter_transform_xy",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 5,
+                  "frame_end" : 24,
+                  "rows_count" : 5
+               }
+            },
+            "geometry" : "geometry.fx_msh_piglin_crate_smoke"
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(0.2,1.0)"
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

@@ -1,0 +1,23 @@
+{
+	//--------------------------------------------------------------------------------
+	// BBI-NOTE: the screens / definitions below are still referenced in Badger
+	//--------------------------------------------------------------------------------
+
+	"ui_defs": [
+		"ui/chat_screen.json",
+		"ui/chat_settings_menu_screen.json",
+		"ui/content_log.json",
+		"ui/debug_screen.json",
+		"ui/dev_console_screen.json",
+		"ui/progress_screen.json",
+		"ui/store_common.json",
+		"ui/toast_screen.json",
+		"ui/ui_art_assets_common.json",
+		"ui/ui_common.json",
+		"ui/ui_common_classic.json",
+		"ui/ui_template_buttons.json",
+		"ui/ui_template_dialogs.json",
+		"ui/ui_template_tabs.json",
+		"ui/ui_template_toggles.json"
+	]
+}

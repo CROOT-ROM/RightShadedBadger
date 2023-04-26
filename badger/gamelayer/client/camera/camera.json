@@ -1,0 +1,8 @@
+{
+	"gameplay_camera_id": "orbit",
+	"creative_camera_id": "creative",
+	"toggleable_cameras": [
+        "strategic",
+        "worldmap"
+	]
+}

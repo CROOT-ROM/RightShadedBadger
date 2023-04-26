@@ -1,0 +1,127 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_creeper_explosion",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.terrain_type" ]
+      },
+      "events" : {
+         "creeper_center" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_center",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_circle_flames" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_circleflames",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 7.0, 7.0, 7.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.75,
+                  "lifetime" : 4.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_creeper_explosion"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_creeper_explosion"
+               }
+            }
+         },
+         "creeper_fireshockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_fireshockwave",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_lefover_smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_leftsmoke",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_smoke_center" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_smokecenter",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_smoke_center_streaks" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_centerstreaks",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_smokering_back" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_smokeringback",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_smokering_front" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_smokeringfront",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_sparks" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_creeper_explosion_sparks",
+               "type" : "emitter_bound"
+            }
+         },
+         "creeper_world_explosion" : {
+            "game_effects" : {
+               "badger:particles_block_spawner_trigger" : {
+                  "radius" : 15.0,
+                  "trigger_id" : "explosion"
+               }
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "creeper_smokering_back",
+               "creeper_smoke_center_streaks",
+               "creeper_smoke_center",
+               "creeper_center",
+               "creeper_sparks",
+               "creeper_circle_flames",
+               "creeper_smokering_front"
+            ],
+            "timeline" : {
+               "0.100000" : [ "creeper_fireshockwave" ],
+               "0.150000" : [
+                  "creeper_parts",
+                  "creeper_decorations_collision",
+                  "creeper_world_explosion"
+               ],
+               "1.000000" : [ "creeper_lefover_smoke" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.0
+         }
+      }
+   }
+}

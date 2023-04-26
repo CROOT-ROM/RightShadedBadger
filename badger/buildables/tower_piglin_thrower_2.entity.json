@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_thrower_2"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_tower_piglin_thrower_damage_stage0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_tower_piglin_thrower_damage_stage1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_tower_piglin_thrower_damage_stage2"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_tower_piglin_thrower_damage_destroyed"
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "block",
+          "pigThrowerTower"
+        ]
+      }
+    }
+  }
+}

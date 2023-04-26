@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:poi_zoner_well_of_fate"
+        },
+        "components": {
+            "badger:music_2d_emitter": {
+                "priority" : 10,
+                "max_distance" : 120.0,
+                "on_enter_bae" : "",
+                "music_states" :[
+                  {
+                    "state_name": "initial",
+                    "audio_parameters": [
+                        {"music_state" : 0.0},
+                        {"combat_intensity" : 0},
+                        {"music_state_pvp" : 0.0},
+                        {"combat_intensity_pvp" : 0},
+                        {"music_campaign_beat" : 0}
+                     ]
+                  }
+                ]
+              
+            }
+        }
+    }
+}

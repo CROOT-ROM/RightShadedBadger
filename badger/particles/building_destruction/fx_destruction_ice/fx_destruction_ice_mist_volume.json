@@ -1,0 +1,87 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_destruction_ice_mist_volume",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_blend_ramp_smoke_fp_ice"]
+      }
+    },
+    "molang_variables_inheritance": {
+      "variables": [
+        "variable.size"
+      ]
+    },
+    "components": {
+      "minecraft:emitter_rate_variable": {
+        "spawn_rate": "20 * variable.size",
+        "max_particles": 60
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 1.0
+      },
+      "minecraft:emitter_shape_box": {
+        "offset": [
+          0,
+          7,
+          -3
+        ],
+        "half_dimensions": [
+          "1.25 * variable.size",
+          "3 * variable.size",
+          "1.25 * variable.size"
+        ],
+        "surface_only": false,
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "direction_mode": "custom"
+      },
+      "minecraft:particle_initial_speed": 2.5,
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(-180, 180)",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(0.9,1.5)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 0.5,
+        "linear_acceleration": [
+          0,
+          "(query.particle_normalized_age < 0.2) ? 0 : query.particle_normalized_age * -2",
+          0
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "1.5",
+          "1.5"
+        ],
+        "initial_scale": [
+          0.75,
+          1.75
+        ],
+        "facing_camera_mode": "lookat_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 12,
+            "rows_count": 4,
+            "frame_iteration": "row",
+            "row_index": [
+              0,
+              3
+            ],
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      }
+    }
+  }
+}

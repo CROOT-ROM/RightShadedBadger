@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_animal_horse:base_entity": {
+    "pass": "AlphaTest",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_animal_horse_d",
+      "coeffMap": "textures/entity/tex_animal_horse_mr",
+      "normalMap": "textures/entity/tex_animal_horse_n"
+    }
+  }
+}

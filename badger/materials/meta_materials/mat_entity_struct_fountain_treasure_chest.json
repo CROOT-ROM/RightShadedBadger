@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "mat_entity_struct_fountain_treasure_chest:base_entity_with_construction": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 0,
+      "stencilmask": 255,
+      "frontface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      },
+      "backface": {
+        "stencilfailop": "keep",
+        "stencildepthfailop": "keep",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      }
+    },
+    "culling": "none",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_entity_struct_fountain_treasure_chest_d",
+      "emissiveMap": "textures/entity/tex_entity_struct_fountain_treasure_chest_e",
+      "normalMap": "textures/entity/tex_entity_struct_fountain_treasure_chest_n",
+      "coeffMap": "textures/entity/tex_entity_struct_fountain_treasure_chest_mr"
+    },
+    "uniforms": {
+      "ConstructionTime": 1.0,
+      "GlowColor": [
+        "0.25",
+        "0.875",
+        "1.0",
+        "0.0"
+      ],
+      "GlowIntensity": 50.0,
+      "GlowTime": 1.0,
+      "GlowBorderSize": 0.6,
+      "GlowBorderFade": 8.0,
+      "Age": "query.age"
+    }
+  }
+}

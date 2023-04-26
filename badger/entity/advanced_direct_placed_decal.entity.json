@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:advanced_direct_placed_decal"
+    },
+    "components": {
+      "badger:decal_visualization": {
+        "decal_textures": [
+          "decal_orders"
+        ],
+        "is_symmetric_texture": true,
+        "animation_frame_count": 12,
+        "animation_framerate": 15,
+        "lifetime": 0.8,
+        "fade_out_start": 0.8,
+        "decal_size": [
+          3.5,
+          2.25,
+          3.5
+        ],
+        "bin": "overlay",
+        "shape": "none",
+        "sort_key": 10,
+        "apply_to_owned": true,
+        "height_fade": true,
+        "start_enabled": true
+      },
+      "badger:removal_time": {
+        "time": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_rivershore_02": {
+            "decoration": "river_shore_grass",
+            "textures": {
+                "up": "textures/blocks/tex_block_rivershore_top",
+                "down": "textures/blocks/tex_block_rivershore_top",
+                "side": "textures/blocks/tex_block_rivershore_side"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_dragonflies_fateful",
+                        "range": "near",
+                        "probability": 0.005                    
+                    }
+                ]           
+            }
+        }
+    }
+}

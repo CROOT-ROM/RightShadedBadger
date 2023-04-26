@@ -1,0 +1,54 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_es_super_netherpsreader_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.0
+         }
+      },
+      "events" : {
+         "nether_kickup" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_es_super_netherpsreader_impact_nether_kickup",
+               "type" : "emitter"
+            }
+         },
+         "super_nether_world_explosion" : {
+            "game_effects" : {
+               "badger:particles_block_spawner_trigger" : {
+                  "radius" : 65.0,
+                  "trigger_id" : "explosion"
+               }
+            }
+         },
+         "super_netherspreader_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 85.0, 85.0, 85.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.95,
+                  "lifetime" : 20.0,
+                  "texture" : "decal_cracks_big"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_super_netherspreader"
+               }
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "nether_kickup",
+               "super_netherspreader_decorations_collision",
+               "super_nether_world_explosion"
+            ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

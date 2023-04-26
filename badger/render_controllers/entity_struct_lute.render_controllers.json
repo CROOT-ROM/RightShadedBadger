@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_lute": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_onboarding_items": "MetaMaterial.mat_entity_struct_onboarding_items"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

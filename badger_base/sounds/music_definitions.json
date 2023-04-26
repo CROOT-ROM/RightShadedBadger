@@ -1,0 +1,40 @@
+{
+  "format_version": "1.0.0",
+  "music_definitions": {
+    "game": {
+      "event_name": "",
+      "min_delay": 600,
+      "max_delay": 1200
+    },
+    "creative": {
+      "event_name": "",
+      "min_delay": 90,
+      "max_delay": 300
+    },
+    "end": {
+      "event_name": "",
+      "min_delay": 20,
+      "max_delay": 22
+    },
+    "endboss": {
+      "event_name": "",
+      "min_delay": 20,
+      "max_delay": 22
+    },
+    "nether": {
+      "event_name": "",
+      "min_delay": 20,
+      "max_delay": 22
+    },
+    "credits": {
+      "event_name": "",
+      "min_delay": 20,
+      "max_delay": 22
+    },
+    "menu": {
+      "event_name": "event:/music/MUS_FrontEnd",
+      "min_delay": 1,
+      "max_delay": 1
+    }
+  }
+}

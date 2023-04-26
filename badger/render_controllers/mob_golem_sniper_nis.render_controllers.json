@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_sniper_nis": {
+      "geometry": "Geometry.mob_golem_sniper_nis",
+      "materials":  [
+        {
+          "mat_mob_golem_sniper": "MetaMaterial.mat_mob_golem_sniper"
+        },
+        {
+          "mat_fx_generic_buff_256": "MetaMaterial.mat_fx_generic_buff_256"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

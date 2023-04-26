@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.proj_arrow": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_proj_arrow": "MetaMaterial.mat_proj_arrow"
+                }
+            ]
+        }
+    }
+}

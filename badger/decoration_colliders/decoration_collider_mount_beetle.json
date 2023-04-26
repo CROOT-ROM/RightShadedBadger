@@ -1,0 +1,14 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier" : "badger:decoration_collider_mount_beetle",
+          "offset": [0.0, 0.0, 0.0],
+          "height": 1.8,
+          "length": 1.2,
+          "yaw": 0.0,
+          "inner_radius": 1.5,
+          "outer_radius": 3.0,
+          "intensity": 1.0,
+          "priority": 1000
+    }
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "button_id": "button.destroy_or_attack",
+    "key_id": "key.action",
+    "focus_impact": "neutral"
+  },
+  //{
+  //	"button_id": "button.build_or_interact",
+  //	"key_id": "key.build",
+  //	"focus_impact": "neutral"
+  //},
+  {
+    "button_id": "button.slot1",
+    "key_id": "key.hotbar.1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot2",
+    "key_id": "key.hotbar.2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot3",
+    "key_id": "key.hotbar.3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot4",
+    "key_id": "key.hotbar.4",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot5",
+    "key_id": "key.hotbar.5",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot6",
+    "key_id": "key.hotbar.6",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot7",
+    "key_id": "key.hotbar.7",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot8",
+    "key_id": "key.hotbar.8",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slot9",
+    "key_id": "key.hotbar.9",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toggle_perspective",
+    "key_id": "key.togglePerspective",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.fly_fast",
+    "key_id": "key.flyFast",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.simulate_touch",
+    "key_id": "key.simulateTouch",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.look_up_slight",
+    "key_id": "key.lookUpSlight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_down_slight",
+    "key_id": "key.lookDownSlight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_up_right",
+    "key_id": "key.lookUpRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_up",
+    "key_id": "key.lookUp",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_up_left",
+    "key_id": "key.lookUpLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_right",
+    "key_id": "key.lookRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_center",
+    "key_id": "key.lookCenter",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_left",
+    "key_id": "key.lookLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_down_right",
+    "key_id": "key.lookDownRight",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_down",
+    "key_id": "key.lookDown",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_down_left",
+    "key_id": "key.lookDownLeft",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_up_smooth",
+    "key_id": "key.lookUpSmooth",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_down_smooth",
+    "key_id": "key.lookDownSmooth",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_left_smooth",
+    "key_id": "key.lookLeftSmooth",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.look_right_smooth",
+    "key_id": "key.lookRightSmooth",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.jump",
+    "key_id": "key.jump",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.sneak",
+    "key_id": "key.sneak",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.sprint",
+    "key_id": "key.sprint",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.left",
+    "key_id": "key.left",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.right",
+    "key_id": "key.right",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.down",
+    "key_id": "key.back",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.up",
+    "key_id": "key.forward",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.chat",
+    "key_id": "key.chat",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.mobeffects",
+    "key_id": "key.mobEffects",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.interactwithtoast",
+    "key_id": "key.interactwithtoast",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.console",
+    "key_id": "key.command",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.pause",
+    "key_id": "key.menu.pause",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.game_mode",
+    "key_id": "key.gameMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.render_debug",
+    "key_id": "key.renderDebug",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.map_screen",
+    "key_id": "key.mapScreen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.songbook_screen",
+    "key_id": "key.songbookScreen",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_clockwise",
+    "key_id": "key.rotatePreviewClockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.rotate_preview_counterclockwise",
+    "key_id": "key.rotatePreviewCounterclockwise",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.open_imgui",
+    "key_id": "key.openImgui",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.ui.show_recipe",
+    "key_id": "key.showrecipe",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.toggle_blockpicking",
+    "key_id": "key.toggleBlockPicking",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.place_block",
+    "key_id": "key.build",
+    "focus_impact": "neutral"
+  }
+]

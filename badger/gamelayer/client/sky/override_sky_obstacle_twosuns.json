@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_obstacle_twosuns",
+	"imgui_category": "ObstacleBase/TwoSuns",
+	"imgui_prefix": "obstacle_ts",
+	"is_override": true,
+	"sky_color": "curve.obstacle_ts_sky_color",
+	"sky_horizon_color": "curve.obstacle_ts_sky_horizon_color",
+	"cloud_color": "curve.obstacle_ts_cloud_color",
+	"cloud_shadows": "curve.obstacle_ts_cloud_shadows",
+	"ambient_color": "curve.obstacle_ts_ambient_color",
+	"direct_color": "curve.obstacle_ts_direct_color",
+	"fog_color": "curve.obstacle_ts_fog_color",
+	"atmosphere_params": "curve.obstacle_ts_atmosphere_params",
+	"horizon_params": "curve.obstacle_ts_horizon_params",
+	"fog_params": "curve.obstacle_ts_fog_params",
+		"objects": [
+		{
+			"name": "sun_a",
+			"color_a": "curve.obstacle_ts_sun_color"
+		},
+		{
+			"name": "sun_b",
+			"color_a": "curve.obstacle_ts_moon_color"
+		}
+	]
+}

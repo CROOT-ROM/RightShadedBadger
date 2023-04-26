@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_whiterock_var01": {
+      "textures": {
+        "up": "textures/blocks/tex_block_whitestone_top",
+        "down": "textures/blocks/tex_block_whitestone_top",
+        "side": "textures/blocks/tex_block_whitestone_01"
+      }
+    }
+  }
+}

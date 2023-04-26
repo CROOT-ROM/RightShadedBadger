@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0", 
+    "badger:client_block": {
+        "badger:block_deco_village_cloth_bottom_var01": {
+            "decoration": {
+                "default": "deco_village_cloth_bottom_var01_m",
+                "l": "deco_village_cloth_bottom_var01_r",
+                "l_mirror": "deco_village_cloth_bottom_var01_l",
+                "line": "deco_village_cloth_bottom_var01_m"
+            }
+        }
+    }
+}

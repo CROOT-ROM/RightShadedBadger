@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_riverbed_blend_02": {
+            "textures": {
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_riverbed_blend_01",
+                          "empty" :"textures/blocks/tex_block_riverbed_stone_a",
+                          "L" : "textures/blocks/tex_block_riverbed_blend_01_L",
+                          "line" : "textures/blocks/tex_block_riverbed_blend_01_line",
+                          "cross" : "textures/blocks/tex_block_riverbed_blend_01_cross",
+                          "spoke" : "textures/blocks/tex_block_riverbed_blend_01_spoke",
+                           "T" : "textures/blocks/tex_block_riverbed_blend_01_T"
+                      }
+                },          
+                "side": "textures/blocks/tex_block_riverbed_side_b2"
+                }
+            }
+        }
+    }

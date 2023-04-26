@@ -1,0 +1,2083 @@
+{
+	"badger:settings" : {
+		"renderer" : {
+			"advanced_direct_line_display_time" : {
+				"value" : 3.0
+			},
+			"advanced_direct_line_fadeout_end_length" : {
+				"value" : 10.0
+			},
+			"advanced_direct_line_fadeout_start_length" : {
+				"value" : 20.0
+			},
+			"advanced_direct_line_fadeout_time" : {
+				"value" : 1.0
+			},
+			"ambient_color" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					},
+					{
+						"time" : 0.05,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					},
+					{
+						"time" : 0.3,
+						"value" : [ 0.4, 0.4, 0.4, 0.0 ]
+					},
+					{
+						"time" : 0.45,
+						"value" : [ 0.18, 0.18, 0.18, 0.0 ]
+					},
+					{
+						"time" : 0.55,
+						"value" : [ 0.18, 0.18, 0.18, 0.0 ]
+					},
+					{
+						"time" : 0.7,
+						"value" : [ 0.4, 0.4, 0.4, 0.0 ]
+					},
+					{
+						"time" : 0.95,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					}
+				]
+			},
+			"ambient_light_scale" : {
+				"value" : 1.0
+			},
+			"anim_enable_stagger" : {
+				"value" : true
+			},
+			"anim_enable_update_rate" : {
+				"value" : true
+			},
+			"anim_init_max_time_in_frame" : {
+				"value" : 2.0
+			},
+			"anim_update_far_distance" : {
+				"value" : 1.0
+			},
+			"anim_update_medium_distance" : {
+				"value" : 0.6
+			},
+			"anim_update_near_distance" : {
+				"value" : 0.4
+			},
+			"anim_update_rate_far" : {
+				"value" : 2.0
+			},
+			"anim_update_rate_medium" : {
+				"value" : 1.0
+			},
+			"anim_update_rate_near" : {
+				"value" : 0.0
+			},
+			"ao_amplifier" : {
+				"value" : 2.0
+			},
+			"ao_bias" : {
+				"value" : 0.1
+			},
+			"ao_kernel_size" : {
+				"value" : 32
+			},
+			"ao_radius" : {
+				"value" : 1.0
+			},
+			"ao_sub_sampling_factor" : {
+				"value" : 1.2
+			},
+			"attack_move_anim_speed" : {
+				"value" : 10.0
+			},
+			"attack_move_fill_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 1.0 ]
+			},
+			"attack_move_outline_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 0.0 ]
+			},
+			"biome_detection_radius" : {
+				"value" : 32.0
+			},
+			"block_light_transition_time" : {
+				"value" : 2.0
+			},
+			"block_source_cull_distance" : {
+				"value" : 50.0
+			},
+			"block_source_projectile_cull_distance" : {
+				"value" : 175.0
+			},
+			"bloom_intensity" : {
+				"value" : 0.055
+			},
+			"bloom_threshold" : {
+				"value" : 1.5
+			},
+			"brightness" : {
+				"value" : 0.5
+			},
+			"bumpiness" : {
+				"value" : 1.0
+			},
+			"cam_character_preview_eye" : {
+				"value" : [ -5.0, 0.0, 0.0, 6.0 ]
+			},
+			"cam_character_preview_fov" : {
+				"value" : 40.0
+			},
+			"cam_character_preview_target" : {
+				"value" : [ 0.0, 1.5, 0.0, 0.0 ]
+			},
+			"cloud_direction" : {
+				"value" : 0.32
+			},
+			"cloud_speed" : {
+				"value" : 1.0
+			},
+			"contrast" : {
+				"value" : 0.5
+			},
+			"crit_health_threshold" : {
+				"value" : 0.25
+			},
+			"debug_draw_anim_update_rate" : {
+				"value" : false
+			},
+			"debug_entity_culling" : {
+				"value" : false
+			},
+			"debug_water_biome_overrides" : {
+				"value" : false
+			},
+			"debug_water_dephts_color" : {
+				"value" : [ 0.02270270511507988, 0.7942234277725220, 0.9671361446380615, 0.0 ]
+			},
+			"debug_water_params" : {
+				"value" : [ 1.0, 1.54, 13.83, 0.0 ]
+			},
+			"debug_water_surface_color" : {
+				"value" : [ 0.0, 0.2447182089090347, 0.8685445785522461, 1.0 ]
+			},
+			"decoration_far_range" : {
+				"value" : 220.0
+			},
+			"decoration_horizon_range" : {
+				"value" : 512.0
+			},
+			"decoration_middle_range" : {
+				"value" : 80.0
+			},
+			"decoration_near_range" : {
+				"value" : 40.0
+			},
+			"decoration_probability_high" : {
+				"value" : 0.75
+			},
+			"decoration_probability_low" : {
+				"value" : 0.25
+			},
+			"decoration_probability_medium" : {
+				"value" : 0.5
+			},
+			"direct_color" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 16.0, 13.98399734497070, 8.8, 0.0 ]
+					},
+					{
+						"time" : 0.05,
+						"value" : [ 16.0, 13.08799743652344, 5.6, 0.05 ]
+					},
+					{
+						"time" : 0.1,
+						"value" : [ 16.0, 7.854542732238770, 3.2, 0.1 ]
+					},
+					{
+						"time" : 0.18,
+						"value" : [ 12.0, 3.897000074386597, 0.9, 0.25 ]
+					},
+					{
+						"time" : 0.3,
+						"value" : [ 1.0, 0.2181817293167114, 0.0, 0.35 ]
+					},
+					{
+						"time" : 0.3249999880790710,
+						"value" : [ 0.3, 0.5701117515563965, 3.0, 0.5 ]
+					},
+					{
+						"time" : 0.5,
+						"value" : [ 0.104, 0.3536022603511810, 2.6, 0.5 ]
+					},
+					{
+						"time" : 0.6750000119209290,
+						"value" : [ 0.3, 0.5701414346694946, 3.0, 0.5 ]
+					},
+					{
+						"time" : 0.7,
+						"value" : [ 1.0, 0.075, 0.815, 0.65 ]
+					},
+					{
+						"time" : 0.875,
+						"value" : [ 11.0, 1.375, 1.375, 0.75 ]
+					},
+					{
+						"time" : 0.9250000119209290,
+						"value" : [ 15.78843307495117, 16.0, 4.363636016845703, 0.9 ]
+					},
+					{
+						"time" : 0.9674999713897705,
+						"value" : [ 16.0, 13.08800029754639, 5.6, 0.95 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 16.0, 13.98400020599365, 8.8, 1.0 ]
+					}
+				]
+			},
+			"direct_light_scale" : {
+				"value" : 1.0
+			},
+			"direction_line_decal_height" : {
+				"value" : 2.5
+			},
+			"direction_line_display_time" : {
+				"value" : 3.0
+			},
+			"direction_line_fadeout_time" : {
+				"value" : 1.0
+			},
+			"direction_line_outline_softness" : {
+				"value" : 0.0
+			},
+			"direction_line_outline_thickness" : {
+				"value" : 0.0
+			},
+			"direction_line_width" : {
+				"value" : 0.5
+			},
+			"dof_aperture" : {
+				"value" : 8.0
+			},
+			"dof_focus_distance" : {
+				"value" : 0.0
+			},
+			"dof_focus_range" : {
+				"value" : 50.0
+			},
+			"dof_max_blur" : {
+				"value" : 16.0
+			},
+			"dof_quality" : {
+				"value" : 2
+			},
+			"emissive_scale" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					},
+					{
+						"time" : 0.2,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					},
+					{
+						"time" : 0.35,
+						"value" : [ 2.0, 2.0, 2.0, 0.0 ]
+					},
+					{
+						"time" : 0.65,
+						"value" : [ 2.0, 2.0, 2.0, 0.0 ]
+					},
+					{
+						"time" : 0.8,
+						"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+					}
+				]
+			},
+			"enable_bloom" : {
+				"value" : true
+			},
+			"enable_color_grading" : {
+				"value" : false
+			},
+			"enable_decals" : {
+				"value" : true
+			},
+			"enable_decorations" : {
+				"value" : true
+			},
+			"enable_depth_of_field" : {
+				"value" : true
+			},
+			"enable_ground_wetness" : {
+				"value" : true
+			},
+			"enable_light_emission" : {
+				"value" : true
+			},
+			"enable_light_rays" : {
+				"value" : false
+			},
+			"enable_non_statics" : {
+				"value" : true
+			},
+			"enable_outlines" : {
+				"value" : true
+			},
+			"enable_ssao" : {
+				"value" : true
+			},
+			"enable_static_shadows" : {
+				"value" : true
+			},
+			"enable_statics" : {
+				"value" : true
+			},
+			"entity_culling_level" : {
+				"value" : {
+					"entities_to_cull" : [
+						{
+							"value" : {
+								"archetype" : "badger:proj_rotters_boss_spit",
+								"level" : "low"
+							}
+						},
+						{
+							"value" : {
+								"archetype" : "badger:proj_spear_final_boss",
+								"level" : "low"
+							}
+						},
+						{
+							"value" : {
+								"archetype" : "badger:proj_redstone_launcher",
+								"level" : "low"
+							}
+						},
+						{
+							"value" : {
+								"archetype" : "badger:allay_celebration",
+								"level" : "low"
+							}
+						},
+						{
+							"value" : {
+								"archetype" : "badger:piglin_final_boss_nis",
+								"level" : "low"
+							}
+						},
+						{
+							"value" : {
+								"archetype" : "badger:piglin_final_boss",
+								"level" : "low"
+							}
+						}
+					],
+					"entity_cull_size_animation_high" : 5.0,
+					"entity_cull_size_animation_low" : 1.0,
+					"entity_cull_size_animation_medium" : 4.0,
+					"entity_cull_size_render_high" : 3.0,
+					"entity_cull_size_render_low" : 1.0,
+					"entity_cull_size_render_medium" : 2.0
+				}
+			},
+			"entity_enable_culling_distance" : {
+				"value" : true
+			},
+			"entity_enable_culling_out_cam" : {
+				"value" : true
+			},
+			"exposure" : {
+				"value" : 0.0
+			},
+			"fmv_resolution" : {
+				"value" : 1
+			},
+			"fog_dampener" : {
+				"value" : 2.0
+			},
+			"fog_depth" : {
+				"value" : 40.0
+			},
+			"fog_tint" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					},
+					{
+						"time" : 0.15,
+						"value" : [ 1.0, 0.7520657181739807, 0.4545451998710632, 1.0 ]
+					},
+					{
+						"time" : 0.25,
+						"value" : [ 1.0, 0.8370244503021240, 0.4727272987365723, 1.0 ]
+					},
+					{
+						"time" : 0.32,
+						"value" : [ 0.2181817889213562, 0.3773959577083588, 0.6545454263687134, 1.0 ]
+					},
+					{
+						"time" : 0.4,
+						"value" : [ 0.0175, 0.1387924402952194, 0.35, 1.0 ]
+					},
+					{
+						"time" : 0.45,
+						"value" : [ 0.0125, 0.09913729131221771, 0.25, 1.0 ]
+					},
+					{
+						"time" : 0.55,
+						"value" : [ 0.0125, 0.09913729131221771, 0.25, 1.0 ]
+					},
+					{
+						"time" : 0.6,
+						"value" : [ 0.0175, 0.1387924402952194, 0.35, 1.0 ]
+					},
+					{
+						"time" : 0.7250000238418579,
+						"value" : [ 0.2664462924003601, 0.3746263384819031, 0.5636363625526428, 1.0 ]
+					},
+					{
+						"time" : 0.8,
+						"value" : [ 1.0, 0.6, 0.6, 1.0 ]
+					},
+					{
+						"time" : 0.85,
+						"value" : [ 1.0, 0.9490908980369568, 0.6, 1.0 ]
+					},
+					{
+						"time" : 0.9,
+						"value" : [ 1.0, 0.9591184258460999, 0.6787878870964050, 1.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"footprint_decal_height" : {
+				"value" : 0.1
+			},
+			"footprint_lifetime" : {
+				"value" : 5.0
+			},
+			"footprint_max_count" : {
+				"value" : 0
+			},
+			"footprint_size_multiplier" : {
+				"value" : 0.1
+			},
+			"footprint_spacing_multiplier" : {
+				"value" : 0.5
+			},
+			"footprint_start_fade" : {
+				"value" : 0.0
+			},
+			"footprint_stride_multiplier" : {
+				"value" : 1.3
+			},
+			"footprints_enabled" : {
+				"value" : false
+			},
+			"force_move_anim_speed" : {
+				"value" : 10.0
+			},
+			"force_move_fill_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 1.0 ]
+			},
+			"force_move_outline_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 0.0 ]
+			},
+			"ground_wetness_intensity" : {
+				"value" : 0.018
+			},
+			"ground_wetness_scale" : {
+				"value" : 5.0
+			},
+			"ground_wetness_speed" : {
+				"value" : 5.0
+			},
+			"invulnerability_portal_0_diffuse_contribution" : {
+				"value" : 0.75
+			},
+			"invulnerability_portal_0_emissive_contribution" : {
+				"value" : 0.1
+			},
+			"invulnerability_portal_0_heart_beat_band_width" : {
+				"value" : 0.1
+			},
+			"invulnerability_portal_0_heart_beat_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 100.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 0.3674999773502350,
+						"value" : [ 30.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 100.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_heart_beat_color" : {
+				"value" : [ 0.94, 0.373, 0.069, 1.0 ]
+			},
+			"invulnerability_portal_0_heart_beat_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_0_heart_beat_edge_frequency" : {
+				"value" : 0.6
+			},
+			"invulnerability_portal_0_heart_beat_edge_variation" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_0_heart_beat_fade_curve" : {
+				"value" : 0.01
+			},
+			"invulnerability_portal_0_heart_beat_fade_out_time" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_0_heart_beat_fade_width" : {
+				"value" : 6.0
+			},
+			"invulnerability_portal_0_heart_beat_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_0_lava_color" : {
+				"value" : [ 0.8051947951316833, 0.3890490233898163, 0.01009650528430939, 0.04694837331771851 ]
+			},
+			"invulnerability_portal_0_lava_diffuse_brightness" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 0.143, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_lava_diffuse_contrast" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 4.324999809265137, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_lava_diffuse_max_intensity" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_0_lava_displacement_detail" : {
+				"value" : 4
+			},
+			"invulnerability_portal_0_lava_displacement_distance" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_0_lava_displacement_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_0_lava_displacement_speed" : {
+				"value" : 0.4
+			},
+			"invulnerability_portal_0_lava_emissive_brightness" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 0.169, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_lava_emissive_contrast" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 3.187999963760376, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_lava_emissive_max_intensity" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_0_lava_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_0_lava_texture_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_0_pixelation" : {
+				"value" : 6.0
+			},
+			"invulnerability_portal_0_pixelation_edge_weight" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_0_transition_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_0_transition_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 50.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_0_transition_color" : {
+				"value" : [ 0.9399141669273376, 0.3729405105113983, 0.06857744604349136, 1.0 ]
+			},
+			"invulnerability_portal_0_transition_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_0_transition_edge_frequency" : {
+				"value" : 0.6
+			},
+			"invulnerability_portal_0_transition_edge_variation" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_0_transition_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_0_transition_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_0_transition_play_on_start" : {
+				"value" : true
+			},
+			"invulnerability_portal_0_transition_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_1_diffuse_contribution" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_1_emissive_contribution" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_1_heart_beat_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_1_heart_beat_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_heart_beat_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"invulnerability_portal_1_heart_beat_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_1_heart_beat_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_1_heart_beat_edge_variation" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_1_heart_beat_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_1_heart_beat_fade_out_time" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_1_heart_beat_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_1_heart_beat_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_1_lava_color" : {
+				"value" : [ 0.8619999885559082, 0.169, 0.028, 1.0 ]
+			},
+			"invulnerability_portal_1_lava_diffuse_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_lava_diffuse_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_lava_diffuse_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_1_lava_displacement_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_1_lava_displacement_distance" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_1_lava_displacement_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_1_lava_displacement_speed" : {
+				"value" : 0.4
+			},
+			"invulnerability_portal_1_lava_emissive_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_lava_emissive_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_lava_emissive_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_1_lava_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_1_lava_texture_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_1_pixelation" : {
+				"value" : 7.5
+			},
+			"invulnerability_portal_1_pixelation_edge_weight" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_1_transition_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_1_transition_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_1_transition_color" : {
+				"value" : [ 0.94, 0.069, 0.338, 1.0 ]
+			},
+			"invulnerability_portal_1_transition_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_1_transition_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_1_transition_edge_variation" : {
+				"value" : 3.0
+			},
+			"invulnerability_portal_1_transition_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_1_transition_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_1_transition_play_on_start" : {
+				"value" : true
+			},
+			"invulnerability_portal_1_transition_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_2_diffuse_contribution" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_2_emissive_contribution" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_2_heart_beat_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_2_heart_beat_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_heart_beat_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"invulnerability_portal_2_heart_beat_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_2_heart_beat_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_2_heart_beat_edge_variation" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_2_heart_beat_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_2_heart_beat_fade_out_time" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_2_heart_beat_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_2_heart_beat_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_2_lava_color" : {
+				"value" : [ 0.8619999885559082, 0.169, 0.028, 1.0 ]
+			},
+			"invulnerability_portal_2_lava_diffuse_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_lava_diffuse_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_lava_diffuse_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_2_lava_displacement_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_2_lava_displacement_distance" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_2_lava_displacement_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_2_lava_displacement_speed" : {
+				"value" : 0.4
+			},
+			"invulnerability_portal_2_lava_emissive_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_lava_emissive_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_lava_emissive_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_2_lava_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_2_lava_texture_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_2_pixelation" : {
+				"value" : 7.5
+			},
+			"invulnerability_portal_2_pixelation_edge_weight" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_2_transition_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_2_transition_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_2_transition_color" : {
+				"value" : [ 0.94, 0.069, 0.338, 1.0 ]
+			},
+			"invulnerability_portal_2_transition_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_2_transition_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_2_transition_edge_variation" : {
+				"value" : 3.0
+			},
+			"invulnerability_portal_2_transition_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_2_transition_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_2_transition_play_on_start" : {
+				"value" : true
+			},
+			"invulnerability_portal_2_transition_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_3_diffuse_contribution" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_3_emissive_contribution" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_3_heart_beat_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_3_heart_beat_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_heart_beat_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"invulnerability_portal_3_heart_beat_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_3_heart_beat_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_3_heart_beat_edge_variation" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_3_heart_beat_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_3_heart_beat_fade_out_time" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_3_heart_beat_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_3_heart_beat_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_3_lava_color" : {
+				"value" : [ 0.8619999885559082, 0.169, 0.028, 1.0 ]
+			},
+			"invulnerability_portal_3_lava_diffuse_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_lava_diffuse_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_lava_diffuse_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_3_lava_displacement_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_3_lava_displacement_distance" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_3_lava_displacement_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_3_lava_displacement_speed" : {
+				"value" : 0.4
+			},
+			"invulnerability_portal_3_lava_emissive_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_lava_emissive_contrast" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_lava_emissive_max_intensity" : {
+				"value" : 1000.0
+			},
+			"invulnerability_portal_3_lava_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_3_lava_texture_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_3_pixelation" : {
+				"value" : 7.5
+			},
+			"invulnerability_portal_3_pixelation_edge_weight" : {
+				"value" : 0.0
+			},
+			"invulnerability_portal_3_transition_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_3_transition_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_3_transition_color" : {
+				"value" : [ 0.94, 0.069, 0.338, 1.0 ]
+			},
+			"invulnerability_portal_3_transition_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_3_transition_edge_frequency" : {
+				"value" : 0.3
+			},
+			"invulnerability_portal_3_transition_edge_variation" : {
+				"value" : 3.0
+			},
+			"invulnerability_portal_3_transition_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_3_transition_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_3_transition_play_on_start" : {
+				"value" : true
+			},
+			"invulnerability_portal_3_transition_speed" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_4_diffuse_contribution" : {
+				"value" : 0.75
+			},
+			"invulnerability_portal_4_emissive_contribution" : {
+				"value" : 0.1
+			},
+			"invulnerability_portal_4_heart_beat_band_width" : {
+				"value" : 0.1
+			},
+			"invulnerability_portal_4_heart_beat_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 100.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 0.3674999773502350,
+						"value" : [ 30.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 100.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_heart_beat_color" : {
+				"value" : [ 0.97, 0.35, 0.069, 1.0 ]
+			},
+			"invulnerability_portal_4_heart_beat_edge_animation_speed" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_4_heart_beat_edge_frequency" : {
+				"value" : 0.6
+			},
+			"invulnerability_portal_4_heart_beat_edge_variation" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_heart_beat_fade_curve" : {
+				"value" : 0.15
+			},
+			"invulnerability_portal_4_heart_beat_fade_out_time" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_heart_beat_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_heart_beat_speed" : {
+				"value" : -1.55
+			},
+			"invulnerability_portal_4_lava_color" : {
+				"value" : [ 0.8051947951316833, 0.3890490233898163, 0.01009650528430939, 0.04694837331771851 ]
+			},
+			"invulnerability_portal_4_lava_diffuse_brightness" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 0.143, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_lava_diffuse_contrast" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 4.324999809265137, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_lava_diffuse_max_intensity" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_4_lava_displacement_detail" : {
+				"value" : 4
+			},
+			"invulnerability_portal_4_lava_displacement_distance" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_4_lava_displacement_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_4_lava_displacement_speed" : {
+				"value" : 0.4
+			},
+			"invulnerability_portal_4_lava_emissive_brightness" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 0.169, 1.0, 1.0, 1.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_lava_emissive_contrast" : {
+				"value" : [
+					{
+						"time" : 0.241,
+						"value" : [ 3.187999963760376, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_lava_emissive_max_intensity" : {
+				"value" : 10.0
+			},
+			"invulnerability_portal_4_lava_frequency" : {
+				"value" : 0.175
+			},
+			"invulnerability_portal_4_lava_texture_detail" : {
+				"value" : 3
+			},
+			"invulnerability_portal_4_pixelation" : {
+				"value" : 6.0
+			},
+			"invulnerability_portal_4_pixelation_edge_weight" : {
+				"value" : 2.0
+			},
+			"invulnerability_portal_4_transition_band_width" : {
+				"value" : 0.2
+			},
+			"invulnerability_portal_4_transition_brightness" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 50.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"invulnerability_portal_4_transition_color" : {
+				"value" : [ 0.9399141669273376, 0.3729405105113983, 0.06857744604349136, 1.0 ]
+			},
+			"invulnerability_portal_4_transition_edge_animation_speed" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_transition_edge_frequency" : {
+				"value" : 0.6
+			},
+			"invulnerability_portal_4_transition_edge_variation" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_transition_fade_curve" : {
+				"value" : 0.005
+			},
+			"invulnerability_portal_4_transition_fade_width" : {
+				"value" : 1.0
+			},
+			"invulnerability_portal_4_transition_play_on_start" : {
+				"value" : false
+			},
+			"invulnerability_portal_4_transition_speed" : {
+				"value" : 10.0
+			},
+			"item_drop_vanishing_lifetime_percentage" : {
+				"value" : 0.3
+			},
+			"lava_edge_base" : {
+				"value" : [ 0.11, 1.03, 0.0, 64.0 ]
+			},
+			"lava_edge_base_color" : {
+				"value" : [ 1.0, 0.8169999718666077, 0.0, 1.0 ]
+			},
+			"lava_edge_base_wave" : {
+				"value" : [ 0.21, 0.92, 1.99, 16.0 ]
+			},
+			"lava_edge_base_wave_noise" : {
+				"value" : [ 1.08, 2.16, 0.39, 3.0 ]
+			},
+			"lava_edge_debug_multiplier_color" : {
+				"value" : [ 0.8360000252723694, 0.6909999847412109, 0.6909999847412109, 1.0 ]
+			},
+			"lava_edge_ring" : {
+				"value" : [ 0.0, -1.38, 0.0, 16.0 ]
+			},
+			"lava_edge_ring_color" : {
+				"value" : [ 0.972, 0.7739999890327454, 0.2509999871253967, 0.0 ]
+			},
+			"lava_edge_ring_wave" : {
+				"value" : [ 1.42, 0.69, 0.0, 8.0 ]
+			},
+			"lava_edge_ring_wave_noise" : {
+				"value" : [ 1.57, 0.91, 0.22, 2.0 ]
+			},
+			"light_probe" : {
+				"value" : ""
+			},
+			"light_rays_lighting_settings" : {
+				"value" : [ 0.6190000176429749, 3.0, 1.3, 0.15 ]
+			},
+			"light_rays_near_camera_boost_settings" : {
+				"value" : [ 2.0, 0.0, 0.0, 0.0 ]
+			},
+			"light_rays_precipitation_multiplier" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 1.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 10.0,
+						"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"light_rays_raymarching_settings" : {
+				"value" : [ 40.0, 80.0, 0.0, 0.0 ]
+			},
+			"long_distance_beacons_height" : {
+				"value" : 365.0
+			},
+			"low_health_threshold" : {
+				"value" : 0.75
+			},
+			"map_border_strength" : {
+				"value" : 0.1
+			},
+			"map_border_thickness" : {
+				"value" : 1.0
+			},
+			"max_entity_anim_ratio" : {
+				"value" : 0.75
+			},
+			"max_entity_render_auto_tune" : {
+				"value" : true
+			},
+			"max_entity_render_count" : {
+				"value" : -1
+			},
+			"max_entity_render_min_fps" : {
+				"value" : 10
+			},
+			"max_fog_range" : {
+				"value" : 96.0
+			},
+			"max_update_delay" : {
+				"value" : 0.35
+			},
+			"min_fog_range" : {
+				"value" : 4.0
+			},
+			"mob_indicator_decal_height" : {
+				"value" : 1.5
+			},
+			"mob_indicator_decal_size" : {
+				"value" : 1.5
+			},
+			"moon_position" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ -0.25, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.25,
+						"value" : [ 0.0, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.5,
+						"value" : [ 0.25, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.75,
+						"value" : [ 0.5, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 0.75, 0.0, 0.05, 0.0 ]
+					}
+				]
+			},
+			"nether_spores_biome" : {
+				"value" : "nether"
+			},
+			"nether_spores_biome_sampling" : {
+				"value" : true
+			},
+			"nether_spores_color" : {
+				"value" : [ 1.0, 0.08839780092239380, 0.08839780092239380, 1.0 ]
+			},
+			"nether_spores_density" : {
+				"value" : 0.35
+			},
+			"nether_spores_motion" : {
+				"value" : [ 0.05, 0.2, 0.0, 0.0 ]
+			},
+			"nether_spores_size" : {
+				"value" : [ 0.125, 0.2, 1.0, 0.0 ]
+			},
+			"nether_spores_uv" : {
+				"value" : [ 0.0, 0.6560000181198120, 0.25, 0.343 ]
+			},
+			"nether_spores_variation" : {
+				"value" : true
+			},
+			"outline_color" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.9 ]
+			},
+			"outline_depth_maxdist" : {
+				"value" : 121.0
+			},
+			"outline_feather" : {
+				"value" : [ 0.6, 0.2, 0.0, 0.0 ]
+			},
+			"outline_pulse_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"outline_pulse_time" : {
+				"value" : 2.0
+			},
+			"outline_team_max_depth_diff" : {
+				"value" : 3.0
+			},
+			"outline_team_maxdist" : {
+				"value" : 450.0
+			},
+			"outline_teamweight" : {
+				"value" : 1.5
+			},
+			"outline_teamweight_bannerview" : {
+				"value" : 2.5
+			},
+			"outline_threshold" : {
+				"value" : 0.75
+			},
+			"outline_weight" : {
+				"value" : 0.3
+			},
+			"overlays_aoi_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"overlays_aoi_params_0" : {
+				"value" : [ 0.75, 1.0, 0.0, 1.0 ]
+			},
+			"overlays_aoi_params_1" : {
+				"value" : [ 1.0, 1.0, 0.0, 0.0 ]
+			},
+			"overlays_aoi_params_2" : {
+				"value" : [ 1.5, 0.25, 15.0, 255.0 ]
+			},
+			"overlays_aoi_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_aura_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"overlays_aura_params_0" : {
+				"value" : [ 1.0, 2.0, 0.2, 0.0 ]
+			},
+			"overlays_aura_params_1" : {
+				"value" : [ 1.0, 0.0, 1.0, 0.25 ]
+			},
+			"overlays_aura_params_2" : {
+				"value" : [ 0.25, 0.25, 40.0, 255.0 ]
+			},
+			"overlays_aura_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_buff_color" : {
+				"value" : [ 1.0, 0.4, 1.0, 0.4 ]
+			},
+			"overlays_buff_params_0" : {
+				"value" : [ 1.0, 2.0, 0.2, 0.0 ]
+			},
+			"overlays_buff_params_1" : {
+				"value" : [ 1.0, 0.0, 1.0, 0.0 ]
+			},
+			"overlays_buff_params_2" : {
+				"value" : [ 0.25, 0.25, 30.0, 255.0 ]
+			},
+			"overlays_buff_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_color_healing" : {
+				"value" : [ 0.0, 0.88, 1.0, 0.45 ]
+			},
+			"overlays_color_highlight" : {
+				"value" : [ 0.87, 0.84, 0.02, 1.0 ]
+			},
+			"overlays_color_interaction" : {
+				"value" : [ 0.87, 0.84, 0.02, 1.0 ]
+			},
+			"overlays_color_rsl_target_zone" : {
+				"value" : [ 1.0, 0.01, 0.01, 0.75 ]
+			},
+			"overlays_culture_color" : {
+				"value" : [ 1.0, 1.0, 0.5, 1.0 ]
+			},
+			"overlays_culture_params_0" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_culture_params_1" : {
+				"value" : [ 1.0, 1.0, 0.0, 0.0 ]
+			},
+			"overlays_culture_params_2" : {
+				"value" : [ 0.25, 0.25, 15.0, 255.0 ]
+			},
+			"overlays_culture_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_default_color" : {
+				"value" : [ 1.0, 0.25, 1.0, 0.25 ]
+			},
+			"overlays_default_params_0" : {
+				"value" : [ 2.0, 1.0, 0.0, 1.0 ]
+			},
+			"overlays_default_params_1" : {
+				"value" : [ 1.0, 0.8, 0.0, 0.0 ]
+			},
+			"overlays_default_params_2" : {
+				"value" : [ 0.25, 0.25, 0.0, 255.0 ]
+			},
+			"overlays_default_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_healing_color" : {
+				"value" : [ 0.5, 0.3, 1.5, 1.0 ]
+			},
+			"overlays_healing_params_0" : {
+				"value" : [ -0.95, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_healing_params_1" : {
+				"value" : [ 1.0, 1.0, 0.0, 1.0 ]
+			},
+			"overlays_healing_params_2" : {
+				"value" : [ 0.25, 0.25, 0.0, 255.0 ]
+			},
+			"overlays_healing_sparkles" : {
+				"value" : [ 2.0, 0.1, 0.4, 0.1 ]
+			},
+			"overlays_highlight_color" : {
+				"value" : [ 1.0, 0.0, 2.0, 1.0 ]
+			},
+			"overlays_highlight_params_0" : {
+				"value" : [ 0.02, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_highlight_params_1" : {
+				"value" : [ 1.0, 0.8, 0.0, 0.0 ]
+			},
+			"overlays_highlight_params_2" : {
+				"value" : [ 0.25, 0.25, 0.0, 255.0 ]
+			},
+			"overlays_highlight_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_rsl_target_zone_color" : {
+				"value" : [ 1.1, 0.02, 1.3, 0.14 ]
+			},
+			"overlays_rsl_target_zone_params_0" : {
+				"value" : [ 0.4, 0.0, -0.5, 0.5 ]
+			},
+			"overlays_rsl_target_zone_params_1" : {
+				"value" : [ 1.0, 1.0, 1.0, 0.0 ]
+			},
+			"overlays_rsl_target_zone_params_2" : {
+				"value" : [ 0.0, 0.0, 0.0, 255.0 ]
+			},
+			"overlays_rsl_target_zone_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_targeting_color" : {
+				"value" : [ 0.75, 0.25, 0.5, 1.0 ]
+			},
+			"overlays_targeting_params_0" : {
+				"value" : [ 0.25, 1.0, 0.0, 0.0 ]
+			},
+			"overlays_targeting_params_1" : {
+				"value" : [ 1.0, 1.0, 0.0, 0.0 ]
+			},
+			"overlays_targeting_params_2" : {
+				"value" : [ 0.25, 0.25, 0.0, 255.0 ]
+			},
+			"overlays_targeting_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"overlays_tower_color" : {
+				"value" : [ 0.84, 0.4, 1.0, 1.0 ]
+			},
+			"overlays_tower_params_0" : {
+				"value" : [ 0.5, 2.0, 0.2, 0.25 ]
+			},
+			"overlays_tower_params_1" : {
+				"value" : [ 1.0, 1.0, 0.5, 0.0 ]
+			},
+			"overlays_tower_params_2" : {
+				"value" : [ 0.25, 0.25, 0.0, 255.0 ]
+			},
+			"overlays_tower_sparkles" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"override_draw_distance" : {
+				"value" : 12
+			},
+			"override_draw_distance_enabled" : {
+				"value" : false
+			},
+			"particle_light" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 3.2, 3.2, 3.2, 1.0 ]
+					},
+					{
+						"time" : 0.35,
+						"value" : [ 0.16, 0.16, 0.16, 1.0 ]
+					},
+					{
+						"time" : 0.65,
+						"value" : [ 0.16, 0.16, 0.16, 1.0 ]
+					}
+				]
+			},
+			"piglin_attack_threat_fill_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.5 ]
+			},
+			"piglin_attack_threat_outline_color" : {
+				"value" : [ 0.1, 0.0, 0.0, 1.0 ]
+			},
+			"piglin_defend_threat_fill_color" : {
+				"value" : [ 0.6666666269302368, 0.3192488253116608, 0.0, 0.5 ]
+			},
+			"piglin_defend_threat_outline_color" : {
+				"value" : [ 0.1, 0.09295774996280670, 0.0, 1.0 ]
+			},
+			"piglin_eye_emissive_tint" : {
+				"value" : [ 4.0, 0.01, 0.01, 1.0 ]
+			},
+			"piglin_obstacle_threat_fill_color" : {
+				"value" : [ 0.0, 1.0, 0.3827750682830811, 0.5 ]
+			},
+			"piglin_obstacle_threat_outline_color" : {
+				"value" : [ 0.0, 0.1, 0.03661971166729927, 1.0 ]
+			},
+			"piglin_threat_desaturation" : {
+				"value" : 1.0
+			},
+			"piglin_threat_noise_strength" : {
+				"value" : 100.0
+			},
+			"piglin_threat_noisiness" : {
+				"value" : 50.0
+			},
+			"piglin_threat_outline_thickness" : {
+				"value" : 1.0
+			},
+			"piglin_threat_pixelation" : {
+				"value" : 400.0
+			},
+			"point_light_bins" : {
+				"value" : [ 64.0, 64.0, 16.0, 1.0 ]
+			},
+			"point_light_range" : {
+				"value" : 128.0
+			},
+			"portal_aabb_size_adjust" : {
+				"value" : 0.4
+			},
+			"preview_structure_depth_bias" : {
+				"value" : 1.0
+			},
+			"rain_biome" : {
+				"value" : ""
+			},
+			"rain_biome_sampling" : {
+				"value" : false
+			},
+			"rain_color" : {
+				"value" : [ 0.6438851952552795, 0.7721759080886841, 0.7798165082931519, 0.208 ]
+			},
+			"rain_density" : {
+				"value" : 0.222
+			},
+			"rain_motion" : {
+				"value" : [ 0.8460000157356262, 0.8159999847412109, 0.0, 0.1 ]
+			},
+			"rain_size" : {
+				"value" : [ 0.126, 0.372, 1.0, 0.0 ]
+			},
+			"rain_uv" : {
+				"value" : [ 0.0, 0.125, 0.125, 0.5 ]
+			},
+			"rain_variation" : {
+				"value" : true
+			},
+			"red_border_max_intensity_crit_health" : {
+				"value" : 1.0
+			},
+			"red_border_max_intensity_low_health" : {
+				"value" : 0.7
+			},
+			"red_border_max_intensity_xlow_health" : {
+				"value" : 0.9250000119209290
+			},
+			"red_border_min_intensity_crit_health" : {
+				"value" : 0.7
+			},
+			"red_border_min_intensity_low_health" : {
+				"value" : -0.1
+			},
+			"red_border_min_intensity_xlow_health" : {
+				"value" : 0.6750000119209290
+			},
+			"red_border_pulse_time_crit_health" : {
+				"value" : 1.25
+			},
+			"red_border_pulse_time_low_health" : {
+				"value" : 2.0
+			},
+			"red_border_pulse_time_xlow_health" : {
+				"value" : 1.5
+			},
+			"red_border_squareness_crit_health" : {
+				"value" : 2.0
+			},
+			"red_border_squareness_low_health" : {
+				"value" : 4.0
+			},
+			"red_border_squareness_xlow_health" : {
+				"value" : 3.5
+			},
+			"red_border_width_crit_health" : {
+				"value" : 1.0
+			},
+			"red_border_width_low_health" : {
+				"value" : 0.6
+			},
+			"red_border_width_xlow_health" : {
+				"value" : 1.0
+			},
+			"resolution_scale_framecount_decrease" : {
+				"value" : 20
+			},
+			"resolution_scale_framecount_increase" : {
+				"value" : 40
+			},
+			"resolution_scale_increment" : {
+				"value" : 0.025
+			},
+			"resolution_scale_min" : {
+				"value" : 0.8
+			},
+			"resolution_scale_override" : {
+				"value" : 1.0
+			},
+			"resolution_scale_override_enabled" : {
+				"value" : false
+			},
+			"resolution_scale_threshold_decrease" : {
+				"value" : 36.0
+			},
+			"resolution_scale_threshold_increase" : {
+				"value" : 30.0
+			},
+			"reticle_line_anim_speed" : {
+				"value" : 0.0
+			},
+			"reticle_line_fill_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 0.5 ]
+			},
+			"reticle_line_outline_color" : {
+				"value" : [ 0.396, 0.569, 0.9840000271797180, 0.0 ]
+			},
+			"rps_intense_flash_color" : {
+				"value" : [ 2.0, 0.0, 0.0, 0.85 ]
+			},
+			"rps_intense_flash_time" : {
+				"value" : 0.25
+			},
+			"rps_normal_flash_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.4 ]
+			},
+			"rps_normal_flash_time" : {
+				"value" : 0.25
+			},
+			"rps_weak_flash_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.0 ]
+			},
+			"rps_weak_flash_time" : {
+				"value" : 0.25
+			},
+			"rsm_enabled" : {
+				"value" : false
+			},
+			"rsm_intensity" : {
+				"value" : 8.0
+			},
+			"rsm_numsamples" : {
+				"value" : 16
+			},
+			"rsm_resolution" : {
+				"value" : 256
+			},
+			"rsm_rmax" : {
+				"value" : 4.0
+			},
+			"rsm_ssrt_maxdistance" : {
+				"value" : 48.0
+			},
+			"sample_distance_multiplier" : {
+				"value" : 8
+			},
+			"sample_resolution" : {
+				"value" : 8
+			},
+			"screen_desat_crit_health" : {
+				"value" : 0.6
+			},
+			"screen_desat_low_health" : {
+				"value" : 0.0
+			},
+			"screen_desat_xlow_health" : {
+				"value" : 0.0
+			},
+			"shadow_bias" : {
+				"value" : [ 0.0004, 0.0008, 0.0008, 0.0008 ]
+			},
+			"shadow_cascades" : {
+				"value" : 3
+			},
+			"shadow_cutoff" : {
+				"value" : 0.02
+			},
+			"shadow_light_range" : {
+				"value" : 256.0
+			},
+			"shadow_max_distance" : {
+				"value" : 128.0
+			},
+			"shadow_pcf_width" : {
+				"value" : 2
+			},
+			"shadow_quality" : {
+				"value" : 2
+			},
+			"shadow_ranges" : {
+				"value" : [ 0.1667000055313110, 0.333, 1.0, 1.0 ]
+			},
+			"shadow_resolution" : {
+				"value" : 2048
+			},
+			"shadow_slope_bias" : {
+				"value" : [ 0.0004, 0.0008, 0.0015, 0.0015 ]
+			},
+			"sky_state" : {
+				"value" : ""
+			},
+			"sky_sunrise_sunset_falloff_end" : {
+				"value" : 1300.0
+			},
+			"sky_sunrise_sunset_falloff_start" : {
+				"value" : 350.0
+			},
+			"sky_sunrise_sunset_tightness" : {
+				"value" : 4.0
+			},
+			"snow_biome" : {
+				"value" : ""
+			},
+			"snow_biome_sampling" : {
+				"value" : false
+			},
+			"snow_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 0.5690608024597168 ]
+			},
+			"snow_density" : {
+				"value" : 0.1
+			},
+			"snow_motion" : {
+				"value" : [ 0.178, 0.0, 0.01, 0.0 ]
+			},
+			"snow_size" : {
+				"value" : [ 0.192, 0.052, 1.0, 0.0 ]
+			},
+			"snow_uv" : {
+				"value" : [ 0.0, 0.0, 0.125, 0.125 ]
+			},
+			"snow_variation" : {
+				"value" : true
+			},
+			"sparkles_biome" : {
+				"value" : "onboarding"
+			},
+			"sparkles_biome_sampling" : {
+				"value" : true
+			},
+			"sparkles_color" : {
+				"value" : [ 1.0, 0.9999899864196777, 0.9999899864196777, 1.0 ]
+			},
+			"sparkles_density" : {
+				"value" : 1.0
+			},
+			"sparkles_motion" : {
+				"value" : [ 1.0, 0.01, 0.0, 0.1 ]
+			},
+			"sparkles_size" : {
+				"value" : [ 0.05, 0.05, 0.0, 0.0 ]
+			},
+			"sparkles_uv" : {
+				"value" : [ 0.03125, 0.15625, 0.03125, 0.03125 ]
+			},
+			"sparkles_variation" : {
+				"value" : false
+			},
+			"struct_dmg_flash_high_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.5 ]
+			},
+			"struct_dmg_flash_high_fadestart" : {
+				"value" : 0.1
+			},
+			"struct_dmg_flash_high_height" : {
+				"value" : 1.0
+			},
+			"struct_dmg_flash_high_maxflashrate" : {
+				"value" : 3.0
+			},
+			"struct_dmg_flash_high_threshold" : {
+				"value" : 0.0
+			},
+			"struct_dmg_flash_high_time" : {
+				"value" : 0.25
+			},
+			"struct_dmg_flash_low_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.5 ]
+			},
+			"struct_dmg_flash_low_fadestart" : {
+				"value" : 0.1
+			},
+			"struct_dmg_flash_low_height" : {
+				"value" : 0.33
+			},
+			"struct_dmg_flash_low_maxflashrate" : {
+				"value" : 2.0
+			},
+			"struct_dmg_flash_low_threshold" : {
+				"value" : 0.67
+			},
+			"struct_dmg_flash_low_time" : {
+				"value" : 0.25
+			},
+			"struct_dmg_flash_med_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.5 ]
+			},
+			"struct_dmg_flash_med_fadestart" : {
+				"value" : 0.1
+			},
+			"struct_dmg_flash_med_height" : {
+				"value" : 0.67
+			},
+			"struct_dmg_flash_med_maxflashrate" : {
+				"value" : 2.5
+			},
+			"struct_dmg_flash_med_threshold" : {
+				"value" : 0.33
+			},
+			"struct_dmg_flash_med_time" : {
+				"value" : 0.25
+			},
+			"structure_target_aabb_size_adjust" : {
+				"value" : 0.4
+			},
+			"structure_target_draw_outline" : {
+				"value" : true
+			},
+			"structure_target_flash_off_time" : {
+				"value" : 0.0
+			},
+			"structure_target_flash_on_time" : {
+				"value" : 0.25
+			},
+			"structure_target_flash_ramp_time" : {
+				"value" : 0.0
+			},
+			"structure_target_outline_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 1.0 ]
+			},
+			"structure_target_tint_color" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.5 ]
+			},
+			"structure_target_tint_in_ad_view" : {
+				"value" : true
+			},
+			"structure_target_tint_in_normal_view" : {
+				"value" : false
+			},
+			"sun_position" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ -0.75, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.25,
+						"value" : [ -0.5, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.5,
+						"value" : [ -0.25, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 0.75,
+						"value" : [ 0.0, 0.0, 0.05, 0.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 0.25, 0.0, 0.05, 0.0 ]
+					}
+				]
+			},
+			"tonemap_correction" : {
+				"value" : [ 0.0, 1.0, 1.0, 16.0 ]
+			},
+			"ui_entity_ambient_color" : {
+				"value" : [ 1.0, 0.6531791687011719, 0.6531791687011719, 1.0 ]
+			},
+			"ui_entity_clear_black" : {
+				"value" : false
+			},
+			"ui_entity_light_color" : {
+				"value" : [ 28.0, 17.15607070922852, 17.15607070922852, 1.0 ]
+			},
+			"ui_entity_light_dir" : {
+				"value" : [ -22.0, -30.0, 0.0, 0.0 ]
+			},
+			"use_fancy_water" : {
+				"value" : true
+			},
+			"water_depth_color_blend" : {
+				"value" : 12.0
+			},
+			"water_edge_params" : {
+				"value" : [ 4.04, 0.28, 16.0, 0.0 ]
+			},
+			"water_foam_color" : {
+				"value" : [ 1.0, 1.0, 1.0, 1.0 ]
+			},
+			"water_material_params" : {
+				"value" : [ 0.06, 0.5, 0.0, 20.0 ]
+			},
+			"water_minimum_color" : {
+				"value" : 0.1
+			},
+			"water_rain_drops_color" : {
+				"value" : [ 0.4506997168064117, 0.4507042169570923, 0.4507036209106445, 1.0 ]
+			},
+			"water_rain_drops_debug_density" : {
+				"value" : 100.0
+			},
+			"water_rain_drops_debug_density_override" : {
+				"value" : false
+			},
+			"water_rain_drops_density" : {
+				"value" : [
+					{
+						"time" : 0.0,
+						"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 1.0,
+						"value" : [ 3.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 20.0,
+						"value" : [ 90.0, 0.0, 0.0, 0.0 ]
+					},
+					{
+						"time" : 30.0,
+						"value" : [ 100.0, 0.0, 0.0, 0.0 ]
+					}
+				]
+			},
+			"water_rain_drops_fade_params" : {
+				"value" : [ 40.0, 400.0, 5.0, 0.0 ]
+			},
+			"water_rain_drops_mipmap_params" : {
+				"value" : [ 2.0, 100.0, 3.0, 0.0 ]
+			},
+			"water_rain_flipbook_params" : {
+				"value" : [ 0.7, 1.0, 1.0, 1.0 ]
+			},
+			"water_reflection_params" : {
+				"value" : [ 0.02, 8.0, 0.03, 0.07 ]
+			},
+			"water_refraction_params" : {
+				"value" : [ 1.0, 0.01, 0.6, 0.0 ]
+			},
+			"water_specular_params" : {
+				"value" : [ 0.0, 8.0, 0.04, 0.0 ]
+			},
+			"water_ssr_blending_params" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"water_ssr_blur_params" : {
+				"value" : [ 0.0, 0.0, 0.0, 0.0 ]
+			},
+			"water_ssr_raymarching_enabled" : {
+				"value" : false
+			},
+			"water_ssr_raymarching_params" : {
+				"value" : [ 0.1, 1.0, 0.0, 0.0 ]
+			},
+			"water_ssr_raymarching_params_2" : {
+				"value" : [ 1.0, 0.0, 0.0, 0.0 ]
+			},
+			"water_type" : {
+				"value" : 1.0
+			},
+			"xlow_health_threshold" : {
+				"value" : 0.55
+			}
+		}
+	}
+}

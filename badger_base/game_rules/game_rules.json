@@ -1,0 +1,6 @@
+{
+  "defaults": {
+    "experimentalgameplay": true,
+    "keepinventory": true
+  }
+}

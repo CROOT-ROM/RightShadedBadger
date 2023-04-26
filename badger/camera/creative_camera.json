@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:creative_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "creative",
+        "field_of_view": 65.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": true,
+        "priority": 1
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 1.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": false
+      },
+      "badger:boom_camera": {
+        "boom_length": 15.0,
+        "control_react_spring": 1000.0,
+        "control_stop_spring": 1000.0,
+        "follow_spring": 1000,
+        "max_pitch": 130.0,
+        "min_pitch": 10.0,
+        "target_vertical_offset": 2,
+        "starting_pitch": 80,
+        "starting_relative_yaw": 45
+      },
+      "minecraft:camera_avoidance": {
+        "relax_distance_smoothing_spring": 10.0,
+        "avoidance_rays_horizontal": [
+          {
+            "distance": 1.0,
+            "weight": 0.75
+          },
+          {
+            "distance": 2.5,
+            "weight": 0.5
+          },
+          {
+            "distance": 4.0,
+            "weight": 0.25
+          }
+        ],
+        "avoidance_rays_vertical": [
+          {
+            "distance": 1.0,
+            "weight": 0.75
+          },
+          {
+            "distance": 2.5,
+            "weight": 0.5
+          },
+          {
+            "distance": 4.0,
+            "weight": 0.25
+          }
+        ]
+      },
+      "minecraft:look_target": {},
+      "minecraft:follow_target": {},
+      "badger:cam_overrides_look_orientation": {}
+    }
+  }
+}

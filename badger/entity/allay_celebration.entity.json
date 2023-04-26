@@ -1,0 +1,85 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "on_death": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_allay_gather_spawn",
+              "enabled": true,
+              "locator": "loc_fx_gather_head"
+            },
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_allay_construction_spawn",
+              "enabled": true,
+              "locator": "loc_fx_construction_head"
+            }
+          ]
+        },
+        "on_initialized": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_allay_gather_spawn",
+              "enabled": true,
+              "locator": "loc_fx_gather_head"
+            },
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_allay_construction_spawn",
+              "enabled": true,
+              "locator": "loc_fx_construction_head"
+            }
+          ]
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:allay_celebration"
+      }
+    },
+    "description": {
+      "animations": {
+        "celebration_loop_a": "animation.allay_celebration.celebration_loop_a",
+        "celebration_med_a": "animation.allay_celebration.celebration_med_a",
+        "celebration_small_a": "animation.allay_celebration.celebration_small_a",
+        "default": "controller.animation.allay_celebration.default",
+        "fly_a": "animation.allay_celebration.fly_a",
+        "happy_a": "animation.allay_celebration.happy_a",
+        "idle_a": "animation.allay_celebration.idle_a",
+        "idle_danger_a": "animation.allay_celebration.idle_danger_a",
+        "idle_poi_a": "animation.allay_celebration.idle_poi_a",
+        "mst03_c00_opening_allay": "animation.mst03_c00_opening_allay.mst03_c00_opening_allay"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.allay_celebration"
+      },
+      "identifier": "badger:allay_celebration",
+      "materials": {
+        "default": "entity_model",
+        "mat_allay_construction": "mat_allay_construction",
+        "mat_allay_gather": "mat_allay_gather"
+      },
+      "particle_effects": {
+        "fx_sparkles_construction": "badger:fx_allay_construction_sparkels",
+        "fx_sparkles_gather": "badger:fx_allay_gather_sparkels"
+      },
+      "render_controllers": ["controller.render.allay_celebration"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "celebration": "BAE_hero_allay_celebration",
+        "dx_celebration": "BAE_hero_allay_dx_celebration"
+      }
+    }
+  }
+}

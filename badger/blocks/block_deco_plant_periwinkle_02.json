@@ -1,0 +1,8 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_periwinkle_02": {
+            "decoration": "deco_plant_periwinkle_02"
+        }
+    }
+}

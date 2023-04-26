@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "mat_fx_spore_damaged_128:entity_texture_buff": {
+    "pass": "AlphaTest",
+    "uniforms": {
+      "UVAnimationSpeed": [
+        "0.0",
+        "0.1",
+        "0.0",
+        "0.0"
+      ]
+    },
+    "textures": {
+      "diffuseMap": "textures/shared/tex_shared_spores_filler_128"
+    }
+  }
+}

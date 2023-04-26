@@ -1,0 +1,423 @@
+{
+    "format_version": "1.8.0",
+    "default_model": {
+        "material": "entity_model",
+        "textures": {
+            "diffuseMap": "texture[0]"
+        }
+    },
+    "base_block": {
+        "material": "entity_model_static",
+        "culling": "clockwise",
+        "blendmode": "premultiplied",
+        "uniforms": {
+            "OverlayColor": [
+                "1.0",
+                "0.0",
+                "0.0",
+                "0.0"
+            ],
+            "TeamColor": [
+                "0.0",
+                "0.0",
+                "0.0",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "coeffMap": "textures/entity/tex_default_coeff",
+            "emissiveMap": "textures/entity/tex_default_emissive",
+            "normalMap": "textures/entity/tex_default_normal"
+        },
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 0,
+            "stencilmask": 128,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        }
+    },
+    "base_block_cutout:base_block": {
+        "pass": "alphatest"
+    },
+    "base_block_entity:base_entity": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 0,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        }
+    },
+    "base_block_entity_cutout:base_block_entity": {
+        "pass": "alphatest"
+    },
+    "base_lure": {
+        "material": "entity_lure",
+        "depthprepass": true,
+        "blendmode": "alphablend",
+        "pass": "transparent",
+        "culling": "clockwise",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "lessequal"
+        },
+	    "target_uniform_blocks": [ "ParamsLure" ],
+        "uniforms": {
+            "BaseColor": [
+                "0.0",
+                "0.0",
+                "0.0",
+                "0.75"
+            ],
+            "MatColor": [
+                "0.025",
+                "0.1",
+                "1.0",
+                "1.0"
+            ],
+            "LumaMinMax": [
+                "0.3",
+                "1.0",
+                "0.0",
+                "0.0"
+            ],
+            "ShimmerColor": [
+                "0.25",
+                "0.875",
+                "1.0",
+                "1.0"
+            ],
+            "LureParams0": [
+                "0.015", // ShimmerWidth
+                "0.075", // ShimmerSpeed
+                "0.0",   // ShimmerColorNoise
+                "0.5"    // ShimmerLevel
+            ],
+            "LureParams1": [
+                "4.0",   // FalloffPower
+                "6.0",   // FalloffLevel
+                "1.0",   // FillLevel
+                "0.0"    // EdgeLevel
+            ],
+            "LureParams2": [
+                "8.0",   // BoostLevel
+                "4.0",   // BoostPulseLevel
+                "2.2",   // BoostPulseFreq
+                "0.0"    // NoiseLevel
+            ],
+            "NoiseOffsetScale": [
+                "0.0",
+                "0.0",
+                "1.0",
+                "1.0"
+            ],
+            "NoiseAnimOffset": [
+                "0.004",
+                "0.004",
+                "0.0",
+                "0.0"
+            ],
+            "TeamColor": [
+                "variable.team_status",
+                "0.0",
+                "0.0",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "noiseMap": "textures/shared/tex_shared_noise_256"
+        }
+    },
+    "base_buff:base_lure": {
+        "material": "entity_buff",
+        "target_uniform_blocks": [ "ParamsBuff" ],
+        "uniforms": {
+            "HeightFalloff": [
+                "0.0",
+                "1.0",
+                "0.0",
+                "0.0"
+            ]
+        }
+    },
+    "base_entity_blend_flipbook": {
+        "material": "entity_blend_emissive_flipbook",
+        "depthprepass": true,
+        "pass": "transparent",
+        "culling": "clockwise",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "lessequal"
+        },
+        "target_uniform_blocks": [ "FlipbookUniforms" ],
+        "uniforms": {
+            "HeightFalloff": [ "0.0", "1.0", "0.0", "0.0" ]
+        },
+        "textures": {
+            "emissiveMap": "textures/entity/tex_default_emissive"
+        }
+    },
+    "base_entity_static:base_entity": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 0,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "material": "entity_model_static"
+    },
+    "entity_texture_buff:base_entity": {
+        "material": "entity_model_texture_buff",
+        "pass": "AlphaTest",
+        "target_uniform_blocks": [ "AnimUniforms" ],
+        "uniforms": {
+            "UVAnimationSpeed": [ "0.0", "0.1", "0.0", "0.0" ]
+        }
+    },
+    "badger_trails_default": {
+        "material": "badger_trails",
+        "culling": "none",
+        "blendmode": "additivealpha",
+        "pass": "transparentafterworld",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "lessequal"
+        },
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_arrow_trail"
+        },
+        "uniforms": {
+            "TrailColor": [
+                "1.0",
+                "1.0",
+                "1.0",
+                "0.5"
+            ]
+        }
+    },
+    "entity_world_map": {
+        "material": "BadgerWorldMapEntity",
+        "culling": "clockwise",
+        "uniforms": {
+            "OverlayColor": [
+                "1.0",
+                "0.0",
+                "0.0",
+                "variable.intense_hit ? 0.65 : 0.0"
+            ],
+            "TeamColor": [
+                "0.0", // 0.0 to not use team color outlines on the world map by default
+                "0.0",
+                "0.0",
+                "0.0"
+            ],
+            "TileLightStrength": [
+                "1.0",
+                "0.0",
+                "0.0",
+                "0.0"
+            ],
+            "HighlightColor": [
+                "0.0",
+                "0.15",
+                "0.3",
+                "variable.ishighlighted ? 0.6 : 0.0"
+            ],
+            "HighlightParams": [
+                "4.0", // strength
+                "0.3", // speed
+                "0.0",
+                "0.0"
+            ]
+        },
+        "textures": {
+            "coeffMap": "textures/entity/tex_default_coeff",
+            "emissiveMap": "textures/entity/tex_default_emissive",
+            "normalMap": "textures/entity/tex_default_normal"
+        },
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 64,
+            "stencilmask": 64,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        }
+    },
+    "decals": {
+        "material": "BadgerDecals",
+        "blendmode": "premultiplied",
+        "culling": "counterclockwise",
+        "pass": "decal",
+        "depthstate": {
+            "enabled": false,
+            "writedepth": false,
+            "comparisonfunction": "greater"
+        }
+    },
+    "decals_normalmapped": {
+        "material": "BadgerNormalMappedDecals",
+        "blendmode": "premultiplied",
+        "culling": "counterclockwise",
+        "pass": "decalnormalmap",
+        "depthstate": {
+            "enabled": false,
+            "writedepth": false,
+            "comparisonfunction": "greater"
+        }
+    },
+    "decals_debug": {
+        "material": "BadgerDecalsDebug",
+        "blendmode": "alphablend",
+        "pass": "transparent",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "less"
+        }
+    },
+    "invulnerability": {
+        "material": "BadgerInvulnerability",
+        "blendmode": "alphablend",
+        "culling": "counterclockwise",
+        "pass": "decal",
+        "depthstate": {
+            "enabled": false,
+            "writedepth": false,
+            "comparisonfunction": "greater"
+        }
+    },
+    "mat_map_beacon":{
+      "material": "MapBeacon",
+      "blendmode": "premultiplied",
+      "pass": "transparentafterworld",
+      "depthstate": {
+          "enabled": true,
+          "writedepth": false,
+          "comparisonfunction": "less"
+      },
+      "target_uniform_blocks": [ "BeaconUniforms" ],
+      "textures": {
+        "diffuseMap": "textures/particle/tex_fx_hq_beam_b",
+        "emissiveMap": "textures/particle/tex_fx_hq_beam_e"
+      }
+    },
+    "mat_xray_entity": {
+        "pass": "xray",
+        "material": "xray_entity",
+        "blendmode": "alphablend",
+        "culling": "none",
+        "uniforms": {
+            "XrayColor": [
+                "0.05",
+                "0.05",
+                "0.05",
+                "0.75"
+            ]
+        },
+        "depthstate": {
+            "enabled": false,
+            "writedepth": false,
+            "comparisonfunction": "always"
+        },
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 1,
+            "stencilmask": 255,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "greater"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "greater"
+            }
+        }
+    },
+    "base_entity_with_construction:base_entity": {
+        "material": "entity_model_with_construction",
+        "target_uniform_blocks": [ "ConstructionUniforms" ],
+        "aliases": {
+            "GlowParams.x": "GlowIntensity",
+            "GlowParams.y": "GlowTime",
+            "GlowParams.z": "GlowBorderSize",
+            "GlowParams.w": "GlowBorderFade",
+            "ConstructionParams.x": "ConstructionTime"
+        },
+        "uniforms": {
+            "GlowColor": [ "0.0", "0.0", "0.0", "0.0" ],
+            "GlowParams.x": "0.0", // GlowIntensity
+            "GlowParams.y": "0.0", // GlowTime
+            "GlowParams.z": "1.0", // GlowBorderSize
+            "GlowParams.w": "1.0", // GlowBorderFade
+            "ConstructionParams.x": "1.0" // ConstructionTime
+        }
+    },
+    "base_block_entity_cutout_with_construction:base_block_entity_cutout": {
+        "material": "entity_model_with_construction",
+        "target_uniform_blocks": [ "ConstructionUniforms" ],
+        "aliases": {
+            "GlowParams.x": "GlowIntensity",
+            "GlowParams.y": "GlowTime",
+            "GlowParams.z": "GlowBorderSize",
+            "GlowParams.w": "GlowBorderFade",
+            "ConstructionParams.x": "ConstructionTime"
+        },
+        "uniforms": {
+            "GlowColor": [ "0.0", "0.0", "0.0", "0.0" ],
+            "GlowParams.x": "0.0", // GlowIntensity
+            "GlowParams.y": "0.0", // GlowTime
+            "GlowParams.z": "1.0", // GlowBorderSize
+            "GlowParams.w": "1.0", // GlowBorderFade
+            "ConstructionParams.x": "1.0" // ConstructionTime
+        }
+    }
+}

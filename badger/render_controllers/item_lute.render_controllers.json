@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_lute": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_lute": "MetaMaterial.mat_item_lute"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

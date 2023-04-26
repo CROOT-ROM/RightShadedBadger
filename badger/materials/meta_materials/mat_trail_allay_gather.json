@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_allay_gather:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_arrow_trail"
+        },
+        "uniforms": {
+            "TrailColor": [
+                "0.3",
+                "0.8",
+                "0.8",
+                "1.0"
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_prismarine": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_prismarine": "MetaMaterial.mat_item_prismarine"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

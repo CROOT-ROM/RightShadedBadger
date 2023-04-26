@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_act1_MA_template",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_act1_base"
+        }
+      },
+      "badger:music_2d_emitter": {
+        "priority": 20,
+        "max_distance": 150.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "attacking",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

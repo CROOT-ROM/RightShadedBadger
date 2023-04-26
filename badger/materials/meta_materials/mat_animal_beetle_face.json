@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_animal_beetle_face:base_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mount_beetle_face_d_original",
+      "coeffMap": "textures/entity/tex_mount_beetle_face_mr",
+      "emissiveMap": "textures/entity/tex_mount_beetle_face_e",
+      "normalMap": "textures/entity/tex_mount_beetle_face_n"
+    }
+  }
+}

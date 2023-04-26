@@ -1,0 +1,18 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_wofgrass_02": {
+            "geometry": "geometry.block_deco_fol_wofgrass_02",
+            "shadow": false,
+            "type": "middle",
+            "probability": "high",
+            "scale": [
+                1.0,
+                0.7,
+                1.0
+            ],
+            "random_orientation": true,
+            "wind_strength": 0.15
+        }
+    }
+}

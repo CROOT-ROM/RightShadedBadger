@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_pip_02": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_pip_02": "MetaMaterial.mat_wmap_pip_02"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,48 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_burst_shot_start_flares",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "flash" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_burst_shot_start_flash_regular",
+               "type" : "emitter_bound"
+            }
+         },
+         "puff" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_burst_shot_start_puff_regular",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_burst_shot_start_smoke_regular",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "smoke", "flash", "puff" ]
+         },
+         "minecraft:emitter_lifetime_once" : {},
+         "minecraft:emitter_transform_parametric" : {
+            "transforms" : [
+               {
+                  "rotation_angle" : 90.0,
+                  "rotation_axis" : [ 1.0, 0.0, 0.0 ]
+               }
+            ]
+         }
+      }
+   }
+}

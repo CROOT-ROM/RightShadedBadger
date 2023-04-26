@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:presentation_event": {
+        "event_name": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:effect_name",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "script": "script_name"
+        },
+        "on_initialized": {
+          "audio": "BAE_sfx_attractors_piglin_key"
+        },
+        "badger:presentation_event": {
+          "on_item_collected": {
+            "audio": "BAE_hero_pickup_piglin_key"
+          },
+          "on_item_collected_arrived": {
+            "audio": "BAE_hero_pickup_piglin_key_stop"
+          }  
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:item_piglin_crate_key",
+        "static": true
+      },
+      "badger:template": ["badger:template_item_orb"]
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.item_piglin_crate_key"
+      },
+      "identifier": "badger:item_piglin_crate_key",
+      "materials": {
+        "default": "entity_model",
+        "mat_item_piglin_crate_key": "mat_item_piglin_crate_key"
+      },
+      "render_controllers": ["controller.render.item_piglin_crate_key"]
+    }
+  }
+}

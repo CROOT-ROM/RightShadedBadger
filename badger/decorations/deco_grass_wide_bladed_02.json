@@ -1,0 +1,16 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_grass_wide_bladed_02": {
+            "geometry": "geometry.block_deco_grass_wide_bladed_02",
+            "shadow": true,
+            "random_orientation": true,
+            "wind_strength": 0.025,
+            "normals_interpolation" : 0.0,
+			"collision": {
+				"mode": "vertex",
+				"intensity": 0.8
+			}
+        }
+    }
+}

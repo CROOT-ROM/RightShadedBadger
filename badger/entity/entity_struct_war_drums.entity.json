@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_war_drums"
+      }
+    },
+    "description": {
+      "animations": {
+        "death": "animation.entity_struct_war_drums.death",
+        "default": "controller.animation.entity_struct_war_drums.default",
+        "drumming_b": "animation.entity_struct_war_drums.drumming_b",
+        "spawn": "animation.entity_struct_war_drums.spawn"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_war_drums"
+      },
+      "identifier": "badger:entity_struct_war_drums",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_player": "mat_shared_block_entity_player"
+      },
+      "particle_effects": {
+        "fx_death": "badger:fx_destruction_war_drums"
+      },
+      "render_controllers": ["controller.render.entity_struct_war_drums"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "drum_hit": "BAE_wardrums_drum_hit"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_player_d"
+      }
+    }
+  }
+}

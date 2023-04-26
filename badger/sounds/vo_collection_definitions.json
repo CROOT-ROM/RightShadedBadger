@@ -1,0 +1,1048 @@
+{
+  "format_version": "1.0.0",
+  "vo_collection_definitions": {
+    "COL_003_wof_greetings_act2":
+    {
+      "selection_type": "sequential",
+      "audio_events":[
+        "SEQ_085_wof_greetings_act2_1",
+        "SEQ_086_wof_greetings_act2_2",
+        "VO_0407_nar_wof_greetingact2_8",
+        "VO_0408_nar_wof_greetingact2_9",
+        "SEQ_089_wof_greetings_act2_5",
+        "VO_0737_nar_wof_greetingsact2_20",
+        "VO_0739_nar_wof_greetingsact2_22",
+        "SEQ_164_wof_greetings_act2_10",
+        "VO_0736_nar_wof_greetingsact2_19"
+      ]
+    },
+
+    "COL_007_wof_leaving_act2":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0414_nar_wof_leavingact2_1",
+        "VO_0416_nar_wof_leavingact2_3",
+        "VO_0421_nar_wof_leavingact2_8",
+        "VO_0423_nar_wof_leavingact2_10",
+        "VO_0427_nar_wof_leavingact2_14",
+        "VO_0745_nar_wof_leavingsact2_16",
+        "VO_0746_nar_wof_leavingsact2_17",
+        "VO_0749_nar_wof_leavingsact2_20",
+        "VO_0754_nar_wof_leavingsact2_25",
+        "VO_0755_nar_wof_leavingsact2_26"
+      ]
+    },
+
+    "COL_009_wofxp_banner_upgrade":
+    {
+      "selection_type": "sequential",
+      "audio_events":[
+        "VO_0079_nar_wofxp_banner_2",
+        "SEQ_019_wofxp_banner_upgrade_2",
+        "SEQ_020_wofxp_banner_upgrade_3",
+        "VO_0508_nar_wofxp_banner_7",
+        "VO_0509_nar_wofxp_banner_8"
+      ]
+      
+    },
+
+    "COL_011_wofxp_spawner_max":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0065_nar_wofxp_spawnermax_2",
+        "SEQ_010_wofxp_spawner_max_2",
+        "VO_0495_nar_wofxp_spawnermax_7",
+        "VO_0497_nar_wofxp_spawnermax_9",
+        "VO_0498_nar_wofxp_spawnermax_10"
+      ]
+    },
+
+    "COL_014_wofxp_fatebank_upgrade":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0083_nar_wofxp_fatebank_2",
+        "VO_0504_nar_wofxp_fatebank_8",
+        "SEQ_023_wofxp_fatebank_upgrade_3",
+        "VO_0085_nar_wofxp_fatebank_4",
+        "VO_0082_nar_wofxp_fatebank_1"
+      ]
+    },
+
+    "COL_015_overworld_sunrise":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "SEQ_142_overworld_sunrise_1",
+        "SEQ_143_overworld_sunrise_2",
+        "VO_0664_nar_overworld_sunrise3_1"
+      ]
+    },
+
+    "COL_016_overworld_sunset":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0670_nar_overworld_sunset1_1",
+        "VO_0674_nar_overworld_sunset4_2",
+        "VO_0676_nar_overworld_sunset5_2"
+      ]
+    },
+
+    "COL_022_village_chest":
+    {
+      "selection_type":"randomized",
+      "audio_events":[
+        "VO_1167_nar_village_chest_1",
+        "VO_1168_nar_village_chest_2",
+        "VO_1169_nar_village_chest_3",
+        "VO_1170_nar_village_chest_4",
+        "VO_1171_nar_village_chest_5"
+      ],
+      "randomize_on_load": true
+    },
+
+    "COL_023_village_wave":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1415_nar_village_wavespawns_1",
+        "VO_1451_nar_village_wavespawns_4",
+        "VO_1454_nar_village_wavespawns_7",
+        "VO_1416_nar_village_wavespawns_2",
+        "VO_1452_nar_village_wavespawns_5",
+        "VO_1455_nar_village_wavespawns_8",
+        "VO_1417_nar_village_wavespawns_3",
+        "VO_1453_nar_village_wavespawns_6",
+        "VO_1456_nar_village_wavespawns_9"
+      ]
+    },
+
+    "COL_024_village_clear_piglins":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1471_nar_village_clearallpiglins_1",
+        "VO_1472_nar_village_clearallpiglins_2",
+        "VO_1473_nar_village_clearallpiglins_3"
+      ]
+    },
+
+    "COL_025_village_abandon":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1474_nar_village_abandonattack_1",
+        "VO_1475_nar_village_abandonattack_2",
+        "VO_1476_nar_village_abandonattack_3"
+      ]
+    },
+
+    "COL_026_pvp_fatebank_built_friendly":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0214_nar_pvpwofxp_friendlyfatebank_1",
+        "VO_1246_nar_pvpwofxp_friendlyfatebank_2",
+        "VO_1505_nar_pvpwofxp_friendlyfatebank_3",
+        "VO_1506_nar_pvpwofxp_friendlyfatebank_4"
+      ]
+    },
+
+    "COL_028_pvp_fatebank_attacked":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1261_nar_pvpwofxp_fatebankattacked_1",
+        "VO_1262_nar_pvpwofxp_fatebankattacked_2",
+        "VO_1512_nar_pvpwofxp_fatebankattacked_5",
+        "VO_1514_nar_pvpwofxp_fatebankattacked_7"
+      ]
+    },
+
+    "COL_029_pvp_fatebank_destroyed":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1267_nar_pvpwofxp_fatebankdestroyed_1",
+        "VO_1268_nar_pvpwofxp_fatebankdestroyed_2",
+        "VO_1520_nar_pvpwofxp_fatebankdestroyed_3",
+        "VO_1523_nar_pvpwofxp_fatebankdestroyed_6"
+      ]
+    },
+
+    "COL_030_pvp_increase_all_allays_built_friendly":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1355_nar_pvp_increaseallallays_1",
+        "VO_1356_nar_pvp_increaseallallays_2",
+        "VO_1589_nar_pvpwofxp_increaseallallays_3",
+        "VO_1590_nar_pvpwofxp_increaseallallays_4"
+      ]
+    },
+
+    "COL_031_pvp_increase_all_allays_built_enemy":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1360_nar_pvpwofxp_increaseallallays_3",
+        "VO_1361_nar_pvpwofxp_increaseallallays_4",
+        "VO_1594_nar_pvpwofxp_increaseallallays_8",
+        "VO_1598_nar_pvpwofxp_increaseallallays_12"
+      ]
+    },
+
+    "COL_032_pvp_increase_all_allays_attacked":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1362_nar_pvpwofxp_increaseallallaysattacked_1",
+        "VO_1363_nar_pvpwofxp_increaseallallaysattacked_2",
+        "VO_1599_nar_pvpwofxp_increaseallallaysattacked_3",
+        "VO_1602_nar_pvpwofxp_increaseallallaysattacked_6"
+      ]
+    },
+
+    "COL_033_pvp_increase_all_allays_destroyed":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1364_nar_pvpwofxp_increaseallallaysdestroyed_3",
+        "VO_1365_nar_pvpwofxp_increaseallallaysdestroyed_4",
+        "VO_1604_nar_pvpwofxp_increaseallallaysdestroyed_3",
+        "VO_1605_nar_pvpwofxp_increaseallallaysdestroyed_4"
+      ]
+    },
+
+    "COL_034_pvp_hq_under_attack_friendly":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_0192_nar_pvphq_underattack_1",
+        "VO_1241_nar_pvphq_underattack_2",
+        "VO_1242_nar_pvphq_underattack_3",
+        "VO_1485_nar_pvphq_underattack_4",
+        "VO_1486_nar_pvphq_underattack_5",
+        "VO_1487_nar_pvphq_underattack_6",
+        "VO_1488_nar_pvphq_underattack_7",
+        "VO_1489_nar_pvphq_underattack_8"
+      ]
+    },
+
+    "COL_035_pvp_hq_under_attack_enemy":
+    {
+      "selection_type":"sequential",
+      "audio_events":[
+        "VO_1243_nar_pvpenemyhq_underattack_1",
+        "VO_1244_nar_pvpenemyhq_underattack_2",
+        "VO_1245_nar_pvpenemyhq_underattack_3",
+        "VO_1490_nar_pvpenemyhq_underattack_4",
+        "VO_1491_nar_pvpenemyhq_underattack_5",
+        "VO_1492_nar_pvpenemyhq_underattack_6",
+        "VO_1493_nar_pvpenemyhq_underattack_7",
+        "VO_1494_nar_pvpenemyhq_underattack_8"
+      ]
+    },
+
+  "COL_037_structure_attacked_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1250_nar_pvp_enemystructures_1",
+      "VO_1251_nar_pvp_enemystructures_2",
+      "VO_1252_nar_pvp_enemystructures_3",
+      "VO_1500_nar_pvp_enemystructures_4",
+      "VO_1501_nar_pvp_enemystructures_5",
+      "VO_1502_nar_pvp_enemystructures_6",
+      "VO_1503_nar_pvp_enemystructures_7",
+      "VO_1504_nar_pvp_enemystructures_8"
+    ]
+  },
+
+  "COL_038_popcap_built_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1284_nar_pvp_popcapfriendly_1",
+      "VO_1285_nar_pvp_popcapfriendly_2",
+      "VO_1525_nar_pvpwofxp_popcapfriendly_3",
+      "VO_1527_nar_pvpwofxp_popcapfriendly_5"
+    ]
+  },
+
+  "COL_039_popcap_built_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1283_nar_pvp_popcapenemy_2",
+      "VO_1530_nar_pvpwofxp_popcapenemy_3",
+      "VO_1531_nar_pvpwofxp_popcapenemy_4",
+      "VO_1532_nar_pvpwofxp_popcapenemy_5"
+    ]
+  },
+
+  "COL_040_popcap_attacked":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1287_nar_pvp_popcapattacked_2",
+      "VO_1535_nar_pvpwofxp_popcapattacked_3",
+      "VO_1536_nar_pvpwofxp_popcapattacked_4",
+      "VO_1539_nar_pvpwofxp_popcapattacked_7"
+    ]
+  },
+
+  "COL_041_popcap_destroyed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1289_nar_pvp_popcapdestroyed_1",
+      "VO_1290_nar_pvp_popcapdestroyed_2",
+      "VO_1542_nar_pvpwofxp_popcapdestroyed_5",
+      "VO_1544_nar_pvpwofxp_popcapdestroyed_7"
+    ]
+  },
+
+  "COL_042_village_allegiance_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1295_nar_pvp_villageallegiancebuiltfriendly_1",
+      "VO_1296_nar_pvp_villageallegiancebuiltfriendly_2",
+      "VO_1609_nar_pvp_villageallegiancebuiltfriendly_3",
+      "VO_1610_nar_pvp_villageallegiancebuiltfriendly_4",
+      "VO_1611_nar_pvp_villageallegiancebuiltfriendly_5"
+    ]
+  },
+
+  "COL_043_village_allegiance_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1297_nar_pvp_villageallegiancebuiltenemy_1",
+      "VO_1298_nar_pvp_villageallegiancebuiltenemy_2",
+      "VO_1612_nar_pvp_villageallegiancebuiltenemy_3",
+      "VO_1613_nar_pvp_villageallegiancebuiltenemy_4",
+      "VO_1614_nar_pvp_villageallegiancebuiltenemy_5"
+    ]
+  },
+
+  "COL_044_village_allegiance_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1299_nar_pvp_villageallagianceattacked_1",
+      "VO_1300_nar_pvp_villageallagianceattacked_2",
+      "VO_1301_nar_pvp_villageallagianceattacked_3",
+      "VO_1615_nar_pvp_villageallegianceattacked_4",
+      "VO_1616_nar_pvp_villageallegianceattacked_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_045_village_allegiance_destroyed_enemy":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1357_nar_pvp_villageallegiancedestroyedenemy_1",
+      "VO_1358_nar_pvp_villageallegiancedestroyedenemy_2",
+      "VO_1359_nar_pvp_villageallegiancedestroyedenemy_3",
+      "VO_1619_nar_pvp_villageallegiancedestroyedenemy_4",
+      "VO_1620_nar_pvp_villageallegiancedestroyedenemy_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_046_village_allegiance_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1302_nar_pvp_villageallegiancedestroyed_1",
+      "VO_1303_nar_pvp_villageallegiancedestroyed_2",
+      "VO_1304_nar_pvp_villageallegiancedestroyed_3",
+      "VO_1617_nar_pvp_villageallegiancedestroyed_4",
+      "VO_1618_nar_pvp_villageallegiancedestroyed_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_047_redstone_launcher_damaged":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1637_nar_pvp_redstonelauncherdamaged_1",
+      "VO_1638_nar_pvp_redstonelauncherdamaged_2",
+      "VO_1639_nar_pvp_redstonelauncherdamaged_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_048_redstone_launcher_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1640_nar_pvp_redstonelauncherdestroyed_1",
+      "VO_1641_nar_pvp_redstonelauncherdestroyed_2",
+      "VO_1642_nar_pvp_redstonelauncherdestroyed_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_049_unlock_iron_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1255_nar_pvpwofxp_unlockironfriendly_1",
+      "VO_1256_nar_pvpwofxp_unlockironfriendly_2",
+      "VO_1545_nar_pvpwofxp_unlockironfriendly_3"
+    ]
+  },
+
+  "COL_050_unlock_iron_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1253_nar_pvpwofxp_unlockironenemy_1",
+      "VO_1254_nar_pvpwofxp_unlockironenemy_2",
+      "VO_1546_nar_pvpwofxp_unlockironenemy_3"
+    ]
+  },
+
+  "COL_051_iron_attacked":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1263_nar_pvpwofxp_ironattacked_1",
+      "VO_1264_nar_pvpwofxp_ironattacked_2",
+      "VO_1550_nar_pvpwofxp_ironattacked_6"
+    ]
+  },
+
+  "COL_052_iron_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1269_nar_pvpwofxp_irondestroyed_1",
+      "VO_1552_nar_pvpwofxp_irondestroyed_3",
+      "VO_1554_nar_pvpwofxp_irondestroyed_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_053_unlock_redstone_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1259_nar_pvpwofxp_unlockredstonefriendly_1",
+      "VO_1260_nar_pvpwofxp_unlockredstonefriendly_2",
+      "VO_1557_nar_pvpwofxp_unlockredstonefriendly_3"
+    ]
+  },
+
+  "COL_054_unlock_redstone_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1257_nar_pvpwofxp_unlockredstoneenemy_1",
+      "VO_1258_nar_pvpwofxp_unlockredstoneenemy_2",
+      "VO_1558_nar_pvpwofxp_unlockredstoneenemy_3"
+    ]
+  },
+
+  "COL_055_redstone_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1265_nar_pvpwofxp_redstoneattacked_1",
+      "VO_1266_nar_pvpwofxp_redstoneattacked_2",
+      "VO_1560_nar_pvpwofxp_redstoneattacked_4"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_056_redstone_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1271_nar_pvpwofxp_redstonedestroyed_1",
+      "VO_1565_nar_pvpwofxp_redstonedestroyed_4",
+      "VO_1566_nar_pvpwofxp_redstonedestroyed_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_057_vindicator_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1621_nar_pvp_vindicatorbuiltfriendly_1",
+      "VO_1622_nar_pvp_vindicatorbuiltfriendly_2",
+      "VO_1623_nar_pvp_vindicatorbuiltfriendly_3"
+    ]
+  },
+
+  "COL_058_vindicator_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1624_nar_pvp_vindicatorbuiltenemy_1",
+      "VO_1625_nar_pvp_vindicatorbuiltenemy_2",
+      "VO_1626_nar_pvp_vindicatorbuiltenemy_3"
+    ]
+  },
+
+  "COL_059_vindicator_damaged":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1627_nar_pvp_vindicatordamaged_1",
+      "VO_1628_nar_pvp_vindicatordamaged_2",
+      "VO_1629_nar_pvp_vindicatordamaged_3",
+      "VO_1630_nar_pvp_vindicatordamaged_4",
+      "VO_1631_nar_pvp_vindicatordamaged_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_060_vindicator_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1632_nar_pvp_vindicatordestroyed_1",
+      "VO_1633_nar_pvp_vindicatordestroyed_2",
+      "VO_1634_nar_pvp_vindicatordestroyed_3",
+      "VO_1635_nar_pvp_vindicatordestroyed_4",
+      "VO_1636_nar_pvp_vindicatordestroyed_5"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_036_structure_attacked_friendly":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_0399_nar_pvp_friendlystructures_1",
+      "VO_1248_nar_pvp_friendlystructures_2",
+      "VO_1249_nar_pvp_friendlystructures_3",
+      "VO_1495_nar_pvp_friendlystructures_4",
+      "VO_1496_nar_pvp_friendlystructures_5",
+      "VO_1497_nar_pvp_friendlystructures_6",
+      "VO_1498_nar_pvp_friendlystructures_7",
+      "VO_1499_nar_pvp_friendlystructures_8"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_061_pylon_built_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1569_nar_pvpwofxp_pylonbuiltfriendly_1",
+      "VO_1570_nar_pvpwofxp_pylonbuiltfriendly_2",
+      "VO_1571_nar_pvpwofxp_pylonbuiltfriendly_3",
+      "VO_1572_nar_pvpwofxp_pylonbuiltfriendly_4"
+    ]
+  },
+
+  "COL_062_pylon_built_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1574_nar_pvpwofxp_pylonbuiltenemy_1",
+      "VO_1575_nar_pvpwofxp_pylonbuiltenemy_2",
+      "VO_1576_nar_pvpwofxp_pylonbuiltenemy_3",
+      "VO_1577_nar_pvpwofxp_pylonbuiltenemy_4"
+    ]
+  },
+
+  "COL_076_free_mobs_reminder":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1173_nar_moballiance_freemobs_2",
+      "VO_1174_nar_moballiance_freemobs_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_077_mob_rebuild_reminder":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1176_nar_moballiance_rebuildreminder_2",
+      "VO_1177_nar_moballiance_rebuildreminder_3"
+    ],
+    "randomize_on_load": true
+  },
+
+
+  "COL_079_onboarding_spawner_reminder":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1189_nar_placedspawner_prompt_1",
+      "VO_1190_nar_placedspawner_nudge_1"
+    ]
+  },
+
+  "COL_080_mob_abandon_attack":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1656_nar_moballiance_abandonattack_1",
+      "VO_1657_nar_moballiance_abandonattack_2",
+      "VO_1658_nar_moballiance_abandonattack_3"
+    ]
+  },
+
+  "COL_085_portal_hp":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_0583_nar_piglinbase_portalhealthgroup2_1",
+      "VO_0584_nar_piglinbase_portalhealthgroup2_2",
+      "VO_0585_nar_piglinbase_portalhealthgroup2_3",
+      "VO_0586_nar_piglinbase_portalhealthgroup2_4",
+      "VO_0587_nar_piglinbase_portalhealthgroup2_5",
+      "VO_0588_nar_piglinbase_portalhealthgroup2_6"
+    ]
+  },
+
+  "COL_086_warriors_in_village":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1831_nar_mainstory_warriorsvillage_1",
+      "VO_1832_nar_mainstory_warriorsvillage_2",
+      "VO_1833_nar_mainstory_warriorsvillage_3"
+    ]
+  },
+
+  "COL_087_unlock_diamond_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1837_nar_pvpwofxp_unlockdiamondfriendly_1",
+      "VO_1838_nar_pvpwofxp_unlockdiamondfriendly_2",
+      "VO_1839_nar_pvpwofxp_unlockdiamondfriendly_3"
+    ]
+  },
+
+  "COL_088_unlock_diamond_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1840_nar_pvpwofxp_unlockdiamondenemy_1",
+      "VO_1841_nar_pvpwofxp_unlockdiamondenemy_2",
+      "VO_1842_nar_pvpwofxp_unlockdiamondenemy_3"
+    ]
+  },
+
+  "COL_089_diamond_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1843_nar_pvpwofxp_diamondattacked_1",
+      "VO_1844_nar_pvpwofxp_diamondattacked_2",
+      "VO_1845_nar_pvpwofxp_diamondattacked_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_090_diamond_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1846_nar_pvpwofxp_diamonddestroyed_1",
+      "VO_1847_nar_pvpwofxp_diamonddestroyed_2",
+      "VO_1848_nar_pvpwofxp_diamonddestroyed_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_091_unlock_coal_friendly":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1849_nar_pvpwofxp_unlockcoalfriendly_1",
+      "VO_1850_nar_pvpwofxp_unlockcoalfriendly_2",
+      "VO_1851_nar_pvpwofxp_unlockcoalfriendly_3"
+    ]
+  },
+
+  "COL_092_unlock_coal_enemy":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1852_nar_pvpwofxp_unlockcoalenemy_1",
+      "VO_1853_nar_pvpwofxp_unlockcoalenemy_2",
+      "VO_1854_nar_pvpwofxp_unlockcoalenemy_3"
+    ]
+  },
+
+  "COL_093_coal_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1855_nar_pvpwofxp_coalattacked_1",
+      "VO_1856_nar_pvpwofxp_coalattacked_2",
+      "VO_1857_nar_pvpwofxp_coalattacked_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_094_coal_destroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1858_nar_pvpwofxp_coaldestroyed_1",
+      "VO_1859_nar_pvpwofxp_coaldestroyed_2",
+      "VO_1860_nar_pvpwofxp_coaldestroyed_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_095_unlock_firsts_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1863_nar_pvpwofxp_unlockfirstsattacked_1",
+      "VO_1864_nar_pvpwofxp_unlockfirstsattacked_2",
+      "VO_1865_nar_pvpwofxp_unlockfirstsattacked_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_096_unlock_towers_attacked":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1869_nar_pvpwofxp_unlocktowersattacked_1",
+      "VO_1870_nar_pvpwofxp_unlocktowersattacked_2",
+      "VO_1871_nar_pvpwofxp_unlocktowersattacked_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_097_map_claim_area_planned":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1727_nar_map_claimarea_1",
+      "VO_1880_nar_map_claimarea_2",
+      "VO_1881_nar_map_claimarea_3"
+    ]
+  },
+
+  "COL_098_map_claim_area_executed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1738_nar_map_claimarea_1",
+      "VO_1882_nar_map_claimarea_4",
+      "VO_1883_nar_map_claimarea_5"
+    ]
+  },
+
+  "COL_099_portal_destroyed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_2107_nar_piglinhordes_portaldestruction1_1",
+      "VO_2108_nar_piglinhordes_portaldestruction2_2",
+      "VO_2109_nar_piglinhordes_portaldestruction3_1",
+      "VO_2110_nar_piglinhordes_portaldestruction4_1",
+      "VO_2111_nar_piglinhordes_portaldestruction5_2"
+    ]
+  },
+
+  "COL_100_map_village_targeted":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1420_nar_map_villagetargeted_1",
+      "VO_1918_nar_map_villagetargeted_2",
+      "VO_1919_nar_map_villagetargeted_3"
+
+    ]
+  },
+
+  "COL_101_map_village_under_attack":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1421_nar_map_villageunderattack3_1",
+      "VO_1894_nar_map_villageunderattack_2",
+      "VO_1895_nar_map_villageunderattack_3"
+
+    ]
+  },
+
+  "COL_102_map_village_damaged":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1463_nar_map_villagedamaged_1",
+      "VO_1896_nar_map_villagedamaged_2",
+      "VO_1897_nar_map_villagedamaged_3"
+
+    ]
+  },
+
+  "COL_103_map_village_destroyed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1464_nar_map_villagedestroyed_1",
+      "VO_1898_nar_map_villagedestroyed_2",
+      "VO_1899_nar_map_villagedestroyed_3"
+
+    ]
+  },
+
+  "COL_104_map_new_base_executed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1468_nar_map_newbase_1",
+      "VO_1900_nar_map_newbase_2",
+      "VO_1901_nar_map_newbase_3"
+
+    ]
+  },
+
+  "COL_105_map_new_base_planned":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1827_nar_map_newbaseplanned_1",
+      "VO_1902_nar_map_newbaseplanned_2",
+      "VO_1903_nar_map_newbaseplanned_3"
+
+    ]
+  },
+
+  "COL_106_map_base_upgrade_executed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1469_nar_map_baseupgrade_1",
+      "VO_1904_nar_map_baseupgrade_2",
+      "VO_1905_nar_map_baseupgrade_3"
+
+    ]
+  },
+
+  "COL_107_map_base_upgrade_planned":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1828_nar_map_baseupgradeplanned_1",
+      "VO_1906_nar_map_baseupgradeplanned_2",
+      "VO_1907_nar_map_baseupgradeplanned_3"
+
+    ]
+  },
+
+  "COL_108_map_mob_targeted":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1648_nar_map_moballiancetargeted_1",
+      "VO_1908_nar_map_moballiancetargeted_2",
+      "VO_1909_nar_map_moballiancetargeted_3"
+
+    ]
+  },
+
+  "COL_109_map_mob_under_attack":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1651_nar_map_moballianceunderattack_1",
+      "VO_1910_nar_map_moballianceunderattack_2",
+      "VO_1911_nar_map_moballianceunderattack_3"
+
+    ]
+  },
+
+  "COL_110_map_mob_damaged":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1664_nar_map_moballiancedamaged_1",
+      "VO_1912_nar_map_moballiancedamaged_2",
+      "VO_1913_nar_map_moballiancedamaged_3"
+
+    ]
+  },
+
+  "COL_111_map_outpost_destroyed":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1826_nar_map_outpostdestroyed_1",
+      "VO_1914_nar_map_outpostdestroyed_2",
+      "VO_1915_nar_map_outpostdestroyed_3"
+
+    ]
+  },
+
+  "COL_112_outpost_targeted":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1891_nar_map_outposttargeted_1",
+      "VO_1892_nar_map_outposttargeted_2",
+      "VO_1893_nar_map_outposttargeted_3"
+
+    ]
+  },
+
+  "COL_113_wofxp_clear_netherrack":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "SEQ_172_wofxp_unlockclearnetherrack_1",
+      "VO_0767_nar_wofxp_unlockclearnetherrack_1",
+      "VO_0768_nar_wofxp_unlockclearnetherrack_2",
+      "SEQ_225_wofxp_unlock_clear_netherrack_4",
+      "VO_0773_nar_wofxp_unlockclearnetherrack_7"
+
+    ]
+  },
+
+  "COL_114_wofxp_gather_iron":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "SEQ_269_wofxp_unlockiron_1",
+      "VO_0964_nar_wofxp_unlockiron_3",
+      "VO_0965_nar_wofxp_unlockiron_4",
+      "VO_0966_nar_wofxp_unlockiron_5",
+      "VO_0967_nar_wofxp_unlockiron_6"
+
+    ]
+  },
+
+  "COL_115_wofxp_gather_diamond":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1102_nar_wofxp_unlockdiamond_4",
+      "VO_1099_nar_wofxp_unlockdiamond_1",
+      "VO_1100_nar_wofxp_unlockdiamond_2",
+      "VO_1101_nar_wofxp_unlockdiamond_3",
+      "VO_1104_nar_wofxp_unlockdiamond_6"
+
+    ]
+  },
+
+  "COL_116_wofxp_gather_gold":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1106_nar_wofxp_unlockgold_2",
+      "VO_1105_nar_wofxp_unlockgold_1",
+      "VO_1107_nar_wofxp_unlockgold_3",
+      "VO_1108_nar_wofxp_unlockgold_4",
+      "VO_1109_nar_wofxp_unlockgold_5"
+
+    ]
+  },
+
+  "COL_117_wofxp_gather_coal":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_1938_nar_wofxp_gathercoal_1",
+      "VO_1939_nar_wofxp_gathercoal_2",
+      "VO_1940_nar_wofxp_gathercoal_3",
+      "VO_1941_nar_wofxp_gathercoal_4",
+      "VO_1942_nar_wofxp_gathercoal_5"
+
+    ]
+  },
+
+  "COL_118_wofxp_gather_redstone":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "VO_0974_nar_wofxp_unlockredstone_7",
+      "SEQ_194_unlock_redstone",
+      "VO_0970_nar_wofxp_unlockredstone_3",
+      "SEQ_195_unlock_redstone",
+      "VO_0973_nar_wofxp_unlockredstone_6"
+
+    ]
+  },
+
+  "COL_119_wofxp_increase_all_allays":
+  {
+    "selection_type":"sequential",
+    "audio_events":[
+      "SEQ_113_wofxp_allay_max_1",
+      "VO_0063_nar_wofxp_allaymax_4",
+      "VO_0490_nar_wofxp_allaymax_5",
+      "VO_0758_nar_wofxp_allaymax_10",
+      "VO_0762_nar_wofxp_allaymax_14"
+
+    ]
+  },
+
+  "COL_120_wofxp_poi_firstresourcealert":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_2064_nar_poi_firstsresourcealert_1",
+      "VO_2065_nar_poi_firstsresourcealert_1",
+      "VO_2066_nar_poi_firstsresourcealert_1"
+
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_121_map_outposttargeted":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1891_nar_map_outposttargeted_1",
+      "VO_1892_nar_map_outposttargeted_2",
+      "VO_1893_nar_map_outposttargeted_3"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_122_map_outpostunderattack":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1976_nar_map_outpostunderattack_1"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_123_map_outpostsurvivedattack":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1975_nar_map_oupostsurvived_1"
+    ],
+    "randomize_on_load": true
+  },
+
+  "COL_124_map_outpostdestroyed":
+  {
+    "selection_type":"randomized",
+    "audio_events":[
+      "VO_1826_nar_map_outpostdestroyed_1",
+      "VO_1914_nar_map_outpostdestroyed_2",
+      "VO_1915_nar_map_outpostdestroyed_3"
+    ],
+    "randomize_on_load": true
+  }
+}
+}

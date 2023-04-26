@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_question_mark"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_question_mark"
+      },
+      "identifier": "badger:wmap_question_mark",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_question_mark": "mat_wmap_question_mark"
+      },
+      "render_controllers": ["controller.render.wmap_question_mark"]
+    }
+  }
+}

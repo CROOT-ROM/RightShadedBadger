@@ -1,0 +1,64 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_piglin_rotters_boss_puke_drip",
+            "basic_render_parameters": {
+                "materials_list": ["mat_badger_fx_blend_ramp_liquid_drip_fp_spit"]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 150.01
+            }
+        },
+        "components": {
+            "minecraft:emitter_local_space": {
+                "transform": true
+            },
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 1
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 1
+            },
+            "minecraft:emitter_shape_point": {
+                "offset": [
+                    0,
+                    0.05,
+                    0.4
+                ],
+                "direction": [
+                    0,
+                    1,
+                    0
+                ]
+            },
+            "minecraft:particle_initial_speed": 0,
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": 1
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    "0.5",
+                    "0.5"
+                ],
+                "initial_scale": [
+                    1,
+                    1
+                ],
+                "facing_camera_mode": "emitter_transform_xz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 5,
+                        "rows_count": 2,
+                        "frame_iteration": "page",
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

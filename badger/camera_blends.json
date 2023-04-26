@@ -1,0 +1,68 @@
+[
+  {
+    "camera_from": "redstone_launcher_camera",
+    "camera_to": "orbit",
+    "ease": "in_out_cubic",
+    "blend_time": 1.25,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.25,
+    "inherits_from_rotation": true,
+    "max_blend_distance": 400.0
+  },
+  {
+    "camera_from": "orbit",
+    "camera_to": "redstone_launcher_camera",
+    "ease": "in_out_cubic",
+    "blend_time": 1.25,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.25,
+    "inherits_from_rotation": false
+  },
+  {
+    "camera_from": "buildable_preview_camera",
+    "camera_to": "orbit",
+    "ease": "in_out_cubic",
+    "blend_time": 1.35,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.25,
+    "inherits_from_rotation": true,
+    "max_blend_distance": 400.0
+  },
+  {
+    "camera_from": "orbit",
+    "camera_to": "buildable_preview_camera",
+    "ease": "in_out_cubic",
+    "blend_time": 1.35,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.5,
+    "inherits_from_rotation": false
+  },
+  {
+    "camera_from": "worldmap",
+    "camera_to": "orbit",
+    "ease": "in_out_cubic",
+    "blend_time": 0.0,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.25,
+    "inherits_from_rotation": false
+  },
+  {
+    "camera_from": "battle_view_camera",
+    "camera_to": "orbit",
+    "ease": "in_out_cubic",
+    "blend_time": 1.25,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.15,
+    "inherits_from_rotation": true,
+    "max_blend_distance": 400.0
+  },
+  {
+    "camera_from": "orbit",
+    "camera_to": "battle_view_camera",
+    "ease": "in_out_cubic",
+    "blend_time": 1.25,
+    "camera_to_accepts_input": true,
+    "input_dampening_coefficient": 0.25,
+    "inherits_from_rotation": false
+  }
+]

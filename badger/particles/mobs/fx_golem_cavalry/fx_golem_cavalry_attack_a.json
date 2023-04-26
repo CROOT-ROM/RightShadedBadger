@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_golem_cavalry_attack_a",
+      "basic_render_parameters": {
+        "materials_list": [
+          "mat_badger_fx_blend_parts_ground"
+        ]
+      },
+      "optimizations": {
+        "do_not_spawn_distance": 150.01
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": "Math.random(2,4)"
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 0.1
+      },
+      "minecraft:emitter_shape_sphere": {
+        "offset": [
+          0,
+          0.5,
+          0
+        ],
+        "direction_mode": "outwards",
+        "radius": 0.1
+      },
+      "minecraft:particle_initial_speed": 8,
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(0, 360)",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(1,0.5)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 1.5,
+        "linear_acceleration": [
+          0,
+          -9.8,
+          0
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          0.25,
+          0.25
+        ],
+        "facing_camera_mode": "rotate_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 31,
+            "rows_count": 4,
+            "frame_iteration": "row",
+            "row_index": [
+              0,
+              3
+            ],
+            "frame_start": 0
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      }
+    }
+  }
+}

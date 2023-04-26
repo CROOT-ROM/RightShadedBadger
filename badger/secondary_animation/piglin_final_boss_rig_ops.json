@@ -1,0 +1,35 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.piglin_final_boss_swipe_light_in": {
+      "rig": "badger:piglin_final_boss",
+      "enabled": "variable.in_spin",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 0.5,
+          "domain_b": 5,
+          "output": "v.light_intensity",
+          "range_a": 0,
+          "range_b": 100
+        }
+      ]
+    },
+    "rigops_actions.piglin_final_boss_swipe_light_out": {
+      "rig": "badger:piglin_final_boss",
+      "enabled": "variable.out_spin",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "query.anim_time",
+          "domain_a": 3.85,
+          "domain_b": 5.3,
+          "output": "v.light_intensity",
+          "range_a": 100,
+          "range_b": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_preview_structure": {
+        "material": "badger_block_particles",
+        "culling": "none",
+        "pass": "opaqueontop",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": true,
+            "comparisonfunction": "lessequal"
+        },
+        "target_uniform_blocks": [ "ParamsMolang" ],
+        "uniforms": {
+            "OverlayColor": [ "0.0", "0.0", "0.0", "0.0" ],
+            "TeamId": [ "0.0", "0.0", "0.0", "0.0" ]
+        },
+        "textures": {
+            "MatTexture": "texture[0]",
+            "CracksTexture": "textures/environment/destroy_stages",
+            "CracksNormalsTexture": "textures/environment/destroy_stages_n"
+        }
+    }
+}

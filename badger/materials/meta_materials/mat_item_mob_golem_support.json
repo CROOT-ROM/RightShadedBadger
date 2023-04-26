@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0", 
+  "mat_item_mob_golem_support:base_entity_static": {
+    "pass": "transparentafterworld",
+    "textures": {
+      "diffuseMap": "textures/entity/item_tex_mob_golem_support_d", 
+      "emissiveMap": "textures/entity/item_tex_mob_golem_support_e"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sand_d3": {
+            "textures": "textures/blocks/tex_block_sand_d3"
+            
+        }
+    }
+}

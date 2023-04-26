@@ -1,0 +1,11 @@
+{
+	"badger:chat": {
+		"quick_chat_team_only_categories" : [
+			// these strings need to match the corresponding category_id values in radial_gameplay_quickchat.json
+			"role",
+			"resources",
+			"combat",
+			"strategy"
+		]
+	}
+}

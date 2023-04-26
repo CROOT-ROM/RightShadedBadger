@@ -1,0 +1,12 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+		"identifier" : "badger:trail_allay_gather",
+		"start_distance": 0.2,
+		"length": 1.0,
+		"width": 0.2,
+		"fade_time": 1.0,
+        "shrink_time": 1.0,
+		"material": "mat_trail_allay_gather"
+    }
+}

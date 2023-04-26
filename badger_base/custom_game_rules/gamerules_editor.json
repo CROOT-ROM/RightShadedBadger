@@ -1,0 +1,11 @@
+{
+  "custom_game_rules": {
+    "rules": {
+      "campaignbasesenabled": true
+    },
+    "badger:template": {
+      "parent": "custom_game_rules",
+      "game_mode": "editor"
+    }
+  }
+}

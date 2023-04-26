@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_fountain_prismarine": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_entity_struct_fountain_prismarine_active","MetaMaterial.mat_entity_struct_fountain_prismarine_deactivated"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_fountain_prismarine_active": "Array.materials[variable.health_low]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,21 @@
+{
+  "test-name": "campaign-progression-test",
+  "test-description": "Use slash commands to advance through each campaign act",
+  "test-duration":60,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "campaign",
+  "platforms": ["Win32", "Windows10", "Xbox"],
+  "commands": [
+    "/bsharp event test_campaign_start_act_1b",
+    "/testdelay 10",
+    "/bsharp event test_campaign_start_act_2",
+    "/testdelay 10",
+    "/bsharp event test_campaign_start_act_3a",
+    "/testdelay 10",
+    "/bsharp event test_campaign_start_act_3b",
+    "/testdelay 10",
+    "/bsharp event test_campaign_start_epilogue",
+    "/testdelay 10",
+    "/gm"
+  ]
+}

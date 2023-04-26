@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_support_mortar",
+            "materials": {
+                "mat_proj_support_mortar": "mat_proj_support_mortar"
+            },
+            "geometry": {
+                "default": "geometry.proj_support_mortar"
+            },
+            "render_controllers": [
+                "controller.render.proj_support_mortar"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:rendering": {
+                "definition": "badger:proj_support_mortar"
+            }
+        }
+    }
+}

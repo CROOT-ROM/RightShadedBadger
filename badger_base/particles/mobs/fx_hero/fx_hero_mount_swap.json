@@ -1,0 +1,43 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_hero_mount_swap",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "beams" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_hero_mount_swap_beams",
+               "type" : "emitter_bound"
+            }
+         },
+         "slash" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_hero_mount_swap_slash",
+               "type" : "emitter_bound"
+            }
+         },
+         "sparkles" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_hero_mount_swap_sparkles",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "sparkles", "slash", "beams" ]
+         },
+         "minecraft:emitter_lifetime_once" : {},
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         }
+      }
+   }
+}

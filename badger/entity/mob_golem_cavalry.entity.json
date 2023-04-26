@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:keep_alive_timer": {
+        "time": 2
+      },
+      "badger:mount_molang": {
+        "mount_variable": "mob_golem_cavalry"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_mob_golem_cavalry_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mob_golem_cavalry_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_cavalry_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_cavalry_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mob_golem_cavalry_knockback_land"
+        },
+        "sfx_attack_interrupt": {
+          "audio": "BAE_mob_golem_cavalry_attack_a_loop_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_cavalry",
+        "limit": 128
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "attack_a_loop": "animation.mob_golem_cavalry.attack_a_loop",
+        "attack_a_winddown": "animation.mob_golem_cavalry.attack_a_winddown",
+        "attack_a_windup": "animation.mob_golem_cavalry.attack_a_windup",
+        "attack_b": "animation.mob_golem_cavalry.attack_b",
+        "attack_c": "animation.mob_golem_cavalry.attack_c",
+        "cheer_a": "animation.mob_golem_cavalry.cheer_a",
+        "climb_a": "animation.mob_golem_cavalry.climb_a",
+        "death_a": "animation.mob_golem_cavalry.death_a",
+        "default": "controller.animation.mob_golem_cavalry.default",
+        "giant_idle_a": "animation.mob_golem_cavalry_giant.idle_a",
+        "giant_walk_a": "animation.mob_golem_cavalry_giant.walk_a",
+        "hit_reaction_a": "animation.mob_golem_cavalry.hit_reaction_a",
+        "hitreact_b": "animation.mob_golem_cavalry.hitreact_b",
+        "hitreaction": "controller.animation.mob_golem_cavalry.hitreaction",
+        "idle_a": "animation.mob_golem_cavalry.idle_a",
+        "idles": "controller.animation.mob_golem_cavalry.idles",
+        "knockback_a": "animation.mob_golem_cavalry.knockback_a",
+        "knockback_b": "animation.mob_golem_cavalry.knockback_b",
+        "landing_a": "animation.mob_golem_cavalry.landing_a",
+        "locomotion": "controller.animation.mob_golem_cavalry.locomotion",
+        "spawn_a": "animation.mob_golem_cavalry.spawn_a",
+        "sprint_a": "animation.mob_golem_cavalry.sprint_a",
+        "stop_a": "animation.mob_golem_cavalry.stop_a",
+        "stun_a": "animation.mob_golem_cavalry.stun_a",
+        "swim_a": "animation.mob_golem_cavalry.swim_a",
+        "swim_idle_a": "animation.mob_golem_cavalry.swim_idle_a",
+        "tumble_fast": "animation.mob_golem_cavalry.tumble_fast",
+        "tumble_slow": "animation.mob_golem_cavalry.tumble_slow",
+        "walk_a": "animation.mob_golem_cavalry.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_cavalry"
+      },
+      "identifier": "badger:mob_golem_cavalry",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_mob_golem_cavalry": "mat_mob_golem_cavalry",
+        "mat_mob_golem_cavalry_face": "mat_mob_golem_cavalry_face"
+      },
+      "particle_effects": {
+        "fx_attack_a": "badger:fx_golem_cavalry_attack_a",
+        "fx_attack_a_winddown": "badger:fx_golem_cavalry_attack_a_winddown",
+        "fx_attack_b": "badger:fx_golem_cavalry_attack_b",
+        "fx_attack_c": "badger:fx_golem_cavalry_attack_c",
+        "fx_charge": "badger:fx_golem_cavalry_charge",
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_spawn_dust": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": ["controller.render.mob_golem_cavalry"],
+      "scripts": {
+        "animate":  [
+          {
+            "hitreaction": "1"
+          },
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "attack_a_loop": "BAE_mob_golem_cavalry_attack_a_loop",
+        "attack_a_loop_stop": "BAE_mob_golem_cavalry_attack_a_loop_stop",
+        "attack_a_winddown": "BAE_mob_golem_cavalry_attack_a_winddown",
+        "attack_a_windup": "BAE_mob_golem_cavalry_attack_a_windup",
+        "attack_b_headbutt": "BAE_mob_golem_cavalry_attack_b_headbutt",
+        "attack_c_slam": "BAE_mob_golem_cavalry_attack_c_slam",
+        "bodyfall": "BAE_mob_golem_cavalry_bodyfall",
+        "cheer": "BAE_mob_golem_cavalry_cheer",
+        "death_poof_small": "BAE_mob_death_poof_small",
+        "dx_attack_a": "BAE_mob_golem_cavalry_dx_attack_a",
+        "dx_attack_b": "BAE_mob_golem_cavalry_dx_attack_b",
+        "dx_attack_c": "BAE_mob_golem_cavalry_dx_attack_c",
+        "dx_cheer": "BAE_mob_golem_cavalry_dx_cheer",
+        "dx_death": "BAE_mob_golem_cavalry_dx_death",
+        "dx_hurt": "BAE_mob_golem_cavalry_dx_hurt",
+        "dx_idle": "BAE_mob_golem_cavalry_dx_idle",
+        "dx_walk": "BAE_mob_golem_cavalry_dx_walk",
+        "footstep_arm": "BAE_mob_golem_cavalry_footstep_arm",
+        "jump": "BAE_mob_golem_cavalry_jump",
+        "jump_land": "BAE_mob_golem_cavalry_jump_land",
+        "swim": "BAE_mob_golem_cavalry_swim"
+      }
+    }
+  }
+}

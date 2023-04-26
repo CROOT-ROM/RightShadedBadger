@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_dark_beacon_base": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_dark_beacon_base": "MetaMaterial.mat_wmap_dark_beacon_base"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

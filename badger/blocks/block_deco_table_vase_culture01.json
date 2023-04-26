@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_table_vase_culture01": {
+      "decoration": "deco_table_vase_culture01"
+    }
+  }
+}

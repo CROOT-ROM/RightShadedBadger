@@ -1,0 +1,80 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_wof_cube.default": {
+      "initial_state": "spawn",
+      "states": {
+        "disabled": {
+          "animations":  [
+            {
+              "disabled": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.fx_electric = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_beam_corrupted",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            },
+            {
+              "effect": "fx_cube_core",
+              "enabled": true,
+              "locator": "loc_fx_cube_cntr"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "captured",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(variable.is_disabled == 0)"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_beam_healthy",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "idle",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "disabled": "variable.is_disabled"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

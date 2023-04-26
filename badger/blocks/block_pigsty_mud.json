@@ -1,0 +1,24 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_pigsty_mud": {
+            "isotropic":{
+                "up": true
+            },
+            "textures": {
+                "up": "textures/blocks/tex_block_pigsty_mud",
+                "down": "textures/blocks/tex_block_pigsty_mud",
+                "side": "textures/blocks/tex_block_pigsty_mud"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_mud_pit",
+                        "range": "middle",
+                        "probability": 0.03
+                    }
+                ]           
+            }
+        }
+    }
+}

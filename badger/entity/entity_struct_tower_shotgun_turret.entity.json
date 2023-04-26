@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:entity_struct_tower_shotgun_turret"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_close_sound": {
+          "audio": "BAE_tower_shotgun_attack"
+        }
+      }
+    }
+  }
+}

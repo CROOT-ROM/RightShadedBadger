@@ -1,0 +1,67 @@
+{
+  "format_version": "1.8.0",
+  "mat_fx_host:base_lure": {
+    "depthprepass": false,
+    "pass": "transparentafterworld",
+    "textures": {
+      "noiseMap": "textures/shared/tex_shared_noise_256"
+    },
+    "target_uniform_blocks": [ "ParamsLure" ],
+    "uniforms": {
+      "BaseColor": [
+        "0.0",
+        "0.0",
+        "1.0",
+        "0.01"
+      ],
+      "MatColor": [
+        "0.025",
+        "0.1",
+        "1.0",
+        "0.01"
+      ],
+      "LumaMinMax": [
+        "0.3",
+        "1.0",
+        "0.0",
+        "0.1"
+      ],
+      "ShimmerColor": [
+        "0.25",
+        "0.875",
+        "1.0",
+        "0.5"
+      ],
+      "LureParams0": [
+        "0.015", // ShimmerWidth
+        "0.075", // ShimmerSpeed
+        "0.0",   // ShimmerColorNoise
+        "0.5"    // ShimmerLevel
+      ],
+      "LureParams1": [
+        "4.0",   // FalloffPower
+        "6.0",   // FalloffLevel
+        "0.25",  // FillLevel
+        "0.0"    // EdgeLevel
+      ],
+      "LureParams2": [
+        "6.0",   // BoostLevel
+        "4.0",   // BoostPulseLevel
+        "2.2",   // BoostPulseFreq
+        "0.0"    // NoiseLevel
+      ],
+      "NoiseOffsetScale": [
+        "0.0",
+        "0.0",
+        "1.0",
+        "1.0"
+      ],
+      "NoiseAnimOffset": [
+        "0.004",
+        "0.004",
+        "0.0",
+        "0.0"
+      ]
+    }
+  }
+}

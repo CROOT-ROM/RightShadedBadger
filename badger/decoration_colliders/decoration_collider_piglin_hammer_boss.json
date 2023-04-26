@@ -1,0 +1,18 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier": "badger:decoration_collider_piglin_hammer_boss",
+        "offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "height": 7.0,
+        "length": 0.8,
+        "yaw": 0.0,
+        "inner_radius": 3.2,
+        "outer_radius": 4.6,
+        "intensity": 1.0,
+        "priority": 1000
+    }
+}

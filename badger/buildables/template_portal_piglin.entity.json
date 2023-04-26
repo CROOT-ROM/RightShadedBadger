@@ -1,0 +1,128 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_portal_piglin"
+    },
+    "components": {
+      "badger:invulnerability_heartbeat_view":{
+          "audio_bae_event": "BAE_piglin_portal_invulnerable_pulse"
+      },
+      "badger:presentation_event": {
+        "visual_state_added.portal_invulnerable": {
+          "audio": "BAE_piglin_portal_invulnerable_added"
+        },
+        "visual_state_removed.portal_invulnerable": {
+          "audio": "BAE_piglin_portal_invulnerable_removed"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_portal_idle"
+        },
+        "on_piglin_combat_authored_tactic": {
+          "audio": "BAE_MUS_Piglin_Combat_Stinger_AuthoredTactic"
+        },
+        "on_batch_spawn": {
+          "particles": [
+            {
+              "effect": "badger:fx_zoner_piglin_core_spawn",
+              "locator": "loc_fx_main",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        },
+        "on_construction_end": {
+          "particles": [
+            {
+              "effect": "badger:fx_zoner_piglin_core",
+              "locator": "loc_fx_main",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_core_parts",
+              "locator": "loc_fx_main",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_electric_l_bottom",
+              "locator": "loc_fx_frame_l_bottom",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_electric_r_bottom",
+              "locator": "loc_fx_frame_r_bottom",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_electric_l_bottom",
+              "locator": "loc_fx_frame_l_bottom02",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_piglin_portal_transition_stage1",
+          "visual_state": {
+            "type": "on_structure_damage_low"
+          }
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_piglin_portal_transition_stage1",
+          "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_2": {
+          "visual_state": {
+            "type": "on_structure_damage_medium"
+          }
+        },
+        "on_damage_applied_to_structure_3": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_4": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_5": {
+          "audio": "BAE_piglin_portal_transition_stage2",
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_6": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_7": {
+          "audio": "BAE_piglin_portal_transition_stage3",
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_8": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_damage_applied_to_structure_9": {
+          "visual_state": {
+            "type": "on_structure_damage_high"
+          }
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_piglin_portal_destroyed"
+        }
+      }
+    }
+  }
+}

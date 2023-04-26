@@ -1,0 +1,22 @@
+{
+  "render_controllers": {
+    "controller.render.proj_golem_shield_impact": {
+      "geometry": "Geometry.proj_golem_shield_impact",
+      "materials":  [
+        {
+          "mat_proj_golem_shield_impact": "MetaMaterial.mat_proj_golem_shield_impact"
+        },
+        {
+          "mat_proj_golem_shield_impact_face": "MetaMaterial.mat_proj_golem_shield_impact_face"
+        },
+        {
+          "mat_fx_golem_shield": "MetaMaterial.mat_fx_golem_shield"
+        },
+        {
+          "mat_fx_golem_shield02": "MetaMaterial.mat_fx_golem_shield02"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

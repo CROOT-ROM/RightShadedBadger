@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_netherrite_gold_pipe": {
+            "geometry": "geometry.block_deco_netherrite_gold_pipe_geo",
+            "up": "world",
+            "forward": "surface"
+        }
+    }
+}

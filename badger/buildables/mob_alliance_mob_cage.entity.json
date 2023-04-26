@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:mob_alliance_mob_cage"
+        },
+        "components": {
+            "badger:interaction_presentation": {
+                "trigger_specific_events": true,
+                "trigger_generic_events": false
+            },
+            "badger:presentation_event": {
+                "gate_open": {
+                    "audio": "BAE_STRUC_piglin_cage_mob_break"
+                }
+            }
+        }
+    }
+}

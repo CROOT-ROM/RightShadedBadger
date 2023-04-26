@@ -1,0 +1,178 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_molang_to_fmod":  [
+        {
+          "fmod": "liquid_types",
+          "molang": "variable.terrain_type"
+        }
+      ],
+      "badger:block_source_info": {
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mount_tiger"
+      },
+      "badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 4.5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "mount_tiger"
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,1,0.5],
+            "enabled": true,
+            "falloff_power": 2.5,
+            "intensity": "query.fbm_noise(4, 1.0, 40, 1.0)",
+            "locator": "loc_fx_land",
+            "offset": [0,1.5,1.75],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_mount_tiger_dx_hurt"
+        },
+        "intense_knockback": {
+          "audio": "BAE_mount_tiger_dx_knockback_intense"
+        },
+        "normal_hit": {
+          "audio": "BAE_mount_tiger_dx_hurt"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mount_tiger_dx_knockback_normal"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mount_generic_swim_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mount_generic_swim_liquid_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mount_tiger_knockback_land"
+        },
+        "sfx_fall_loop_stop": {
+          "audio": "BAE_mount_tiger_fall_loop_stop"
+        },
+        "sprint_start": {
+          "audio": "BAE_mount_tiger_sprint_start"
+        },
+        "sprint_stop": {
+          "audio": "BAE_mount_tiger_sprint_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mount_tiger_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mount_tiger",
+        "limit": 64
+      },
+      "badger:speed_data_to_fmod": {
+        "fmod_speed_param": "mount_speed",
+        "fmod_velocity_y_param": "mount_vel_y",
+        "max_speed": 18.75,
+        "min_speed": 0
+      },
+      "badger:template": ["badger:template_status_effects_mount"]
+    },
+    "description": {
+      "animations": {
+        "ascending_run": "animation.mount_tiger.ascending_run",
+        "audio": "controller.animation.mount_tiger.audio",
+        "cheer_a": "animation.mount_tiger.cheer_a",
+        "climb": "controller.animation.mount_tiger.climb",
+        "climb_a": "animation.mount_tiger.climb_a",
+        "climb_additive": "animation.mount_tiger.climb_additive",
+        "climb_additive_b": "animation.mount_tiger.climb_additive_b",
+        "climb_additive_down": "animation.mount_tiger.climb_additive_down",
+        "death_a": "animation.animal_tiger.death_a",
+        "default": "controller.animation.mount_tiger.default",
+        "feed_a": "animation.mount_tiger.feed_a",
+        "feed_react": "animation.mount_tiger.feed_react",
+        "hit_react": "controller.animation.mount_tiger.hit_react",
+        "hit_react_b": "animation.animal_tiger.hit_react_b",
+        "idle_b": "animation.mount_tiger.idle_b",
+        "jump_down": "animation.mount_tiger.jump_down",
+        "jump_end": "animation.mount_tiger.jump_end",
+        "jump_enter": "animation.mount_tiger.jump_enter",
+        "jump_loop": "animation.mount_tiger.jump_loop",
+        "jump_up": "animation.mount_tiger.jump_up",
+        "knockback": "animation.mount_tiger.knockback",
+        "knockback_end": "animation.mount_tiger.knockback_end",
+        "locomotion": "controller.animation.mount_tiger.locomotion",
+        "roar": "animation.mount_tiger.roar",
+        "run_a": "animation.mount_tiger.run_a",
+        "run_b": "animation.mount_tiger.run_b",
+        "run_c": "animation.mount_tiger.run_c",
+        "start": "animation.mount_tiger.start",
+        "stop": "animation.mount_tiger.stop",
+        "stop_b": "animation.mount_tiger.stop_b",
+        "swim_a": "animation.mount_tiger.swim_a",
+        "swimidle_a": "animation.mount_tiger.swimidle_a",
+        "fe_select": "animation.mount_tiger.roar",
+        "fe_idle": "animation.mount_tiger.idle_b",
+        "fe_anim": "controller.animation.mount_tiger.frontend"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Roar"],
+      "geometry": {
+        "default": "geometry.mount_tiger"
+      },
+      "identifier": "badger:mount_tiger",
+      "materials": {
+        "mat_mount_tiger": "mat_mount_tiger",
+        "mat_mount_tiger_face": "mat_mount_tiger_face"
+      },
+      "particle_effects": {
+        "fx_land": "badger:fx_mount_tiger_land"
+      },
+      "render_controllers": ["controller.render.mount_tiger"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "audio": "1"
+          },
+          {
+            "climb": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.mount_width = 1;"]
+      },
+      "sound_effects": {
+        "dx_idle": "BAE_mount_tiger_dx_idle",
+        "fall_loop": "BAE_mount_tiger_fall_loop",
+        "footstep": "BAE_mount_tiger_footsteps",
+        "jump": "BAE_mount_tiger_jump",
+        "land": "BAE_mount_tiger_land",
+        "roar": "BAE_mount_tiger_roar",
+        "run_loop": "BAE_mount_tiger_run_loop",
+        "run_stop": "BAE_mount_tiger_run_stop",
+        "swim_os": "BAE_mount_tiger_swim_oneshot"
+      },
+      "textures": {
+        "default": "textures/entity/mount_tiger/tex_mount_tiger_d"
+      }
+    }
+  }
+}

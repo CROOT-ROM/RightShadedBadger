@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.block_deco_music_box_lock": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_shared_block_player": "MetaMaterial.mat_shared_block_player"
+                }
+            ]
+        }
+    }
+}

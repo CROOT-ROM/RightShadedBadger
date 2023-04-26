@@ -1,0 +1,131 @@
+[
+  {
+    "button_id": "button.simulate_touch",
+    "key_id": "key.simulateTouch",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.chat",
+    "key_id": "key.chat",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.console",
+    "key_id": "key.command",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.pause",
+    "key_id": "key.menu.pause",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.render_debug",
+    "key_id": "key.renderDebug",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.open_imgui",
+    "key_id": "key.openImgui",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.sprint",
+    "key_id": "key.sprint"
+  },
+  {
+    "button_id": "button.toggle_sprint",
+    "key_id": "key.toggleSprint"
+  },
+  {
+    "button_id": "button.left",
+    "key_id": "key.left"
+  },
+  {
+    "button_id": "button.right",
+    "key_id": "key.right"
+  },
+  {
+    "button_id": "button.down",
+    "key_id": "key.back"
+  },
+  {
+    "button_id": "button.up",
+    "key_id": "key.forward"
+  },
+  {
+    "button_id": "button.jump",
+    "key_id": "key.jump"
+  },
+  {
+    "button_id": "button.sneak",
+    "key_id": "key.sneak"
+  },
+  {
+    "button_id": "button.place_block",
+    "key_id": "key.build"
+  },
+  {
+    "button_id": "button.toggle_blockpicking",
+    "key_id": "key.toggleBlockPicking"
+  },
+  {
+    "button_id": "button.debug_cam_slow",
+    "key_id": "key.debugCamSlow"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_modifier",
+    "key_id": "key.slashCommandHotkeyModifier",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_0",
+    "key_id": "key.slashCommandHotkey0",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_1",
+    "key_id": "key.slashCommandHotkey1",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_2",
+    "key_id": "key.slashCommandHotkey2",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_3",
+    "key_id": "key.slashCommandHotkey3",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_4",
+    "key_id": "key.slashCommandHotkey4",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_5",
+    "key_id": "key.slashCommandHotkey5",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_6",
+    "key_id": "key.slashCommandHotkey6",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_7",
+    "key_id": "key.slashCommandHotkey7",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_8",
+    "key_id": "key.slashCommandHotkey8",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.slash_command_hotkey_9",
+    "key_id": "key.slashCommandHotkey9",
+    "focus_impact": "neutral"
+  }
+]

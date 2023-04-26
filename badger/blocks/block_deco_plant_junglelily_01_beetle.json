@@ -1,0 +1,37 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_junglelily_01_beetle": {
+            "decoration": "deco_plant_junglelily_01",
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_block_water_skeeters",
+                        "range": "near",
+                        "probability": 1
+                    },
+                    {
+                        "effect": "badger:fx_block_fireflies_beetle_homestead",
+                        "range": "middle",
+                        "probability": 1,
+                        "offset": [
+                            0,
+                            5,
+                            0
+                        ]
+                    },
+                    {
+                        "effect": "badger:fx_block_beetle_homestead_steam",
+                        "range": "middle",
+                        "probability": 1,
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

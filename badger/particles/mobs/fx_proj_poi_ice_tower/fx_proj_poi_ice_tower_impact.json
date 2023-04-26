@@ -1,0 +1,93 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_poi_ice_tower_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_shockwave",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_smoke01" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_smoke01",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_smoke02" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_smoke02",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_smoke03" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_smoke03",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_smoke04" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_smoke04",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_smoke05" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_poi_ice_tower_impact_smoke05",
+               "type" : "emitter_bound"
+            }
+         },
+         "projectile_decorations_collision" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 18.0, 18.0, 18.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.3,
+                  "lifetime" : 9.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_ice_block_impact"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_ice_tower_impact"
+               }
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares", "impact_parts", "impact_smoke01", "impact_shockwave" ],
+            "timeline" : {
+               "0.100000" : [ "impact_smoke02" ],
+               "0.200000" : [ "impact_smoke03", "projectile_decorations_collision" ],
+               "0.300000" : [ "impact_smoke04" ],
+               "0.400000" : [ "impact_smoke05" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.0
+         }
+      }
+   }
+}

@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 2
+      },
+      "badger:presentation_event": {
+        "normal_hit": {
+          "audio": "BAE_mob_golem_sniper_dx_hurt"
+        },
+        "on_bruiser_melee_hit": {
+          "audio": "BAE_impact_piglin_bruiser_on_golem_sniper"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_sniper_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_sniper_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_large"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_large_stop"
+        },
+        "sfx_sniper_attack_winddown_interrupt": {
+          "audio": "BAE_mob_golem_sniper_attack_winddown_stop"
+        },
+        "sfx_sniper_attack_windup_interrupt": {
+          "audio": "BAE_mob_golem_sniper_attack_windup_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mob_golem_sniper_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_sniper",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects_large"]
+    },
+    "description": {
+      "animations": {
+        "attack_b": "animation.mob_golem_sniper.attack_b",
+        "cheer_a": "animation.mob_golem_sniper_anim_02.cheer_a",
+        "death_a": "animation.mob_golem_sniper.death_a",
+        "default": "controller.animation.mob_golem_sniper.default",
+        "fireloop_a": "animation.mob_golem_sniper.fireloop_a",
+        "hit_react": "animation.mob_golem_sniper.hit_react",
+        "hitreact": "controller.animation.mob_golem_sniper.hitreact",
+        "idle_a": "animation.mob_golem_sniper.idle_a",
+        "idles": "controller.animation.mob_golem_sniper.idles",
+        "locomotion": "controller.animation.mob_golem_sniper.locomotion",
+        "spawn_a": "animation.mob_golem_sniper.spawn_a",
+        "sprint_a": "animation.mob_golem_sniper.sprint_a",
+        "stop_a": "animation.mob_golem_sniper.stop_a",
+        "stun_a": "animation.mob_golem_sniper.stun_a",
+        "swim_a": "animation.mob_golem_sniper.swim_a",
+        "swim_a_idle": "animation.mob_golem_sniper.swim_a_idle",
+        "walk_a": "animation.mob_golem_sniper.walk_a",
+        "winddown_a": "animation.mob_golem_sniper.winddown_a",
+        "windup_a": "animation.mob_golem_sniper.windup_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_sniper"
+      },
+      "identifier": "badger:mob_golem_sniper",
+      "materials": {
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_heal_256": "mat_fx_heal_256",
+        "mat_fx_spore_damaged_256": "mat_fx_spore_damaged_256",
+        "mat_mob_golem_sniper": "mat_mob_golem_sniper"
+      },
+      "particle_effects": {
+        "fx_attack_nose": "badger:fx_proj_burst_shot_start_flares",
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_corpse_removal_large": "badger:fx_shared_corpse_remove_large",
+        "fx_death": "badger:fx_shared_death_smoke_med",
+        "fx_death_large": "badger:fx_shared_death_smoke_large",
+        "fx_spawn_land": "badger:fx_shared_spawn_large",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_large_sparkle",
+        "fx_sprint": "badger:fx_golem_sniper_sprint_dust",
+        "fx_step": "badger:fx_golem_sniper_step"
+      },
+      "render_controllers": ["controller.render.mob_golem_sniper"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hitreact": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "attack_b_lock_arms": "BAE_mob_golem_sniper_attack_b_lock_arms",
+        "attack_b_lock_head": "BAE_mob_golem_sniper_attack_b_lock_head",
+        "attack_b_shoot": "BAE_mob_golem_sniper_attack_b_shoot",
+        "attack_shoot": "BAE_mob_golem_sniper_attack_shoot",
+        "attack_winddown": "BAE_mob_golem_sniper_attack_winddown",
+        "attack_windup": "BAE_mob_golem_sniper_attack_windup",
+        "bodyfall": "BAE_mob_golem_sniper_bodyfall",
+        "cheer": "BAE_mob_golem_sniper_cheer",
+        "death_poof_large": "BAE_mob_death_poof_large",
+        "dx_affirmative": "BAE_mob_golem_sniper_dx_affirmative",
+        "dx_alert": "BAE_mob_golem_sniper_dx_alert",
+        "dx_attack": "BAE_mob_golem_sniper_dx_attack",
+        "dx_cheer": "BAE_mob_golem_sniper_dx_cheer",
+        "dx_death": "BAE_mob_golem_sniper_dx_death",
+        "dx_directed": "BAE_mob_golem_sniper_dx_directed",
+        "dx_greeting": "BAE_mob_golem_sniper_dx_greeting",
+        "dx_hurt": "BAE_mob_golem_sniper_dx_hurt",
+        "dx_idle": "BAE_mob_golem_sniper_dx_idle",
+        "footstep_arm": "BAE_mob_golem_sniper_footstep_arm",
+        "footstep_leg": "BAE_mob_golem_sniper_footstep_leg",
+        "idle": "BAE_mob_golem_sniper_idle",
+        "idle_stun": "BAE_mob_golem_sniper_idle_stun",
+        "swim": "BAE_mob_golem_sniper_swim"
+      },
+      "textures": {
+        "default": "textures/entity/mob_golem_sniper/tex_mob_golem_sniper_d"
+      }
+    }
+  }
+}

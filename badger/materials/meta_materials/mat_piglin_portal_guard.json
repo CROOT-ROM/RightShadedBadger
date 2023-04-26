@@ -1,0 +1,12 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_portal_guard:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_piglin_portal_guard_d",
+            "coeffMap": "textures/entity/tex_piglin_portal_guard_mr",
+            "emissiveMap": "textures/entity/tex_piglin_portal_guard_e",
+            "normalMap": "textures/entity/tex_piglin_portal_guard_n"
+        }
+    }
+}

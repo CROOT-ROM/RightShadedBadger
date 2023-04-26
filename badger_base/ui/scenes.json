@@ -1,0 +1,27 @@
+{
+  "badger:ui_scenes": {
+    "hero_00": {
+      "models":  [
+        {
+          "animation": "ranger_frontend",
+          "face": {
+            "anim_columns": 9,
+            "anim_rows": 3,
+            "blink_frame": 1,
+            "default_frame": 0
+          },
+          "geometry": "geometry.hero_ranger_bg_01",
+          "rig": "badger:hero_fe",
+          "rotation": [0.0,0.0,0.0],
+          "scale": [0.75,0.75,0.75],
+          "translation": [0.0,0.3,0.0],
+          "variables": {
+            "variable.material_chooser": 0.0,
+            "variable.model_chooser": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

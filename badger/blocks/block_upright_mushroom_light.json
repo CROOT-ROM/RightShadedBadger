@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_upright_mushroom_light": {
+      "textures": "textures/blocks/tex_block_mushroom_light"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wmap_fast_travel_indicator:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/wmap_fast_travel_indicator_d", 
+      "coeffMap": "textures/entity/wmap_fast_travel_indicator_mr", 
+      "emissiveMap": "textures/entity/wmap_fast_travel_indicator_e",
+      "normalMap": "textures/entity/wmap_fast_travel_indicator_n"
+    }
+  }
+}

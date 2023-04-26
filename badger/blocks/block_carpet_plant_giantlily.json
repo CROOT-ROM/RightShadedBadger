@@ -1,0 +1,32 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_carpet_plant_giantlily": {
+      "textures": {
+        "up": {
+          "smart": {
+            "default": "textures/blocks/tex_block_plant_giantlily_l", 
+            "empty": "textures/blocks/tex_smartexture_test_empty", 
+            "L": "textures/blocks/tex_block_plant_giantlily_l", 
+            "line": "textures/blocks/tex_smartexture_test_01_line", 
+            "cross": "textures/blocks/tex_block_plant_giantlily_cross", 
+            "spoke": "textures/blocks/tex_smartexture_test_01_spoke", 
+            "T": "textures/blocks/tex_block_plant_giantlily_t"
+          }
+        }, 
+        "down": {
+          "smart": {
+            "default": "textures/blocks/tex_block_plant_giantlily_l", 
+            "empty": "textures/blocks/tex_smartexture_test_empty", 
+            "L": "textures/blocks/tex_block_plant_giantlily_l", 
+            "line": "textures/blocks/tex_smartexture_test_01_line", 
+            "cross": "textures/blocks/tex_block_plant_giantlily_cross", 
+            "spoke": "textures/blocks/tex_smartexture_test_01_spoke", 
+            "T": "textures/blocks/tex_block_plant_giantlily_t"
+          }
+        }, 
+        "side": "textures/blocks/tex_block_plant_giantlily_side"
+      }
+    }
+  }
+}

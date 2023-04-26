@@ -1,0 +1,153 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_vo_sequence_speaker_tag": {
+        "speaker_tag": "badger:host_action"
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mob_generic_large"
+      },
+      "badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "color": [
+              0.25,
+              0.875,
+              1
+            ],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 3,
+            "locator": "loc_fx_light",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "fast_travel_start": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_3_large",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_arrive": {
+          "audio": "BAE_host_generic_teleport_arrive",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_3_large",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "host_generic_teleport_leave": {
+          "audio": "BAE_host_generic_teleport_leave",
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_shared_fasttravel_3_large",
+            "enabled": "true",
+            "locator": "loc_fx_main"
+          }
+        },
+        "remove_ghost": {
+          "script": "skin_off"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:host_action"
+      }
+    },
+    "description": {
+      "animations": {
+        "beckon_a": "animation.host_action.beckon_a",
+        "carefree_a_idle": "animation.host_action_behaviours.carefree_a_idle",
+        "carefree_a_walk": "animation.host_action_behaviours.carefree_a_walk",
+        "cheer_a": "animation.host_action.cheer_a",
+        "cheer_b": "animation.host_action.cheer_b",
+        "cheer_c": "animation.host_action.cheer_c",
+        "default": "controller.animation.host_action.default",
+        "guarded_a_idle": "animation.host_action_behaviours.guarded_a_idle",
+        "guarded_a_walk": "animation.host_action_behaviours.guarded_a_walk",
+        "happy_a_idle": "animation.host_action_behaviours.happy_a_idle",
+        "happy_a_walk": "animation.host_action_behaviours.happy_a_walk",
+        "host_action_nis_mst06_c06b": "animation.host_action_nis_victory.host_action_nis_mst06_c06b",
+        "idle": "controller.animation.host_action.idle",
+        "idle_a": "animation.host_action.idle_a",
+        "idle_b": "animation.host_action.idle_b",
+        "nis_action_victory_a": "animation.host_action_nis.nis_action_victory_a",
+        "sentinel_a_idle": "animation.host_action_behaviours.sentinel_a_idle",
+        "sentinel_a_walk": "animation.host_action_behaviours.sentinel_a_walk",
+        "spawn_a": "animation.host_action.spawn_a",
+        "speech_a": "animation.host_action.speech_a",
+        "walk": "controller.animation.host_action.walk",
+        "walk_a": "animation.host_action.walk_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "skin_off": "variable.second_skin_vis = 0; variable.mat_opacity = 1; variable.pass_index = 1;"
+      },
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Look Up"
+      ],
+      "geometry": {
+        "default": "geometry.host_action"
+      },
+      "identifier": "badger:host_action",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_host": "mat_fx_host",
+        "mat_host_action": "mat_host_action",
+        "mat_host_action_face": "mat_host_action_face"
+      },
+      "render_controllers": [
+        "controller.render.host_action"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": [
+          "variable.second_skin_vis = 1;",
+          "variable.mat_opacity = 0.75;",
+          "variable.pass_index = 5;"
+        ]
+      },
+      "sound_effects": {
+        "beckon": "BAE_host_action_beckon",
+        "cheer_arms": "BAE_host_action_cheer_arms",
+        "cheer_b": "BAE_host_action_cheer_b",
+        "cheer_c": "BAE_host_action_cheer_c",
+        "cheer_shake": "BAE_host_action_cheer_shake",
+        "footstep": "BAE_host_action_footstep",
+        "happy_arms": "BAE_host_action_happy_arms",
+        "idle_flower": "BAE_host_action_idle_flower",
+        "idle_leg_scratch": "BAE_host_action_move_idle_leg_scratch",
+        "move_idle": "BAE_host_action_move_idle",
+        "speech_move_arm": "BAE_host_action_speech_move_arm",
+        "speech_move_shoulder": "BAE_host_action_speech_move_shoulder"
+      }
+    }
+  }
+}

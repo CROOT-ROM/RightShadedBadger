@@ -1,0 +1,32 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_piglin_crate.default": {
+      "states": {
+        "default": {
+          "on_entry": ["variable.is_light = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "open": "variable.crate_open"
+            }
+          ]
+        },
+        "open": {
+          "animations":  [
+            {
+              "open": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "buildup",
+              "enabled": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

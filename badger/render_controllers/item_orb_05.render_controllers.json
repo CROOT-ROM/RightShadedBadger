@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_orb_05": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_orb_05": "MetaMaterial.mat_item_orb_05"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

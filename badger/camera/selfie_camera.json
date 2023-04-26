@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:selfie_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "selfie",
+        "field_of_view": 70.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": true,
+        "priority": 2,
+        "position": [ 6, 0, 0 ],
+        "orientation": [ 8.65, 180.0, -0.2 ]
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 1.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": false
+      },
+      "minecraft:camera_orbit": {
+        "azimuth_smoothing_spring": 16.0,
+        "polar_angle_smoothing_spring": 16.0,
+        "distance_smoothing_spring": 16.0,
+        "polar_angle_min": 15.0,
+        "polar_angle_max": 115.0,
+        "radius": 4,
+        "pivot_point_vertical_offset": 4.0
+      },
+      "minecraft:look_target": {},
+      "minecraft:follow_target": {},
+      "minecraft:camera_look_at": {
+        "soft_bounds_min": [ 0.0, 0.0 ],
+        "soft_bounds_max": [ 0.0, 0.0 ],
+        "hard_bounds_min": [ 0.0, 0.0 ],
+        "hard_bounds_max": [ 0.0, 0.0 ],
+        "soft_bounds_smoothing_spring": 64,
+        "look_target_vertical_offset": 2.0
+      },
+      "badger:cam_overrides_look_orientation": {}
+    }
+  }
+}

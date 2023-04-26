@@ -1,0 +1,10 @@
+{
+	"format_version": "1.0.0",
+	"badger:trail": {
+		"identifier": "badger:trail_dart_lrg",
+		"start_distance": 0.0,
+		"length": 15.0,
+		"width": 0.25,
+		"material": "mat_trail_dart"
+	}
+}

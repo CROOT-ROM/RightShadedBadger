@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_slab_bone_top": {
+            "textures": {
+                "up": "textures/blocks/tex_block_bone_top",
+                "down": "textures/blocks/tex_block_bone_top",
+                "side": "textures/blocks/tex_block_bone_top_side"
+            }
+        }
+    }
+}

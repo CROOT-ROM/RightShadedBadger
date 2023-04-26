@@ -1,0 +1,116 @@
+{
+  "fmv_id": "splash",
+  "fmv_path": "resource_packs/badger/videos/story/mst01_c01_a_call_to_action_fmv.bk2",
+  "clips": [
+    {
+      "clip_type": "ui_audio",
+      "start_time": 0,
+      "duration": 600,
+      "event_name": "BAE_cine_mst01_c01_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 5.46,
+        "start_time": 109.54,
+        "dialogue_key": "0147_nar_fmv_calltoaction_16",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 1.92,
+        "start_time": 147.21,
+        "dialogue_key": "0148_nar_fmv_calltoaction_17",
+        "speaker_id": "speaker.0003_Knowledge",
+        "event_description_path": "event:/voiceover/0003_Knowledge_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 3.40,
+        "start_time": 150.63,
+        "dialogue_key": "0150_nar_fmv_calltoaction_19",
+        "speaker_id": "speaker.0003_Knowledge",
+        "event_description_path": "event:/voiceover/0003_Knowledge_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 4.58,
+        "start_time": 154.04,
+        "dialogue_key": "0151_nar_fmv_calltoaction_20",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 2.67,
+        "start_time": 160.17,
+        "dialogue_key": "0153_nar_fmv_calltoaction_22",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 2.42,
+        "start_time": 187.17,
+        "dialogue_key": "0154_nar_fmv_calltoaction_23",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 3.58,
+        "start_time": 190.79,
+        "dialogue_key": "0155_nar_fmv_calltoaction_24",
+        "speaker_id": "speaker.0002_Action",
+        "event_description_path": "event:/voiceover/0002_Action_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 8.86,
+        "start_time": 193.38,
+        "dialogue_key": "0158_nar_fmv_calltoaction_27",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 2.66,
+        "start_time": 201.25,
+        "dialogue_key": "0159_nar_fmv_calltoaction_28",
+        "speaker_id": "speaker.0002_Action",
+        "event_description_path": "event:/voiceover/0002_Action_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 8.54,
+        "start_time": 202.92,
+        "dialogue_key": "0160_nar_fmv_calltoaction_29",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 6.08,
+        "start_time": 213.54,
+        "dialogue_key": "0161_nar_fmv_calltoaction_30",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 5.42,
+        "start_time": 218.92,
+        "dialogue_key": "0162_nar_fmv_calltoaction_31",
+        "speaker_id": "speaker.0003_Knowledge",
+        "event_description_path": "event:/voiceover/0003_Knowledge_fmv"
+    },
+    {
+        "clip_type": "vo",
+        "duration": 4.5,
+        "start_time": 224.33,
+        "dialogue_key": "1117_nar_fmv_calltoaction_32",
+        "speaker_id": "speaker.0001_Foresight",
+        "event_description_path": "event:/voiceover/0001_Foresight_fmv"
+    }
+  ]
+}

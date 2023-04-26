@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.token": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "mat_token": "MetaMaterial.mat_token"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

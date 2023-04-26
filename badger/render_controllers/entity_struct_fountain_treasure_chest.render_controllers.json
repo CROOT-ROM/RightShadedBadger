@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_fountain_treasure_chest": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_fountain_treasure_chest": "MetaMaterial.mat_entity_struct_fountain_treasure_chest"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

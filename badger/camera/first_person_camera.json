@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:first_person_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "first_person",
+        "field_of_view": 80.0,
+        "near_clipping_plane": 0.025,
+        "far_clipping_plane": 2500.0,
+        "render_player_model": false,
+        "priority": 1
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 2.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": false
+      },
+      "minecraft:camera_attach": {
+        "offset": [ 0.0, 0.0, 0.0 ]
+      },
+      "minecraft:look_target": {},
+      "minecraft:follow_target": {},
+      "minecraft:first_person_look": {
+        "pitch_min": -90.0,
+        "pitch_max": 90.0
+      }
+    }
+  }
+}

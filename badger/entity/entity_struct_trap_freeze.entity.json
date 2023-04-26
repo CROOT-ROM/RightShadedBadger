@@ -1,0 +1,73 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:presentation_event": {
+        "on_freeze_trap_triggered": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_proj_ice_block_impact",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "script": "freeze_attack"
+        },
+        "on_initialized": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_zoner_apply_freeze_status",
+            "enables": true,
+            "locator": "loc_fx_main"
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_trap_freeze"
+      },
+      "badger:template": "badger:template_structure"
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_trap_freeze.default",
+        "idle_a": "animation.entity_struct_trap_freeze.idle_a",
+        "loading_a": "animation.entity_struct_trap_freeze.loading_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "freeze_attack": "variable.is_loading = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_trap_freeze"
+      },
+      "identifier": "badger:entity_struct_trap_freeze",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_player": "mat_shared_block_entity_player"
+      },
+      "render_controllers": ["controller.render.entity_struct_trap_freeze"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.is_loading = 0;"]
+      },
+      "sound_effects": {
+        "block_place": "BAE_freeze_trap_block_place",
+        "idle": "BAE_freeze_trap_idle",
+        "idle_stop": "BAE_freeze_trap_idle_stop",
+        "piston_push": "BAE_freeze_trap_piston_push",
+        "triggered": "BAE_freeze_trap_triggered"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_player_d"
+      }
+    }
+  }
+}

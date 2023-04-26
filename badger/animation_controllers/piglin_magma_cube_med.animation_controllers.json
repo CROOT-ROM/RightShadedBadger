@@ -1,0 +1,149 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_magma_cube_med.default": {
+      "initial_state": "spawn",
+      "states": {
+        "attack": {
+          "animations":  [
+            {
+              "attack_a": 1.0
+            },
+            {
+              "attack_b": 1.0
+            },
+            {
+              "attack_c": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.attackchooser",
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stunned": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_c": 1.0
+            },
+            {
+              "idle_b": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "attack": "variable.isattacking"
+            },
+            {
+              "stunned": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "variable.skip_spawn"
+            },
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            }
+          ]
+        },
+        "run": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "stop": "(query.speed <= 0)"
+            },
+            {
+              "stunned": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stunned": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "attack": "variable.isattacking"
+            },
+            {
+              "stunned": "(!query.in_knockback && variable.is_stunned)"
+            }
+          ]
+        },
+        "stunned": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!variable.is_stunned"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

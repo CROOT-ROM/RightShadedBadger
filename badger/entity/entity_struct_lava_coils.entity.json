@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.2
+      },
+      "badger:presentation_event": {
+        "on_damage_applied_to_structure_1": {
+          "script": "dmg_state01"
+        },
+        "on_damage_applied_to_structure_2": {
+          "script": "dmg_state02"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_lava_coils"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_lava_coils.death_a",
+        "default": "controller.animation.entity_struct_lava_coils.default",
+        "heavy_damaged_a": "animation.entity_struct_lava_coils.heavy_damaged_a",
+        "idle_a": "animation.entity_struct_lava_coils.idle_a",
+        "lightly_damaged_a": "animation.entity_struct_lava_coils.lightly_damaged_a",
+        "spawn_a": "animation.entity_struct_lava_coils.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "dmg_state01": "variable.dmg = 1;",
+        "dmg_state02": "variable.dmg = 2;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_lava_coils"
+      },
+      "identifier": "badger:entity_struct_lava_coils",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_embers": "badger:fx_entity_struct_lava_coils_embers",
+        "fx_fire01": "badger:fx_entity_struct_lava_coils_fire01",
+        "fx_fire02": "badger:fx_entity_struct_lava_coils_fire02",
+        "fx_fire03": "badger:fx_entity_struct_lava_coils_fire03",
+        "fx_fire_sml": "badger:fx_entity_struct_lava_coils_fire_small",
+        "fx_smoke": "badger:fx_entity_struct_lava_coils_smoke",
+        "fx_sparks": "badger:fx_entity_struct_lava_coils_sparks"
+      },
+      "render_controllers": ["controller.render.entity_struct_lava_coils"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.dmg = 0;","variable.ember_level = 1;"]
+      },
+      "sound_effects": {
+        "pistons_damage_heavy": "BAE_piglin_lava_coil_pistons_damage_heavy",
+        "pistons_damage_light": "BAE_piglin_lava_coil_pistons_damage_light",
+        "pistons_normal": "BAE_piglin_lava_coil_pistons_normal"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_tree_poison_trunk_top_01": {
+            "decoration": "deco_tree_poison_trunk_top_01",
+            "particle_spawner": {
+                "effects": [
+                    {
+                        "effect": "badger:fx_block_hazard_poison",
+                        "range": "far",
+                        "probability": 1.0,
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

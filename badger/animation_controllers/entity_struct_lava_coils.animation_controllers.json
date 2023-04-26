@@ -1,0 +1,134 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_lava_coils.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "dmg01": {
+          "animations":  [
+            {
+              "lightly_damaged_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_fire02",
+              "enabled": true,
+              "locator": "loc_fx_fire"
+            },
+            {
+              "effect": "fx_embers",
+              "enabled": true,
+              "locator": "loc_fx_fire"
+            },
+            {
+              "effect": "fx_smoke",
+              "enabled": true,
+              "locator": "loc_fx_pipe03"
+            },
+            {
+              "effect": "fx_sparks",
+              "enabled": true,
+              "locator": "loc_fx_piston_front"
+            },
+            {
+              "effect": "fx_sparks",
+              "enabled": true,
+              "locator": "loc_fx_piston_back"
+            },
+            {
+              "effect": "fx_fire_sml",
+              "enabled": true,
+              "locator": "loc_fx_pipe03"
+            }
+          ],
+          "transitions":  [
+            {
+              "dmg02": "(variable.dmg == 2)"
+            }
+          ]
+        },
+        "dmg02": {
+          "animations":  [
+            {
+              "heavy_damaged_a": 1.0
+            }
+          ],
+          "on_entry": ["variable.ember_level = 2;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_fire03",
+              "enabled": true,
+              "locator": "loc_fx_fire"
+            },
+            {
+              "effect": "fx_smoke",
+              "enabled": true,
+              "locator": "loc_fx_pipe01"
+            },
+            {
+              "effect": "fx_smoke",
+              "enabled": true,
+              "locator": "loc_fx_pipe02"
+            },
+            {
+              "effect": "fx_sparks",
+              "enabled": true,
+              "locator": "loc_fx_piston_r"
+            },
+            {
+              "effect": "fx_sparks",
+              "enabled": true,
+              "locator": "loc_fx_piston_l"
+            },
+            {
+              "effect": "fx_fire_sml",
+              "enabled": true,
+              "locator": "loc_fx_pipe01"
+            },
+            {
+              "effect": "fx_fire_sml",
+              "enabled": true,
+              "locator": "loc_fx_pipe02"
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_fire01",
+              "enabled": true,
+              "locator": "loc_fx_fire"
+            }
+          ],
+          "transitions":  [
+            {
+              "dmg01": "variable.dmg"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

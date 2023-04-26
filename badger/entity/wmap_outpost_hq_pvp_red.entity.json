@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_outpost_hq_pvp_red"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_outpost_hq_pvp_red"
+      },
+      "identifier": "badger:wmap_outpost_hq_pvp_red",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_outpost_hq_pvp_red": "mat_wmap_outpost_hq_pvp_red"
+      },
+      "render_controllers": [
+        "controller.render.wmap_outpost_hq_pvp_red"
+      ]
+    }
+  }
+}

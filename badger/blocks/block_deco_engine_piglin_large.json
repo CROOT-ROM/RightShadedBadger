@@ -1,0 +1,9 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_engine_piglin_large": {
+            "decoration": "deco_engine_piglin_large",
+            "textures": "blank"
+        }
+    }
+}

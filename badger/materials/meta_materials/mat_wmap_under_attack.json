@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_under_attack:base_entity_blend_flipbook": {
+    "pass": "AlphaTest",
+    "uniforms": {
+      "FlipbookParams": [
+        "10.0",
+        "5.0",
+        "2.0",
+        "10.0"
+      ]
+    },
+    "textures": {
+        "diffuseMap": "textures/entity/tex_wmap_va_attack",
+        "emissiveMap": "textures/entity/tex_wmap_va_attack_e"
+    }
+  }
+}

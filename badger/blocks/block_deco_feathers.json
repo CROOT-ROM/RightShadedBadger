@@ -1,0 +1,22 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_feathers": {
+      "decoration": "deco_feathers",
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_feathers",
+            "range": "near",
+            "probability": 0.5,
+            "offset": [
+              0,
+              0.5,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

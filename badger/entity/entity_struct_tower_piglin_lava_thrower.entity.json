@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.1
+      },
+      "badger:presentation_event": {
+        "on_close": {
+          "script": "tower_close"
+        },
+        "on_open": {
+          "script": "tower_open"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_tower_piglin_lava_thrower"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_tower_piglin_lava_thrower.default",
+        "fire": "animation.entity_struct_tower_piglin_lava_thrower.fire",
+        "idle_down": "animation.entity_struct_tower_piglin_lava_thrower.idle_down",
+        "spawn": "animation.entity_struct_tower_piglin_lava_thrower.spawn",
+        "up": "animation.entity_struct_tower_piglin_lava_thrower.up"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "tower_close": "variable.is_open = 0;",
+        "tower_open": "variable.fire = variable.is_open; variable.is_open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_tower_piglin_lava_thrower"
+      },
+      "identifier": "badger:entity_struct_tower_piglin_lava_thrower",
+      "materials": {
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_destruction": "badger:fx_destruction_tower_piglin_lava",
+        "fx_muzzle_flash": "badger:fx_piglin_lava_thrower_muzzle_flash_expl",
+        "fx_sparkle": "badger:fx_destruction_tower_piglin_lava_sparkle"
+      },
+      "render_controllers": ["controller.render.entity_struct_tower_piglin_lava_thrower"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.is_open = 0;","variable.fire = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "close": "BAE_piglin_tower_lava_thrower_close",
+        "fire": "BAE_piglin_tower_lava_thrower_attack",
+        "open": "BAE_piglin_tower_lava_thrower_open"
+      }
+    }
+  }
+}

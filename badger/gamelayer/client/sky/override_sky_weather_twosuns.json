@@ -1,0 +1,28 @@
+{
+	"name": "override_sky_weather_twosuns",
+	"imgui_category": "Weather/TwoSuns",
+	"imgui_prefix": "weather_ts",
+	"is_override": true,
+	"sky_color": "curve.weather_ts_sky_color",
+	"sky_horizon_color": "curve.weather_ts_sky_horizon_color",
+	"cloud_color": "curve.weather_ts_cloud_color",
+	"cloud_shadows": "curve.weather_ts_cloud_shadows",
+	"ambient_color": "curve.weather_ts_ambient_color",
+	"direct_color": "curve.weather_ts_direct_color",
+	"fog_color": "curve.weather_ts_fog_color",
+	"sparkle_params": "curve.weather_ts_sparkle_params",
+	"ambient_sparkle_params": "curve.weather_ts_ambient_sparkle",
+	"atmosphere_params": "curve.weather_ts_atmosphere_params",
+	"horizon_params": "curve.weather_ts_horizon_params",
+	"fog_params": "curve.weather_ts_fog_params",
+		"objects": [
+		{
+			"name": "sun_a",
+			"color_a": "curve.weather_ts_sun_color"
+		},
+		{
+			"name": "sun_b",
+			"color_a": "curve.weather_ts_moon_color"
+		}
+	]
+}

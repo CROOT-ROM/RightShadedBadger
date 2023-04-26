@@ -1,0 +1,69 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_rotters_boss_explosion",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "flares02" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_flares02",
+               "type" : "emitter_bound"
+            }
+         },
+         "liquid" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_liquid",
+               "type" : "emitter_bound"
+            }
+         },
+         "parts_green" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_parts_green",
+               "type" : "emitter_bound"
+            }
+         },
+         "parts_red" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_parts_red",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_fill" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_smokefill",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_piglin_rotters_boss_explosion_smokering",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "flares", "flares02", "parts_green", "parts_red", "liquid" ],
+            "timeline" : {
+               "0.100000" : [ "smoke_ring", "smoke_fill" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

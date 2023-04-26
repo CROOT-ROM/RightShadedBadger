@@ -1,0 +1,31 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_lava_thrower_spike.default": {
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_track": 1.0
+            }
+          ],
+          "on_entry": ["variable.mat_charge = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "default": {
+          "animations":  [
+            {
+              "charge_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

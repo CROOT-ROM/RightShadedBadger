@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sheet_templestone_moss_01": {
+            "textures": {
+                "up": "textures/blocks/tex_block_templestone_moss_01",
+                "down": "textures/blocks/tex_block_templestone_top_01",
+                "side": "textures/blocks/tex_block_temple_slab_01"
+            }
+        }
+    }
+}

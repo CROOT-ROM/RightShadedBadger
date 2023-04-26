@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:rendering": {
+        "definition": "badger:block_poi_fallen_warrior_torso"
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_poi_fallen_warrior_piece_attract_body"
+        }
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "block_poi_fallen_warrior_torso": "geometry.block_poi_fallen_warrior_torso"
+      },
+      "identifier": "badger:block_poi_fallen_warrior_torso",
+      "materials": {
+        "default": "entity_model",
+        "mat_mob_fallen_warrior": "mat_mob_fallen_warrior",
+        "mat_mob_fallen_warrior_face": "mat_mob_fallen_warrior_face"
+      },
+      "render_controllers": ["controller.render.block_poi_fallen_warrior_torso"]
+    }
+  }
+}

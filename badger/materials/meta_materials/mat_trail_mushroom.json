@@ -1,0 +1,16 @@
+{
+    "format_version": "1.8.0",
+    "mat_trail_mushroom:badger_trails_default": {
+        "textures": {
+            "TrailTexture": "textures/shared/tex_fx_arrow_trail"
+        },
+        "uniforms": {
+            "TrailColor": [
+                "0.522",
+                "1.000",
+                "0.671",
+                "1"
+            ]
+        }
+    }
+}

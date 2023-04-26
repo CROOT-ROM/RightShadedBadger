@@ -1,0 +1,18 @@
+{
+  "test-name": "aoe-projectile-test",
+  "test-description": "Test that poi_tower_01 does splash damage.",
+  "test-duration": 44,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10", "Xbox" ],
+  "commands": [
+    "/pv badger:poi_tower_01 none true true team_one 5 50 5",
+    "/testdelay 1",
+    "/teleport @s 26 20 26",
+    "/enableservertickingsystem WanderSystem false",
+    "/testdelay 1",
+    "/sm badger:animal_fox 5 piglin_team",
+    "/testdelay 5",
+    "/verifymobsinarea badger:animal_fox 0 any_team 0 50 0 100"
+  ]
+}

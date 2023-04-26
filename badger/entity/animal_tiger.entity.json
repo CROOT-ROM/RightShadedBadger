@@ -1,0 +1,145 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_animal_tiger"
+      },
+      "badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 4
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.86
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 50,
+        "max_range": 70,
+        "min_range": 2,
+        "turning_delta": 5
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_tiger_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_tiger_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_tiger_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_tiger",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "cheer_a": "animation.animal_tiger.cheer_a",
+        "cheer_short_a": "animation.animal_tiger.cheer_short_a",
+        "climb_a": "animation.animal_tiger.climb_a",
+        "death_a": "animation.animal_tiger.death_a",
+        "default": "controller.animation.animal_tiger.default",
+        "feed_a": "animation.animal_tiger.feed_a",
+        "feed_react": "animation.animal_tiger.feed_react",
+        "hit_react": "controller.animation.animal_tiger.hit_react",
+        "hit_react_b": "animation.animal_tiger.hit_react_b",
+        "idle_a": "animation.animal_tiger.idle_a",
+        "idle_b": "animation.animal_tiger.idle_b",
+        "idle_c": "animation.animal_tiger.idle_c",
+        "idles": "controller.animation.animal_tiger.idles",
+        "knockback": "animation.mount_tiger.knockback",
+        "locomotion": "controller.animation.animal_tiger.locomotion",
+        "roar": "animation.animal_tiger.roar",
+        "run_a": "animation.animal_tiger.run_a",
+        "spawn_a": "animation.animal_tiger.spawn_a",
+        "start": "animation.animal_tiger.start",
+        "stop": "animation.animal_tiger.stop",
+        "stun_a": "animation.animal_tiger.stun_a",
+        "swim_a": "animation.animal_tiger.swim_a",
+        "swimidle_a": "animation.animal_tiger.swimidle_a",
+        "trot_a": "animation.animal_tiger.trot_a",
+        "walk_a": "animation.animal_tiger.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.animal_tiger"
+      },
+      "identifier": "badger:animal_tiger",
+      "materials": {
+        "mat_animal_tiger": "mat_animal_tiger",
+        "mat_animal_tiger_face": "mat_animal_tiger_face",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_mount_tiger": "mat_mount_tiger",
+        "mat_mount_tiger_face": "mat_mount_tiger_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med",
+        "fx_dust": "badger:fx_mount_tiger_roar_dust",
+        "fx_roar": "badger:fx_mount_tiger_roar",
+        "fx_spawn_land": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": ["controller.render.animal_tiger"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "cheer": "BAE_animal_tiger_cheer",
+        "death_poof_medium": "BAE_animal_death_poof_medium",
+        "dx_cheer": "BAE_animal_tiger_dx_cheer",
+        "dx_cheer_long": "BAE_animal_tiger_dx_cheer_long",
+        "dx_cheer_short": "BAE_animal_tiger_dx_cheer_short",
+        "dx_death": "BAE_animal_tiger_dx_death",
+        "dx_feed_burp": "BAE_animal_tiger_dx_feed_burp",
+        "dx_feed_react": "BAE_animal_tiger_dx_feed_react",
+        "dx_feed_sniff": "BAE_animal_tiger_dx_feed_sniff",
+        "dx_hurt": "BAE_animal_tiger_dx_hurt",
+        "dx_idle": "BAE_animal_tiger_dx_idle",
+        "dx_idle_lick": "BAE_animal_tiger_dx_idle_lick",
+        "feed": "BAE_animal_tiger_feed",
+        "footstep_run": "BAE_animal_tiger_footsteps_run",
+        "footstep_walk": "BAE_animal_tiger_foosteps_walk",
+        "happy_dance": "BAE_animal_tiger_happy_dance",
+        "happy_jump": "BAE_animal_tiger_happy_jump",
+        "idle_sit": "BAE_animal_tiger_idle_sit",
+        "jump": "BAE_animal_tiger_jump",
+        "land": "BAE_animal_tiger_land",
+        "land_short": "BAE_animal_tiger_land_short",
+        "roar": "BAE_animal_tiger_roar"
+      }
+    }
+  }
+}

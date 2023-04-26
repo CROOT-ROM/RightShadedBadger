@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_emitter_combat_base_final",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:tags": {
+        "tags": ["emitter", "final_base_music_emitter"]
+      },
+      "badger:music_2d_emitter": {
+        "priority": 110,
+        "max_distance": 260.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "default",
+            "audio_parameters": [
+              { "music_state": 2.0 },
+              { "combat_intensity": 0.0 }
+            ]
+          },
+          {
+            "state_name": "phase1",
+            "audio_parameters": [
+              { "music_state": 2.0 },
+              { "combat_intensity": 1.0 }
+            ]
+          },
+          {
+            "state_name": "phase2",
+            "audio_parameters": [
+              { "music_state": 2.0 },
+              { "combat_intensity": 2.0 }
+            ]
+          },
+          {
+            "state_name": "phase3",
+            "audio_parameters": [
+              { "music_state": 2.0 },
+              { "combat_intensity": 3.0 }
+            ]
+          },
+          {
+            "state_name": "phase4",
+            "audio_parameters": [
+              { "music_state": 2.0 },
+              { "combat_intensity": 4.0 }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_support_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.mob_golem_support.attack_a",
+        "attack_b": "animation.mob_golem_support.attack_b",
+        "climb_a": "animation.mob_golem_support.climb_a",
+        "death_a": "animation.mob_golem_support.death_a",
+        "default": "controller.animation.mob_golem_support_nis.default",
+        "heal_a": "animation.mob_golem_support.heal_a",
+        "hit_reaction_a": "animation.mob_golem_support.hit_reaction_a",
+        "idle_a": "animation.mob_golem_support.idle_a",
+        "knockback_a": "animation.mob_golem_support.knockback_a",
+        "spawn_a": "animation.mob_golem_support.spawn_a",
+        "sprint_a": "animation.mob_golem_support.sprint_a",
+        "stun_a": "animation.mob_golem_support.stun_a",
+        "swim_a": "animation.mob_golem_support.swim_a",
+        "swim_idle": "animation.mob_golem_support.swim_idle",
+        "walk_a": "animation.mob_golem_support.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.mob_golem_support_nis"
+      },
+      "identifier": "badger:mob_golem_support_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_generic_buff_128": "mat_fx_generic_buff_128",
+        "mat_mob_golem_support": "mat_mob_golem_support",
+        "mat_mob_golem_support_face": "mat_mob_golem_support_face"
+      },
+      "render_controllers": ["controller.render.mob_golem_support_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.export_mortar_vis = 1;","variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

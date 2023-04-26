@@ -1,0 +1,82 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_death_explosion",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "explosion_areasparks" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_areasparks",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_center" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_center",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_centersmoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_centersmoke",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_core" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_core",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_flare" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_flare",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_shockwave" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_circle",
+               "type" : "emitter_bound"
+            }
+         },
+         "explosion_smokecenter" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_final_boss_death_exp_smokeccenter",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [
+               "explosion_centersmoke",
+               "explosion_flare",
+               "explosion_core",
+               "explosion_center",
+               "explosion_smokecenter",
+               "explosion_parts"
+            ],
+            "timeline" : {
+               "0.100000" : [ "explosion_shockwave", "explosion_areasparks" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:debug_shaderballs",
+      "materials": {
+        "default": "entity_model",
+        "mat_debug_shaderballs": "mat_debug_shaderballs"
+      },
+      "textures": {
+        "default": "textures/entity/tex_debug_shaderballs_d"
+      },
+      "geometry": {
+        "default": "geometry.debug_shaderballs"
+      },
+      "render_controllers": [
+        "controller.render.debug_shaderballs"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:debug_shaderballs"
+      }
+    }
+  }
+}

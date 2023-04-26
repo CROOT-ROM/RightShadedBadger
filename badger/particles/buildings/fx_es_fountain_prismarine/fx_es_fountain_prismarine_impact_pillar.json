@@ -1,0 +1,61 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_es_fountain_prismarine_impact_pillar",
+         "basic_render_parameters" : {
+            "materials_list" : [
+               "mat_badger_fx_mesh_add_fountain_pillar_down",
+               "mat_badger_fx_mesh_add_fountain_pillar_down_night"
+            ],
+            "scripted_material" : "query.emitter_is_night"
+         },
+         "optimizations" : {
+            "suspend_distance" : 120.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.health_low" ]
+      },
+      "components" : {
+         "badger:particle_appearance_mesh" : {
+            "initial_scale" : 110.0,
+            "facing_camera_mode" : "emitter_transform_xz",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               }
+            },
+            "geometry" : "geometry.fx_msh_waterfall_pillar"
+         },
+         "minecraft:emitter_lifetime_expression" : {
+            "expiration_expression" : "variable.health_low"
+         },
+         "minecraft:emitter_lifetime_looping" : {
+            "active_time" : 2.0
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 20.0,
+            "spawn_rate" : "math.random(0.8,1.7)"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.05, 0.45, 0.05 ],
+            "offset" : [ 0.0, -6.15, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 1.0, 1.0, 1.0, 0.0 ],
+               "0.650000" : [ 1.0, 1.0, 1.0, 0.5 ],
+               "1.000000" : [ 0.0, 0.0, 0.0, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(1.25,2.0)"
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

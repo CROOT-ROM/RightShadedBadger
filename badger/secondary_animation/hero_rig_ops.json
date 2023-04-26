@@ -1,0 +1,71 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.hero": {
+      "rig": "badger:hero",
+      "enabled": "variable.rigop_action",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "j.joint_root_rotation.rotation.x",
+          "domain_a": -100,
+          "domain_b": 0,
+          "output": "j.joint_scapula_r.rotation.x",
+          "range_a": -99,
+          "range_b": 0
+        },
+        {
+          "type": "lerp",
+          "input": "j.joint_root_rotation.rotation.x",
+          "domain_a": -15,
+          "domain_b": 100,
+          "output": "j.joint_rigops_root_m.rotation.x",
+          "range_a": 14,
+          "range_b": -100
+        },
+        {
+          "type": "lerp",
+          "input": "j.joint_rigops_root_m.rotation.x",
+          "domain_a": -100,
+          "domain_b": 0,
+          "output": "j.joint_neck_m.rotation.x",
+          "range_a": 99,
+          "range_b": 0
+        }
+      ]
+    },
+    "rigops_actions_deflect.hero": {
+      "rig": "badger:hero",
+      "enabled": "variable.rigop_deflect",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "j.joint_head_m.rotation.x",
+          "domain_a": -45,
+          "domain_b": 40,
+          "output": "j.joint_rigops_root_m.rotation.x",
+          "range_a": 40,
+          "range_b": -40
+        }
+      ]
+    },
+    "rigops.hero.headdress": {
+      "rig": "badger:hero",
+      "enabled": "variable.model_chooser==1",
+      "operations": [
+        {
+          "type": "scale",
+          "input": "jd.joint_head_ribbons1_m.translation",
+          "output": "jd.joint_head_ribbons2_m.translation",
+          "coefficient": 0.7
+        },
+        {
+          "type": "scale",
+          "input": "jd.joint_head_ribbons1_m.translation",
+          "output": "jd.joint_head_ribbons3_m.translation",
+          "coefficient": [ 0.5, 0.4, 0.3 ]
+        }
+      ]
+    }
+  }
+}

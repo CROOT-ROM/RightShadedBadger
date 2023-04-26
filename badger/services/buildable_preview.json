@@ -1,0 +1,34 @@
+{
+  "badger:buildable_preview": {
+    "color_map": [
+      {
+        "type": "buildable",
+        "color": "#ff6591FB"
+      },
+      {
+        "type": "footprint",
+        "color": "#cc222222"
+      },
+      {
+        "type": "offline",
+        "color": "#f2009a00"
+      },
+      {
+        "type": "offline_zone",
+        "color": "#f2009a00"
+      },
+      {
+        "type": "not_buildable",
+        "color": "#f2b30000"
+      }
+    ],
+    "placement_camera": "buildable_preview_camera",
+    "min_starting_range": 10,
+    "min_cursor_range": 0.01,
+    "max_cursor_range": 28,
+    "player_relative_movement": true,
+    "preview_targeting_line_decal_height": 2.5,
+    "preview_cursor_speed_multiplier": 2.0,
+    "preview_cursor_snap_percentage": 0.15
+  }
+}

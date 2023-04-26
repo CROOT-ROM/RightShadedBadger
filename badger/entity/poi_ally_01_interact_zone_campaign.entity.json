@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "badger:poi_ally_01_interact_zone"
+      },
+      "components": {
+        "badger:interaction_presentation": {
+            "trigger_specific_events": true,
+            "trigger_generic_events": false
+        },
+        "badger:hud_message_interaction_failed": {
+            "resource_cost_failed_message": {
+              "hud_message_id": "interact_cost_required",
+              "hud_message_args": ["100", "resources.gold.name", "key.item.gold", "500", "resources.stone.name", "key.item.stone", "poi.ally.01.name"]
+            },
+            "unlock_cost_failed_message": {
+              "hud_message_id": "interact_unlock_required",
+              "hud_message_args": ["structures.unlock.poi.golem.name","poi.ally.01.name"]
+            }
+        }
+      }
+    }
+}

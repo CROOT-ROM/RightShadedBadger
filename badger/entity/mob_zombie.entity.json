@@ -1,0 +1,226 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 9,
+        "anim_rows": 2,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.23
+      },
+      "badger:presentation_event": {
+        "cine_blink": {
+          "animation": {
+            "animation": "blink"
+          }
+        },
+        "cine_idle_a": {
+          "animation": {
+            "animation": "idle_a"
+          }
+        },
+        "cine_melee_attack_a": {
+          "animation": {
+            "animation": "melee_attack_a"
+          }
+        },
+        "cine_melee_attack_b": {
+          "animation": {
+            "animation": "melee_attack_b"
+          }
+        },
+        "cine_spawn": {
+          "animation": {
+            "animation": "spawn"
+          }
+        },
+        "intense_hit": {
+          "audio": "BAE_mob_zombie_dx_rps_notifies_intense_hit"
+        },
+        "intense_knockback": {
+          "audio": "BAE_mob_zombie_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mob_zombie_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_zombie_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_zombie_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_rotters_boss_melee_attack_hit": {
+          "audio": "BAE_impact_piglin_rotters_boss_melee_on_zombie"
+        },
+        "on_rotters_boss_secondary_attack_2a_hit": {
+          "audio": "BAE_impact_piglin_rotters_boss_explode_on_zombie"
+        },
+        "on_rotters_boss_secondary_attack_2b_hit": {
+          "audio": "BAE_impact_piglin_rotters_boss_vomit_on_zombie"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mob_zombie_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_zombie",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.mob_zombie.additive_tumble_fast",
+        "additive_tumble_slow": "animation.mob_zombie.additive_tumble_slow",
+        "attack": "controller.animation.mob_zombie.attack",
+        "attack_c": "animation.mob_zombie.attack_c",
+        "behavior_happy": "controller.animation.mob_zombie.behavior_happy",
+        "behavior_indifferent": "controller.animation.mob_zombie.behaviour_indifferent",
+        "behavior_scared": "controller.animation.mob_zombie.behavior_scared",
+        "behaviour_curious": "controller.animation.mob_zombie.behaviour_curious",
+        "bespoke_behavior": "controller.animation.mob_zombie.bespoke_behavior",
+        "burn_idle_a": "animation.mob_zombie.burn_idle_a",
+        "burn_walk_a": "animation.mob_zombie.burn_walk_a",
+        "cine_dance_a": "animation.mob_zombie_cine.cine_dance_a",
+        "cine_peer_a": "animation.mob_zombie_cine.cine_peer_a",
+        "cine_peer_b": "animation.mob_zombie_cine.cine_peer_b",
+        "climb": "controller.animation.mob_zombie.climb",
+        "climb_a": "animation.mob_zombie.climb_a",
+        "climb_b": "animation.mob_zombie.climb_b",
+        "climb_c": "animation.mob_zombie.climb_c",
+        "confused_approach_a": "animation.mob_zombie_behaviours.confused_approach_a",
+        "death_a": "animation.mob_zombie.death_a",
+        "death_b": "animation.mob_zombie.death_b",
+        "default": "controller.animation.mob_zombie.default",
+        "greeting_a": "animation.mob_zombie.greeting_a",
+        "greeting_b": "animation.mob_zombie.greeting_b",
+        "greeting_c": "animation.mob_zombie.greeting_c",
+        "hit_react": "controller.animation.mob_zombie.hit_react",
+        "hit_reaction_a": "animation.mob_zombie.hit_reaction_a",
+        "hit_reaction_short": "animation.mob_zombie.hit_reaction_short",
+        "idle": "controller.animation.mob_zombie.idle",
+        "idle_a": "animation.mob_zombie.idle_a",
+        "idle_b": "animation.mob_zombie.idle_b",
+        "idle_c": "animation.mob_zombie.idle_c",
+        "idle_cheer_a": "animation.mob_zombie_behaviours.idle_cheer_a",
+        "idle_cheer_b": "animation.mob_zombie_behaviours.idle_cheer_b",
+        "idle_confused_a": "animation.mob_zombie_behaviours.idle_confused_a",
+        "idle_confused_b": "animation.mob_zombie_behaviours.idle_confused_b",
+        "idle_d": "animation.mob_zombie.idle_d",
+        "idle_default": "controller.animation.mob_zombie.idle_default",
+        "idle_scared_a": "animation.mob_zombie_behaviours.idle_scared_a",
+        "idle_scared_b": "animation.mob_zombie_behaviours.idle_scared_b",
+        "knockback_idle_end": "animation.mob_zombie.knockback_idle_end",
+        "knockback_landing_a": "animation.mob_zombie.knockback_landing_a",
+        "knockback_loop_a": "animation.mob_zombie.knockback_loop_a",
+        "knockback_start_a": "animation.mob_zombie.knockback_start_a",
+        "knockback_walk_end_a": "animation.mob_zombie.knockback_walk_end_a",
+        "knockback_walk_end_b": "animation.mob_zombie.knockback_walk_end_b",
+        "knockback_walk_end_c": "animation.mob_zombie.knockback_walk_end_c",
+        "locomotion": "controller.animation.mob_zombie.locomotion",
+        "melee_attack_a": "animation.mob_zombie.melee_attack_a",
+        "melee_attack_b": "animation.mob_zombie.melee_attack_b",
+        "spawn": "animation.mob_zombie.spawn",
+        "sprint_a": "animation.mob_zombie.sprint_a",
+        "sprint_b": "animation.mob_zombie.sprint_b",
+        "stop": "controller.animation.mob_zombie.stop",
+        "stop_a": "animation.mob_zombie.stop_a",
+        "stop_b": "animation.mob_zombie.stop_b",
+        "stop_c": "animation.mob_zombie.stop_c",
+        "stop_d": "animation.mob_zombie.stop_d",
+        "stun_a": "animation.mob_zombie.stun_a",
+        "swim_a": "animation.mob_zombie.swim_a",
+        "swim_idle": "animation.mob_zombie.swim_idle",
+        "walk_a": "animation.mob_zombie.walk_a",
+        "walk_b": "animation.mob_zombie.walk_b",
+        "walk_c": "animation.mob_zombie.walk_c",
+        "walk_scared_a": "animation.mob_zombie_behaviours_walks.walk_scared"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.enemy_spotted = 1;",
+        "hero_spotted": "variable.hero_spotted = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Curious No Mouth","Happy","Happy Blink","Smile","Smile Blink","Cheer","Cheer Blink","Scared","Scared Blink","Worried","Worried Blink"],
+      "geometry": {
+        "default": "geometry.mob_zombie"
+      },
+      "identifier": "badger:mob_zombie",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_mob_zombie": "mat_mob_zombie",
+        "mat_mob_zombie_face": "mat_mob_zombie_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_spawn": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": ["controller.render.mob_zombie"],
+      "scripts": {
+        "animate":  [
+          {
+            "hit_react": "1"
+          },
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.is_blinking = 0;","variable.return_from_blink = 0;","variable.last_blink_time = 0;","variable.end_run = 0;","variable.second_skin_vis = 0;","variable.skin_mat = 0;","variable.walkchooser = math.random(0,3);"]
+      },
+      "sound_effects": {
+        "attack": "BAE_mob_zombie_attack",
+        "attack_arms_down": "BAE_mob_zombie_attack_arms_down",
+        "attack_arms_side": "BAE_mob_zombie_attack_arms_side",
+        "attack_head": "BAE_mob_zombie_attack_head",
+        "bodyfall": "BAE_mob_zombie_bodyfall",
+        "climb_arms": "BAE_mob_zombie_climb_arms",
+        "death_poof_medium": "BAE_mob_death_poof_medium",
+        "dx_afraid_high": "BAE_mob_zombie_dx_afraid_high",
+        "dx_afraid_low": "BAE_mob_zombie_dx_afraid_low",
+        "dx_afraid_medium": "BAE_mob_zombie_dx_afraid_medium",
+        "dx_attack": "BAE_mob_zombie_dx_attack",
+        "dx_attack_a": "BAE_mob_zombie_dx_attack_a",
+        "dx_attack_b": "BAE_mob_zombie_dx_attack_b",
+        "dx_attack_c": "BAE_mob_zombie_dx_attack_c",
+        "dx_cheerful_high": "BAE_mob_zombie_dx_cheerful_high",
+        "dx_cheerful_low": "BAE_mob_zombie_dx_cheerful_low",
+        "dx_cheerful_medium": "BAE_mob_zombie_dx_cheerful_medium",
+        "dx_curious": "BAE_mob_zombie_dx_curious",
+        "dx_death": "BAE_mob_zombie_dx_death",
+        "dx_greeting": "BAE_mob_zombie_dx_greeting",
+        "dx_hurt": "BAE_mob_zombie_dx_hurt",
+        "dx_idle": "BAE_mob_zombie_dx_idle",
+        "dx_walk": "BAE_mob_zombie_dx_walk",
+        "step": "BAE_mob_zombie_footstep",
+        "swim": "BAE_mob_zombie_swim"
+      },
+      "textures": {
+        "default": "textures/entity/mob_zombie/tex_mob_zombie_d",
+        "default_blink": "textures/entity/mob_zombie/tex_mob_zombie_blink_d"
+      }
+    }
+  }
+}

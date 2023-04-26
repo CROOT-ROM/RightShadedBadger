@@ -1,0 +1,13 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_alabaster_moss_top_side_corrupt_dead": 
+    {
+      "textures": {
+        "up": "textures/blocks/tex_block_alabaster_moss_top_corrupt_dead",
+        "down": "textures/blocks/tex_block_alabaster_corrupt_dead",
+        "side": "textures/blocks/tex_block_alabaster_moss_top_side_corrupt_dead"
+      }
+    }
+  }
+}

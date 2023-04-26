@@ -1,0 +1,126 @@
+{
+	"badger:settings" : {
+		"renderer" : {
+			"anim_update_far_distance" : {
+				"value" : 1.0
+			},
+			"anim_update_medium_distance" : {
+				"value" : 0.45
+			},
+			"anim_update_near_distance" : {
+				"value" : 0.2
+			},
+			"anim_update_rate_far" : {
+				"value" : 3.0
+			},
+			"anim_update_rate_medium" : {
+				"value" : 1.0
+			},
+			"anim_update_rate_near" : {
+				"value" : 0.0
+			},
+			"ao_kernel_size" : {
+				"value" : 16
+			},
+			"ao_radius" : {
+				"value" : 1.5
+			},
+			"ao_sub_sampling_factor" : {
+				"value" : 2.0
+			},
+			"block_source_cull_distance" : {
+				"value" : 25.0
+			},
+			"block_source_projectile_cull_distance" : {
+				"value" : 125.0
+			},
+			"decoration_far_range" : {
+				"value" : 160.0
+			},
+			"decoration_horizon_range" : {
+				"value" : 224.0
+			},
+			"decoration_middle_range" : {
+				"value" : 60.0
+			},
+			"decoration_near_range" : {
+				"value" : 30.0
+			},
+			"decoration_probability_high" : {
+				"value" : 0.25
+			},
+			"decoration_probability_low" : {
+				"value" : 0.0625
+			},
+			"decoration_probability_medium" : {
+				"value" : 0.125
+			},
+			"enable_bloom" : {
+				"value" : false
+			},
+			"enable_decorations" : {
+				"value" : true
+			},
+			"enable_ground_wetness" : {
+				"value" : false
+			},
+			"enable_light_emission" : {
+				"value" : false
+			},
+			"enable_outlines" : {
+				"value" : true
+			},
+			"enable_ssao" : {
+				"value" : false
+			},
+			"fmv_resolution" : {
+				"value" : 0
+			},
+			"fog_dampener" : {
+				"value" : 2.0
+			},
+			"fog_depth" : {
+				"value" : 40.0
+			},
+			"max_fog_range" : {
+				"value" : 96.0
+			},
+			"min_fog_range" : {
+				"value" : 4.0
+			},
+			"override_draw_distance" : {
+				"value" : 14
+			},
+			"override_draw_distance_enabled" : {
+				"value" : true
+			},
+			"shadow_bias" : {
+				"value" : [ 0.0008, 0.0016, 0.0016, 0.0016 ]
+			},
+			"shadow_cascades" : {
+				"value" : 2
+			},
+			"shadow_light_range" : {
+				"value" : 256.0
+			},
+			"shadow_max_distance" : {
+				"value" : 64.0
+			},
+			"shadow_ranges" : {
+				"value" : [ 0.333, 1.0, 1.0, 1.0 ]
+			},
+			"shadow_resolution" : {
+				"value" : 512
+			},
+			"shadow_slope_bias" : {
+				"value" : [ 0.0016, 0.0016, 0.0016, 0.0016 ]
+			},
+			"use_fancy_water" : {
+				"value" : false
+			},
+			"dof_quality" : {
+				"value" : 0
+			}
+		}
+	}
+}

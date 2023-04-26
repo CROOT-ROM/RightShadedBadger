@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:token",
+      "materials": {
+        "default": "entity_model",
+        "mat_token": "mat_token"
+      },
+      "textures": {
+        "default": "textures/blocks/tex_shared_block_player_d"
+      },
+      "geometry": {
+        "default": "geometry.token"
+      },
+      "render_controllers": [
+        "controller.render.token"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:token"
+      }
+    }
+  }
+}

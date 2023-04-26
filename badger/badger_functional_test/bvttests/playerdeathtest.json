@@ -1,0 +1,18 @@
+{
+  "test-name": "player-death-test",
+  "test-description": "Verify player can die and then respawns in a new location",
+  "test-duration": 60,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10", "Xbox" ],
+  "commands": [
+    "/gm false",
+    "/verifymobsinarea minecraft:player 1 team_two 0 55 0 45",
+    "/teleport @s 200 50 200",
+    "/testdelay 15",
+    "/verifymobsinarea minecraft:player 0 team_two 0 55 0 45",
+    "/applydamage 1000 1000 any_team",
+    "/testdelay 15",
+    "/verifymobsinarea minecraft:player 1 team_two 0 55 0 45"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_final_boss_death_vortex",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_mesh_blend_e_vortex" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 100.0
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_mesh" : {
+            "initial_scale" : 0.69,
+            "animated_scale" : "variable.scale",
+            "facing_camera_mode" : "emitter_transform_xz",
+            "rotation_axis_mode" : "x",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               },
+               "time_integration" : {
+                  "cycles_count" : -1,
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            },
+            "geometry" : "geometry.fx_msh_vortex"
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "offset" : [ -0.2, 0.0, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "base_color" : [ 0.573, 0.16, 0.8, 1.0 ],
+            "gradient" : {
+               "0.000000" : [ 1.0, 1.0, 1.0, 0.0 ],
+               "0.100000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "0.950000" : [ 1.0, 1.0, 1.0, 1.0 ],
+               "1.000000" : [ 1.0, 1.0, 1.0, 1.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 0.01,
+         "minecraft:particle_initial_spin" : {
+            "rotation_rate" : -10.0
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : 12.66
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      },
+      "curves" : {
+         "variable.scale" : {
+            "control_points" : [
+               {
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.1, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

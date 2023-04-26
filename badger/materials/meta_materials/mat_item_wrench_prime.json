@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "mat_item_wrench_prime:base_entity": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 16,
+      "frontface": {
+        "stencilfailop": "replace",
+        "stencildepthfailop": "replace",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      },
+      "backface": {
+        "stencilfailop": "replace",
+        "stencildepthfailop": "replace",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      }
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_final_boss_d",
+      "emissiveMap": "textures/entity/tex_piglin_final_boss_e",
+      "coeffMap": "textures/entity/tex_piglin_final_boss_mr",
+      "normalMap": "textures/entity/tex_piglin_final_boss_n"
+    }
+  }
+}

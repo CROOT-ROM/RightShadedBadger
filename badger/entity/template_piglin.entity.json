@@ -1,0 +1,68 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_piglin"
+    },
+    "components": {
+      "badger:audio_molang_to_fmod": {},
+      "badger:entity_age": {},
+      "badger:interpolation": {
+        "position_interpolation_steps": 2.25,
+        "orientation_interpolation_steps": 3
+      },
+      "badger:keep_alive_timer": {
+        "time": 4
+      },
+      "badger:presentation_event": {
+        "on_hero_sword_melee_attack_hit": {
+          "particles": {
+            "effect": "badger:fx_shared_hit_normal",
+            "locator": "loc_fx_stat_head",
+            "enabled": true,
+            "bind_to_actor": false
+          }
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_piglin_generic_swim_liquid_small"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_piglin_generic_swim_liquid_small_stop"
+        },
+        "intense_hit": {
+          "particles": {
+            "effect": "badger:fx_shared_hit_intense",
+            "locator": "loc_fx_stat_head",
+            "enabled": true,
+            "bind_to_actor": false
+          },
+          "visual_state": {
+            "type": "on_hit_intense"
+          },
+          "audio": "BAE_ui_rps_intense_hit"
+        },
+        "normal_hit": {
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "weak_hit": {
+          "visual_state": {
+            "type": "on_hit_intense"
+          }
+        },
+        "on_advanced_direct_targeted": {
+          "outline": {
+            "color": "enemy_target",
+            "duration": 0.25,
+            "affects_enemies": true
+          }
+        }
+      },
+      "badger:attacker_damage_prediction": {
+        "apply_buff": "badger:buff_intense_damage_prediction",
+        "hit_reaction_type": "intense_hit"
+      }
+    }
+  }
+}

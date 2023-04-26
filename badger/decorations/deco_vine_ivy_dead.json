@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_vine_ivy_dead": {
+      "geometry": "geometry.block_deco_vine_ivy_dead", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "surface"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.allay_construction": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_allay_construction": "MetaMaterial.mat_allay_construction"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

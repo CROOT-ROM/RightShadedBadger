@@ -1,0 +1,19 @@
+{
+  "test-name": "structure-editor-test",
+  "test-description": "Make sure the simple functionality of the structure test is working",
+  "test-duration": 45,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10"],
+  "commands": [
+    "/structureeditor place_new_structure_block",
+    "/testdelay 5",
+    "/structureeditor select_from_structure_filter 5",
+    "/testdelay 5",
+    "/structureeditor change_offset 10 0 0",
+    "/testdelay 5",
+    "/structureeditor load_structure",
+    "/testdelay 5",
+    "/gm true"
+  ]
+}

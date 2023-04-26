@@ -1,0 +1,9 @@
+{
+    "format_version": "1.8.0",
+    "mat_debug_shaderballs:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_debug_shaderballs_d",
+            "coeffMap": "textures/entity/tex_debug_shaderballs_mr"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_dirt_snowy": {
+            "decoration": "deco_snowy_moss_02",
+            "textures": {
+                "up": "textures/blocks/tex_block_snow",
+                "down": "textures/blocks/tex_block_dirt",
+                "side": "textures/blocks/tex_block_dirt_snowy_side"
+            }
+        }
+    }
+}

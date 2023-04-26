@@ -1,0 +1,124 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_nether_spreader.default": {
+      "initial_state": "fire",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "fire": {
+          "animations":  [
+            {
+              "fire": 1.0
+            }
+          ],
+          "on_exit": ["variable.fire = 0;","variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "start_hold": "query.any_animation_finished"
+            }
+          ]
+        },
+        "fire_buff": {
+          "animations":  [
+            {
+              "fire_buff": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "start_hold": "query.any_animation_finished"
+            }
+          ]
+        },
+        "raise": {
+          "animations":  [
+            {
+              "raise": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "fire": "variable.sync_spore_aoe_enemy"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "raise_buff": {
+          "animations":  [
+            {
+              "raise_buff": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_entity_struct_nether_spreader_electric",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "transitions":  [
+            {
+              "fire_buff": "variable.sync_spore_aoe_enemy"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "start_hold": "query.any_animation_finished"
+            }
+          ]
+        },
+        "start_hold": {
+          "animations":  [
+            {
+              "start_hold": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "raise": "(variable.spore_aoe_enemy && !variable.super_nether_spreader)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "raise_buff": "(variable.spore_aoe_enemy && variable.super_nether_spreader)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

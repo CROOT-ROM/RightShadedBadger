@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_frostgrass_c": {
+            "geometry": "geometry.block_fol_frosted_grass_base_low_03",
+            "shadow": false,
+            "color": [
+                0.47,
+                0.60,
+                0.58,
+                1.0
+            ],
+            "offset": [
+                0.0,
+                1.0,
+                0.0
+            ],
+            "random_orientation": true,
+            "wind_strength": 0.25
+        }
+    }
+}

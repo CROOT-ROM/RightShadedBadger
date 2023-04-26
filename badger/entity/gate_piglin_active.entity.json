@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:rendering": {
+        "definition": "badger:gate_piglin_active"
+      }
+    },
+    "description": {
+      "animations": {
+        "closing": "animation.gate_piglin_active.closing",
+        "default": "controller.animation.gate_piglin_active.default",
+        "idle_opened": "animation.gate_piglin_active.idle_opened",
+        "opening": "animation.gate_piglin_active.opening"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.gate_piglin_active"
+      },
+      "identifier": "badger:gate_piglin_active",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_openclose": "badger:fx_gate_piglin_openclose"
+      },
+      "render_controllers": ["controller.render.gate_piglin_active"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "close": "BAE_piglin_gate_close",
+        "open": "BAE_piglin_gate_open"
+      }
+    }
+  }
+}

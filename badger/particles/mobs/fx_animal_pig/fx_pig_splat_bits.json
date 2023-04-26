@@ -1,0 +1,89 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_pig_splat_bits",
+            "basic_render_parameters": {
+                "materials_list": [
+                    "mat_badger_fx_blend_parts_ground"
+                ]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 120
+            }
+        },
+        "components": {
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 9
+            },
+            "minecraft:emitter_lifetime_once": {
+                "active_time": 1
+            },
+            "minecraft:emitter_shape_box": {
+                "offset": [
+                    0,
+                    0.2,
+                    0
+                ],
+                "half_dimensions": [
+                    0.35,
+                    0.05,
+                    0.35
+                ],
+                "surface_only": false,
+                "direction": [
+                    "Math.random(-0.5, 0.5)",
+                    1,
+                    "Math.random(-0.5, 0.5)"
+                ],
+                "direction_mode": "custom"
+            },
+            "minecraft:particle_initial_speed": "Math.random(6, 18)",
+            "minecraft:particle_initial_spin": {
+                "rotation": "Math.random(-10, 10)",
+                "rotation_rate": 0
+            },
+            "minecraft:particle_lifetime_expression": {
+                "max_lifetime": "Math.random(0.4,1.2)"
+            },
+            "minecraft:particle_motion_dynamic": {
+                "linear_drag_coefficient": 1.5,
+                "linear_acceleration": [
+                    0,
+                    -18,
+                    0
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    0.25,
+                    0.25
+                ],
+                "scale": [
+                    0.8,
+                    1.1
+                ],
+                "facing_camera_mode": "rotate_xyz",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 31,
+                        "rows_count": 4,
+                        "frame_iteration": "row",
+                        "row_index": [
+                            0,
+                            3
+                        ],
+                        "frame_start": [
+                            0,
+                            6
+                        ]
+                    },
+                    "time_integration": {
+                        "mode": "cycle",
+                        "cycles_count": 1
+                    }
+                }
+            }
+        }
+    }
+}

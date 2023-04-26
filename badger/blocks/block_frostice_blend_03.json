@@ -1,0 +1,21 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_frostice_blend_03": {
+            "textures": {
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_frostice_blend_01",
+                          "empty" :"textures/blocks/tex_block_frostice_blend_01_empty",
+                          "L" : "textures/blocks/tex_block_frostice_blend_03_L",
+                          "line" : "textures/blocks/tex_block_frostice_blend_03_line",
+                          "cross" : "textures/blocks/tex_block_frostice_blend_03_cross",
+                          "spoke" : "textures/blocks/tex_block_frostice_blend_01_spoke",
+                           "T" : "textures/blocks/tex_block_frostice_blend_03_T"
+                      }
+                },          
+                "side": "textures/blocks/tex_block_frostice_blend_01"
+                }
+            }
+        }
+    }

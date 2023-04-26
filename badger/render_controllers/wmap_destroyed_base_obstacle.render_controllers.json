@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_destroyed_base_obstacle": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_destroyed_base_obstacle": "MetaMaterial.mat_wmap_destroyed_base_obstacle"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

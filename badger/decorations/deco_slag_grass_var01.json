@@ -1,0 +1,24 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_slag_grass_var01": {
+            "geometry": "geometry.block_slag_grass_var01_geo",
+            "shadow": false,
+            "type": "near",
+            
+            "offset": [
+                0.0,
+                1.0,
+                0.0
+            ],
+            "random_orientation": true,
+            "up": "surface",
+            "forward": "world",
+            "inherit_color": true,
+            "wind_strength": 0.25,
+			"collision": {
+				"mode": "vertex"
+			}						
+        }
+    }
+}

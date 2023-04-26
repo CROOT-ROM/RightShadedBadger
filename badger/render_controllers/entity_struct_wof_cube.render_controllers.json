@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_wof_cube": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_wof_cube": "MetaMaterial.mat_entity_struct_wof_cube"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "textureEditorIsolateSelectSet": "variable.textureEditorIsolateSelectSet_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

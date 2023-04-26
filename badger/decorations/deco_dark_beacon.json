@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_dark_beacon": {
+      "geometry": "geometry.block_deco_dark_beacon_geo", 
+      "shadow": false, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

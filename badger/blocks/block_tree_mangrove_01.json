@@ -1,0 +1,26 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_mangrove_01": {
+            "textures": {
+                "down": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_tree_mangrove_top_02",
+                          "empty" :"textures/blocks/tex_block_tree_mangrove_top_02_empty",
+                          "L" : "textures/blocks/tex_block_tree_mangrove_top_01_L", 
+                          "spoke" : "textures/blocks/tex_block_tree_mangrove_top_01_spoke"
+                      }
+                },  
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_tree_mangrove_top_02",
+                          "empty" :"textures/blocks/tex_block_tree_mangrove_top_02_empty",
+                          "L" : "textures/blocks/tex_block_tree_mangrove_top_01_L",
+                          "spoke" : "textures/blocks/tex_block_tree_mangrove_top_01_spoke"  
+                        }
+                    },      
+                "side": "textures/blocks/tex_block_tree_mangrove_side_01"
+                }
+            }
+        }
+    }

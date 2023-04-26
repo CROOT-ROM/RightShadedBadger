@@ -1,0 +1,347 @@
+{
+    "format_version": "1.10.0",
+    "particles_performance_profiles": {
+        "profiles_list": [
+            {
+                "comment": "Default settings for all particles.",
+                "filter": "particles",
+                "settings": {
+                    "ultra": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "high": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "medium": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "low": {
+                        "spawning_multiplier": 0.75,
+                        "collision": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": false
+                    }
+                }
+            },
+            {
+                "comment": "Default settings for all particles.",
+                "filter": "particles/blocks",
+                "settings": {
+                    "ultra": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true,
+                        "particle_block_probability_multiplier": 1.0
+                    },
+                    "high": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true,
+                        "particle_block_probability_multiplier": 0.75,
+                      "spawning_effects": {
+                        "badger:fx_block_deco_spawner_fire": {
+                          "badger:block_deco_spawner": 1.0
+                        },
+                        "badger:fx_deco_firelily_fire": {
+                          "badger:block_deco_firelily_01": 1.0
+                        },
+                        "badger:fx_block_deco_vindicator_chimney": {
+                          "badger:block_deco_vindicator_chimney": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_fire": {
+                          "badger:block_deco_sconce_torch": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_oak_fire": {
+                          "badger:block_deco_sconce_torch_log_dark_oak": 1.0
+                        },
+                        "badger:fx_block_buff_speed": {
+                          "badger:block_fx_buff_speed": 1.0
+                        },
+                        "badger:fx_block_buff_jump": {
+                          "badger:block_fx_buff_jump": 1.0
+                        },
+                        "badger:fx_block_buff_heal": {
+                          "badger:block_deco_obelisk_health_buff_02": 1.0,
+                          "badger:block_deco_obelisk_health_buff_05": 1.0,
+                          "badger:block_deco_obelisk_health_buff_08": 1.0,
+                          "badger:block_fx_buff_heal": 1.0
+                        },
+                        "badger:fx_block_fire": {
+                          "badger:block_deco_brazier_piglin": 1.0,
+                          "badger:block_deco_brazier_mount_player": 1.0,
+                          "badger:block_deco_brazier_player": 1.0,
+                          "badger:block_deco_brazier_piglin_netherite": 1.0
+                        },
+                        "badger:fx_block_fire_large": {
+                          "badger:block_deco_brazier_piglin_large": 1.0
+                        },
+                        "badger:fx_block_deco_torch_fire": {
+                          "badger:block_deco_torch": 1.0
+                        },
+                        "badger:fx_block_deco_xp_flame": {
+                          "badger:block_deco_xp_flame": 1.0
+                        },
+                        "badger:fx_block_music_box": {
+                          "badger:block_music_box": 1.0
+                        },
+                        "badger:fx_sp_creeper": {
+                          "badger:block_fx_spawner_creeper": 1.0
+                        },
+                        "badger:fx_sp_cavalry_golem": {
+                          "badger:block_fx_spawner_golem_cavalry": 1.0
+                        },
+                        "badger:fx_sp_stone_golem": {
+                          "badger:block_fx_spawner_golem_stone": 1.0
+                        },
+                        "badger:fx_sp_support_golem": {
+                          "badger:block_fx_spawner_golem_support": 1.0
+                        },
+                        "badger:fx_sp_wood_golem": {
+                          "badger:block_fx_spawner_golem_wood": 1.0
+                        },
+                        "badger:fx_sp_skeleton": {
+                          "badger:block_fx_spawner_skeleton": 1.0
+                        },
+                        "badger:fx_sp_zombie": {
+                          "badger:block_fx_spawner_zombie": 1.0
+                        },
+                        "badger:fx_sp_carrier_golem": {
+                          "badger:block_fx_spawner_golem_carrier": 1.0
+                        },
+                        "badger:fx_sp_shield_golem": {
+                          "badger:block_fx_spawner_golem_shield": 1.0
+                        },
+                        "badger:fx_sp_sniper_golem": {
+                          "badger:block_fx_spawner_golem_sniper": 1.0
+                        },
+                        "badger:fx_sp_fallen_warrior_golem": {
+                          "badger:block_fx_spawner_golem_fallen_warrior": 1.0
+                        }
+                      }
+                    },
+                    "medium": {
+                        "spawning_multiplier": 0.65,
+                        "collision": false,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true,
+                        "particle_block_probability_multiplier": 0.5,
+                      "spawning_effects": {
+                        "badger:fx_block_deco_spawner_fire": {
+                          "badger:block_deco_spawner": 1.0
+                        },
+                        "badger:fx_deco_firelily_fire": {
+                          "badger:block_deco_firelily_01": 1.0
+                        },
+                        "badger:fx_block_deco_vindicator_chimney": {
+                          "badger:block_deco_vindicator_chimney": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_fire": {
+                          "badger:block_deco_sconce_torch": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_oak_fire": {
+                          "badger:block_deco_sconce_torch_log_dark_oak": 1.0
+                        },
+                        "badger:fx_block_buff_speed": {
+                          "badger:block_fx_buff_speed": 1.0
+                        },
+                        "badger:fx_block_buff_jump": {
+                          "badger:block_fx_buff_jump": 1.0
+                        },
+                        "badger:fx_block_buff_heal": {
+                          "badger:block_deco_obelisk_health_buff_02": 1.0,
+                          "badger:block_deco_obelisk_health_buff_05": 1.0,
+                          "badger:block_deco_obelisk_health_buff_08": 1.0,
+                          "badger:block_fx_buff_heal": 1.0
+                        },
+                        "badger:fx_block_fire": {
+                          "badger:block_deco_brazier_piglin": 1.0,
+                          "badger:block_deco_brazier_mount_player": 1.0,
+                          "badger:block_deco_brazier_player": 1.0,
+                          "badger:block_deco_brazier_piglin_netherite": 1.0
+                        },
+                        "badger:fx_block_fire_large": {
+                          "badger:block_deco_brazier_piglin_large": 1.0
+                        },
+                        "badger:fx_block_deco_torch_fire": {
+                          "badger:block_deco_torch": 1.0
+                        },
+                        "badger:fx_block_deco_xp_flame": {
+                          "badger:block_deco_xp_flame": 1.0
+                        },
+                        "badger:fx_block_music_box": {
+                          "badger:block_music_box": 1.0
+                        },
+                        "badger:fx_sp_creeper": {
+                          "badger:block_fx_spawner_creeper": 1.0
+                        },
+                        "badger:fx_sp_cavalry_golem": {
+                          "badger:block_fx_spawner_golem_cavalry": 1.0
+                        },
+                        "badger:fx_sp_stone_golem": {
+                          "badger:block_fx_spawner_golem_stone": 1.0
+                        },
+                        "badger:fx_sp_support_golem": {
+                          "badger:block_fx_spawner_golem_support": 1.0
+                        },
+                        "badger:fx_sp_wood_golem": {
+                          "badger:block_fx_spawner_golem_wood": 1.0
+                        },
+                        "badger:fx_sp_skeleton": {
+                          "badger:block_fx_spawner_skeleton": 1.0
+                        },
+                        "badger:fx_sp_zombie": {
+                          "badger:block_fx_spawner_zombie": 1.0
+                        },
+                        "badger:fx_sp_carrier_golem": {
+                          "badger:block_fx_spawner_golem_carrier": 1.0
+                        },
+                        "badger:fx_sp_shield_golem": {
+                          "badger:block_fx_spawner_golem_shield": 1.0
+                        },
+                        "badger:fx_sp_sniper_golem": {
+                          "badger:block_fx_spawner_golem_sniper": 1.0
+                        },
+                        "badger:fx_sp_fallen_warrior_golem": {
+                          "badger:block_fx_spawner_golem_fallen_warrior": 1.0
+                        }
+                      }
+                    },
+                    "low": {
+                        "spawning_multiplier": 0.25,
+                        "collision": false,
+                        "emitter_ground_placement": false,
+                        "particles_ground_placement": false,
+                        "particle_block_probability_multiplier": 0.25,
+                      "spawning_effects": {
+                        "badger:fx_block_deco_spawner_fire": {
+                          "badger:block_deco_spawner": 1.0
+                        },
+                        "badger:fx_deco_firelily_fire": {
+                          "badger:block_deco_firelily_01": 1.0
+                        },
+                        "badger:fx_block_deco_vindicator_chimney": {
+                          "badger:block_deco_vindicator_chimney": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_fire": {
+                          "badger:block_deco_sconce_torch": 1.0
+                        },
+                        "badger:fx_block_deco_sconce_torch_oak_fire": {
+                          "badger:block_deco_sconce_torch_log_dark_oak": 1.0
+                        },
+                        "badger:fx_block_buff_speed": {
+                          "badger:block_fx_buff_speed": 1.0
+                        },
+                        "badger:fx_block_buff_jump": {
+                          "badger:block_fx_buff_jump": 1.0
+                        },
+                        "badger:fx_block_buff_heal": {
+                          "badger:block_deco_obelisk_health_buff_02": 1.0,
+                          "badger:block_deco_obelisk_health_buff_05": 1.0,
+                          "badger:block_deco_obelisk_health_buff_08": 1.0,
+                          "badger:block_fx_buff_heal": 1.0
+                        },
+                        "badger:fx_block_fire": {
+                          "badger:block_deco_brazier_piglin": 1.0,
+                          "badger:block_deco_brazier_mount_player": 1.0,
+                          "badger:block_deco_brazier_player": 1.0,
+                          "badger:block_deco_brazier_piglin_netherite": 1.0
+                        },
+                        "badger:fx_block_fire_large": {
+                          "badger:block_deco_brazier_piglin_large": 1.0
+                        },
+                        "badger:fx_block_deco_torch_fire": {
+                          "badger:block_deco_torch": 1.0
+                        },
+                        "badger:fx_block_deco_xp_flame": {
+                          "badger:block_deco_xp_flame": 1.0
+                        },
+                        "badger:fx_block_music_box": {
+                          "badger:block_music_box": 1.0
+                        },
+                        "badger:fx_sp_creeper": {
+                          "badger:block_fx_spawner_creeper": 1.0
+                        },
+                        "badger:fx_sp_cavalry_golem": {
+                          "badger:block_fx_spawner_golem_cavalry": 1.0
+                        },
+                        "badger:fx_sp_stone_golem": {
+                          "badger:block_fx_spawner_golem_stone": 1.0
+                        },
+                        "badger:fx_sp_support_golem": {
+                          "badger:block_fx_spawner_golem_support": 1.0
+                        },
+                        "badger:fx_sp_wood_golem": {
+                          "badger:block_fx_spawner_golem_wood": 1.0
+                        },
+                        "badger:fx_sp_skeleton": {
+                          "badger:block_fx_spawner_skeleton": 1.0
+                        },
+                        "badger:fx_sp_zombie": {
+                          "badger:block_fx_spawner_zombie": 1.0
+                        },
+                        "badger:fx_sp_carrier_golem": {
+                          "badger:block_fx_spawner_golem_carrier": 1.0
+                        },
+                        "badger:fx_sp_shield_golem": {
+                          "badger:block_fx_spawner_golem_shield": 1.0
+                        },
+                        "badger:fx_sp_sniper_golem": {
+                          "badger:block_fx_spawner_golem_sniper": 1.0
+                        },
+                        "badger:fx_sp_fallen_warrior_golem": {
+                          "badger:block_fx_spawner_golem_fallen_warrior": 1.0
+                        }
+                      }
+                    }
+                }
+            },
+            {
+                "comment": "Default settings for all particles.",
+                "filter": "particles/building_destruction",
+                "settings": {
+                    "ultra": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "high": {
+                        "spawning_multiplier": 1.0,
+                        "collision": true,
+                        "ground_placement": true,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "medium": {
+                        "spawning_multiplier": 0.65,
+                        "collision": false,
+                        "emitter_ground_placement": true,
+                        "particles_ground_placement": true
+                    },
+                    "low": {
+                        "spawning_multiplier": 0.25,
+                        "collision": false,
+                        "emitter_ground_placement": false,
+                        "particles_ground_placement": false
+                    }
+                }
+            }
+        ]
+    }
+}

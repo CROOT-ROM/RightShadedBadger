@@ -1,0 +1,25 @@
+{
+  "animation_controllers": {
+    "controller.animation.allay_gather.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "loop_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_sparkle",
+              "enabled": true,
+              "locator": "loc_fx_sparkle"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

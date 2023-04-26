@@ -1,0 +1,13 @@
+{
+  "test-name": "flatlands-test-pt2",
+  "test-description": "Enter flatlands and verify no mobs or structures are present",
+  "test-duration": 300,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "disablebsharp": true,
+  "platforms": [ "Win32", "Windows10" ],
+  "commands": [
+    "/verifymobsinarea \"\" 0 team_one 25 20 0 100",
+    "/verifystructuresinarea \"\" 0 team_two 0 20 0 100"
+  ]
+}

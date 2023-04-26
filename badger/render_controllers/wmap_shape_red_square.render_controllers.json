@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_shape_red_square": {
+      "geometry": "Geometry.wmap_shape_red_square",
+      "materials":  [
+        {
+          "mat_wmap_shape_red_square": "MetaMaterial.mat_wmap_shape_red_square"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

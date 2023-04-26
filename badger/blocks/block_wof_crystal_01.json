@@ -1,0 +1,15 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_wof_crystal_01": {
+            "isotropic":{
+                "up": false
+            },
+            "textures": {
+              "up": "textures/blocks/tex_block_well_of_fate_02",
+              "down": "textures/blocks/tex_block_well_of_fate_02",
+              "side": "textures/blocks/tex_block_well_of_fate_side_01"
+            }
+          }
+        }
+        }

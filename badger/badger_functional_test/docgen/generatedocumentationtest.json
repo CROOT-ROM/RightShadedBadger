@@ -1,0 +1,13 @@
+{
+  "test-name": "1generate-documentation-test",
+  "test-description": "Test to generate documentation",
+  "test-duration": 60,
+  "runAsPartOfCompleteTestSuite": false,
+  "gamemode": "editor",
+  "platforms": [ "Win32", "Windows10", "Windows.Gaming" ],
+  "commands": [
+    "/gm true",
+    "/generatedocumentation",
+	"/generateserverdocumentation true"
+  ]
+}

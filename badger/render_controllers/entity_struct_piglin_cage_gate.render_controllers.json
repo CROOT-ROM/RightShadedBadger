@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_piglin_cage_gate": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_piglin_cage_gate": "MetaMaterial.mat_entity_struct_piglin_cage_gate"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "bars_geo": "variable.bars_geo_vis"
+        },
+        {
+          "lock_geo": "variable.lock_geo_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

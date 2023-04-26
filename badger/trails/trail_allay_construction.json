@@ -1,0 +1,11 @@
+{
+    "format_version": "1.0.0",
+    "badger:trail": {
+		"identifier" : "badger:trail_allay_construction",
+          "start_distance": 0.2,
+          "length": 5.0,
+          "width": 0.2,
+		  "shrink_time": 0.5,
+          "material": "mat_trail_allay_construction"
+    }
+}

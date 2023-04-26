@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:world_map_camera"
+    },
+    "components": {
+      "minecraft:camera": {
+        "name": "worldmap",
+        "field_of_view": 20.0,
+        "render_player_model": true,
+        "priority": 1,
+        "position": [ 0, 0, 0 ],
+        "orientation": [ 0, 0, 0 ],
+        "near_plane": 0.1,
+        "far_plane": 10.0,
+        "min_shadow_range": 0.5,
+        "max_shadow_range": 1.0,
+        "shadow_depth_bias": 0.00001,
+        "shadow_slope_bias": 0.00001
+      },
+      "minecraft:camera_blend_in_default": {
+        "blend_time": 0.0,
+        "ease": "in_out_cubic",
+        "camera_to_accepts_input": false
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_hammer_boss_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_hammer_boss": "MetaMaterial.mat_piglin_hammer_boss"
+        },
+        {
+          "mat_piglin_hammer_boss_face": "MetaMaterial.mat_piglin_hammer_boss_face"
+        },
+        {
+          "mat_fx_spore_healed_512": "MetaMaterial.mat_fx_spore_healed_512"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "phbrider_geo": "variable.phbrider_geo_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

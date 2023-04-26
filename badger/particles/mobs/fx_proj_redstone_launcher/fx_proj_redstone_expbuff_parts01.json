@@ -1,0 +1,57 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_redstone_expbuff_parts01",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_bits_fp_lava" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 1000.0
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "length" : 2.0,
+            "radius" : 4.5,
+            "vertical_angle" : 5.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.4, 0.4 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 31,
+                  "frame_end" : 30,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 3 ],
+                  "rows_count" : 4
+               },
+               "time_integration" : {
+                  "cycles_count" : 1
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 2.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 100.0
+         },
+         "minecraft:particle_initial_speed" : "Math.random(2.0,16.0)",
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(0.6,5.0)"
+         },
+         "minecraft:particle_motion_collision" : {
+            "coefficient_of_restitution" : 0.25,
+            "collision_drag" : 4.0,
+            "collision_radius" : 0.1
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, "Math.random(-13,-15)", 0.0 ],
+            "linear_drag_coefficient" : 0.3,
+            "rotation_drag_coefficient" : [ 10.0, 50.0 ]
+         }
+      }
+   }
+}

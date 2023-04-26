@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.item_sword_hero": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_item_sword_hero": "MetaMaterial.mat_item_sword_hero"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,39 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_tower_anti_siege_red_stone",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 1000.0
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.badger_buff_kaboomery_rsl" ]
+      },
+      "events" : {
+         "explosion_impact" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_impact_lava",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 1.0"
+         },
+         "stone_impact" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_tower_anti_siege_impact_stone",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery_rsl == 0.0"
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "stone_impact", "explosion_impact" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

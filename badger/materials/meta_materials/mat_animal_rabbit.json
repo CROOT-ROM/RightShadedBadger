@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_animal_rabbit:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_animal_rabbit_d",
+            "coeffMap": "textures/entity/tex_animal_rabbit_mr",
+            "normalMap": "textures/entity/tex_animal_rabbit_n"
+        }
+    }
+}

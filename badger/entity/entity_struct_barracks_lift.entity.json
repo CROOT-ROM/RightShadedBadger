@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.1,
+        "trigger_event_only_on_death": true
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.925,0.659,0.196],
+            "enabled": "variable.open",
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0, 250, 1.0) * variable.light_flare",
+            "locator": "loc_fx_fire01",
+            "offset": [0,1,0],
+            "radius": 17
+          },
+          {
+            "color": [0.925,0.659,0.196],
+            "enabled": "",
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0, 250.0, 1.0) * variable.light_flare",
+            "locator": "loc_fx_fire02",
+            "offset": [0,1,0],
+            "radius": 17
+          },
+          {
+            "color": [0.925,0.659,0.196],
+            "enabled": "variable.open",
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0, 250, 1.0) * variable.light_flare",
+            "locator": "loc_fx_fire03",
+            "offset": [0,1,0],
+            "radius": 17
+          },
+          {
+            "color": [0.925,0.659,0.196],
+            "enabled": "variable.open",
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0,250, 1.0) * variable.light_flare",
+            "locator": "loc_fx_fire04",
+            "offset": [0,1,0],
+            "radius": 17
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_barracks_spawn": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_entity_struct_barracks_lift_spawn_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire01"
+            },
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_entity_struct_barracks_lift_spawn_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire02"
+            },
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_entity_struct_barracks_lift_spawn_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire03"
+            },
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_entity_struct_barracks_lift_spawn_fire",
+              "enabled": true,
+              "locator": "loc_fx_fire04"
+            }
+          ],
+          "script": "open_door"
+        },
+        "on_death": {
+          "audio": "BAE_piglin_barracks_open_stop"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_barracks_idle"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_barracks_lift"
+      },
+      "badger:rig_operations": ["rigops_actions.entity_struct_barracks_lift_light"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.entity_struct_barracks_lift.default",
+        "fxcontroller": "controller.animation.entity_struct_barracks_lift.fxcontroller",
+        "inactive_a": "animation.entity_struct_barracks_lift.inactive_a",
+        "open_a": "animation.entity_struct_barracks_lift.open_a",
+        "spawn_cooldown": "animation.entity_struct_barracks_lift.spawn_cooldown"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "open_door": "variable.open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_barracks_lift"
+      },
+      "identifier": "badger:entity_struct_barracks_lift",
+      "materials": {
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_open": "badger:fx_entity_struct_barracks_lift",
+        "fx_spawn_fire": "badger:fx_entity_struct_barracks_lift_spawn_fire",
+        "fx_top_fire": "badger:fx_entity_struct_barracks_fire"
+      },
+      "render_controllers": ["controller.render.entity_struct_barracks_lift"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fxcontroller": "1"
+          }
+        ],
+        "initialize": ["variable.open = 0;","variable.fx_fire = 0;"]
+      },
+      "sound_effects": {
+        "close": "BAE_piglin_barracks_close",
+        "open": "BAE_piglin_barracks_open",
+        "windup_call": "BAE_piglin_barracks_windup_call"
+      },
+      "textures": {
+        "default": "textures/entity/tex_entity_struct_barracks_lift"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_lava_still_vfx": {
+      "textures": {
+        "up": "textures/blocks/tex_block_lava_still",
+        "down": "textures/blocks/tex_block_lava_still",
+        "side": "textures/blocks/tex_block_lava_flow"
+      },
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_lava_still",
+            "range": "middle",
+            "probability": 0.25,
+            "offset": [
+              0.0,
+              0.1,
+              0.0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

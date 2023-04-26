@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wof_lightbeam:base_entity_static": {
+    "pass": "transparent",
+    "textures": {
+      "diffuseMap": "textures/blocks/tex_block_wof_lightbeam",
+      "emissiveMap": "textures/blocks/tex_block_wof_lightbeam_e"
+
+    }
+  }
+}

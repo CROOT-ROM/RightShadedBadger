@@ -1,0 +1,14 @@
+{
+  "test-name": "mob-test",
+  "gamemode": "editor",
+  "test-duration": 300,
+  "test-description": "Spawn various mobs on different teams",
+  "runAsPartOfCompleteTestSuite": true,
+  "platforms": ["Win32", "Windows10", "playstation_4","playstation_4_pro"],
+  "commands": [
+    "/godmode",
+    "/spawnallmobs true \"\" 20",
+    "/testdelay 120",
+    "/godmode"
+  ]
+}

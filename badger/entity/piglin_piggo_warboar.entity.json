@@ -1,0 +1,162 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1.75,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 3.55
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_piglin_piggo_warboar_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_piggo_warboar_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": ""
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_piggo_warboar_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_piggo_warboar",
+        "limit": 1024
+      },
+      "badger:template": [
+        "badger:template_piglin",
+        "badger:template_status_effects"
+      ],
+      "badger:threat_source": {
+        "base_value": 8,
+        "spawn_value": 12,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_slow": "animation.piglin_piggo_warboar.additive_tumble_slow",
+        "attack_a": "animation.piglin_piggo_warboar.attack_a",
+        "attack_ab": "animation.piglin_piggo_warboar.attack_ab",
+        "attack_b": "animation.piglin_piggo_warboar.attack_b",
+        "charge_a": "animation.piglin_piggo_warboar.charge_a",
+        "climb_a": "animation.piglin_piggo_warboar.climb_a",
+        "death_a": "animation.piglin_piggo_warboar.death_a",
+        "death_b": "animation.piglin_piggo_warboar.death_b",
+        "death_c": "animation.piglin_piggo_warboar.death_c",
+        "default": "controller.animation.piglin_piggo_warboar.default",
+        "hitreact_a": "animation.piglin_piggo_warboar.hitreact_a",
+        "hitreaction": "controller.animation.piglin_piggo_warboar.hitreaction",
+        "idle_a": "animation.piglin_piggo_warboar.idle_a",
+        "idle_b": "animation.piglin_piggo_warboar.idle_b",
+        "idles": "controller.animation.piglin_piggo_warboar.idles",
+        "knockback_a": "animation.piglin_piggo_warboar.knockback_a",
+        "knockback_landing": "animation.piglin_piggo_warboar.knockback_landing",
+        "locomotion": "controller.animation.piglin_piggo_warboar.locomotion",
+        "run_c": "animation.piglin_piggo_warboar.run_c",
+        "scared_run": "animation.piglin_piggo_warboar.scared_run",
+        "spawn_a": "animation.piglin_piggo_warboar.spawn_a",
+        "stop_b": "animation.piglin_piggo_warboar.stop_b",
+        "stun_a": "animation.piglin_piggo_warboar.stun_a",
+        "swim_a": "animation.piglin_piggo_warboar.swim_a",
+        "swim_idle": "animation.piglin_piggo_warboar.swim_idle"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.enemy_spotted = 1;",
+        "hero_spotted": "variable.hero_spotted = 1;"
+      },
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Happy",
+        "Happy Blink",
+        "Not Impressed",
+        "Afraid",
+        "Stunned",
+        "Yelling",
+        "Determined",
+        "Blink Hard"
+      ],
+      "geometry": {
+        "default": "geometry.piglin_piggo_warboar"
+      },
+      "identifier": "badger:piglin_piggo_warboar",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
+        "mat_piglin_piggo_warboar": "mat_piglin_piggo_warboar",
+        "mat_piglin_piggo_warboar1": "mat_piglin_piggo_warboar1",
+        "mat_piglin_piggo_warboar_face": "mat_piglin_piggo_warboar_face",
+        "mat_piglin_piggo_warboar_face1": "mat_piglin_piggo_warboar_face1"
+      },
+      "particle_effects": {
+        "fx_charge": "badger:fx_piglin_piggo_warboar_charge",
+        "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_large",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_dust": "badger:fx_piglin_piggo_warboar_dust",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
+      },
+      "render_controllers": [
+        "controller.render.piglin_piggo_warboar"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "hitreaction": "1"
+          }
+        ],
+        "initialize": [
+          "variable.fx_charge = 0;",
+          "variable.second_skin_vis = 0;"
+        ]
+      },
+      "sound_effects": {
+        "attack_front": "BAE_piglin_piggo_warboar_attack_front",
+        "attack_rear": "BAE_piglin_piggo_warboar_attack_rear",
+        "bodyfall": "BAE_piglin_piggo_warboar_bodyfall",
+        "dx_attack": "BAE_piglin_piggo_warboar_dx_attack",
+        "dx_charge": "BAE_piglin_piggo_warboar_dx_charge",
+        "dx_death": "BAE_piglin_piggo_warboar_dx_death",
+        "dx_hurt": "BAE_piglin_piggo_warboar_dx_hurt",
+        "dx_idle": "BAE_piglin_piggo_warboar_dx_idle",
+        "dx_scared": "BAE_piglin_piggo_warboar_dx_reaction_scared",
+        "dx_snort": "BAE_piglin_piggo_warboar_dx_snort",
+        "dx_spotted_enemy": "BAE_piglin_piggo_warboar_dx_spotted_enemy",
+        "dx_yes": "BAE_piglin_piggo_warboar_dx_reaction_yes",
+        "footstep_hard": "BAE_piglin_piggo_warboar_footstep_hard",
+        "footstep_jump": "BAE_piglin_piggo_warboar_footstep_jump",
+        "footstep_land": "BAE_piglin_piggo_warboar_footstep_land",
+        "footstep_soft": "BAE_piglin_piggo_warboar_footstep_soft",
+        "idle_b_tusk_multi": "BAE_piglin_piggo_warboar_idle_b_tusk_multi",
+        "idle_b_tusk_single": "BAE_piglin_piggo_warboar_idle_b_tusk_single",
+        "piglin_death_poof_medium": "BAE_piglin_death_poof_medium",
+        "spawn": "BAE_piglin_portal_spawn"
+      },
+      "textures": {
+        "default": "textures/entity/piglin_piggo_warboar/tex_piglin_piggo_warboar_d"
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "animation_controllers": {
+    "controller.animation.entity_struct_fountain_prismarine.default": {
+      "initial_state": "spawn",
+      "states": {
+        "disabled": {
+          "animations":  [
+            {
+              "disabled": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_electric",
+              "enabled": true,
+              "locator": "loc_fx_root"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "fountain_idle_disabled",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "re_enable": "(variable.health_low == 0)"
+            }
+          ]
+        },
+        "intro_disabled": {
+          "animations":  [
+            {
+              "into_disabled": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_destroyed_sparkles",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_destroyed_waterfalls",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_a"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_destroyed_waterfalls",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_b"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_destroyed_waterfalls",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_c"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_destroyed_waterfalls",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_d"
+            },
+            {
+              "effect": "fx_dead_foliage",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "fountain_disabled",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "disabled": "query.any_animation_finished"
+            }
+          ]
+        },
+        "loop": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "fountain_idle",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "intro_disabled": "variable.health_low"
+            }
+          ]
+        },
+        "re_enable": {
+          "animations":  [
+            {
+              "re_enabled": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_healthy_sparkles",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_a"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_b"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_c"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_d"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_water_pillar_rebuild",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_a"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_water_pillar_rebuild",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_b"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_water_pillar_rebuild",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_c"
+            },
+            {
+              "bind_to_actor": false,
+              "effect": "fx_water_pillar_rebuild",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_d"
+            }
+          ],
+          "sound_effects":  [
+            {
+              "effect": "fountain_healed",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "loop": "query.any_animation_finished"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_healthy_sparkles",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_a"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_b"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_c"
+            },
+            {
+              "effect": "fx_healthy_ripples",
+              "enabled": true,
+              "locator": "loc_fx_waterfall_d"
+            }
+          ],
+          "transitions":  [
+            {
+              "loop": "query.any_animation_finished"
+            },
+            {
+              "disabled": "variable.health_low"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

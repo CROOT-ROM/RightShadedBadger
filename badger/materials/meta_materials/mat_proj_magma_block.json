@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "mat_proj_magma_block:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_proj_magma_block_d",
+            "emissiveMap": "textures/entity/tex_proj_magma_block_e",
+            "coeffMap": "textures/entity/tex_proj_magma_block_mr",
+            "normalMap": "textures/entity/tex_proj_magma_block_n"
+    
+
+        }
+    }
+}

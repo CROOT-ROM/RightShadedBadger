@@ -1,0 +1,41 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_impact_lava_geyser_splash",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_liquid_hit_fp_magma" ]
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "initial_scale" : [ 0.9, 1.0 ],
+            "facing_camera_mode" : "rotate_y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 5,
+                  "frame_end" : 9,
+                  "mirror_mode_u" : "random",
+                  "rows_count" : 2
+               }
+            },
+            "pivot" : [ 0.0, -0.5 ]
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "offset" : [ 0.0, 0.2, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(1.2,1.75)"
+         },
+         "minecraft:particle_motion_dynamic" : {}
+      }
+   }
+}

@@ -1,0 +1,61 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_spear_final_boss",
+      "materials": {
+        "mat_proj_spear_final_boss": "mat_proj_spear_final_boss"
+      },
+      "textures": {
+        "default": "textures/entity/tex_proj_arrow_d"
+      },
+      "geometry": {
+        "default": "geometry.proj_spear_final_boss"
+      },
+      "particle_effects": {
+        "fx_arrow_hit": "badger:fx_shared_arrow_hit"
+      },
+      "render_controllers": [
+        "controller.render.proj_spear_final_boss"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_piglin_finalboss_attack_ranged_projectile"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_piglin_final_boss_proj_spear_impact_entity",
+          "particles": {
+            "effect": "badger:fx_proj_final_boss_impact",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          }
+        },
+        "on_world_hit": {
+          "audio": "BAE_piglin_final_boss_proj_spear_impact_world",
+          "particles": {
+            "effect": "badger:fx_proj_final_boss_impact",
+            "enabled": true,
+            "locator": "loc_fx_main"
+          }
+        },
+        "on_intercepted": {
+          "audio": "BAE_piglin_final_boss_proj_spear_intercepted",
+          "particles": "badger:fx_tower_anti_siege_impact_wood"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_spear_final_boss"
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_final_boss_spear"
+      },
+	  "badger:block_source_cull_distance_override": {
+		  "distance": 300.0
+	  }
+    }
+  }
+}

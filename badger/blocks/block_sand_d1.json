@@ -1,0 +1,10 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sand_d1": {
+            "decoration": "sand_d1_grass",
+            "textures": "textures/blocks/tex_block_sand_d1"
+            
+        }
+    }
+}

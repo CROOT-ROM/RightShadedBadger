@@ -1,0 +1,60 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,0.43,0],
+            "falloff_power": 2,
+            "intensity": "variable.strength",
+            "locator": "loc_fx_light",
+            "offset": [0,0,0],
+            "radius": "variable.radius"
+          }
+        ]
+      },
+      "badger:rendering": {
+        "definition": "badger:impact_lava_geyser"
+      }
+    },
+    "description": {
+      "animations": {
+        "active": "animation.impact_lava_geyser.active",
+        "default": "controller.animation.impact_lava_geyser.default",
+        "enter": "animation.impact_lava_geyser.enter",
+        "exit": "animation.impact_lava_geyser.exit",
+        "static": "animation.impact_lava_geyser.static"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.impact_lava_geyser"
+      },
+      "identifier": "badger:impact_lava_geyser",
+      "materials": {
+        "default": "entity_model",
+        "mat_impact_lava_geyser": "mat_impact_lava_geyser"
+      },
+      "particle_effects": {
+        "fx_geyser": "badger:fx_impact_lava_geyser",
+        "fx_initial": "badger:fx_impact_lava_geyser_start",
+        "fx_start": "badger:fx_impact_lava_geyser_initial"
+      },
+      "render_controllers": ["controller.render.impact_lava_geyser"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "attack_geyser": "piglin_magmaboss_attack_geyser",
+        "geyser_loop": "BAE_piglin_magmaboss_attack_geyser_loop",
+        "geyser_loop_stop": "BAE_piglin_magmaboss_attack_geyser_loop_stop",
+        "geyser_start": "piglin_magmaboss_attack_geyser_start"
+      }
+    }
+  }
+}

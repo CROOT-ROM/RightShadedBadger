@@ -1,0 +1,55 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_redstone_impact_explosive_fireball",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_e_flame_center" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 1000.0
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 5.25, 5.25 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 6,
+                  "frame_end" : 23,
+                  "frame_start" : 6,
+                  "rows_count" : 4
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 0.5
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 9.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 3.0, 10.5, 3.0 ],
+            "offset" : [ 0.0, 0.1, 0.0 ]
+         },
+         "minecraft:particle_initial_speed" : "Math.random(6, 9)",
+         "minecraft:particle_initial_spin" : {
+            "rotation" : "Math.random(-180, 180)"
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(0.2,0.4)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [
+               0.0,
+               "(query.particle_normalized_age < 0.2) ? 0 : query.particle_normalized_age * 4",
+               0.0
+            ],
+            "linear_drag_coefficient" : 2.0
+         }
+      }
+   }
+}

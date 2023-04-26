@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_teammate_orange": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_teammate_orange": "MetaMaterial.mat_wmap_teammate_orange"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

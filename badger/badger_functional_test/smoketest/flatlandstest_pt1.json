@@ -1,0 +1,15 @@
+{
+  "test-name": "flatlands-test-pt1",
+  "test-description": "enters flatlands and places some buildings and mobs",
+  "test-duration": 300,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "disablebsharp": true,
+  "platforms": [ "Win32", "Windows10" ],
+  "commands": [
+    "/gm true",
+    "/giveallresources",
+    "/pv badger:poi_zoner_well_of_fate none true true team_two 0 50 0",
+    "/sm badger:mob_creeper 5 25 50 0 team_one"
+  ]
+}

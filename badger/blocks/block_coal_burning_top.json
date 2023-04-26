@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_coal_burning_top": {
+      "textures": {
+        "down": "textures/blocks/tex_block_coal", 
+        "up": "textures/blocks/tex_block_coal", 
+        "side": "textures/blocks/tex_block_coal_burning_top"
+      }
+    }
+  }
+}

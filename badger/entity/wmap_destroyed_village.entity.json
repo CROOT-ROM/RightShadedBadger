@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_destroyed_village"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_destroyed_village"
+      },
+      "identifier": "badger:wmap_destroyed_village",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_destroyed_village": "mat_wmap_destroyed_village"
+      },
+      "render_controllers": [
+        "controller.render.wmap_destroyed_village"
+      ]
+    }
+  }
+}

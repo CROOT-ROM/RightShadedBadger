@@ -1,0 +1,22 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_piglin_crate": {
+      "arrays": {
+        "materials": {
+          "Array.base": ["MetaMaterial.mat_entity_struct_piglin_crate_closed","MetaMaterial.mat_entity_struct_piglin_crate_open"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_piglin_crate_closed": "Array.base[variable.change_material]"
+        },
+        {
+          "mat_entity_struct_piglin_crate_open": "MetaMaterial.mat_entity_struct_piglin_crate_open"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

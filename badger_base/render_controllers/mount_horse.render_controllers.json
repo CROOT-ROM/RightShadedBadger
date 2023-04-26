@@ -1,0 +1,16 @@
+{
+  "render_controllers": {
+    "controller.render.mount_horse": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mount_horse": "MetaMaterial.mat_mount_horse"
+        },
+        {
+          "mat_mount_horse_face": "MetaMaterial.mat_mount_horse_face"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

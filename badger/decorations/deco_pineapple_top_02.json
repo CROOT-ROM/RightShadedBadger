@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_pineapple_top_02": {
+            "geometry": "geometry.deco_block_tree_pineapple_top_02",
+            "shadow": true,
+            "type": "far",
+            "random_orientation": true,
+            "up": "world",
+            "forward": "surface"
+        }
+    }
+}

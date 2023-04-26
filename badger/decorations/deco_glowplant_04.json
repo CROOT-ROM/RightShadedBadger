@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_glowplant_04": {
+            "geometry": "geometry.block_deco_glowplant_04",
+            "shadow": true,
+            "type": "middle",
+            "up": "surface",
+            "forward": "world"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_shared_fasttravel_sparkles_start",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_spin_bits_blue" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         },
+         "expiration_mode" : "immediate"
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.traveller_size" ]
+      },
+      "components" : {
+         "badger:emitter_lifetime_variable_monitor" : {
+            "molang_variable" : "variable.fast_travel_interrupt3"
+         },
+         "badger:particle_advanced_motion_dynamic" : {
+            "integration_mode" : "velocity",
+            "linear_velocity" : [ 0.0, 0.35, 0.0 ]
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.15, 0.15 ],
+            "initial_scale" : [ 1.0, 1.5 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 7,
+                  "frame_end" : 6,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 0, 1 ],
+                  "rows_count" : 2
+               },
+               "time_integration" : {
+                  "cycles_count" : 2
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : "10 * variable.traveller_size"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [
+               "variable.traveller_size",
+               "1.5 * variable.traveller_size",
+               "variable.traveller_size"
+            ],
+            "offset" : [ 0.0, 1.5, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "gradient" : {
+               "0.000000" : [ 0.69, 0.99, 0.12, 1.0 ],
+               "0.500000" : [ 0.69, 0.99, 0.12, 0.5 ],
+               "0.750000" : [ 0.69, 0.99, 0.12, 0.5 ],
+               "1.000000" : [ 0.69, 0.99, 0.12, 0.0 ]
+            }
+         },
+         "minecraft:particle_initial_speed" : 6.0,
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(1.0,2.75)"
+         }
+      }
+   }
+}

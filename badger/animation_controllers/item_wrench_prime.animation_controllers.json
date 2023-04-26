@@ -1,0 +1,66 @@
+{
+  "animation_controllers": {
+    "controller.animation.item_wrench_prime.default": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "main_controls_a": 1.0
+            },
+            {
+              "parts_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    },
+    "controller.animation.item_wrench_prime.fx_controller": {
+      "initial_state": "initial",
+      "states": {
+        "initial": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_weapon_lightning",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning01",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning02",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_cntr",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_core",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning03",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_parts_idle",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

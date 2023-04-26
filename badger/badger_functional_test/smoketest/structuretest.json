@@ -1,0 +1,14 @@
+{
+  "test-name": "structure-test",
+  "test-description": "Spawn all structures in flatlands",
+  "test-duration": 300,
+  "runAsPartOfCompleteTestSuite": true,
+  "gamemode": "editor",
+  "disablebsharp": true,
+  "platforms": ["Win32", "Windows10", "Xbox", "playstation_4","playstation_4_pro"],
+  "commands": [
+    "/placeallbuildables \"\" true",
+    "/testdelay 200",
+    "/godmode"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_rotters_boss_cine_pool",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_e_nether_spore" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 150.01
+         }
+      },
+      "events" : {
+         "spore_aoe_decal" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 15.0, 15.0, 15.0 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.5,
+                  "lifetime" : 4.0,
+                  "texture" : "decal_rotters_death"
+               }
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "spore_aoe_decal" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      },
+      "curves" : {
+         "variable.scale" : {
+            "control_points" : [
+               {
+                  "position" : [ 0.004, -0.006 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               },
+               {
+                  "position" : [ 0.575, 1.0 ],
+                  "tangent_a" : [ 0.1, 0.0 ],
+                  "tangent_b" : [ -0.1, 0.0 ]
+               }
+            ],
+            "input" : "query.particle_normalized_age",
+            "type" : "hermite"
+         }
+      }
+   }
+}

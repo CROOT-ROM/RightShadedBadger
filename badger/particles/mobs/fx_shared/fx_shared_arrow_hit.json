@@ -1,0 +1,32 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_shared_arrow_hit",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "molang_variables_inheritance" : {
+         "variables" : [ "variable.badger_buff_kaboomery" ]
+      },
+      "events" : {
+         "explosive" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_small_explosion_impact",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "variable.badger_buff_kaboomery == 1"
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "explosive" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

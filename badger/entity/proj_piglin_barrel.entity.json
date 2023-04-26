@@ -1,0 +1,50 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:proj_piglin_barrel",
+            "materials": {
+                "default": "entity_model",
+                "mat_proj_piglin_barrel": "mat_proj_piglin_barrel"
+            },
+            "geometry": {
+                "default": "geometry.proj_piglin_barrel"
+            },
+            "render_controllers": [
+                "controller.render.proj_piglin_barrel"
+            ],
+            "particle_effects": {
+                "fx_trail": "badger:proj_piglin_barrel_dust"
+            },
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:audio_update_FMOD_projectile_velocity": {},
+            "badger:rendering": {
+                "definition": "badger:proj_piglin_barrel"
+            },
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_tower_piglin_thrower_projectile",
+                    "particles": {
+                        "effect": "fx_trail",
+                        "locator": "loc_fx_main",
+                        "enabled": true,
+                        "bind_to_actor": true
+                    }
+                },
+                "on_world_hit": {
+                    "audio": "BAE_tower_piglin_thrower_projectile_impact_world",
+                    "particles": "badger:proj_piglin_barrel_impact"
+                },
+                "on_entity_hit": {
+                    "particles": "badger:proj_piglin_barrel_impact"
+                },
+                "on_intercepted": {
+                    "audio": "BAE_tower_piglin_thrower_projectile_intercepted",
+                    "particles": "badger:fx_tower_anti_siege_impact_wood"
+                }
+            }
+        }
+    }
+}

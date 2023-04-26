@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "deco_plant_bullrush_04": {
+      "geometry": "geometry.block_deco_plant_bullrush_04",
+      "shadow": true,
+      "random_orientation": true,
+      "wind_strength": 0.025,
+      "type": "near"
+    }
+  }
+}

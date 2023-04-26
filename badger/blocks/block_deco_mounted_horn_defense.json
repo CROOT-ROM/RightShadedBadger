@@ -1,0 +1,13 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_mounted_horn_defense": {
+            "textures": "textures/blocks/tex_debug",
+            "decoration": {
+                "default": "deco_mounted_horn_defense",
+                "spoke": "deco_mounted_horn_defense_spoke"
+                             
+            }
+        }
+    }
+}

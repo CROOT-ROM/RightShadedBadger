@@ -1,0 +1,29 @@
+{
+
+  "format_version": "1.10.0",
+
+  "minecraft:client_entity": {
+
+    "description": {
+
+      "identifier": "badger:audio_announcer"
+
+    },
+
+    "components": {
+
+      "badger:presentation_event": {
+
+        "msg_friendly_start_pvp": {
+
+          "audio": "BAE_match_start_pvp"
+
+        }      
+
+      }
+
+    }
+
+  }
+
+}

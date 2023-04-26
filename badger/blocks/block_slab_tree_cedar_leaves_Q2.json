@@ -1,0 +1,28 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_slab_tree_cedar_leaves_q2": {
+            "textures": {
+                "down": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_tree_cedar_leaves_Q2",
+                          "empty" :"textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_empty",
+                          "L" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_L_DOWN",
+                          "line" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_line",
+                           "T" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_T_DOWN"
+                      }
+                },
+                "up": {
+                    "smart": {
+                          "default" : "textures/blocks/tex_block_tree_cedar_leaves_Q2",
+                          "empty" :"textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_empty",
+                          "L" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_L",
+                          "line" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_line",
+                           "T" : "textures/blocks/tex_block_slab_tree_cedar_leaves_Q2_T"
+                        }
+                    },          
+                "side": "textures/blocks/tex_block_tree_cedar_leaves_blend"
+                }
+            }
+        }
+    }

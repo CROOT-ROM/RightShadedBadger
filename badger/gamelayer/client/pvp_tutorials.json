@@ -1,0 +1,88 @@
+[
+    {
+        "name": "pvp_player_move",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_turned_camera",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_jumped",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_sprinted",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_melee_attack",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_shared_resources",
+        "type": "video"
+    },
+    {
+        "name": "pvp_built_pylon",
+        "type": "image",
+        "pages": 2
+    },
+    {
+        "name": "pvp_built_base_defenses",
+        "type": "image",
+        "pages": 2
+    },
+    {
+        "name": "pvp_player_found_enemy_base",
+        "type": "image",
+        "pages": 2
+    },
+    {
+        "name": "pvp_piglins",
+        "type": "video",
+        "pages": 2
+    },
+    {
+        "name": "pvp_day_night_cycle",
+        "type": "image"
+    },
+    {
+        "name": "pvp_player_rare_resources",
+        "type": "image"
+    },
+    {
+        "name": "pvp_player_piglin_resources",
+        "type": "video"
+    },
+    {
+        "name": "pvp_emerald_economy",
+        "type": "image",
+        "pages": 2
+    },
+    {
+        "name": "pvp_poi_towers",
+        "type": "image"
+    },
+    {
+        "name": "pvp_poi_firsts",
+        "type": "image"
+    },
+    {
+        "name": "pvp_mount_swap",
+        "type": "video"
+    },
+    {
+        "name": "pvp_player_looked_at_map",
+        "type": "image"
+    },
+    {
+        "name": "pvp_player_used_compass",
+        "type": "video"
+    },
+    {
+        "name": "pvp_placed_map_marker",
+        "type": "image",
+        "pages": 2
+    }
+]

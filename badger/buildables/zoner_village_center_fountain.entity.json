@@ -1,0 +1,108 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_village_center_fountain"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:music_2d_emitter": {
+        "priority": 10,
+        "max_distance": 200.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "default",
+            "audio_parameters": [
+              {
+                "music_village": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "level1",
+            "audio_parameters": [
+              {
+                "music_village": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "level2",
+            "audio_parameters": [
+              {
+                "music_village": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "level3",
+            "audio_parameters": [
+              {
+                "music_village": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "occupied",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "incoming_attack",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "damaged",
+            "audio_parameters": [
+              {
+                "music_va_fountain": 3.0
+              }
+            ]
+          }          
+        ]
+      },
+      "badger:invasion_icon": {
+        "icon_color": [
+          0.365,
+          0.777,
+          0.867,
+          1.0
+        ]
+      },
+      "badger:presentation_event": {
+        "on_building_destroyed": {
+          "audio": "BAE_zoner_village_center_fountain_destroyed"
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_zoner_village_center_fountain_dmg_stage_0"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_zoner_village_center_fountain_dmg_stage_0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_zoner_village_center_fountain_dmg_stage_1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_zoner_village_center_fountain_dmg_stage_2"
+        },
+        "on_block_layer_converted": {
+          "audio": "BAE_TODO"
+        },
+        "on_block_swap_start": {
+          "audio": "BAE_TODO"
+        },
+        "on_block_swap_stop": {
+          "audio": "BAE_TODO"
+        }
+      }
+    }
+  }
+}85, 85, 255, 255

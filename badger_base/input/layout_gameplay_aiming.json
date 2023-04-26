@@ -1,0 +1,48 @@
+[
+  {
+    "button_id": "button.chat",
+    "key_id": "key.chat",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.console",
+    "key_id": "key.command",
+    "focus_impact": "activate"
+  },
+  {
+    "button_id": "button.pause",
+    "key_id": "key.menu.pause",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.game_mode",
+    "key_id": "key.gameMode",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.render_debug",
+    "key_id": "key.renderDebug",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.open_imgui",
+    "key_id": "key.openImgui",
+    "focus_impact": "neutral"
+  },
+  {
+    "button_id": "button.cancel_interaction",
+    "key_id": "key.cancelAiming",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_right",
+    "ui_label": "key.ui.cancel",
+    "ui_sort_order": 2
+  },
+  {
+    "button_id": "button.confirm_target",
+    "key_id": "key.confirmTarget",
+    "focus_impact": "neutral",
+    "ui_slot": "facebutton_left",
+    "ui_label": "key.ui.confirmTarget",
+    "ui_sort_order": 1
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_tree_birch_frost_side": {
+      "textures": {
+        "down": "textures/blocks/tex_block_tree_birch_top_y", 
+        "up": "textures/blocks/tex_block_tree_birch_top_y", 
+        "side": "textures/blocks/tex_block_tree_birch_side_y"
+      }
+    }
+  }
+}

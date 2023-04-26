@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_planks_dark_oak_fine": {
+      "textures": "textures/blocks/tex_block_planks_dark_oak_fine"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+    "format_version": "1.10.0",
+    "particle_effect": {
+        "description": {
+            "identifier": "badger:fx_stat_fear_tiny",
+            "expiration_mode": "immediate",
+            "basic_render_parameters": {
+                "materials_list": [
+                    "mat_badger_fx_add_fear"
+                ]
+            },
+            "optimizations": {
+                "do_not_spawn_distance": 300,
+                "suspend_distance": 60
+            }
+        },
+        "components": {
+            "minecraft:emitter_local_space": {
+                "transform": true,
+                "velocity": false
+            },
+            "minecraft:emitter_rate_instant": {
+                "num_particles": 1
+            },
+            "badger:emitter_lifetime_variable_monitor": {
+                "molang_variable": "variable.fx_fear"
+            },
+            "minecraft:emitter_shape_point": {
+                "offset": [
+                    0,
+                    0.25,
+                    0
+                ],
+                "direction": [
+                    0,
+                    1,
+                    0
+                ]
+            },
+            "minecraft:particle_initial_speed": 0,
+            "minecraft:particle_lifetime_expression": {
+                "activation_expression": 1
+            },
+            "badger:particle_advanced_motion_dynamic": {
+                "linear_acceleration": [
+                    0,
+                    0,
+                    0
+                ],
+                "linear_drag_coefficient": 0,
+                "rotation_acceleration": 0,
+                "rotation_drag_coefficient": 0,
+                "integration_mode": "velocity",
+                "linear_velocity": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "badger:particle_appearance_billboard": {
+                "size": [
+                    0.5,
+                    0.25
+                ],
+                "facing_camera_mode": "rotate_y",
+                "flipbook": {
+                    "layout": {
+                        "columns_count": 1,
+                        "rows_count": 2,
+                        "frame_iteration": "page",
+                        "frame_start": 0
+                    },
+                    "time_integration": {
+                        "mode": "fps",
+                        "frames_per_second": 3,
+                        "cycles_count": -1
+                    }
+                }
+            }
+        }
+    }
+}

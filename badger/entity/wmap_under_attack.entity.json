@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:presentation_event": {
+        "on_attacked": {
+          "script": "initialize"
+        },
+        "on_planned": {
+          "script": "state_planned"
+        },
+        "on_success": {
+          "script": "state_success"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_under_attack"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "event_scripts": {
+        "state_planned": "variable.state = 1;",
+        "state_success": "variable.state = 2;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_under_attack"
+      },
+      "identifier": "badger:wmap_under_attack",
+      "materials": {
+        "mat_wmap_under_attack": "mat_wmap_under_attack",
+        "mat_wmap_under_planned": "mat_wmap_under_planned",
+        "mat_wmap_under_success": "mat_wmap_under_success"
+      },
+      "render_controllers": ["controller.render.wmap_under_attack"],
+      "scripts": {
+        "initialize": ["variable.state = 0;"]
+      }
+    }
+  }
+}

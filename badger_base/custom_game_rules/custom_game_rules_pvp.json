@@ -1,0 +1,32 @@
+{
+  "custom_game_rules": {
+    "rules": {
+      "matchstartbyhqsbuilt": true,
+      "matchendbylasthqstanding": true,
+      "roaming_piglins": true,
+      "roaming_animals": false,
+      "roaming_mounts": true,
+      "world_mobs": false,
+      "piglins_guard_resources": false,
+      "autoplacehqsontimer": true,
+      "teamcount": 2,
+      "fateful_tree_density": 1.35,
+      "fateful_stone_density": 1.47,
+      "grassland_stone_density": 2.25,
+      "drylands_stone_density": 2.5,
+      "frostlands_stone_density": 3.0,
+      "mountain_stone_density": 1.5,
+      "brokenlands_stone_density": 2.0,
+      "custom_iron_density": 10,
+      "custom_redstone_density": 25,
+      "custom_coal_density": 25,
+      "custom_diamond_density": 25,
+      "custom_chest_density": 0.35,
+      "custom_isnot_pvp": 0
+    },
+    "badger:template": {
+      "parent": "custom_game_rules",
+      "game_mode": "pvp"
+    }
+  }
+}

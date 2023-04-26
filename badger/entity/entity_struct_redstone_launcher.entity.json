@@ -1,0 +1,73 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "cooldown_stop": {
+          "audio": "BAE_redstone_launcher_cannon_ready"
+        },
+        "kaboomery_rsl_start": {
+          "audio": "BAE_redstone_launcher_projectile_tnt"
+        },
+        "on_proj_shoot": {
+          "script": "proj_shoot"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_redstone_launcher"
+      }
+    },
+    "description": {
+      "animations": {
+        "cooldown_a": "animation.entity_struct_redstone_launcher.cooldown_a",
+        "death_a": "animation.entity_struct_redstone_launcher.death_a",
+        "default": "controller.animation.entity_struct_redstone_launcher.default",
+        "empty_a": "animation.entity_struct_redstone_launcher.empty_a",
+        "fire_a": "animation.entity_struct_redstone_launcher.fire_a",
+        "idle_a": "animation.entity_struct_redstone_launcher.idle_a",
+        "reload_a": "animation.entity_struct_redstone_launcher.reload_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "proj_shoot": "variable.shoot = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_redstone_launcher"
+      },
+      "identifier": "badger:entity_struct_redstone_launcher",
+      "materials": {
+        "mat_proj_stone_block": "mat_proj_stone_block",
+        "mat_proj_tnt_block": "mat_proj_tnt_block",
+        "mat_shared_block_entity_rsl": "mat_shared_block_entity_rsl"
+      },
+      "particle_effects": {
+        "fx_explode": "badger:fx_destruction_redstone_exp",
+        "fx_smoke": "badger:fx_redstone_launcher_smoke",
+        "fx_sparks": "badger:fx_redstone_launcher_sparks"
+      },
+      "render_controllers": ["controller.render.entity_struct_redstone_launcher"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.proj_stone_set_vis = 1;","variable.mat_charge = 1;"]
+      },
+      "sound_effects": {
+        "ammo_out": "BAE_redstone_launcher_ammo_out",
+        "cannon_fire": "BAE_redstone_launcher_cannon_fire",
+        "cannon_reload": "BAE_redstone_launcher_cannon_reload",
+        "cooldown": "BAE_redstone_launcher_cooldown",
+        "cooldown_loop": "BAE_redstone_launcher_cooldown_loop",
+        "idle_loop": "BAE_redstone_launcher_idle"
+      }
+    }
+  }
+}

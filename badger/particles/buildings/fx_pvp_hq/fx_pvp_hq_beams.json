@@ -1,0 +1,66 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_pvp_hq_beams",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_e_beam_inner" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 1000.0
+         }
+      },
+      "events" : {
+         "team_one" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_pv_hq_beams_red",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "query.team_color_index == 1"
+         },
+         "team_two" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_pv_hq_beams_blue",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "query.team_color_index == 2"
+         },
+         "team_zero" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_pv_hq_beams_blue",
+               "type" : "emitter_bound"
+            },
+            "trigger_condition" : "query.team_color_index == 0"
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.5, 15.0 ],
+            "facing_camera_mode" : "rotate_y",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               },
+               "time_integration" : {
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            },
+            "pivot" : [ 0.0, -1.0 ]
+         },
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "team_zero", "team_one", "team_two" ]
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_lifetime_expression" : {}
+      }
+   }
+}

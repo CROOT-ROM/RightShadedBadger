@@ -1,0 +1,73 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_final_boss_nis.default": {
+      "initial_state": "wof_behavior_loop",
+      "states": {
+        "wof_behavior_loop": {
+          "animations":  [
+            {
+              "intro_a_loop": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        }
+      }
+    },
+    "controller.animation.piglin_final_boss.fx_controller": {
+      "initial_state": "idle_fx",
+      "states": {
+        "idle_fx": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_shoulder_lightning",
+              "enabled": true,
+              "locator": "loc_fx_shoulder_r"
+            },
+            {
+              "effect": "fx_shoulder_lightning",
+              "enabled": true,
+              "locator": "loc_fx_shoulder_l"
+            },
+            {
+              "effect": "fx_weapon_lightning",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning01",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning02",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_cntr",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_core",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_lightning03",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            },
+            {
+              "effect": "fx_weapon_parts_idle",
+              "enabled": true,
+              "locator": "loc_fx_weapon"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_poison_grassrush_01": {
+            "decoration": "deco_poison_grassrush_01"
+            }
+    }
+}

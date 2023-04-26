@@ -1,0 +1,194 @@
+{
+  "menu_id": "quick_chat",
+  "selection_type": "category",
+  "gamepad_input_override": "look",
+
+  "radial_mappings": [
+    // to make any of the categories below team-only, make sure they're added to the quick_chat_team_only_categories list in chat.json`
+    {
+      "category_id": "role",
+      "slices": [
+        {
+          "button_id": "button.role_resourcing",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.role_claimingMobAlliances",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.role_claimingVillageAlliances",
+          "gameplay_index": 2
+        },
+        {
+          "button_id": "button.role_baseBuilding",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.role_defending",
+          "gameplay_index": 4
+        },
+        {
+          "button_id": "button.role_attacking",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.role_flanking",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.role_gatheringVillageResources",
+          "gameplay_index": 7
+        }
+      ]
+    },
+    {
+      "category_id": "resources",
+      "slices": [
+        {
+          "button_id": "button.resourcing_needWood",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.resourcing_needStone",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.resourcing_needIron",
+          "gameplay_index": 2
+        },
+        {
+          "button_id": "button.resourcing_needCoal",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.resourcing_needRedstone",
+          "gameplay_index": 4
+        },
+        {
+          "button_id": "button.resourcing_needGold",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.resourcing_needDiamonds",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.resourcing_needPrismarine",
+          "gameplay_index": 7
+        }
+      ]
+    },
+    {
+      "category_id": "combat",
+      "slices": [
+        {
+          "button_id": "button.combat_attackHQ",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.combat_attackWallsAndTowers",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.combat_attackMobsAndSpawners",
+          "gameplay_index": 2
+        },
+        {
+          "button_id": "button.combat_attackEnemies",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.combat_defendHQ",
+          "gameplay_index": 4
+        },
+        {
+          "button_id": "button.combat_defendWallsAndTowers",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.combat_defendMobsAndSpawners",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.combat_defendTeammates",
+          "gameplay_index": 7
+        }
+      ]
+    },
+    {
+      "category_id": "strategy",
+      "slices": [
+        {
+          "button_id": "button.strategy_needDefenses",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.strategy_needVillageUpgrades",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.strategy_needMobAlliances",
+          "gameplay_index": 2
+        },
+        {
+          "button_id": "button.strategy_needMoreSpawners",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.strategy_needMoreWellOfFateUpgrades",
+          "gameplay_index": 4
+        },
+        {
+          "button_id": "button.strategy_needTowers",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.strategy_needBuffs",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.strategy_needBackup",
+          "gameplay_index": 7
+        }
+      ]
+    },
+    {
+      "category_id": "global",
+      "slices": [
+        {
+          "button_id": "button.global_awesome",
+          "gameplay_index": 0
+        },
+        {
+          "button_id": "button.global_goodGame",
+          "gameplay_index": 1
+        },
+        {
+          "button_id": "button.global_wellPlayed",
+          "gameplay_index": 2
+        },
+        {
+          "button_id": "button.global_anyTime",
+          "gameplay_index": 3
+        },
+        {
+          "button_id": "button.global_ok",
+          "gameplay_index": 4
+        },
+        {
+          "button_id": "button.global_thanks",
+          "gameplay_index": 5
+        },
+        {
+          "button_id": "button.global_hello",
+          "gameplay_index": 6
+        },
+        {
+          "button_id": "button.global_bye",
+          "gameplay_index": 7
+        }
+      ]
+    }
+  ]
+}

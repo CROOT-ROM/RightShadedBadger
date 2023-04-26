@@ -1,0 +1,51 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_poi_knockback_tower",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_copper_block": "mat_proj_copper_block"
+      },
+      "geometry": {
+        "default": "geometry.proj_copper_block"
+      },
+      "render_controllers": [
+        "ontroller.render.proj_copper_block"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_proj_poi_tower_01_launch",
+          "particles": [
+            {
+              "effect": "badger:fx_proj_poi_knockback_tower_projectile_start",
+              "enabled": true,
+              "bind_to_actor": false
+            },
+            {
+              "effect": "badger:fx_proj_poi_knockback_tower_projectile",
+              "locator": "loc_fx_main",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "on_entity_hit": {
+          "audio": "BAE_poi_tower_01_projectile_impact_entity",
+          "particles": "badger:fx_proj_poi_knockback_tower_impact"
+        },
+        "on_world_hit": {
+          "audio": "BAE_poi_tower_01_projectile_impact_world",
+          "particles": "badger:fx_proj_poi_knockback_tower_impact"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_copper_block"
+      }
+    }
+  }
+}

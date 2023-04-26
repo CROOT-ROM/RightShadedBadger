@@ -1,0 +1,207 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_piglin_hammer_boss"
+      },
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 3
+      },
+      "badger:invasion_icon": {
+        "icon_color": [0.737,0.22,0.769,1]
+      },
+      "badger:music_2d_emitter": {
+        "max_distance": 50,
+        "music_states":  [
+          {
+            "audio_parameters":  [
+              {
+                "music_va_boss": 1,
+                "music_va_state": 3
+              }
+            ],
+            "state_name": "music_boss_attack0"
+          },
+          {
+            "audio_parameters":  [
+              {
+                "music_va_boss": 2,
+                "music_va_state": 3
+              }
+            ],
+            "state_name": "music_boss_attack1"
+          },
+          {
+            "audio_parameters":  [
+              {
+                "music_va_boss": 3,
+                "music_va_state": 3
+              }
+            ],
+            "state_name": "music_boss_attack2"
+          }
+        ],
+        "on_enter_bae": "",
+        "priority": -1
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.105,0.682,0.509],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0, 20.0, 1.0)",
+            "locator": "loc_fx_light",
+            "offset": [0,0,0],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_piglin_hammerboss_dx_damage"
+        },
+        "normal_hit": {
+          "audio": "BAE_piglin_hammerboss_dx_damage"
+        },
+        "on_initialized": {
+          "audio": "BAE_combat_proximity_boss"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_piglin_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_piglin_generic_swim_liquid_large_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_piglin_hammerboss_dx_damage"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_hammer_boss",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects_boss"],
+      "badger:threat_source": {
+        "base_value": 50,
+        "spawn_value": 50,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "charge_a": "animation.piglin_hammer_boss.charge_a",
+        "charge_a_lookingleft": "animation.piglin_hammer_boss_intro_nis.charge_a_lookingleft",
+        "charge_windup": "animation.piglin_hammer_boss.charge_windup",
+        "default": "controller.animation.piglin_hammer_boss.default",
+        "fx_controller": "controller.animation.piglin_hammer_boss.fx_controller",
+        "idle_a": "animation.piglin_hammer_boss.idle_a",
+        "idle_b": "animation.piglin_hammer_boss.idle_b",
+        "idle_c": "animation.piglin_hammer_boss.idle_c",
+        "idle_d": "animation.piglin_hammer_boss.idle_d",
+        "intro_nis": "animation.piglin_hammer_boss_intro_nis.intro_nis",
+        "melee_smash_a": "animation.piglin_hammer_boss.melee_smash_a",
+        "melee_swipe_a": "animation.piglin_hammer_boss.melee_swipe_a",
+        "run_a": "animation.piglin_hammer_boss.run_a",
+        "stop_a": "animation.piglin_hammer_boss.stop_a",
+        "stop_b": "animation.piglin_hammer_boss.stop_b",
+        "stun_a": "animation.piglin_hammer_boss.stun_a",
+        "tertiary_attack": "animation.piglin_hammer_boss.tertiary_attack",
+        "tired_a": "animation.piglin_hammer_boss.tired_a",
+        "tired_a_exit": "animation.piglin_hammer_boss.tired_a_exit",
+        "walk_a": "animation.piglin_hammer_boss.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Surprised","Very Surprised","Ouch","Normal"],
+      "geometry": {
+        "default": "geometry.piglin_hammer_boss"
+      },
+      "identifier": "badger:piglin_hammer_boss",
+      "materials": {
+        "mat_fx_spore_healed_512": "mat_fx_spore_healed_512",
+        "mat_piglin_hammer_boss": "mat_piglin_hammer_boss",
+        "mat_piglin_hammer_boss_face": "mat_piglin_hammer_boss_face"
+      },
+      "particle_effects": {
+        "fx_charge": "badger:fx_piglin_hammer_boss_charge",
+        "fx_cine_sparks": "badger:fx_piglin_hammer_boss_cine_sparks",
+        "fx_embers": "badger:fx_piglin_hammer_boss_embers",
+        "fx_hammerboss_intro_dust": "badger:fx_cine_hammerboss_intro_dust",
+        "fx_melee_swipe": "badger:fx_piglin_hammer_boss_melee_swipe",
+        "fx_melee_swipe01": "badger:fx_piglin_hammer_boss_melee_swipe01",
+        "fx_melee_swipe02": "badger:fx_piglin_hammer_boss_melee_swipe02",
+        "fx_tertiary_hit": "badger:fx_piglin_hammer_boss_hit",
+        "fx_walk": "badger:fx_piglin_hammer_boss_step"
+      },
+      "render_controllers": ["controller.render.piglin_hammer_boss"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fx_controller": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.all_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        "boss_growl": "BAE_piglin_hammer_boss_growl",
+        "charge": "BAE_piglin_hammer_boss_charge",
+        "combat_proximity_boss_stop": "BAE_combat_proximity_boss_stop",
+        "dx_attack_charge": "BAE_piglin_hammerboss_dx_attack_charge",
+        "dx_attack_charge_windup": "BAE_piglin_hammerboss_dx_attack_charge_windup",
+        "dx_attack_directional_01": "BAE_piglin_hammerboss_dx_attack_directional_01",
+        "dx_attack_directional_02": "BAE_piglin_hammerboss_dx_attack_directional_02",
+        "dx_attack_directional_03": "BAE_piglin_hammerboss_dx_attack_directional_03",
+        "dx_attack_directional_04": "BAE_piglin_hammerboss_dx_attack_directional_04",
+        "dx_attack_directional_windup": "BAE_piglin_hammerboss_dx_attack_directional_windup",
+        "dx_attack_smash": "BAE_piglin_hammerboss_dx_attack_smash",
+        "dx_attack_smash_roar": "BAE_piglin_hammerboss_dx_attack_smash_roar",
+        "dx_attack_smash_windup": "BAE_piglin_hammerboss_dx_attack_smash_windup",
+        "dx_attack_swipe": "BAE_piglin_hammerboss_dx_attack_swipe",
+        "dx_attack_swipe_windup": "BAE_piglin_hammerboss_dx_attack_swipe_windup",
+        "dx_breathe_in": "BAE_piglin_hammerboss_dx_breathe_in",
+        "dx_breathe_out": "BAE_piglin_hammerboss_dx_breathe_out",
+        "dx_idle": "BAE_piglin_hammerboss_dx_idle",
+        "dx_idle_b_roar": "BAE_piglin_hammerboss_dx_idle_b_roar",
+        "dx_idle_c": "BAE_piglin_hammerboss_dx_idle_c",
+        "dx_idle_d": "BAE_piglin_hammerboss_dx_idle_d",
+        "dx_snorts_run": "BAE_piglin_hammerboss_dx_snorts_run",
+        "dx_stun": "BAE_piglin_hammerboss_dx_stun",
+        "dx_tired_a": "BAE_piglin_hammerboss_dx_tired_a",
+        "dx_tired_a_exit": "BAE_piglin_hammerboss_dx_tired_a_exit",
+        "footstep_canter": "BAE_piglin_hammer_boss_footstep_canter",
+        "footstep_gallop": "BAE_piglin_hammer_boss_footstep_gallop",
+        "footstep_land": "BAE_piglin_hammer_boss_footstep_land",
+        "footstep_walk": "BAE_piglin_hammer_boss_footstep_walk",
+        "idle_bc_left": "BAE_piglin_hammer_boss_idle_bc_left",
+        "idle_bc_right": "BAE_piglin_hammer_boss_idle_bc_right",
+        "idle_d_hit_a": "BAE_piglin_hammer_boss_idle_d_hit_a",
+        "idle_d_hit_b": "BAE_piglin_hammer_boss_idle_d_hit_b",
+        "idle_d_hit_c": "BAE_piglin_hammer_boss_idle_d_hit_c",
+        "idle_d_in": "BAE_piglin_hammer_boss_idle_d_in",
+        "idle_d_left": "BAE_piglin_hammer_boss_idle_d_left",
+        "idle_d_out": "BAE_piglin_hammer_boss_idle_d_out",
+        "idle_d_wpn_a": "BAE_piglin_hammer_boss_idle_d_wpn_a",
+        "idle_d_wpn_b": "BAE_piglin_hammer_boss_idle_d_wpn_b",
+        "kick": "BAE_piglin_hammer_boss_kick",
+        "melee_smash": "BAE_piglin_hammer_boss_melee_smash",
+        "sfx_knockback_piglin_attack": "BAE_sfx_knockback_piglin_attack",
+        "side_smash": "BAE_piglin_hammer_boss_side_smash",
+        "stop_a_b": "BAE_piglin_hammer_boss_stop_a_b",
+        "swing_double": "BAE_piglin_hammer_boss_swing_double",
+        "swing_pre": "BAE_piglin_hammer_boss_swing_pre",
+        "swipe": "BAE_piglin_hammer_boss_swipe"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.15.0",
+	"badger:client_block": {
+		"badger:block_fx_piglin_regen": {
+			"textures": "blank",
+			"particle_spawner": {
+				"effects": [
+					{
+						"effect": "badger:fx_block_piglin_regen_structure_beams",
+						"range": "middle",
+						"probability": 1.0,
+						"offset": [
+							0.0,
+							0.0,
+							0.0
+						]
+					}
+				]
+			}
+		}
+	}
+}

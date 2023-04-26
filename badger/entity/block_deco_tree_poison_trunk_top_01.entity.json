@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:block_deco_tree_poison_trunk_top_01",
+            "materials": {
+                "default": "entity_model",
+                "mat_shared_poison_dot": "mat_shared_poison_dot"
+            },
+            "geometry": {
+                "default": "geometry.block_deco_tree_poison_trunk_top_01"
+            },
+            "render_controllers": [
+                "controller.render.block_deco_tree_poison_trunk_top_01"
+            ],
+            "enable_attachables": false
+        },
+        "components": {
+            "badger:rendering": {
+                "definition": "badger:block_deco_tree_poison_trunk_top_01",
+                "static": true
+            }
+        }
+    }
+}

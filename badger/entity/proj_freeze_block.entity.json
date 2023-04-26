@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:proj_freeze_block"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.proj_freeze_block"
+      },
+      "identifier": "badger:proj_freeze_block",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_freeze_block": "mat_proj_freeze_block"
+      },
+      "render_controllers": ["controller.render.proj_freeze_block"],
+      "scripts": {
+        "initialize": ["variable.block_visibility_set_vis = 1;"]
+      }
+    }
+  }
+}

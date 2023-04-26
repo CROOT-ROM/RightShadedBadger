@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:map_icon_offset": {
+        "x": -9,
+        "y": -8,
+        "z": -2
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_attack_banner_offset"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_attack_banner_offset"
+      },
+      "identifier": "badger:wmap_attack_banner_offset",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_attack_banner_offset": "mat_wmap_attack_banner_offset"
+      },
+      "render_controllers": ["controller.render.wmap_attack_banner_offset"]
+    }
+  }
+}

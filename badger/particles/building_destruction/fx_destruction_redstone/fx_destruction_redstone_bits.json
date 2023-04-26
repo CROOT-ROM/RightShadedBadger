@@ -1,0 +1,86 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_destruction_redstone_bits",
+      "basic_render_parameters": {
+        "materials_list": ["mat_badger_fx_cutout_cube"]
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": 25
+      },
+      "minecraft:emitter_lifetime_once": {
+        "active_time": 2.0
+      },
+      "minecraft:emitter_shape_box": {
+        "offset": [
+          0,
+          6,
+          0
+        ],
+        "half_dimensions": [
+          3.5,
+          5.5,
+          3.5
+        ],
+        "surface_only": false,
+        "direction": [
+          "Math.random(-0.25, 0.25)",
+          1.0,
+          "Math.random(-0.25, 0.25)"
+        ],
+        "direction_mode": "custom"
+      },
+      "minecraft:particle_initial_speed": "Math.random(3, 12)",
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(-180, 180)",
+        "rotation_rate": [
+          -25,
+          25
+        ]
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(3,4)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [
+          0,
+          "Math.random(-14,-20)",
+          0
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          0.2,
+          0.2
+        ],
+        "facing_camera_mode": "lookat_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 10,
+            "rows_count": 9,
+            "frame_iteration": "page",
+            "frame_start": "Math.random(0,48)"
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "gradient": {
+          "0.05": [
+            0.2,
+            0.2,
+            0.2,
+            1.0
+          ]
+        },
+        "interpolant": "query.particle_normalized_age"
+      }
+    }
+  }
+}

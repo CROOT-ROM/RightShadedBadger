@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_brick_tree_cedar_trunk_01": {
+            "textures": {
+                "up": "textures/blocks/tex_block_frostsnow_top",
+                "down": "textures/blocks/tex_block_dead_tree_cedar_trunk_01",
+                "side": "textures/blocks/tex_block_brick_dead_tree_cedar_side_01"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "animation_controllers": {
+    "controller.animation.wmap_question_mark.default": {
+      "states": {
+        "default": {
+          "animations":  [
+            {
+              "idle": "1"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

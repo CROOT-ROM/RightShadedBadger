@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_corpse_flower": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_entity_struct_corpse_flower": "MetaMaterial.mat_entity_struct_corpse_flower"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_megafern_01": {
+            "decoration": "deco_megafern_01",
+            "particle_spawner": {
+				"effects" : [
+					{
+		                "effect": "badger:fx_block_birds_parrots",
+						"range": "middle",
+						"probability": 0.15
+					}
+				]			
+            }
+        }
+    }
+}

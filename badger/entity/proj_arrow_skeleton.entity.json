@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_arrow_skeleton",
+      "materials": {
+        "mat_proj_arrow": "mat_proj_arrow"
+      },
+      "geometry": {
+        "default": "geometry.proj_arrow"
+      },
+      "render_controllers": [
+        "controller.render.proj_arrow"
+      ],
+      "enable_attachables": false
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_entity_hit": {
+          "particles": [
+            {
+              "effect": "badger:fx_shared_hit_normal",
+              "locator": "loc_fx_main",
+              "enabled": true
+            }
+          ]
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_skeleton_arrow_projectile"
+        },
+        "on_death": {
+          "audio": "BAE_mob_skeleton_arrow_projectile_stop"
+        },
+        "on_world_hit": {
+          "audio": "BAE_mob_skeleton_proj_arrow_impact_world",
+          "particles": "badger:fx_shared_arrow_hit"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_arrow_skeleton"
+      },
+      "badger:projectile_trail_request": {
+        "name": "badger:trail_default"
+      }
+    }
+  }
+}

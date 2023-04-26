@@ -1,0 +1,962 @@
+{
+  /*
+        ==== REQUIRED ====
+        "id",
+        "uiType", switch, slider, button, dropdown, textfield, radiogroup, inputremapping, toggle
+        "backendType" option, gamerule, custom
+        ==== OPTIONAL ====
+        "options" {"label", "value"} "isRemappingCategory"
+    */
+  /*
+        "settings": {
+            "category_name": {
+                "subcategory_name" : [ <---- If a category doesn't have subcategories, leave this as a blank string
+                    {
+                        "id": "xyz",
+                        "uiType": "switch",
+                        etc...
+                    }
+                ]
+            }
+        }
+    */
+  "settings": {
+    "settings_screen_categories": [
+      "accounts",
+      "accessibility",
+      "audio",
+      "video",
+      "controller",
+      "keyboard_mouse",
+      "debug"
+    ],
+    "settings": {
+      "accounts": {
+        "01_onlineSettings": [
+          {
+            "id": "msa_account_status",
+            "uiType": "msadisplay",
+            "backendType": "custom",
+            "enable_requirements": [],
+            "options": []
+          },
+          {
+            "id": "signout",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [
+              "is_signed_in",
+              "platform_not_gamecore"
+            ],
+            "options": []
+          },
+          {
+            "id": "signin",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [
+              "is_signed_out",
+              "platform_not_gamecore"
+            ],
+            "options": []
+          },
+          {
+            "id": "msa_account_unlink",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [
+              "is_signed_in",
+              "platform_not_gamecore",
+              "platform_not_steam"
+            ],
+            "options": []
+          },
+          {
+            "id": "crossplatform_toggle",
+            "uiType": "switch",
+            "backendType": "option",
+            "game_scope": "pre_game",
+            "enable_requirements": [
+              "platform_not_gamecore",
+              "platform_not_steam"
+            ],
+            "options": []
+          },
+          {
+            "id": "privacy",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "game_scope": "in_game",
+            "enable_requirements": [],
+            "options": []
+          },
+          {
+            "id": "matchmaking_region",
+            "uiType": "dropdown",
+            "backendType": "option",
+            "game_scope": "pre_game",
+            "enable_requirements": [],
+            "options": [
+              {
+                "label": "setting.option.matchmakingRegion.any",
+                "value": 0 // MatchmakingRegion::Any
+              },
+              {
+                "label": "setting.option.matchmakingRegion.north_america",
+                "value": 10 // MatchmakingRegion::NorthAmerica
+              },
+              {
+                "label": "setting.option.matchmakingRegion.south_america",
+                "value": 20 // MatchmakingRegion::SouthAmerica
+              },
+              {
+                "label": "setting.option.matchmakingRegion.europe",
+                "value": 30 // MatchmakingRegion::Europe
+              },
+              {
+                "label": "setting.option.matchmakingRegion.asia",
+                "value": 40 // MatchmakingRegion::Asia
+              },
+              {
+                "label": "setting.option.matchmakingRegion.oceania",
+                "value": 50 // MatchmakingRegion::Oceania
+              }
+            ]
+          }
+        ],
+        "02_legal": [
+          {
+            "id": "credits",
+            "uiType": "rowbutton",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "accessibility": {
+        "accessibilityVideo": [
+          {
+            "id": "cinematic_skip_tap",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "color_blindness_mode",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "accessibilityControls": [
+          /*{
+            "id": "ctrl_autojump",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },*/
+          {
+            "id": "ctrl_swap_gamepad_ab_buttons",
+            "uiType": "switch",
+            "backendType": "option",
+            "enable_requirements": [
+              "platform_not_ps"
+            ],
+            "options": [],
+            "titleNarrationOverride": "ctrl_swap_gamepad_ab_buttons.narration"
+          },
+          {
+            "id": "ctrl_swap_gamepad_xy_buttons",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": [],
+            "titleNarrationOverride": "ctrl_swap_gamepad_xy_buttons.narration"
+          },
+          {
+            "id": "wrap_toolbar_navigation",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          }
+        ],
+        "accessibilityFont": [
+		  {
+            "id": "combined_text_to_speech",
+            "uiType": "switch",
+            "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "ui_font_scale",
+            "uiType": "toggles",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "setting.ui_font_scale.option.normal",
+                "value": 0
+              },
+              {
+                "label": "setting.ui_font_scale.option.large",
+                "value": 1
+              },
+              {
+                "label": "setting.ui_font_scale.option.extraLarge",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      "keyboard_mouse": {
+        "01_keyboardFeatures": [
+          { // sensitivity
+            "id": "ctrl_sensitivity2",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          { // building placement sensitivity
+            "id": "ctrl_sensitivity3",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          { // aim sensitivity
+            "id": "ctrl_sensitivity4",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          { // invert y-axis
+            "id": "ctrl_invertmouse",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          {
+            // Input type for entering battle view - hold or toggled 
+            "id": "ctrl_toggle_battle_view",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          {
+            // Input type for entering build view - hold or toggled 
+            "id": "ctrl_toggle_build_view",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          },
+          {
+            // Input type for entering sprint - hold or toggled 
+            "id": "ctrl_toggle_sprint",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "mouse",
+            "options": []
+          }
+        ],
+        "02_hudKeyboard": [
+          {
+            "id": "hud_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "03_generalInteractionKeyboard": [
+          {
+            "id": "generalInteraction_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "04_spawnerInteractionKeyboard": [
+          {
+            "id": "spawnerInteraction_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "05_redStoneLauncherInteractionKeyboard": [
+          {
+            "id": "redStoneLauncherInteraction_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "06_buildKeyboard": [
+          {
+            "id": "build_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "07_battleKeyboard": [
+          {
+            "id": "battle_keyboard",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "controller": {
+        "01_controllerFeatures": [
+          {
+            // sensitivity
+            "id": "ctrl_sensitivity2",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // building placement sensitivity
+            "id": "ctrl_sensitivity3",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // aim sensitivity
+            "id": "ctrl_sensitivity4",
+            "uiType": "slider",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // invert y-axis
+            "id": "ctrl_invertmouse",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // Input type for entering battle view - hold or toggled 
+            "id": "ctrl_toggle_battle_view",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // Input type for entering build view - hold or toggled 
+            "id": "ctrl_toggle_build_view",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          {
+            // Input type for entering sprint - hold or toggled 
+            "id": "ctrl_toggle_sprint",
+            "uiType": "switch",
+            "backendType": "option",
+            "inputMode": "gamepad",
+            "options": []
+          },
+          /*
+			{
+            "id": "gfx_tooltips",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "gfx_gamepad_cursor",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+		*/
+          {
+            "id": "gfx_gamepad_cursor_sensitivity",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "auto_cam_turn",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          }
+        ],
+        "02_hudController": [
+          {
+            "id": "hud_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "03_generalInteractionController": [
+          {
+            "id": "generalInteraction_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "04_spawnerInteractionController": [
+          {
+            "id": "spawnerInteraction_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "05_redStoneLauncherInteractionController": [
+          {
+            "id": "redStoneLauncherInteraction_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "06_buildController": [
+          {
+            "id": "build_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ],
+        "07_battleController": [
+          {
+            "id": "battle_controller",
+            "uiType": "inputremapping",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "profile": {
+        /*
+        "": [
+          {
+            "id": "mp_username",
+            "type": 4,
+            "value_type": 0
+          }
+        ]
+          */
+      },
+      "video": {
+        "": [
+          {
+            "id": "gfx_fullscreen",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": [],
+            "enable_requirements": [
+              "platform_pc"
+            ]
+          },
+          {
+            "id": "gfx_vsync",
+            "uiType": "switch",
+            "backendType": "option",
+            "enable_requirements": [
+              "platform_pc"
+            ],
+            "options": []
+          },
+          {
+            "id": "gfx_brightness",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "gfx_contrast",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "gfx_fov",
+            "uiType": "slider",
+            "backendType": "option",
+            "enable_requirements": [
+              "platform_pc"
+            ],
+            "options": []
+          },
+          {
+            "id": "gfx_resolution",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "enable_requirements": [
+              "platform_pc"
+            ],
+            "options": []
+          },
+          {
+            "id": "gfx_perf_profile",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "enable_requirements": [
+              "platform_pc"
+            ],
+            "options": []
+          }
+        ]
+      },
+      "audio": {
+        "audioLanguage": [
+          {
+            "id": "game_language",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "voiceover_language",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "options": []
+          },
+          {
+            "id": "subtitles_setting",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          }
+        ],
+        "audioVolumes": [
+          {
+            "id": "audio_sound",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "audio_dialog",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "audio_music",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "audio_cinematic",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "audio_sfx",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "audio_ambience",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          }
+        ]
+      },
+      "storage": {},
+      // NOTE: debug settings are hidden for publish builds, any setting added in the debug section should also be
+      // added to the DEV_ONLY_SETTINGS list in SettingsService
+      "debug": {
+        "debug_devOptions": [
+          {
+            "id": "dev_showbuildinfo",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "dev_showDevConsoleButton",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "gfx_auto_skip_splash_fmvs",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "gfx_debug_device",
+            "uiType": "dropdown",
+            "valueType": "int",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "setting.option.debug_device.default",
+                "value": 0 // dragon::platform::DebugDevice::DefaultDebugDevice
+              },
+              {
+                "label": "setting.option.debug_device.enable",
+                "value": 1 // dragon::platform::DebugDevice::EnableDebugDevice
+              },
+              {
+                "label": "setting.option.debug_device.disable",
+                "value": 2 // dragon::platform::DebugDevice::DisableDebugDevice
+              }
+            ]
+          },
+          {
+            "id": "enable_all_tutorial_prompts",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "enable_onboarding",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "standalone_tutorial_complete",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "standalone_tutorial_complete_campaign",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "enable_all_tutorial_prompts_pvp",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "enable_onboarding_pvp",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "dev_allow_cinematics_skip",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "dev_auto_skip_cinematics",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "dev_showchunkmap",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "use_playfab_dev_env",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "content_log_file",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "content_log_gui",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "enable_live_edit_auto_connect",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "director_facing_mode",
+            "uiType": "dropdown",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "Player Direct",
+                "value": 0
+              },
+              {
+                "label": "Camera Direct",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "game_thirdperson",
+            "uiType": "dropdown",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "Gameplay",
+                "value": 0
+              },
+              {
+                "label": "Creative",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "dev_transport_layer_type",
+            "uiType": "dropdown",
+            "backendType": "option",
+            "game_scope": "pre_game",
+            "options": [
+              {
+                "label": "RakNet",
+                "value": 0
+              },
+              {
+                "label": "Websockets",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "id": "dev_enable_debug_hud_overlay",
+            "uiType": "dropdown",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "Off",
+                "value": 0
+              },
+              {
+                "label": "Basic",
+                "value": 1
+              },
+              {
+                "label": "ImGui",
+                "value": 2
+              },
+              {
+                "label": "Worker threads",
+                "value": 3
+              },
+              {
+                "label": "Render chunks",
+                "value": 4
+              },
+              {
+                "label": "Profiler",
+                "value": 5
+              },
+              {
+                "label": "Debug Blocks",
+                "value": 6
+              },
+              {
+                "label": "Texture Memory",
+                "value": 7
+              },
+              {
+                "label": "Image Memory",
+                "value": 8
+              },
+              {
+                "label": "Per Image Memory",
+                "value": 9
+              },
+              {
+                "label": "Buffer Memory",
+                "value": 10
+              },
+              {
+                "label": "Camera",
+                "value": 11
+              },
+              {
+                "label": "Audio",
+                "value": 12
+              },
+              {
+                "label": "Client Network",
+                "value": 13
+              },
+              {
+                "label": "Server Network",
+                "value": 14
+              },
+              {
+                "label": "Lock Contention",
+                "value": 15
+              },
+              {
+                "label": "HBUI",
+                "value": 16
+              },
+              {
+                "label": "Input Stack",
+                "value": 17
+              }
+            ]
+          },
+          {
+            "id": "dev_clear_all_cache",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [],
+            "options": []
+          },
+          {
+            "id": "dev_reset_coins",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [],
+            "options": []
+          },
+          {
+            "id": "dev_add_500_coins",
+            "uiType": "button",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "enable_requirements": [],
+            "options": []
+          }
+        ],
+        "lobby_dev_options": [
+          {
+            "id": "disable_matchmaking_min_player_check",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "matchmaking_min_player_count",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "lobby_start_match_timer",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          }
+        ]
+      },
+      "campaign_lobby": {
+        "": [
+          {
+            "id": "privacy",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "difficulty",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "pvp_lobby": {
+        "": [
+          {
+            "id": "privacy",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "chat_settings": {
+        "": [
+          {
+            "id": "combined_text_to_speech",
+            "uiType": "switch",
+            "backendType": "custom",
+            "options": []
+          }
+        ]
+      },
+      "first_sign_in_settings": {
+        "": [
+          {
+            "id": "combined_text_to_speech",
+            "uiType": "switch",
+            "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "game_language",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "voiceover_language",
+            "uiType": "dropdown",
+            "backendType": "custom",
+            "game_scope": "pre_game",
+            "options": []
+          },
+          {
+            "id": "subtitles_setting",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
+          },
+          {
+            "id": "ui_font_scale",
+            "uiType": "toggles",
+            "backendType": "option",
+            "options": [
+              {
+                "label": "setting.ui_font_scale.option.normal",
+                "value": 0
+              },
+              {
+                "label": "setting.ui_font_scale.option.large",
+                "value": 1
+              },
+              {
+                "label": "setting.ui_font_scale.option.extraLarge",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

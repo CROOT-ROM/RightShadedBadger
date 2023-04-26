@@ -1,0 +1,305 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_piglin_magma_boss"
+      },
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:invasion_icon": {
+        "icon_color": [
+          0.737,
+          0.22,
+          0.769,
+          1
+        ]
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.00001
+      },
+      "badger:music_2d_emitter": {
+        "max_distance": 50,
+        "music_states": [
+          {
+            "audio_parameters": [
+              {
+                "music_boss_engaged": 5
+              }
+            ],
+            "state_name": "defend_boss_phase0"
+          },
+          {
+            "audio_parameters": [
+              {
+                "music_boss_engaged": 5
+              }
+            ],
+            "state_name": "defend_boss_phase1"
+          },
+          {
+            "audio_parameters": [
+              {
+                "music_boss_engaged": 5
+              }
+            ],
+            "state_name": "defend_boss_phase2"
+          }
+        ],
+        "on_enter_bae": "",
+        "priority": -1
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "color": [
+              1,
+              1,
+              0.5
+            ],
+            "enabled": "variable.hand_light",
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(4, 60.0, 50.0, 1.0) * variable.matalpha + variable.hand_light_flare ",
+            "locator": "loc_fx_claw_r",
+            "offset": [
+              1,
+              0,
+              0
+            ],
+            "radius": 10
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "cine_mortar_attack_start": {
+          "animation": {
+            "animation": "mortar_attack_start"
+          }
+        },
+        "cine_reload_winddown": {
+          "animation": {
+            "animation": "reload_winddown"
+          }
+        },
+        "cine_reload_windup": {
+          "animation": {
+            "animation": "reload_windup"
+          }
+        },
+        "cine_run_a": {
+          "animation": {
+            "animation": "run_a"
+          }
+        },
+        "cine_spray_attack": {
+          "animation": {
+            "animation": "spray_attack"
+          }
+        },
+        "intense_hit": {
+          "audio": "BAE_piglin_magmaboss_dx_hurt"
+        },
+        "normal_hit": {
+          "audio": "BAE_piglin_magmaboss_dx_hurt"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_magmaboss_furnace_loop"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_large_stop"
+        },
+        "sfx_geyser_attack_stop": {
+          "audio": "BAE_piglin_magmaboss_reload_suction_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_piglin_magmaboss_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_magma_boss"
+      },
+      "badger:rig_operations": [
+        "rigops_actions.piglin_magma_boss_claw_in",
+        "rigops_actions.piglin_magma_boss_intro_claw",
+        "rigops_actions.piglin_magma_boss_rain_claw_in",
+        "rigops_actions.piglin_magma_boss_rain_claw_out",
+        "rigops_actions.piglin_magma_boss_spray_claw_in"
+      ],
+      "badger:template": [
+        "badger:template_piglin",
+        "badger:template_status_effects_boss"
+      ],
+      "badger:threat_source": {
+        "base_value": 50,
+        "spawn_value": 50,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "cine_death": "animation.piglin_magma_boss_cine.cine_death",
+        "default": "controller.animation.piglin_magma_boss.default",
+        "direct_shot_end": "animation.piglin_magma_boss_attacks.direct_shot_end",
+        "direct_shot_loop": "animation.piglin_magma_boss_attacks.direct_shot_loop",
+        "direct_shot_start": "animation.piglin_magma_boss_attacks.direct_shot_start",
+        "fx_controller": "controller.animation.piglin_magma_boss.fx_controller",
+        "geyser_loop": "animation.piglin_magma_boss.geyser_loop",
+        "geyser_winddown": "animation.piglin_magma_boss.geyser_winddown",
+        "geyser_windup": "animation.piglin_magma_boss.geyser_windup",
+        "idle_a": "animation.piglin_magma_boss.idle_a",
+        "intro1_nis": "animation.piglin_magma_boss.intro1_nis",
+        "melee_attack_hit": "animation.piglin_magma_boss.melee_attack_hit",
+        "melee_attack_windup": "animation.piglin_magma_boss.melee_attack_windup",
+        "mortar_attack_end": "animation.piglin_magma_boss_attacks.mortar_attack_end",
+        "mortar_attack_loop": "animation.piglin_magma_boss_attacks.mortar_attack_loop",
+        "mortar_attack_start": "animation.piglin_magma_boss_attacks.mortar_attack_start",
+        "run_a": "animation.piglin_magma_boss.run_a",
+        "spray_attack_end": "animation.piglin_magma_boss_attacks.spray_attack_end",
+        "spray_attack_loop": "animation.piglin_magma_boss_attacks.spray_attack_loop",
+        "spray_attack_start": "animation.piglin_magma_boss_attacks.spray_attack_start",
+        "stop_a": "animation.piglin_magma_boss.stop_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.enemy_spotted = 1;",
+        "hero_spotted": "variable.hero_spotted = 1;"
+      },
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink",
+        "Angry",
+        "Surprised",
+        "Pained",
+        "Super Angry"
+      ],
+      "geometry": {
+        "default": "geometry.piglin_magma_boss"
+      },
+      "identifier": "badger:piglin_magma_boss",
+      "materials": {
+        "mat_fx_spore_healed_512": "mat_fx_spore_healed_512",
+        "mat_piglin_magma_boss": "mat_piglin_magma_boss",
+        "mat_piglin_magma_boss_claw_on": "mat_piglin_magma_boss_claw_on",
+        "mat_piglin_magma_boss_face": "mat_piglin_magma_boss_face"
+      },
+      "particle_effects": {
+        "fx_after_mortar": "badger:fx_piglin_magma_boss_reload_smoke",
+        "fx_after_mortar_step": "badger:fx_piglin_magma_boss_step_mortar",
+        "fx_back_fire": "badger:fx_piglin_magma_boss_back_fire",
+        "fx_cine_death": "badger:fx_piglin_magma_boss_death",
+        "fx_embers": "badger:fx_piglin_magma_boss_embers",
+        "fx_explosion01": "badger:fx_piglin_magma_boss_pack_explosion01",
+        "fx_explosion02": "badger:fx_piglin_magma_boss_pack_explosion02",
+        "fx_geyser_end": "badger:fx_piglin_magma_boss_geyser_parts",
+        "fx_geyser_hand_hit": "badger:fx_piglin_magma_boss_geyser_hand_smoke",
+        "fx_pre_explosion": "badger:fx_piglin_magma_boss_pre_explosion",
+        "fx_reload": "badger:fx_piglin_magma_boss_reload",
+        "fx_reload_smoke": "badger:fx_piglin_magma_boss_reload_smoke",
+        "fx_shoulder_fire": "badger:fx_piglin_magma_boss_shoulder_fire",
+        "fx_shoulder_fire_start": "badger:fx_piglin_magma_boss_shoulder_fire_start",
+        "fx_sparks": "badger:fx_piglin_magma_boss_spray_sparks",
+        "fx_sparks_cine": "badger:fx_piglin_magma_boss_hand_sparks",
+        "fx_spray": "badger:fx_piglin_magma_boss_spray",
+        "fx_spray_parts": "badger:fx_piglin_magma_boss_spray_parts",
+        "fx_steam": "badger:fx_piglin_magma_boss_steam",
+        "fx_step": "badger:fx_piglin_magma_boss_step",
+        "fx_swipe": "badger:fx_piglin_magma_boss_swipe"
+      },
+      "render_controllers": [
+        "controller.render.piglin_magma_boss"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "fx_controller": "1"
+          }
+        ],
+        "initialize": [
+          "variable.firing_loop = 0;",
+          "variable.spray_loop = 0;",
+          "variable.fx_killsmoke = 0;",
+          "variable.claw_vis = 0;",
+          "variable.pack_vis = 1;",
+          "variable.matalpha = 0;",
+          "variable.hand_light = 0;",
+          "variable.second_skin_vis = 0;",
+          "variable.cine_fire = 0;",
+          "variable.shoulder_fire = 1;"
+        ]
+      },
+      "sound_effects": {
+        "arm_plant": "BAE_piglin_magmaboss_arm_plant",
+        "arm_scrape": "BAE_piglin_magmaboss_arm_scrape",
+        "arm_shake": "BAE_piglin_magmaboss_arm_shake",
+        "attack_direct_shot": "BAE_piglin_magmaboss_attack_direct_shot",
+        "attack_direct_shot_windup": "BAE_piglin_magmaboss_attack_direct_shot_windup",
+        "attack_melee": "BAE_piglin_magmaboss_attack_melee",
+        "attack_melee_windup": "BAE_piglin_magmaboss_attack_melee_windup",
+        "attack_mortar_fire": "BAE_piglin_magmaboss_mortarlava_fire",
+        "attack_mortar_reload": "BAE_piglin_magmaboss_mortarlava_reload",
+        "attack_mortar_start": "BAE_piglin_magmaboss_attack_mortar_start",
+        "chest_pound": "BAE_piglin_magmaboss_chest_pound",
+        "combat_proximity_boss_stop": "BAE_combat_proximity_boss_stop",
+        "dx_attack_breathe_in": "BAE_piglin_magmaboss_dx_attack_breathe_in",
+        "dx_attack_breathe_out": "BAE_piglin_magmaboss_dx_attack_breathe_out",
+        "dx_attack_direct_shot": "BAE_piglin_magmaboss_dx_attack_direct_shot",
+        "dx_attack_direct_shot_end": "BAE_piglin_magmaboss_dx_attack_direct_shot_end",
+        "dx_attack_direct_shot_end_roar": "BAE_piglin_magmaboss_dx_attack_direct_shot_end_roar",
+        "dx_attack_direct_shot_windup": "BAE_piglin_magmaboss_dx_attack_direct_shot_windup",
+        "dx_attack_flamethrower": "BAE_piglin_magmaboss_dx_attack_flamethrower",
+        "dx_attack_flamethrower_end": "BAE_piglin_magmaboss_dx_attack_flamethrower_end",
+        "dx_attack_flamethrower_end_roar": "BAE_piglin_magmaboss_dx_attack_flamethrower_end_roar",
+        "dx_attack_flamethrower_windup": "BAE_piglin_magmaboss_dx_attack_flamethrower_windup",
+        "dx_attack_geyser": "BAE_piglin_magmaboss_dx_attack_geyser",
+        "dx_attack_geyser_winddown": "BAE_piglin_magmaboss_dx_attack_geyser_winddown",
+        "dx_attack_geyser_windup": "BAE_piglin_magmaboss_dx_attack_geyser_windup",
+        "dx_attack_melee": "BAE_piglin_magmaboss_dx_attack_melee",
+        "dx_attack_melee_windup": "BAE_piglin_magmaboss_dx_attack_melee_windup",
+        "dx_attack_mortar": "BAE_piglin_magmaboss_dx_attack_mortar",
+        "dx_attack_mortar_end": "BAE_piglin_magmaboss_dx_attack_mortar_end",
+        "dx_attack_mortar_windup": "BAE_piglin_magmaboss_dx_attack_mortar_windup",
+        "dx_attack_reload": "BAE_piglin_magmaboss_dx_attack_reload",
+        "dx_enemyspotted": "BAE_piglin_magmaboss_dx_enemyspotted",
+        "dx_hurt": "BAE_piglin_magmaboss_dx_hurt",
+        "dx_idle": "BAE_piglin_magmaboss_dx_idle",
+        "dx_run": "BAE_piglin_magmaboss_dx_run",
+        "dx_snorts": "BAE_piglin_magmaboss_dx_snorts",
+        "dx_spotted_hero": "BAE_piglin_magmaboss_dx_spotted_hero",
+        "flamethrower_attack": "BAE_piglin_magmaboss_flamethrower_attack",
+        "flamethrower_attack_end_spin": "BAE_piglin_magmaboss_flamethrower_attack_end_spin",
+        "flamethrower_backfire": "BAE_piglin_magmaboss_flamethrower_backfire",
+        "flamethrower_outro": "BAE_piglin_magmaboss_flamethrower_outro",
+        "flamethrower_stop": "BAE_piglin_magmaboss_flamethrower_stop",
+        "flamethrower_windup": "BAE_piglin_magmaboss_flamethrower_windup",
+        "furnace_loop": "BAE_piglin_magmaboss_furnace_loop",
+        "furnace_stop": "BAE_piglin_magmaboss_furnace_stop",
+        "mortar_projectile": "BAE_piglin_magmaboss_mortarlava_projectile",
+        "piglin_magmaboss_dx_attack_melee": "BAE_piglin_magmaboss_dx_attack_melee",
+        "reload_suction": "BAE_piglin_magmaboss_reload_suction",
+        "reload_suction_stop": "BAE_piglin_magmaboss_reload_suction_stop",
+        "reload_thrust": "BAE_piglin_magmaboss_reload_thrust",
+        "reload_windown": "BAE_piglin_magmaboss_reload_windown",
+        "reload_windup": "BAE_piglin_magmaboss_reload_windup",
+        "sfx_knockback_piglin_attack": "BAE_sfx_knockback_piglin_attack",
+        "step_left": "BAE_piglin_magmaboss_footstep_left",
+        "step_right": "BAE_piglin_magmaboss_footstep_right"
+      },
+      "textures": {
+        "default": "textures/entity/piglin_magma_boss/tex_piglin_magma_boss_d"
+      },
+      "trail_effects": {
+        "fx_melee_swipe": "badger:trail_piglin_magma_smash"
+      }
+    }
+  }
+}

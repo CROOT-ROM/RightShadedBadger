@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_grass_clump_frost_02": {
+            "geometry": "geometry.block_deco_fol_grass_clump_frost_02",
+            "shadow": true,
+            "type": "middle",
+            "random_orientation": true,
+            "wind_strength": 0.1
+        }
+    }
+}

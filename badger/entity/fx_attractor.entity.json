@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,0.5,0.1],
+            "enabled": "variable.is_med",
+            "falloff_power": 2,
+            "intensity": 32,
+            "offset": [0,5,0],
+            "radius": 7.5
+          },
+          {
+            "color": [1,0.5,0.1],
+            "enabled": "variable.is_sml",
+            "falloff_power": 2,
+            "intensity": 32,
+            "offset": [0,4,0],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "med_attractor": {
+          "script": "is_med"
+        },
+        "sml_attractor": {
+          "script": "is_sml"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:fx_attractor"
+      }
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.fx_attractor.default"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "is_med": "variable.is_med = 1;",
+        "is_sml": "variable.is_sml = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.fx_attractor"
+      },
+      "identifier": "badger:fx_attractor",
+      "materials": {
+        "mat_shared_block_entity_piglin": "mat_shared_block_entity_piglin"
+      },
+      "particle_effects": {
+        "fx_med": "badger:fx_attractor_friendly_medium"
+      },
+      "render_controllers": ["controller.render.fx_attractor"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.maingeo_vis = 0;","variable.is_sml = 0;","variable.is_med = 1;"]
+      }
+    }
+  }
+}

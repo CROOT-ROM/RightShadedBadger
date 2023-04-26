@@ -1,0 +1,99 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "badger:fx_block_snow_icicle_drops_water",
+      "basic_render_parameters": {
+        "materials_list": [
+          "mat_badger_fx_blend_water"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": {
+        "num_particles": "1  * (1.0 - query.emitter_is_night)"
+      },
+      "minecraft:emitter_lifetime_looping": {
+        "active_time": 1.0,
+        "sleep_time": "Math.random(1,10)"
+      },
+      "minecraft:emitter_shape_box": {
+        "half_dimensions": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "direction": [
+          "Math.random(-0.4,0.4)",
+          1,
+          "Math.random(-0.4,0.4)"
+        ],
+        "direction_mode": "custom"
+      },
+      "minecraft:particle_initial_speed": 0,
+      "minecraft:particle_initial_spin": {
+        "rotation": "Math.random(180, 180)",
+        "rotation_rate": 0
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "Math.random(1.4,2.4)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_drag_coefficient": 1.0,
+        "linear_acceleration": [
+          0,
+          "Math.random(-9,-24)",
+          0
+        ]
+      },
+      "badger:particle_appearance_billboard": {
+        "size": [
+          "math.lerp(1.0,0.4,query.particle_normalized_age)",
+          "math.lerp(1.0,0.4,query.particle_normalized_age)"
+        ],
+        "initial_scale": [
+          0.7,
+          0.95
+        ],
+        "facing_camera_mode": "lookat_xyz",
+        "flipbook": {
+          "layout": {
+            "columns_count": 6,
+            "rows_count": 4,
+            "frame_iteration": "page",
+            "row_index": [
+              0
+            ],
+            "frame_start": "Math.random(0,48)"
+          },
+          "time_integration": {
+            "mode": "cycle",
+            "cycles_count": 1
+          }
+        }
+      },
+      "minecraft:particle_appearance_tinting": {
+        "gradient": {
+          "0": [
+            0.8,
+            0.8,
+            1.0,
+            1.0
+          ],
+          "1.0": [
+            0.4,
+            0.4,
+            1.0,
+            1.0
+          ]
+        },
+        "interpolant": "query.particle_normalized_age"
+      }
+    }
+  }
+}

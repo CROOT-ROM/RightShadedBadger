@@ -1,0 +1,59 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_final_boss_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "deco" : {
+            "game_effects" : {
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_proj_fb_spear"
+               }
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_final_boss_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_final_boss_impact_smoke",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_Ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_final_boss_impact_smokering",
+               "type" : "emitter_bound"
+            }
+         },
+         "wood" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_final_boss_impact_wood",
+               "type" : "emitter_bound"
+            }
+         },
+         "wood_pieces" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_final_boss_impact_wood_pieces",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares", "smoke_Ring", "smoke", "wood_pieces", "wood", "deco" ]
+         },
+         "minecraft:emitter_lifetime_once" : {}
+      }
+   }
+}

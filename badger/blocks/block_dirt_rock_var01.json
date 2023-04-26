@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_dirt_rock_var01": {
+      "textures": {
+        "up": "textures/blocks/dirt",
+        "down": "textures/blocks/dirt",
+        "side": "textures/blocks/tex_block_dirt_rock_01"
+      }
+    }
+  }
+}

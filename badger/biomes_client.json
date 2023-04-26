@@ -1,0 +1,455 @@
+{
+  "biomes": {
+    "default": {
+      "ambient_audio_event": "BAE_amb_biome_default",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 20,
+        "elevation_max": 150
+      },
+      "biome_display_name": "generic",
+      "biome_banner": "",
+      "common_resource_icon": "",
+      "fog_color": "#9eeaff"
+    },
+    "beach": {
+      "ambient_audio_event": "BAE_amb_biome_beach",
+      "biome_display_name": "beach",
+      "biome_banner": "",
+      "common_resource_icon": "",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_ridge": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_sanddune": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_tarpits": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_valleys": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_border": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_campaign": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_pvp": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "forest": {
+      "ambient_audio_event": "BAE_amb_biome_forest",
+      "fog_color": "#9eeaff"
+    },
+    "forest_hills": {
+      "ambient_audio_event": "BAE_amb_biome_forest_hills",
+      "fog_color": "#9eeaff"
+    },
+    "forest_autumn": {
+      "ambient_audio_event": "BAE_amb_biome_forest",
+      "fog_color": "#9eeaff"
+    },
+    "forest_mud_pit": {
+      "ambient_audio_event": "BAE_amb_biome_forest",
+      "fog_color": "#9eeaff"
+    },
+    "frostlands": {
+      "ambient_audio_event": "BAE_amb_biome_frostlands",
+      "fog_color": "#9eeaff"
+    },
+    "frostlands_hills": {
+      "ambient_audio_event": "BAE_amb_biome_frostlands",
+      "fog_color": "#9eeaff"
+    },
+    "frostlands_springs": {
+      "ambient_audio_event": "BAE_amb_biome_frostlands",
+      "fog_color": "#9eeaff"
+    },
+    "frostlands_river": {
+      "ambient_audio_event": "BAE_amb_biome_frostlands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_river": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_shore": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "drylands": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+
+      "fog_color": "#9eeaff"
+    },
+    "drylands_enable_hoodoos": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+      "fog_color": "#9eeaff"
+    },
+    "drylands_hoodoo_large": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+      "fog_color": "#9eeaff"
+    },
+    "drylands_hoodoo_medium": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+      "fog_color": "#9eeaff"
+    },
+    "drylands_hoodoo_small": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_parent_valleys": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_foothills": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_peaks": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 20,
+        "elevation_max": 160
+      }
+    },
+    "jungle": {
+      "ambient_audio_event": "BAE_amb_biome_jungle",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "jungle_hills": {
+      "ambient_audio_event": "BAE_amb_biome_jungle_hills",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "jungle_pool": {
+      "ambient_audio_event": "BAE_amb_biome_jungle_pool",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "jungle_pool_cover": {
+      "ambient_audio_event": "BAE_amb_biome_jungle_pool",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "jungle_field": {
+      "ambient_audio_event": "BAE_amb_biome_jungle",
+      "fog_color": "#9eeaff"
+    },
+    "wetlands": {
+      "ambient_audio_event": "BAE_amb_biome_wetlands",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "swampland": {
+      "ambient_audio_event": "BAE_amb_biome_wetlands",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 0,
+        "elevation_max": 90
+      },
+      "fog_color": "#9eeaff"
+    },
+    "burnt_grass": {
+      "ambient_audio_event": "BAE_amb_biome_burnt_grass",
+      "fog_color": "#9eeaff"
+    },
+    "burnt_grass_hills": {
+      "ambient_audio_event": "BAE_amb_biome_burnt_grass_hills",
+      "fog_color": "#9eeaff"
+    },
+    "burnt_grass_trees": {
+      "ambient_audio_event": "BAE_amb_biome_burnt_grass_trees",
+      "fog_color": "#9eeaff"
+    },
+    "burnt_grass_wetlands": {
+      "ambient_audio_event": "BAE_amb_biome_grass_wetlands",
+      "fog_color": "#9eeaff"
+    },
+    "frosty_grass": {
+      "ambient_audio_event": "BAE_amb_biome_frosty_grass",
+      "fog_color": "#9eeaff"
+    },
+    "frosty_grass_hills": {
+      "ambient_audio_event": "BAE_amb_biome_frosty_grass_hills",
+      "fog_color": "#9eeaff"
+    },
+    "frosty_grass_trees": {
+      "ambient_audio_event": "BAE_amb_biome_frosty_grass_trees",
+      "fog_color": "#9eeaff"
+    },
+    "frosty_grass_wetlands": {
+      "ambient_audio_event": "BAE_amb_biome_frosty_grass_wetlands",
+      "fog_color": "#9eeaff"
+    },
+    "frozen_ground": {
+      "ambient_audio_event": "BAE_amb_biome_frozen_ground",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_village": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "river": {
+      "ambient_audio_event": "",
+      "fog_color": "#9eeaff"
+    },
+    "sparse_jungle": {
+      "ambient_audio_event": "BAE_amb_biome_sparse_jungle",
+      "fog_color": "#9eeaff"
+    },
+    "sparse_jungle_hills": {
+      "ambient_audio_event": "BAE_amb_biome_sparse_jungle_hills",
+      "fog_color": "#9eeaff"
+    },
+    "wetlands_beach": {
+      "ambient_audio_event": "BAE_amb_biome_wetlands",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 20,
+        "elevation_max": 70
+      },
+      "fog_color": "#9eeaff"
+    },
+    "wetlands_hills": {
+      "ambient_audio_event": "BAE_amb_biome_wetlands",
+      "ambient_audio_elevation_limits": {
+        "elevation_min": 20,
+        "elevation_max": 70
+      },
+      "fog_color": "#9eeaff"
+    },
+    "outbounds_ocean": {
+      "ambient_audio_event": "BAE_amb_biome_outbounds",
+      "fog_color": "#9eeaff"
+    },
+    "nether_horderunner": {
+      "ambient_audio_event": "BAE_amb_biome_nether_attack",
+      "fog_color": "#9eeaff"
+    },
+    "nether_rotters": {
+      "ambient_audio_event": "BAE_amb_biome_nether_rotters",
+      "fog_color": "#9eeaff"
+    },
+    "nether_rotters_upper": {
+      "ambient_audio_event": "BAE_amb_biome_nether_rotters",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "beach_rivers": {
+      "ambient_audio_event": "BAE_amb_biome_beach",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_river": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "brokenlands_valleys_fossil": {
+      "ambient_audio_event": "BAE_amb_biome_brokenlands",
+      "fog_color": "#9eeaff"
+    },
+    "close_ocean": {
+      "ambient_audio_event": "BAE_amb_biome_outbounds",
+      "fog_color": "#9eeaff"
+    },
+    "drylands_river": {
+      "ambient_audio_event": "BAE_amb_biome_drylands",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_pvp_autumn_thinned": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_pvp_autumn": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_pvp_evergreen_thinned": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_pvp_evergreen": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "fateful_land_river": {
+      "ambient_audio_event": "BAE_amb_biome_fateful_land",
+      "fog_color": "#9eeaff"
+    },
+    "forest_clamp_lower": {
+      "ambient_audio_event": "BAE_amb_biome_forest",
+      "fog_color": "#9eeaff"
+    },
+    "forest_river": {
+      "ambient_audio_event": "BAE_amb_biome_forest",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_clamp_lower": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_mud_pit_border": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_mud_pit": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "grasslands_rivers": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    },
+    "jungle_mountains": {
+      "ambient_audio_event": "BAE_amb_biome_jungle",
+      "fog_color": "#9eeaff"
+    },
+    "jungle_river": {
+      "ambient_audio_event": "BAE_amb_biome_jungle",
+      "fog_color": "#9eeaff"
+    },
+    "jungle_terraces": {
+      "ambient_audio_event": "BAE_amb_biome_jungle",
+      "fog_color": "#9eeaff"
+    },
+    "lava_moat_horderunner": {
+      "ambient_audio_event": "BAE_amb_biome_nether_attack",
+      "fog_color": "#9eeaff"
+    },
+    "lava_moat_magma_lip": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "lava_moat": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_mid_hills": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_parent_valleys_pvp": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_river": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "mountain_summit": {
+      "ambient_audio_event": "BAE_amb_biome_mountains",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border_final": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border_inner_edge_final": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border_inner_edge": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border_outer_edge_final": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border_outer_edge": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_burnt_border": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_final_battle_arena": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_final_battle": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_border_blend_final": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_border_blend": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_border_final": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_dbb_lava_border": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_dbb": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_lava_border": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "nether": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "wetlands_river": {
+      "ambient_audio_event": "BAE_amb_biome_wetlands",
+      "fog_color": "#9eeaff"
+    },
+    "nether_piglin_border": {
+      "ambient_audio_event": "BAE_amb_biome_nether_piglin",
+      "fog_color": "#9eeaff"
+    },
+    "mud_pit_border": {
+      "ambient_audio_event": "BAE_amb_biome_grasslands",
+      "fog_color": "#9eeaff"
+    }
+  }
+}

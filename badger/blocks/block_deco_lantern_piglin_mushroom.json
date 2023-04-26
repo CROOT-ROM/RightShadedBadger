@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_deco_lantern_piglin_mushroom": {
+      "decoration": "deco_lantern_piglin_mushroom"
+    }
+  }
+}

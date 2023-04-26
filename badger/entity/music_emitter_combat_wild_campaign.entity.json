@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_emitter_combat_wild_campaign",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:audio_heatmap_cell_attributes": {
+        "audio_event": "",
+        "should_be_filtered": false 
+      },
+      "badger:music_2d_emitter": {
+        "priority" : -1,
+        "max_distance" : 40,
+        "on_enter_bae" : "",
+        "music_states" :[
+          {
+            "state_name": "default",
+            "audio_parameters": [
+                {"combat_wild" : 1.0}
+             ]
+          }
+        ],
+        "heatmap_influence_global_music_parameter": "combat_wild_influence_music_campaign"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:entity_struct_mob_golem_sniper_nose"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "animBot": "geometry.animBot",
+        "default": "geometry.export_geo"
+      },
+      "identifier": "badger:entity_struct_mob_golem_sniper_nose",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_mob_golem_sniper_nose": "mat_entity_struct_mob_golem_sniper_nose"
+      },
+      "render_controllers": ["controller.render.entity_struct_mob_golem_sniper_nose"],
+      "scripts": {
+        "initialize": ["variable.model_chooser = 0;"]
+      }
+    }
+  }
+}

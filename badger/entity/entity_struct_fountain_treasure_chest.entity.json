@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:interaction_presentation": {
+          "trigger_specific_events": true,
+          "trigger_generic_events": false
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.1
+      },
+      "badger:presentation_event": {
+        "visual_state_added.open_chest": {
+          "audio": "BAE_entity_struct_fountain_treasure_chest_open",
+          "script": "open"
+        },
+        "visual_state_removed.open_chest": {
+          "audio": "BAE_entity_struct_fountain_treasure_chest_close",
+          "script": "close"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_fountain_treasure_chest"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_fountain_treasure_chest.death_a",
+        "default": "controller.animation.entity_struct_fountain_treasure_chest.default",
+        "idle_closed": "animation.entity_struct_fountain_treasure_chest.idle_closed",
+        "open_a": "animation.entity_struct_fountain_treasure_chest.open_a",
+        "open_idle": "animation.entity_struct_fountain_treasure_chest.open_idle",
+        "spawn_a": "animation.entity_struct_fountain_treasure_chest.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "close": "variable.is_open = 0;",
+        "open": "variable.is_open = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_fountain_treasure_chest"
+      },
+      "identifier": "badger:entity_struct_fountain_treasure_chest",
+      "materials": {
+        "default": "entity_model",
+        "mat_entity_struct_fountain_treasure_chest": "mat_entity_struct_fountain_treasure_chest"
+      },
+      "particle_effects": {
+        "fx_open": "badger:fx_entity_struct_fountain_chest_open"
+      },
+      "render_controllers": ["controller.render.entity_struct_fountain_treasure_chest"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

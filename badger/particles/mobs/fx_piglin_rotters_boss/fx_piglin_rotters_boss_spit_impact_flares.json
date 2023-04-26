@@ -1,0 +1,49 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_piglin_rotters_boss_spit_impact_flares",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_ramp_liquid_splash_fp_spit" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:emitter_shape_cylinder" : {
+            "emission_mode" : "base",
+            "length" : 10.0,
+            "offset" : [ 0.0, 1.0, 0.0 ],
+            "radius" : 4.0,
+            "vertical_angle" : 50.0
+         },
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 2.0, 1.0 ],
+            "initial_scale" : [ 1.25, 3.0 ],
+            "animated_scale" : "1 + (query.particle_normalized_age* 0.5)",
+            "facing_camera_mode" : "direction_y",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 4,
+                  "frame_end" : 11,
+                  "rows_count" : 3
+               }
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 3.0
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : "Math.random(15, 25)"
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_initial_spin" : {
+            "rotation" : 90.0
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(0.5, 1)"
+         }
+      }
+   }
+}

@@ -1,0 +1,57 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 6,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_golem_shield_impact"
+      },
+      "badger:rig_operations": ["rigops_actions.proj_golem_shield_impact_in","rigops_actions.proj_golem_shield_impact_out"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.proj_golem_shield_impact.default",
+        "end_a": "animation.proj_golem_shield_impact.end_a",
+        "idle_a": "animation.proj_golem_shield_impact.idle_a",
+        "spawn_a": "animation.proj_golem_shield_impact.spawn_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "proj_golem_shield_impact": "geometry.proj_golem_shield_impact"
+      },
+      "identifier": "badger:proj_golem_shield_impact",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_golem_shield": "mat_fx_golem_shield",
+        "mat_fx_golem_shield02": "mat_fx_golem_shield02",
+        "mat_proj_golem_shield_impact": "mat_proj_golem_shield_impact",
+        "mat_proj_golem_shield_impact_face": "mat_proj_golem_shield_impact_face"
+      },
+      "particle_effects": {
+        "fx_end": "badger:fx_golem_shield_head_parts",
+        "fx_headsparkles": "badger:fx_golem_shield_sparkles"
+      },
+      "render_controllers": ["controller.render.proj_golem_shield_impact"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.shieldheight = 0;"]
+      },
+      "sound_effects": {
+        "projectile_despawn": "BAE_mob_golem_shield_projectile_despawn",
+        "projectile_shield_load": "BAE_mob_golem_shield_projectile_shield_load",
+        "projectile_shield_loop": "BAE_mob_golem_shield_projectile_shield_loop",
+        "projectile_shield_unload": "BAE_mob_golem_shield_projectile_shield_unload"
+      }
+    }
+  }
+}

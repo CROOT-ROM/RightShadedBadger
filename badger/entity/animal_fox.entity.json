@@ -1,0 +1,116 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 3,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 3,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 60,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_fox"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_fox_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_fox_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_fox_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_fox_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_fox_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_fox",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.animal_fox.climb_a",
+        "death_a": "animation.animal_fox.death_a",
+        "default": "controller.animation.animal_fox.default",
+        "flee_a": "animation.animal_fox.flee_a",
+        "hit_react_a": "animation.animal_fox.hit_react_a",
+        "hit_reaction": "controller.animation.animal_fox.hit_reaction",
+        "idle_a": "animation.animal_fox.idle_a",
+        "idles": "controller.animation.animal_fox.idles",
+        "knockback_a": "animation.animal_fox.knockback_a",
+        "locomotion": "controller.animation.animal_fox.locomotion",
+        "look_at": "animation.animal_fox.look_at",
+        "stun_a": "animation.animal_fox.stun_a",
+        "swim_a": "animation.animal_fox.swim_a",
+        "swim_idle_a": "animation.animal_fox.swim_idle_a",
+        "walk_a": "animation.animal_fox.walk_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Afraid"],
+      "geometry": {
+        "default": "geometry.animal_fox"
+      },
+      "identifier": "badger:animal_fox",
+      "materials": {
+        "mat_animal_fox": "mat_animal_fox",
+        "mat_animal_fox_face": "mat_animal_fox_face",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_tiny",
+        "fx_dath": "badger:fx_shared_death_smoke_small"
+      },
+      "render_controllers": ["controller.render.animal_fox"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "aggro": "BAE_animal_fox_aggro",
+        "bite": "BAE_animal_fox_bite",
+        "death": "BAE_animal_fox_death",
+        "death_poof_small": "BAE_animal_death_poof_small",
+        "dx_stun": "BAE_animal_fox_dx_stun",
+        "eat": "BAE_animal_fox_eat",
+        "hurt": "BAE_animal_fox_hurt",
+        "idle": "BAE_animal_fox_idle",
+        "screech": "BAE_animal_fox_screech",
+        "sleep": "BAE_animal_fox_sleep",
+        "sniff": "BAE_animal_fox_sniff",
+        "spit": "BAE_animal_fox_spit"
+      }
+    }
+  }
+}

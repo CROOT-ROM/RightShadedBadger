@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_wood_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.mob_golem_wood.death_a",
+        "death_b": "animation.mob_golem_wood.death_b",
+        "death_c": "animation.mob_golem_wood.death_c",
+        "default": "controller.animation.mob_golem_wood_nis.default",
+        "idle_a": "animation.mob_golem_wood.idle_a",
+        "idle_b": "animation.mob_golem_wood.idle_b",
+        "idle_c": "animation.mob_golem_wood.idle_c",
+        "mob_golem_wood_final_boss_death_nis": "animation.mob_golem_wood_final_boss_death_nis.mob_golem_wood_final_boss_death_nis",
+        "run_a": "animation.mob_golem_wood.run_a",
+        "run_b": "animation.mob_golem_wood.run_b",
+        "run_c": "animation.mob_golem_wood.run_c",
+        "stop_a": "animation.mob_golem_wood.stop_a",
+        "stop_b": "animation.mob_golem_wood.stop_b",
+        "stun_a": "animation.mob_golem_wood.stun_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_wood_nis"
+      },
+      "identifier": "badger:mob_golem_wood_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_generic_buff_128": "mat_fx_generic_buff_128",
+        "mat_mob_golem_wood": "mat_mob_golem_wood",
+        "mat_mob_golem_wood_face": "mat_mob_golem_wood_face"
+      },
+      "render_controllers": ["controller.render.mob_golem_wood_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

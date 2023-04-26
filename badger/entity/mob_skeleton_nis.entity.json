@@ -1,0 +1,56 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_skeleton_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.mob_skeleton.death_a",
+        "death_b": "animation.mob_skeleton.death_b",
+        "default": "controller.animation.mob_skeleton_nis.default",
+        "idle_a": "animation.mob_skeleton.idle_a",
+        "idle_c": "animation.mob_skeleton.idle_c",
+        "idle_d": "animation.mob_skeleton.idle_d",
+        "idle_e": "animation.mob_skeleton.idle_e",
+        "nis_range_attack_hold": "animation.mob_skeleton.nis_range_attack_hold",
+        "nis_spawn_a": "animation.mob_skeleton_nis.nis_spawn_a",
+        "victory_dance_a": "animation.mob_skeleton_nis.victory_dance_a",
+        "walk_a": "animation.mob_skeleton.walk_a",
+        "walk_b": "animation.mob_skeleton.walk_b",
+        "walk_c": "animation.mob_skeleton.walk_c"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.mob_skeleton_nis"
+      },
+      "identifier": "badger:mob_skeleton_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_generic_buff_128": "mat_fx_generic_buff_128",
+        "mat_mob_skeleton": "mat_mob_skeleton",
+        "mat_mob_skeleton_face": "mat_mob_skeleton_face"
+      },
+      "render_controllers": ["controller.render.mob_skeleton_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

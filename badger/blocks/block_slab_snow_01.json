@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_snow_01": {
+      "textures": {
+        "down": "textures/blocks/tex_block_snow", 
+        "up": "textures/blocks/tex_block_snow", 
+        "side": "textures/blocks/tex_block_snow_side_slab"
+      }
+    }
+  }
+}

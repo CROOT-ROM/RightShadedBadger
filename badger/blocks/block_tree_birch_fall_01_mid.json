@@ -1,0 +1,28 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_tree_birch_fall_01_mid": {
+            "textures": {
+                "up": "textures/blocks/tex_block_tree_birch_top_o",
+                "down": "textures/blocks/tex_block_tree_birch_top_o",
+                "side": "textures/blocks/tex_block_tree_birch_mid_o"
+            },
+            "particle_spawner": {
+                "effects" : [
+                    {
+                        "effect": "badger:fx_block_leaves_tree_orange_light",
+                        "range": "middle",
+                        "probability": 0.1
+                    },
+                    {
+                        "effect": "badger:fx_block_leaves_tree_orange_light_triggered",
+                        "range": "near",
+                        "probability": 0.05,
+                        "trigger": "explosion",
+                        "rotation_mode": "trigger_xz"
+                    }
+                ]           
+            }
+        }
+    }
+}

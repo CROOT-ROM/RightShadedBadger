@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_post_netherrite_z_center_1": {
+      "geometry": "geometry.block_deco_post_netherrite_z_center_1", 
+      "shadow": true, 
+      "up": "surface", 
+      "forward": "world"
+    }
+  }
+}

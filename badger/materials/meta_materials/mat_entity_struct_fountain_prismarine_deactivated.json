@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "mat_entity_struct_fountain_prismarine_deactivated:base_entity": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 16,
+      "frontface": {
+        "stencilfailop": "replace",
+        "stencildepthfailop": "zero",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      },
+      "backface": {
+        "stencilfailop": "replace",
+        "stencildepthfailop": "zero",
+        "stencilpassop": "replace",
+        "stencilfunc": "always"
+      }
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_entity_fountain_prismarine_deactivated_d",
+      "coeffMap": "textures/entity/tex_entity_fountain_prismarine_mr",
+      "normalMap": "textures/entity/tex_entity_fountain_prismarine_n"
+    }
+  }
+}

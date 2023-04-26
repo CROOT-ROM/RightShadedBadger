@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item_sword_hero.test": {
+      "bones": {
+        "joint_root_m": {
+          "position": {
+            "0.0": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            },
+            "0.133333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,2.733656406402588]
+            },
+            "0.3": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,12.84300708770752]
+            },
+            "0.633333333333": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,29.833053588867188]
+            },
+            "1.26666666667": {
+              "lerp_mode": "catmullrom",
+              "post": [0.0,0.0,0.0]
+            }
+          }
+        }
+      }
+    }
+  }
+}

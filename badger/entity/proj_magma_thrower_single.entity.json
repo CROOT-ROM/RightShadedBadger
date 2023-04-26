@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:proj_magma_thrower_single"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.proj_magma_thrower_single"
+      },
+      "identifier": "badger:proj_magma_thrower_single",
+      "materials": {
+        "default": "entity_model",
+        "mat_proj_magma_thrower": "mat_proj_magma_thrower"
+      },
+      "render_controllers": ["controller.render.proj_magma_thrower_single"]
+    }
+  }
+}

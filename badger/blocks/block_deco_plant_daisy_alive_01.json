@@ -1,0 +1,22 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_plant_daisy_alive_01": {
+            "decoration": "deco_plant_daisy_01",
+            "particle_spawner": {
+				"effects" : [
+					{
+		                "effect": "badger:fx_block_fateful_lands_cotton",
+						"range": "middle",
+						"probability": 0.05,
+						"offset": [
+							0.0,
+							5.0,
+							0.0
+						]
+					}
+				]			
+            }
+        }
+    }
+}

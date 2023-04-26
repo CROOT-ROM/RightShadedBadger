@@ -1,0 +1,36 @@
+{
+  /* This manifest provides project specific settings, making it easier to create services that can be easily ported to other projects. Everything is opt-in.
+	
+	  Valid scopes:
+		1. "launcher" : Launcher scoped service, accessible anywhere. BBI-TODO: Careful with dumb clients, will need data propagation from server. While not a problem on a local setup, need to be aware some dedicated servi
+		2. "level" : Services that will live as two separate instances, one of server Level and other on client Level. Both parse from behavior_packs. This is useful for rapid iteration support where the client can diverge from the server (ex: map & campaign previews). Most people shouldn't need to use this.
+		3. "server" : Services that only exist on server instance of Level. Level::isClientSide() is false.
+		4. "client" : Services that only exist on client instance of Level. Level::isClientSide() is true.
+		X. There is a special mention for dev only services that do not live in this manifest. 
+       All launcher services live in data/launcher/gamelayer/<project>/ and each service is bound to a specific json file. 
+       So if the file exists, the service will be created. 
+       These are all created super early (things like seed override) well before packages are determined, or servers are created.	
+	   
+	   SERVICE ORDER in this list DETERMINES ORDER OF INIT/PROCESSING! 
+	       Though Launcher services are always processed before any other services.
+		   And Badger services process after Minecraft services. We can change this when the need arises.
+	*/
+  "gamelayer_services": [
+    {
+      "service": "application_features",
+      "scope": "launcher"
+    },
+    {
+      "service": "random_seed_override",
+      "scope": "launcher"
+    },
+    {
+      "service": "world_feature",
+      "scope": "level"
+    },
+    {
+      "service": "layer_timing",
+      "scope": "level"
+    }
+  ]
+}

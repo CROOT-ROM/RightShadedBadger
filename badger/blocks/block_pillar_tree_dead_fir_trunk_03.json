@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_pillar_tree_dead_fir_trunk_03": {
+            "textures": {
+                "up": "textures/blocks/tex_block_dead_tree_fir_top_01",
+                "down": "textures/blocks/tex_block_dead_tree_fir_top_01",
+                "side": "textures/blocks/tex_block_dead_tree_fir_05"
+            }
+        }
+    }
+}

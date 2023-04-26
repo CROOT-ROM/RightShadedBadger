@@ -1,0 +1,14 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier" : "badger:decoration_collider_piglin_magma_boss",
+          "offset": [0.0, 0.0, 1.0],
+          "height": 3.8,
+          "length": 4.5,
+          "yaw": 90.0,
+          "inner_radius": 4.0,
+          "outer_radius": 5.5,
+          "intensity": 1.5,
+          "priority": 600
+    }
+}

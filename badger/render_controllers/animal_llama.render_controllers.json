@@ -1,0 +1,32 @@
+{
+  "render_controllers": {
+    "controller.render.animal_llama": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_llama": "MetaMaterial.mat_animal_llama"
+        },
+        {
+          "mat_animal_llama_face": "MetaMaterial.mat_animal_llama_face"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        },
+        {
+          "cheeks_geo": "variable.cheeks_geo_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

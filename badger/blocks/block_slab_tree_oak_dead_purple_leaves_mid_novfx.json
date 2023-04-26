@@ -1,0 +1,8 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_slab_tree_oak_dead_purple_leaves_mid_novfx": {
+      "textures": "textures/blocks/tex_block_oak_dead_purple_leaves_mid"
+    }
+  }
+}

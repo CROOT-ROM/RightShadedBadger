@@ -1,0 +1,12 @@
+{
+  "format_version": "1.15.0", 
+  "badger:client_block": {
+    "badger:block_gravel": {
+      "textures": {
+        "down": "textures/blocks/tex_block_gravel", 
+        "up": "textures/blocks/tex_block_gravel", 
+        "side": "textures/blocks/tex_block_gravel"
+      }
+    }
+  }
+}

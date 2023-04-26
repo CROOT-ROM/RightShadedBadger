@@ -1,0 +1,79 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_proj_fallen_warrior_impact",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "dirt_lingering" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_dirt_lingering",
+               "type" : "emitter_bound"
+            }
+         },
+         "fallen_warrior_decorations_collision_regular" : {
+            "game_effects" : {
+               "badger:decal_spawner" : {
+                  "size" : [ 5.5, 5.5, 5.5 ],
+                  "apply_to_owned" : false,
+                  "fade_out_start" : 0.5,
+                  "lifetime" : 8.0,
+                  "random_yaw" : true,
+                  "texture" : "decal_ground_block_impact"
+               },
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_proj_fallen_warrior_impact"
+               }
+            }
+         },
+         "impact_flares" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_flares",
+               "type" : "emitter_bound"
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "puff" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_puff",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_smoke",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_Ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_proj_fallen_warrior_impact_smokering",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "impact_flares", "puff", "smoke_Ring" ],
+            "timeline" : {
+               "0.010000" : [ "impact_parts", "fallen_warrior_decorations_collision_regular" ],
+               "0.050000" : [ "dirt_lingering" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

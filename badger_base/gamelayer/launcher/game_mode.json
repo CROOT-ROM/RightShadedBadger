@@ -1,0 +1,251 @@
+{
+  "game_modes": [
+    {
+      "name": "campaign",
+      "level_name": "campaign.defaultName",
+      "lobby_name": "Campaign Lobby",
+      "lobby_profile_string": "[CreateCampaign]",
+      "lobby_route": "/badger/campaignLobby",
+      "lobby_route_name": "/hbui/campaignLobby.html",
+      "lobby_session_template_name": "BadgerLobby_2p",
+      "load_profile_string": "[LoadCampaign]",
+      "launch_profile_string": "[LaunchCampaign]",
+      "loading_tip_set": "campaign",
+      "game_session_template_name": "BadgerGame_2p",
+      "invite_detail": "hbui.inviteReceived.campaignInviteDetail",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.campaign",
+      "telemetry_name": "Campaign",
+      "rich_presence_name": "Campaign",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentCampaign",
+      "behavior_pack": "660f4aa4-3b09-4c1c-809d-23bdd7c0fb7f",
+      "lobby_title": "hbui.lobby.campaign.title",
+      "ui_style": "campaign",
+      "max_players": 2,
+      "activity_enabled": true,
+      "platform_overrides": {
+        "PC": {
+          "max_players": 4,
+          "lobby_session_template_name": "BadgerLobby_4p",
+          "game_session_template_name": "BadgerGame_4p"
+        },
+        "Xbox Series": {
+          "max_players": 4,
+          "lobby_session_template_name": "BadgerLobby_4p",
+          "game_session_template_name": "BadgerGame_4p"
+        },
+        "PS5": {
+          "max_players": 4,
+          "lobby_session_template_name": "BadgerLobby_4p",
+          "game_session_template_name": "BadgerGame_4p"
+        }
+      }
+    },
+    {
+      "name": "pvp",
+      "level_name": "Badger PvP",
+      "lobby_name": "PvP Lobby",
+      "lobby_profile_string": "[CreatePVP]",
+      "lobby_route": "/badger/pvpLobby",
+      "lobby_route_name": "/hbui/pvpLobby.html",
+      "lobby_session_template_name": "BadgerLobby",
+      "load_profile_string": "[LoadPVP]",
+      "launch_profile_string": "[LaunchPVP]",
+      "loading_tip_set": "pvp",
+      "ui_style": "pvp",
+      "game_session_template_name": "BadgerGame",
+      "invite_detail": "hbui.inviteReceived.pvpInviteDetail",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.pvp",
+      "telemetry_name": "PVP",
+      "rich_presence_name": "PVP",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentPvp",
+      "behavior_pack": "1bb7e174-79ec-4edc-b94e-ad4385501228",
+      "reports_telemetry": true,
+      "generate_match_guid": true,
+      "end_of_match_enter_sound": "BAE_pvp_endOfMatch_enter",
+      "end_of_match_exit_sound": "BAE_pvp_endOfMatch_exit"
+    },
+    {
+      "name": "conquest",
+      "parent": "pvp"
+    },
+    {
+      "name": "challenge_mode",
+      "parent": "campaign"
+    },
+    {
+      "name": "lost_legend",
+      "parent": "campaign",
+      "lobby_name": "Lost Legend Lobby",
+      "lobby_route": "/badger/lostLegendsLobby",
+      "lobby_route_name": "/hbui/lostLegendsLobby.html",
+      "invite_detail": "hbui.inviteReceived.lostLegendInviteDetail",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.campaign",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentCampaign",
+      "lobby_title": "hbui.lobby.lostLegend.screenTitle",
+      "ui_style": "lostLegend",
+      "rich_presence_name": "Legend",
+      "generate_match_guid": true
+    },
+    {
+      "name": "myth",
+      "lobby_name": "Myth Lobby",
+      "lobby_route": "/badger/mythsLobby",
+      "lobby_route_name": "/hbui/mythsLobby.html",
+      "invite_detail": "hbui.inviteReceived.mythInviteDetail",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.campaign",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentCampaign",
+      "lobby_title": "hbui.lobby.mythCoop.screenTitle",
+      "rich_presence_name": "Myth",
+      "ui_style": "myth",
+      "generate_match_guid": true
+    },
+    {
+      "name": "demo",
+      "parent": "campaign"
+    },
+    {
+      "name": "conquest_multiplayer",
+      "parent": "conquest"
+    },
+    {
+      "name": "conquest_public",
+      "parent": "conquest_multiplayer",
+      "lobby_session_template_name": "BadgerLobby_8p",
+      "game_session_template_name": "BadgerGame_8p",
+      "lobby_title": "hbui.lobby.conquest_public.title",
+      "max_players": 8,
+      "allow_matchmaking": true,
+      "activity_enabled": true,
+      "requires_online_premium": true,
+      "telemetry_name": "PVP_Public",
+      "default_privacy": 3
+    },
+    {
+      "name": "conquest_private",
+      "parent": "conquest_multiplayer",
+      "lobby_session_template_name": "BadgerLobby_8p",
+      "game_session_template_name": "BadgerGame_8p",
+      "lobby_title": "hbui.lobby.conquest_private.title",
+      "max_players": 8,
+      "requires_online_premium": true,
+      "telemetry_name": "PVP_Private",
+      "activity_enabled": true,
+      "platform_overrides": {
+        "Switch": {
+          "max_players": 4,
+          "lobby_session_template_name": "BadgerLobby_4p",
+          "game_session_template_name": "BadgerGame_4p"
+        }
+      }
+    },
+    {
+      "name": "conquest_practice",
+      "parent": "conquest",
+      "max_players": 4,
+      "is_practice_mode": true,
+      "lobby_session_template_name": "BadgerLobby_4p",
+      "game_session_template_name": "BadgerGame_4p",
+      "lobby_title": "hbui.lobby.conquest_practice.title",
+      "telemetry_name": "PVP_Training"
+    },
+    {
+      "name": "editor",
+      "level_name": "Badger Creative",
+      "lobby_name": "Creative Lobby",
+      "lobby_profile_string": "[CreateFlatland]",
+      "lobby_route": "/badger/campaignLobby",
+      "lobby_route_name": "/hbui/campaignLobby.html",
+      "lobby_session_template_name": "BadgerLobby",
+      "load_profile_string": "[LoadFlatland]",
+      "launch_profile_string": "[LaunchFlatland]",
+      "game_session_template_name": "BadgerGame",
+      "invite_detail": "hbui.inviteReceived.campaignInviteDetail",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.campaign",
+      "telemetry_name": "Flatland",
+      "rich_presence_name": "Flatland",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentGeneric",
+      "default_privacy": 0,
+      "behavior_pack": "660f4aa4-3b09-4c1c-809d-23bdd7c0fb7f"
+    },
+    {
+      "name": "editor_monobiome",
+      "parent": "campaign"
+    },
+    {
+      "name": "onboarding",
+      "level_name": "Badger Onboarding",
+      "lobby_profile_string": "[CreateOnboarding]",
+      "launch_profile_string": "[LaunchOnboarding]",
+      "loading_tip_set": "campaign",
+      "telemetry_name": "Onboarding",
+      "rich_presence_name": "Onboarding",
+      "behavior_pack": "9e1f947e-2efc-4d20-a3d0-91fc55949cc8",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentGeneric",
+      "ui_style": "campaign",
+      "default_privacy": 0,
+      "max_players": 1
+    }
+  ],
+  "multiplayer_hub_host_list": [
+    {
+      "name": "conquest_public"
+    },
+    {
+      "name": "conquest_private"
+    },
+    {
+      "name": "conquest_practice"
+    }
+  ],
+  "multiplayer_hub_find_list": [
+    {
+      "name": "conquest_public"
+    }
+  ],
+  "multiplayer_hub_discovery_list": [
+    {
+      "name": "conquest_public"
+    },
+    {
+      "name": "conquest_private"
+    },
+    {
+      "name": "conquest_practice"
+    }
+  ],
+  "campaign_hub_host_list": [
+    {
+      "name": "campaign",
+      "platform": "PC"
+    },
+    {
+      "name": "campaign",
+      "platform": "Switch"
+    },
+    {
+      "name": "campaign",
+      "platform": "PS4"
+    },
+    {
+      "name": "campaign",
+      "platform": "PS5"
+    },
+    {
+      "name": "campaign",
+      "platform": "Xbox One"
+    },
+    {
+      "name": "campaign",
+      "platform": "Xbox Series"
+    }
+  ],
+  "campaign_hub_discovery_list": [
+    {
+      "name": "campaign"
+    }
+  ],
+  "lost_legend_hub_host_list": [
+  ],
+  "myths_hub_host_list": [
+  ]
+}
