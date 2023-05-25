@@ -489,7 +489,7 @@
           }
         }
       },
-      "loop": "hold_last_frame",
+      "loop": true,
       "sound_effects": {
         "0.033":  [
           {

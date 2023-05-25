@@ -28,6 +28,13 @@
           "script": "melee_attack"
         },
         "on_roll_attack": {
+          "rumble": {
+            "duration": 3.05,
+            "override": false,
+            "priority": 3,
+            "range": 20,
+            "strength": 20
+          },
           "script": "roll_attack"
         },
         "on_throwable_landed": {
@@ -141,7 +148,7 @@
         "transform_pig": "BAE_piglin_pigmadilo_transform_pig"
       },
       "textures": {
-        "default": "textures/entity/piglin_pigmadilo/tex_piglin_pigmadilo_d"
+        "default": "textures/entity/tex_piglin_pigmadilo_d"
       }
     }
   }

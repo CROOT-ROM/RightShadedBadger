@@ -85,8 +85,17 @@
 			"override_draw_distance_enabled" : {
 				"value" : true
 			},
+			"cinematic_request_minimum_chunk_distance" : {
+				"value" : 32
+			},
+			"cinematic_request_maximum_chunk_distance" : {
+				"value" : 32
+			},
 			"dof_quality" : {
 				"value" : 2
+			},			
+			"water_ssr_raymarching_enabled" : {
+				"value" : true
 			}
 		}
 	}

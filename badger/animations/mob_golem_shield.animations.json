@@ -22758,7 +22758,7 @@
         ],
         "2.167":  [
           {
-            "effect": "dx_idle",
+            "effect": "dx_idle_sprint",
             "enabled": true
           }
         ],

@@ -1,0 +1,2632 @@
+{
+  "format_version": "1.14.0",
+  "sound_category_definitions": {
+    "ambience": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "ambience_liquid": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "animal_badger_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_badger_attack",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_badger_parent",
+      "priority": 30
+    },
+    "animal_badger_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_badger_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_badger_parent",
+      "priority": 20
+    },
+    "animal_badger_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_badger_idle",
+      "max_distance": -1,
+      "parent_category": "neutral_animal_badger_parent",
+      "priority": 10
+    },
+    "animal_beetle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 150,
+      "parent_category": "neutral_mount_animal_parent",
+      "priority": 10
+    },
+    "animal_bird": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "neutral_mount_animal_parent",
+      "priority": 10
+    },
+    "animal_chicken_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_chicken_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_chicken_parent",
+      "priority": 20
+    },
+    "animal_chicken_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_chicken_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_chicken_parent",
+      "priority": 10
+    },
+    "animal_fox_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_fox_attack",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_fox_parent",
+      "priority": 30
+    },
+    "animal_fox_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_fox_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_fox_parent",
+      "priority": 20
+    },
+    "animal_fox_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_fox_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_fox_parent",
+      "priority": 10
+    },
+    "animal_generic_water_large": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_generic_water_medium": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_generic_water_small": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_horse": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "neutral_mount_animal_parent",
+      "priority": 10
+    },
+    "animal_knockback_intense": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_knockback_land": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_knockback_normal": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_knockback_weak": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_llama_attack": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "neutral_animal_llama_parent",
+      "priority": 30
+    },
+    "animal_llama_death": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_llama_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_llama_parent",
+      "priority": 20
+    },
+    "animal_llama_idle": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_llama_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_llama_parent",
+      "priority": 10
+    },
+    "animal_marmot_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_marmot_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_marmot_parent",
+      "priority": 20
+    },
+    "animal_marmot_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_marmot_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_marmot_parent",
+      "priority": 10
+    },
+    "animal_ocelot_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_ocelot_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_ocelot_parent",
+      "priority": 20
+    },
+    "animal_ocelot_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_ocelot_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_ocelot_parent",
+      "priority": 10
+    },
+    "animal_pig_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_pig_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_pig_parent",
+      "priority": 20
+    },
+    "animal_pig_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_pig_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_pig_parent",
+      "priority": 10
+    },
+    "animal_rabbit_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_rabbit_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_rabbit_parent",
+      "priority": 20
+    },
+    "animal_rabbit_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_rabbit_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_rabbit_parent",
+      "priority": 10
+    },
+    "animal_sea_turtle_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_sea_turtle_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_sea_turtle_parent",
+      "priority": 20
+    },
+    "animal_sea_turtle_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_sea_turtle_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_sea_turtle_parent",
+      "priority": 10
+    },
+    "animal_stun": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "animal_tiger": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "neutral_mount_animal_parent",
+      "priority": 10
+    },
+    "animal_unit_group": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "animal_wolf_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_wolf_attack",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_wolf_parent",
+      "priority": 30
+    },
+    "animal_wolf_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_wolf_death",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_wolf_parent",
+      "priority": 20
+    },
+    "animal_wolf_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_animal_wolf_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_animal_wolf_parent",
+      "priority": 10
+    },
+    "audio_attractor": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "battle_drum": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "carpenter": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "cinematic": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "construction_block_change": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 0
+    },
+    "death_poofs": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "freeze_trap": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "gate": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "gather_order": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 75
+    },
+    "heal_totem": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "hero": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "hero_allay": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "hero_pickup": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20,
+      "global_minimum": 1,
+      "max_distance": 20
+    },
+    "host_action": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "host_foresight": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "host_generic": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "host_knowledge": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "illager_culture": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "neutral_villager_parent",
+      "priority": 10
+    },
+    "impacts_generic": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20,
+      "global_minimum": 0,
+      "max_distance": 50,
+      "parent_category": "impacts_parent",
+      "priority": 10
+    },
+    "impacts_hero": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 50,
+      "parent_category": "impacts_parent",
+      "priority": 30
+    },
+    "impacts_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20,
+      "heat_map": [
+        "heatmap_music_combat_wild_pvp"
+      ]
+    },
+    "impacts_priority": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "impacts_parent",
+      "priority": 20
+    },
+    "jump_shroom": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "kaboomery": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "kill_furthest_test": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20,
+      "global_minimum": 0,
+      "max_distance": 20
+    },
+    "kill_oldest_test": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 20,
+      "global_minimum": 0,
+      "max_distance": 20
+    },
+    "mason": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "mix_change": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "mob_allies_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "parent_category": "mob_parent",
+      "priority": 40
+    },
+    "mob_buffs": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_creeper_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_creeper_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_creeper_parent",
+      "priority": 20
+    },
+    "mob_creeper_attack_explode": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "mob_creeper_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_creeper_parent",
+      "priority": 10
+    },
+    "mob_creeper_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_creeper_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_creeper_parent",
+      "priority": 30
+    },
+    "mob_creeper_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_creeper_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_creeper_control_parent",
+      "priority": 10
+    },
+    "mob_creeper_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_creeper_idle",
+      "max_distance": 100,
+      "parent_category": "mob_creeper_idle",
+      "priority": 10
+    },
+    "mob_creeper_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_creeper_parent",
+      "priority": 10
+    },
+    "mob_creeper_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_creeper_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_creeper_control_parent",
+      "priority": 10
+    },
+    "mob_creeper_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_world_parent",
+      "priority": 30
+    },
+    "mob_creeper_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 2,
+      "heat_map": "heatmap_mob_creeper_idle",
+      "max_distance": 100,
+      "parent_category": "mob_creeper_idle",
+      "priority": 10
+    },
+    "mob_fallen_warrior_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_fallen_warrior_parent",
+      "priority": 20
+    },
+    "mob_fallen_warrior_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_fallen_warrior_parent",
+      "priority": 10
+    },
+    "mob_fallen_warrior_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_allies_parent",
+      "priority": 10
+    },
+    "mob_generic_disband": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_generic_recall": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_generic_spawn": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_generic_water_large": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_generic_water_medium": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_generic_water_small": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_golem_carrier_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_carrier_parent",
+      "priority": 20
+    },
+    "mob_golem_carrier_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_carrier_parent",
+      "priority": 10
+    },
+    "mob_golem_carrier_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_allies_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_cavalry_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_parent",
+      "priority": 20
+    },
+    "mob_golem_cavalry_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_golem_cavalry_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_cavalry_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_parent",
+      "priority": 30
+    },
+    "mob_golem_cavalry_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_cavalry_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_control_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_cavalry_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_idle",
+      "priority": 10
+    },
+    "mob_golem_cavalry_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_cavalry_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_control_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_golem_parent",
+      "priority": 10
+    },
+    "mob_golem_cavalry_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_cavalry_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_cavalry_idle",
+      "priority": 10
+    },
+    "mob_golem_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "parent_category": "mob_parent",
+      "priority": 10
+    },
+    "mob_golem_shield_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_shield_parent",
+      "priority": 20
+    },
+    "mob_golem_shield_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_shield_parent",
+      "priority": 10
+    },
+    "mob_golem_shield_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_shield_parent",
+      "priority": 10
+    },
+    "mob_golem_shield_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_allies_parent",
+      "priority": 10
+    },
+    "mob_golem_shield_projectile_shield": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },  
+    "mob_golem_sniper_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_sniper_parent",
+      "priority": 20
+    },
+    "mob_golem_sniper_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 1,
+      "max_distance": 100,
+      "parent_category": "mob_golem_sniper_parent",
+      "priority": 10
+    },
+    "mob_golem_sniper_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_allies_parent",
+      "priority": 10
+    },
+    "mob_golem_stone_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_stone_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_parent",
+      "priority": 20
+    },
+    "mob_golem_stone_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_golem_stone_parent",
+      "priority": 10
+    },
+    "mob_golem_stone_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_stone_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_parent",
+      "priority": 30
+    },
+    "mob_golem_stone_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_stone_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_control_parent",
+      "priority": 10
+    },
+    "mob_golem_stone_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_stone_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_idle",
+      "priority": 10
+    },
+    "mob_golem_stone_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_parent",
+      "priority": 10
+    },
+    "mob_golem_stone_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_stone_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_control_parent",
+      "priority": 10
+    },
+    "mob_golem_stone_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_golem_parent",
+      "priority": 10
+    },
+    "mob_golem_support_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_support_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_parent",
+      "priority": 20
+    },
+    "mob_golem_stone_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_stone_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_stone_idle",
+      "priority": 10
+    },
+    "mob_golem_support_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_golem_support_parent",
+      "priority": 10
+    },
+    "mob_golem_support_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_support_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_parent",
+      "priority": 30
+    },
+    "mob_golem_support_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_support_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_control_parent",
+      "priority": 10
+    },
+    "mob_golem_support_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_support_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_idle",
+      "priority": 10
+    },
+    "mob_golem_support_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_parent",
+      "priority": 10
+    },
+    "mob_golem_support_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_support_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_control_parent",
+      "priority": 10
+    },
+    "mob_golem_support_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_golem_parent",
+      "priority": 10
+    },
+    "mob_golem_support_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_support_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_support_idle",
+      "priority": 10
+    },
+    "mob_golem_wood_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_wood_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_parent",
+      "priority": 20
+    },
+    "mob_golem_wood_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_golem_wood_parent",
+      "priority": 10
+    },
+    "mob_golem_wood_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_wood_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_parent",
+      "priority": 30
+    },
+    "mob_golem_wood_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_wood_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_control_parent",
+      "priority": 10
+    },
+    "mob_golem_wood_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_wood_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_idle",
+      "priority": 10
+    },
+    "mob_golem_wood_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_parent",
+      "priority": 10
+    },
+    "mob_golem_wood_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_golem_wood_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_control_parent",
+      "priority": 10
+    },
+    "mob_golem_wood_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_golem_parent",
+      "priority": 10
+    },
+    "mob_golem_wood_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_golem_wood_idle",
+      "max_distance": 100,
+      "parent_category": "mob_golem_wood_idle",
+      "priority": 10
+    },
+    "mob_group_zombie": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "mob_illager": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_illager_axe_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_illager_axe_attack"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_illager_axe_parent",
+      "priority": 20
+    },
+    "mob_illager_axe_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_illager_axe_death"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_illager_axe_parent",
+      "priority": 30
+    },
+    "mob_illager_axe_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_illager_axe_idle"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_illager_axe_idle",
+      "priority": 10
+    },
+    "mob_illager_axe_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_illager_axe_parent",
+      "priority": 10
+    },
+    "mob_illager_axe_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_world_parent",
+      "priority": 20
+    },
+    "mob_illager_axe_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 2,
+      "heat_map": [
+        "heatmap_mob_illager_axe_idle"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_illager_axe_idle",
+      "priority": 10
+    },
+    "mob_knockback_intense": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_knockback_land": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 7,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_knockback_normal": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_knockback_weak": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20
+    },
+    "mob_skeleton_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_skeleton_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_parent",
+      "priority": 20
+    },
+    "mob_skeleton_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_skeleton_parent",
+      "priority": 10
+    },
+    "mob_skeleton_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_skeleton_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_parent",
+      "priority": 30
+    },
+    "mob_skeleton_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_skeleton_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_control_parent",
+      "priority": 10
+    },
+    "mob_skeleton_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_skeleton_idle",
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_idle",
+      "priority": 10
+    },
+    "mob_skeleton_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_parent",
+      "priority": 10
+    },
+    "mob_skeleton_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_skeleton_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_control_parent",
+      "priority": 10
+    },
+    "mob_skeleton_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_world_parent",
+      "priority": 10
+    },
+    "mob_skeleton_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 2,
+      "heat_map": "heatmap_mob_skeleton_idle",
+      "max_distance": 100,
+      "parent_category": "mob_skeleton_idle",
+      "priority": 10
+    },
+    "mob_spawn_poofs": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_status": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_stun": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mob_world_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_parent",
+      "priority": 20
+    },
+    "mob_zombie_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_zombie_attack",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_zombie_parent",
+      "priority": 20
+    },
+    "mob_zombie_control_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "mob_zombie_parent",
+      "priority": 10
+    },
+    "mob_zombie_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_zombie_death",
+        "heatmap_music_combat_wild_pvp"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_zombie_parent",
+      "priority": 30
+    },
+    "mob_zombie_directed": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_zombie_directed"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_zombie_control_parent",
+      "priority": 10
+    },
+    "mob_zombie_foley": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_zombie_idle",
+      "max_distance": 100,
+      "parent_category": "mob_zombie_idle",
+      "priority": 10
+    },
+    "mob_zombie_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "max_distance": 100,
+      "parent_category": "mob_zombie_parent",
+      "priority": 10
+    },
+    "mob_zombie_lured": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_mob_zombie_lured"
+      ],
+      "max_distance": 100,
+      "parent_category": "mob_zombie_control_parent",
+      "priority": 10
+    },
+    "mob_zombie_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "mob_world_parent",
+      "priority": 10
+    },
+    "mob_zombie_vox": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 2,
+      "heat_map": "heatmap_mob_zombie_idle",
+      "max_distance": 100,
+      "parent_category": "mob_zombie_idle",
+      "priority": 10
+    },
+    "mount_beetle": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "mount_bird": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "mount_generic_water": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "mount_horse": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "mount_tiger": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "music": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "narrator": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "neutral_animal_active_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "parent_category": "neutral_animal_parent",
+      "priority": 10
+    },
+    "neutral_animal_badger_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "neutral_animal_active_parent",
+      "priority": 10
+    },
+    "neutral_animal_chicken_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_fox_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "neutral_animal_active_parent",
+      "priority": 10
+    },
+    "neutral_animal_llama_parent": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 8,
+      "parent_category": "neutral_animal_active_parent",
+      "priority": 10
+    },
+    "neutral_animal_marmot_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_ocelot_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 15,
+      "parent_category": "neutral_parent",
+      "priority": 10
+    },
+    "neutral_animal_passive_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "parent_category": "neutral_animal_parent",
+      "priority": 10
+    },
+    "neutral_animal_pig_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_rabbit_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_sea_turtle_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "parent_category": "neutral_animal_passive_parent",
+      "priority": 10
+    },
+    "neutral_animal_wolf_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "neutral_animal_active_parent",
+      "priority": 10
+    },
+    "neutral_mount_animal_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "neutral_parent",
+      "priority": 30
+    },
+    "neutral_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 20
+    },
+    "neutral_unit_group": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "neutral_villager_parent": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 20,
+      "parent_category": "neutral_parent",
+      "priority": 20
+    },
+    "outpost": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "param_change": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "passthrough": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "piglin_barracks": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_bruiser": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_bruiser_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medium_idle_parent",
+      "priority": 10
+    },
+    "piglin_bruiser_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_bruiser_attack",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_bruiser_feedback_parent",
+      "priority": 10
+    },
+    "piglin_bruiser_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_bruiser_death",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_bruiser_feedback_parent",
+      "priority": 20
+    },
+    "piglin_bruiser_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_feedback_parent",
+      "priority": 20
+    },
+    "piglin_crate": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": 80
+    },
+    "piglin_dark_beacon": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "piglin_engineer": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_music_combat_piglin",
+        "heatmap_piglin_engineer_idle",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medium_idle_parent",
+      "priority": 10
+    },
+    "piglin_engineer_idle_loop": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_music_combat_piglin",
+        "heatmap_piglin_engineer_idle",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 300
+    },
+    "piglin_engineer_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_engineer_attack",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_engineer_feedback_parent",
+      "priority": 10
+    },
+    "piglin_engineer_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_engineer_death",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_engineer_feedback_parent",
+      "priority": 20
+    },
+    "piglin_engineer_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_feedback_parent",
+      "priority": 20
+    },
+    "piglin_extender": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_final_boss": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 300,
+      "parent_category": "piglin_unit_boss_parent",
+      "priority": 30
+    },
+    "piglin_gate": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_generic": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 4,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_generic_water_large": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_generic_water_medium": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_generic_water_small": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_goldmine": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 80
+    },
+    "piglin_grenadier": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_grenadier_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medium_idle_parent",
+      "priority": 10
+    },
+    "piglin_grenadier_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_grenadier_attack",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_grenadier_feedback_parent",
+      "priority": 10
+    },
+    "piglin_grenadier_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_grenadier_death",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_grenadier_feedback_parent",
+      "priority": 20
+    },
+    "piglin_grenadier_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_feedback_parent",
+      "priority": 20
+    },
+    "piglin_grunter": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_grunter_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_small_idle_parent",
+      "priority": 10
+    },
+    "piglin_grunter_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_grunter_attack",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_grunter_feedback_parent",
+      "priority": 10
+    },
+    "piglin_grunter_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_grunter_death",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_grunter_feedback_parent",
+      "priority": 20
+    },
+    "piglin_grunter_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "heat_map": [
+        "heatmap_music_combat_piglin"
+      ],
+      "parent_category": "piglin_small_feedback_parent",
+      "priority": 20
+    },
+    "piglin_hammer_boss": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 300,
+      "parent_category": "piglin_unit_boss_parent",
+      "priority": 20
+    },
+    "piglin_impacts": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100
+    },
+    "piglin_knockback_intense": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 7,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_knockback_land": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 7,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_knockback_normal": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 7,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_knockback_synth": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_knockback_weak": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_large_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_parent",
+      "priority": 20
+    },
+    "piglin_large_idle_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_parent",
+      "priority": 10
+    },
+    "piglin_large_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_unit_parent",
+      "priority": 30
+    },
+    "piglin_lava_coil": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_lava_thrower": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_magma_boss": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 300,
+      "parent_category": "piglin_unit_boss_parent",
+      "priority": 20
+    },
+    "piglin_magma_cube": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_magma_cube_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_small_idle_parent",
+      "priority": 10
+    },
+    "piglin_magma_cube_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_magma_cube_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_magma_cube_feedback_parent",
+      "priority": 10
+    },
+    "piglin_magma_cube_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_magma_cube_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_magma_cube_feedback_parent",
+      "priority": 20
+    },
+    "piglin_magma_cube_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_small_feedback_parent",
+      "priority": 10
+    },
+    "piglin_medic": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_medic_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medium_idle_parent",
+      "priority": 10
+    },
+    "piglin_medic_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_medic_attack",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medic_feedback_parent",
+      "priority": 10
+    },
+    "piglin_medic_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_medic_death",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_medic_feedback_parent",
+      "priority": 20
+    },
+    "piglin_medic_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_feedback_parent",
+      "priority": 20
+    },
+    "piglin_medium_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_parent",
+      "priority": 20
+    },
+    "piglin_medium_idle_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_medium_parent",
+      "priority": 10
+    },
+    "piglin_medium_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_unit_parent",
+      "priority": 20
+    },
+    "piglin_netherspreader": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_piggo_lava_launcher": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_large_idle_parent",
+      "priority": 10
+    },
+    "piglin_piggo_lava_launcher_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_piggo_lava_launcher_feedback_parent",
+      "priority": 10
+    },
+    "piglin_piggo_lava_launcher_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_piggo_lava_launcher_feedback_parent",
+      "priority": 20
+    },
+    "piglin_piggo_lava_launcher_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_feedback_parent",
+      "priority": 20
+    },
+    "piglin_piggo_warboar": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_piggo_warboar_idle",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_small_idle_parent",
+      "priority": 10
+    },
+    "piglin_piggo_warboar_attack": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_piggo_warboar_attack",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_warboar_feedback_parent",
+      "priority": 10
+    },
+    "piglin_piggo_warboar_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_piggo_warboar_death",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_warboar_feedback_parent",
+      "priority": 20
+    },
+    "piglin_pigmadilo": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_pigmadilo_idle",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_large_idle_parent",
+      "priority": 10
+    },
+    "piglin_pigmadilo_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_pigmadilo_attack",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_pigmadilo_feedback_parent",
+      "priority": 10
+    },
+    "piglin_pigmadilo_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_pigmadilo_death",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_pigmadilo_feedback_parent",
+      "priority": 20
+    },
+    "piglin_pigmadilo_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_feedback_parent",
+      "priority": 20
+    },
+    "piglin_portal": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_portal_guard": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_portal_guard_idle",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_large_idle_parent",
+      "priority": 10
+    },
+    "piglin_portal_guard_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_portal_guard_attack",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_portal_guard_feedback_parent",
+      "priority": 10
+    },
+    "piglin_portal_guard_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_portal_guard_death",
+        "heatmap_music_combat_piglin"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_portal_guard_feedback_parent",
+      "priority": 20
+    },
+    "piglin_portal_guard_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_feedback_parent",
+      "priority": 20
+    },
+    "piglin_portal_small": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_regenerator": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "piglin_rotters_boss": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 300,
+      "parent_category": "piglin_unit_boss_parent",
+      "priority": 20
+    },
+    "piglin_runt_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_runt_attack",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_runt_feedback_parent",
+      "priority": 10
+    },
+    "piglin_runt_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_runt_death",
+        "heatmap_music_combat_wild_pvp",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_runt_feedback_parent",
+      "priority": 20
+    },
+    "piglin_runt_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_small_feedback_parent",
+      "priority": 20
+    },
+    "piglin_runt_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_runt_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_small_idle_parent",
+      "priority": 10
+    },
+    "piglin_seeker": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 0,
+      "heat_map": [
+        "heatmap_piglin_seeker_idle",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_large_idle_parent",
+      "priority": 10
+    },
+    "piglin_seeker_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_seeker_attack",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_seeker_feedback_parent",
+      "priority": 10
+    },
+    "piglin_seeker_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "global_minimum": 1,
+      "heat_map": [
+        "heatmap_piglin_seeker_death",
+        "heatmap_music_combat_piglin",
+        "heatmap_music_combat_wild_campaign"
+      ],
+      "max_distance": 100,
+      "parent_category": "piglin_seeker_feedback_parent",
+      "priority": 20
+    },
+    "piglin_seeker_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_large_feedback_parent",
+      "priority": 20
+    },
+    "piglin_small_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_small_parent",
+      "priority": 20
+    },
+    "piglin_small_idle_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_small_parent",
+      "priority": 10
+    },
+    "piglin_small_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_unit_parent",
+      "priority": 10
+    },
+    "piglin_spawn_poofs": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_stun": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_super_netherspreader": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 250
+    },
+    "piglin_unit_boss_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_unit_parent",
+      "priority": 40
+    },
+    "piglin_unit_group": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "piglin_unit_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 25,
+      "priority": 10
+    },
+    "piglin_wall": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "piglin_warboar_feedback_parent": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 8,
+      "parent_category": "piglin_small_feedback_parent",
+      "priority": 30
+    },
+    "platform": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "player_knockback_intense": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_knockback_land": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_knockback_normal": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_knockback_synth": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_knockback_weak": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_stun": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "player_unit_group": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "poi_tower_01": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 300
+    },
+    "poi_tower_02": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 300
+    },
+    "poi_tower_04": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 300
+    },
+    "poi_tower_idle": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "projectile_large": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 300
+    },
+    "projectile_small": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 15,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "pvp_hq_bells": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "rallyman": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 500
+    },
+    "rallyman_dx": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 500
+    },
+    "redstone_launcher": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "rps_notify_intense": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "skip_new_test": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "songbook": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "songbook_build": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "spawner": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "speed_wheat": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "spyglass_overlook": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "stop_event": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "structure_idle_loop": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "structure_improvement": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "structure_mob_alliance": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 150
+    },
+    "structure_placement": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "test": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "tower_anti_siege": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 120
+    },
+    "tower_arrow": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "tower_piglin_arrow": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 150
+    },
+    "tower_piglin_knockback": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "tower_piglin_shield": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 150
+    },
+    "tower_piglin_thrower": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 200
+    },
+    "tower_shotgun": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "treasure_chest": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 100
+    },
+    "ui": {
+      "contention_behaviour": "passthrough",
+      "global_maximum": 0,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "ui_slider": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 1,
+      "global_minimum": 0,
+      "max_distance": -1
+    },
+    "village_attack": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 500
+    },
+    "village_house": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 5,
+      "global_minimum": 0,
+      "max_distance": 150
+    },
+    "villager_culture": {
+      "contention_behaviour": "skip_newest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_villager_culture_idle",
+      "max_distance": 100,
+      "parent_category": "neutral_villager_parent",
+      "priority": 10
+    },
+    "villager_culture_death": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "heat_map": "heatmap_mob_villager_culture_death",
+      "max_distance": 100
+    },
+    "wall": {
+      "contention_behaviour": "kill_furthest",
+      "global_maximum": 10,
+      "global_minimum": 0,
+      "max_distance": 150
+    },
+    "well_of_fate": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 300
+    },
+    "zoner_village_center_fountain": {
+      "contention_behaviour": "kill_oldest",
+      "global_maximum": 3,
+      "global_minimum": 0,
+      "max_distance": 150
+    }
+  }
+}

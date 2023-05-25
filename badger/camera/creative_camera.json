@@ -19,13 +19,13 @@
         "camera_to_accepts_input": false
       },
       "badger:boom_camera": {
-        "boom_length": 15.0,
-        "control_react_spring": 1000.0,
-        "control_stop_spring": 1000.0,
-        "follow_spring": 1000,
-        "max_pitch": 130.0,
-        "min_pitch": 10.0,
-        "target_vertical_offset": 2,
+        "boom_length": 17.0,
+        "control_react_spring": 15.0,
+        "control_stop_spring": 15.0,
+        "follow_spring": 7,
+        "max_pitch": 105.0,
+        "min_pitch": 30.0,
+        "target_vertical_offset": 3.5,
         "starting_pitch": 80,
         "starting_relative_yaw": 45
       },

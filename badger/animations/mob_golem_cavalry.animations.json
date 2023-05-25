@@ -16369,6 +16369,12 @@
             "enabled": true
           }
         ],
+        "0.066":  [
+          {
+            "effect": "dx_walk",
+            "enabled": true
+          }
+        ],
         "0.4":  [
           {
             "effect": "footstep_arm",

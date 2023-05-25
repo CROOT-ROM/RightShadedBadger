@@ -4020,6 +4020,12 @@
         ]
       },
       "sound_effects": {
+        "0.1":  [
+          {
+            "effect": "dx_idle_sprint",
+            "enabled": true
+          }
+        ],
         "0.367":  [
           {
             "effect": "walk_arms",

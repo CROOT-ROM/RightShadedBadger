@@ -4,7 +4,7 @@
     "textures": {
       "diffuseMap": "textures/entity/tex_mount_beetle_face_d",
       "coeffMap": "textures/entity/tex_mount_beetle_face_mr",
-      "emissiveMap": "textures/entity/tex_mount_beetle_face_emissive",
+      "emissiveMap": "textures/entity/tex_mount_beetle_face_e",
       "normalMap": "textures/entity/tex_mount_beetle_face_n"  
     }
   },

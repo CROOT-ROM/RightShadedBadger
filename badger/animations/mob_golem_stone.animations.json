@@ -24341,6 +24341,12 @@
       },
       "loop": true,
       "sound_effects": {
+        "0.033":  [
+          {
+            "effect": "dx_run",
+            "enabled": true
+          }
+        ],
         "0.3":  [
           {
             "effect": "footstep",

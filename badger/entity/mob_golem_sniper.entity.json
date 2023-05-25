@@ -126,6 +126,7 @@
         "dx_greeting": "BAE_mob_golem_sniper_dx_greeting",
         "dx_hurt": "BAE_mob_golem_sniper_dx_hurt",
         "dx_idle": "BAE_mob_golem_sniper_dx_idle",
+        "dx_idle_sprint": "BAE_mob_golem_sniper_dx_idle_sprint",
         "footstep_arm": "BAE_mob_golem_sniper_footstep_arm",
         "footstep_leg": "BAE_mob_golem_sniper_footstep_leg",
         "idle": "BAE_mob_golem_sniper_idle",

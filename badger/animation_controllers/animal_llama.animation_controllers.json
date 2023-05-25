@@ -34,6 +34,19 @@
             }
           ]
         },
+        "celebration": {
+          "animations":  [
+            {
+              "victory_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
         "climb": {
           "animations":  [
             {
@@ -87,6 +100,10 @@
             {
               "effect": "idle",
               "enabled": true
+            },
+            {
+              "effect": "cheer_stop",
+              "enabled": true
             }
           ],
           "transitions":  [
@@ -104,6 +121,12 @@
             },
             {
               "knockback": "query.in_knockback"
+            },
+            {
+              "patpat": "variable.patpat"
+            },
+            {
+              "celebration": "variable.celebration"
             }
           ]
         },
@@ -169,6 +192,25 @@
             },
             {
               "idle": "((query.speed <= 0) && variable.is_swimming)"
+            }
+          ]
+        },
+        "patpat": {
+          "animations":  [
+            {
+              "patpat_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.face_anim_frame = 2;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!variable.patpat"
+            },
+            {
+              "death": "variable.is_dead"
             }
           ]
         },

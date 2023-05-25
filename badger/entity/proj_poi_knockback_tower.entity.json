@@ -19,7 +19,7 @@
       "badger:audio_update_FMOD_projectile_velocity": {},
       "badger:presentation_event": {
         "on_initialized": {
-          "audio": "BAE_proj_poi_tower_01_launch",
+          "audio": "BAE_proj_poi_tower_01_loop",
           "particles": [
             {
               "effect": "badger:fx_proj_poi_knockback_tower_projectile_start",
@@ -36,11 +36,25 @@
         },
         "on_entity_hit": {
           "audio": "BAE_poi_tower_01_projectile_impact_entity",
-          "particles": "badger:fx_proj_poi_knockback_tower_impact"
+          "particles": "badger:fx_proj_poi_knockback_tower_impact",
+          "rumble": {
+            "duration": 0.66,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 20.0
+          }
         },
         "on_world_hit": {
           "audio": "BAE_poi_tower_01_projectile_impact_world",
-          "particles": "badger:fx_proj_poi_knockback_tower_impact"
+          "particles": "badger:fx_proj_poi_knockback_tower_impact",
+          "rumble": {
+            "duration": 0.66,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 30.0
+          }
         }
       },
       "badger:rendering": {

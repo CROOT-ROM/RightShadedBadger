@@ -65,16 +65,44 @@
           }
         },
         "intense_hit": {
-          "audio": "BAE_mount_horse_dx_hurt"
+          "audio": "BAE_mount_horse_dx_hurt",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "intense_knockback": {
-          "audio": "BAE_mount_horse_dx_knockback_intense"
+          "audio": "BAE_mount_horse_dx_knockback_intense",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "normal_hit": {
-          "audio": "BAE_mount_horse_dx_hurt"
+          "audio": "BAE_mount_horse_dx_hurt",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "normal_knockback": {
-          "audio": "BAE_mount_horse_dx_knockback_normal"
+          "audio": "BAE_mount_horse_dx_knockback_normal",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "on_liquid_deep_enter": {
           "audio": "BAE_mount_generic_swim_liquid"
@@ -95,7 +123,23 @@
           "audio": "BAE_mount_horse_sprint_stop"
         },
         "weak_hit": {
-          "audio": "BAE_mount_horse_dx_hurt"
+          "audio": "BAE_mount_horse_dx_hurt",
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
+        },
+        "weak_knockback": {
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
         }
       },
       "badger:rendering": {
@@ -123,10 +167,15 @@
         "cine_rearback": "animation.mount_horse.cine_rearback",
         "death_a": "animation.mount_horse.death_a",
         "default": "controller.animation.mount_horse.default",
+        "fe_anim": "controller.animation.mount_horse.fe_anim",
+        "fe_anim_alt": "controller.animation.mount_horse.fe_anim_alt",
+        "fe_idle_a": "animation.mount_horse.fe_idle_a",
+        "fe_select_a": "animation.mount_horse.fe_select_a",
         "fx_controller": "controller.animation.mount_horse.fx_controller",
         "hit_react": "controller.animation.mount_horse.hit_react",
         "hit_react_b": "animation.animal_horse.hit_react_b",
         "idle_a": "animation.mount_horse.idle_a",
+        "idle_select_a": "animation.mount_horse.idle_select_a",
         "idle_swim_a": "animation.mount_horse.idle_swim_a",
         "jump_ascending_a": "animation.mount_horse.jump_ascending_a",
         "jump_descending_a": "animation.mount_horse.jump_descending_a",
@@ -149,10 +198,7 @@
         "swim_a": "animation.mount_horse.swim_a",
         "tilt": "controller.animation.mount_horse.tilt",
         "trot_a": "animation.mount_horse.trot_a",
-        "walk_a": "animation.mount_horse.walk_a",
-        "fe_select": "animation.mount_horse.cine_rearback",
-        "fe_idle": "animation.mount_horse.idle_a",
-        "fe_anim": "controller.animation.mount_horse.frontend"
+        "walk_a": "animation.mount_horse.walk_a"
       },
       "enable_attachables": false,
       "face_poses": ["Neutral","Neutral Blink"],
@@ -202,7 +248,7 @@
       },
       "textures": {
         "default": "textures/entity/mount_horse/tex_mount_horse_02_d",
-        "default_02": "textures/entity/mount_horse/tex_mount_horse_d",
+        "default_02": "textures/entity/tex_mount_horse_d",
         "default_02_blink": "textures/entity/mount_horse/tex_mount_horse_blink_d",
         "default_blink": "textures/entity/mount_horse/tex_mount_horse_02_blink_d"
       }

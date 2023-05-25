@@ -34,10 +34,7 @@
         "definition": "badger:piglin_magma_cube_lrg",
         "limit": 1024
       },
-      "badger:template": [
-        "badger:template_piglin",
-        "badger:template_status_effects"
-      ],
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
       "badger:threat_source": {
         "base_value": 4,
         "spawn_value": 8,
@@ -60,10 +57,7 @@
         "stun_a": "animation.piglin_magma_cube_lrg.stun_a"
       },
       "enable_attachables": false,
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink"
-      ],
+      "face_poses": ["Neutral","Neutral Blink"],
       "geometry": {
         "default": "geometry.piglin_magma_cube_lrg"
       },
@@ -80,18 +74,14 @@
         "fx_fire": "badger:fx_magma_cube_large_fire",
         "fx_land": "badger:fx_magma_cube_large_land"
       },
-      "render_controllers": [
-        "controller.render.piglin_magma_cube_lrg"
-      ],
+      "render_controllers": ["controller.render.piglin_magma_cube_lrg"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "default": "1"
           }
         ],
-        "initialize": [
-          "variable.second_skin_vis = 0;"
-        ]
+        "initialize": ["variable.second_skin_vis = 0;"]
       },
       "sound_effects": {
         "attack_a": "BAE_piglin_magma_cube_lrg_attack_a",
@@ -106,7 +96,7 @@
         "step": "BAE_piglin_magmacube_big"
       },
       "textures": {
-        "default": "textures/entity/tex_piglin_magma_cube_lrg_d"
+        "default": "textures/entity/piglin_magma_cube_lrg/tex_piglin_magma_cube_lrg_d"
       }
     }
   }

@@ -72,6 +72,15 @@
         "normal_hit": {
           "audio": "BAE_piglin_hammerboss_dx_damage"
         },
+        "on_charge_stun": {
+          "rumble": {
+            "duration": 3,
+            "override": true,
+            "priority": 2,
+            "range": 50,
+            "strength": 25
+          }
+        },
         "on_initialized": {
           "audio": "BAE_combat_proximity_boss"
         },
@@ -80,6 +89,69 @@
         },
         "on_liquid_deep_exit": {
           "audio": "BAE_piglin_generic_swim_liquid_large_stop"
+        },
+        "on_melee_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 40
+          }
+        },
+        "on_melee_flurry_back": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
+        },
+        "on_melee_flurry_forward": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
+        },
+        "on_melee_flurry_left": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
+        },
+        "on_melee_flurry_right": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
+        },
+        "on_melee_swipe": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
+        },
+        "on_melee_swipe_2": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 25
+          }
         },
         "weak_hit": {
           "audio": "BAE_piglin_hammerboss_dx_damage"

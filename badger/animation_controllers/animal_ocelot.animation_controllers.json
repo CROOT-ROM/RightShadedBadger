@@ -73,6 +73,9 @@
             },
             {
               "climb": "((query.velocity_y > 0) && !variable.is_swimming)"
+            },
+            {
+              "patpat": "variable.patpat"
             }
           ]
         },
@@ -103,6 +106,25 @@
             },
             {
               "stun": "(variable.is_stunned && !query.in_knockback)"
+            }
+          ]
+        },
+        "patpat": {
+          "animations":  [
+            {
+              "patpat_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.face_anim_frame = 2;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!variable.patpat"
+            },
+            {
+              "death": "variable.is_dead"
             }
           ]
         },

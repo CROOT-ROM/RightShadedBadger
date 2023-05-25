@@ -384,23 +384,22 @@ const displayInvasionActiveIcon = () => {
       }
 
       // VO
-      if (!isMobAlliance()) {
-        makeEntity(
-          ICON_GROUP.VO_TOOLTIP_INVASION_ACTIVE,
-          MAP_EXTENDED_VO_TOOLTIP.INVASION_VILLAGE_UNDER_ATTACK
-        );
-      } else {
+      if (isMobAlliance()) {
         makeEntity(
           ICON_GROUP.VO_TOOLTIP_INVASION_ACTIVE,
           MAP_EXTENDED_VO_TOOLTIP.INVASION_MOB_ALLIANCE_UNDER_ATTACK
         );
+      } else if (isPlayerOutpost()) {
+        makeEntity(
+          ICON_GROUP.VILLAGE_STATE_TOOLTIP,
+          PLAYER_OUTPOST_VO.UNDER_ATTACK
+        );
       
-        if (isPlayerOutpost()) {
+      } else {
           makeEntity(
-            ICON_GROUP.VO_TOOLTIP,
-            PLAYER_OUTPOST_VO.UNDER_ATTACK
+            ICON_GROUP.VO_TOOLTIP_INVASION_ACTIVE,
+            MAP_EXTENDED_VO_TOOLTIP.INVASION_VILLAGE_UNDER_ATTACK
           );
-        }
       }
       break;
     case MAP_INVASION_ACTIVE.IS_OCCUPIED:
@@ -516,10 +515,7 @@ const displayInvasionRecapIcon = () => {
         MAP_PRESENTATION.IS_CELEBRATING
       );
 
-      makeEntity(
-        ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
-        MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
-      );
+      displayInvasionRecapSuccessTooltip()
 
       if (isPlayerOutpost()) {
         makeEntity(
@@ -591,6 +587,21 @@ const displayInvasionRecapIcon = () => {
       break;
   }
 };
+
+const displayInvasionRecapSuccessTooltip = () => {
+  const faction = get(MAP_CATEGORY.FACTION)
+  if (faction === MAP_FACTION_IDS.CULTURE_VILLAGER) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS_ALLIANCE[faction]
+    );
+  }
+}
 
 const displayInvasionAttackBanner = () => {
   // Need this to position the banner next to the village.

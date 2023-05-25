@@ -434,6 +434,76 @@
         }
       }
     },
+    "controller.animation.mount_horse.fe_anim": {
+      "initial_state": "flourish",
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_select_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_horse.fe_anim_alt": {
+      "initial_state": "new_dud",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_dud": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_dud": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
     "controller.animation.mount_horse.fx_controller": {
       "initial_state": "fx_initial",
       "states": {
@@ -603,39 +673,6 @@
             },
             {
               "descending": "(((variable.is_swimming == 0) && (query.isjumping == 0)) && (query.velocity_y < 0))"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.mount_horse.frontend": {
-      "initial_state": "flourish",
-      "states": {
-        "flourish": {
-          "animations":  [
-            {
-              "fe_select": 1.0
-            }
-          ],
-          "blend_transition": 0.2,
-          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
-          "transitions":  [
-            {
-              "idle": "query.all_animations_finished"
-            }
-          ]
-        },
-        "idle": {
-          "animations":  [
-            {
-              "fe_idle": 1.0
-            }
-          ],
-          "blend_transition": 0.1,
-          "on_exit": ["variable.face_anim_frame = 0;"],
-          "transitions":  [
-            {
-              "flourish": "variable.scene_opened"
             }
           ]
         }

@@ -18,6 +18,13 @@
               "locator": "loc_fx_main"
             }
           ],
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 20,
+            "strength": 45
+          },
           "script": "has_exploded"
         }
       },
@@ -49,6 +56,7 @@
       },
       "particle_effects": {
         "fx_corpse_removal": "badger:fx_shared_piglin_corpse_remove_med",
+        "fx_creeper_explosion_parts": "badger:fx_pig_liquid_mud_hit",
         "fx_piglin_spike_charge": "badger:fx_piglin_lava_thrower_spike_charge_sparks",
         "fx_piglin_spike_charge_embers": "badger:fx_piglin_lava_thrower_spike_charge_embers",
         "fx_piglin_spike_charge_large": "badger:fx_piglin_lava_thrower_spike_charge_sparks_large",

@@ -606,16 +606,17 @@
         }
       }
     },
-    "controller.animation.mount_tiger.frontend": {
+    "controller.animation.mount_tiger.tiger_fe": {
       "initial_state": "flourish",
       "states": {
         "flourish": {
           "animations":  [
             {
-              "fe_select": 1.0
+              "fe_select_a": 1.0
             }
           ],
-          "blend_transition": 0.2,
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
           "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
           "transitions":  [
             {
@@ -626,14 +627,50 @@
         "idle": {
           "animations":  [
             {
-              "fe_idle": 1.0
+              "fe_idle_a": 1.0
             }
           ],
           "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
           "on_exit": ["variable.face_anim_frame = 0;"],
           "transitions":  [
             {
               "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_tiger.tiger_fe_alt": {
+      "initial_state": "new_dud",
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_dud": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_dud": {
+          "animations":  [
+            {
+              "fe_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
             }
           ]
         }

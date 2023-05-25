@@ -3,69 +3,88 @@
     "light_probes": {
       "sunmoon": {
         "0.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         },
         "0.25": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dusk_ssr"
         },
         "0.5": {
-          "authored_source": "textures/environment/tex_cube_grasslands_night"
+          "authored_source": "textures/environment/tex_cube_grasslands_night",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_night_ssr"
         },
         "0.75": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dawn_ssr"
         },
         "1.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         }
       },
       "twosuns": {
         "0.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         },
         "0.25": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dusk_ssr"
         },
         "0.5": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         },
         "0.75": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dawn_ssr"
         },
         "1.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         }
       },
       "darksun": {
         "0.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         },
         "1.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         }
       },
       "welloffate": {
         "0.0": {
-          "authored_source": "textures/environment/tex_cube_onboarding_night"
+          "authored_source": "textures/environment/tex_cube_onboarding_night",
+          "authored_source_ssr": "textures/environment/tex_cube_onboarding_night_ssr"
         },
         "1.0": {
-          "authored_source": "textures/environment/tex_cube_onboarding_night"
+          "authored_source": "textures/environment/tex_cube_onboarding_night",
+          "authored_source_ssr": "textures/environment/tex_cube_onboarding_night_ssr"
         }
       },
       "finalbattle": {
         "0.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         },
         "0.25": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dusk"
+          "authored_source": "textures/environment/tex_cube_grasslands_dusk",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dusk_ssr"
         },
         "0.5": {
-          "authored_source": "textures/environment/tex_cube_grasslands_night"
+          "authored_source": "textures/environment/tex_cube_grasslands_night",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_night_ssr"
         },
         "0.75": {
-          "authored_source": "textures/environment/tex_cube_grasslands_dawn"
+          "authored_source": "textures/environment/tex_cube_grasslands_dawn",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_dawn_ssr"
         },
         "1.0": {
-          "authored_source": "textures/environment/tex_cube_grasslands_day"
+          "authored_source": "textures/environment/tex_cube_grasslands_day",
+          "authored_source_ssr": "textures/environment/tex_cube_grasslands_day_ssr"
         }
       }
     }

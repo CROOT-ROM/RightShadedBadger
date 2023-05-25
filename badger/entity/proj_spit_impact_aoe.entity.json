@@ -4,6 +4,12 @@
         "description": {
             "identifier": "badger:proj_spit_impact_aoe"
         },
-        "components": {}
+        "components": {
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_llama_proj_spit_impact_knockback"
+                }
+            }
+        }
     }
 }

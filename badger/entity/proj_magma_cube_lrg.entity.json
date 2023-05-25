@@ -36,11 +36,25 @@
         },
         "on_world_hit": {
           "audio": "BAE_piglin_magma_boss_proj_magma_cube_impact_world",
-          "particles": "fx_impact"
+          "particles": "fx_impact",
+          "rumble": {
+            "duration": 0.25,
+            "strength": 30,
+            "priority": 2,
+            "override": true,
+            "range": 20
+          }
         },
         "on_entity_hit": {
           "audio": "BAE_piglin_magma_boss_proj_magma_cube_impact_entity",
-          "particles": "fx_impact"
+          "particles": "fx_impact",
+          "rumble": {
+            "duration": 0.25,
+            "strength": 30,
+            "priority": 2,
+            "override": true,
+            "range": 20
+          }
         }
       },
       "badger:rendering": {

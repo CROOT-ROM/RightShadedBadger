@@ -1336,6 +1336,16 @@
          ],
          "category" : "songbook_build"
       },
+      "BAE_UI_sb_build_village_increase_spawner_cap_medium" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{803df880-c255-46d5-984a-87369abc003a}",
+               "external_event_name" : "event:/ui/songbook/build/cat4_village/UI_sb_build_village_increase_spawner_cap_medium"
+            }
+         ],
+         "category" : "songbook_build"
+      },
       "BAE_UI_sb_build_village_increase_starting_cap" : {
          "actions" : [
             {
@@ -1966,6 +1976,16 @@
          ],
          "category" : "songbook"
       },
+      "BAE_UI_sb_hover_village_increase_spawner_cap_medium" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ac512035-0d91-4a86-87be-d61ed0acabd8}",
+               "external_event_name" : "event:/ui/songbook/hover/cat4_village/UI_sb_hover_village_increase_spawner_cap_medium"
+            }
+         ],
+         "category" : "songbook"
+      },
       "BAE_UI_sb_hover_village_increase_starting_cap" : {
          "actions" : [
             {
@@ -2592,6 +2612,16 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{1da0cb62-b178-46f6-9e52-f9887ecbcc1f}",
                "external_event_name" : "event:/ui/songbook/selected/cat4_village/UI_sb_select_village_increase_spawner_cap"
+            }
+         ],
+         "category" : "songbook"
+      },
+      "BAE_UI_sb_select_village_increase_spawner_cap_medium" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{86cce694-6c96-4936-ac0f-1211e5143da6}",
+               "external_event_name" : "event:/ui/songbook/selected/cat4_village/UI_sb_select_village_increase_spawner_cap_medium"
             }
          ],
          "category" : "songbook"
@@ -3904,8 +3934,8 @@
          "actions" : [
             {
                "action_type" : "sound_event",
-               "external_event_guid" : "{ee91509f-1231-44ba-bf87-09e1b30be618}",
-               "external_event_name" : "event:/ambience/amb_vfx_sfx/amb_vfx_wind_gust"
+               "external_event_guid" : "{779d192a-c44d-4166-b2b2-462fcd5b8e34}",
+               "external_event_name" : "event:/tu0/amb_vfx_sfx/amb_vfx_wind_gust_02"
             }
          ],
          "category" : "ambience"
@@ -5436,6 +5466,19 @@
          ],
          "category" : "animal_llama_idle"
       },
+      "BAE_animal_llama_cheer_stop" : {
+         "actions" : [
+            {
+               "action_type" : "stop_event_on_target",
+               "external_event_name" : "event:/neutral_units/animals/llama/animal_llama_cheer"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "external_event_name" : "event:/neutral_units/animals/llama/animal_llama_dx_cheer"
+            }
+         ],
+         "category" : "stop_event"
+      },
       "BAE_animal_llama_death" : {
          "actions" : [
             {
@@ -5576,6 +5619,10 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{e06a2773-9fe8-498d-876a-f69bebeafa3a}",
                "external_event_name" : "event:/impacts/neutral/animal_llama_proj_spit_impact_world"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/projectiles/proj_spit"
             }
          ],
          "category" : "projectile_small"
@@ -7382,7 +7429,8 @@
                "external_event_name" : "event:/structures/player/zoner_regen_structures_Carpenter/carpenter_dmg_stage0"
             }
          ],
-         "category" : "carpenter"
+         "category" : "carpenter",
+         "cooldown" : 10.0
       },
       "BAE_carpenter_dmg_stage1" : {
          "actions" : [
@@ -7392,7 +7440,8 @@
                "external_event_name" : "event:/structures/player/zoner_regen_structures_Carpenter/carpenter_dmg_stage1"
             }
          ],
-         "category" : "carpenter"
+         "category" : "carpenter",
+         "cooldown" : 10.0
       },
       "BAE_carpenter_dmg_stage2" : {
          "actions" : [
@@ -7402,7 +7451,8 @@
                "external_event_name" : "event:/structures/player/zoner_regen_structures_Carpenter/carpenter_dmg_stage2"
             }
          ],
-         "category" : "carpenter"
+         "category" : "carpenter",
+         "cooldown" : 10.0
       },
       "BAE_carpenter_heal_full" : {
          "actions" : [
@@ -9928,7 +9978,7 @@
          "actions" : [
             {
                "action_type" : "sound_event",
-               "external_event_name" : "snapshot:/combat_proximity_boss"
+               "external_event_name" : "snapshot:/game_states/combat_proximity_boss"
             }
          ],
          "category" : "mix_change"
@@ -9937,7 +9987,7 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "snapshot:/combat_proximity_boss"
+               "name" : "snapshot:/game_states/combat_proximity_boss"
             }
          ],
          "category" : "stop_event"
@@ -10771,7 +10821,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_cheer"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_dx_attack_short" : {
          "actions" : [
@@ -10791,7 +10841,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_dx_cheer"
             }
          ],
-         "category" : "mob_golem_wood_idle",
+         "category" : "mob_golem_wood_vox",
          "probability" : 0.6
       },
       "BAE_golem_wood_dx_death" : {
@@ -10834,7 +10884,18 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_dx_idle"
             }
          ],
-         "category" : "mob_golem_wood_idle",
+         "category" : "mob_golem_wood_vox",
+         "probability" : 0.2
+      },
+      "BAE_golem_wood_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{d3ffd22e-b521-4795-bdcb-01b2ddb7f2b0}",
+               "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_dx_idle"
+            }
+         ],
+         "category" : "mob_golem_wood_vox",
          "probability" : 0.2
       },
       "BAE_golem_wood_dx_knockback_intense" : {
@@ -10893,7 +10954,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_footstep"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_footstep_onboarding" : {
          "actions" : [
@@ -10903,7 +10964,7 @@
                "external_event_name" : "event:/onboarding/units/player_units/golem_wood/golem_wood_footstep_onboarding"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_idle_snout_shake" : {
          "actions" : [
@@ -10913,7 +10974,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_idle_snout_shake"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_jump" : {
          "actions" : [
@@ -10923,7 +10984,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_jump"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_jump_land" : {
          "actions" : [
@@ -10933,7 +10994,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_jump_land"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_jump_land_onboarding" : {
          "actions" : [
@@ -10943,7 +11004,7 @@
                "external_event_name" : "event:/onboarding/units/player_units/golem_wood/golem_wood_jump_land_onboarding"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_knockback_land" : {
          "actions" : [
@@ -10981,7 +11042,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_move_stun"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_golem_wood_swim" : {
          "actions" : [
@@ -10991,7 +11052,7 @@
                "external_event_name" : "event:/player_units/mob/golem_wood/golem_wood_swim"
             }
          ],
-         "category" : "mob_golem_wood_idle"
+         "category" : "mob_golem_wood_foley"
       },
       "BAE_hero_allay_celebration" : {
          "actions" : [
@@ -12573,6 +12634,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_bone_flesh_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{223a1baa-3d37-430d-85bd-bd3c734ef42b}",
+               "external_event_name" : "event:/impacts/hit_target/bone_flesh/impact_bone_flesh_blunt"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_bone_hero" : {
          "actions" : [
             {
@@ -12763,6 +12834,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_flesh_bone_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{a1f89f2d-2dd4-406b-a614-119ed2c55e5c}",
+               "external_event_name" : "event:/impacts/hit_target/flesh_bone/impact_flesh_bone_splat"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_flesh_explosion" : {
          "actions" : [
             {
@@ -12863,6 +12944,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_flesh_metal_chain_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{4eb86fa4-8033-4ca8-8273-1d2bdd4ee004}",
+               "external_event_name" : "event:/impacts/hit_target/flesh_metal_chain/impact_flesh_metal_chain_splat"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_flesh_metal_explosion" : {
          "actions" : [
             {
@@ -12903,6 +12994,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_flesh_metal_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{9eb83acf-ce30-468d-89d2-2813be918836}",
+               "external_event_name" : "event:/impacts/hit_target/flesh_metal/impact_flesh_metal_splat"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_flesh_pierce" : {
          "actions" : [
             {
@@ -12929,6 +13030,16 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{d4de336c-cc3a-4c56-8fbf-981ce0bd8a58}",
                "external_event_name" : "event:/impacts/hit_target/flesh/impact_flesh_slash"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
+      "BAE_impact_flesh_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{aaff72b6-cacf-48c0-a3aa-e3b7f785ef09}",
+               "external_event_name" : "event:/impacts/hit_target/flesh/impact_flesh_splat"
             }
          ],
          "category" : "impacts_generic"
@@ -12993,6 +13104,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_flesh_spore_wet_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{22f178ce-fe3e-40eb-99b6-b241f43d2df6}",
+               "external_event_name" : "event:/impacts/hit_target/flesh_spore_wet/impact_flesh_spore_wet_splat"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_magic_portal_alert_hi_blunt" : {
          "actions" : [
             {
@@ -13053,6 +13174,16 @@
          ],
          "category" : "impacts_priority"
       },
+      "BAE_impact_magic_portal_alert_hi_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{7bb8e568-7b2f-4bc2-9683-4fb66a963000}",
+               "external_event_name" : "event:/impacts/hit_target/magic_portal_alert_hi/impact_magic_portal_alert_hi_splat"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
       "BAE_impact_magic_portal_shielded_alert_hi_blunt" : {
          "actions" : [
             {
@@ -13109,6 +13240,16 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{ce0a1213-5851-4780-8f29-d947a409b3d9}",
                "external_event_name" : "event:/impacts/hit_target/magic_portal_shielded_alert_hi/impact_magic_portal_shielded_alert_hi_slash"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
+      "BAE_impact_magic_portal_shielded_alert_hi_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{2ab0e525-7640-40e4-980b-8088262ad53e}",
+               "external_event_name" : "event:/impacts/hit_target/magic_portal_shielded_alert_hi/impact_magic_portal_shielded_alert_hi_splat"
             }
          ],
          "category" : "impacts_priority"
@@ -13373,6 +13514,16 @@
          ],
          "category" : "impacts_generic"
       },
+      "BAE_impact_netherite_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{5cd94a42-4919-466f-a40f-e247688d4bcc}",
+               "external_event_name" : "event:/impacts/hit_target/netherite/impact_netherite_splat"
+            }
+         ],
+         "category" : "impacts_generic"
+      },
       "BAE_impact_stone_blunt" : {
          "actions" : [
             {
@@ -13573,6 +13724,16 @@
          ],
          "category" : "impacts_priority"
       },
+      "BAE_impact_unique_netherite_alert_low_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{cf06b655-8e7e-4ea9-b3e6-b11364b96b2b}",
+               "external_event_name" : "event:/impacts/hit_target/unique_netherite_alert_low/impact_unique_netherite_alert_low_splat"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
       "BAE_impact_unique_netherite_alert_med_blunt" : {
          "actions" : [
             {
@@ -13629,6 +13790,16 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{36bc4423-0697-40a8-b32b-2ed066839c9e}",
                "external_event_name" : "event:/impacts/hit_target/unique_netherite_alert_med/impact_unique_netherite_alert_med_slash"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
+      "BAE_impact_unique_netherite_alert_med_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{413dfcbd-5c02-4544-b26f-984e222bdbc9}",
+               "external_event_name" : "event:/impacts/hit_target/unique_netherite_alert_med/impact_unique_netherite_alert_med_splat"
             }
          ],
          "category" : "impacts_priority"
@@ -13693,6 +13864,16 @@
          ],
          "category" : "impacts_priority"
       },
+      "BAE_impact_unique_netherite_bone_alert_low_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{1c2d0eb8-0d35-44d4-9e7e-fb8fec4d4a60}",
+               "external_event_name" : "event:/impacts/hit_target/unique_netherite_bone_alert_low/impact_unique_netherite_bone_alert_low_splat"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
       "BAE_impact_unique_netherite_goopy_alert_low_blunt" : {
          "actions" : [
             {
@@ -13753,6 +13934,16 @@
          ],
          "category" : "impacts_priority"
       },
+      "BAE_impact_unique_netherite_goopy_alert_low_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{5cadf3bd-800d-4bcf-b586-4582e1d0b264}",
+               "external_event_name" : "event:/impacts/hit_target/unique_netherite_goopy_alert_low/impact_unique_netherite_goopy_alert_low_splat"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
       "BAE_impact_unique_netherrack_bone_alert_low_blunt" : {
          "actions" : [
             {
@@ -13809,6 +14000,16 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{5b24203c-0f28-44fb-85fe-d1742f9e14da}",
                "external_event_name" : "event:/impacts/hit_target/unique_netherrack_bone_alert_low/impact_unique_netherrack_bone_alert_low_slash"
+            }
+         ],
+         "category" : "impacts_priority"
+      },
+      "BAE_impact_unique_netherrack_bone_alert_low_splat" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{85ef21de-6fa8-4868-8f1a-0be454e01da6}",
+               "external_event_name" : "event:/impacts/hit_target/unique_netherrack_bone_alert_low/impact_unique_netherrack_bone_alert_low_splat"
             }
          ],
          "category" : "impacts_priority"
@@ -14625,6 +14826,11 @@
                "action_type" : "mix_change",
                "enabled" : true,
                "name" : "snapshot:/STATE_pvp_post_game"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_ll_game_end"
             }
          ],
          "category" : "music"
@@ -14692,7 +14898,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{9af1bcf0-7fe0-4219-b7d4-3031b11e1e60}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{36918a35-9e89-48bf-9ca1-87fd54d23846}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14701,7 +14912,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14715,7 +14930,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_activate_spawner_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14874,7 +15093,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{2e627a39-07ce-4a49-b195-da1b68b71e8d}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ef8b57be-6063-4708-8cee-7af39b93fb5d}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14884,7 +15108,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{6ffec028-909b-4431-af47-029eb4212afd}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_complete"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_complete_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{5da4cd32-ac7d-47b4-ab63-abef57722304}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_complete_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14893,7 +15122,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14907,7 +15140,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_chest_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14922,7 +15159,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{dc6641d7-e189-43f1-8994-0b1b96e06dbf}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{819e0d60-a7cc-44e6-8f28-d6b445ebab90}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14932,7 +15174,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{86e06442-1ff8-4ae6-b2e3-88b542e83a15}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_complete"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_complete_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{93842e10-c080-4004-9672-46955088ded2}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_complete_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14941,7 +15188,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14955,7 +15206,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_cage_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -14970,7 +15225,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{d8e17f15-2041-491a-b6c2-5b43ca8cb7dc}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{bc5b287e-3959-4052-8500-69f7acd0cc25}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14980,7 +15240,12 @@
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{b42c7cf2-dcb1-453e-9c89-1fec3f4225fb}",
-               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_complete"
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_complete_Bb_C"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{8ff16053-f7d5-4e5f-b576-0040cb6a0f84}",
+               "external_event_name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_complete_Ab_B"
             }
          ],
          "category" : "hero"
@@ -14989,7 +15254,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -15003,7 +15272,11 @@
          "actions" : [
             {
                "action_type" : "stop_event_on_target",
-               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate"
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Bb_C"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/hero/attachments/lute/interaction_melodies/lute_melody_open_piglin_crate_Ab_B"
             },
             {
                "action_type" : "sound_event",
@@ -15716,7 +15989,8 @@
                "external_event_name" : "event:/player_units/mob/creeper/mob_creeper_dx_directed"
             }
          ],
-         "category" : "mob_creeper_directed"
+         "category" : "mob_creeper_directed",
+         "probability" : 0.4
       },
       "BAE_mob_creeper_dx_happy" : {
          "actions" : [
@@ -15749,6 +16023,17 @@
             }
          ],
          "category" : "mob_creeper_vox"
+      },
+      "BAE_mob_creeper_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{a052e4b0-b0ac-4ef8-ad53-c73b3369e384}",
+               "external_event_name" : "event:/player_units/mob/creeper/mob_creeper_dx_idle"
+            }
+         ],
+         "category" : "mob_creeper_vox",
+         "probability" : 0.1
       },
       "BAE_mob_creeper_dx_knockback_intense" : {
          "actions" : [
@@ -16244,6 +16529,17 @@
          "category" : "mob_fallen_warrior_idle",
          "probability" : 0.4
       },
+      "BAE_mob_fallen_warrior_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{6f39ec43-059b-429b-a135-8a903a58057d}",
+               "external_event_name" : "event:/player_units/poi_golem/fallen_warrior/mob_fallen_warrior_dx_idle"
+            }
+         ],
+         "category" : "mob_fallen_warrior_idle",
+         "probability" : 0.1
+      },
       "BAE_mob_fallen_warrior_dx_lured" : {
          "actions" : [
             {
@@ -16253,7 +16549,7 @@
             }
          ],
          "category" : "mob_fallen_warrior_idle",
-         "probability" : 0.75
+         "probability" : 0.8
       },
       "BAE_mob_fallen_warrior_idle" : {
          "actions" : [
@@ -16335,6 +16631,16 @@
             }
          ],
          "category" : "mob_fallen_warrior_idle"
+      },
+      "BAE_mob_generic_disband" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{87d24c97-cd77-4137-8f37-a8bcdb0a80ca}",
+               "external_event_name" : "event:/player_units/mob/_generic/mob_generic_disband"
+            }
+         ],
+         "category" : "mob_generic_disband"
       },
       "BAE_mob_generic_recall_complete" : {
          "actions" : [
@@ -16544,6 +16850,17 @@
          ],
          "category" : "mob_golem_carrier_idle",
          "probability" : 0.4
+      },
+      "BAE_mob_golem_carrier_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{198c4f69-bae1-4773-9d32-8b2a62f98898}",
+               "external_event_name" : "event:/player_units/mob/golem_carrier/mob_golem_carrier_dx_idle"
+            }
+         ],
+         "category" : "mob_golem_carrier_idle",
+         "probability" : 0.2
       },
       "BAE_mob_golem_carrier_dx_lured" : {
          "actions" : [
@@ -16817,7 +17134,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_cheer"
             }
          ],
-         "category" : "mob_golem_cavalry_idle"
+         "category" : "mob_golem_cavalry_foley"
       },
       "BAE_mob_golem_cavalry_dx_attack_a" : {
          "actions" : [
@@ -16860,7 +17177,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_dx_cheer"
             }
          ],
-         "category" : "mob_golem_cavalry_idle",
+         "category" : "mob_golem_cavalry_vox",
          "probability" : 0.8
       },
       "BAE_mob_golem_cavalry_dx_death" : {
@@ -16907,7 +17224,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_dx_idle"
             }
          ],
-         "category" : "mob_golem_cavalry_idle",
+         "category" : "mob_golem_cavalry_vox",
          "probability" : 0.35
       },
       "BAE_mob_golem_cavalry_dx_knockback_intense" : {
@@ -16951,8 +17268,8 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_dx_walk"
             }
          ],
-         "category" : "mob_golem_cavalry_idle",
-         "probability" : 0.2
+         "category" : "mob_golem_cavalry_vox",
+         "probability" : 0.1
       },
       "BAE_mob_golem_cavalry_footstep_arm" : {
          "actions" : [
@@ -16962,7 +17279,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_footstep_arm"
             }
          ],
-         "category" : "mob_golem_cavalry_idle"
+         "category" : "mob_golem_cavalry_foley"
       },
       "BAE_mob_golem_cavalry_group_attack" : {
          "actions" : [
@@ -17022,7 +17339,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_jump"
             }
          ],
-         "category" : "mob_golem_cavalry_idle"
+         "category" : "mob_golem_cavalry_foley"
       },
       "BAE_mob_golem_cavalry_jump_land" : {
          "actions" : [
@@ -17032,7 +17349,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_jump_land"
             }
          ],
-         "category" : "mob_golem_cavalry_idle"
+         "category" : "mob_golem_cavalry_foley"
       },
       "BAE_mob_golem_cavalry_knockback_land" : {
          "actions" : [
@@ -17060,7 +17377,7 @@
                "external_event_name" : "event:/player_units/mob/golem_cavalry/mob_golem_cavalry_swim"
             }
          ],
-         "category" : "mob_golem_cavalry_idle"
+         "category" : "mob_golem_cavalry_foley"
       },
       "BAE_mob_golem_shield_attack_melee_reset" : {
          "actions" : [
@@ -17255,7 +17572,18 @@
             }
          ],
          "category" : "mob_golem_shield_idle",
-         "probability" : 0.25
+         "probability" : 0.35
+      },
+      "BAE_mob_golem_shield_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ee4e00cc-7d08-4100-b857-9d250d9dc96f}",
+               "external_event_name" : "event:/player_units/mob/golem_shield/mob_golem_shield_dx_idle"
+            }
+         ],
+         "category" : "mob_golem_shield_idle",
+         "probability" : 0.4
       },
       "BAE_mob_golem_shield_dx_lured" : {
          "actions" : [
@@ -17266,7 +17594,7 @@
             }
          ],
          "category" : "mob_golem_shield_idle",
-         "probability" : 0.7
+         "probability" : 0.8
       },
       "BAE_mob_golem_shield_fly_walk" : {
          "actions" : [
@@ -17619,7 +17947,7 @@
             }
          ],
          "category" : "mob_golem_sniper_idle",
-         "probability" : 0.7
+         "probability" : 0.85
       },
       "BAE_mob_golem_sniper_dx_greeting" : {
          "actions" : [
@@ -17651,7 +17979,18 @@
             }
          ],
          "category" : "mob_golem_sniper_idle",
-         "probability" : 0.4
+         "probability" : 0.5
+      },
+      "BAE_mob_golem_sniper_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{be2fabc1-7c78-4941-84a2-3bc134366bb1}",
+               "external_event_name" : "event:/player_units/mob/golem_sniper/mob_golem_sniper_dx_idle"
+            }
+         ],
+         "category" : "mob_golem_sniper_idle",
+         "probability" : 0.1
       },
       "BAE_mob_golem_sniper_dx_lured" : {
          "actions" : [
@@ -17662,7 +18001,7 @@
             }
          ],
          "category" : "mob_golem_sniper_idle",
-         "probability" : 0.6
+         "probability" : 0.8
       },
       "BAE_mob_golem_sniper_footstep_arm" : {
          "actions" : [
@@ -17850,7 +18189,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_cheer"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_death_roll" : {
          "actions" : [
@@ -17958,7 +18297,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_cheer"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_vox"
       },
       "BAE_mob_golem_stone_dx_death" : {
          "actions" : [
@@ -18001,7 +18340,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_idle"
             }
          ],
-         "category" : "mob_golem_stone_idle",
+         "category" : "mob_golem_stone_vox",
          "probability" : 0.15
       },
       "BAE_mob_golem_stone_dx_jump" : {
@@ -18012,7 +18351,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_jump"
             }
          ],
-         "category" : "mob_golem_stone_idle",
+         "category" : "mob_golem_stone_vox",
          "probability" : 0.8
       },
       "BAE_mob_golem_stone_dx_knockback_intense" : {
@@ -18071,8 +18410,8 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_run"
             }
          ],
-         "category" : "mob_golem_stone_idle",
-         "probability" : 0.6
+         "category" : "mob_golem_stone_vox",
+         "probability" : 0.1
       },
       "BAE_mob_golem_stone_dx_scared" : {
          "actions" : [
@@ -18082,7 +18421,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_scared"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_vox"
       },
       "BAE_mob_golem_stone_dx_yes" : {
          "actions" : [
@@ -18092,7 +18431,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_dx_yes"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_vox"
       },
       "BAE_mob_golem_stone_footstep" : {
          "actions" : [
@@ -18102,7 +18441,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_footstep"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_footstep_onboarding" : {
          "actions" : [
@@ -18112,7 +18451,7 @@
                "external_event_name" : "event:/onboarding/units/player_units/golem_stone/mob_golem_stone_footstep_onboarding"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_group_attack" : {
          "actions" : [
@@ -18172,7 +18511,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_jump_high"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_jump_land" : {
          "actions" : [
@@ -18182,7 +18521,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_jump_land"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_jump_land_onboarding" : {
          "actions" : [
@@ -18192,7 +18531,7 @@
                "external_event_name" : "event:/onboarding/units/player_units/golem_stone/mob_golem_stone_jump_land_onboarding"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_jump_low" : {
          "actions" : [
@@ -18202,7 +18541,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_jump_low"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_knockback_land" : {
          "actions" : [
@@ -18230,7 +18569,7 @@
                "external_event_name" : "event:/onboarding/units/player_units/golem_stone/mob_golem_stone_knockback_land_onboarding"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_move_arms_double" : {
          "actions" : [
@@ -18240,7 +18579,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_move_arms_double"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_move_arms_single" : {
          "actions" : [
@@ -18250,7 +18589,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_move_arms_single"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_swim_arm" : {
          "actions" : [
@@ -18260,7 +18599,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_swim_arm"
             }
          ],
-         "category" : "mob_golem_stone_idle"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_stone_swim_idle" : {
          "actions" : [
@@ -18270,17 +18609,7 @@
                "external_event_name" : "event:/player_units/mob/golem_stone/mob_golem_stone_swim_idle"
             }
          ],
-         "category" : "mob_golem_stone_idle"
-      },
-      "BAE_mob_golem_support_attack_a" : {
-         "actions" : [
-            {
-               "action_type" : "sound_event",
-               "external_event_guid" : "{7f86ebcf-956d-4f19-add2-40257436880a}",
-               "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_attack_a"
-            }
-         ],
-         "category" : "mob_golem_support_attack"
+         "category" : "mob_golem_stone_foley"
       },
       "BAE_mob_golem_support_attack_a_stop" : {
          "actions" : [
@@ -18323,7 +18652,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_cheer"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_support_climb" : {
          "actions" : [
@@ -18333,10 +18662,15 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_climb"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_support_dx_attack_a" : {
          "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{7f86ebcf-956d-4f19-add2-40257436880a}",
+               "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_attack_a"
+            },
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{eba55458-44a3-4028-ad8b-ed03961f80e7}",
@@ -18372,7 +18706,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_dx_cheer"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_vox"
       },
       "BAE_mob_golem_support_dx_death" : {
          "actions" : [
@@ -18415,7 +18749,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_dx_idle"
             }
          ],
-         "category" : "mob_golem_support_idle",
+         "category" : "mob_golem_support_vox",
          "probability" : 0.15
       },
       "BAE_mob_golem_support_dx_knockback_intense" : {
@@ -18459,8 +18793,8 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_dx_walk"
             }
          ],
-         "category" : "mob_golem_support_idle",
-         "probability" : 0.2
+         "category" : "mob_golem_support_vox",
+         "probability" : 0.1
       },
       "BAE_mob_golem_support_footstep" : {
          "actions" : [
@@ -18470,7 +18804,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_footstep"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_support_footstep_body" : {
          "actions" : [
@@ -18480,7 +18814,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_footstep_body"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_support_footstep_idle" : {
          "actions" : [
@@ -18490,7 +18824,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_footstep_idle"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_support_group_attack" : {
          "actions" : [
@@ -18578,7 +18912,7 @@
                "external_event_name" : "event:/player_units/mob/golem_support/mob_golem_support_torso_drop"
             }
          ],
-         "category" : "mob_golem_support_idle"
+         "category" : "mob_golem_support_foley"
       },
       "BAE_mob_golem_wood_group_attack" : {
          "actions" : [
@@ -18776,6 +19110,17 @@
          "category" : "mob_illager_axe_vox",
          "probability" : 0.05
       },
+      "BAE_mob_illager_axe_dx_idle_sprint" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{cfc8f471-4eda-492c-b0ce-9f0f4131c985}",
+               "external_event_name" : "event:/neutral_units/vindicator/mob_illager_axe_dx_idle"
+            }
+         ],
+         "category" : "mob_illager_axe_vox",
+         "probability" : 0.01
+      },
       "BAE_mob_illager_axe_dx_knockback_intense" : {
          "actions" : [
             {
@@ -18818,7 +19163,7 @@
             }
          ],
          "category" : "mob_illager_axe_vox",
-         "probability" : 0.6
+         "probability" : 1.0
       },
       "BAE_mob_illager_axe_dx_spawn" : {
          "actions" : [
@@ -19857,7 +20202,7 @@
             }
          ],
          "category" : "mob_zombie_vox",
-         "probability" : 0.1
+         "probability" : 0.02
       },
       "BAE_mob_zombie_footstep" : {
          "actions" : [
@@ -21709,12 +22054,132 @@
          ],
          "category" : "music"
       },
+      "BAE_mus_stinger_ll3_lose" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{0e94af5f-be54-4903-99ef-afd1259efa2a}",
+               "external_event_name" : "event:/music/stingers/pvp/pvp_match_end_lose"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/tu0/music/ll3/music_in_game_ll3",
+               "target" : "global"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/tu0/music/ll3/music_in_game_ll3_exploration",
+               "target" : "global"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : true,
+               "name" : "snapshot:/STATE_ll_game_end"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll3_piglin_attack_target" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3e6506f1-b49b-45f7-b566-4e4dd68bb79e}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_target"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3e806da2-710c-4df0-9ec4-638a69b0355b}",
+               "external_event_name" : "event:/piglin_units/_generic/rallyman/rallyman_piglin_dx_tactic_target"
+            }
+         ],
+         "category" : "rallyman"
+      },
+      "BAE_mus_stinger_ll3_piglin_structure_destroyed" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{03346c1a-4676-474b-a940-56cb168a42ef}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_attack"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{0a597dff-af95-47e5-975b-491808fe8ea3}",
+               "external_event_name" : "event:/piglin_units/_generic/rallyman/rallyman_piglin_dx_tactic_attack"
+            }
+         ],
+         "category" : "rallyman"
+      },
+      "BAE_mus_stinger_ll3_player_structure_built" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{9f05611a-ff73-4642-838b-50bec641d714}",
+               "external_event_name" : "event:/piglin_units/_generic/rallyman/rallyman_piglin_dx_tactic_build"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{eef3a626-e766-4602-a910-69aea4191793}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_build"
+            }
+         ],
+         "category" : "rallyman"
+      },
+      "BAE_mus_stinger_ll3_time_1" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{808f05e2-7f04-4999-8714-b02bc50745d2}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_01"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll3_time_5" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{9a5abcbf-bf95-4ebb-838f-b7f7fb348fc2}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_05"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll3_win" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{93f4c3a3-d525-4005-b971-e88e946029a3}",
+               "external_event_name" : "event:/music/stingers/pvp/pvp_match_end_win"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/tu0/music/ll3/music_in_game_ll3",
+               "target" : "global"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/tu0/music/ll3/music_in_game_ll3_exploration",
+               "target" : "global"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : true,
+               "name" : "snapshot:/STATE_ll_game_end"
+            }
+         ],
+         "category" : "music"
+      },
       "BAE_mus_stinger_ll4_fountain_low_health" : {
          "actions" : [
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{3cb08f43-0968-4b21-bffa-6240e88eafb9}",
                "external_event_name" : "event:/music/stingers/village_attack/mus_stinger_village_attack_occupied"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{06d48642-a584-4663-b6b4-09911f4e9d88}",
+               "external_event_name" : "event:/tu0/structures/ll4_fountain_low_health"
             }
          ],
          "category" : "music"
@@ -21772,6 +22237,132 @@
             }
          ],
          "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_boss_spawn_group_1" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{03346c1a-4676-474b-a940-56cb168a42ef}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_attack"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_boss_spawn_group_2" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3e6506f1-b49b-45f7-b566-4e4dd68bb79e}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_target"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_boss_spawn_group_3" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{eef3a626-e766-4602-a910-69aea4191793}",
+               "external_event_name" : "event:/music/stingers/rallyman/mus_stinger_rallyman_piglin_tactic_build"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_chamber_cleared" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3585bbc6-7c5c-47c1-9df8-1553774c242d}",
+               "external_event_name" : "event:/music/stingers/village_attack/mus_stinger_village_attack_ending"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_chamber_engaged" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3cb08f43-0968-4b21-bffa-6240e88eafb9}",
+               "external_event_name" : "event:/music/stingers/village_attack/mus_stinger_village_attack_occupied"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_engineer_spawn" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{f45e5d67-3099-4b95-af2f-e4169a44d3a5}",
+               "external_event_name" : "event:/tu0/music/ll1/stingers/mus_stinger_ll1_special_wave_start"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_mus_stinger_ll5_time_1" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{808f05e2-7f04-4999-8714-b02bc50745d2}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_01"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll5_time_10" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ed5cf356-b63d-4293-bbfd-6fd86ebe973b}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_10"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll5_time_20" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{c4c79b4f-73e4-4612-8baa-ba221db6b604}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_30"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll5_time_5" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{9a5abcbf-bf95-4ebb-838f-b7f7fb348fc2}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_05"
+            },
+            {
+               "action_type" : "param_change",
+               "name" : "lost_legend_beat",
+               "param" : 3.0,
+               "target" : "global"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll5_time_generic" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{34083cc5-c138-4058-a391-c9aa38f77a08}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_generic"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_mus_stinger_ll5_time_popup" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{e1e82373-8829-4020-a88c-48e87a4fadf6}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/timeleft_popups/ui_timeleft_popup"
+            }
+         ],
+         "category" : "ui"
       },
       "BAE_mus_stinger_onboarding_01_resources" : {
          "actions" : [
@@ -22264,12 +22855,47 @@
          ],
          "category" : "music"
       },
+      "BAE_music_in_game_ll3" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{09728d57-f02b-40ad-a28d-1fb3cda6dada}",
+               "external_event_name" : "event:/tu0/music/ll3/music_in_game_ll3"
+            },
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{6bd71017-b4fa-4224-bab3-874c5414dabb}",
+               "external_event_name" : "event:/tu0/music/ll3/music_in_game_ll3_exploration"
+            }
+         ],
+         "category" : "music"
+      },
       "BAE_music_in_game_ll4" : {
          "actions" : [
             {
                "action_type" : "sound_event",
                "external_event_guid" : "{b2d7748f-57c6-479e-8a82-a7cc0d432ad5}",
                "external_event_name" : "event:/tu0/music/ll4/music_in_game_ll4"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_music_in_game_ll5" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{2b1d00e2-8ef2-4101-b373-04fa267b340d}",
+               "external_event_name" : "event:/tu0/music/ll5/music_in_game_ll5"
+            }
+         ],
+         "category" : "music"
+      },
+      "BAE_music_in_game_ll6" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{fb1a081a-5ce3-460f-a332-a575fb05eae6}",
+               "external_event_name" : "event:/tu0/music/ll6/music_in_game_ll6"
             }
          ],
          "category" : "music"
@@ -23431,8 +24057,8 @@
          "actions" : [
             {
                "action_type" : "sound_event",
-               "external_event_guid" : "{39df83e9-2b6a-4fb8-aed5-3d5f711dcbc2}",
-               "external_event_name" : "event:/structures/piglin/piglin_extender/piglin_extender_skull_vox"
+               "external_event_guid" : "{48cdee0f-3920-4e06-894a-e19a02bb8f37}",
+               "external_event_name" : "event:/tu0/structures/piglin/piglin_extender/piglin_extender_skull_vox_02"
             }
          ],
          "category" : "piglin_extender",
@@ -24013,7 +24639,7 @@
             {
                "action_type" : "mix_change",
                "enabled" : true,
-               "name" : "snapshot:/combat_proximity_boss_final"
+               "name" : "snapshot:/game_states/combat_proximity_boss_final"
             }
          ],
          "category" : "piglin_final_boss"
@@ -24037,7 +24663,7 @@
             {
                "action_type" : "mix_change",
                "enabled" : false,
-               "name" : "snapshot:/combat_proximity_boss_final"
+               "name" : "snapshot:/game_states/combat_proximity_boss_final"
             }
          ],
          "category" : "stop_event"
@@ -26385,7 +27011,7 @@
             },
             {
                "action_type" : "sound_event",
-               "external_event_name" : "snapshot:/combat_proximity_boss"
+               "external_event_name" : "snapshot:/game_states/combat_proximity_boss"
             }
          ],
          "category" : "piglin_magma_boss"
@@ -30207,7 +30833,8 @@
                "external_event_name" : "event:/tu0/neutral_units/animals/player_llama/player_llama_dx_lured"
             }
          ],
-         "category" : "hero"
+         "category" : "hero",
+         "probability" : 0.8
       },
       "BAE_player_llama_hurt" : {
          "actions" : [
@@ -30227,7 +30854,8 @@
                "external_event_name" : "event:/tu0/neutral_units/animals/player_llama/player_llama_idle"
             }
          ],
-         "category" : "hero"
+         "category" : "hero",
+         "probability" : 0.5
       },
       "BAE_player_llama_jump_buffed" : {
          "actions" : [
@@ -30273,6 +30901,10 @@
                "action_type" : "sound_event",
                "external_event_guid" : "{ac80869d-f4d0-46a7-a7b0-aaa6deeb0983}",
                "external_event_name" : "event:/impacts/neutral/player_llama_proj_spit_impact_entity"
+            },
+            {
+               "action_type" : "stop_event_on_target",
+               "name" : "event:/projectiles/proj_spit"
             }
          ],
          "category" : "projectile_small"
@@ -30329,7 +30961,8 @@
                "external_event_name" : "event:/tu0/neutral_units/animals/player_llama/player_llama_stun"
             }
          ],
-         "category" : "hero"
+         "category" : "hero",
+         "probability" : 0.7
       },
       "BAE_player_llama_swim_oneshot" : {
          "actions" : [
@@ -30839,13 +31472,18 @@
          "actions" : [
             {
                "action_type" : "sound_event",
-               "external_event_guid" : "{a0752dca-db2b-4dc3-82b7-37bdf8082af3}",
-               "external_event_name" : "event:/projectiles/proj_poi_tower_01/proj_poi_tower_01"
-            },
-            {
-               "action_type" : "sound_event",
                "external_event_guid" : "{0c53fdda-1147-4eba-ab4b-231ab7852432}",
                "external_event_name" : "event:/structures/player/poi_tower_01/poi_tower_01_launch"
+            }
+         ],
+         "category" : "projectile_large"
+      },
+      "BAE_proj_poi_tower_01_loop" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{a0752dca-db2b-4dc3-82b7-37bdf8082af3}",
+               "external_event_name" : "event:/projectiles/proj_poi_tower_01/proj_poi_tower_01"
             }
          ],
          "category" : "projectile_large"
@@ -31510,6 +32148,236 @@
             }
          ],
          "category" : "piglin_knockback_synth"
+      },
+      "BAE_snapshot_all_stop" : {
+         "actions" : [
+            {
+               "action_type" : "mix_change",
+               "enabled" : true,
+               "name" : "snapshot:/STATE_loading"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_pvp_post_game"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/act1_base"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/act1_dbb"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/wof_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_fmv"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_nis"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/combat_proximity_boss_final"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_battleview"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_combat"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_pvp_hq_low_health_enemy"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_bootflow"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_death"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_falling"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_ll_game_end"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_low_health"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_all"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_piglin"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_player"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_VO_mute_all_vo"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_map"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_pause"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_songbook"
+            }
+         ],
+         "category" : "mix_change"
       },
       "BAE_songbook_enter" : {
          "actions" : [
@@ -34687,6 +35555,256 @@
          ],
          "category" : "ui"
       },
+      "BAE_ui_ig_ll3_final_countdown_01" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{fcde3b98-b334-4899-93b3-c50d84b49a71}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_09"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_02" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{a6530084-526b-4773-af46-651f912bfd34}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_08"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_03" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{6b809dca-a8e8-471a-baff-53ab8d706e93}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_07"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_04" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{bdff11b2-0336-44c9-af35-4c897416c53c}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_06"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_05" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{4511de6b-ae26-4325-a9c6-3aefdd8782ea}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_05"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_06" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{e889786f-8b7b-479b-bfc9-c28ea03e204f}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_04"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_07" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{16c71009-6ec7-47d6-8742-62355781a787}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_03"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_08" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{47eb7183-a1b5-400c-862c-fc0f4bf72c39}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_02"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_09" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ef27be98-5a82-4df2-965d-637519f340fd}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_01"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_10" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{f949c39c-a7a3-4ccd-9622-6996f768309f}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_00"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_11" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{1c369365-6e14-4ae1-8fcc-159d28327b16}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_-1"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_12" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{6be776b4-b398-48ae-af29-582594f1112f}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_-2"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_13" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3beb1c2a-ce1c-4ae0-acd8-a8166d0f189f}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_-3"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_14" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{41f7f65a-ed04-4b79-b827-244f59368545}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_-4"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll3_final_countdown_final" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3ec046e4-b46a-40e1-ad9a-64d75c4bf673}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_final"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_01" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{fcde3b98-b334-4899-93b3-c50d84b49a71}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_09"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_02" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{a6530084-526b-4773-af46-651f912bfd34}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_08"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_03" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{6b809dca-a8e8-471a-baff-53ab8d706e93}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_07"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_04" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{bdff11b2-0336-44c9-af35-4c897416c53c}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_06"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_05" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{4511de6b-ae26-4325-a9c6-3aefdd8782ea}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_05"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_06" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{e889786f-8b7b-479b-bfc9-c28ea03e204f}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_04"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_07" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{16c71009-6ec7-47d6-8742-62355781a787}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_03"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_08" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{47eb7183-a1b5-400c-862c-fc0f4bf72c39}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_02"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_09" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{ef27be98-5a82-4df2-965d-637519f340fd}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_01"
+            }
+         ],
+         "category" : "ui"
+      },
+      "BAE_ui_ig_ll5_final_countdown_final" : {
+         "actions" : [
+            {
+               "action_type" : "sound_event",
+               "external_event_guid" : "{3ec046e4-b46a-40e1-ad9a-64d75c4bf673}",
+               "external_event_name" : "event:/tu0/ui/in_game/legends/countdown_timer/ui_final_countdown_final"
+            }
+         ],
+         "category" : "ui"
+      },
       "BAE_ui_interact" : {
          "actions" : [
             {
@@ -34787,6 +35905,221 @@
                "action_type" : "mix_change",
                "enabled" : false,
                "name" : "snapshot:/STATE_pvp_post_game"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/act1_base"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/act1_dbb"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/attack_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/defend_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_large"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_medium"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_base_small"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_occupation"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_outpost"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/obstacle_village"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/base_specific/wof_base_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_fmv"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_nis"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_boss"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/combat_proximity_boss_final"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_battleview"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_combat"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/game_states/STATE_pvp_hq_low_health_enemy"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_bootflow"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_death"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_falling"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_ll_game_end"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/STATE_low_health"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_all"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_piglin"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_heatmap_mute_player"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/TEST_VO_mute_all_vo"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_map"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_pause"
+            },
+            {
+               "action_type" : "mix_change",
+               "enabled" : false,
+               "name" : "snapshot:/ui/STATE_screen_songbook"
             }
          ],
          "category" : "mix_change"
@@ -35208,13 +36541,7 @@
          "category" : "ui"
       },
       "BAE_ui_quick_build_set" : {
-         "actions" : [
-            {
-               "action_type" : "sound_event",
-               "external_event_guid" : "{de2ba8a2-1106-4b4d-bdd4-45e4f0781388}",
-               "external_event_name" : "event:/ui/songbook/ui_quick_build_set"
-            }
-         ],
+         "actions" : [],
          "category" : "ui"
       },
       "BAE_ui_quickchat_category_switch_combat" : {

@@ -37,6 +37,15 @@
         },
         "on_throwable_launched": {
           "audio": "BAE_piglin_portal_guard_dx_knockback"
+        },
+        "range_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": false,
+            "priority": 3,
+            "range": 20,
+            "strength": 45
+          }
         }
       },
       "badger:rendering": {

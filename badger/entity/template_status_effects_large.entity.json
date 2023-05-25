@@ -30,6 +30,15 @@
             "locator": "loc_fx_main"
           }
         },
+        "on_celebration_start":{
+          "rumble":{
+            "duration": 3,
+            "strength": 15,
+            "priority": 3,
+            "override": false,
+            "range": 15
+          }
+        },
         "on_recall_start": {
           "particles": {
             "effect": "badger:fx_shared_fasttravel_3_large_start",
@@ -178,6 +187,7 @@
           }
         },
         "poisoned_start": {
+          "audio": "BAE_mob_status_poison_start",
           "particles": [
             {
               "effect": "badger:fx_stat_poison_start_large",
@@ -194,6 +204,7 @@
           ]
         },
         "poisoned_stop": {
+          "audio": "BAE_mob_status_poison_stop",
           "particles":{
             "effect": "badger:fx_stat_poison",
             "kill_script": "poisoned_stop"

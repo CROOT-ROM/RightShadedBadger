@@ -16,7 +16,8 @@
         "position_interpolation_steps_y_down": 1
       },
       "badger:keep_alive_timer": {
-        "time": 1.23
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:presentation_event": {
         "cine_blink": {
@@ -52,6 +53,14 @@
         },
         "normal_knockback": {
           "audio": "BAE_mob_zombie_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
         },
         "on_hero_directed": {
           "audio": "BAE_mob_zombie_dx_directed"
@@ -218,7 +227,7 @@
         "swim": "BAE_mob_zombie_swim"
       },
       "textures": {
-        "default": "textures/entity/mob_zombie/tex_mob_zombie_d",
+        "default": "textures/entity/tex_mob_zombie_d",
         "default_blink": "textures/entity/mob_zombie/tex_mob_zombie_blink_d"
       }
     }

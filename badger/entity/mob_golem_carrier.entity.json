@@ -137,6 +137,7 @@
         "dx_death": "BAE_mob_golem_carrier_dx_death",
         "dx_hurt": "BAE_mob_golem_carrier_dx_hurt",
         "dx_idle": "BAE_mob_golem_carrier_dx_idle",
+        "dx_idle_sprint": "BAE_mob_golem_carrier_dx_idle_sprint",
         "flame": "BAE_mob_golem_carrier_flame",
         "flame_spawner": "BAE_mob_golem_carrier_flame_spawner",
         "flame_spawner_stop": "BAE_mob_golem_carrier_flame_spawner_stop",

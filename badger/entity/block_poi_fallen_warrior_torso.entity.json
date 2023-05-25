@@ -10,17 +10,18 @@
         "blink_frame": 1,
         "default_frame": 0
       },
-      "badger:rendering": {
-        "definition": "badger:block_poi_fallen_warrior_torso"
-      },
       "badger:presentation_event": {
         "on_initialized": {
           "audio": "BAE_poi_fallen_warrior_piece_attract_body"
         }
+      },
+      "badger:rendering": {
+        "definition": "badger:block_poi_fallen_warrior_torso"
       }
     },
     "description": {
       "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
       "geometry": {
         "block_poi_fallen_warrior_torso": "geometry.block_poi_fallen_warrior_torso"
       },

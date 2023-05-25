@@ -143,6 +143,7 @@
         "dx_death": "BAE_mob_golem_shield_dx_death",
         "dx_hurt": "BAE_mob_golem_shield_dx_hurt",
         "dx_idle": "BAE_mob_golem_shield_dx_idle",
+        "dx_idle_sprint": "BAE_mob_golem_shield_dx_idle_sprint",
         "fly_walk": "BAE_mob_golem_shield_fly_walk",
         "footstep_arm_sprint": "BAE_mob_golem_shield_footstep_arm_sprint",
         "footstep_arm_walk": "BAE_mob_golem_shield_footstep_arm_walk",

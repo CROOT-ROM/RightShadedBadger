@@ -32,6 +32,12 @@
             "effect": "badger:fx_proj_final_boss_impact",
             "enabled": true,
             "locator": "loc_fx_main"
+          },
+          "rumble": {
+            "duration": 0.25,
+            "strength": 20,
+            "priority": 1,
+            "override": true
           }
         },
         "on_world_hit": {
@@ -40,11 +46,25 @@
             "effect": "badger:fx_proj_final_boss_impact",
             "enabled": true,
             "locator": "loc_fx_main"
+          },
+          "rumble": {
+            "duration": 0.25,
+            "strength": 50,
+            "priority": 2,
+            "override": true,
+            "range": 20
           }
         },
         "on_intercepted": {
           "audio": "BAE_piglin_final_boss_proj_spear_intercepted",
-          "particles": "badger:fx_tower_anti_siege_impact_wood"
+          "particles": "badger:fx_tower_anti_siege_impact_wood",
+          "rumble": {
+            "duration": 0.25,
+            "strength": 50,
+            "priority": 2,
+            "override": true,
+            "range": 20
+          }
         }
       },
       "badger:rendering": {

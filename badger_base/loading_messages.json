@@ -66,6 +66,7 @@
       "tips.ma.homestead_cages",
       "tips.ma.homestead_creepers",
       "tips.ma.homestead_skeletons",
+      "tips.ma.homestead_spawn",
       "tips.ma.homestead_zombies",
       
       "tips.bwy.drylands",
@@ -329,20 +330,11 @@
       "tips.onb.both.journal",
       "tips.onb.both.compass"
     ],
-    "lost_legend_01": [
+	"lost_legend_01": [
       "tips.lost_legend_01.description"
     ],
     "lost_legend_02": [
       "tips.lost_legend_02.description"
-    ],
-    "lost_legend_03": [
-      "tips.lost_legend_03.description"
-    ],
-    "lost_legend_04" : [
-      "tips.lost_legend_04.description"
-    ],
-    "myth_test" : [
-      "tips.myth_test.description"
     ],
     "default": [
       "tips.rn.host.foresight",

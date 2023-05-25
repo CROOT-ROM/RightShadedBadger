@@ -3,14 +3,14 @@
     "mat_piglin_magma_boss_claw_on:base_entity_blend_flipbook": {
         "culling": "none",
         "blendmode": "additivealpha",
-        "pass": "AlphaTest",
+        "pass": "OpaqueOnTop",
         "depthprepass": false,
         "uniforms": {
             "BaseColor": [
-                "1.0",
-                "1.0",
-                "1.0",
-                "variable.matalpha"
+                "variable.matalpha",
+                "variable.matalpha",
+                "variable.matalpha",
+                "1.0"
             ],
             "EmissiveColor": [
                 "variable.matalpha",

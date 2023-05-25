@@ -150,16 +150,18 @@
               "glide_a": 1.0
             }
           ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
           "on_exit": ["variable.face_anim_frame = 0;"],
           "transitions":  [
             {
-              "land_idle": "(query.isonground || variable.is_swimming)"
+              "land_idle": "((variable.is_swimming == 0) && ((query.speed <= 0) && query.isonground))"
             },
             {
               "idle": "(variable.is_swimming && (query.speed <= 0))"
             },
             {
-              "move": "(variable.is_swimming && (query.speed > 0))"
+              "move": "(((query.speed > 0) && query.isonground) || variable.is_swimming)"
             }
           ]
         },
@@ -175,6 +177,12 @@
           "blend_transition": 0.2,
           "blend_via_shortest_path": "slerp",
           "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "fall_loop_stop",
+              "enabled": true
+            }
+          ],
           "transitions":  [
             {
               "jump_enter": "(query.isjumping > 0)"
@@ -275,7 +283,7 @@
         "knockback_end": {
           "animations":  [
             {
-              "jump_idle_end": 1.0
+              "jog_stop": 1.0
             }
           ],
           "blend_transition": 0.2,
@@ -296,9 +304,11 @@
         "land_idle": {
           "animations":  [
             {
-              "jump_idle_end": 1.0
+              "jog_stop": 1.0
             }
           ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
           "on_exit": ["variable.face_anim_frame = 0;"],
           "sound_effects":  [
             {
@@ -308,10 +318,13 @@
           ],
           "transitions":  [
             {
-              "idle": "query.all_animations_finished"
+              "idle": "(query.all_animations_finished && (query.speed <= 0))"
             },
             {
               "knockback": "query.in_knockback"
+            },
+            {
+              "move": "(query.speed > 0)"
             }
           ]
         },
@@ -345,8 +358,8 @@
               "locomotion": 1.0
             }
           ],
-          "blend_transition": 0.1,
-          "blend_via_shortest_path": true,
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
           "on_exit": ["variable.face_anim_frame = 0;"],
           "transitions":  [
             {
@@ -360,6 +373,9 @@
             },
             {
               "knockback": "query.in_knockback"
+            },
+            {
+              "glide": "((variable.is_swimming == 0) && ((query.isonground == 0) && (query.velocity_y <= 0.9)))"
             }
           ]
         },
@@ -384,6 +400,70 @@
             },
             {
               "knockback": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_bird.fe_anim": {
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_select_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_bird.fe_anim_alt": {
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_dud": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_dud": {
+          "animations":  [
+            {
+              "fe_new_skin_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
             }
           ]
         }
@@ -513,27 +593,6 @@
           "on_exit": ["variable.face_anim_frame = 0;"],
           "transitions":  [
             {
-              "running_tilt_down": "(((variable.is_swimming == 0) && (query.isjumping == 0)) && (query.velocity_y < 0))"
-            },
-            {
-              "running_tilt_up": "(((variable.is_swimming == 0) && (query.isjumping == 0)) && (query.velocity_y > 0))"
-            }
-          ]
-        },
-        "running_tilt_down": {
-          "animations":  [
-            {
-              "run_tilt_down": 1.0
-            }
-          ],
-          "blend_transition": 0.2,
-          "blend_via_shortest_path": true,
-          "on_exit": ["variable.face_anim_frame = 0;"],
-          "transitions":  [
-            {
-              "enter_exit": "(query.velocity_y == 0)"
-            },
-            {
               "running_tilt_up": "(((variable.is_swimming == 0) && (query.isjumping == 0)) && (query.velocity_y > 0))"
             }
           ]
@@ -550,42 +609,6 @@
           "transitions":  [
             {
               "enter_exit": "(query.velocity_y == 0)"
-            },
-            {
-              "running_tilt_down": "(((variable.is_swimming == 0) && (query.isjumping == 0)) && (query.velocity_y < 0))"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.mount_bird.frontend": {
-      "initial_state": "flourish",
-      "states": {
-        "flourish": {
-          "animations":  [
-            {
-              "fe_select": 1.0
-            }
-          ],
-          "blend_transition": 0.2,
-          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
-          "transitions":  [
-            {
-              "idle": "query.all_animations_finished"
-            }
-          ]
-        },
-        "idle": {
-          "animations":  [
-            {
-              "fe_idle": 1.0
-            }
-          ],
-          "blend_transition": 0.1,
-          "on_exit": ["variable.face_anim_frame = 0;"],
-          "transitions":  [
-            {
-              "flourish": "variable.scene_opened"
             }
           ]
         }

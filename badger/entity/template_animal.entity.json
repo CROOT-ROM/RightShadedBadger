@@ -42,6 +42,11 @@
                         "type": "on_hit_intense"
                     }
                 }
+            },
+            "badger:animal_interaction": {
+                "duration": 4.0,
+                "molang_variable": "patpat",
+                "trigger_event": "on_patpat"
             }
         }
     }

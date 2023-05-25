@@ -2,7 +2,8 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "components": {
-      "badger:block_source_info": {},
+      "badger:block_source_info": {
+      },
       "badger:face_animation": {
         "anim_columns": 9,
         "anim_rows": 2,
@@ -15,7 +16,8 @@
         "position_interpolation_steps_y_down": 1
       },
       "badger:keep_alive_timer": {
-        "time": 1.57
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:presentation_event": {
         "intense_knockback": {
@@ -23,6 +25,20 @@
         },
         "normal_knockback": {
           "audio": "BAE_mob_illager_axe_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_illager_axe_dx_run_a_yell"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_illager_axe_dx_spawn"
         },
         "on_liquid_deep_enter": {
           "audio": "BAE_mob_generic_swim_liquid_medium"
@@ -35,12 +51,10 @@
         }
       },
       "badger:rendering": {
-        "definition": "badger:mob_illager_axe"
+        "definition": "badger:mob_illager_axe",
+        "limit": 64
       },
-      "badger:template": [
-        "badger:template_mob",
-        "badger:template_status_effects"
-      ]
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
     },
     "description": {
       "animations": {
@@ -76,21 +90,7 @@
         "tumble_slow": "animation.mob_illager_axe.tumble_slow"
       },
       "enable_attachables": false,
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Happy",
-        "Happy Blink",
-        "Curious",
-        "Curious Blink",
-        "Scared",
-        "Scared Blink",
-        "Excited",
-        "Excited Blink",
-        "Angry",
-        "Angry Blink",
-        "Hard Blink"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Curious","Curious Blink","Scared","Scared Blink","Excited","Excited Blink","Angry","Angry Blink","Hard Blink"],
       "geometry": {
         "mob_illager_axe": "geometry.mob_illager_axe"
       },
@@ -111,11 +111,9 @@
         "fx_spawn_dust": "badger:fx_shared_spawn_small",
         "fx_spawn_sprakles": "badger:fx_shared_spawn_small_sparkle"
       },
-      "render_controllers": [
-        "controller.render.mob_illager_axe"
-      ],
+      "render_controllers": ["controller.render.mob_illager_axe"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "default": "1"
           },
@@ -123,9 +121,7 @@
             "hit_react": "1"
           }
         ],
-        "initialize": [
-          "variable.second_skin_vis = 0;"
-        ]
+        "initialize": ["variable.second_skin_vis = 0;"]
       },
       "sound_effects": {
         "attack_a": "BAE_mob_illager_axe_attack_a",
@@ -142,6 +138,7 @@
         "dx_death": "BAE_mob_illager_axe_dx_death",
         "dx_hurt": "BAE_mob_illager_axe_dx_hurt",
         "dx_idle": "BAE_mob_illager_axe_dx_idle",
+        "dx_idle_sprint": "BAE_mob_illager_axe_dx_idle_sprint",
         "dx_run_a": "BAE_mob_illager_axe_dx_run_a",
         "dx_run_a_yell": "BAE_mob_illager_axe_dx_run_a_yell",
         "dx_spawn": "BAE_mob_illager_axe_dx_spawn",

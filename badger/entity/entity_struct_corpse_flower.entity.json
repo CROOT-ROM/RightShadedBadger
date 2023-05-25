@@ -2,10 +2,6 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "components": {
-      "badger:interpolation": {
-        "orientation_interpolation_steps": 2.5,
-        "position_interpolation_steps": 2.25
-      },
       "badger:rendering": {
         "definition": "badger:entity_struct_corpse_flower"
       }

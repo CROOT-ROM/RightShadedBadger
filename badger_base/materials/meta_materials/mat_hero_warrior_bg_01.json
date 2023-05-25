@@ -5,8 +5,7 @@
     "textures": {
       "diffuseMap": "textures/entity/hero/tex_hero_warrior_bg_01_d",
       "coeffMap": "textures/entity/hero/tex_hero_warrior_bg_01_mr",
-      "normalMap": "textures/entity/hero/tex_hero_warrior_bg_01_n",
-      "emissiveMap": "textures/entity/hero/tex_hero_warrior_bg_01_emissive"
+      "normalMap": "textures/entity/hero/tex_hero_warrior_bg_01_n"
     }
   }
 }

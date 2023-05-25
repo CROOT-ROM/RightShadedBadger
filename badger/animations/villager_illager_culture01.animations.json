@@ -51805,9 +51805,6 @@
             "lod_distance": 0.0
           }
         },
-        "joint_chest_m": {
-          "lod_distance": 0.0
-        },
         "joint_hip_l": {
           "lod_distance": 0.0,
           "position": {
@@ -52102,9 +52099,6 @@
             },
             "lod_distance": 0.0
           }
-        },
-        "joint_robe_l": {
-          "lod_distance": 0.0
         },
         "joint_root_m": {
           "lod_distance": 0.0,

@@ -5142,7 +5142,7 @@
       },
       "timeline": {
         "14": "variable.fx_geyser_charge = 0;",
-        "2.66666674613953": "variable.fx_geyser_charge = 1;"
+        "2.66666674613953": ["variable.fx_geyser_charge = 1;"]
       }
     },
     "animation.piglin_final_boss.spin_charge_attack_action_c": {

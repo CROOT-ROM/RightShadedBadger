@@ -33,14 +33,35 @@
                 },
                 "on_entity_hit": {
                     "audio": "BAE_mob_fallen_warrior_proj_boulder_impact_entity",
-                    "particles": "badger:fx_proj_fallen_warrior_impact"
+                    "particles": "badger:fx_proj_fallen_warrior_impact",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 45,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20.0
+                    }
                 },
                 "on_world_hit": {
                     "audio": "BAE_mob_fallen_warrior_proj_boulder_impact_world",
-                    "particles": "badger:fx_proj_fallen_warrior_impact_world"
+                    "particles": "badger:fx_proj_fallen_warrior_impact_world",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 45,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20.0
+                    }
                 },
                 "on_intercepted": {
-                    "particles": "badger:fx_tower_anti_siege_impact_stone"
+                    "particles": "badger:fx_tower_anti_siege_impact_stone",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 45,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20.0
+                    }
                 }
             },
             "badger:rendering": {

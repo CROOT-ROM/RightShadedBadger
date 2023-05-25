@@ -651,7 +651,7 @@
       "map_outpost_survived_attack" : {
          "actions" : [
             {
-               "action" : "COL_122_map_outpostunderattack",
+               "action" : "COL_123_map_outpostsurvivedattack",
                "action_type" : "vo_sequence"
             }
          ]

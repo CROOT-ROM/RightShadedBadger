@@ -3,7 +3,7 @@
   "minecraft:client_entity": {
     "components": {
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -64,6 +64,7 @@
         "knockback_a": "animation.animal_ocelot.knockback_a",
         "locomotion": "controller.animation.animal_ocelot.locomotion",
         "look_at": "animation.animal_ocelot.look_at",
+        "patpat_a": "animation.animal_ocelot_dlc.patpat_a",
         "stun_a": "animation.animal_ocelot.stun_a",
         "swim_a": "animation.animal_ocelot.swim_a",
         "swim_idle_a": "animation.animal_ocelot.swim_idle_a",

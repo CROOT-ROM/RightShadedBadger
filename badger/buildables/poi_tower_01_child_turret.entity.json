@@ -7,12 +7,15 @@
     "components": {
       "badger:template": "badger:template_structure",
       "badger:presentation_event": {
-        "on_projectile_shoot": {
+        "on_projectile_windup": {
           "audio": "BAE_poi_tower_01_windup",
           "particles": {
             "effect": "badger:fx_poi_tower_01_windup",
             "enabled": true
           }
+        },
+        "on_projectile_shoot": {
+          "audio" : "BAE_proj_poi_tower_01_launch"
         }
       }
     }

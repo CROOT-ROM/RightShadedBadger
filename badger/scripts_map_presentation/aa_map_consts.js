@@ -455,6 +455,11 @@ const MAP_EXTENDED_TOOLTIP = {
   INVASION_RECAP_ATTACK_OUTPOST_FAILURE: "badger:wmap_invasion_recap_attack_failure_outpost_tooltip",
   INVASION_RECAP_ATTACK_FAILURE: "badger:wmap_invasion_recap_attack_failure_tooltip",
   INVASION_RECAP_ATTACK_SUCCESS: "badger:wmap_invasion_recap_attack_success_tooltip",
+  INVASION_RECAP_ATTACK_SUCCESS_ALLIANCE: {
+    [MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER]: "badger:wmap_invasion_recap_attack_success_creeper_tooltip",
+    [MAP_FACTION_IDS.MOB_ALLIANCE_SKELETON]: "badger:wmap_invasion_recap_attack_success_skeleton_tooltip",
+    [MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE]: "badger:wmap_invasion_recap_attack_success_zombie_tooltip",
+  },
   INVASION_RECAP_BUILT_DEFENSIVE_OUTPOST: "badger:wmap_invasion_recap_built_defensive_outpost_tooltip",
   INVASION_RECAP_BUILT_NEW_BASE: "badger:wmap_invasion_recap_built_new_base_tooltip",
   INVASION_RECAP_UPGRADED: "badger:wmap_invasion_recap_upgraded_tooltip",

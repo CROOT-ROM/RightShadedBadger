@@ -69,11 +69,25 @@
         },
         "on_entity_hit": {
           "audio": "BAE_poi_tower_02_projectile_impact_entity",
-          "particles": "badger:fx_proj_poi_ice_tower_impact"
+          "particles": "badger:fx_proj_poi_ice_tower_impact",
+          "rumble": {
+            "duration": 0.35,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 30.0
+          }
         },
         "on_world_hit": {
           "audio": "BAE_poi_tower_02_projectile_impact_world",
-          "particles": "badger:fx_proj_poi_ice_tower_impact"
+          "particles": "badger:fx_proj_poi_ice_tower_impact",
+          "rumble": {
+            "duration": 0.35,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 30.0
+          }
         }
       },
       "badger:rendering": {

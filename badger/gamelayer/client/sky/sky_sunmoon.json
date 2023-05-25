@@ -94,6 +94,12 @@
 			]
 		},
 		{
+			"override_name": "override_sky_horde4_sunmoon",
+			"biomes": [
+				{"identifier": "nether_horde_04"}
+			]
+		},
+		{
 			"override_name": "override_sky_forest",
 			"biomes": [
 				{"identifier": "forest"},

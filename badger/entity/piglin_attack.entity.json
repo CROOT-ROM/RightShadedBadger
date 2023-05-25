@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description":{
+      "identifier": "badger:piglin_attack"
+    },
+    "components": {
+      "badger:presentation_event":{
+        "on_piglin_horn":{
+          "rumble":{
+            "duration": 3,
+            "strength": 35,
+            "priority": 2,
+            "override": true,
+            "range": 50
+          }
+        }
+      }
+    }
+  }
+}

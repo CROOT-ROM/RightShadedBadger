@@ -769,12 +769,6 @@
             "path": "hbui/assets/banner_logo-74fa2.png"
         },
         {
-            "path": "hbui/assets/bottom_detail-efdde.png"
-        },
-        {
-            "path": "hbui/assets/bottom_detail_dark-d4b7f.png"
-        },
-        {
             "path": "hbui/assets/BracketClose-9eb3d.png"
         },
         {
@@ -880,7 +874,7 @@
             "path": "hbui/assets/content-overlay-2e2c4.png"
         },
         {
-            "path": "hbui/assets/credits_bg-4b9b3.png"
+            "path": "hbui/assets/credits_bg-6ed3f.png"
         },
         {
             "path": "hbui/assets/credits_centerpanel-d4b5c.png"
@@ -1639,18 +1633,6 @@
             "path": "hbui/assets/S-b80bb.png"
         },
         {
-            "path": "hbui/assets/scrollbar_centre-5f196.png"
-        },
-        {
-            "path": "hbui/assets/scrollbar_centre_horizontal-e85bb.png"
-        },
-        {
-            "path": "hbui/assets/scrollbar_centre_horizontal_minimal-1e1db.png"
-        },
-        {
-            "path": "hbui/assets/scrollbar_centre_minimal-49b97.png"
-        },
-        {
             "path": "hbui/assets/secondary_disabled-c3730.png"
         },
         {
@@ -1760,12 +1742,6 @@
         },
         {
             "path": "hbui/assets/text_highlight_inventory-d5a1e.png"
-        },
-        {
-            "path": "hbui/assets/top_detail-fd452.png"
-        },
-        {
-            "path": "hbui/assets/top_detail_dark-606b1.png"
         },
         {
             "path": "hbui/assets/Touchpad-17e26.png"
@@ -1958,6 +1934,12 @@
         },
         {
             "path": "hbui/fonts/NotoSansArabic-Regular-c6964.ttf"
+        },
+        {
+            "path": "hbui/fonts/NotoSansHebrew-Bold-c672e.ttf"
+        },
+        {
+            "path": "hbui/fonts/NotoSansHebrew-Regular-46d0c.ttf"
         },
         {
             "path": "hbui/fonts/NotoSansJP-Regular-893a8.otf"
@@ -4279,6 +4261,18 @@
             "path": "textures-hbui/hub_screen/btn_textinput_normal.png"
         },
         {
+            "path": "textures-hbui/hub_screen/button_destructive_focus.png"
+        },
+        {
+            "path": "textures-hbui/hub_screen/button_destructive_hover.png"
+        },
+        {
+            "path": "textures-hbui/hub_screen/button_destructive_normal.png"
+        },
+        {
+            "path": "textures-hbui/hub_screen/button_destructive_press.png"
+        },
+        {
             "path": "textures-hbui/hub_screen/campaign_newgame_book.png"
         },
         {
@@ -4352,6 +4346,12 @@
         },
         {
             "path": "textures-hbui/hub_screen/card_slim_highlight.png"
+        },
+        {
+            "path": "textures-hbui/hub_screen/card_tileArt_small_lostlegend.png"
+        },
+        {
+            "path": "textures-hbui/hub_screen/card_tileArt_small_myth.png"
         },
         {
             "path": "textures-hbui/hub_screen/card_top_default.png"
@@ -6946,6 +6946,15 @@
             "path": "textures-hbui/map_screen/notif_icon_success.gif"
         },
         {
+            "path": "textures-hbui/map_screen/notif_mob_creeper.gif"
+        },
+        {
+            "path": "textures-hbui/map_screen/notif_mob_skeleton.gif"
+        },
+        {
+            "path": "textures-hbui/map_screen/notif_mob_zombie.gif"
+        },
+        {
             "path": "textures-hbui/map_screen/notif_piglin_alert_01.gif"
         },
         {
@@ -7213,9 +7222,6 @@
             "path": "textures-hbui/marketplace/banner_neutral.png"
         },
         {
-            "path": "textures-hbui/marketplace/banner_purchase_tokens.png"
-        },
-        {
             "path": "textures-hbui/marketplace/challenge_time_remaining_banner.png"
         },
         {
@@ -7226,6 +7232,12 @@
         },
         {
             "path": "textures-hbui/marketplace/icon_currency_ps.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/icon_marketplace_download.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/icon_marketplace_owed.png"
         },
         {
             "path": "textures-hbui/marketplace/icon_myth.png"
@@ -7289,6 +7301,24 @@
         },
         {
             "path": "textures-hbui/marketplace/preview_panel.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_name_r1.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_name_r2.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_name_r3.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_store_r1.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_store_r2.png"
+        },
+        {
+            "path": "textures-hbui/marketplace/rarity_banner_store_r3.png"
         },
         {
             "path": "textures-hbui/marketplace/test_item_preview.png"
@@ -7456,12 +7486,6 @@
             "path": "textures-hbui/panel_banner/banner_brown_secondary.png"
         },
         {
-            "path": "textures-hbui/panel_banner/banner_lost_legends_completed.png"
-        },
-        {
-            "path": "textures-hbui/panel_banner/banner_lost_legends_failed.png"
-        },
-        {
             "path": "textures-hbui/panel_banner/banner_lost_legends_objectives.png"
         },
         {
@@ -7525,34 +7549,16 @@
             "path": "textures-hbui/pregame_screens/card_tileArt_beach.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_beach_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_Brokenlands.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Brokenlands_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_brokenlands_valleys.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_brokenlands_valleys_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_burnt_grass.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_burnt_grass_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_burnt_grass_trees.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_burnt_grass_trees_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_Dryland.png"
@@ -7561,40 +7567,19 @@
             "path": "textures-hbui/pregame_screens/card_tileArt_drylands.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_drylands_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Dryland_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act1.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act1_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act2.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act2_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act3.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act3_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act4.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_fateful_land_act4_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_Forest.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Forest_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_Frostland.png"
@@ -7603,46 +7588,22 @@
             "path": "textures-hbui/pregame_screens/card_tileArt_frostlands.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_frostlands_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Frostland_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_Grassland.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_grasslands.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_grasslands_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Grassland_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_homestead_creeper.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_homestead_creeper_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_homestead_skeleton.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_homestead_skeleton_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_homestead_zombie.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_homestead_zombie_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_Jungle.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Jungle_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_mountain.png"
@@ -7651,16 +7612,7 @@
             "path": "textures-hbui/pregame_screens/card_tileArt_Mountains.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Mountains_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_mountain_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_outbounds_ocean.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_outbounds_ocean_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin.png"
@@ -7669,76 +7621,37 @@
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_act2.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_act2_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_l.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_l_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_m.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_m_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_s.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_attack_s_default.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_l.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_l_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_m.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_m_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_s.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_defend_s_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_l.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_l_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_m.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_m_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_s.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_piglin_obstacle_s_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/card_tileArt_Village.png"
         },
         {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Village_default.png"
-        },
-        {
             "path": "textures-hbui/pregame_screens/card_tileArt_Wetlands.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/card_tileArt_Wetlands_default.png"
         },
         {
             "path": "textures-hbui/pregame_screens/GameSelect_BG.png"
@@ -7751,9 +7664,6 @@
         },
         {
             "path": "textures-hbui/pregame_screens/header_Campaign.png"
-        },
-        {
-            "path": "textures-hbui/pregame_screens/header_Friends.png"
         },
         {
             "path": "textures-hbui/pregame_screens/header_HeroSelect.png"
@@ -8113,10 +8023,7 @@
             "path": "textures-hbui/resource_panel/build_preview_frame_error.png"
         },
         {
-            "path": "textures-hbui/resource_panel/collect_active.gif"
-        },
-        {
-            "path": "textures-hbui/resource_panel/collect_preview.gif"
+            "path": "textures-hbui/resource_panel/gather_active.gif"
         },
         {
             "path": "textures-hbui/resource_panel/gather_active.png"
@@ -8125,10 +8032,10 @@
             "path": "textures-hbui/resource_panel/gather_default.png"
         },
         {
-            "path": "textures-hbui/resource_panel/gather_preview.png"
+            "path": "textures-hbui/resource_panel/gather_preview.gif"
         },
         {
-            "path": "textures-hbui/resource_panel/mobcap_allay_bg.png"
+            "path": "textures-hbui/resource_panel/gather_preview.png"
         },
         {
             "path": "textures-hbui/resource_panel/mobcap_capped.png"
@@ -8527,5 +8434,5 @@
             "path": "ui/_ui_defs.json"
         }
     ],
-    "size": 278317786
+    "size": 288956361
 }

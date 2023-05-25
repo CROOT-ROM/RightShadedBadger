@@ -21,16 +21,16 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-1.17267426e-14,1.11334903e-29,1.08794396e-13]
           },
           "name": "joint_root_m",
           "parent": "export_joints",
-          "pivot": [6.65898704e-29,104.570061,0.0],
+          "pivot": [4.42012057e-29,104.570061,3.82132066e-29],
           "scale": [1,1,1]
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01669981e-15,-1.90833287e-14,1.08794457e-13]
           },
           "locators": {
             "loc_fx_stat_chest": {
@@ -41,12 +41,12 @@
           },
           "name": "joint_chest_m",
           "parent": "joint_root_m",
-          "pivot": [4.40753696e-14,0.0,62.5993538],
+          "pivot": [4.40753696e-14,-1.42108547e-14,62.5993538],
           "scale": [1,1,1]
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "name": "joint_neck_m",
           "parent": "joint_chest_m",
@@ -55,16 +55,16 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "name": "joint_head_m",
           "parent": "joint_neck_m",
-          "pivot": [-9.0602659e-15,1.42108547e-14,-2.84217094e-14],
+          "pivot": [-9.0602659e-15,0.0,-4.26325641e-14],
           "scale": [1,1,1]
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "name": "joint_ear_r",
           "parent": "joint_head_m",
@@ -73,7 +73,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "name": "joint_snout_m",
           "parent": "joint_head_m",
@@ -82,7 +82,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "name": "joint_sniffer_m",
           "parent": "joint_snout_m",
@@ -91,7 +91,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [-4.18085206e-28,1.84472175e-13,-1.12996003e-29]
+            "bind_pose_rotation": [-5.76279599e-28,1.00505531e-12,-1.12996003e-29]
           },
           "name": "joint_cheek_r",
           "parent": "joint_head_m",
@@ -104,12 +104,12 @@
           },
           "name": "joint_cheekpuff_r",
           "parent": "joint_cheek_r",
-          "pivot": [-12.5,1.56319402e-13,3.69482223e-13],
+          "pivot": [-12.5,1.27897692e-13,3.69482223e-13],
           "scale": [1,1,1]
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-7.01670955e-15,2.54444377e-14,1.08794457e-13]
           },
           "locators": {
             "loc_fx_jaw": {
@@ -125,7 +125,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [-7.01670955e-15,1.39944412e-13,1.34238893e-13]
+            "bind_pose_rotation": [-2.10572228e-13,1.36127741e-12,1.08794457e-13]
           },
           "name": "joint_ear_l",
           "parent": "joint_head_m",
@@ -134,7 +134,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,-2.54444377e-14,1.34238893e-13]
+            "bind_pose_rotation": [-2.10572228e-13,-2.54444377e-14,1.08794484e-13]
           },
           "name": "joint_cheek_l",
           "parent": "joint_head_m",
@@ -152,7 +152,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [9.18092535e-30,-8.2694424e-14,-1.27222189e-14]
+            "bind_pose_rotation": [-6.36110944e-15,4.7708321e-14,-1.59027742e-14]
           },
           "name": "joint_fronthip_r",
           "parent": "joint_chest_m",
@@ -161,7 +161,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [3.18055472e-15,-3.40319353e-13,5.05708214e-13]
+            "bind_pose_rotation": [6.36110944e-15,2.22638829e-13,3.59402693e-13]
           },
           "name": "joint_fronthip_l",
           "parent": "joint_chest_m",
@@ -170,7 +170,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,3.81666575e-14,1.34238893e-13]
+            "bind_pose_rotation": [-7.01669981e-15,8.2694424e-14,1.08794457e-13]
           },
           "name": "joint_tail0_m",
           "parent": "joint_root_m",
@@ -179,7 +179,7 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,4.45277665e-14,1.34238893e-13]
+            "bind_pose_rotation": [7.01670955e-15,1.27222189e-14,1.08794457e-13]
           },
           "name": "joint_tail1_m",
           "parent": "joint_tail0_m",
@@ -188,16 +188,16 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [7.01670955e-15,4.45277665e-14,1.34238893e-13]
+            "bind_pose_rotation": [7.01670955e-15,1.27222189e-14,1.08794457e-13]
           },
           "name": "joint_tail2_m",
           "parent": "joint_tail1_m",
-          "pivot": [7.72828362e-13,8.52651283e-14,-93.75],
+          "pivot": [7.72828362e-13,1.42108547e-13,-93.75],
           "scale": [1,1,1]
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [0,0,0]
+            "bind_pose_rotation": [1.73025125e-28,-2.22638829e-13,-8.9055533e-14]
           },
           "name": "joint_backhip_r",
           "parent": "joint_root_m",
@@ -206,11 +206,20 @@
         },
         {
           "\u0001\u0002\u0003\u0004\u0005__": {
-            "bind_pose_rotation": [3.08267212e-28,1.14499976e-13,3.08513821e-13]
+            "bind_pose_rotation": [7.08873363e-29,3.4986103e-14,2.32180486e-13]
           },
           "name": "joint_backhip_l",
           "parent": "joint_root_m",
           "pivot": [52.95207977,-10.79381657,-99.72682953],
+          "scale": [1,1,1]
+        },
+        {
+          "\u0001\u0002\u0003\u0004\u0005__": {
+            "bind_pose_rotation": [-7.01669981e-15,8.2694424e-14,1.08794457e-13]
+          },
+          "name": "joint_saddlebag",
+          "parent": "joint_root_m",
+          "pivot": [1.54098332,49.54957962,-99.72682953],
           "scale": [1,1,1]
         }
       ],
@@ -3146,26 +3155,26 @@
         },
         {
           "indices":  [
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"],
-            ["joint_jaw_m"]
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"],
+            ["joint_cheek_l"]
           ],
           "meta_material": "mat_mount_tiger",
           "normal_sets":  [

@@ -86,6 +86,9 @@
                     }
                 ]
             },
+            "badger:respawn_trigger": {
+                "trigger": "on_respawned"
+            },
             "badger:presentation_event": {
                 "fast_travel_end": {
                     "audio": "BAE_hero_fast_travel_stop",
@@ -103,10 +106,42 @@
                         "effect": "badger:fx_hero_fast_travel",
                         "enabled": "true",
                         "locator": "loc_butt"
+                    },
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "override": true,
+                        "range": 0.0
+                    }
+                },
+                "on_initial_spawn": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "range": 0.0,
+                        "override": true
+                    }
+                },
+                "on_respawned": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "range": 0.0,
+                        "override": true
                     }
                 },
                 "hero_lure_stop": {
-                    "audio": "BAE_hero_lure_off"
+                    "audio": "BAE_hero_lure_off",
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_advanced_direct_targeted": {
                     "outline": {
@@ -136,6 +171,15 @@
                 "on_building_deconstructed": {
                     "audio": "BAE_mus_lute_deconstruct"
                 },
+                "on_building_placed": {
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
                 "on_building_failed": {
                     "audio": "BAE_mus_lute_invalid"
                 },
@@ -153,6 +197,9 @@
                 },
                 "on_building_increase_spawner_cap": {
                     "audio": "BAE_UI_sb_build_village_increase_spawner_cap"
+                },
+                "on_building_increase_spawner_cap_medium": {
+                    "audio": "BAE_UI_sb_build_village_increase_spawner_cap_medium"
                 },
                 "on_building_increase_starting_cap": {
                     "audio": "BAE_UI_sb_build_village_increase_starting_cap"
@@ -316,7 +363,14 @@
                         }, {
                             "location": "center"
                         }
-                    ]
+                    ],
+                    "rumble": {
+                        "duration": 0.85,
+                        "strength": 100,
+                        "priority": 1,
+                        "override": true,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_cancel_badger:entity_struct_fountain_treasure_chest_bsharp": {
                     "audio": "BAE_lute_melody_open_chest_stop"
@@ -361,16 +415,44 @@
                     "audio": "BAE_lute_melody_activate_spawner_stop"
                 },
                 "on_interaction_complete_badger:entity_struct_fountain_treasure_chest_bsharp": {
-                    "audio": "BAE_lute_melody_open_chest_complete"
+                    "audio": "BAE_lute_melody_open_chest_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_complete_badger:entity_struct_piglin_crate_bsharp": {
-                    "audio": "BAE_lute_melody_open_piglin_crate_complete"
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_complete_badger:entity_struct_treasure_chest_bsharp": {
-                    "audio": "BAE_lute_melody_open_chest_complete"
+                    "audio": "BAE_lute_melody_open_chest_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_complete_badger:mob_alliance_mob_cage_bsharp": {
-                    "audio": "BAE_lute_melody_open_piglin_cage_complete"
+                    "audio": "BAE_lute_melody_open_piglin_cage_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_complete_badger:mob_golem_carrier_nis_bsharp": {
                     "audio": "BAE_lute_melody_assemble_poi_golem_complete"
@@ -394,10 +476,24 @@
                     "audio": "BAE_lute_melody_gather_poi_tower_complete"
                 },
                 "on_interaction_complete_generic_deconstruct": {
-                    "audio": "BAE_lute_melody_deconstruct_structure_complete"
+                    "audio": "BAE_lute_melody_deconstruct_structure_complete",
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 20,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_complete_generic_recall": {
-                    "audio": "BAE_lute_melody_recall_mobs_complete"
+                    "audio": "BAE_lute_melody_recall_mobs_complete",
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 20,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
                 },
                 "on_interaction_interrupt_badger:entity_struct_fountain_treasure_chest_bsharp": {
                     "audio": "BAE_lute_melody_open_chest_interrupt"
@@ -483,6 +579,33 @@
                 "on_interaction_start_generic_spawner": {
                     "audio": "BAE_lute_melody_activate_spawner"
                 },
+                "on_spawn_batch": {
+                    "rumble": {
+                        "duration": 0.2,
+                        "strength": 15,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_spawn_cap_reached": {
+                    "rumble": {
+                        "duration": 0.2,
+                        "strength": 10,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_fall_damage_received": {
+                    "rumble": {
+                        "duration": 0.3,
+                        "strength": 3,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
                 "on_lure": {
                     "spawn_entity": {
                         "entities": [{
@@ -490,6 +613,67 @@
                                 "should_parent_transform": true
                             }
                         ]
+                    },
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_lure_stop": {
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_direct": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_force_all": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_force_single": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_charge_all": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_charge_single": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
                     }
                 }
             },

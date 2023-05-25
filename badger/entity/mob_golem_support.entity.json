@@ -16,7 +16,8 @@
         "position_interpolation_steps_y_down": 1
       },
       "badger:keep_alive_timer": {
-        "time": 1
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:presentation_event": {
         "intense_knockback": {
@@ -24,6 +25,14 @@
         },
         "normal_knockback": {
           "audio": "BAE_mob_golem_support_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
         },
         "on_hero_directed": {
           "audio": "BAE_mob_golem_support_dx_directed"
@@ -106,7 +115,6 @@
         "initialize": ["variable.mud_vis = 0;","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
       },
       "sound_effects": {
-        "attack_a": "BAE_mob_golem_support_attack_a",
         "attack_b": "BAE_mob_golem_support_attack_b",
         "bodyfall": "BAE_mob_golem_support_bodyfall",
         "cheer": "BAE_mob_golem_support_cheer",

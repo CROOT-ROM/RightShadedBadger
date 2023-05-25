@@ -5,9 +5,6 @@
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "bones": {
-        "joint_axe_r": {
-          "lod_distance": 0.0
-        },
         "joint_neck_m": {
           "lod_distance": 0.0,
           "rotation": {
@@ -154,9 +151,6 @@
             "0.5": [180.0,-180.0,180.0],
             "lod_distance": 0.0
           }
-        },
-        "joint_wrist_r": {
-          "lod_distance": 0.0
         }
       },
       "loop": true
@@ -3946,6 +3940,12 @@
             "enabled": true
           }
         ],
+        "0.066":  [
+          {
+            "effect": "dx_idle_sprint",
+            "enabled": true
+          }
+        ],
         "0.233":  [
           {
             "effect": "footstep",
@@ -7110,9 +7110,6 @@
       "anim_time_update": "(query.anim_time + (query.delta_time * variable.speed_modifier))",
       "blend_weight": "1",
       "bones": {
-        "joint_axe_r": {
-          "lod_distance": 0.0
-        },
         "joint_root_m": {
           "lod_distance": 0.0,
           "rotation": {
@@ -7126,15 +7123,6 @@
             },
             "lod_distance": 0.0
           }
-        },
-        "joint_shoulder_l": {
-          "lod_distance": 0.0
-        },
-        "joint_shoulder_r": {
-          "lod_distance": 0.0
-        },
-        "joint_wrist_r": {
-          "lod_distance": 0.0
         }
       },
       "loop": true
@@ -12125,9 +12113,6 @@
       "anim_time_update": "(query.anim_time + (query.delta_time * variable.speed_modifier))",
       "blend_weight": "1",
       "bones": {
-        "joint_axe_r": {
-          "lod_distance": 0.0
-        },
         "joint_root_m": {
           "lod_distance": 0.0,
           "rotation": {
@@ -12141,15 +12126,6 @@
             },
             "lod_distance": 0.0
           }
-        },
-        "joint_shoulder_l": {
-          "lod_distance": 0.0
-        },
-        "joint_shoulder_r": {
-          "lod_distance": 0.0
-        },
-        "joint_wrist_r": {
-          "lod_distance": 0.0
         }
       },
       "loop": true

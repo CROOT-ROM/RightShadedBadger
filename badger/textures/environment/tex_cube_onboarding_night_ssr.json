@@ -1,0 +1,12 @@
+{
+    "meta_data": {
+        "num_slices": 1,
+        "filter_min": "Point",
+        "wrap_u": "Clamp",
+        "sRGB": false,
+        "wrap_v": "Clamp",
+        "filter_mag": "Point",
+        "dimension": "Cube",
+        "mipmap_mode": "Linear"
+    }
+}

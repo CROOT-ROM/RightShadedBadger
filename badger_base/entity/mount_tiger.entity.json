@@ -45,16 +45,44 @@
       },
       "badger:presentation_event": {
         "intense_hit": {
-          "audio": "BAE_mount_tiger_dx_hurt"
+          "audio": "BAE_mount_tiger_dx_hurt",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "intense_knockback": {
-          "audio": "BAE_mount_tiger_dx_knockback_intense"
+          "audio": "BAE_mount_tiger_dx_knockback_intense",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "normal_hit": {
-          "audio": "BAE_mount_tiger_dx_hurt"
+          "audio": "BAE_mount_tiger_dx_hurt",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "normal_knockback": {
-          "audio": "BAE_mount_tiger_dx_knockback_normal"
+          "audio": "BAE_mount_tiger_dx_knockback_normal",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "on_liquid_deep_enter": {
           "audio": "BAE_mount_generic_swim_liquid"
@@ -75,7 +103,23 @@
           "audio": "BAE_mount_tiger_sprint_stop"
         },
         "weak_hit": {
-          "audio": "BAE_mount_tiger_dx_hurt"
+          "audio": "BAE_mount_tiger_dx_hurt",
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
+        },
+        "weak_knockback": {
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
         }
       },
       "badger:rendering": {
@@ -100,8 +144,12 @@
         "climb_additive": "animation.mount_tiger.climb_additive",
         "climb_additive_b": "animation.mount_tiger.climb_additive_b",
         "climb_additive_down": "animation.mount_tiger.climb_additive_down",
-        "death_a": "animation.animal_tiger.death_a",
         "default": "controller.animation.mount_tiger.default",
+        "fe_anim": "controller.animation.mount_tiger.tiger_fe",
+        "fe_anim_alt": "controller.animation.mount_tiger.tiger_fe_alt",
+        "fe_idle_a": "animation.mount_tiger.fe_idle_a",
+        "fe_new_skin_a": "animation.mount_tiger.fe_new_skin_a",
+        "fe_select_a": "animation.mount_tiger.fe_select_a",
         "feed_a": "animation.mount_tiger.feed_a",
         "feed_react": "animation.mount_tiger.feed_react",
         "hit_react": "controller.animation.mount_tiger.hit_react",
@@ -123,10 +171,7 @@
         "stop": "animation.mount_tiger.stop",
         "stop_b": "animation.mount_tiger.stop_b",
         "swim_a": "animation.mount_tiger.swim_a",
-        "swimidle_a": "animation.mount_tiger.swimidle_a",
-        "fe_select": "animation.mount_tiger.roar",
-        "fe_idle": "animation.mount_tiger.idle_b",
-        "fe_anim": "controller.animation.mount_tiger.frontend"
+        "swimidle_a": "animation.mount_tiger.swimidle_a"
       },
       "enable_attachables": false,
       "face_poses": ["Neutral","Neutral Blink","Roar"],
@@ -171,7 +216,7 @@
         "swim_os": "BAE_mount_tiger_swim_oneshot"
       },
       "textures": {
-        "default": "textures/entity/mount_tiger/tex_mount_tiger_d"
+        "default": "textures/entity/tex_mount_tiger_d"
       }
     }
   }

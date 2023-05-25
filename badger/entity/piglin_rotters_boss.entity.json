@@ -72,6 +72,15 @@
         "normal_hit": {
           "audio": "BAE_piglin_rotters_boss_dx_damage"
         },
+        "on_explosive_attack": {
+          "rumble": {
+            "duration": 0.5,
+            "override": true,
+            "priority": 2,
+            "range": 20,
+            "strength": 40
+          }
+        },
         "on_initialized": {
           "audio": "BAE_combat_proximity_boss"
         },
@@ -80,6 +89,42 @@
         },
         "on_liquid_deep_exit": {
           "audio": ""
+        },
+        "on_melee_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 15,
+            "strength": 40
+          }
+        },
+        "on_puke_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
+        },
+        "on_puke_attack_b": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
+        },
+        "on_puke_attack_c": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
         },
         "on_throwable_landed": {
           "audio": "BAE_sfx_knockback_piglin_land"
@@ -234,7 +279,7 @@
         "vomit_stop": "BAE_piglin_rotters_boss_vomit_stop"
       },
       "textures": {
-        "default": "textures/entity/piglin_rotters_boss/tex_piglin_rotters_boss_d"
+        "default": "textures/entity/tex_piglin_rotters_boss_d"
       }
     }
   }

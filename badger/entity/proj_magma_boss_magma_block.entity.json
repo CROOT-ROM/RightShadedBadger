@@ -32,14 +32,35 @@
                 },
                 "on_world_hit": {
                     "audio": "BAE_piglin_proj_magma_block_impact_world",
-                    "particles": "badger:fx_proj_piggo_lava_launcher_impact"
+                    "particles": "badger:fx_proj_piggo_lava_launcher_impact",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 },
                 "on_entity_hit": {
                     "audio": "BAE_piglin_proj_magma_block_impact_entity",
-                    "particles": "badger:fx_proj_piggo_lava_launcher_impact"
+                    "particles": "badger:fx_proj_piggo_lava_launcher_impact",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 },
                 "on_intercepted": {
-                    "particles": "badger:fx_tower_anti_siege_impact_lava"
+                    "particles": "badger:fx_tower_anti_siege_impact_lava",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 }
             },
             "badger:rendering": {

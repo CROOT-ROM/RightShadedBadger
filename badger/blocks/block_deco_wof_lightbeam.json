@@ -2,7 +2,6 @@
     "format_version": "1.15.0",
     "badger:client_block": {
         "badger:block_deco_wof_lightbeam": {
-            "decoration": "deco_wof_lightbeam",
             "particle_spawner": {
 				"effects": [
 					{

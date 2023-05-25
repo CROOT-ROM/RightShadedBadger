@@ -38,6 +38,13 @@
             "bind_to_actor": true,
             "locator": "loc_butt",
             "enabled": "true"
+          },
+          "rumble": {
+            "duration": 0.25,
+            "strength": 20,
+            "priority": 1,
+            "override": true,
+            "range": 0
           }
         },
         "fast_travel_start": {
@@ -47,6 +54,13 @@
             "enabled": "true",
             "bind_to_actor": true,
             "locator": "loc_butt"
+          },
+          "rumble": {
+            "duration": 0.25,
+            "strength": 10,
+            "priority": 1,
+            "override": true,
+            "range": 0
           }
         },
         "on_mount_swap": {

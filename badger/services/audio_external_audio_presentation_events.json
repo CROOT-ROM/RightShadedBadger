@@ -329,6 +329,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_netherite_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:chunk_piglin_bridge_post": {
@@ -373,6 +376,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_netherite_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:chunk_piglin_wall_001": {
@@ -387,6 +393,9 @@
             },
             "on_redstone_launcher_aoe_attack_hit": {
                 "audio": "BAE_impact_netherite_explosion"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:chunk_piglin_wall_inner_001": {
@@ -401,6 +410,9 @@
             },
             "on_redstone_launcher_aoe_attack_hit": {
                 "audio": "BAE_impact_netherite_explosion"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:chunk_piglin_wall_panel_001": {
@@ -429,6 +441,9 @@
             },
             "on_redstone_launcher_aoe_attack_hit": {
                 "audio": "BAE_impact_netherite_explosion"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:chunk_piglin_wall_panel_003": {
@@ -443,6 +458,9 @@
             },
             "on_redstone_launcher_aoe_attack_hit": {
                 "audio": "BAE_impact_netherite_explosion"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:gate": {
@@ -633,6 +651,12 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_netherite_blunt"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_netherite_slash"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:increase_allay_cap_gather_build": {
@@ -3125,6 +3149,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_splat"
             }
         },
         "badger:piglin_engineer": {
@@ -3178,6 +3205,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_bone_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_bone_splat"
             }
         },
         "badger:piglin_final_boss": {
@@ -3284,6 +3314,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_spore_wet_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_spore_wet_splat"
             }
         },
         "badger:piglin_grunter": {
@@ -3337,6 +3370,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_splat"
             }
         },
         "badger:piglin_hammer_boss": {
@@ -3443,6 +3479,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_med_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_med_splat"
             }
         },
         "badger:piglin_magma_boss": {
@@ -3708,6 +3747,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_metal_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_metal_splat"
             }
         },
         "badger:piglin_piggo_lava_launcher": {
@@ -3761,6 +3803,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_spore_wet_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_spore_wet_splat"
             }
         },
         "badger:piglin_piggo_warboar": {
@@ -3814,6 +3859,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_splat"
             }
         },
         "badger:piglin_pigmadilo": {
@@ -3867,6 +3915,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_bone_flesh_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_bone_flesh_splat"
             }
         },
         "badger:piglin_portal_guard": {
@@ -3920,6 +3971,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_metal_chain_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_metal_chain_splat"
             }
         },
         "badger:piglin_rotters_boss": {
@@ -4026,6 +4080,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_splat"
             }
         },
         "badger:piglin_seeker": {
@@ -4079,6 +4136,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_flesh_spore_wet_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_flesh_spore_wet_splat"
             }
         },
         "badger:piglin_super_nether_spreader": {
@@ -4132,6 +4192,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_med_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_med_splat"
             }
         },
         "badger:poi_tower_01": {
@@ -4879,6 +4942,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_netherite_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:redstone_launcher": {
@@ -8809,6 +8875,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_low_splat"
             }
         },
         "badger:totem_unlock_mob_alliance": {
@@ -9526,6 +9595,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_low_splat"
             }
         },
         "badger:tower_piglin_knockback": {
@@ -9579,6 +9651,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_goopy_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_goopy_alert_low_splat"
             }
         },
         "badger:tower_piglin_lava_thrower": {
@@ -9632,6 +9707,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_low_splat"
             }
         },
         "badger:tower_piglin_shield": {
@@ -9685,6 +9763,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_bone_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_bone_alert_low_splat"
             }
         },
         "badger:tower_piglin_thrower": {
@@ -9738,6 +9819,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_splat"
             }
         },
         "badger:tower_shotgun": {
@@ -12250,6 +12334,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_attack_territory_low_health": {
@@ -12303,6 +12390,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_attack_territory_med_health": {
@@ -12356,6 +12446,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_defend_territory_high_health": {
@@ -12409,6 +12502,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_defend_territory_low_health": {
@@ -12462,6 +12558,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_defend_territory_med_health": {
@@ -12515,6 +12614,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_increased_range_missiles": {
@@ -12621,6 +12723,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_obstacle_territory_low_health": {
@@ -12674,6 +12779,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_obstacle_territory_med_health": {
@@ -12727,6 +12835,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:zoner_piglin_regen_structures": {
@@ -12780,6 +12891,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_unique_netherite_alert_med_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherite_alert_med_splat"
             }
         },
         "badger:zoner_piglin_territory_dark_beacon": {
@@ -13677,6 +13791,12 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_netherite_blunt"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_netherite_slash"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_netherite_splat"
             }
         },
         "badger:occupation_zoner_piglin_attack_territory_low_health": {
@@ -13730,6 +13850,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:occupation_zoner_piglin_defend_territory_low_health": {
@@ -13783,6 +13906,9 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
         "badger:occupation_zoner_piglin_obstacle_territory_low_health": {
@@ -13836,9 +13962,12 @@
             },
             "on_zombie_melee_attack_hit": {
                 "audio": "BAE_impact_magic_portal_alert_hi_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_portal_alert_hi_splat"
             }
         },
-        "badger:player_llama_ll3": {
+        "badger:player_llama_ll3_gameplay": {
             "on_bruiser_melee_hit": {
                 "audio": "BAE_impact_flesh_slash"
             },
@@ -13928,6 +14057,544 @@
             },
             "on_tower_piglin_shield_ranged_attack_hit": {
                 "audio": "BAE_impact_flesh_pierce_fire"
+            }
+        },
+        "badger:poi_tower_01_buildable": {
+            "on_bruiser_melee_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_creeper_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_engineer_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_fallen_warrior_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_fallen_warrior_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_final_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_carrier_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_cavalry_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_shield_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_sniper_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_golem_stone_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_wood_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_grenadier_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_grunter_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_hammer_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_hero_sword_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_hero"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_magma_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_magma_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_magma_cube_lrg_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_med_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_sml_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_warboar_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_pigmadilo_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_runt_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_seeker_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_super_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_portal_guard_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_portal_guard_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_redstone_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_rotters_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_skeleton_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_piglin_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_lava_thrower_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_shield_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_shotgun_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_zombie_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            }
+        },
+        "badger:poi_tower_02_buildable": {
+            "on_bruiser_melee_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_creeper_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_engineer_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_fallen_warrior_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_fallen_warrior_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_final_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_carrier_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_cavalry_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_shield_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_sniper_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_golem_stone_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_wood_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_grenadier_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_grunter_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_hammer_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_hero_sword_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_hero"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_magma_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_magma_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_magma_cube_lrg_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_med_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_sml_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_warboar_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_pigmadilo_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_runt_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_seeker_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_super_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_portal_guard_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_portal_guard_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_redstone_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_rotters_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_skeleton_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_piglin_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_lava_thrower_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_shield_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_shotgun_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_zombie_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            }
+        },
+        "badger:poi_tower_04_buildable": {
+            "on_bruiser_melee_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_creeper_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_engineer_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_fallen_warrior_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_fallen_warrior_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_final_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_final_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_carrier_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_cavalry_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_shield_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_golem_sniper_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_golem_stone_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_golem_wood_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_grenadier_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_grunter_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_hammer_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_hero_sword_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_hero"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_slash"
+            },
+            "on_magma_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_magma_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_magma_cube_lrg_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_med_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_magma_cube_sml_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_lava_launcher_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piggo_warboar_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_pigmadilo_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_runt_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            },
+            "on_piglin_seeker_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_piglin_super_nether_spreader_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_portal_guard_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_portal_guard_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_redstone_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_rotters_boss_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_rotters_boss_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt_big"
+            },
+            "on_skeleton_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_tower_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_piglin_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_lava_thrower_aoe_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_explosion"
+            },
+            "on_tower_piglin_shield_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce_fire"
+            },
+            "on_tower_shotgun_ranged_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_pierce"
+            },
+            "on_zombie_melee_attack_hit": {
+                "audio": "BAE_impact_magic_stone_alert_hi_blunt"
+            }
+        },
+        "badger:tower_piglin_thrower_3": {
+            "on_creeper_aoe_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_explosion"
+            },
+            "on_fallen_warrior_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_fallen_warrior_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_carrier_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_cavalry_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_golem_shield_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_sniper_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_golem_stone_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_golem_wood_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_hero_sword_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_hero"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_slash"
+            },
+            "on_redstone_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_explosion"
+            },
+            "on_skeleton_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_tower_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_tower_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_explosion"
+            },
+            "on_tower_shotgun_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_zombie_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_splat"
+            }
+        },
+        "badger:tower_piglin_thrower_2": {
+            "on_fallen_warrior_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_fallen_warrior_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_carrier_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_cavalry_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_golem_shield_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt_big"
+            },
+            "on_golem_sniper_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_golem_stone_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_golem_wood_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_hero_sword_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_hero"
+            },
+            "on_illager_axe_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_slash"
+            },
+            "on_redstone_launcher_aoe_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_explosion"
+            },
+            "on_skeleton_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_tower_arrow_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_tower_knockback_aoe_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_explosion"
+            },
+            "on_tower_shotgun_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_pierce"
+            },
+            "on_zombie_melee_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_blunt"
+            },
+            "on_llama_ranged_attack_hit": {
+                "audio": "BAE_impact_unique_netherrack_bone_alert_low_splat"
             }
         }
     }

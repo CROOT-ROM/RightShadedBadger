@@ -553,6 +553,12 @@
             "/village add_village badger:piglin_dbb darkBeacon faction.pig.dbb",
             "/assignteam @s blue_team"
           ]
+        },
+        {
+          "name": "Corrupted Beacon Base (Pick WorldGen Slot Nearby Player)",
+          "command": [
+            "/bsharp event invasionPlaceDbbNearbySlot darkBeacon"
+          ]
         }
       ]
     },
@@ -960,6 +966,15 @@
         {
           "name": "End Match (Defeat)",
           "command": "/bsharp event end_match piglin_team"
+        }
+      ]
+    },
+    {
+      "folder_name": "Testing Scenarios",
+      "commands": [
+        {
+          "name": "Test Horde #4 sky",
+          "command": "/bsharp event test_horde4_sky"
         }
       ]
     }

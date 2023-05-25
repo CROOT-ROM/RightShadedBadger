@@ -19,7 +19,7 @@
       "brokenlands_stone_density": 2.0,
       "custom_iron_density": 10,
       "custom_redstone_density": 25,
-      "custom_coal_density": 25,
+      "custom_coal_density": 50,
       "custom_diamond_density": 25,
       "custom_chest_density": 0.35,
       "custom_isnot_pvp": 0

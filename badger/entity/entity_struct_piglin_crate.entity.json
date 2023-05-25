@@ -6,8 +6,8 @@
         "enter_range_audio_event": "BAE_UI_interact_highlight_piglin_crate"
       },
       "badger:interaction_presentation": {
-          "trigger_specific_events": true,
-          "trigger_generic_events": false
+        "trigger_generic_events": false,
+        "trigger_specific_events": true
       },
       "badger:point_lights": {
         "lights":  [

@@ -3,8 +3,8 @@
   "minecraft:client_entity": {
     "components": {
       "badger:interaction_presentation": {
-          "trigger_specific_events": true,
-          "trigger_generic_events": false
+        "trigger_generic_events": false,
+        "trigger_specific_events": true
       },
       "badger:point_lights": {
         "lights":  [
@@ -77,6 +77,7 @@
       },
       "sound_effects": {
         "allay_spawn": "BAE_treasure_chest_allay_spawn",
+        "chest_lp": "BAE_sfx_attractors_chest_lp",
         "chest_lp_stop": "BAE_sfx_attractors_chest_lp_stop",
         "chest_open": "BAE_treasure_chest_open"
       },

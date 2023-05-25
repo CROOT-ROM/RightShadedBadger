@@ -18,6 +18,13 @@
               "locator": "loc_fx_main"
             }
           ],
+          "rumble": {
+            "duration": 0.15,
+            "override": false,
+            "priority": 3,
+            "range": 10,
+            "strength": 25
+          },
           "script": "has_exploded"
         }
       },

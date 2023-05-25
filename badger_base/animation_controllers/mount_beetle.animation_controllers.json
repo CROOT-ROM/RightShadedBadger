@@ -454,7 +454,7 @@
           ],
           "blend_transition": 0.1,
           "blend_via_shortest_path": "slerp",
-          "on_exit": ["variable.face_anim_frame = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.is_mount_swap = 0;"],
           "sound_effects":  [
             {
               "effect": "dx_acquire",
@@ -487,7 +487,7 @@
           ],
           "blend_transition": 0.1,
           "blend_via_shortest_path": "slerp",
-          "on_exit": ["variable.face_anim_frame = 0;","variable.is_mount_swap = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
           "transitions":  [
             {
               "idle": "query.all_animations_finished"
@@ -590,6 +590,74 @@
             },
             {
               "knockback": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_beetle.fe_anim": {
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "fe_select_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_beetle.fe_anim_alt": {
+      "states": {
+        "idle": {
+          "animations":  [
+            {
+              "fe_idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "new_dud": "variable.scene_opened"
+            }
+          ]
+        },
+        "new_dud": {
+          "animations":  [
+            {
+              "fe_new_skin_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
             }
           ]
         }
@@ -775,39 +843,6 @@
             },
             {
               "jog": "((query.speed >= 7.75) && (query.speed < 10.15))"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.mount_beetle.frontend": {
-      "initial_state": "flourish",
-      "states": {
-        "flourish": {
-          "animations":  [
-            {
-              "fe_select": 1.0
-            }
-          ],
-          "blend_transition": 0.2,
-          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
-          "transitions":  [
-            {
-              "idle": "query.all_animations_finished"
-            }
-          ]
-        },
-        "idle": {
-          "animations":  [
-            {
-              "fe_idle": 1.0
-            }
-          ],
-          "blend_transition": 0.1,
-          "on_exit": ["variable.face_anim_frame = 0;"],
-          "transitions":  [
-            {
-              "flourish": "variable.scene_opened"
             }
           ]
         }

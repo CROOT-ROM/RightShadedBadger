@@ -2,7 +2,8 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "components": {
-      "badger:block_source_info": {},
+      "badger:block_source_info": {
+      },
       "badger:face_animation": {
         "anim_columns": 2,
         "anim_rows": 1,
@@ -15,7 +16,8 @@
         "position_interpolation_steps_y_down": 1.25
       },
       "badger:keep_alive_timer": {
-        "time": 2
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:presentation_event": {
         "intense_hit": {
@@ -26,6 +28,14 @@
         },
         "normal_knockback": {
           "audio": "BAE_golem_wood_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
         },
         "on_golem_stone_melee_hit": {
           "audio": "BAE_impact_wood_blunt"
@@ -47,10 +57,7 @@
         "definition": "badger:mob_golem_wood",
         "limit": 128
       },
-      "badger:template": [
-        "badger:template_mob",
-        "badger:template_status_effects"
-      ]
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
     },
     "description": {
       "animations": {
@@ -91,18 +98,7 @@
         "swim_a_idle": "animation.mob_golem_wood.swim_a_idle"
       },
       "enable_attachables": false,
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Happy",
-        "Happy Blink",
-        "Not Impressed",
-        "Afraid",
-        "Stunned",
-        "Yelling",
-        "Determined",
-        "Blink Hard"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
       "geometry": {
         "default": "geometry.mob_golem_wood"
       },
@@ -120,11 +116,9 @@
         "fx_spawn": "badger:fx_shared_spawn_small",
         "fx_spawn_sparkle": "badger:fx_shared_spawn_small_sparkle"
       },
-      "render_controllers": [
-        "controller.render.mob_golem_wood"
-      ],
+      "render_controllers": ["controller.render.mob_golem_wood"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "hit_reaction": "1"
           },
@@ -132,11 +126,7 @@
             "default": "1"
           }
         ],
-        "initialize": [
-          "variable.walkchooser = math.random(0,100);",
-          "variable.second_skin_vis = 0;",
-          "variable.skin_mat = 0;"
-        ]
+        "initialize": ["variable.walkchooser = math.random(0,100);","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
       },
       "sound_effects": {
         "attack_a": "BAE_golem_wood_attack_a",
@@ -150,6 +140,7 @@
         "dx_death": "BAE_golem_wood_dx_death",
         "dx_hurt": "BAE_golem_wood_dx_hurt",
         "dx_idle": "BAE_golem_wood_dx_idle",
+        "dx_idle_sprint": "BAE_golem_wood_dx_idle_sprint",
         "footstep": "BAE_golem_wood_footstep",
         "idle_snout_shake": "BAE_golem_wood_idle_snout_shake",
         "jump": "BAE_golem_wood_jump",

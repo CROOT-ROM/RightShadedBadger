@@ -2407,12 +2407,6 @@
             "effect": "dx_attack_a",
             "enabled": true
           }
-        ],
-        "0.1":  [
-          {
-            "effect": "attack_a",
-            "enabled": true
-          }
         ]
       },
       "timeline": {
@@ -11461,6 +11455,12 @@
       },
       "loop": true,
       "sound_effects": {
+        "0.066":  [
+          {
+            "effect": "dx_walk",
+            "enabled": true
+          }
+        ],
         "0.067":  [
           {
             "effect": "footstep",

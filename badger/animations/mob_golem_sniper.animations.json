@@ -10362,6 +10362,15 @@
         }
       },
       "loop": true,
+      "particle_effects": {
+        "0.003":  [
+          {
+            "effect": "fx_attack_nose",
+            "enabled": true,
+            "locator": "loc_fx_nose"
+          }
+        ]
+      },
       "sound_effects": {
         "0.3":  [
           {
@@ -11461,6 +11470,12 @@
         ]
       },
       "sound_effects": {
+        "0.1":  [
+          {
+            "effect": "dx_idle_sprint",
+            "enabled": true
+          }
+        ],
         "0.4":  [
           {
             "effect": "footstep_leg",

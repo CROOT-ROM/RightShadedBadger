@@ -85,12 +85,15 @@
 			"override_draw_distance_enabled" : {
 				"value" : true
 			},
-			"override_draw_distance_enabled" : {
-				"value" : true
+			"cinematic_request_minimum_chunk_distance" : {
+				"value" : 24
+			},
+			"cinematic_request_maximum_chunk_distance" : {
+				"value" : 24
 			},
 			"dof_quality" : {
 				"value" : 2
-			}			
+			}
 		}
 	}
 }

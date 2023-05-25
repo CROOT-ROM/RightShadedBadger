@@ -5,7 +5,7 @@
       "badger:block_source_info": {
       },
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -54,13 +54,12 @@
       },
       "badger:rendering": {
         "definition": "badger:animal_wolf",
-        "limit" : 128
+        "limit": 128
       },
       "badger:template": ["badger:template_animal","badger:template_status_effects"]
     },
     "description": {
       "animations": {
-        "attack_a": "animation.animal_wolf.attack_a",
         "attack_b": "animation.animal_wolf.attack_b",
         "cine_idle_a": "animation.animal_wolf.cine_idle_a",
         "climb": "animation.animal_wolf.climb",
@@ -76,6 +75,7 @@
         "idle_d": "animation.animal_wolf.idle_d",
         "knockback_a": "animation.animal_wolf.knockback_a",
         "locomotion": "controller.animation.animal_wolf.locomotion",
+        "patpat_a": "animation.animal_wolf_dlc.patpat_a",
         "run_a": "animation.animal_wolf.run_a",
         "run_b": "animation.animal_wolf.run_b",
         "run_c": "animation.animal_wolf.run_c",
@@ -91,7 +91,7 @@
         "enemy_spotted": "variable.enemy_spotted = 1;",
         "hero_spotted": "variable.hero_spotted = 1;"
       },
-      "face_poses": ["Neutral","Neutral Blink"],
+      "face_poses": ["Neutral","Neutral Blink","Patpat Blink"],
       "geometry": {
         "default": "geometry.animal_wolf"
       },

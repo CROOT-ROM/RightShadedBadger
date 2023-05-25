@@ -15,7 +15,9 @@
               0.882353
             ],
             "min_distance": 350,
-            "max_distance": 5000
+            "max_distance": 5000,
+            "beacon_width": 8.0,
+            "emissive_scale": 3.0
           },
           {
             "meta_material": "mat_map_beacon",
@@ -25,7 +27,9 @@
               0.6
             ],
             "min_distance": 350,
-            "max_distance": 5000
+            "max_distance": 5000,
+            "beacon_width": 8.0,
+            "emissive_scale": 3.0
           }
         ]
       },

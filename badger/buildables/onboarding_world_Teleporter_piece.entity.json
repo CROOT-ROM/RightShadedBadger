@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:onboarding_world_teleporter_piece"
+    },
+    "components": {
+            "badger:beacon_render_info": {
+                "states": [
+                    {
+                        "meta_material": "mat_map_beacon",
+                        "beacon_color": [
+                          0.1176,
+                          0.796,
+                          0.882353
+                        ],
+                        "min_distance": 0,
+                        "max_distance": 5000,
+                        "beacon_width": 4.5,
+                        "emissive_scale": 2.5
+                    }
+                ]
+            }
+    }
+  }
+}

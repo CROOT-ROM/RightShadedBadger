@@ -5,7 +5,7 @@
       "badger:block_source_info": {
       },
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -54,7 +54,7 @@
       },
       "badger:rendering": {
         "definition": "badger:animal_llama",
-        "limit": 64
+        "limit": 512
       },
       "badger:template": ["badger:template_animal","badger:template_status_effects"]
     },
@@ -70,6 +70,7 @@
         "knockback_a": "animation.animal_llama.knockback_a",
         "locomotion": "controller.animation.animal_llama.locomotion",
         "look_at": "animation.animal_llama.look_at",
+        "patpat_a": "animation.animal_llama_dlc.patpat_a",
         "sprint_a": "animation.animal_llama.sprint_a",
         "stop_a": "animation.animal_llama.stop_a",
         "stun_a": "animation.animal_llama.stun_a",
@@ -111,6 +112,7 @@
       "sound_effects": {
         "angry": "BAE_animal_llama_angry",
         "cheer": "BAE_animal_llama_cheer",
+        "cheer_stop": "BAE_animal_llama_cheer_stop",
         "death": "BAE_animal_llama_death",
         "death_poof_large": "BAE_animal_death_poof_large",
         "dx_cheer": "BAE_animal_llama_dx_cheer",
@@ -126,7 +128,7 @@
         "swag": "BAE_animal_llama_swag"
       },
       "textures": {
-        "default": "textures/entity/animal_llama/tex_animal_llama_d"
+        "default": "textures/entity/tex_animal_llama_d"
       }
     }
   }

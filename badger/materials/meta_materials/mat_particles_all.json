@@ -395,7 +395,7 @@
     },
     "mat_badger_fx_blend_daisy_anim:mat_badger_particles_blend": {
         "textures": {
-            "diffuseMap": "textures/particle/tex_fx_daisy_anim"
+            "diffuseMap": "textures/particle/tex_fx_daisy"
         }
 
     },

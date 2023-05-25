@@ -130,13 +130,61 @@
         {
           "x": 99.5352631,
           "y": -5.1167326,
-          "z": 5.45873568e-14
+          "z": -2.80144641e-13
         }
       ],
       "parent": "joint_head_ribbons0_m",
       "stiffness": {
         "root": 0.1,
         "tail": 0.15
+      }
+    },
+    "dynamic.hero.hero_ponytail": {
+      "acceleration_interpoland_reduction": 1.5,
+      "bones": ["joint_rabbit_braid1_m","joint_rabbit_braid2_m","joint_rabbit_braid3_m","joint_rabbit_braid4_m"],
+      "bounce": {
+        "root": 0.2,
+        "tail": 0.15
+      },
+      "collision_planes": ["loc_cape_collider"],
+      "delta_time_coefficient": 0.5,
+      "force": {
+        "x": 0.0,
+        "y": -7000.0,
+        "z": 0.0
+      },
+      "force_tail": {
+        "x": 0.0,
+        "y": -3000.0,
+        "z": 0.0
+      },
+      "initial_mount": "badger:mount_horse",
+      "nodes":  [
+        {
+          "x": 31.2499313,
+          "y": 0.339834183,
+          "z": 4.29210365e-14
+        },
+        {
+          "x": 24.9999428,
+          "y": 0.277796149,
+          "z": 1.15056754e-13
+        },
+        {
+          "x": 24.9999428,
+          "y": 0.277796149,
+          "z": 2.48283517e-13
+        },
+        {
+          "x": 18.749958,
+          "y": 0.208346158,
+          "z": 3.81889615e-13
+        }
+      ],
+      "parent": "joint_rabbit_braid0_m",
+      "stiffness": {
+        "root": 0.1,
+        "tail": 0.1
       }
     }
   }

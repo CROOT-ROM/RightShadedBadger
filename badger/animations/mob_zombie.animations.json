@@ -7672,6 +7672,12 @@
       },
       "loop": true,
       "sound_effects": {
+        "0.033":  [
+          {
+            "effect": "dx_walk",
+            "enabled": true
+          }
+        ],
         "0.167":  [
           {
             "effect": "step",
@@ -8345,6 +8351,12 @@
       },
       "loop": true,
       "sound_effects": {
+        "0.033":  [
+          {
+            "effect": "dx_walk",
+            "enabled": true
+          }
+        ],
         "0.233":  [
           {
             "effect": "step",

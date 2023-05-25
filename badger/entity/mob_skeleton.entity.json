@@ -16,7 +16,8 @@
         "position_interpolation_steps_y_down": 1
       },
       "badger:keep_alive_timer": {
-        "time": 1.86
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:lookat": {
         "joint_name": "joint_look_at",
@@ -35,6 +36,14 @@
         },
         "normal_knockback": {
           "audio": "BAE_mob_skeleton_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
         },
         "on_hero_directed": {
           "audio": "BAE_mob_skeleton_dx_directed"
@@ -160,7 +169,7 @@
         "step": "BAE_mob_skeleton_step"
       },
       "textures": {
-        "default": "textures/entity/mob_skeleton/tex_mob_skeleton_d"
+        "default": "textures/entity/tex_mob_skeleton_d"
       }
     }
   }

@@ -11,7 +11,8 @@
         "default_frame": 0
       },
       "badger:keep_alive_timer": {
-        "time": 2
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:mount_molang": {
         "mount_variable": "mob_golem_cavalry"
@@ -22,6 +23,14 @@
         },
         "normal_knockback": {
           "audio": "BAE_mob_golem_cavalry_dx_knockback_normal"
+        },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
         },
         "on_hero_directed": {
           "audio": "BAE_mob_golem_cavalry_dx_directed"

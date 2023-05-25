@@ -71,7 +71,14 @@
               "enabled": true,
               "bind_to_actor": true
             }
-          ]
+          ],
+          "rumble": {
+            "duration": 0.25,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
         },
         "player_jump_refreshed": {
           "particles": [
@@ -88,6 +95,15 @@
           "particles":{
             "effect": "badger:fx_buffs_player_jump",
             "kill_script": "player_jump_stop"
+          }
+        },
+        "on_jump_with_buff": {
+          "rumble": {
+              "duration": 0.5,
+              "strength": 15,
+              "priority": 1,
+              "override": true,
+              "range": 0.0
           }
         },
         "player_speed_start": {
@@ -111,7 +127,14 @@
               "enabled": true,
               "bind_to_actor": true
             }
-          ]
+          ],
+          "rumble": {
+            "duration": 0.25,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
         },
         "player_speed_refreshed": {
           "particles": [
@@ -170,12 +193,73 @@
             "locator": "loc_fx_stat_chest",
             "enabled": true,
             "bind_to_actor": true
+          },
+          "rumble": {
+            "duration": 0.75,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
           }
         },
         "sprint_stop":{
           "particles":{
             "effect": "badger:fx_sprint",
             "kill_script": "player_sprint_stop"
+          }
+        },
+        "slowed_tar_start": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
+        },
+        "slowed_tar_refreshed": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
+        },
+        "slowed_thorns_start": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
+        },
+        "slowed_thorns_refreshed": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
+        },
+        "slowed_piglin_bramble_start": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
+          }
+        },
+        "slowed_piglin_bramble_refreshed": {
+          "rumble": {
+            "duration": 0.2,
+            "strength": 20,
+            "priority": 4,
+            "override": false,
+            "range": 0.0
           }
         }
       }

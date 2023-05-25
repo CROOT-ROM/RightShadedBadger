@@ -2,7 +2,8 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "components": {
-      "badger:block_source_info": {},
+      "badger:block_source_info": {
+      },
       "badger:face_animation": {
         "anim_columns": 8,
         "anim_rows": 1,
@@ -10,38 +11,23 @@
         "default_frame": 0
       },
       "badger:keep_alive_timer": {
-        "time": 1.5
+        "time": 2,
+        "time_if_disbanded": 0.07
       },
       "badger:point_lights": {
-        "lights": [
+        "lights":  [
           {
-            "color": [
-              1,
-              1,
-              0.5
-            ],
+            "color": [1,1,0.5],
             "enabled": "variable.fx_enb_light",
             "falloff_power": "variable.fx_light_falloff",
             "intensity": "variable.fx_enb_light",
             "locator": "loc_fx_light",
-            "offset": [
-              0,
-              0,
-              0
-            ],
+            "offset": [0,0,0],
             "radius": 7.5
           }
         ]
       },
       "badger:presentation_event": {
-        "on_hearts": {
-          "particles": {
-            "effect": "badger:fx_stat_hearts",
-            "enabled": true,
-            "bind_to_actor": true,
-            "locator": "loc_fx_stat_head"
-          }
-        },
         "cine_charge_a": {
           "animation": {
             "animation": "charge_a"
@@ -111,11 +97,27 @@
         "normal_knockback": {
           "audio": "BAE_mob_creeper_dx_knockback_normal"
         },
+        "on_disband": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_disband_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
+        },
         "on_explode": {
           "attachment": {
             "location": "general1"
           },
           "script": "death"
+        },
+        "on_hearts": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_hearts",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
         },
         "on_hero_directed": {
           "audio": "BAE_mob_creeper_dx_directed"
@@ -146,11 +148,9 @@
         "definition": "badger:mob_creeper",
         "limit": 1024
       },
-      "badger:template": [
-        "badger:template_mob",
-        "badger:template_status_effects"
-      ],
-      "badger:terrain_type_molang": {}
+      "badger:template": ["badger:template_mob","badger:template_status_effects"],
+      "badger:terrain_type_molang": {
+      }
     },
     "description": {
       "animations": {
@@ -199,16 +199,7 @@
         "enemy_spotted": "variable.enemy_spotted = 1;",
         "hero_spotted": "variable.hero_spotted = 1;"
       },
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Happy",
-        "Curious",
-        "Run Away",
-        "Scared",
-        "Hard Blink",
-        "PreExplode"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Happy","Curious","Run Away","Scared","Hard Blink","PreExplode"],
       "geometry": {
         "default": "geometry.mob_creeper"
       },
@@ -227,11 +218,9 @@
         "fx_spawn": "badger:fx_shared_spawn_small",
         "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle"
       },
-      "render_controllers": [
-        "controller.render.mob_creeper"
-      ],
+      "render_controllers": ["controller.render.mob_creeper"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "hitreact": "1"
           },
@@ -239,13 +228,7 @@
             "core": "1"
           }
         ],
-        "initialize": [
-          "variable.hide_geo_vis = 1;",
-          "variable.fx_enb_light = 0;",
-          "variable.fx_light_falloff = 0;",
-          "variable.second_skin_vis = 0;",
-          "variable.skin_mat = 0;"
-        ]
+        "initialize": ["variable.hide_geo_vis = 1;","variable.fx_enb_light = 0;","variable.fx_light_falloff = 0;","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
       },
       "sound_effects": {
         "bodyfall": "BAE_mob_creeper_bodyfall",
@@ -258,6 +241,7 @@
         "dx_happy": "BAE_mob_creeper_dx_happy",
         "dx_hurt": "BAE_mob_creeper_dx_hurt",
         "dx_idle": "BAE_mob_creeper_dx_idle",
+        "dx_idle_sprint": "BAE_mob_creeper_dx_idle_sprint",
         "dx_reaction_alert": "BAE_mob_creeper_dx_reaction_alert",
         "dx_reaction_hit": "BAE_mob_creeper_dx_reaction_hit",
         "dx_reaction_scared": "BAE_mob_creeper_dx_reaction_scared",

@@ -32,7 +32,7 @@
             "particles_count" : "query.is_entity_on_ground"
          },
          "badger:particle_appearance_billboard" : {
-            "size" : [ 2.2, 2.2 ],
+            "size" : [ 2.0, 2.0 ],
             "facing_camera_mode" : "rotate_xyz",
             "flipbook" : {
                "layout" : {
@@ -54,7 +54,8 @@
             "expiration_expression" : "(variable.terrain_type != 9 || variable.fx_sprint == 0) && query.is_entity_on_ground == 1"
          },
          "minecraft:emitter_shape_point" : {
-            "direction" : [ 0.0, 0.0, 1.0 ]
+            "direction" : [ 0.0, 0.0, 1.0 ],
+            "offset" : [ 0.0, -0.3, 0.0 ]
          },
          "minecraft:particle_appearance_tinting" : {
             "base_color" : [ 0.885, 0.609, 0.225, 1.0 ]

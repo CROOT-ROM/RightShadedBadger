@@ -18,10 +18,19 @@
     "hero_09"
   ],
 
+  "lost_legends_card_art": [
+    {
+      "focus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_focus.png",
+      "unfocus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_unfocus.png",
+      "start_date": "2022-01-01",
+      "end_date": "2022-01-02"
+    }
+  ],
+
   "marketplace_card_art": [
     {
       "focus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_focus.png",
-      "unfocus_filename": "/textures-hbui/main-menu/MM_card_marketplace_custom_example_unfocus.png",
+      "unfocus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_unfocus.png",
       "start_date": "2022-01-01",
       "end_date": "2022-01-02"
     }
@@ -33,7 +42,7 @@
       "keys": [
         "key.mapScreen",
         "key.songbookScreen",
-        "key.cycleHotbarPrevious", 
+        "key.cycleHotbarPrevious",
         "key.cycleHotbarNext",
         "key.toolbarCategory1",
         "key.toolbarCategory2",
@@ -87,7 +96,7 @@
         "key.action",
         "key.rotatePreviewClockwise",
         "key.rotatePreviewCounterclockwise",
-        "key.ping.buildpreview" 
+        "key.ping.buildpreview"
       ]
     },
     {

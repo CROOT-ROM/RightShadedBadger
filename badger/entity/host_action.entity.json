@@ -20,22 +20,14 @@
         "position_interpolation_steps_y_down": 1
       },
       "badger:point_lights": {
-        "lights": [
+        "lights":  [
           {
-            "color": [
-              0.25,
-              0.875,
-              1
-            ],
+            "color": [0.25,0.875,1],
             "enabled": true,
             "falloff_power": 2,
             "intensity": 3,
             "locator": "loc_fx_light",
-            "offset": [
-              0,
-              0,
-              0
-            ],
+            "offset": [0,0,0],
             "radius": 5
           }
         ]
@@ -102,13 +94,9 @@
       },
       "enable_attachables": false,
       "event_scripts": {
-        "skin_off": "variable.second_skin_vis = 0; variable.mat_opacity = 1; variable.pass_index = 1;"
+        "skin_off": "variable.second_skin_vis = 0; variable.mat_opacity = 1;"
       },
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Look Up"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Look Up"],
       "geometry": {
         "default": "geometry.host_action"
       },
@@ -119,20 +107,14 @@
         "mat_host_action": "mat_host_action",
         "mat_host_action_face": "mat_host_action_face"
       },
-      "render_controllers": [
-        "controller.render.host_action"
-      ],
+      "render_controllers": ["controller.render.host_action"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "default": "1"
           }
         ],
-        "initialize": [
-          "variable.second_skin_vis = 1;",
-          "variable.mat_opacity = 0.75;",
-          "variable.pass_index = 5;"
-        ]
+        "initialize": ["variable.second_skin_vis = 1;","variable.mat_opacity = 0.75;"]
       },
       "sound_effects": {
         "beckon": "BAE_host_action_beckon",

@@ -332,19 +332,18 @@
         }
     },
     "mat_map_beacon":{
-      "material": "MapBeacon",
-      "blendmode": "premultiplied",
-      "pass": "transparentafterworld",
-      "depthstate": {
-          "enabled": true,
-          "writedepth": false,
-          "comparisonfunction": "less"
-      },
-      "target_uniform_blocks": [ "BeaconUniforms" ],
-      "textures": {
-        "diffuseMap": "textures/particle/tex_fx_hq_beam_b",
-        "emissiveMap": "textures/particle/tex_fx_hq_beam_e"
-      }
+        "material": "MapBeacon",
+        "blendmode": "premultiplied",
+        "pass": "transparentafterworld",
+        "depthstate": {
+            "enabled": true,
+            "writedepth": false,
+            "comparisonfunction": "less"
+        },
+        "target_uniform_blocks": [ "BeaconUniforms" ],
+        "textures": {
+            "diffuseMap": "textures/particle/tex_fx_hq_beam_b"
+        }
     },
     "mat_xray_entity": {
         "pass": "xray",

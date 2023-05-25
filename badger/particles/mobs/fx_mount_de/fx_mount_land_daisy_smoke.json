@@ -17,7 +17,7 @@
          "badger:emitter_shape_cylinder" : {
             "arc_offset" : -90.0,
             "emission_mode" : "base",
-            "length" : 10.0,
+            "length" : 2.0,
             "offset" : [ 0.0, 0.5, 0.0 ],
             "vertical_angle" : 90.0
          },

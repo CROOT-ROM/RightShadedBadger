@@ -75,6 +75,17 @@ html {
 }
 
 @font-face {
+	font-family: 'Noto Sans HE';
+	src: url(/hbui/fonts/NotoSansHebrew-Regular-46d0c.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Sans HE';
+	font-weight: bold;
+	src: url(/hbui/fonts/NotoSansHebrew-Bold-c672e.ttf);
+}
+
+@font-face {
 	font-family: 'Noto Sans Mongolian';
 	src: url(/hbui/fonts/NotoSansMongolian-Regular-6cd1c.ttf);
 }
@@ -2831,11 +2842,6 @@ html {
 	--panelLabelDisabledColor: var(--gray30);
 }
 
-._14fCd {
-	--autoHidingScrollbarPosition: absolute;
-	--autoHidingScrollbarWidth: 0.8rem;
-}
-
 ._1uomH {
 	/* Vertical scrollbar */
 	--mouseScrollbarBackgroundColor: var(--gray60);
@@ -2885,9 +2891,8 @@ html {
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
 	--mouseScrollbarHorizontalMarginTop: var(--spacingSize1);
 	--mouseScrollbarHorizontalMarginBottom: var(--spacingSize3);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
-	--mouseScrollbarHorizontalMarginLeft: 0;
-	--mouseScrollbarHorizontalMarginRight: 0;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: var(--spacingSize1);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
@@ -3157,48 +3162,49 @@ html {
 
 .qL3vH {
 	/* Vertical scrollbar */
-	--mouseScrollbarBackgroundColor: transparent;
+	--mouseScrollbarBackgroundColor: #857f72;
 	--mouseScrollbarBackgroundWidth: 0.4rem;
 
 	--mouseScrollbarHandlerWidth: 1.2rem;
-	--mouseScrollbarHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHandlerBackgroundColor: #fffae8;
 	--mouseScrollbarHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--blackOpacity20),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--blackOpacity20), 0 0.4rem 0.4rem 0 var(--blackOpacity20);
+	--mouseScrollbarHandlerBoxShadow: none;
+	--mouseScrollbarHandlerBorderColor: var(--blackOpacity100);
+	--mouseScrollbarHandlerBorderRadius: 0;
 	--mouseScrollbarHandlerJustifyContent: flex-end;
-	--mouseScrollbarHandlerBorderRadius: 0.4rem;
-	--mouseScrollbarHandlerBorderColor: var(--blackOpacity90);
-	--mouseScrollbarHandlerBottomBevel: transparent;
+	--mouseScrollbarHandlerBottomBevel: var(--blackOpacity20);
 
 	--mouseScrollbarHandlerBottomBevelHeight: 0.4rem;
-	--mouseScrollbarHandlerBottomBevelBackgroundColor: var(--blackOpacity50);
-	--mouseScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
+	--mouseScrollbarHandlerBottomBevelBackgroundColor: #afa183;
+	--mouseScrollbarHandlerBottomBevelBoxShadow: none;
 
-	--mouseScrollbarHorizontalMarginTop: none;
-	--mouseScrollbarHorizontalMarginBottom: none;
-	--mouseScrollbarHorizontalMarginLeft: 2.4rem;
-	--mouseScrollbarHorizontalMarginRight: 2.4rem;
-	--mouseScrollbarRightMargin: 0;
+	--mouseScrollbarBackgroundMargins: var(--spacingSize1);
+	--mouseScrollbarLeftMargin: 0.4rem;
+
+	--mouseScrollbarHorizontalMarginTop: 2rem;
+	--mouseScrollbarHorizontalMarginBottom: 2rem;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: 3.2rem;
+	--mouseScrollbarRightMargin: 0rem;
 
 	--mouseScrollbarDisabledDisplay: none;
 	--mouseScrollbarDisabledWidth: 0;
 
 	--mouseScrollbarRailWidth: 1.2rem;
 
-	--mouseScrollbarVerticalMargins: 4rem;
+	--mouseScrollbarVerticalMargins: var(--spacingSize2);
 	--mouseScrollbarVerticalDisplay: flex;
-	--mouseScrollbarVerticalFlexDirection: column;
-	--mouseScrollbarVerticalCenter: center;
+	--mouseScrollbarVerticalFlexDirection: row;
+	--mouseScrollbarVerticalCenter: flex-start;
 
 	/* Horizontal scrollbar */
-	--mouseScrollbarHorizontalBackgroundColor: transparent;
+	--mouseScrollbarHorizontalBackgroundColor: var(--gray60);
 	--mouseScrollbarHorizontalBackgroundHeight: 0.4rem;
 
 	--mouseScrollbarHorizontalHandlerHeight: 1.6rem;
-	--mouseScrollbarHorizontalHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHorizontalHandlerBackgroundColor: var(--gray20);
 	--mouseScrollbaHorizontalHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHorizontalHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--whiteOpacity50),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--whiteOpacity90), 0 0.4rem 0.4rem 0 var(--blackOpacity30);
+	--mouseScrollbarHorizontalHandlerBoxShadow: none;
 	--mouseScrollbarHorizontalHandlerJustifyContent: flex-end;
 
 	--mouseHorizontalScrollbarHandlerBottomBevelHeight: 0.4rem;
@@ -3206,38 +3212,34 @@ html {
 	--mouseHorizontalScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
 
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
-	--mouseScrollbarHorizontalVerticalMargins: var(--spacingSize1);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
-
-	--mouseHorizontalScrollbarIdleDisplay: none;
 
 	--mouseScrollbarHorizontalRailHeight: 1.2rem;
 
 	--mouseScrollbarHorizontalDisplay: flex;
 	--mouseScrollbarHorizontalFlexDirection: row;
-	--mouseScrollbarHorizontalCenter: center;
+	--mouseScrollbarHorizontalCenter: flex-start;
 
 	/* Scrollbar Top Bottom Details */
-	--mouseScrollbarDetailSize: 2.4rem;
+	--mouseScrollbarDetailSize: 0;
 	--mouseScrollbarDetailSizeMinimal: 0;
-	--mouseScrollbarTopDetailIcon: url(/hbui/assets/top_detail-fd452.png);
-	--mouseScrollbarTopDetailIconDark: url(/hbui/assets/top_detail_dark-606b1.png);
-	--mouseScrollbarBottomDetailIcon: url(/hbui/assets/bottom_detail-efdde.png);
-	--mouseScrollbarBottomDetailIconDark: url(/hbui/assets/bottom_detail_dark-d4b7f.png);
+	--mouseScrollbarTopDetailIcon: none;
+	--mouseScrollbarBottomDetailIcon: none;
+	--mouseScrollbarDetailRotation: 0;
+	--mouseScrollbarTopDetailIconDark: none;
+	--mouseScrollbarBottomDetailIconDark: none;
 	--mouseScrollbarTopDetailIconMinimal: none;
 	--mouseScrollbarBottomDetailIconMinimal: none;
-	--mouseScrollbarDetailRotation: -90deg;
 
-	--mouseScrollbarCenterBorderImage: url(/hbui/assets/scrollbar_centre-5f196.png);
-	--mouseScrollbarCenterBorderImageHorizontal: url(/hbui/assets/scrollbar_centre_horizontal-e85bb.png);
-	--mouseScrollbarCenterBorderImageMinimal: url(/hbui/assets/scrollbar_centre_minimal-49b97.png);
-	--mouseScrollbarCenterBorderImageHorizontalMinimal: url(/hbui/assets/scrollbar_centre_horizontal_minimal-1e1db.png);
-	--mouseScrollbarCenterBorderImageSlice: 1 1 1 1 fill;
-	--mouseScrollbarCenterBorderImageWidth: var(--base2Scale);
-	--mouseScrollbarCenterBorderImageOutset: 0.4rem;
+	--mouseScrollbarCenterBorderImage: none;
+	--mouseScrollbarCenterBorderImageHorizontal: none;
+	--mouseScrollbarCenterBorderImageMinimal: none;
+	--mouseScrollbarCenterBorderImageHorizontalMinimal: none;
+	--mouseScrollbarCenterBorderImageSlice: 0;
+	--mouseScrollbarCenterBorderImageWidth: 0;
+	--mouseScrollbarCenterBorderImageOutset: 0;
 	--mouseScrollbarCenterBorderImageRepeat: stretch;
 }
 
@@ -6381,10 +6383,6 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow: hidden;
-	padding-right: 0.8rem;
-	padding-left: 0.8rem;
-	margin-right: -0.8rem;
-	margin-left: -0.8rem;
 	opacity: 1;
 	margin-left: var(--scrollViewMarginRight);
 }
@@ -6421,6 +6419,13 @@ div {
 	margin-left: -0.8rem;
 }
 
+.m_niZ {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.8rem;
+}
+
 ._1BxDM {
 	height: 100%;
 	overflow-y: scroll;
@@ -6444,6 +6449,7 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow-x: scroll;
+	margin-bottom: -4rem;
 }
 
 .jRvmp {
@@ -6574,6 +6580,11 @@ div {
 	width: 100%;
 }
 
+.HapXQ._1Dnkg {
+	margin-left: 1.6rem;
+	margin-right: 0.8rem;
+}
+
 /* Horizontal scrollbar css */
 
 ._2Z0AD {
@@ -6646,11 +6657,19 @@ div {
 	box-shadow: var(--mouseScrollbarHandlerBottomBevelBoxShadow);
 }
 
-._3vJss {
+.HapXQ._3vJss {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: calc(var(--spacingSize2) + var(--base2Scale));
+	z-index: 2;
+}
+
+._2Z0AD._3vJss {
+	position: absolute;
+	bottom: var(--spacingSize2);
+	left: 0;
+	right: 0;
 	z-index: 2;
 }
 
@@ -6703,11 +6722,11 @@ div {
 }
 
 .syGOs {
-	width: var(--autoHidingScrollbarWidth);
-	position: var(--autoHidingScrollbarPosition);
+	width: 0.8rem;
+	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: calc(var(--spacingSize2) + var(--base2Scale));
 	margin-top: var(--spacingSize1);
 	margin-bottom: var(--spacingSize1);
 }
@@ -6732,11 +6751,13 @@ div {
 /* Horizontal scrollbar */
 
 .aHAIA {
-	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: calc(var(--spacingSize2) + var(--base2Scale));
 	left: 0;
+	right: 0;
 	height: 0.8rem;
+	margin-right: var(--spacingSize1);
+	margin-left: 3.2rem;
 }
 
 .aHAIA ._-0bBc {
@@ -6777,12 +6798,9 @@ div {
 	transition-duration: 2s;
 }
 
-._318KV {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: calc(var(--spacingSize2) + var(--base2Scale));
-	z-index: 2;
+.aHAIA._2sGIH {
+	position: relative;
+	height: 4rem;
 }
 
 ._1e0gJ {
@@ -7303,9 +7321,20 @@ div {
 	z-index: 99999; /* Should be higher than any focused element's z-index */
 }
 
+._2gGya {
+	display: none;
+}
+
+._1zhu0 {
+	flex-direction: row;
+}
+
+.K1zBc {
+	flex-direction: row-reverse;
+}
+
 ._1j3MU {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin: 0;
 	padding-left: var(--spacingSize3);
@@ -10190,11 +10219,8 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 }
 
-._18WQB {
+._2WTTw.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 .-mHf9 {
@@ -10207,11 +10233,8 @@ input::-webkit-inner-spin-button {
 	padding: 0;
 }
 
-._35MyR {
+.-mHf9.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 ._1M0eO {

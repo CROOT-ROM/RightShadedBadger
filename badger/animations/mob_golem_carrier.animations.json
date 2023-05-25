@@ -5527,6 +5527,12 @@
         ]
       },
       "sound_effects": {
+        "0.033":  [
+          {
+            "effect": "dx_idle_sprint",
+            "enabled": true
+          }
+        ],
         "0.133":  [
           {
             "effect": "footstep_arm",

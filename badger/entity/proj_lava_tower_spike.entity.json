@@ -28,15 +28,36 @@
           ]
         },
         "on_entity_hit": {
-          "audio": "BAE_piglin_lava_thrower_proj_spike_impact_entity"
+          "audio": "BAE_piglin_lava_thrower_proj_spike_impact_entity",
+          "rumble": {
+              "duration": 0.25,
+              "strength": 45,
+              "priority": 2,
+              "override": true,
+              "range": 20.0
+          }
         },
         "on_world_hit": {
           "audio": "BAE_piglin_lava_thrower_proj_spike_impact_world",
-          "particles": "badger:fx_proj_lava_tower_spike_impact"
+          "particles": "badger:fx_proj_lava_tower_spike_impact",
+          "rumble": {
+              "duration": 0.25,
+              "strength": 45,
+              "priority": 2,
+              "override": true,
+              "range": 20.0
+          }
         },
         "on_intercepted": {
           "audio": "BAE_piglin_lava_thrower_proj_spike_intercepted",
-          "particles": "badger:fx_tower_anti_siege_impact_lava"
+          "particles": "badger:fx_tower_anti_siege_impact_lava",
+          "rumble": {
+              "duration": 0.25,
+              "strength": 45,
+              "priority": 2,
+              "override": true,
+              "range": 20.0
+          }
         }
       }
     },

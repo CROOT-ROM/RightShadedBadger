@@ -3,7 +3,7 @@
   "minecraft:client_entity": {
     "components": {
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -67,6 +67,7 @@
         "knockback_a": "animation.animal_rabbit.knockback_a",
         "locomotion": "controller.animation.animal_rabbit.locomotion",
         "look_at": "animation.animal_rabbit.look_at",
+        "patpat_a": "animation.animal_rabbit_dlc.patpat_a",
         "sprint_a": "animation.animal_rabbit.sprint_a",
         "stun_a": "animation.animal_rabbit.stun_a",
         "swim_a": "animation.animal_rabbit.swim_a",

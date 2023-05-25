@@ -8,7 +8,7 @@
 ## 07 #   - if a loc string is only for internal/debug use, you can append <TAB>### dev-only
 ## 08 # Note, trailing spaces will NOT be trimmed; use <TAB>s to separate your comments from the actual localization text.
 
-﻿voiceover.0024_nar_overworld_comingwar_1=Witamy w naszym świecie! Chcielibyśmy cię właściwie przedstawić, ale wioska potrzebuje Twojej pomocy. Idź do osadników.
+voiceover.0024_nar_overworld_comingwar_1=Witamy w naszym świecie! Chcielibyśmy cię właściwie przedstawić, ale wioska potrzebuje Twojej pomocy. Idź do osadników.
 voiceover.0037_nar_overworld_wofcaptured_1=Żarłoczny Wieprz jest tutaj...
 voiceover.0038_nar_overworld_wofcaptured_2=I zatruli Źródło. Z tego powodu tracimy połączenie z Nadziemiem. Będziemy bronić Źródła tak długo, jak to możliwe.
 voiceover.0039_nar_overworld_wofcaptured_3=Ale... co jeśli nie możemy?
@@ -166,7 +166,7 @@ voiceover.0682_nar_invasion_villageunderattack3_1=Wioska jest atakowana.
 voiceover.0683_nar_invasion_villageunderattack3_2=Który? Gdzie?!
 voiceover.0684_nar_invasion_villageunderattack3_3=Sprawdź mapę! Będą potrzebować twojej pomocy!
 voiceover.0720_nar_overworld_nightfall_6=Musisz znaleźć źródło tej magii! Znajdź je i je zatrzymaj!
-voiceover.0721_nar_piglinbase_act1base1destroyedreaction_1=Ta posterunek jest załatwiony, ale piglinów jest więcej. Nie ma czasu do stracenia!
+voiceover.0721_nar_piglinbase_act1base1destroyedreaction_1=Ten posterunek jest załatwiony, ale piglinów jest więcej. Nie ma czasu do stracenia!
 voiceover.0725_nar_piglinbase_act1base2destroyedreaction_1=Bardzo dobrze! Jest jednak jeszcze jeden posterunek.
 voiceover.0726_nar_piglinbase_corruptedbeacondestroyed_1=Ten portal już prawie padł!
 voiceover.0727_nar_piglinbase_corruptedbeacondestroyed_2=Walcz dalej. Przełam ich magię!
@@ -715,7 +715,7 @@ voiceover.1685_nar_fmv_thecomingwar_17=A ja jestem Pomyślunkiem.
 voiceover.1686_nar_fmv_thecomingwar_18=Nie mamy zbyt wiele czasu, ale myślę, że wystarczy, aby powiedzieć ci trochę o tych narzędziach.
 voiceover.1687_nar_fmv_thecomingwar_19=Jeszcze raz dziękujemy za odwagę. Jesteśmy zaszczyceni, że mamy cię za sojusznika.
 voiceover.1688_nar_onboarding_piglincamps_3=Tym razem mamy jednak przewagę. Jeśli uda ci się zniszczyć posterunki piglinów otaczające wioskę, może odeprzemy tę inwazję. 
-voiceover.1689_nar_onboarding_lapis_1=azuryt upuszczony przez pigliny można wykorzystać do zasilania spawnerów. Zbieraj lazuryt, aby podtrzymać ogień.
+voiceover.1689_nar_onboarding_lapis_1=Lazuryt upuszczony przez pigliny można wykorzystać do zasilania spawnerów. Zbieraj lazuryt, aby podtrzymać ogień.
 voiceover.1693_nar_onboarding_act1base4destroyedreaction_1=Zniszczenie tych roznosicieli Netheru pomoże oczyścić powietrze.
 voiceover.1694_nar_onboarding_camp1arrival_1=W tej placówce znajduje się wiele koszar. Zniszcz je wszystkie albo pigliny nigdy się nie poddadzą.
 voiceover.1695_nar_onboarding_camp2arrival_1=Lawa? Tutaj? Zdecydowanie nie doceniliśmy ich poziomu zepsucia.

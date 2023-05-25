@@ -10,7 +10,14 @@
           "audio": "BAE_piglin_lava_coil_idle"
         },
         "on_building_destroyed": {
-          "audio": "BAE_piglin_lava_coil_destroyed"
+          "audio": "BAE_piglin_lava_coil_destroyed",
+          "rumble": {
+            "duration": 0.5,
+            "strength": 45,
+            "priority": 1,
+            "override": true,
+            "range": 40
+          }
         },
         "on_damage_applied_to_structure_1": {
           "audio": "BAE_piglin_lava_coil_damage_state_01_transition"

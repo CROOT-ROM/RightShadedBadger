@@ -2,7 +2,7 @@
   /*
         ==== REQUIRED ====
         "id",
-        "uiType", switch, slider, button, dropdown, textfield, radiogroup, inputremapping, toggle
+        "uiType", switch, slider, button, dropdown, textfield, radiogroup, inputremapping, toggle, msadisplay, textinfodisplay
         "backendType" option, gamerule, custom
         ==== OPTIONAL ====
         "options" {"label", "value"} "isRemappingCategory"
@@ -125,6 +125,12 @@
                 "value": 50 // MatchmakingRegion::Oceania
               }
             ]
+          },
+          {
+            "id": "matchmaking_inprogress",
+            "uiType": "switch",
+            "backendType": "option",
+            "options": []
           }
         ],
         "02_legal": [
@@ -132,6 +138,22 @@
             "id": "credits",
             "uiType": "rowbutton",
             "backendType": "custom",
+            "options": []
+          },
+          {
+            "id": "user_mcid",
+            "uiType": "textinfodisplay",
+            "backendType": "custom",
+            "enable_requirements": [
+              "is_signed_in"
+            ],
+            "options": []
+          },
+          {
+            "id": "build_number",
+            "uiType": "textinfodisplay",
+            "backendType": "custom",
+            "enable_requirements": [],
             "options": []
           }
         ]
@@ -183,7 +205,7 @@
           }
         ],
         "accessibilityFont": [
-		  {
+          {
             "id": "combined_text_to_speech",
             "uiType": "switch",
             "backendType": "custom",
@@ -392,6 +414,14 @@
             "backendType": "option",
             "options": []
           },
+          /*
+          {
+            "id": "gfx_gamepad_rumble_sensitivity",
+            "uiType": "slider",
+            "backendType": "option",
+            "options": []
+          },
+          */
           {
             "id": "auto_cam_turn",
             "uiType": "switch",

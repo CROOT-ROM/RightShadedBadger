@@ -39,7 +39,45 @@
           "audio": "BAE_outpost_hq_dmg_stage_03"
         },
         "on_building_destroyed": {
-          "audio": "BAE_outpost_hq_destruction"
+          "audio": "BAE_outpost_hq_destruction",
+          "rumble": {
+              "duration": 2,
+              "strength": 100,
+              "priority": 1,
+              "override": true
+          }
+        },
+        "on_building_hq_damage_25": {
+          "rumble": {
+            "duration": 1,
+            "strength": 25,
+            "priority": 1,
+            "override": true
+          }
+        },
+        "on_building_hq_damage_50": {
+          "rumble": {
+            "duration": 1,
+            "strength": 40,
+            "priority": 1,
+            "override": true
+          }
+        },
+        "on_building_hq_damage_75": {
+          "rumble": {
+            "duration": 1,
+            "strength": 65,
+            "priority": 1,
+            "override": true
+          }
+        },
+        "on_building_hq_damage_90": {
+          "rumble": {
+            "duration": 1,
+            "strength": 80,
+            "priority": 1,
+            "override": true
+          }
         }
       },
       "badger:music_2d_emitter": {

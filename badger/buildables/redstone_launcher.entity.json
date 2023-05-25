@@ -23,7 +23,14 @@
           "audio": "BAE_redstone_launcher_aim_stop"
         },
         "on_aim_selected": {
-          "audio": "BAE_redstone_launcher_aim_selected"
+          "audio": "BAE_redstone_launcher_aim_selected",
+          "rumble": {
+            "duration": 0.25,
+            "strength": 30,
+            "priority": 3,
+            "override": false,
+            "range": 0
+          }
         },
         "on_aim_rotate_start": {
           "audio": "BAE_redstone_launcher_rotate_start"

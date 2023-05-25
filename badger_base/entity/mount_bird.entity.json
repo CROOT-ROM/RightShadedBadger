@@ -45,16 +45,44 @@
       },
       "badger:presentation_event": {
         "intense_hit": {
-          "audio": "BAE_mount_bird_dx_hurt"
+          "audio": "BAE_mount_bird_dx_hurt",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "intense_knockback": {
-          "audio": "BAE_mount_bird_dx_knockback_intense"
+          "audio": "BAE_mount_bird_dx_knockback_intense",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
         },
         "normal_hit": {
-          "audio": "BAE_mount_bird_dx_hurt"
+          "audio": "BAE_mount_bird_dx_hurt",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "normal_knockback": {
-          "audio": "BAE_mount_bird_dx_knockback_normal"
+          "audio": "BAE_mount_bird_dx_knockback_normal",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
         },
         "on_liquid_deep_enter": {
           "audio": "BAE_mount_generic_swim_liquid"
@@ -72,7 +100,23 @@
           "audio": "BAE_mount_bird_sprint_stop"
         },
         "weak_hit": {
-          "audio": "BAE_mount_bird_dx_hurt"
+          "audio": "BAE_mount_bird_dx_hurt",
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
+        },
+        "weak_knockback": {
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
         }
       },
       "badger:rendering": {
@@ -92,11 +136,17 @@
         "audio": "controller.animation.mount_bird.audio",
         "cine_idle_bird_vanilla": "animation.mount_bird.cine_idle_bird_vanilla",
         "default": "controller.animation.mount_bird.default",
+        "fe_anim": "controller.animation.mount_bird.fe_anim",
+        "fe_anim_alt": "controller.animation.mount_bird.fe_anim_alt",
+        "fe_idle_a": "animation.mount_bird.fe_idle_a",
+        "fe_new_skin_a": "animation.mount_bird.fe_new_skin_a",
+        "fe_select_a": "animation.mount_bird.fe_select_a",
         "glide_a": "animation.mount_bird.glide_a",
         "gust_attack": "animation.mount_bird.gust_attack",
         "hit_react": "controller.animation.mount_bird.hit_react",
         "hit_react_b": "animation.animal_bird.hit_react_b",
         "idle_a": "animation.mount_bird.idle_a",
+        "idle_select_a": "animation.mount_bird.idle_select_a",
         "jog_a": "animation.mount_bird.jog_a",
         "jog_stop": "animation.mount_bird.jog_stop",
         "jump_ascending": "animation.mount_bird.jump_ascending",
@@ -111,10 +161,7 @@
         "swim_a": "animation.mount_bird.swim_a",
         "swim_idle": "animation.mount_bird.swim_idle",
         "tilt": "controller.animation.mount_bird.tilt",
-        "walk_a": "animation.mount_bird.walk_a",
-        "fe_select": "animation.mount_bird.gust_attack",
-        "fe_idle": "animation.mount_bird.idle_a",
-        "fe_anim": "controller.animation.mount_bird.frontend"
+        "walk_a": "animation.mount_bird.walk_a"
       },
       "enable_attachables": false,
       "face_poses": ["Neutral","Neutral Blink","Look Up","Look Down","Look Back","Look Forward","Medium Pupil","Tiny Pupil","Large Pupil"],

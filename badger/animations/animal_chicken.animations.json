@@ -17099,6 +17099,9 @@
             "enabled": true
           }
         ]
+      },
+      "timeline": {
+        "0.0780692525825621": "variable.face_anim_frame = 2;"
       }
     },
     "animation.animal_chicken.idle_a": {

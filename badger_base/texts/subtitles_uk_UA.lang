@@ -8,7 +8,7 @@
 ## 07 #   - if a loc string is only for internal/debug use, you can append <TAB>### dev-only
 ## 08 # Note, trailing spaces will NOT be trimmed; use <TAB>s to separate your comments from the actual localization text.
 
-﻿voiceover.0024_nar_overworld_comingwar_1=Ласкаво просимо в наш світ! Ми хотіли б представити вас належним чином, але село потребує вашої допомоги. Йдіть до них.
+voiceover.0024_nar_overworld_comingwar_1=Ласкаво просимо в наш світ! Ми хотіли б представити вас належним чином, але село потребує вашої допомоги. Йдіть до них.
 voiceover.0037_nar_overworld_wofcaptured_1=Великий кабан вже тут...
 voiceover.0038_nar_overworld_wofcaptured_2=І вони отруїли колодязь. Через це зв'язок з Верхнім світом руйнується. Ми зробимо все можливе, щоб колодязь якомога довше лишався придатним до використання.
 voiceover.0039_nar_overworld_wofcaptured_3=Але... що як ми не можемо?

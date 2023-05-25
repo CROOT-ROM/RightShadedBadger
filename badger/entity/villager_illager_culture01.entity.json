@@ -24,14 +24,6 @@
         "turning_delta": 5
       },
       "badger:presentation_event": {
-        "on_hearts": {
-          "particles": {
-            "effect": "badger:fx_stat_hearts",
-            "enabled": true,
-            "bind_to_actor": true,
-            "locator": "loc_fx_stat_head"
-          }
-        },
         "cheers_cine_a_offset": {
           "animation": {
             "animation": "cheers_cine_a_offset"
@@ -57,6 +49,14 @@
             "animation": "cheers_cine_a"
           }
         },
+        "on_hearts": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_hearts",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
         "on_liquid_deep_enter": {
           "audio": "BAE_mob_generic_swim_liquid_medium"
         },
@@ -67,10 +67,7 @@
       "badger:rendering": {
         "definition": "badger:villager_illager_culture01"
       },
-      "badger:template": [
-        "badger:template_villager",
-        "badger:template_status_effects"
-      ]
+      "badger:template": ["badger:template_villager","badger:template_status_effects"]
     },
     "description": {
       "animations": {
@@ -137,20 +134,7 @@
         "melee_attack_a": "variable.attack_used = 1;",
         "melee_attack_b": "variable.attack_used = 2;"
       },
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Happy",
-        "Happy Blink",
-        "Curious",
-        "Curious Blink",
-        "Scared",
-        "Scared Blink",
-        "Cheer",
-        "Cheer Blink",
-        "Worried",
-        "Worried Blink"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Curious","Curious Blink","Scared","Scared Blink","Cheer","Cheer Blink","Worried","Worried Blink"],
       "geometry": {
         "default": "geometry.villager_illager_culture01"
       },
@@ -166,11 +150,9 @@
         "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
         "fx_death_puff": "badger:fx_shared_death_smoke_small"
       },
-      "render_controllers": [
-        "controller.render.villager_illager_culture01"
-      ],
+      "render_controllers": ["controller.render.villager_illager_culture01"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "default": "1"
           },
@@ -178,10 +160,7 @@
             "hitreact": "1"
           }
         ],
-        "initialize": [
-          "variable.second_skin_vis = 0;",
-          "variable.skin_mat = 0;"
-        ]
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
       },
       "sound_effects": {
         "applaud": "BAE_villager_illager_culture_applaud",

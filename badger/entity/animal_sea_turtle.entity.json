@@ -5,7 +5,7 @@
       "badger:block_source_info": {
       },
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -79,6 +79,7 @@
         "knockback": "animation.animal_sea_turtle.knockback",
         "locomotion": "controller.animation.animal_sea_turtle.locomotion",
         "look_at": "animation.animal_sea_turtle.look_at",
+        "patpat_a": "animation.animal_sea_turtle_dlc.patpat_a",
         "sprint_a": "animation.animal_sea_turtle.sprint_a",
         "stun_a": "animation.animal_sea_turtle.stun_a",
         "stun_a_exit": "animation.animal_sea_turtle.stun_a_exit",

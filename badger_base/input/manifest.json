@@ -176,7 +176,8 @@
     {
       "json": "overlay_gameplay_battle_view",
       "type": "overlay",
-      "radial": "radial_gameplay_unittype"
+      "radial": "radial_gameplay_unittype",
+      "setting": "aiming"
     },
     {
       "json": "overlay_gameplay_toolbarselect_build",

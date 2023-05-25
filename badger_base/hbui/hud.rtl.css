@@ -75,6 +75,17 @@ html {
 }
 
 @font-face {
+	font-family: 'Noto Sans HE';
+	src: url(/hbui/fonts/NotoSansHebrew-Regular-46d0c.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Sans HE';
+	font-weight: bold;
+	src: url(/hbui/fonts/NotoSansHebrew-Bold-c672e.ttf);
+}
+
+@font-face {
 	font-family: 'Noto Sans Mongolian';
 	src: url(/hbui/fonts/NotoSansMongolian-Regular-6cd1c.ttf);
 }
@@ -2831,11 +2842,6 @@ html {
 	--panelLabelDisabledColor: var(--gray30);
 }
 
-._14fCd {
-	--autoHidingScrollbarPosition: absolute;
-	--autoHidingScrollbarWidth: 0.8rem;
-}
-
 ._1uomH {
 	/* Vertical scrollbar */
 	--mouseScrollbarBackgroundColor: var(--gray60);
@@ -2885,9 +2891,8 @@ html {
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
 	--mouseScrollbarHorizontalMarginTop: var(--spacingSize1);
 	--mouseScrollbarHorizontalMarginBottom: var(--spacingSize3);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
-	--mouseScrollbarHorizontalMarginLeft: 0;
-	--mouseScrollbarHorizontalMarginRight: 0;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: var(--spacingSize1);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
@@ -3157,48 +3162,49 @@ html {
 
 .qL3vH {
 	/* Vertical scrollbar */
-	--mouseScrollbarBackgroundColor: transparent;
+	--mouseScrollbarBackgroundColor: #857f72;
 	--mouseScrollbarBackgroundWidth: 0.4rem;
 
 	--mouseScrollbarHandlerWidth: 1.2rem;
-	--mouseScrollbarHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHandlerBackgroundColor: #fffae8;
 	--mouseScrollbarHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--blackOpacity20),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--blackOpacity20), 0 0.4rem 0.4rem 0 var(--blackOpacity20);
+	--mouseScrollbarHandlerBoxShadow: none;
+	--mouseScrollbarHandlerBorderColor: var(--blackOpacity100);
+	--mouseScrollbarHandlerBorderRadius: 0;
 	--mouseScrollbarHandlerJustifyContent: flex-end;
-	--mouseScrollbarHandlerBorderRadius: 0.4rem;
-	--mouseScrollbarHandlerBorderColor: var(--blackOpacity90);
-	--mouseScrollbarHandlerBottomBevel: transparent;
+	--mouseScrollbarHandlerBottomBevel: var(--blackOpacity20);
 
 	--mouseScrollbarHandlerBottomBevelHeight: 0.4rem;
-	--mouseScrollbarHandlerBottomBevelBackgroundColor: var(--blackOpacity50);
-	--mouseScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
+	--mouseScrollbarHandlerBottomBevelBackgroundColor: #afa183;
+	--mouseScrollbarHandlerBottomBevelBoxShadow: none;
 
-	--mouseScrollbarHorizontalMarginTop: none;
-	--mouseScrollbarHorizontalMarginBottom: none;
-	--mouseScrollbarHorizontalMarginLeft: 2.4rem;
-	--mouseScrollbarHorizontalMarginRight: 2.4rem;
-	--mouseScrollbarRightMargin: 0;
+	--mouseScrollbarBackgroundMargins: var(--spacingSize1);
+	--mouseScrollbarLeftMargin: 0.4rem;
+
+	--mouseScrollbarHorizontalMarginTop: 2rem;
+	--mouseScrollbarHorizontalMarginBottom: 2rem;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: 3.2rem;
+	--mouseScrollbarRightMargin: 0rem;
 
 	--mouseScrollbarDisabledDisplay: none;
 	--mouseScrollbarDisabledWidth: 0;
 
 	--mouseScrollbarRailWidth: 1.2rem;
 
-	--mouseScrollbarVerticalMargins: 4rem;
+	--mouseScrollbarVerticalMargins: var(--spacingSize2);
 	--mouseScrollbarVerticalDisplay: flex;
-	--mouseScrollbarVerticalFlexDirection: column;
-	--mouseScrollbarVerticalCenter: center;
+	--mouseScrollbarVerticalFlexDirection: row;
+	--mouseScrollbarVerticalCenter: flex-start;
 
 	/* Horizontal scrollbar */
-	--mouseScrollbarHorizontalBackgroundColor: transparent;
+	--mouseScrollbarHorizontalBackgroundColor: var(--gray60);
 	--mouseScrollbarHorizontalBackgroundHeight: 0.4rem;
 
 	--mouseScrollbarHorizontalHandlerHeight: 1.6rem;
-	--mouseScrollbarHorizontalHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHorizontalHandlerBackgroundColor: var(--gray20);
 	--mouseScrollbaHorizontalHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHorizontalHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--whiteOpacity50),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--whiteOpacity90), 0 0.4rem 0.4rem 0 var(--blackOpacity30);
+	--mouseScrollbarHorizontalHandlerBoxShadow: none;
 	--mouseScrollbarHorizontalHandlerJustifyContent: flex-end;
 
 	--mouseHorizontalScrollbarHandlerBottomBevelHeight: 0.4rem;
@@ -3206,38 +3212,34 @@ html {
 	--mouseHorizontalScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
 
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
-	--mouseScrollbarHorizontalVerticalMargins: var(--spacingSize1);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
-
-	--mouseHorizontalScrollbarIdleDisplay: none;
 
 	--mouseScrollbarHorizontalRailHeight: 1.2rem;
 
 	--mouseScrollbarHorizontalDisplay: flex;
 	--mouseScrollbarHorizontalFlexDirection: row;
-	--mouseScrollbarHorizontalCenter: center;
+	--mouseScrollbarHorizontalCenter: flex-start;
 
 	/* Scrollbar Top Bottom Details */
-	--mouseScrollbarDetailSize: 2.4rem;
+	--mouseScrollbarDetailSize: 0;
 	--mouseScrollbarDetailSizeMinimal: 0;
-	--mouseScrollbarTopDetailIcon: url(/hbui/assets/top_detail-fd452.png);
-	--mouseScrollbarTopDetailIconDark: url(/hbui/assets/top_detail_dark-606b1.png);
-	--mouseScrollbarBottomDetailIcon: url(/hbui/assets/bottom_detail-efdde.png);
-	--mouseScrollbarBottomDetailIconDark: url(/hbui/assets/bottom_detail_dark-d4b7f.png);
+	--mouseScrollbarTopDetailIcon: none;
+	--mouseScrollbarBottomDetailIcon: none;
+	--mouseScrollbarDetailRotation: 0;
+	--mouseScrollbarTopDetailIconDark: none;
+	--mouseScrollbarBottomDetailIconDark: none;
 	--mouseScrollbarTopDetailIconMinimal: none;
 	--mouseScrollbarBottomDetailIconMinimal: none;
-	--mouseScrollbarDetailRotation: -90deg;
 
-	--mouseScrollbarCenterBorderImage: url(/hbui/assets/scrollbar_centre-5f196.png);
-	--mouseScrollbarCenterBorderImageHorizontal: url(/hbui/assets/scrollbar_centre_horizontal-e85bb.png);
-	--mouseScrollbarCenterBorderImageMinimal: url(/hbui/assets/scrollbar_centre_minimal-49b97.png);
-	--mouseScrollbarCenterBorderImageHorizontalMinimal: url(/hbui/assets/scrollbar_centre_horizontal_minimal-1e1db.png);
-	--mouseScrollbarCenterBorderImageSlice: 1 1 1 1 fill;
-	--mouseScrollbarCenterBorderImageWidth: var(--base2Scale);
-	--mouseScrollbarCenterBorderImageOutset: 0.4rem;
+	--mouseScrollbarCenterBorderImage: none;
+	--mouseScrollbarCenterBorderImageHorizontal: none;
+	--mouseScrollbarCenterBorderImageMinimal: none;
+	--mouseScrollbarCenterBorderImageHorizontalMinimal: none;
+	--mouseScrollbarCenterBorderImageSlice: 0;
+	--mouseScrollbarCenterBorderImageWidth: 0;
+	--mouseScrollbarCenterBorderImageOutset: 0;
 	--mouseScrollbarCenterBorderImageRepeat: stretch;
 }
 
@@ -6381,10 +6383,6 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow: hidden;
-	padding-right: 0.8rem;
-	padding-left: 0.8rem;
-	margin-right: -0.8rem;
-	margin-left: -0.8rem;
 	opacity: 1;
 	margin-left: var(--scrollViewMarginRight);
 }
@@ -6421,6 +6419,13 @@ div {
 	margin-left: -0.8rem;
 }
 
+.m_niZ {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.8rem;
+}
+
 ._1BxDM {
 	height: 100%;
 	overflow-y: scroll;
@@ -6444,6 +6449,7 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow-x: scroll;
+	margin-bottom: -4rem;
 }
 
 .jRvmp {
@@ -6574,6 +6580,11 @@ div {
 	width: 100%;
 }
 
+.HapXQ._1Dnkg {
+	margin-left: 1.6rem;
+	margin-right: 0.8rem;
+}
+
 /* Horizontal scrollbar css */
 
 ._2Z0AD {
@@ -6646,11 +6657,19 @@ div {
 	box-shadow: var(--mouseScrollbarHandlerBottomBevelBoxShadow);
 }
 
-._3vJss {
+.HapXQ._3vJss {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: calc(var(--spacingSize2) + var(--base2Scale));
+	z-index: 2;
+}
+
+._2Z0AD._3vJss {
+	position: absolute;
+	bottom: var(--spacingSize2);
+	left: 0;
+	right: 0;
 	z-index: 2;
 }
 
@@ -6703,11 +6722,11 @@ div {
 }
 
 .syGOs {
-	width: var(--autoHidingScrollbarWidth);
-	position: var(--autoHidingScrollbarPosition);
+	width: 0.8rem;
+	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: calc(var(--spacingSize2) + var(--base2Scale));
 	margin-top: var(--spacingSize1);
 	margin-bottom: var(--spacingSize1);
 }
@@ -6732,11 +6751,13 @@ div {
 /* Horizontal scrollbar */
 
 .aHAIA {
-	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: calc(var(--spacingSize2) + var(--base2Scale));
 	left: 0;
+	right: 0;
 	height: 0.8rem;
+	margin-right: var(--spacingSize1);
+	margin-left: 3.2rem;
 }
 
 .aHAIA ._-0bBc {
@@ -6777,12 +6798,9 @@ div {
 	transition-duration: 2s;
 }
 
-._318KV {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: calc(var(--spacingSize2) + var(--base2Scale));
-	z-index: 2;
+.aHAIA._2sGIH {
+	position: relative;
+	height: 4rem;
 }
 
 ._1e0gJ {
@@ -7303,9 +7321,20 @@ div {
 	z-index: 99999; /* Should be higher than any focused element's z-index */
 }
 
+._2gGya {
+	display: none;
+}
+
+._1zhu0 {
+	flex-direction: row;
+}
+
+.K1zBc {
+	flex-direction: row-reverse;
+}
+
 ._1j3MU {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin: 0;
 	padding-left: var(--spacingSize3);
@@ -10088,11 +10117,8 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 }
 
-._18WQB {
+._2WTTw.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 .-mHf9 {
@@ -10105,11 +10131,8 @@ input::-webkit-inner-spin-button {
 	padding: 0;
 }
 
-._35MyR {
+.-mHf9.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 ._1M0eO {
@@ -10405,6 +10428,7 @@ hr._2gMFY {
 
 ._2InqL {
 	flex-direction: column;
+	max-width: 44rem;
 }
 
 .q5j74 {
@@ -10419,7 +10443,6 @@ hr._2gMFY {
 .zHom3 {
 	background-color: rgba(0, 0, 0, 0.4);
 	align-self: flex-start;
-	height: 3.6rem;
 	right: 0.4rem;
 	padding-right: 0.8rem;
 	padding-left: 2rem;
@@ -10555,8 +10578,8 @@ hr._2gMFY {
 }
 
 ._1v7s4 {
-	position: absolute;
 	padding-right: 1.2rem;
+	padding-left: 2rem;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -11603,12 +11626,12 @@ hr._2gMFY {
 		opacity: 1;
 	}
 	80% {
-		transform: scale3d(0.4, 0.4, 0.4);
+		transform: scale3d(0.4, 0.4, 0.4) rotate3d(0, 0, 1, -180deg);
 		opacity: 1;
 	}
 
 	100% {
-		transform: scale3d(0.6, 0.6, 0.6);
+		transform: scale3d(0.6, 0.6, 0.6) rotate3d(0, 0, 1, -180deg);
 		opacity: 0;
 	}
 }
@@ -12260,7 +12283,8 @@ hr._2gMFY {
 	justify-content: center;
 	align-items: flex-start;
 	bottom: 2rem;
-	max-width: 38rem;
+	right: 2rem;
+	max-width: 48rem;
 }
 
 ._1kXxM._2Kctz {
@@ -12314,6 +12338,18 @@ hr._2gMFY {
 
 ._33ghE._2Kctz {
 	opacity: 0.5;
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._2nvKW {
+		width: 6rem;
+	}
+
+	._2nvKW.VL5IR {
+		width: 6rem;
+	}
 }
 
 .nkZtu {
@@ -13037,7 +13073,6 @@ hr._2gMFY {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	border-image-source: url('/textures-hbui/messaging/hud_timer_normal.png');
 	border-image-slice: 16 48 fill;
 	border-image-width: 1.6rem 4.8rem;
 	border-image-outset: 0;
@@ -13047,8 +13082,16 @@ hr._2gMFY {
 	width: fit-content;
 }
 
-._3nXIS._2nTqa {
+._3nXIS.ACs56 {
+	border-image-source: url('/textures-hbui/messaging/hud_timer_normal.png');
+}
+
+._3nXIS._2Z_vi {
 	border-image-source: url('/textures-hbui/messaging/hud_timer_alert.png');
+}
+
+._3nXIS._1MsJQ {
+	border-image-source: url('/textures-hbui/messaging/hud_timer_completed.png');
 }
 
 ._16WA7 {
@@ -13078,7 +13121,7 @@ hr._2gMFY {
 
 ._2QdRf {
 	position: absolute;
-	top: 16rem;
+	top: 15.6rem;
 	right: 50%;
 	transform: translate(50%);
 	z-index: 1000;
@@ -13086,14 +13129,22 @@ hr._2gMFY {
 
 ._3mcyC {
 	position: absolute;
-	top: 20rem;
+	top: 15.2rem;
 	left: -1.2rem;
 	align-items: flex-start;
 }
 
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._3mcyC {
+		top: 12rem;
+	}
+}
+
 ._16fe8 {
 	width: 54rem;
-	top: 40rem;
+	top: 35.2rem;
 	right: 50%;
 	transform: translateX(50%);
 	display: flex;
@@ -13112,6 +13163,7 @@ hr._2gMFY {
 	border-image-repeat: stretch;
 	min-height: 10.8rem;
 	width: 100%;
+	z-index: 250;
 }
 
 .HubXy {
@@ -13138,7 +13190,7 @@ hr._2gMFY {
 ._2HcbK {
 	width: 8rem;
 	height: 8rem;
-	z-index: 1;
+	z-index: 300;
 }
 
 ._2eENd {
@@ -13295,6 +13347,10 @@ hr._2gMFY {
 	overflow-wrap: break-word;
 }
 
+._2KyoZ {
+	width: 100%;
+}
+
 ._3IYp8 {
 	display: flex;
 	flex-direction: row;
@@ -13305,6 +13361,14 @@ hr._2gMFY {
 	padding-bottom: var(--spacingSize7);
 	padding-right: var(--spacingSize7);
 	padding-left: var(--spacingSize8);
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._2FitA {
+		width: 51.2rem;
+	}
 }
 
 ._QhGs {
@@ -13618,8 +13682,8 @@ hr._2gMFY {
 }
 
 ._1ziWs {
-	width: 7.2rem;
-	height: 8rem;
+	width: 9.4rem; /* stylelint-disable-line stylelint-base-4/rule */
+	height: 10.8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13670,12 +13734,12 @@ hr._2gMFY {
 
 ._1bSne {
 	position: absolute;
-	bottom: -1.2rem;
+	bottom: -0.4rem;
 }
 
 ._3ZNi3 {
 	position: absolute;
-	top: -1.2rem;
+	top: -0.8rem;
 	z-index: 10;
 }
 
@@ -13716,20 +13780,19 @@ hr._2gMFY {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
-	width: 15.6rem;
-	height: 4.8rem;
-	background-image: url('/textures-hbui/resource_panel/allay_bg_default.png');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	width: 16.4rem;
+	height: 5.6rem;
+	border-image-source: url('/textures-hbui/resource_panel/allay_bg_default.png');
+	border-image-width: 2rem 12rem 2rem 3.2rem;
+	border-image-slice: 20 120 20 32 fill;
 	z-index: -2;
 }
 
 .wZHGb {
 	position: absolute;
-
 	width: 90%; /* Leave some gaps for borders */
 	right: 5%;
-	height: 55%;
+	height: 4rem;
 	justify-content: center;
 	align-items: flex-end;
 	z-index: -1;
@@ -13737,7 +13800,6 @@ hr._2gMFY {
 
 .CS-9t {
 	position: absolute;
-
 	height: 100%;
 	right: 0rem;
 	justify-content: center;
@@ -13769,10 +13831,8 @@ hr._2gMFY {
 
 ._1A8Ri {
 	position: absolute;
-
 	background: inherit;
 	background: inherit;
-
 	height: 120%;
 	right: 0.4rem;
 	justify-content: center;
@@ -13785,25 +13845,23 @@ hr._2gMFY {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	top: 0.8rem;
 	z-index: 0;
 	width: 4.8rem;
 	height: 4.8rem;
+	margin-right: 0.8rem;
 }
 
 ._1h-fP.zJ_jo {
-	height: 6rem;
-	top: -1.2rem;
+	height: 7.2rem;
 }
 
 ._1h-fP._22_Qb {
-	height: 6rem;
-	top: -1.2rem;
+	height: 7.2rem;
 }
 
 ._3rZtQ {
 	width: 6rem;
-	height: 2.8rem;
+	height: 3.2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -13813,8 +13871,8 @@ hr._2gMFY {
 ._36HQN {
 	position: absolute;
 	bottom: -0.4rem;
-	width: 6rem;
-	height: 3.6rem;
+	width: 6.4rem;
+	height: 4rem;
 	border-image-source: url('/textures-hbui/resource_panel/allay_panel_default.png');
 	border-image-slice: 12 fill;
 	border-image-width: 1.2rem;
@@ -13822,20 +13880,20 @@ hr._2gMFY {
 }
 
 ._36HQN.zJ_jo {
-	width: 6rem;
-	height: 7.2rem;
+	width: 6.4rem;
+	height: 7.4rem; /* stylelint-disable-line stylelint-base-4/rule */
 	border-image-source: url('/textures-hbui/resource_panel/allay_panel_preview.png');
-	border-image-slice: 48 12 12 12 fill;
-	border-image-width: 4.8rem 1.2rem 1.2rem 1.2rem;
+	border-image-slice: 52 12 8 12 fill;
+	border-image-width: 5.2rem 1.2rem 0.8rem 1.2rem;
 	border-image-repeat: stretch;
 }
 
 ._36HQN._22_Qb {
-	width: 6rem;
-	height: 6.8rem;
+	width: 6.4rem;
+	height: 7.4rem; /* stylelint-disable-line stylelint-base-4/rule */
 	border-image-source: url('/textures-hbui/resource_panel/allay_panel_insufficient_preview.png');
-	border-image-slice: 48 12 12 12 fill;
-	border-image-width: 4.8rem 1.2rem 1.2rem 1.2rem;
+	border-image-slice: 52 12 8 12 fill;
+	border-image-width: 5.2rem 1.2rem 0.8rem 1.2rem;
 	border-image-repeat: stretch;
 }
 
@@ -13857,8 +13915,8 @@ hr._2gMFY {
 ._2CON_ {
 	position: absolute;
 	bottom: -0.8rem;
-	width: 16rem;
-	height: 5.2rem;
+	width: 21.2rem;
+	height: 6rem;
 	border-image-source: url('/textures-hbui/resource_panel/mobcap_default.png');
 	border-image-slice: 20 48 fill;
 	border-image-width: 2rem 4.8rem;
@@ -13872,14 +13930,14 @@ hr._2gMFY {
 }
 
 ._2CON_.Y0erF {
-	height: 9.2rem;
+	height: 10.4rem;
 	border-image-source: url('/textures-hbui/resource_panel/mobcap_cost.png');
 	border-image-slice: 64 48 20 48 fill;
 	border-image-width: 6.4rem 4.8rem 2rem 4.8rem;
 }
 
 ._2CON_._2CrUS {
-	height: 9.2rem;
+	height: 10rem;
 	border-image-source: url('/textures-hbui/resource_panel/mobcap_error.png');
 	border-image-slice: 64 48 20 48 fill;
 	border-image-width: 6.4rem 4.8rem 2rem 4.8rem;
@@ -13920,35 +13978,42 @@ hr._2gMFY {
 	0% {
 		width: 8rem;
 		height: 8rem;
+		margin-bottom: 0.2rem; /* stylelint-disable-line stylelint-base-4/rule */
 	}
 	100% {
 		width: 11.2rem;
 		height: 11.2rem;
+		margin-bottom: 0rem;
 	}
 }
 
 .J7ncL {
-	top: -6rem;
+	bottom: 12rem;
 	right: 4rem;
 	z-index: 10;
 }
 
 .ggGbJ {
-	width: 6.8rem;
-	height: 4.4rem;
+	width: 7.2rem;
+	height: 4.8rem;
 	z-index: 10;
+	margin-bottom: 0rem;
 }
 
 .ggGbJ.zJ_jo {
-	height: 6rem;
+	height: 7.2rem;
+	margin-bottom: 2.8rem;
 }
 
 .ggGbJ._22_Qb {
-	height: 6rem;
+	height: 7.2rem;
+	margin-bottom: 2.8rem;
 }
 
 .OttNn {
-	width: 8rem;
+	width: 13.2rem;
+	height: 4rem;
+	padding-bottom: 0.4rem;
 	justify-content: center;
 	align-items: center;
 }
@@ -13957,7 +14022,7 @@ hr._2gMFY {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 40rem;
+	width: 47.2rem;
 	z-index: 10;
 }
 
@@ -13992,19 +14057,20 @@ hr._2gMFY {
 /* stylelint-disable-next-line plugin/no-unused-selectors */
 ._1MRPH {
 	position: absolute;
-	right: 0.8rem;
+	left: 0.8rem;
+	margin-right: 12rem;
 }
 
 /* stylelint-disable-next-line plugin/no-unused-selectors */
 .quoaQ {
 	position: absolute;
-	left: 4rem;
+	right: 0.8rem;
 }
 
 .sapqK {
 	position: absolute;
-	width: 7.6rem;
-	height: 10.4rem;
+	width: 9.6rem;
+	height: 12.8rem;
 	background-image: url('/textures-hbui/resource_panel/resource_panel_default.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -14153,7 +14219,7 @@ hr._2gMFY {
 	flex-direction: column;
 	justify-content: center;
 	top: 35.2rem;
-	width: 32.4rem;
+	max-width: 48rem;
 }
 
 ._2UO2y {
@@ -14173,7 +14239,8 @@ hr._2gMFY {
 	padding-top: var(--spacingSize1);
 	padding-bottom: var(--spacingSize1);
 	padding-right: var(--spacingSize2);
-	padding-left: var(--spacingSize6);
+	padding-left: var(--spacingSize2);
+	overflow-wrap: break-word;
 }
 
 .T7meQ {
@@ -14448,9 +14515,9 @@ hr._2gMFY {
 
 .u_Pdv {
 	position: absolute;
-	bottom: 4rem;
+	bottom: 4.8rem;
 	left: 4rem;
-	width: 30rem;
+	width: 31.2rem;
 }
 
 ._1mXZ1 {
@@ -14511,13 +14578,13 @@ hr._2gMFY {
 
 ._3lhi4 {
 	position: absolute;
-	bottom: 0rem;
-	right: 11rem; /* stylelint-disable-line stylelint-base-4/rule */
+	bottom: -1.6rem;
+	right: 9.4rem; /* stylelint-disable-line stylelint-base-4/rule */
 }
 
 ._3jHWA {
 	position: absolute;
-	top: 22.4rem;
+	top: 22rem;
 	right: 50%;
 	transform: translateX(50%);
 	z-index: 200;
@@ -14530,6 +14597,26 @@ hr._2gMFY {
 	top: 5.2rem;
 	left: 2rem;
 	align-items: center;
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._1fmbA {
+		right: -11.2rem;
+	}
+
+	._3jZB_ {
+		left: 13.6rem;
+	}
+
+	.u_Pdv {
+		left: 3.2rem;
+	}
+
+	._21haG {
+		right: 1.2rem;
+	}
 }
 
 ._1C3nR {
@@ -15025,7 +15112,7 @@ hr._2gMFY {
 
 ._3Td8M {
 	position: absolute;
-	bottom: -2.8rem;
+	bottom: -2.4rem;
 	left: -0.8rem;
 }
 
@@ -15064,7 +15151,7 @@ hr._2gMFY {
 	border-image-outset: 0rem;
 	border-image-repeat: stretch;
 	display: flex;
-	height: 12.4rem;
+	height: 12.8rem;
 	align-items: center;
 	padding-right: 4rem;
 	padding-left: 4rem;
@@ -15466,6 +15553,7 @@ hr._2gMFY {
 	padding-bottom: 2.8rem;
 	align-items: center;
 	min-height: 10rem;
+	width: 100%;
 }
 
 .WoKCZ {
@@ -15497,7 +15585,7 @@ hr._2gMFY {
 	z-index: 100;
 }
 
-._1IB8u {
+._3eqCy {
 	display: none;
 }
 
@@ -16658,72 +16746,69 @@ hr._2gMFY {
 }
 
 ._3qDc9 {
-	position: absolute;
 	width: 2rem;
 	height: 2rem;
 	background-image: url('/textures-hbui/map_screen/map_tooltip_pointer.png');
+}
+
+._2nOVn {
+	position: absolute;
 	right: -0.8rem;
 	top: -0.4rem;
 }
 
-._2Ecrs {
+._3h62H {
+	position: absolute;
+	transform: rotate(-90deg);
+	left: -0.8rem;
+	top: -0.4rem;
+}
+
+._1Cy_2 {
+	position: absolute;
+	transform: rotate(90deg);
+	right: -0.8rem;
+	bottom: -0.4rem;
+}
+
+._2doTA {
+	position: absolute;
+	transform: rotate(-180deg);
+	left: -0.8rem;
+	bottom: -0.4rem;
+}
+
+._2kRpJ {
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+}
+
+._3dhIT {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+}
+
+._2MKmd {
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+}
+
+.BqC6c {
+	position: absolute;
+	bottom: 0rem;
+	right: 0rem;
+}
+
+._272W2 {
 	width: 24rem;
 	padding-top: var(--spacingSize2);
 	padding-left: var(--spacingSize2);
 	padding-bottom: var(--spacingSize2);
 	padding-right: var(--spacingSize2);
 	background-color: rgba(0, 0, 0, 0.5);
-}
-
-._3Ye8- {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	z-index: 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
-._3OD9u {
-	position: absolute;
-	right: 0rem;
-	padding-top: var(--spacingSize6);
-	padding-right: var(--spacingSize6);
-	z-index: 100;
-}
-
-._2cCvJ {
-	position: relative;
-	bottom: 1.6rem;
-	width: 100%;
-	z-index: 20;
-	pointer-events: none;
-}
-
-._11Zkj {
-	width: 100%;
-	position: absolute;
-	bottom: 0rem;
-	padding-top: var(--spacingSize4);
-	padding-bottom: var(--spacingSize4);
-	padding-right: var(--spacingSize4);
-	padding-left: var(--spacingSize4);
-}
-
-._1Joof {
-	position: absolute;
-	left: 0rem;
-	padding-top: 5.6rem;
-	padding-left: 5.6rem;
-	z-index: 100;
-}
-
-._1kFyl {
-	position: absolute;
-	right: 50%;
-	bottom: 16rem;
-	transform: translateX(50%);
-	z-index: 100;
 }
 
 ._3vYLy {
@@ -16858,6 +16943,57 @@ hr._2gMFY {
 	position: absolute;
 	right: 1.2rem;
 	top: 7.2rem;
+}
+
+._3Ye8- {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+._3OD9u {
+	position: absolute;
+	right: 0rem;
+	padding-top: var(--spacingSize6);
+	padding-right: var(--spacingSize6);
+	z-index: 100;
+}
+
+._2cCvJ {
+	position: relative;
+	bottom: 1.6rem;
+	width: 100%;
+	z-index: 20;
+	pointer-events: none;
+}
+
+._11Zkj {
+	width: 100%;
+	position: absolute;
+	bottom: 0rem;
+	padding-top: var(--spacingSize4);
+	padding-bottom: var(--spacingSize4);
+	padding-right: var(--spacingSize4);
+	padding-left: var(--spacingSize4);
+}
+
+._1Joof {
+	position: absolute;
+	left: 0rem;
+	padding-top: 5.6rem;
+	padding-left: 5.6rem;
+	z-index: 100;
+}
+
+._1kFyl {
+	position: absolute;
+	right: 50%;
+	bottom: 16rem;
+	transform: translateX(50%);
+	z-index: 100;
 }
 
 .XaQ8M {
@@ -17130,6 +17266,11 @@ hr._2gMFY {
 	border-image-repeat: stretch;
 }
 
+.N1ZZJ {
+	width: 84rem;
+	overflow: hidden;
+}
+
 /* return buttons */
 ._2ZCPh {
 	width: 100%;
@@ -17355,7 +17496,7 @@ hr._2gMFY {
 	flex-direction: row;
 	align-items: center;
 	width: 156.4rem;
-	height: 6rem;
+	height: 6.8rem;
 	mask: linear-gradient(
 		to left,
 		rgba(0, 0, 0, 0) 0%,
@@ -17384,6 +17525,7 @@ hr._2gMFY {
 	background-image: url('/textures-hbui/end_of_match/chat_background_highlight.png');
 	width: 32.4rem;
 	height: 6.8rem;
+	bottom: -0.4rem;
 }
 
 .KctZK {
@@ -17477,6 +17619,15 @@ hr._2gMFY {
 
 ._33ORY._15DNP {
 	right: 0.8rem;
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+
+	._24dkr {
+		height: 29.6rem;
+	}
 }
 
 .Nm4Sc {
@@ -17827,6 +17978,11 @@ hr._2gMFY {
 	width: 60%;
 }
 
+._18Sai {
+	top: 0.8rem;
+	right: 2.4rem;
+}
+
 ._171D8 {
 	width: 72rem;
 	height: 54rem;
@@ -17849,23 +18005,24 @@ hr._2gMFY {
 	position: absolute;
 	width: 30.4rem;
 	height: 3.2rem;
-	right: 0;
+	left: 0;
 	top: 0;
+	align-items: flex-start;
 }
 
 ._1J-wG._3JCLi {
 	right: initial;
 	width: 26.4rem;
 	left: 0;
-	align-items: flex-start;
 }
 
 ._105mc {
 	position: absolute;
 	width: 30.4rem;
 	height: 3.2rem;
-	left: 0;
+	right: 0;
 	top: 0;
+	align-items: flex-end;
 }
 
 ._105mc.EVf4I {

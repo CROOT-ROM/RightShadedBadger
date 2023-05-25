@@ -3,7 +3,7 @@
   "minecraft:client_entity": {
     "components": {
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -72,7 +72,7 @@
         "walk_a": "animation.animal_chicken.walk_a"
       },
       "enable_attachables": false,
-      "face_poses": ["Neutral","Neutral Blink"],
+      "face_poses": ["Neutral","Neutral Blink","Patpat"],
       "geometry": {
         "default": "geometry.animal_chicken"
       },

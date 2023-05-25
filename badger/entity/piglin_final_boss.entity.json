@@ -2,7 +2,11 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "components": {
-      "badger:entity_age": {},
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_piglin_final_boss"
+      },
+      "badger:entity_age": {
+      },
       "badger:face_animation": {
         "anim_columns": 7,
         "anim_rows": 1,
@@ -14,21 +18,13 @@
         "position_interpolation_steps": 3
       },
       "badger:invasion_icon": {
-        "icon_color": [
-          0.737,
-          0.22,
-          0.769,
-          1
-        ]
-      },
-      "badger:keep_alive_timer": {
-        "time": 0.00001
+        "icon_color": [0.737,0.22,0.769,1]
       },
       "badger:music_2d_emitter": {
         "max_distance": 150,
-        "music_states": [
+        "music_states":  [
           {
-            "audio_parameters": [
+            "audio_parameters":  [
               {
                 "music_boss_engaged": 1
               }
@@ -36,7 +32,7 @@
             "state_name": "boss_engaged"
           },
           {
-            "audio_parameters": [
+            "audio_parameters":  [
               {
                 "music_boss_engaged": 0,
                 "music_wof_act3_phase": 1
@@ -45,7 +41,7 @@
             "state_name": "inactive"
           },
           {
-            "audio_parameters": [
+            "audio_parameters":  [
               {
                 "music_boss_engaged": 8
               }
@@ -53,7 +49,7 @@
             "state_name": "final_boss_engaged0"
           },
           {
-            "audio_parameters": [
+            "audio_parameters":  [
               {
                 "music_boss_engaged": 9
               }
@@ -61,7 +57,7 @@
             "state_name": "final_boss_engaged1"
           },
           {
-            "audio_parameters": [
+            "audio_parameters":  [
               {
                 "music_boss_engaged": 10
               }
@@ -72,43 +68,24 @@
         "on_enter_bae": "",
         "priority": 200
       },
-      "badger:decoration_collider_request": {
-        "name": "badger:decoration_collider_piglin_final_boss"
-      },
       "badger:point_lights": {
-        "lights": [
+        "lights":  [
           {
-            "color": [
-              1,
-              0.102,
-              0.941
-            ],
+            "color": [1,0.102,0.941],
             "enabled": true,
             "falloff_power": 2,
             "intensity": "query.fbm_noise(4,2, variable.light_weapon_intensity, 1.0)",
             "locator": "loc_fx_weapon",
-            "offset": [
-              0,
-              0,
-              0
-            ],
+            "offset": [0,0,0],
             "radius": 15
           },
           {
-            "color": [
-              0.729,
-              0.29,
-              0.769
-            ],
+            "color": [0.729,0.29,0.769],
             "enabled": "variable.is_spin",
             "falloff_power": 1,
             "intensity": "query.fbm_noise(4, 60.0, variable.light_intensity, 1.0)",
             "locator": "loc_fx_main",
-            "offset": [
-              0,
-              2,
-              0
-            ],
+            "offset": [0,2,0],
             "radius": 10
           }
         ]
@@ -120,8 +97,62 @@
         "normal_hit": {
           "audio": "BAE_piglin_finalboss_dx_damage"
         },
+        "on_bash_attack": {
+          "rumble": {
+            "duration": 2.5,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 50
+          }
+        },
         "on_initialized": {
           "audio": "BAE_piglin_finalboss_idle"
+        },
+        "on_melee_attack_1": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 40
+          }
+        },
+        "on_melee_attack_2": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 40
+          }
+        },
+        "on_spin_charge_attack_1": {
+          "rumble": {
+            "duration": 5,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 35
+          }
+        },
+        "on_spin_charge_attack_2": {
+          "rumble": {
+            "duration": 5,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 35
+          }
+        },
+        "on_spin_charge_attack_3": {
+          "rumble": {
+            "duration": 5,
+            "override": true,
+            "priority": 2,
+            "range": 30,
+            "strength": 35
+          }
         },
         "weak_hit": {
           "audio": "BAE_piglin_finalboss_dx_damage"
@@ -131,13 +162,8 @@
         "definition": "badger:piglin_final_boss",
         "limit": 16
       },
-      "badger:rig_operations": [
-        "rigops_actions.piglin_final_boss_swipe_light_in",
-        "rigops_actions.piglin_final_boss_swipe_light_out"
-      ],
-      "badger:template": [
-        "badger:template_piglin"
-      ],
+      "badger:rig_operations": ["rigops_actions.piglin_final_boss_swipe_light_in","rigops_actions.piglin_final_boss_swipe_light_out"],
+      "badger:template": ["badger:template_piglin"],
       "badger:threat_source": {
         "base_value": 100,
         "spawn_value": 100,
@@ -179,23 +205,7 @@
         "walk_a": "animation.piglin_final_boss.walk_a"
       },
       "enable_attachables": false,
-      "face_poses": [
-        "Neutral",
-        "Neutral Blink",
-        "Wide Eye",
-        "Death_1",
-        "Death_2",
-        "Death_3",
-        "Death_4",
-        "Death_5",
-        "Death_6",
-        "Death_7",
-        "Death_8",
-        "Death_9",
-        "Death_10",
-        "Death_11",
-        "Death_12"
-      ],
+      "face_poses": ["Neutral","Neutral Blink","Wide Eye","Death_1","Death_2","Death_3","Death_4","Death_5","Death_6","Death_7","Death_8","Death_9","Death_10","Death_11","Death_12"],
       "geometry": {
         "default": "geometry.piglin_final_boss"
       },
@@ -236,11 +246,9 @@
         "fx_weapon_parts_idle": "badger:fx_final_boss_weapon_parts",
         "fx_weapon_trail": "badger:fx_final_boss_cine_weapon_trail"
       },
-      "render_controllers": [
-        "controller.render.piglin_final_boss"
-      ],
+      "render_controllers": ["controller.render.piglin_final_boss"],
       "scripts": {
-        "animate": [
+        "animate":  [
           {
             "default": "1"
           },
@@ -248,17 +256,7 @@
             "fx_controller": "1"
           }
         ],
-        "initialize": [
-          "variable.spear_vis = 1;",
-          "variable.staff_vis = 1;",
-          "variable.spear_root_vis = 0;",
-          "variable.staff_root_vis = 0;",
-          "variable.is_spin = 0;",
-          "variable.in_spin = 0;",
-          "variable.out_spin = 0;",
-          "variable.all_geo_vis = 1;",
-          "variable.light_weapon_intensity = 30;"
-        ]
+        "initialize": ["variable.spear_vis = 1;","variable.staff_vis = 1;","variable.spear_root_vis = 0;","variable.staff_root_vis = 0;","variable.is_spin = 0;","variable.in_spin = 0;","variable.out_spin = 0;","variable.all_geo_vis = 1;","variable.light_weapon_intensity = 30;"]
       },
       "sound_effects": {
         "attack_bash": "BAE_piglin_finalboss_attack_bash",

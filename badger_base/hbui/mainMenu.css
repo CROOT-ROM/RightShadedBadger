@@ -75,6 +75,17 @@ html {
 }
 
 @font-face {
+	font-family: 'Noto Sans HE';
+	src: url(/hbui/fonts/NotoSansHebrew-Regular-46d0c.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Sans HE';
+	font-weight: bold;
+	src: url(/hbui/fonts/NotoSansHebrew-Bold-c672e.ttf);
+}
+
+@font-face {
 	font-family: 'Noto Sans Mongolian';
 	src: url(/hbui/fonts/NotoSansMongolian-Regular-6cd1c.ttf);
 }
@@ -2831,11 +2842,6 @@ html {
 	--panelLabelDisabledColor: var(--gray30);
 }
 
-._14fCd {
-	--autoHidingScrollbarPosition: absolute;
-	--autoHidingScrollbarWidth: 0.8rem;
-}
-
 ._1uomH {
 	/* Vertical scrollbar */
 	--mouseScrollbarBackgroundColor: var(--gray60);
@@ -2885,9 +2891,8 @@ html {
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
 	--mouseScrollbarHorizontalMarginTop: var(--spacingSize1);
 	--mouseScrollbarHorizontalMarginBottom: var(--spacingSize3);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
-	--mouseScrollbarHorizontalMarginLeft: 0;
-	--mouseScrollbarHorizontalMarginRight: 0;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: var(--spacingSize1);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
@@ -3157,48 +3162,49 @@ html {
 
 .qL3vH {
 	/* Vertical scrollbar */
-	--mouseScrollbarBackgroundColor: transparent;
+	--mouseScrollbarBackgroundColor: #857f72;
 	--mouseScrollbarBackgroundWidth: 0.4rem;
 
 	--mouseScrollbarHandlerWidth: 1.2rem;
-	--mouseScrollbarHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHandlerBackgroundColor: #fffae8;
 	--mouseScrollbarHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--blackOpacity20),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--blackOpacity20), 0 0.4rem 0.4rem 0 var(--blackOpacity20);
+	--mouseScrollbarHandlerBoxShadow: none;
+	--mouseScrollbarHandlerBorderColor: var(--blackOpacity100);
+	--mouseScrollbarHandlerBorderRadius: 0;
 	--mouseScrollbarHandlerJustifyContent: flex-end;
-	--mouseScrollbarHandlerBorderRadius: 0.4rem;
-	--mouseScrollbarHandlerBorderColor: var(--blackOpacity90);
-	--mouseScrollbarHandlerBottomBevel: transparent;
+	--mouseScrollbarHandlerBottomBevel: var(--blackOpacity20);
 
 	--mouseScrollbarHandlerBottomBevelHeight: 0.4rem;
-	--mouseScrollbarHandlerBottomBevelBackgroundColor: var(--blackOpacity50);
-	--mouseScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
+	--mouseScrollbarHandlerBottomBevelBackgroundColor: #afa183;
+	--mouseScrollbarHandlerBottomBevelBoxShadow: none;
 
-	--mouseScrollbarHorizontalMarginTop: none;
-	--mouseScrollbarHorizontalMarginBottom: none;
-	--mouseScrollbarHorizontalMarginLeft: 2.4rem;
-	--mouseScrollbarHorizontalMarginRight: 2.4rem;
-	--mouseScrollbarRightMargin: 0;
+	--mouseScrollbarBackgroundMargins: var(--spacingSize1);
+	--mouseScrollbarLeftMargin: 0.4rem;
+
+	--mouseScrollbarHorizontalMarginTop: 2rem;
+	--mouseScrollbarHorizontalMarginBottom: 2rem;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: 3.2rem;
+	--mouseScrollbarRightMargin: 0rem;
 
 	--mouseScrollbarDisabledDisplay: none;
 	--mouseScrollbarDisabledWidth: 0;
 
 	--mouseScrollbarRailWidth: 1.2rem;
 
-	--mouseScrollbarVerticalMargins: 4rem;
+	--mouseScrollbarVerticalMargins: var(--spacingSize2);
 	--mouseScrollbarVerticalDisplay: flex;
-	--mouseScrollbarVerticalFlexDirection: column;
-	--mouseScrollbarVerticalCenter: center;
+	--mouseScrollbarVerticalFlexDirection: row;
+	--mouseScrollbarVerticalCenter: flex-start;
 
 	/* Horizontal scrollbar */
-	--mouseScrollbarHorizontalBackgroundColor: transparent;
+	--mouseScrollbarHorizontalBackgroundColor: var(--gray60);
 	--mouseScrollbarHorizontalBackgroundHeight: 0.4rem;
 
 	--mouseScrollbarHorizontalHandlerHeight: 1.6rem;
-	--mouseScrollbarHorizontalHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHorizontalHandlerBackgroundColor: var(--gray20);
 	--mouseScrollbaHorizontalHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHorizontalHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--whiteOpacity50),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--whiteOpacity90), 0 0.4rem 0.4rem 0 var(--blackOpacity30);
+	--mouseScrollbarHorizontalHandlerBoxShadow: none;
 	--mouseScrollbarHorizontalHandlerJustifyContent: flex-end;
 
 	--mouseHorizontalScrollbarHandlerBottomBevelHeight: 0.4rem;
@@ -3206,38 +3212,34 @@ html {
 	--mouseHorizontalScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
 
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
-	--mouseScrollbarHorizontalVerticalMargins: var(--spacingSize1);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
-
-	--mouseHorizontalScrollbarIdleDisplay: none;
 
 	--mouseScrollbarHorizontalRailHeight: 1.2rem;
 
 	--mouseScrollbarHorizontalDisplay: flex;
 	--mouseScrollbarHorizontalFlexDirection: row;
-	--mouseScrollbarHorizontalCenter: center;
+	--mouseScrollbarHorizontalCenter: flex-start;
 
 	/* Scrollbar Top Bottom Details */
-	--mouseScrollbarDetailSize: 2.4rem;
+	--mouseScrollbarDetailSize: 0;
 	--mouseScrollbarDetailSizeMinimal: 0;
-	--mouseScrollbarTopDetailIcon: url(/hbui/assets/top_detail-fd452.png);
-	--mouseScrollbarTopDetailIconDark: url(/hbui/assets/top_detail_dark-606b1.png);
-	--mouseScrollbarBottomDetailIcon: url(/hbui/assets/bottom_detail-efdde.png);
-	--mouseScrollbarBottomDetailIconDark: url(/hbui/assets/bottom_detail_dark-d4b7f.png);
+	--mouseScrollbarTopDetailIcon: none;
+	--mouseScrollbarBottomDetailIcon: none;
+	--mouseScrollbarDetailRotation: 0;
+	--mouseScrollbarTopDetailIconDark: none;
+	--mouseScrollbarBottomDetailIconDark: none;
 	--mouseScrollbarTopDetailIconMinimal: none;
 	--mouseScrollbarBottomDetailIconMinimal: none;
-	--mouseScrollbarDetailRotation: -90deg;
 
-	--mouseScrollbarCenterBorderImage: url(/hbui/assets/scrollbar_centre-5f196.png);
-	--mouseScrollbarCenterBorderImageHorizontal: url(/hbui/assets/scrollbar_centre_horizontal-e85bb.png);
-	--mouseScrollbarCenterBorderImageMinimal: url(/hbui/assets/scrollbar_centre_minimal-49b97.png);
-	--mouseScrollbarCenterBorderImageHorizontalMinimal: url(/hbui/assets/scrollbar_centre_horizontal_minimal-1e1db.png);
-	--mouseScrollbarCenterBorderImageSlice: 1 1 1 1 fill;
-	--mouseScrollbarCenterBorderImageWidth: var(--base2Scale);
-	--mouseScrollbarCenterBorderImageOutset: 0.4rem;
+	--mouseScrollbarCenterBorderImage: none;
+	--mouseScrollbarCenterBorderImageHorizontal: none;
+	--mouseScrollbarCenterBorderImageMinimal: none;
+	--mouseScrollbarCenterBorderImageHorizontalMinimal: none;
+	--mouseScrollbarCenterBorderImageSlice: 0;
+	--mouseScrollbarCenterBorderImageWidth: 0;
+	--mouseScrollbarCenterBorderImageOutset: 0;
 	--mouseScrollbarCenterBorderImageRepeat: stretch;
 }
 
@@ -6381,10 +6383,6 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow: hidden;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	margin-left: -0.8rem;
-	margin-right: -0.8rem;
 	opacity: 1;
 	margin-right: var(--scrollViewMarginRight);
 }
@@ -6421,6 +6419,13 @@ div {
 	margin-right: -0.8rem;
 }
 
+.m_niZ {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.8rem;
+}
+
 ._1BxDM {
 	height: 100%;
 	overflow-y: scroll;
@@ -6444,6 +6449,7 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow-x: scroll;
+	margin-bottom: -4rem;
 }
 
 .jRvmp {
@@ -6574,6 +6580,11 @@ div {
 	width: 100%;
 }
 
+.HapXQ._1Dnkg {
+	margin-right: 1.6rem;
+	margin-left: 0.8rem;
+}
+
 /* Horizontal scrollbar css */
 
 ._2Z0AD {
@@ -6646,11 +6657,19 @@ div {
 	box-shadow: var(--mouseScrollbarHandlerBottomBevelBoxShadow);
 }
 
-._3vJss {
+.HapXQ._3vJss {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: calc(var(--spacingSize2) + var(--base2Scale));
+	z-index: 2;
+}
+
+._2Z0AD._3vJss {
+	position: absolute;
+	bottom: var(--spacingSize2);
+	right: 0;
+	left: 0;
 	z-index: 2;
 }
 
@@ -6703,11 +6722,11 @@ div {
 }
 
 .syGOs {
-	width: var(--autoHidingScrollbarWidth);
-	position: var(--autoHidingScrollbarPosition);
+	width: 0.8rem;
+	position: absolute;
 	top: 0;
 	bottom: 0;
-	right: 0;
+	right: calc(var(--spacingSize2) + var(--base2Scale));
 	margin-top: var(--spacingSize1);
 	margin-bottom: var(--spacingSize1);
 }
@@ -6732,11 +6751,13 @@ div {
 /* Horizontal scrollbar */
 
 .aHAIA {
-	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: calc(var(--spacingSize2) + var(--base2Scale));
 	right: 0;
+	left: 0;
 	height: 0.8rem;
+	margin-left: var(--spacingSize1);
+	margin-right: 3.2rem;
 }
 
 .aHAIA ._-0bBc {
@@ -6777,12 +6798,9 @@ div {
 	transition-duration: 2s;
 }
 
-._318KV {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: calc(var(--spacingSize2) + var(--base2Scale));
-	z-index: 2;
+.aHAIA._2sGIH {
+	position: relative;
+	height: 4rem;
 }
 
 ._1e0gJ {
@@ -7303,9 +7321,20 @@ div {
 	z-index: 99999; /* Should be higher than any focused element's z-index */
 }
 
+._2gGya {
+	display: none;
+}
+
+._1zhu0 {
+	flex-direction: row;
+}
+
+.K1zBc {
+	flex-direction: row-reverse;
+}
+
 ._1j3MU {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin: 0;
 	padding-right: var(--spacingSize3);
@@ -10088,11 +10117,8 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 }
 
-._18WQB {
+._2WTTw.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 .-mHf9 {
@@ -10105,11 +10131,8 @@ input::-webkit-inner-spin-button {
 	padding: 0;
 }
 
-._35MyR {
+.-mHf9.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 ._1M0eO {
@@ -10421,6 +10444,7 @@ hr._2gMFY {
 	padding-bottom: 2.8rem;
 	align-items: center;
 	min-height: 10rem;
+	width: 100%;
 }
 
 .WoKCZ {
@@ -11453,12 +11477,12 @@ hr._2gMFY {
 		opacity: 1;
 	}
 	80% {
-		transform: scale3d(0.4, 0.4, 0.4);
+		transform: scale3d(0.4, 0.4, 0.4) rotate3d(0, 0, 1, 180deg);
 		opacity: 1;
 	}
 
 	100% {
-		transform: scale3d(0.6, 0.6, 0.6);
+		transform: scale3d(0.6, 0.6, 0.6) rotate3d(0, 0, 1, 180deg);
 		opacity: 0;
 	}
 }
@@ -11777,7 +11801,7 @@ hr._2gMFY {
 	padding-right: var(--spacingSize3);
 }
 
-._1IB8u {
+._3eqCy {
 	display: none;
 }
 
@@ -12610,6 +12634,10 @@ hr._2gMFY {
 	right: 2rem;
 }
 
+._20O0L {
+	margin-bottom: calc(8.4rem + var(--spacingSize3));
+}
+
 .FU-pg {
 	width: 126rem;
 	top: calc(var(--tabBarLineHeight)/2);
@@ -12816,7 +12844,7 @@ hr._2gMFY {
 }
 
 ._3zac9 {
-	margin-top: 0.8rem;
+	margin-top: 1.6rem;
 }
 
 ._3zac9._135at {
@@ -12840,12 +12868,11 @@ hr._2gMFY {
 	width: 62rem;
 	margin-right: var(--spacingSize5);
 	margin-left: var(--spacingSize4);
-	margin-bottom: var(--spacingSize3);
-	margin-top: 2.4rem;
+	margin-top: 1.6rem;
 }
 
 .nWl5U._1XYeR {
-	width: 126rem;
+	width: 124rem;
 	height: 54.4rem;
 	margin-right: 0rem;
 }
@@ -12863,7 +12890,7 @@ hr._2gMFY {
 .USIsE {
 	display: flex;
 	flex-direction: row;
-	margin-top: 2rem;
+	padding-top: 1.2rem;
 }
 
 ._1XYeR {
@@ -12906,7 +12933,8 @@ hr._2gMFY {
 	display: flex;
 	width: 40.4rem;
 	height: 46rem;
-	padding: 4rem 3.2rem;
+	padding: 1.6rem 3.2rem;
+	overflow-y: hidden;
 	margin-right: var(--spacingSize6);
 }
 
@@ -12918,8 +12946,12 @@ hr._2gMFY {
 	justify-content: space-around;
 }
 
-._2eNlp {
+._1289- {
 	visibility: hidden;
+}
+
+._2eNlp {
+	display: none;
 }
 
 .BGmLi {
@@ -12997,6 +13029,16 @@ hr._2gMFY {
 	padding-right: var(--spacingSize5);
 }
 
+._3VZqa {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 /* stylelint-enable plugin/no-unused-selectors */
 
 ._3pzv0 {
@@ -13004,12 +13046,12 @@ hr._2gMFY {
 	bottom: 0;
 	width: 29.2rem;
 	height: 50rem;
-	padding-right: 2rem;
-	padding-left: 2rem;
+	padding-right: 2.4rem;
+	padding-left: 2.4rem;
 	padding-top: 1.2rem;
 	margin-left: 0.4rem;
 	margin-right: 0.4rem;
-	margin-top: 4.4rem;
+	margin-top: 3.6rem;
 	padding-bottom: 4.4rem;
 	background-image: url('/textures-hbui/hub_screen/card_campaign_normal.png');
 	background-size: 100% 100%;
@@ -13021,7 +13063,7 @@ hr._2gMFY {
 }
 
 ._3pzv0._2fmTI {
-	transform: translateY(-2.8rem);
+	transform: translateY(-2.4rem);
 	background-image: url('/textures-hbui/hub_screen/card_campaign_normal_highlighted.png');
 }
 
@@ -13065,7 +13107,7 @@ hr._2gMFY {
 	background-repeat: no-repeat;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 4.4rem;
+	margin-top: 4rem;
 }
 
 .lfLeN._2fmTI {
@@ -13121,7 +13163,7 @@ hr._2gMFY {
 }
 
 ._1pxVJ {
-	margin-top: 0.8rem;
+	margin-top: 1.6rem;
 }
 
 ._1pxVJ.bQqfW {
@@ -13132,12 +13174,27 @@ hr._2gMFY {
 ._2c6tJ {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.ro2lK {
+	width: 24.4rem;
+	height: 29rem; /* stylelint-disable-line stylelint-base-4/rule */
+	align-self: center;
+}
+
+.ro2lK._30bsp {
+	width: 51.2rem;
+	height: 28.8rem;
 }
 
 ._2fncI {
 	width: 100%;
+	max-height: 28.8rem;
 	flex: 1;
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.8rem;
+	margin-top: 1.2rem;
 	align-items: flex-end;
 	justify-content: flex-end;
 	filter: grayscale(0.6) opacity(0.6) sepia(0.7);
@@ -13149,8 +13206,8 @@ hr._2gMFY {
 
 ._2fncI._2qHWL {
 	width: 12.4rem;
-	height: 20rem;
-	margin-top: 8rem;
+	height: 24.4rem;
+	margin-top: 0rem;
 }
 
 ._1Mt3a {
@@ -13158,10 +13215,11 @@ hr._2gMFY {
 	width: 100%;
 	height: 100%;
 	border-image-source: url('/textures-hbui/hub_screen/legends_frame.png');
-	border-image-slice: 42 fill;
+	border-image-slice: 44 fill;
 	border-image-repeat: stretch;
 	border-image-width: 4.4rem;
-	border-image-outset: 0.4rem;
+	border-image-outset: 0.8rem;
+	z-index: 2;
 }
 
 ._1Mt3a._2fmTI {
@@ -13170,7 +13228,7 @@ hr._2gMFY {
 
 ._1dqtb {
 	width: 100%;
-	height: 12rem;
+	height: 12.4rem;
 	align-content: center;
 	justify-content: center;
 	overflow-x: hidden;
@@ -13231,8 +13289,6 @@ hr._2gMFY {
 	position: absolute;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 1.6rem;
-	margin-right: 1.6rem;
 	padding-right: 2.8rem;
 	padding-left: 2.4rem;
 	border-image-source: url('/textures-hbui/hub_screen/card_day_counter.png');
@@ -13287,6 +13343,7 @@ hr._2gMFY {
 ._3K-Lk {
 	width: 24rem;
 	align-items: center;
+	margin-bottom: -0.4rem;
 }
 
 .BUe03 {
@@ -13326,16 +13383,17 @@ hr._2gMFY {
 	align-items: center;
 	justify-content: center;
 	width: 24rem;
+	margin-top: -0.8rem;
 	overflow-x: hidden;
 }
 
 ._3eJkn._2fmTI {
-	bottom: 2rem;
+	bottom: 0.4rem;
 }
 
 ._3vN0n {
-	width: 16.4rem;
-	height: 18.4rem;
+	width: 16rem;
+	height: 18rem;
 	filter: grayscale(0.6) opacity(0.6) sepia(0.7);
 }
 
@@ -13401,6 +13459,15 @@ hr._2gMFY {
 	align-items: center;
 	width: 80%;
 	overflow-x: hidden;
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._2fncI._2qHWL {
+		width: 16rem;
+		margin-top: 2rem;
+	}
 }
 
 ._OyMp {
@@ -14694,6 +14761,11 @@ hr._2gMFY {
 	width: 60%;
 }
 
+._18Sai {
+	top: 0.8rem;
+	left: 2.4rem;
+}
+
 ._142OC {
 	width: 100%;
 	height: 100%;
@@ -14759,6 +14831,17 @@ hr._2gMFY {
 ._3GhUH {
 	margin-top: var(--spacingSize8);
 	margin-bottom: var(--spacingSize3);
+}
+
+._2Gk4f {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	bottom: 2rem;
+	padding-top: var(--spacingSize4);
+	padding-bottom: var(--spacingSize4);
+	padding-left: var(--spacingSize4);
+	padding-right: var(--spacingSize4);
 }
 
 ._16Ok_ {
@@ -14854,23 +14937,24 @@ hr._2gMFY {
 	position: absolute;
 	width: 30.4rem;
 	height: 3.2rem;
-	left: 0;
+	right: 0;
 	top: 0;
+	align-items: flex-start;
 }
 
 ._1J-wG._3JCLi {
 	left: initial;
 	width: 26.4rem;
 	right: 0;
-	align-items: flex-start;
 }
 
 ._105mc {
 	position: absolute;
 	width: 30.4rem;
 	height: 3.2rem;
-	right: 0;
+	left: 0;
 	top: 0;
+	align-items: flex-end;
 }
 
 ._105mc.EVf4I {
@@ -15889,14 +15973,17 @@ hr._2gMFY {
 
 .SNVVh {
 	position: absolute;
-	top: 28rem;
-	width: 100%;
+	top: 24.8rem;
+	width: 80%;
 	align-items: center;
+	text-align: center;
+	line-height: normal;
 }
 
 ._2n8ff {
 	margin-left: 6.8rem;
 	margin-right: 6.8rem;
+	height: 21.6rem;
 }
 
 ._1wN48 {
@@ -16117,8 +16204,13 @@ hr._2gMFY {
 	align-items: center;
 } */
 
-._2F52T {
+._2D3ZQ {
 	margin-bottom: 1.2rem;
+}
+
+._2aaPk {
+	max-height: 14.8rem;
+	overflow-y: hidden;
 }
 
 ._4JRDi {
@@ -16191,7 +16283,7 @@ hr._2gMFY {
 	}
 
 	._2ViFa {
-		height: 22rem;
+		height: 22.4rem;
 	}
 }
 
@@ -16296,9 +16388,58 @@ hr._2gMFY {
 	}
 }
 
+._1Biqo {
+	display: flex;
+	align-items: center;
+	background: none;
+	padding-top: var(--spacingSize2);
+	padding-left: var(--spacingSize7);
+	padding-right: var(--spacingSize7);
+	padding-bottom: var(--spacingSize7);
+	width: 100%;
+}
+
+._2jh2b {
+	flex-direction: row;
+}
+
 ._7iLNA {
 	width: 4rem;
 	height: 4rem;
+	margin-right: 0.8rem;
+}
+
+._1y6PX {
+	height: 4.4rem;
+}
+
+._1ljI9 {
+	height: 4.8rem;
+	margin-left: -4rem;
+	margin-bottom: 0.8rem;
+	max-width: 100%;
+}
+
+.y_FLf {
+	width: 13.6rem;
+	height: 4.4rem;
+	border-image-slice: 0 0 0 0 fill;
+	border-image-width: 0rem;
+}
+
+._3ehH5 {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	background-size: 100% 100%;
+	height: 4.8rem;
+	border-image-slice: 0 64 0 148 fill;
+	border-image-width: 0 6.4rem 0 14.8rem;
+	border-image-repeat: stretch;
+	padding-right: 4rem;
+	padding-top: 0.4rem;
+	padding-left: 0.8rem;
+	max-width: 100%;
 }
 
 ._1biDl {
@@ -16340,6 +16481,7 @@ hr._2gMFY {
 	border-image-slice: 8 8 fill;
 	border-image-width: 0.8rem;
 	border-image-repeat: stretch;
+	margin-top: 0.4rem;
 	height: calc(var(--buttonHeight) + var(--buttonElevation));
 	flex-direction: row;
 	align-items: center;
@@ -16383,16 +16525,21 @@ hr._2gMFY {
 }
 
 ._1k1Xy {
+	flex: 1;
+}
+
+._3JdC8 {
 	padding-left: 1.6rem;
 	padding-right: 1.6rem;
 	padding-bottom: 1.2rem;
+	flex-direction: row;
 }
 
 .b2byy {
 	padding-top: 1.6rem;
 	padding-left: 2.8rem;
 	padding-right: 2.8rem;
-	padding-bottom: 2.8rem;
+	padding-bottom: 0.8rem;
 	flex-direction: row;
 	flex: 1;
 }
@@ -16428,7 +16575,7 @@ hr._2gMFY {
 	border-image-slice: 68 fill;
 	border-image-width: 6.8rem;
 	border-image-repeat: stretch;
-	width: 33.6rem;
+	width: 17vw;
 }
 
 ._38X95 {
@@ -16445,15 +16592,48 @@ hr._2gMFY {
 }
 
 .nnovd {
+	margin-top: -1.2rem;
+	margin-bottom: 1.6rem;
 	width: 100%;
 	flex: 1;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 ._2yYKM {
-	width: 30.8rem;
-	height: 34.4rem;
+	width: 13vw;
+	height: 13vw;
+}
+
+._10Ga5 {
+	width: 3.2rem;
+	height: 3.6rem;
+}
+
+._3eknK {
+	width: 12rem;
+	margin-left: 0.8rem;
+	height: 7.2rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_normal.png');
+	border-image-slice: 60 68 fill;
+	border-image-width: 4.8rem 5.2rem;
+	border-image-repeat: stretch;
+}
+
+._3eknK._5-aIY {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_hover.png');
+}
+
+._3eknK._1Vc5l {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_focus.png');
+}
+
+._3eknK._21iYw {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_press.png');
 }
 
 /* BBI-TODO: (afreytag 1) Removed for Day 0 */
@@ -16495,9 +16675,12 @@ hr._2gMFY {
 	padding-left: 4.8rem;
 }
 
+.BARyp {
+	flex-direction: row;
+}
+
 ._3Vmo3 {
-	align-items: center;
-	width: 4rem;
+	align-items: flex-start;
 }
 
 ._2a8H4 {
@@ -16506,10 +16689,15 @@ hr._2gMFY {
 	flex: 1;
 }
 
-._1yeGa {
+._2AKlF {
 	padding-left: 1.6rem;
 	padding-right: 1.6rem;
 	padding-bottom: 1.2rem;
+	flex-direction: row;
+}
+
+._1yeGa {
+	flex: 1;
 }
 
 ._2Oe-y {
@@ -16542,6 +16730,36 @@ hr._2gMFY {
 	height: 26vw;
 	width: 26vw;
 	filter: drop-shadow(0.4rem 1.2rem 0.8rem rgba(0, 0, 0, 0.4));
+}
+
+._39g5l {
+	width: 3.2rem;
+	height: 3.6rem;
+}
+
+._1iy3T {
+	width: 12rem;
+	margin-left: 0.8rem;
+	height: 7.2rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_normal.png');
+	border-image-slice: 60 68 fill;
+	border-image-width: 4.8rem 5.2rem;
+	border-image-repeat: stretch;
+}
+
+._1iy3T._3M4HS {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_hover.png');
+}
+
+._1iy3T._3Fved {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_focus.png');
+}
+
+._1iy3T._1ogYE {
+	border-image-source: url('/textures-hbui/hub_screen/button_destructive_press.png');
 }
 
 /* Item List */
@@ -16607,7 +16825,8 @@ hr._2gMFY {
 ._1f3K_ {
 	flex-direction: row;
 	flex: 1;
-	align-items: flex-end;
+	align-items: center;
+	min-height: 5.6rem;
 	padding-bottom: 1.2rem;
 }
 
@@ -16623,8 +16842,8 @@ hr._2gMFY {
 }
 
 ._1fdMY {
-	padding-left: 1.2rem;
 	align-items: center;
+	padding-left: 1.2rem;
 }
 
 .-_35u {
@@ -16692,10 +16911,6 @@ hr._2gMFY {
 	justify-content: center;
 }
 
-._13Bcj {
-	width: 84rem;
-}
-
 .AeuEv {
 	position: absolute;
 	width: 100%;
@@ -16730,10 +16945,10 @@ hr._2gMFY {
 
 .Y1yes {
 	height: 8rem;
-	max-width: 95%;
+	width: 95%;
 	position: absolute;
 	top: -8rem;
-	border-image: url('/textures-hbui/marketplace/banner_purchase_tokens.png');
+	border-image: url('/textures-hbui/panel_banner/banner_blue.png');
 	border-image-slice: 0 80 0 76 fill;
 	border-image-width: 0 8rem 0 7.6rem;
 	border-image-repeat: stretch;
@@ -16743,14 +16958,15 @@ hr._2gMFY {
 	padding-top: 0.4rem;
 	padding-left: 6.4rem;
 	padding-right: 6.4rem;
+	overflow-x: hidden;
 }
 
 ._2JI6W {
 	height: 8rem;
-	width: 76rem;
+	width: 95%;
 	position: absolute;
 	top: -17.2rem;
-	border-image: url('/textures-hbui/marketplace/banner_purchase_tokens.png');
+	border-image: url('/textures-hbui/panel_banner/banner_blue.png');
 	border-image-slice: 0 80 0 76 fill;
 	border-image-width: 0 8rem 0 7.6rem;
 	border-image-repeat: stretch;
@@ -16760,6 +16976,7 @@ hr._2gMFY {
 	padding-top: 0.4rem;
 	padding-left: 6.4rem;
 	padding-right: 6.4rem;
+	overflow-x: hidden;
 }
 
 ._3LhF8 {
@@ -17091,6 +17308,10 @@ hr._2gMFY {
 .xrcXP {
 	width: 24rem;
 	height: 20rem;
+}
+
+._3u3am {
+	margin-bottom: 4rem;
 }
 
 .UFr_h {

@@ -34,7 +34,14 @@
           }
         },
         "on_building_destroyed": {
-          "audio": "BAE_piglin_portal_small_death"
+          "audio": "BAE_piglin_portal_small_death",
+          "rumble": {
+            "duration": 2,
+            "strength": 70,
+            "priority": 1,
+            "override": true,
+            "range": 150
+          }
         },
         "on_piglin_portal_idle": {
           "audio": "BAE_piglin_portal_small_idle"

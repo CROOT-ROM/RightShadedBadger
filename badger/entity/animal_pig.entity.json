@@ -5,7 +5,7 @@
       "badger:block_source_info": {
       },
       "badger:face_animation": {
-        "anim_columns": 2,
+        "anim_columns": 3,
         "anim_rows": 1,
         "blink_frame": 1,
         "default_frame": 0
@@ -78,6 +78,7 @@
         "knockback_a": "animation.animal_pig.knockback_a",
         "locomotion": "controller.animation.animal_pig.locomotion",
         "mud": "controller.animation.animal_pig.mud",
+        "patpat_a": "animation.animal_pig_dlc.patpat_a",
         "run_a": "animation.animal_pig.run_a",
         "run_b": "animation.animal_pig.run_b",
         "sleep_a": "animation.animal_pig.sleep_a",

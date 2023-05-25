@@ -238,6 +238,21 @@
         "looping": true,
         "audio_event": "BAE_ui_hud_error"
       },
+      // ============================ CANNOT DISBAND ======================================
+      "disband_no_valid_mobs": {
+        "message": "messages.disband_no_valid_mobs",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "disband_mobs_in_combat": {
+        "message": "messages.disband_mobs_in_combat",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
       // ============================ RECALLED NO MOBS ==================================
       "no_mobs_recalled": {
         "message": "messages.no_mobs_recalled",
@@ -1408,6 +1423,13 @@
         "message": "invasion.village_occupation_repair_reminder_creepers",
         "priority": 6,
         "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // Nudge to let players know to repair houses in homesteads to spawn units
+      "village_attack_occupation_repair_reminder_homestead_houses": {
+        "message": "invasion.village_occupation_repair_reminder_homestead_houses",
+        "priority": 6,
+        "display_time": 8.0,
         "audio_event": "BAE_ui_hud_tutorial_nudge"
       },
       "village_attack_occupation_repair_reminder_skeletons": {

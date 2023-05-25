@@ -75,6 +75,17 @@ html {
 }
 
 @font-face {
+	font-family: 'Noto Sans HE';
+	src: url(/hbui/fonts/NotoSansHebrew-Regular-46d0c.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Sans HE';
+	font-weight: bold;
+	src: url(/hbui/fonts/NotoSansHebrew-Bold-c672e.ttf);
+}
+
+@font-face {
 	font-family: 'Noto Sans Mongolian';
 	src: url(/hbui/fonts/NotoSansMongolian-Regular-6cd1c.ttf);
 }
@@ -2831,11 +2842,6 @@ html {
 	--panelLabelDisabledColor: var(--gray30);
 }
 
-._14fCd {
-	--autoHidingScrollbarPosition: absolute;
-	--autoHidingScrollbarWidth: 0.8rem;
-}
-
 ._1uomH {
 	/* Vertical scrollbar */
 	--mouseScrollbarBackgroundColor: var(--gray60);
@@ -2885,9 +2891,8 @@ html {
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
 	--mouseScrollbarHorizontalMarginTop: var(--spacingSize1);
 	--mouseScrollbarHorizontalMarginBottom: var(--spacingSize3);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
-	--mouseScrollbarHorizontalMarginLeft: 0;
-	--mouseScrollbarHorizontalMarginRight: 0;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: var(--spacingSize1);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
@@ -3157,48 +3162,49 @@ html {
 
 .qL3vH {
 	/* Vertical scrollbar */
-	--mouseScrollbarBackgroundColor: transparent;
+	--mouseScrollbarBackgroundColor: #857f72;
 	--mouseScrollbarBackgroundWidth: 0.4rem;
 
 	--mouseScrollbarHandlerWidth: 1.2rem;
-	--mouseScrollbarHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHandlerBackgroundColor: #fffae8;
 	--mouseScrollbarHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--blackOpacity20),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--blackOpacity20), 0 0.4rem 0.4rem 0 var(--blackOpacity20);
+	--mouseScrollbarHandlerBoxShadow: none;
+	--mouseScrollbarHandlerBorderColor: var(--blackOpacity100);
+	--mouseScrollbarHandlerBorderRadius: 0;
 	--mouseScrollbarHandlerJustifyContent: flex-end;
-	--mouseScrollbarHandlerBorderRadius: 0.4rem;
-	--mouseScrollbarHandlerBorderColor: var(--blackOpacity90);
-	--mouseScrollbarHandlerBottomBevel: transparent;
+	--mouseScrollbarHandlerBottomBevel: var(--blackOpacity20);
 
 	--mouseScrollbarHandlerBottomBevelHeight: 0.4rem;
-	--mouseScrollbarHandlerBottomBevelBackgroundColor: var(--blackOpacity50);
-	--mouseScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
+	--mouseScrollbarHandlerBottomBevelBackgroundColor: #afa183;
+	--mouseScrollbarHandlerBottomBevelBoxShadow: none;
 
-	--mouseScrollbarHorizontalMarginTop: none;
-	--mouseScrollbarHorizontalMarginBottom: none;
-	--mouseScrollbarHorizontalMarginLeft: 2.4rem;
-	--mouseScrollbarHorizontalMarginRight: 2.4rem;
-	--mouseScrollbarRightMargin: 0;
+	--mouseScrollbarBackgroundMargins: var(--spacingSize1);
+	--mouseScrollbarLeftMargin: 0.4rem;
+
+	--mouseScrollbarHorizontalMarginTop: 2rem;
+	--mouseScrollbarHorizontalMarginBottom: 2rem;
+	--mouseScrollbarHorizontalMarginLeft: var(--spacingSize1);
+	--mouseScrollbarHorizontalMarginRight: 3.2rem;
+	--mouseScrollbarRightMargin: 0rem;
 
 	--mouseScrollbarDisabledDisplay: none;
 	--mouseScrollbarDisabledWidth: 0;
 
 	--mouseScrollbarRailWidth: 1.2rem;
 
-	--mouseScrollbarVerticalMargins: 4rem;
+	--mouseScrollbarVerticalMargins: var(--spacingSize2);
 	--mouseScrollbarVerticalDisplay: flex;
-	--mouseScrollbarVerticalFlexDirection: column;
-	--mouseScrollbarVerticalCenter: center;
+	--mouseScrollbarVerticalFlexDirection: row;
+	--mouseScrollbarVerticalCenter: flex-start;
 
 	/* Horizontal scrollbar */
-	--mouseScrollbarHorizontalBackgroundColor: transparent;
+	--mouseScrollbarHorizontalBackgroundColor: var(--gray60);
 	--mouseScrollbarHorizontalBackgroundHeight: 0.4rem;
 
 	--mouseScrollbarHorizontalHandlerHeight: 1.6rem;
-	--mouseScrollbarHorizontalHandlerBackgroundColor: #dfd8c9;
+	--mouseScrollbarHorizontalHandlerBackgroundColor: var(--gray20);
 	--mouseScrollbaHorizontalHandlerBorderWidth: var(--base2Scale);
-	--mouseScrollbarHorizontalHandlerBoxShadow: inset var(--base2ScaleNeg) var(--base2ScaleNeg) 0 var(--whiteOpacity50),
-		inset var(--base2Scale) var(--base2Scale) 0 var(--whiteOpacity90), 0 0.4rem 0.4rem 0 var(--blackOpacity30);
+	--mouseScrollbarHorizontalHandlerBoxShadow: none;
 	--mouseScrollbarHorizontalHandlerJustifyContent: flex-end;
 
 	--mouseHorizontalScrollbarHandlerBottomBevelHeight: 0.4rem;
@@ -3206,38 +3212,34 @@ html {
 	--mouseHorizontalScrollbarHandlerBottomBevelBoxShadow: 0 var(--base2ScaleNeg) 0 0 var(--whiteOpacity50);
 
 	--mouseScrollbarHorizontalBackgroundMarginTop: calc(0.4rem + var(--base2Scale));
-	--mouseScrollbarHorizontalVerticalMargins: var(--spacingSize1);
-	--mouseScrollbarHorizontalRightMargin: var(--spacingSize2);
 
 	--mouseHorizontalScrollbarDisabledDisplay: none;
 	--mouseHorizontalScrollbarDisabledWidth: 0;
-
-	--mouseHorizontalScrollbarIdleDisplay: none;
 
 	--mouseScrollbarHorizontalRailHeight: 1.2rem;
 
 	--mouseScrollbarHorizontalDisplay: flex;
 	--mouseScrollbarHorizontalFlexDirection: row;
-	--mouseScrollbarHorizontalCenter: center;
+	--mouseScrollbarHorizontalCenter: flex-start;
 
 	/* Scrollbar Top Bottom Details */
-	--mouseScrollbarDetailSize: 2.4rem;
+	--mouseScrollbarDetailSize: 0;
 	--mouseScrollbarDetailSizeMinimal: 0;
-	--mouseScrollbarTopDetailIcon: url(/hbui/assets/top_detail-fd452.png);
-	--mouseScrollbarTopDetailIconDark: url(/hbui/assets/top_detail_dark-606b1.png);
-	--mouseScrollbarBottomDetailIcon: url(/hbui/assets/bottom_detail-efdde.png);
-	--mouseScrollbarBottomDetailIconDark: url(/hbui/assets/bottom_detail_dark-d4b7f.png);
+	--mouseScrollbarTopDetailIcon: none;
+	--mouseScrollbarBottomDetailIcon: none;
+	--mouseScrollbarDetailRotation: 0;
+	--mouseScrollbarTopDetailIconDark: none;
+	--mouseScrollbarBottomDetailIconDark: none;
 	--mouseScrollbarTopDetailIconMinimal: none;
 	--mouseScrollbarBottomDetailIconMinimal: none;
-	--mouseScrollbarDetailRotation: -90deg;
 
-	--mouseScrollbarCenterBorderImage: url(/hbui/assets/scrollbar_centre-5f196.png);
-	--mouseScrollbarCenterBorderImageHorizontal: url(/hbui/assets/scrollbar_centre_horizontal-e85bb.png);
-	--mouseScrollbarCenterBorderImageMinimal: url(/hbui/assets/scrollbar_centre_minimal-49b97.png);
-	--mouseScrollbarCenterBorderImageHorizontalMinimal: url(/hbui/assets/scrollbar_centre_horizontal_minimal-1e1db.png);
-	--mouseScrollbarCenterBorderImageSlice: 1 1 1 1 fill;
-	--mouseScrollbarCenterBorderImageWidth: var(--base2Scale);
-	--mouseScrollbarCenterBorderImageOutset: 0.4rem;
+	--mouseScrollbarCenterBorderImage: none;
+	--mouseScrollbarCenterBorderImageHorizontal: none;
+	--mouseScrollbarCenterBorderImageMinimal: none;
+	--mouseScrollbarCenterBorderImageHorizontalMinimal: none;
+	--mouseScrollbarCenterBorderImageSlice: 0;
+	--mouseScrollbarCenterBorderImageWidth: 0;
+	--mouseScrollbarCenterBorderImageOutset: 0;
 	--mouseScrollbarCenterBorderImageRepeat: stretch;
 }
 
@@ -6381,10 +6383,6 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow: hidden;
-	padding-right: 0.8rem;
-	padding-left: 0.8rem;
-	margin-right: -0.8rem;
-	margin-left: -0.8rem;
 	opacity: 1;
 	margin-left: var(--scrollViewMarginRight);
 }
@@ -6421,6 +6419,13 @@ div {
 	margin-left: -0.8rem;
 }
 
+.m_niZ {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.8rem;
+}
+
 ._1BxDM {
 	height: 100%;
 	overflow-y: scroll;
@@ -6444,6 +6449,7 @@ div {
 	width: 100%;
 	flex-direction: row;
 	overflow-x: scroll;
+	margin-bottom: -4rem;
 }
 
 .jRvmp {
@@ -6574,6 +6580,11 @@ div {
 	width: 100%;
 }
 
+.HapXQ._1Dnkg {
+	margin-left: 1.6rem;
+	margin-right: 0.8rem;
+}
+
 /* Horizontal scrollbar css */
 
 ._2Z0AD {
@@ -6646,11 +6657,19 @@ div {
 	box-shadow: var(--mouseScrollbarHandlerBottomBevelBoxShadow);
 }
 
-._3vJss {
+.HapXQ._3vJss {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: calc(var(--spacingSize2) + var(--base2Scale));
+	z-index: 2;
+}
+
+._2Z0AD._3vJss {
+	position: absolute;
+	bottom: var(--spacingSize2);
+	left: 0;
+	right: 0;
 	z-index: 2;
 }
 
@@ -6703,11 +6722,11 @@ div {
 }
 
 .syGOs {
-	width: var(--autoHidingScrollbarWidth);
-	position: var(--autoHidingScrollbarPosition);
+	width: 0.8rem;
+	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: calc(var(--spacingSize2) + var(--base2Scale));
 	margin-top: var(--spacingSize1);
 	margin-bottom: var(--spacingSize1);
 }
@@ -6732,11 +6751,13 @@ div {
 /* Horizontal scrollbar */
 
 .aHAIA {
-	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: calc(var(--spacingSize2) + var(--base2Scale));
 	left: 0;
+	right: 0;
 	height: 0.8rem;
+	margin-right: var(--spacingSize1);
+	margin-left: 3.2rem;
 }
 
 .aHAIA ._-0bBc {
@@ -6777,12 +6798,9 @@ div {
 	transition-duration: 2s;
 }
 
-._318KV {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: calc(var(--spacingSize2) + var(--base2Scale));
-	z-index: 2;
+.aHAIA._2sGIH {
+	position: relative;
+	height: 4rem;
 }
 
 ._1e0gJ {
@@ -7303,9 +7321,20 @@ div {
 	z-index: 99999; /* Should be higher than any focused element's z-index */
 }
 
+._2gGya {
+	display: none;
+}
+
+._1zhu0 {
+	flex-direction: row;
+}
+
+.K1zBc {
+	flex-direction: row-reverse;
+}
+
 ._1j3MU {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin: 0;
 	padding-left: var(--spacingSize3);
@@ -11100,12 +11129,12 @@ input::-webkit-inner-spin-button {
 		opacity: 1;
 	}
 	80% {
-		transform: scale3d(0.4, 0.4, 0.4);
+		transform: scale3d(0.4, 0.4, 0.4) rotate3d(0, 0, 1, -180deg);
 		opacity: 1;
 	}
 
 	100% {
-		transform: scale3d(0.6, 0.6, 0.6);
+		transform: scale3d(0.6, 0.6, 0.6) rotate3d(0, 0, 1, -180deg);
 		opacity: 0;
 	}
 }
@@ -11511,6 +11540,7 @@ input::-webkit-inner-spin-button {
 	padding-bottom: 2.8rem;
 	align-items: center;
 	min-height: 10rem;
+	width: 100%;
 }
 
 .WoKCZ {
@@ -11550,11 +11580,8 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 }
 
-._18WQB {
+._2WTTw.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: wrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 .-mHf9 {
@@ -11567,11 +11594,8 @@ input::-webkit-inner-spin-button {
 	padding: 0;
 }
 
-._35MyR {
+.-mHf9.X2Co9 {
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	line-height: 3.6rem;
-	align-items: center;
 }
 
 ._1M0eO {
@@ -11882,6 +11906,10 @@ hr._2gMFY {
 	left: 2rem;
 }
 
+._20O0L {
+	margin-bottom: calc(8.4rem + var(--spacingSize3));
+}
+
 .FU-pg {
 	width: 126rem;
 	top: calc(var(--tabBarLineHeight)/2);
@@ -12088,7 +12116,7 @@ hr._2gMFY {
 }
 
 ._3zac9 {
-	margin-top: 0.8rem;
+	margin-top: 1.6rem;
 }
 
 ._3zac9._135at {
@@ -12112,12 +12140,11 @@ hr._2gMFY {
 	width: 62rem;
 	margin-left: var(--spacingSize5);
 	margin-right: var(--spacingSize4);
-	margin-bottom: var(--spacingSize3);
-	margin-top: 2.4rem;
+	margin-top: 1.6rem;
 }
 
 .nWl5U._1XYeR {
-	width: 126rem;
+	width: 124rem;
 	height: 54.4rem;
 	margin-left: 0rem;
 }
@@ -12135,7 +12162,7 @@ hr._2gMFY {
 .USIsE {
 	display: flex;
 	flex-direction: row;
-	margin-top: 2rem;
+	padding-top: 1.2rem;
 }
 
 ._1XYeR {
@@ -12178,7 +12205,8 @@ hr._2gMFY {
 	display: flex;
 	width: 40.4rem;
 	height: 46rem;
-	padding: 4rem 3.2rem;
+	padding: 1.6rem 3.2rem;
+	overflow-y: hidden;
 	margin-left: var(--spacingSize6);
 }
 
@@ -12190,8 +12218,12 @@ hr._2gMFY {
 	justify-content: space-around;
 }
 
-._2eNlp {
+._1289- {
 	visibility: hidden;
+}
+
+._2eNlp {
+	display: none;
 }
 
 .BGmLi {
@@ -12269,6 +12301,16 @@ hr._2gMFY {
 	padding-left: var(--spacingSize5);
 }
 
+._3VZqa {
+	padding-right: 4rem;
+	padding-left: 4rem;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 /* stylelint-enable plugin/no-unused-selectors */
 
 ._3pzv0 {
@@ -12276,12 +12318,12 @@ hr._2gMFY {
 	bottom: 0;
 	width: 29.2rem;
 	height: 50rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: 2.4rem;
+	padding-right: 2.4rem;
 	padding-top: 1.2rem;
 	margin-right: 0.4rem;
 	margin-left: 0.4rem;
-	margin-top: 4.4rem;
+	margin-top: 3.6rem;
 	padding-bottom: 4.4rem;
 	background-image: url('/textures-hbui/hub_screen/card_campaign_normal.png');
 	background-size: 100% 100%;
@@ -12293,7 +12335,7 @@ hr._2gMFY {
 }
 
 ._3pzv0._2fmTI {
-	transform: translateY(-2.8rem);
+	transform: translateY(-2.4rem);
 	background-image: url('/textures-hbui/hub_screen/card_campaign_normal_highlighted.png');
 }
 
@@ -12337,7 +12379,7 @@ hr._2gMFY {
 	background-repeat: no-repeat;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 4.4rem;
+	margin-top: 4rem;
 }
 
 .lfLeN._2fmTI {
@@ -12393,7 +12435,7 @@ hr._2gMFY {
 }
 
 ._1pxVJ {
-	margin-top: 0.8rem;
+	margin-top: 1.6rem;
 }
 
 ._1pxVJ.bQqfW {
@@ -12404,12 +12446,27 @@ hr._2gMFY {
 ._2c6tJ {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.ro2lK {
+	width: 24.4rem;
+	height: 29rem; /* stylelint-disable-line stylelint-base-4/rule */
+	align-self: center;
+}
+
+.ro2lK._30bsp {
+	width: 51.2rem;
+	height: 28.8rem;
 }
 
 ._2fncI {
 	width: 100%;
+	max-height: 28.8rem;
 	flex: 1;
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.8rem;
+	margin-top: 1.2rem;
 	align-items: flex-end;
 	justify-content: flex-end;
 	filter: grayscale(0.6) opacity(0.6) sepia(0.7);
@@ -12421,8 +12478,8 @@ hr._2gMFY {
 
 ._2fncI._2qHWL {
 	width: 12.4rem;
-	height: 20rem;
-	margin-top: 8rem;
+	height: 24.4rem;
+	margin-top: 0rem;
 }
 
 ._1Mt3a {
@@ -12430,10 +12487,11 @@ hr._2gMFY {
 	width: 100%;
 	height: 100%;
 	border-image-source: url('/textures-hbui/hub_screen/legends_frame.png');
-	border-image-slice: 42 fill;
+	border-image-slice: 44 fill;
 	border-image-repeat: stretch;
 	border-image-width: 4.4rem;
-	border-image-outset: 0.4rem;
+	border-image-outset: 0.8rem;
+	z-index: 2;
 }
 
 ._1Mt3a._2fmTI {
@@ -12442,7 +12500,7 @@ hr._2gMFY {
 
 ._1dqtb {
 	width: 100%;
-	height: 12rem;
+	height: 12.4rem;
 	align-content: center;
 	justify-content: center;
 	overflow-x: hidden;
@@ -12503,8 +12561,6 @@ hr._2gMFY {
 	position: absolute;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 1.6rem;
-	margin-left: 1.6rem;
 	padding-left: 2.8rem;
 	padding-right: 2.4rem;
 	border-image-source: url('/textures-hbui/hub_screen/card_day_counter.png');
@@ -12559,6 +12615,7 @@ hr._2gMFY {
 ._3K-Lk {
 	width: 24rem;
 	align-items: center;
+	margin-bottom: -0.4rem;
 }
 
 .BUe03 {
@@ -12598,16 +12655,17 @@ hr._2gMFY {
 	align-items: center;
 	justify-content: center;
 	width: 24rem;
+	margin-top: -0.8rem;
 	overflow-x: hidden;
 }
 
 ._3eJkn._2fmTI {
-	bottom: 2rem;
+	bottom: 0.4rem;
 }
 
 ._3vN0n {
-	width: 16.4rem;
-	height: 18.4rem;
+	width: 16rem;
+	height: 18rem;
 	filter: grayscale(0.6) opacity(0.6) sepia(0.7);
 }
 
@@ -12673,5 +12731,14 @@ hr._2gMFY {
 	align-items: center;
 	width: 80%;
 	overflow-x: hidden;
+}
+
+/* stylelint-disable-next-line unit-allowed-list */
+@media (max-width: 1679px), (max-height: 944px) {
+	/* ie. base3Max (including 720p) */
+	._2fncI._2qHWL {
+		width: 16rem;
+		margin-top: 2rem;
+	}
 }
 

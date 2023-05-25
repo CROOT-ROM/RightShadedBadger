@@ -61,14 +61,35 @@
                 },
                 "on_world_hit": {
                     "audio": "BAE_piglin_rotters_boss_proj_spit_impact_world",
-                    "particles": "badger:fx_piglin_rotters_boss_spit_impact"
+                    "particles": "badger:fx_piglin_rotters_boss_spit_impact",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 },
                 "on_entity_hit": {
-                    "particles": "badger:fx_piglin_rotters_boss_spit_impact"
+                    "particles": "badger:fx_piglin_rotters_boss_spit_impact",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 },
                 "on_intercepted": {
                     "audio": "BAE_piglin_rotters_boss_proj_spit_intercepted",
-                    "particles": "badger:fx_tower_anti_siege_impact_spit"
+                    "particles": "badger:fx_tower_anti_siege_impact_spit",
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 30,
+                        "priority": 2,
+                        "override": true,
+                        "range": 20
+                    }
                 }
             }
         }

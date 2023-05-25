@@ -160,6 +160,9 @@
             "path": "animations/gate_piglin_active.animations.json"
         },
         {
+            "path": "animations/hero.animations.json"
+        },
+        {
             "path": "animations/host_action.animations.json"
         },
         {
@@ -1481,6 +1484,9 @@
         },
         {
             "path": "blocks/block_column_prismarine_carved_middle_dead.json"
+        },
+        {
+            "path": "blocks/block_column_prismarine_carved_middle_disabled.json"
         },
         {
             "path": "blocks/block_column_prismarine_carved_top.json"
@@ -4327,6 +4333,9 @@
             "path": "blocks/block_prismarine_moss_dead.json"
         },
         {
+            "path": "blocks/block_prismarine_moss_disabled.json"
+        },
+        {
             "path": "blocks/block_prismarine_raw.json"
         },
         {
@@ -6253,6 +6262,15 @@
             "path": "buildables/chunk_piglin_wall_panel_003.entity.json"
         },
         {
+            "path": "buildables/debug_map_marker_blue.entity.json"
+        },
+        {
+            "path": "buildables/debug_map_marker_green.entity.json"
+        },
+        {
+            "path": "buildables/debug_map_marker_red.entity.json"
+        },
+        {
             "path": "buildables/gate.entity.json"
         },
         {
@@ -6340,10 +6358,16 @@
             "path": "buildables/onboarding_golem_spawner.entity.json"
         },
         {
+            "path": "buildables/onboarding_world_Teleporter_piece.entity.json"
+        },
+        {
             "path": "buildables/piglin_lava_coil.entity.json"
         },
         {
             "path": "buildables/piglin_super_nether_spreader.entity.json"
+        },
+        {
+            "path": "buildables/player_waypoint_default.entity.json"
         },
         {
             "path": "buildables/poi_ally_02.entity.json"
@@ -8383,9 +8407,6 @@
             "path": "decorations/deco_wof_floordecal_01.json"
         },
         {
-            "path": "decorations/deco_wof_lightbeam.json"
-        },
-        {
             "path": "decorations/deco_xp_ally.json"
         },
         {
@@ -9208,16 +9229,25 @@
             "path": "entity/music_gameplay_system_pvp.entity.json"
         },
         {
+            "path": "entity/piglin_attack.entity.json"
+        },
+        {
             "path": "entity/piglin_bruiser.entity.json"
         },
         {
             "path": "entity/piglin_dbb.entity.json"
         },
         {
+            "path": "entity/piglin_defend.entity.json"
+        },
+        {
             "path": "entity/piglin_engineer.entity.json"
         },
         {
             "path": "entity/piglin_final_boss.entity.json"
+        },
+        {
+            "path": "entity/piglin_final_boss_arena.entity.json"
         },
         {
             "path": "entity/piglin_final_boss_nis.entity.json"
@@ -9269,6 +9299,9 @@
         },
         {
             "path": "entity/piglin_medic.entity.json"
+        },
+        {
+            "path": "entity/piglin_obstacle.entity.json"
         },
         {
             "path": "entity/piglin_piggo_lava_launcher.entity.json"
@@ -9406,16 +9439,7 @@
             "path": "entity/proj_lava_tower_spike_impact.entity.json"
         },
         {
-            "path": "entity/proj_lava_turret_mob_magma_cube_lrg.entity.json"
-        },
-        {
-            "path": "entity/proj_lava_turret_spray.entity.json"
-        },
-        {
             "path": "entity/proj_magma_block.entity.json"
-        },
-        {
-            "path": "entity/proj_magma_block_ground_aoe.entity.json"
         },
         {
             "path": "entity/proj_magma_block_impact_aoe.entity.json"
@@ -9424,16 +9448,10 @@
             "path": "entity/proj_magma_boss_magma_block.entity.json"
         },
         {
-            "path": "entity/proj_magma_cube_boss.entity.json"
-        },
-        {
             "path": "entity/proj_magma_cube_impact_aoe.entity.json"
         },
         {
             "path": "entity/proj_magma_cube_lrg.entity.json"
-        },
-        {
-            "path": "entity/proj_magma_cube_tower.entity.json"
         },
         {
             "path": "entity/proj_magma_thrower.entity.json"
@@ -9518,6 +9536,9 @@
         },
         {
             "path": "entity/proj_spit_player.entity.json"
+        },
+        {
+            "path": "entity/proj_spit_player_impact_aoe.entity.json"
         },
         {
             "path": "entity/proj_stone_block.entity.json"
@@ -9869,6 +9890,12 @@
         },
         {
             "path": "gamelayer/client/sky/override_sky_forest.json"
+        },
+        {
+            "path": "gamelayer/client/sky/override_sky_horde4_sunmoon.curves"
+        },
+        {
+            "path": "gamelayer/client/sky/override_sky_horde4_sunmoon.json"
         },
         {
             "path": "gamelayer/client/sky/override_sky_obstacle_sunmoon.curves"
@@ -12560,9 +12587,6 @@
         },
         {
             "path": "models/entity/block_deco_wof_floordecal_01.model.json"
-        },
-        {
-            "path": "models/entity/block_deco_wof_lightbeam_01.model.json"
         },
         {
             "path": "models/entity/block_deco_xp_ally_geo.model.json"
@@ -16633,12 +16657,6 @@
             "path": "particles/mobs/fx_proj_magma_cube_lrg/fx_proj_magma_cube_lrg_projtrail.json"
         },
         {
-            "path": "particles/mobs/fx_proj_magma_cube_lrg/fx_proj_magma_cube_lrg_start_flares.json"
-        },
-        {
-            "path": "particles/mobs/fx_proj_magma_cube_lrg/fx_proj_magma_cube_lrg_start_smoke.json"
-        },
-        {
             "path": "particles/mobs/fx_proj_mud/fx_proj_mud_impact.json"
         },
         {
@@ -16961,6 +16979,9 @@
         },
         {
             "path": "particles/mobs/fx_shared/fx_shared_death_smoke_tiny.json"
+        },
+        {
+            "path": "particles/mobs/fx_shared/fx_shared_disband_smoke_despawn.json"
         },
         {
             "path": "particles/mobs/fx_shared/fx_shared_fasttravel_1_small.json"
@@ -24094,6 +24115,15 @@
             "path": "textures/blocks/tex_block_prismarine_carved_middle_dead_n.png"
         },
         {
+            "path": "textures/blocks/tex_block_prismarine_carved_middle_disabled.png"
+        },
+        {
+            "path": "textures/blocks/tex_block_prismarine_carved_middle_disabled_mr.png"
+        },
+        {
+            "path": "textures/blocks/tex_block_prismarine_carved_middle_disabled_n.png"
+        },
+        {
             "path": "textures/blocks/tex_block_prismarine_carved_middle_e.hdr"
         },
         {
@@ -30448,10 +30478,22 @@
             "path": "textures/environment/tex_cube_grasslands_dawn.json"
         },
         {
+            "path": "textures/environment/tex_cube_grasslands_dawn_ssr.hdr"
+        },
+        {
+            "path": "textures/environment/tex_cube_grasslands_dawn_ssr.json"
+        },
+        {
             "path": "textures/environment/tex_cube_grasslands_day.hdr"
         },
         {
             "path": "textures/environment/tex_cube_grasslands_day.json"
+        },
+        {
+            "path": "textures/environment/tex_cube_grasslands_day_ssr.hdr"
+        },
+        {
+            "path": "textures/environment/tex_cube_grasslands_day_ssr.json"
         },
         {
             "path": "textures/environment/tex_cube_grasslands_dusk.hdr"
@@ -30460,16 +30502,34 @@
             "path": "textures/environment/tex_cube_grasslands_dusk.json"
         },
         {
+            "path": "textures/environment/tex_cube_grasslands_dusk_ssr.hdr"
+        },
+        {
+            "path": "textures/environment/tex_cube_grasslands_dusk_ssr.json"
+        },
+        {
             "path": "textures/environment/tex_cube_grasslands_night.hdr"
         },
         {
             "path": "textures/environment/tex_cube_grasslands_night.json"
         },
         {
+            "path": "textures/environment/tex_cube_grasslands_night_ssr.hdr"
+        },
+        {
+            "path": "textures/environment/tex_cube_grasslands_night_ssr.json"
+        },
+        {
             "path": "textures/environment/tex_cube_onboarding_night.hdr"
         },
         {
             "path": "textures/environment/tex_cube_onboarding_night.json"
+        },
+        {
+            "path": "textures/environment/tex_cube_onboarding_night_ssr.hdr"
+        },
+        {
+            "path": "textures/environment/tex_cube_onboarding_night_ssr.json"
         },
         {
             "path": "textures/environment/water_noise.png"
@@ -30598,7 +30658,7 @@
             "path": "textures/particle/tex_fx_cube.png"
         },
         {
-            "path": "textures/particle/tex_fx_daisy_anim.png"
+            "path": "textures/particle/tex_fx_daisy.png"
         },
         {
             "path": "textures/particle/tex_fx_dart_puff.png"
@@ -32176,5 +32236,5 @@
             "path": "videos/720p/tutorials/tutorial_rebuilding_villages.bk2"
         }
     ],
-    "size": 10835828757
+    "size": 10877752826
 }

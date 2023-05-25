@@ -5,8 +5,8 @@
       "badger:entity_age": {
       },
       "badger:interaction_presentation": {
-          "trigger_specific_events": true,
-          "trigger_generic_events": false
+        "trigger_generic_events": false,
+        "trigger_specific_events": true
       },
       "badger:keep_alive_timer": {
         "time": 0.1

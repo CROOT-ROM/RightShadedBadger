@@ -82,6 +82,12 @@
 			"override_draw_distance_enabled" : {
 				"value" : true
 			},
+			"cinematic_request_minimum_chunk_distance" : {
+				"value" : 16
+			},
+			"cinematic_request_maximum_chunk_distance" : {
+				"value" : 16
+			},
 			"shadow_bias" : {
 				"value" : [ 0.0004, 0.0008, 0.0008, 0.0008 ]
 			},

@@ -141,7 +141,7 @@
               "idle": "((query.speed <= 0) && variable.is_swimming)"
             },
             {
-              "celebrate": "variable.buff_celebrate"
+              "celebrate": "variable.celebration"
             }
           ]
         },
